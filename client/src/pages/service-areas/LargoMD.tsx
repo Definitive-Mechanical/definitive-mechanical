@@ -1,0 +1,286 @@
+import { Helmet } from "react-helmet";
+import { Link } from "wouter";
+import {
+  AlertTriangle, Droplets, Thermometer, Zap, GitBranch, Flame,
+  AlertCircle, ShieldCheck, Wrench, Wind, Building2, Landmark,
+  CheckCircle2
+} from "lucide-react";
+import BreadcrumbList from "@/components/ui/BreadcrumbList";
+import TrustBadges from "@/components/ui/TrustBadges";
+import BookNowButton from "@/components/ui/BookNowButton";
+import SectionHeading from "@/components/ui/SectionHeading";
+import FAQAccordion from "@/components/ui/FAQAccordion";
+import CTABanner from "@/components/ui/CTABanner";
+import TestimonialCard from "@/components/ui/TestimonialCard";
+import StarRating from "@/components/ui/StarRating";
+
+const SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "Plumber"],
+      "name": "Definitive Mechanical",
+      "telephone": "+13016795849",
+      "address": { "@type": "PostalAddress", "streetAddress": "9701 Apollo Drive, Suite 100", "addressLocality": "Largo", "addressRegion": "MD", "postalCode": "20774" },
+      "areaServed": { "@type": "City", "name": "Largo", "sameAs": "https://en.wikipedia.org/wiki/Largo,_Maryland" },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "40" }
+    },
+    { "@type": "BreadcrumbList", "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://definitivemechanical.com/"},
+      {"@type":"ListItem","position":2,"name":"Service Areas","item":"https://definitivemechanical.com/service-areas/"},
+      {"@type":"ListItem","position":3,"name":"Maryland","item":"https://definitivemechanical.com/service-areas/maryland/"},
+      {"@type":"ListItem","position":4,"name":"Prince George's County","item":"https://definitivemechanical.com/service-areas/maryland/prince-georges-county/"},
+      {"@type":"ListItem","position":5,"name":"Largo, MD","item":"https://definitivemechanical.com/service-areas/maryland/prince-georges-county/largo-md/"}
+    ]},
+    { "@type": "FAQPage", "mainEntity": [
+      {"@type":"Question","name":"What plumbing services do you offer in Largo, MD?","acceptedAnswer":{"@type":"Answer","text":"We offer the full range of plumbing services in Largo — emergency plumbing, drain cleaning, water heater repair and installation, tankless water heaters, sewer line service, gas line repair and installation, backflow prevention and certification, water line service, boiler and furnace repair, and faucet and toilet repair. Commercial and government plumbing available. Call (301) 679-5849."}},
+      {"@type":"Question","name":"Do you provide 24/7 emergency plumbing in Largo?","acceptedAnswer":{"@type":"Answer","text":"Yes. Definitive Mechanical is based in Largo, MD — emergency response here is among the fastest in our service area. A live dispatcher answers every call 24/7. Licensed Master Plumber dispatched immediately. No overtime surcharge."}},
+      {"@type":"Question","name":"Are you licensed as a plumber in Prince George's County and Maryland?","acceptedAnswer":{"@type":"Answer","text":"Yes. Definitive Mechanical holds Maryland State Master Plumber/Gasfitter License #96958 and WSSC Master Plumber/Gasfitter License #73696, which covers all plumbing work in Prince George's County."}},
+      {"@type":"Question","name":"How quickly can you arrive for a plumbing emergency in Largo?","acceptedAnswer":{"@type":"Answer","text":"Because we are based in Largo, response to emergency calls within the immediate Largo area is typically faster than any other area in our service region. Call (301) 679-5849 — our dispatcher will give you an honest ETA at the time of your call."}}
+    ]}
+  ]
+};
+
+const services = [
+  { icon: AlertTriangle, label: "24/7 Emergency Plumbing", href: "/emergency-plumbing", note: "fastest response in our service area" },
+  { icon: Droplets, label: "Drain Cleaning", href: "/drain-cleaning", note: "same-day service available" },
+  { icon: Thermometer, label: "Water Heater Repair and Installation", href: "/water-heater-repair" },
+  { icon: Zap, label: "Tankless Water Heater Installation & Repair", href: "/tankless-water-heaters" },
+  { icon: GitBranch, label: "Sewer Line Repair and Installation", href: "/sewer-line-repair" },
+  { icon: Flame, label: "Gas Line Repair and Installation", href: "/gas-line-repair", note: "licensed Master Gasfitter" },
+  { icon: AlertCircle, label: "Gas Leak Repair", href: "/gas-leak-repair", note: "24/7 emergency" },
+  { icon: ShieldCheck, label: "Backflow Prevention and Certification", href: "/backflow-certification" },
+  { icon: Wrench, label: "Water Line Repair and Installation", href: "/water-line-repair" },
+  { icon: Wind, label: "Boiler & Furnace Repair and Installation", href: "/boiler-furnace-repair" },
+  { icon: Wrench, label: "Faucet & Toilet Repair", href: "/faucet-toilet-repair" },
+  { icon: Building2, label: "Commercial Plumbing", href: "/commercial-plumbing", note: "MDOT MBE and SWaM Certified" },
+  { icon: Landmark, label: "Government & Municipal Plumbing", href: "/government-municipal-plumbing" },
+];
+
+const faqs = [
+  { question: "What plumbing services do you offer in Largo, MD?", answer: "We offer the full range of plumbing services in Largo — emergency plumbing, drain cleaning, water heater repair and installation, tankless water heaters, sewer line service, gas line repair and installation, backflow prevention and certification, water line service, boiler and furnace repair, and faucet and toilet repair. Commercial and government plumbing available. Call (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Largo?", answer: "Yes. Definitive Mechanical is based in Largo, MD — emergency response here is among the fastest in our service area. A live dispatcher answers every call 24/7. Licensed Master Plumber dispatched immediately. No overtime surcharge." },
+  { question: "Are you licensed as a plumber in Prince George's County and Maryland?", answer: "Yes. Definitive Mechanical holds Maryland State Master Plumber/Gasfitter License #96958 and WSSC Master Plumber/Gasfitter License #73696, which covers all plumbing work in Prince George's County. We are also licensed in Howard County, Anne Arundel County, the City of Rockville, Washington DC, Virginia, and Delaware." },
+  { question: "How quickly can you arrive for a plumbing emergency in Largo?", answer: "Because we are based in Largo, response to emergency calls within the immediate Largo area is typically faster than any other area in our service region. Call (301) 679-5849 — our dispatcher will give you an honest ETA at the time of your call." },
+];
+
+export default function LargoMD() {
+  return (
+    <>
+      <Helmet>
+        <title>Plumber in Largo, MD | 24/7 Emergency Plumbing | Definitive Mechanical</title>
+        <meta name="description" content="Need a licensed plumber in Largo, MD? Definitive Mechanical provides 24/7 emergency plumbing, water heater repair, drain cleaning, gas line service & commercial plumbing. Call (301) 679-5849." />
+        <link rel="canonical" href="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/largo-md/" />
+        <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
+      </Helmet>
+
+      {/* S1: Hero */}
+      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "50vh" }} className="py-16">
+        <div className="container">
+          <BreadcrumbList items={[
+            {label:"Home",href:"/"},
+            {label:"Service Areas",href:"/service-areas"},
+            {label:"Maryland",href:"/service-areas/maryland"},
+            {label:"Prince George's County",href:"/service-areas/maryland/prince-georges-county"},
+            {label:"Largo, MD"}
+          ]} />
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
+            <div className="lg:col-span-3">
+              <p style={{ fontFamily:"'Barlow Condensed',sans-serif", color:"#009EC6", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
+                PLUMBING SERVICE · LARGO, MD · PRINCE GEORGE'S COUNTY
+              </p>
+              <h1 style={{ fontFamily:"'Playfair Display',serif", color:"white", fontSize:"clamp(28px,4vw,40px)", fontWeight:700, lineHeight:1.15 }} className="mb-4">
+                Plumber in Largo, MD
+              </h1>
+              <p style={{ fontFamily:"'Barlow',sans-serif", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
+                Definitive Mechanical is based in Largo, Maryland at 9701 Apollo Drive, Suite 100 — and has served the Largo community for 11 years. We provide licensed plumbing, gas, drain, water heater, sewer, backflow, and emergency mechanical service for homes and businesses in Largo and throughout Prince George's County. Call (301) 679-5849.
+              </p>
+              <TrustBadges variant="dark" badges={["Based in Largo, MD","11 Years Serving Largo","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]} />
+              <div className="flex flex-wrap gap-4 mt-8">
+                <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+                <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
+              </div>
+            </div>
+            <div className="lg:col-span-2 hidden lg:block">
+              <img
+                src="https://placehold.co/700x500/186090/C0D8F0?text=Plumber+Largo+MD+Home+Base"
+                alt="Licensed plumber Largo MD — Definitive Mechanical home base 9701 Apollo Drive"
+                loading="eager"
+                className="rounded-lg w-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* S2: Licensed Services */}
+      <section className="py-20 bg-white">
+        <div className="container">
+          <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Largo, MD?" />
+          <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
+            Largo is our home base. When you call Definitive Mechanical for plumbing service in Largo, you are calling a team that has operated in this community for over a decade — from our office at 9701 Apollo Drive, Suite 100, just off Central Avenue. Response times in Largo are among the fastest in our service area because we are already here.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {services.map((svc, i) => (
+              <Link key={i} href={svc.href}>
+                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5" style={{ borderTopColor:"#009EC6" }}>
+                  <svc.icon size={20} style={{ color:"#009EC6", flexShrink:0, marginTop:2 }} />
+                  <div>
+                    <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:500, color:"#003060", fontSize:"14px" }}>{svc.label}</p>
+                    {svc.note && <p style={{ fontFamily:"'Barlow',sans-serif", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* S3: Emergency */}
+      <section className="py-16" style={{ background:"#F0F0F0" }}>
+        <div className="container">
+          <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading="Do you provide 24/7 emergency plumbing in Largo?" />
+          <div className="max-w-3xl">
+            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
+              Yes. Because we are located in Largo, emergency response here is immediate. A live dispatcher answers every call — day or night, weekday or holiday. A licensed Master Plumber is dispatched directly. No overtime surcharge for after-hours or weekend calls.
+            </p>
+            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
+              Largo's mix of residential neighborhoods, commercial corridors along Central Avenue and Landover Road, and government-adjacent facilities near the Metro station creates a wide range of plumbing needs — from homeowner emergencies to commercial facility maintenance. We serve all of them.
+            </p>
+            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-8">
+              For plumbing emergencies in Largo, call (301) 679-5849.
+            </p>
+          </div>
+          <div className="text-center">
+            <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849 — EMERGENCY LINE" href="tel:+13016795849" />
+            <p className="mt-4">
+              <Link href="/emergency-plumbing" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", fontWeight:500 }}>
+                Dedicated Largo emergency plumbing page →
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* S4: Residential / Local Context */}
+      <section className="py-20 bg-white">
+        <div className="container">
+          <SectionHeading eyebrow="RESIDENTIAL PLUMBING" heading="What residential plumbing services do Largo homeowners use most?" />
+          <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
+            Largo's housing stock includes a significant number of homes built in the 1970s through 1990s — a range where original water heaters, cast iron drain lines, and galvanized supply lines are either approaching or well past end of life. The most common residential service calls we handle in Largo include:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+            {[
+              { icon: Thermometer, title: "Water heater repair and replacement", body: "Gas and electric tank water heaters in this age range frequently need thermocouple replacement, element replacement, or full unit replacement. Financing available through Synchrony." },
+              { icon: Droplets, title: "Drain cleaning", body: "Older cast iron and PVC drain lines in Largo-area homes are prone to grease accumulation and root intrusion, particularly in neighborhoods with mature tree canopies." },
+              { icon: GitBranch, title: "Sewer line service", body: "Camera inspection followed by hydro-jetting or spot repair for homes with original clay or cast iron sewer laterals." },
+              { icon: Wrench, title: "Leak repair", body: "Supply line fittings, shut-off valves, and fixture connections in older homes benefit from periodic inspection and repair before minor seepage becomes major damage." },
+            ].map((card, i) => (
+              <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"#009EC6" }}>
+                <div className="flex items-center gap-2 mb-2">
+                  <card.icon size={24} style={{ color:"#009EC6" }} />
+                  <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:600, color:"#003060", fontSize:"15px" }}>{card.title}</p>
+                </div>
+                <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* S5: Commercial & Government */}
+      <section className="py-16" style={{ background:"#003060" }}>
+        <div className="container text-center">
+          <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Do you serve commercial and government clients in Largo?" light />
+          <p style={{ fontFamily:"'Barlow',sans-serif", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
+            Yes. Largo and the surrounding Central Avenue corridor is home to commercial retail, office, government-adjacent facilities, and businesses that require commercial plumbing maintenance and compliance services. Definitive Mechanical is MDOT MBE Certified (Cert No. 20-134) and Virginia SWaM Certified (Cert No. 815255) — and holds CAGE Code 8HCF6 and NAICS Code 238220 for government procurement.
+          </p>
+          <p style={{ fontFamily:"'Barlow',sans-serif", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
+            For commercial clients in Largo, we provide facility maintenance, backflow certification, commercial drain service, gas line work, and emergency response.
+          </p>
+          <div className="flex flex-wrap gap-2 justify-center mt-6">
+            {["MDOT MBE Cert 20-134","SWaM Cert 815255","CAGE 8HCF6"].map((badge, i) => (
+              <span key={i} style={{ background:"white", color:"#003060", fontFamily:"'Barlow Condensed',sans-serif", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
+            ))}
+          </div>
+          <p className="mt-4">
+            <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'Barlow',sans-serif", fontSize:"14px", fontWeight:500 }}>
+              Learn more about commercial plumbing →
+            </Link>
+          </p>
+        </div>
+      </section>
+
+      {/* S6: Customer Reviews — LARGO ONLY */}
+      <section className="py-16" style={{ background:"#C0D8F0" }}>
+        <div className="container">
+          <SectionHeading eyebrow="CUSTOMER REVIEWS" heading="What do Largo customers say about Definitive Mechanical?" centered />
+          <div className="flex justify-center mb-8">
+            <StarRating rating={4.8} count={40} />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <TestimonialCard quote="I was extremely impressed — they were prompt, courteous, and professional. If you need plumbers, ask for DJ and Keon." name="Michael F." location="Largo, MD" service="Plumbing Service" />
+            <TestimonialCard quote="Everything went extremely well. They were punctual, cleaned up after themselves — very professional and courteous. This is my second time hiring this company." name="Millie H." location="Prince George's County" service="Plumbing Service" />
+            <TestimonialCard quote="Service was excellent — prompt, professional, diagnosed and replaced my toilet the same day, and left the bathroom spotless." name="Gayle T." location="Maryland" service="Toilet Repair" />
+          </div>
+          <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", textAlign:"center", marginTop:"24px" }}>
+            4.8★ on Google | Based in Largo, MD | 11 Years in Business
+          </p>
+        </div>
+      </section>
+
+      {/* S7: Nearby Areas */}
+      <section className="py-12 bg-white">
+        <div className="container">
+          <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading="What areas near Largo does Definitive Mechanical also serve?" />
+          <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"15px" }} className="mb-4">
+            From our Largo location, we serve the surrounding Prince George's County communities and the broader DMV area:
+          </p>
+          <div className="mb-3">
+            <span style={{ fontFamily:"'Barlow Condensed',sans-serif", fontWeight:700, color:"#003060", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
+            {[
+              { label:"Bowie, MD", href:"/service-areas/maryland/prince-georges-county/bowie-md" },
+              { label:"Fort Washington, MD", href:"/service-areas/maryland/prince-georges-county/fort-washington-md" },
+            ].map((l, i) => (
+              <Link key={i} href={l.href} style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>{l.label}</Link>
+            ))}
+            {["Upper Marlboro, MD","Landover, MD","Hyattsville, MD","Forestville, MD","Fairwood, MD","Woodmore, MD","Capitol Heights, MD"].map((city, i) => (
+              <span key={i} style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", marginRight:"12px" }}>{city}</span>
+            ))}
+          </div>
+          <hr style={{ borderColor:"#E8EFF5", margin:"16px 0" }} />
+          <div className="mb-4">
+            <span style={{ fontFamily:"'Barlow Condensed',sans-serif", fontWeight:700, color:"#003060", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Also serving:</span>
+            {[
+              { label:"Washington DC", href:"/service-areas/washington-dc" },
+              { label:"Montgomery County, MD", href:"/service-areas/maryland/montgomery-county" },
+              { label:"Northern Virginia", href:"/service-areas/northern-virginia" },
+            ].map((l, i) => (
+              <Link key={i} href={l.href} style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>{l.label}</Link>
+            ))}
+          </div>
+          <Link href="/service-areas" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
+        </div>
+      </section>
+
+      {/* S8: FAQ */}
+      <section className="py-20" style={{ background:"#F0F0F0" }}>
+        <div className="container">
+          <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Plumbing FAQ — Largo, MD" />
+          <div className="max-w-3xl mx-auto">
+            <FAQAccordion items={faqs} schema={true} />
+          </div>
+        </div>
+      </section>
+
+      {/* S9: CTA Banner */}
+      <CTABanner
+        heading="Largo's licensed Master Plumber — right in your community."
+        subtext="9701 Apollo Drive, Suite 100, Largo, MD 20774 | 24/7 Emergency Service | Upfront Pricing | Licensed Master Plumber/Gasfitter | MDOT MBE Certified"
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+        variant="gradient"
+      />
+    </>
+  );
+}
