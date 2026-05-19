@@ -1,0 +1,211 @@
+import { Users, Award, ShieldCheck, Clock, CheckCircle2, Star } from 'lucide-react';
+import { BUSINESS, TESTIMONIALS } from '@/lib/constants';
+import BookNowButton from '@/components/ui/BookNowButton';
+import SectionHeading from '@/components/ui/SectionHeading';
+import BreadcrumbList from '@/components/ui/BreadcrumbList';
+import TestimonialCard from '@/components/ui/TestimonialCard';
+import CTABanner from '@/components/ui/CTABanner';
+
+export default function About() {
+  return (
+    <>
+      {/* HERO */}
+      <section style={{
+        background: 'linear-gradient(135deg, #003060 0%, #001830 100%)',
+        padding: '80px 0',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.05)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
+          <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
+            <div className="lg:col-span-3">
+              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+                ABOUT DEFINITIVE MECHANICAL
+              </p>
+              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
+                About Definitive Mechanical — Licensed Plumbing in MD, DC & Northern VA
+              </h1>
+              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
+                Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor based in Largo, Maryland. We have served homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia for over 11 years. Master Plumber and Master Gasfitter licensed in four states.
+              </p>
+              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            </div>
+            <div className="hidden lg:block lg:col-span-2">
+              <img
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&q=80"
+                alt="Definitive Mechanical team — Licensed plumbers Maryland DC Northern Virginia"
+                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OUR STORY */}
+      <section style={{ background: 'white', padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <SectionHeading eyebrow="OUR STORY" heading="What is Definitive Mechanical?" />
+              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
+                Definitive Mechanical was founded with a straightforward premise: provide licensed, honest plumbing service without the sales pressure, inflated pricing, and upselling that has become the norm in the DMV plumbing market.
+              </p>
+              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
+                We are based in Largo, Maryland and have operated in the DMV for over 11 years. Our team holds Master Plumber and Master Gasfitter licenses in Maryland, Washington DC, Virginia, and Delaware — a credential combination that no other local plumbing company in this market holds simultaneously.
+              </p>
+              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.8, marginBottom: '24px' }}>
+                We serve residential homeowners, commercial facility managers, property management companies, HOAs, and government agencies. Every job — from a clogged drain to a government facility sewer replacement — is handled by a licensed Master Plumber with written pricing provided before work begins.
+              </p>
+              <div className="space-y-3">
+                {[
+                  'Licensed Master Plumber and Master Gasfitter in MD, DC, VA & DE',
+                  'MDOT MBE Certified (Cert No. 20-134)',
+                  'Virginia SWaM Certified (Cert No. 815255)',
+                  '11 years serving the DMV',
+                  '24/7 emergency service',
+                  'Upfront written pricing on every job',
+                ].map((item) => (
+                  <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                    <CheckCircle2 size={18} color="#009EC6" style={{ flexShrink: 0 }} />
+                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80"
+                alt="Definitive Mechanical plumbing service Maryland"
+                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)' }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* STATS */}
+      <section style={{ background: '#009EC6', padding: '48px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
+            {[
+              { number: '11', label: 'Years in Business', icon: Clock },
+              { number: '4.8★', label: 'Google Rating', icon: Star },
+              { number: '4', label: 'States Licensed', icon: ShieldCheck },
+              { number: '25+', label: 'Years Trade Experience', icon: Award },
+            ].map((stat, index) => (
+              <div key={stat.label} style={{ textAlign: 'center', padding: '16px', borderRight: index < 3 ? '1px solid rgba(0,48,96,0.2)' : 'none' }}>
+                <stat.icon size={24} color="#003060" style={{ margin: '0 auto 8px' }} />
+                <p style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: '32px', color: '#003060', lineHeight: 1 }}>{stat.number}</p>
+                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#003060', marginTop: '4px' }}>{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* OUR APPROACH */}
+      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="OUR APPROACH"
+            heading="How Definitive Mechanical is different from other DMV plumbing companies"
+            centered
+          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: ShieldCheck,
+                title: 'No Commissioned Salespeople',
+                body: 'Our technicians are not paid on commission. They are paid to solve your problem correctly — not to find additional work. When we identify an issue, we explain it clearly and give you options. You decide.',
+              },
+              {
+                icon: CheckCircle2,
+                title: 'Written Pricing Before We Start',
+                body: 'The most common complaint about plumbing companies in the DMV is pricing shock. We address this by providing written pricing before any work begins. If the scope changes, we discuss it first.',
+              },
+              {
+                icon: Users,
+                title: 'Accountable, Named Technicians',
+                body: 'When a Definitive Mechanical technician arrives at your property, you get their name. You can call our office and ask about them. We stand behind every technician we send.',
+              },
+            ].map((item) => (
+              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)', textAlign: 'center' }}>
+                <item.icon size={40} color="#009EC6" style={{ margin: '0 auto 16px' }} />
+                <h3 style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
+                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section style={{ background: 'white', padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="CUSTOMER REVIEWS"
+            heading="What customers say about Definitive Mechanical"
+            centered
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {TESTIMONIALS.slice(0, 6).map((t) => (
+              <TestimonialCard key={t.name} {...t} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT INFO */}
+      <section style={{ background: '#003060', padding: '64px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+                CONTACT INFORMATION
+              </p>
+              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '24px' }}>
+                Reach Definitive Mechanical
+              </h2>
+              <div className="space-y-4">
+                {[
+                  { label: 'Phone', value: BUSINESS.phone, href: `tel:${BUSINESS.phoneRaw}` },
+                  { label: 'Email', value: BUSINESS.email, href: `mailto:${BUSINESS.email}` },
+                  { label: 'Address', value: BUSINESS.address.full },
+                  { label: 'Hours', value: BUSINESS.hours.display },
+                ].map((item) => (
+                  <div key={item.label}>
+                    <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6', marginBottom: '4px' }}>{item.label}</p>
+                    {item.href ? (
+                      <a href={item.href} style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '15px', textDecoration: 'none' }}
+                        onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
+                        onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.85)')}>
+                        {item.value}
+                      </a>
+                    ) : (
+                      <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '15px' }}>{item.value}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton variant="outline" text="REQUEST SERVICE ONLINE" href="/contact" size="lg" />
+              <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <CTABanner
+        heading="Ready to work with a licensed plumber who does it right?"
+        subtext="11 years in the DMV. Master Plumber licensed in four states. Written pricing before we start. 24/7 emergency service."
+        primaryBtn={{ text: `CALL ${BUSINESS.phone}`, href: `tel:${BUSINESS.phoneRaw}` }}
+        secondaryBtn={{ text: 'REQUEST SERVICE ONLINE', href: '/contact' }}
+        variant="gradient"
+      />
+    </>
+  );
+}
