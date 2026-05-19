@@ -5,18 +5,102 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import CTABanner from "@/components/ui/CTABanner";
 
 const REVIEWS = [
-  { name: "Marcus T.", location: "Largo, MD", rating: 5, date: "2024-11-12", service: "Emergency Plumbing", text: "Called at 11 PM with a burst pipe. A real person answered immediately, and a plumber was at my house within the hour. He fixed the pipe, cleaned up, and explained everything clearly. No surprise charges — exactly what they quoted. Definitive Mechanical is the only plumber I'll call." },
-  { name: "Sandra K.", location: "Bethesda, MD", rating: 5, date: "2024-10-28", service: "Water Heater Installation", text: "Our 14-year-old water heater finally gave out. Definitive Mechanical came out the same day, diagnosed the issue, and installed a new unit the following morning. The crew was professional, clean, and thorough. They even registered the warranty for us. Highly recommend." },
-  { name: "James R.", location: "Arlington, VA", rating: 5, date: "2024-10-05", service: "Sewer Line Repair", text: "We had a major sewer backup on a Friday afternoon. Definitive Mechanical ran a camera inspection, identified a root intrusion, and had the line cleared and repaired by Saturday evening. The pricing was transparent and fair. Outstanding service from start to finish." },
-  { name: "Patricia M.", location: "Washington, DC", rating: 5, date: "2024-09-18", service: "Backflow Certification", text: "We needed annual backflow certification for our commercial property. Definitive Mechanical handled the entire process — testing, certification, and DC Water filing. They were on time, professional, and had the paperwork submitted the same day. Will use them every year." },
-  { name: "David L.", location: "Rockville, MD", rating: 5, date: "2024-09-02", service: "Gas Line Installation", text: "Had a gas line run for a new range and outdoor grill connection. The team was meticulous — they pressure-tested the line, checked every connection, and walked me through the shutoff locations. Permitted and inspected. No shortcuts. Worth every penny." },
-  { name: "Angela W.", location: "Alexandria, VA", rating: 5, date: "2024-08-20", service: "Drain Cleaning", text: "Chronic slow drain in the kitchen that three other plumbers couldn't fix permanently. Definitive Mechanical ran a camera, found a partial blockage 40 feet in, and cleared it with hydro-jetting. Six months later, still flowing perfectly. Should have called them first." },
-  { name: "Robert H.", location: "Fort Washington, MD", rating: 5, date: "2024-08-07", service: "Emergency Plumbing", text: "Water heater started leaking at 6 AM on a Sunday. Called Definitive Mechanical, got a live person, and had a plumber here by 9 AM. He diagnosed a failed pressure relief valve, replaced it on the spot, and checked the entire system. No overtime charge. Exceptional." },
-  { name: "Christine B.", location: "McLean, VA", rating: 5, date: "2024-07-22", service: "Tankless Water Heater", text: "Upgraded from a tank water heater to a Navien tankless system. Definitive Mechanical handled the gas line upgrade, venting, and installation in one day. The crew was clean, knowledgeable, and the system has been flawless. Highly professional operation." },
-  { name: "Michael S.", location: "Bowie, MD", rating: 5, date: "2024-07-10", service: "Water Line Repair", text: "Main water line started losing pressure. Definitive Mechanical diagnosed a pinhole leak in the service line, gave me a clear written estimate, and repaired it the next day. They coordinated with WSSC for the permit and handled everything. Couldn't be happier." },
-  { name: "Vanessa P.", location: "Waldorf, MD", rating: 5, date: "2024-06-25", service: "Boiler Repair", text: "Our boiler stopped working in the middle of a cold snap. Definitive Mechanical came out within hours, diagnosed a failed circulator pump, and had the part on the truck. Heat was restored the same day. Professional, fast, and fairly priced." },
-  { name: "Thomas G.", location: "Ellicott City, MD", rating: 5, date: "2024-06-08", service: "Commercial Plumbing", text: "We manage a commercial property in Howard County and needed a licensed plumber for a major restroom renovation. Definitive Mechanical handled the full scope — rough-in, fixtures, and final inspection. On schedule, on budget, and zero punch-list items. Our go-to contractor." },
-  { name: "Linda F.", location: "Vienna, VA", rating: 5, date: "2024-05-30", service: "Hydro-Jetting", text: "Had recurring drain backups in an older home. Definitive Mechanical did a camera inspection, found significant grease and scale buildup, and hydro-jetted the entire main line. No more backups. They also gave me a maintenance schedule to prevent recurrence. Very thorough." },
+  {
+    name: "Teresa Salemi",
+    location: "Largo, MD",
+    rating: 5,
+    date: "2024-10-01",
+    service: "Drain Cleaning",
+    text: "We have now been using Definitive for about 13+ years. They are always quick to respond, thorough in their explanation and work. Keon came late in the day, diagnosed the problem quickly, and offered to fix it that night. He even reached out to WSSC on our behalf. Our technicians are always VERY clear and detailed in the estimate of work and then follow through. I cannot recommend them enough!"
+  },
+  {
+    name: "Pamela U. Minor",
+    location: "Largo, MD",
+    rating: 5,
+    date: "2024-09-15",
+    service: "Plumbing Repair",
+    text: "It was not the first time we used Definitive and they have become our #1 and only plumbing and mechanical service provider. The technicians arrived right on time and their professionalism was evident from the get-go. They meticulously inspected, diagnosed, and repaired the issue — and took the time to explain the problem in understandable terms. They maintained a clean and organized workspace, leaving my home in the same condition they found it, if not better. Five stars without a doubt!"
+  },
+  {
+    name: "William Maxwell",
+    location: "Maryland",
+    rating: 5,
+    date: "2024-10-20",
+    service: "Faucet & Valve Repair",
+    text: "After trying to get a reliable plumber for a few months to repair valves and faucet in my kitchen, I finally found the right company to do the job in Definitive Mechanical. The master plumber was very knowledgeable and did an excellent job. I will recommend Definitive Mechanical to anyone seeking high quality service and expertise."
+  },
+  {
+    name: "george guo",
+    location: "Maryland",
+    rating: 5,
+    date: "2024-08-01",
+    service: "Plumbing Service",
+    text: "Keon, the technician, demonstrated not only his professional experience when dealing with all aged problems at the job site, but also his great attention to making me happy at every step. I didn't spend more than 5 minutes cleaning after his work simply because he was well prepared to avoid any mess. Definitive Mechanical can be definitely creditable in delivering what they promise. Appreciate so much for this service."
+  },
+  {
+    name: "Aneeya Walters",
+    location: "Maryland",
+    rating: 5,
+    date: "2020-06-01",
+    service: "Emergency Plumbing",
+    text: "The service was absolutely impeccable! We were in the middle of an event with hundreds of people and called for a short notice repair. Not only was he responsive, but he understood the urgency and came to our rescue right away! This company is bar-none professional, skilled, and they truly care for their customer. Other companies tack on so many additional fees and hidden charges — Not Definitive! He was thorough in explaining his price and the work required. My husband and I give this company 5 stars, but would give 10 if we could!"
+  },
+  {
+    name: "Cash Fulton",
+    location: "Maryland",
+    rating: 5,
+    date: "2024-02-01",
+    service: "Plumbing Service",
+    text: "I found Definitive Mechanical through their high quality reviews. The reviews didn't lie — Keon and his team are the definition of what true professionals are. 10/10 highly recommended, I will be with Definitive Mechanical for life!"
+  },
+  {
+    name: "Chrissy Fennell",
+    location: "Maryland",
+    rating: 5,
+    date: "2018-01-01",
+    service: "Emergency Pipe Repair",
+    text: "Definitive Plumbing came to our rescue big time after we had pipes burst and flood our home! Keon did an amazing job finding the sources and rerouting the plumbing to get us up and running again. We can't thank him and the company enough. I've already recommended them to friends and will certainly use them for any future plumbing needs!"
+  },
+  {
+    name: "Evelyn Ross",
+    location: "Maryland",
+    rating: 5,
+    date: "2023-01-01",
+    service: "Toilet & Pipe Repair",
+    text: "I've used this company on several occasions and referred them to my family and friends. They are quite professional with great customer service. The technician was very detailed and explained what I needed to have done. I didn't feel they were overcharging me. I am very pleased with their service."
+  },
+  {
+    name: "Shekida Anna Smith-Sandy",
+    location: "Maryland",
+    rating: 5,
+    date: "2018-01-01",
+    service: "Multiple Services",
+    text: "I've worked with Definitive Plumbing & Heating for a number of years and have always had a great experience. The representatives are always on time, courteous, and professional. Most importantly, I've never had an issue with the materials used and I've never had to call to address the same issue twice. They rebuilt my toilet, replaced my kitchen faucet, sealed water lines, and replaced the garbage disposal. I couldn't be happier. Would definitely recommend."
+  },
+  {
+    name: "Marterese Green",
+    location: "Maryland",
+    rating: 5,
+    date: "2023-03-01",
+    service: "Emergency Plumbing",
+    text: "It was an emergency water issue at midnight. I went online and found Definitive — very professional and prompt. They took care of my issue and gave me informative information moving forward."
+  },
+  {
+    name: "LARIKUS SCOTT",
+    location: "Maryland",
+    rating: 5,
+    date: "2018-01-01",
+    service: "Emergency Service",
+    text: "We called them in a crunch and they delivered. It's hard to find a more professional service than these guys. They were on-time and really explained what the labor would be. I'd recommend Definitive any day."
+  },
+  {
+    name: "Kayla Jackson",
+    location: "Maryland",
+    rating: 5,
+    date: "2018-06-01",
+    service: "24/7 Emergency",
+    text: "I love that they're 24 hours, really came in handy when I needed it. Superb service — definitely recommend!!"
+  },
 ];
 
 const SCHEMA = {
@@ -28,8 +112,8 @@ const SCHEMA = {
       "name": "Definitive Mechanical",
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "127",
+        "ratingValue": "4.8",
+        "reviewCount": "40",
         "bestRating": "5",
         "worstRating": "1"
       },
@@ -78,15 +162,15 @@ export default function ReviewsPage() {
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>CUSTOMER REVIEWS · DEFINITIVE MECHANICAL</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>What Our Customers Say</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Verified reviews from homeowners and businesses across Maryland, Virginia, and Washington DC. Licensed, certified, and consistently 5-star rated.
+            Verified reviews from homeowners and businesses across Maryland, Virginia, and Washington DC. Licensed, certified, and consistently 4.8-star rated on Google.
           </p>
           {/* Aggregate rating display */}
           <div className="flex flex-col items-center mt-8 gap-2">
             <div className="flex gap-1">
               {[1,2,3,4,5].map(i => <Star key={i} size={32} fill="#F59E0B" stroke="#F59E0B" />)}
             </div>
-            <p className="text-white font-bold text-2xl" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>5.0 / 5.0</p>
-            <p className="text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>Based on 127 verified reviews</p>
+            <p className="text-white font-bold text-2xl" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>4.8 / 5.0</p>
+            <p className="text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>Based on 40 Google reviews</p>
           </div>
         </div>
       </section>
@@ -95,7 +179,7 @@ export default function ReviewsPage() {
       <section style={{ backgroundColor: "#009EC6" }} className="py-6">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
-            {[{ num: "127", label: "Verified Reviews" }, { num: "5.0★", label: "Average Rating" }, { num: "100%", label: "5-Star Reviews" }, { num: "24/7", label: "Emergency Service" }].map((s) => (
+            {[{ num: "40", label: "Google Reviews" }, { num: "4.8★", label: "Average Rating" }, { num: "13+", label: "Years in Business" }, { num: "24/7", label: "Emergency Service" }].map((s) => (
               <div key={s.label}>
                 <p className="text-2xl font-bold" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{s.num}</p>
                 <p className="text-sm text-white/80" style={{ fontFamily: "'Barlow', sans-serif" }}>{s.label}</p>
