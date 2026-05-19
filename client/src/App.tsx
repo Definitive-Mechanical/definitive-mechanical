@@ -41,6 +41,14 @@ import BackflowPrevention from "./pages/BackflowPrevention";
 import BackflowCertification from "./pages/BackflowCertification";
 import BackflowPreventerRepair from "./pages/BackflowPreventerRepair";
 
+// Boiler & Furnace
+import BoilerFurnaceRepair from "./pages/BoilerFurnaceRepair";
+import BoilerFurnaceInstallation from "./pages/BoilerFurnaceInstallation";
+
+// Fixtures
+import FaucetToiletRepair from "./pages/FaucetToiletRepair";
+import ResidentialPlumbing from "./pages/ResidentialPlumbing";
+
 // Commercial / Government
 import CommercialPlumbing from "./pages/CommercialPlumbing";
 import GovernmentMunicipalPlumbing from "./pages/GovernmentMunicipalPlumbing";
@@ -93,6 +101,14 @@ function Router() {
       <Route path="/backflow-prevention" component={() => <Layout><BackflowPrevention /></Layout>} />
       <Route path="/backflow-certification" component={() => <Layout><BackflowCertification /></Layout>} />
       <Route path="/backflow-preventer-repair" component={() => <Layout><BackflowPreventerRepair /></Layout>} />
+
+      {/* Boiler & Furnace */}
+      <Route path="/boiler-furnace-repair" component={() => <Layout><BoilerFurnaceRepair /></Layout>} />
+      <Route path="/boiler-furnace-installation" component={() => <Layout><BoilerFurnaceInstallation /></Layout>} />
+
+      {/* Fixtures & Residential */}
+      <Route path="/faucet-toilet-repair" component={() => <Layout><FaucetToiletRepair /></Layout>} />
+      <Route path="/residential-plumbing" component={() => <Layout><ResidentialPlumbing /></Layout>} />
 
       {/* Commercial / Government */}
       <Route path="/commercial-plumbing" component={() => <Layout><CommercialPlumbing /></Layout>} />
