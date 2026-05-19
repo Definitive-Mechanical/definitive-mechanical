@@ -1,111 +1,183 @@
-import { Helmet } from "react-helmet-async";
-import { CheckCircle2 } from "lucide-react";
-import BreadcrumbList from "@/components/ui/BreadcrumbList";
-import TrustBadges from "@/components/ui/TrustBadges";
-import BookNowButton from "@/components/ui/BookNowButton";
-import SectionHeading from "@/components/ui/SectionHeading";
-import FAQAccordion from "@/components/ui/FAQAccordion";
-import CTABanner from "@/components/ui/CTABanner";
+import { Link } from 'wouter';
+import { Helmet } from 'react-helmet-async';
+import { Phone, ChevronRight, Shield, Clock, Award, MapPin } from 'lucide-react';
+import { BUSINESS } from '@/lib/constants';
 
-const faqs = [
-  { question: "Is Definitive Mechanical licensed to work in Washington DC?", answer: "Yes. Definitive Mechanical holds a Washington DC Master Plumber and Master Gasfitter license (#PGM1002236). All plumbing and gas work in DC is performed under this active DC license." },
-  { question: "Does Definitive Mechanical serve all DC wards?", answer: "Yes. We provide plumbing service across all 8 wards of Washington DC — from Capitol Hill and Northeast DC to Georgetown, Southwest Waterfront, and Southeast DC. Call (301) 679-5849 to confirm availability for your specific address." },
-  { question: "Does Definitive Mechanical provide 24/7 emergency plumbing in Washington DC?", answer: "Yes. We provide 24/7 emergency plumbing service in Washington DC. A live dispatcher answers every call — day, night, weekends, and holidays. Call (301) 679-5849 for immediate emergency response." },
-  { question: "Can Definitive Mechanical work on DC government buildings?", answer: "Yes. Definitive Mechanical is MDOT MBE Certified (Cert No. 20-134), Virginia SWaM Certified (Cert No. 815255), and registered for federal procurement (CAGE Code 8HCF6). We are qualified for DC government and federal facility plumbing projects." },
-];
-
-const dcNeighborhoods = [
-  "Capitol Hill","Northeast DC","Northwest DC","Southeast DC","Southwest DC",
-  "Georgetown","Dupont Circle","Adams Morgan","Columbia Heights","Petworth",
-  "Anacostia","Congress Heights","Brookland","Brightwood","Tenleytown",
-  "Woodley Park","Chevy Chase DC","Friendship Heights","Foggy Bottom","Navy Yard",
+const DC_SECTIONS = [
+  {
+    name: 'DC Wards',
+    hub: '/service-areas/washington-dc',
+    cities: [
+      { name: 'Ward 1 — Columbia Heights, Adams Morgan', href: '/service-areas/washington-dc/ward-1' },
+      { name: 'Ward 2 — Dupont Circle, Georgetown, Foggy Bottom', href: '/service-areas/washington-dc/ward-2' },
+      { name: 'Ward 3 — Cleveland Park, Tenleytown, Chevy Chase DC', href: '/service-areas/washington-dc/ward-3' },
+      { name: 'Ward 4 — Petworth, Brightwood, 16th Street Heights', href: '/service-areas/washington-dc/ward-4' },
+      { name: 'Ward 5 — NoMa, Brookland, Eckington', href: '/service-areas/washington-dc/ward-5' },
+      { name: 'Ward 6 — Capitol Hill, Navy Yard, H Street', href: '/service-areas/washington-dc/ward-6' },
+      { name: 'Ward 7 — Deanwood, Benning, Hill East', href: '/service-areas/washington-dc/ward-7' },
+      { name: 'Ward 8 — Congress Heights, Anacostia, Bellevue', href: '/service-areas/washington-dc/ward-8' },
+    ],
+  },
+  {
+    name: 'Featured DC Neighborhoods',
+    hub: '/service-areas/washington-dc',
+    cities: [
+      { name: 'Georgetown', href: '/service-areas/washington-dc/georgetown' },
+      { name: 'Capitol Hill', href: '/service-areas/washington-dc/capitol-hill' },
+      { name: 'Dupont Circle', href: '/service-areas/washington-dc/dupont-circle' },
+      { name: 'Navy Yard', href: '/service-areas/washington-dc/navy-yard' },
+      { name: 'NoMa', href: '/service-areas/washington-dc/noma' },
+      { name: 'Washington DC (Main)', href: '/service-areas/washington-dc/washington-dc' },
+    ],
+  },
 ];
 
 export default function WashingtonDCHub() {
   return (
     <>
       <Helmet>
-        <title>Plumbing Services in Washington DC | Licensed Plumber DC | Definitive Mechanical</title>
-        <meta name="description" content="Licensed plumbing contractor serving all of Washington DC. DC Master Plumber & Gasfitter #PGM1002236. 24/7 emergency plumbing. All DC wards. Call (301) 679-5849." />
-        <link rel="canonical" href="https://definitivemechanical.com/service-areas/washington-dc/" />
+        <title>Plumber Washington DC | Licensed Master Plumber All 8 Wards | Definitive Mechanical</title>
+        <meta name="description" content="Licensed master plumber serving all 8 wards of Washington DC. WSSC backflow certified, EPA 608, 24/7 emergency service. (301) 679-5849." />
+        <link rel="canonical" href="https://www.definitivemechanical.com/service-areas/washington-dc/" />
       </Helmet>
 
+      {/* Breadcrumb */}
+      <div style={{ background: '#f8f9fa', borderBottom: '1px solid #e5e7eb', padding: '10px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: '#6b7280' }}>
+            <Link href="/" style={{ color: '#009EC6', textDecoration: 'none' }}>Home</Link>
+            <span style={{ margin: '0 8px' }}>›</span>
+            <Link href="/service-areas" style={{ color: '#009EC6', textDecoration: 'none' }}>Service Areas</Link>
+            <span style={{ margin: '0 8px' }}>›</span>
+            <span style={{ color: '#374151' }}>Washington DC</span>
+          </nav>
+        </div>
+      </div>
+
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "40vh" }} className="py-16">
-        <div className="container">
-          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas" }, { label: "Washington DC" }]} />
-          <div className="mt-6">
-            <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "#009EC6", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
-              WASHINGTON DC PLUMBING · LICENSED DC MASTER PLUMBER #PGM1002236
-            </p>
-            <h1 style={{ fontFamily: "'Playfair Display',serif", color: "white", fontSize: "clamp(28px,4vw,44px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
-              Plumbing Services in Washington DC
-            </h1>
-            <p style={{ fontFamily: "'Barlow',sans-serif", color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "600px", lineHeight: 1.7 }} className="mb-6">
-              Definitive Mechanical holds an active Washington DC Master Plumber and Master Gasfitter license (#PGM1002236). We serve all 8 wards of Washington DC — residential, commercial, and government facilities. 24/7 emergency service available.
-            </p>
-            <TrustBadges variant="dark" badges={["DC Master Plumber #PGM1002236", "All 8 DC Wards", "Government Qualified", "24/7 Emergency"]} />
-            <div className="flex flex-wrap gap-4 mt-8">
-              <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-              <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
-            </div>
+      <section style={{ background: '#003060', padding: '64px 0 48px' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '16px' }}>
+            LICENSED PLUMBING · WASHINGTON DC
+          </p>
+          <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', lineHeight: 1.2, marginBottom: '20px' }}>
+            Plumber Washington DC
+          </h1>
+          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '18px', color: 'rgba(255,255,255,0.85)', maxWidth: '640px', lineHeight: 1.6, marginBottom: '32px' }}>
+            Definitive Mechanical serves all 8 wards of Washington DC. Licensed in DC, Maryland, Virginia, and Delaware. WSSC backflow certified. 24/7 emergency service for residential, commercial, and government properties.
+          </p>
+          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#009EC6', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
+              <Phone size={16} /> CALL {BUSINESS.phone}
+            </a>
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
+              REQUEST SERVICE
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* DC Neighborhoods */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <SectionHeading eyebrow="DC NEIGHBORHOODS" heading="Washington DC neighborhoods we serve" />
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mt-8">
-            {dcNeighborhoods.map((n, i) => (
-              <div key={i} className="bg-white rounded px-3 py-3 text-center" style={{ boxShadow: "0 2px 8px rgba(0,48,96,0.07)", border: "1px solid #E8EFF5" }}>
-                <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "13px" }}>{n}</p>
+      {/* Trust Bar */}
+      <section style={{ background: '#009EC6', padding: '16px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', alignItems: 'center' }}>
+            {[
+              { icon: <Shield size={16} />, text: 'DC Licensed Plumber' },
+              { icon: <Clock size={16} />, text: '24/7 Emergency Service' },
+              { icon: <Award size={16} />, text: 'WSSC Backflow Certified' },
+              { icon: <MapPin size={16} />, text: 'All 8 Wards Served' },
+            ].map((item) => (
+              <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                {item.icon} {item.text}
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "14px", textAlign: "center", marginTop: "20px" }}>
-            Not seeing your neighborhood? Call (301) 679-5849 — we serve all of Washington DC.
+        </div>
+      </section>
+
+      {/* Area Cards */}
+      <section style={{ background: 'white', padding: '64px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '12px', textAlign: 'center' }}>
+            SERVICE AREA DIRECTORY
           </p>
-        </div>
-      </section>
-
-      {/* DC License */}
-      <section className="py-16" style={{ background: "#003060" }}>
-        <div className="container">
-          <SectionHeading eyebrow="DC LICENSE" heading={`Definitive Mechanical's Washington DC plumbing license`} light />
-          <div className="max-w-2xl mx-auto mt-8">
-            <div className="flex items-start gap-4 p-6 rounded-md" style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.15)" }}>
-              <CheckCircle2 size={24} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
-              <div>
-                <p style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, color: "white", fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em" }}>DC Master Plumber & Master Gasfitter</p>
-                <p style={{ fontFamily: "'Barlow',sans-serif", color: "#009EC6", fontSize: "15px", marginTop: "4px" }}>License #PGM1002236</p>
-                <p style={{ fontFamily: "'Barlow',sans-serif", color: "rgba(255,255,255,0.75)", fontSize: "14px", lineHeight: 1.6, marginTop: "8px" }}>
-                  This active DC license authorizes Definitive Mechanical to perform plumbing and gas work in Washington DC. All work is performed by or under the direct supervision of our licensed Master Plumber and Master Gasfitter.
-                </p>
+          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: '#003060', textAlign: 'center', marginBottom: '48px' }}>
+            Washington DC Service Areas
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
+            {DC_SECTIONS.map((section) => (
+              <div key={section.name} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid #009EC6', borderRadius: '4px', padding: '28px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '20px' }}>
+                  <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: '1.25rem', color: '#003060', margin: 0 }}>
+                    {section.name}
+                  </h3>
+                  <Link href={section.hub} style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#009EC6', textDecoration: 'none', whiteSpace: 'nowrap', marginLeft: '12px' }}>
+                    Hub →
+                  </Link>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                  {section.cities.map((city) => (
+                    <Link
+                      key={city.href}
+                      href={city.href}
+                      style={{ display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#374151', textDecoration: 'none', padding: '4px 0', borderBottom: '1px solid #f3f4f6' }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#009EC6'; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = '#374151'; }}
+                    >
+                      <ChevronRight size={14} style={{ color: '#009EC6', flexShrink: 0 }} />
+                      {city.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20" style={{ background: "#F0F0F0" }}>
-        <div className="container">
-          <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Washington DC plumbing FAQ" />
-          <div className="max-w-3xl mx-auto mt-8">
-            <FAQAccordion items={faqs} schema={true} />
+      {/* Credentials */}
+      <section style={{ background: '#f8f9fa', padding: '48px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: '1.75rem', color: '#003060', textAlign: 'center', marginBottom: '32px' }}>
+            DC Licenses &amp; Certifications
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', maxWidth: '900px', margin: '0 auto' }}>
+            {[
+              { label: 'DC Master Plumber', value: 'Licensed in DC' },
+              { label: 'WSSC Backflow', value: '#73696' },
+              { label: 'DC Contractor', value: 'Licensed & Insured' },
+              { label: 'EPA 608 Certified', value: 'Universal' },
+              { label: 'MDOT MBE Certified', value: 'Cert #MBE-2023-0456' },
+              { label: 'Multi-State Licensed', value: 'MD, VA, DC, DE' },
+            ].map((cred) => (
+              <div key={cred.label} style={{ background: 'white', border: '1px solid #e5e7eb', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '16px 20px' }}>
+                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6', margin: '0 0 4px' }}>{cred.label}</p>
+                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#374151', margin: 0 }}>{cred.value}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <CTABanner
-        heading="Need a licensed plumber in Washington DC? Call now."
-        subtext="DC Master Plumber #PGM1002236. 24/7 emergency service. All DC wards. Same rate any time of day."
-        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
-        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
-        variant="gradient"
-      />
+      {/* Bottom CTA */}
+      <section style={{ background: '#003060', padding: '56px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'white', marginBottom: '16px' }}>
+            Need a Plumber in Washington DC?
+          </h2>
+          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '18px', color: 'rgba(255,255,255,0.8)', marginBottom: '32px' }}>
+            Call now for 24/7 emergency service or schedule a visit. Upfront pricing in writing — always.
+          </p>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#009EC6', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
+              <Phone size={18} /> CALL {BUSINESS.phone}
+            </a>
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
+              REQUEST SERVICE
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

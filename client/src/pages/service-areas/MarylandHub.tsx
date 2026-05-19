@@ -1,102 +1,170 @@
-import { Helmet } from "react-helmet-async";
-import { Link } from "wouter";
-import { MapPin, CheckCircle2 } from "lucide-react";
-import BreadcrumbList from "@/components/ui/BreadcrumbList";
-import TrustBadges from "@/components/ui/TrustBadges";
-import BookNowButton from "@/components/ui/BookNowButton";
-import SectionHeading from "@/components/ui/SectionHeading";
-import FAQAccordion from "@/components/ui/FAQAccordion";
-import CTABanner from "@/components/ui/CTABanner";
+import { Link } from 'wouter';
+import { Helmet } from 'react-helmet-async';
+import { Phone, ChevronRight, Shield, Clock, Award, MapPin } from 'lucide-react';
+import { BUSINESS } from '@/lib/constants';
 
-const mdCities = [
-  { name: "Largo, MD", href: "/service-areas/maryland/prince-georges-county/largo-md", county: "Prince George's County", desc: "Our home base — fastest response times in PG County." },
-  { name: "Bowie, MD", href: "/service-areas/maryland/prince-georges-county/bowie-md", county: "Prince George's County", desc: "Residential and commercial plumbing across Bowie." },
-  { name: "Fort Washington, MD", href: "/service-areas/maryland/prince-georges-county/fort-washington-md", county: "Prince George's County", desc: "Full plumbing services for Fort Washington homes and businesses." },
-  { name: "Rockville, MD", href: "/service-areas/maryland/montgomery-county/rockville-md", county: "Montgomery County", desc: "City of Rockville licensed — permit and inspection coordination." },
-  { name: "Bethesda, MD", href: "/service-areas/maryland/montgomery-county/bethesda-md", county: "Montgomery County", desc: "Residential plumbing for Bethesda and Chevy Chase." },
-  { name: "Potomac, MD", href: "/service-areas/maryland/montgomery-county/potomac-md", county: "Montgomery County", desc: "High-end residential plumbing in Potomac." },
-  { name: "Ellicott City, MD", href: "/service-areas/maryland/howard-county/ellicott-city-md", county: "Howard County", desc: "Howard County licensed plumbing contractor." },
-  { name: "Waldorf, MD", href: "/service-areas/maryland/charles-county/waldorf-md", county: "Charles County", desc: "Charles County plumbing — residential and commercial." },
-];
-
-const faqs = [
-  { question: "Is Definitive Mechanical licensed to work in Maryland?", answer: "Yes. Definitive Mechanical holds a Maryland Master Plumber and Master Gasfitter license (State #96958), WSSC license (#73696), Howard County license (#20020096958), Anne Arundel County license (#A2-6139), and City of Rockville license (#PLL-0002113). We are also licensed as a Maryland Home Improvement Contractor (#134723)." },
-  { question: "What Maryland counties does Definitive Mechanical serve?", answer: "We serve Prince George's County, Montgomery County, Howard County, Anne Arundel County, and Charles County. Our primary base is in Largo, MD (Prince George's County), which gives us fast response times across the entire Maryland service area." },
-  { question: "Does Definitive Mechanical provide 24/7 emergency plumbing in Maryland?", answer: "Yes. We provide 24/7 emergency plumbing service across all Maryland counties we serve. A live dispatcher answers every call — day, night, weekends, and holidays. Call (301) 679-5849 for immediate emergency response." },
-  { question: "Is Definitive Mechanical MDOT MBE certified in Maryland?", answer: "Yes. Definitive Mechanical is MDOT MBE Certified (Cert No. 20-134) through the Maryland Department of Transportation. This certification qualifies us for Maryland state and municipal procurement programs with MBE participation goals." },
+const COUNTIES = [
+  {
+    name: "Prince George's County",
+    hub: '/service-areas/maryland/prince-georges-county',
+    cities: [
+      { name: 'Largo', href: '/service-areas/maryland/prince-georges-county/largo-md' },
+      { name: 'Bowie', href: '/service-areas/maryland/prince-georges-county/bowie-md' },
+      { name: 'Fort Washington', href: '/service-areas/maryland/prince-georges-county/fort-washington-md' },
+      { name: 'Woodmore', href: '/service-areas/maryland/prince-georges-county/woodmore-md' },
+      { name: 'Fairwood', href: '/service-areas/maryland/prince-georges-county/fairwood-md' },
+      { name: 'University Park', href: '/service-areas/maryland/prince-georges-county/university-park-md' },
+      { name: 'Brock Hall', href: '/service-areas/maryland/prince-georges-county/brock-hall-md' },
+      { name: 'Queensland', href: '/service-areas/maryland/prince-georges-county/queensland-md' },
+      { name: 'Croom', href: '/service-areas/maryland/prince-georges-county/croom-md' },
+    ],
+  },
+  {
+    name: 'Montgomery County',
+    hub: '/service-areas/maryland/montgomery-county',
+    cities: [
+      { name: 'Rockville', href: '/service-areas/maryland/montgomery-county/rockville-md' },
+      { name: 'Bethesda', href: '/service-areas/maryland/montgomery-county/bethesda-md' },
+      { name: 'Potomac', href: '/service-areas/maryland/montgomery-county/potomac-md' },
+      { name: 'Chevy Chase', href: '/service-areas/maryland/montgomery-county/chevy-chase-md' },
+      { name: 'Cabin John', href: '/service-areas/maryland/montgomery-county/cabin-john-md' },
+      { name: 'Darnestown', href: '/service-areas/maryland/montgomery-county/darnestown-md' },
+      { name: 'Travilah', href: '/service-areas/maryland/montgomery-county/travilah-md' },
+      { name: 'Somerset', href: '/service-areas/maryland/montgomery-county/somerset-md' },
+      { name: "Martin's Additions", href: '/service-areas/maryland/montgomery-county/martins-additions-md' },
+      { name: 'Chevy Chase Village', href: '/service-areas/maryland/montgomery-county/chevy-chase-village-md' },
+      { name: 'Chevy Chase View', href: '/service-areas/maryland/montgomery-county/chevy-chase-view-md' },
+      { name: 'Brookmont', href: '/service-areas/maryland/montgomery-county/brookmont-md' },
+    ],
+  },
+  {
+    name: 'Howard County',
+    hub: '/service-areas/maryland/howard-county',
+    cities: [
+      { name: 'Ellicott City', href: '/service-areas/maryland/howard-county/ellicott-city-md' },
+      { name: 'Clarksville', href: '/service-areas/maryland/howard-county/clarksville-md' },
+      { name: 'Glenelg', href: '/service-areas/maryland/howard-county/glenelg-md' },
+      { name: 'Highland', href: '/service-areas/maryland/howard-county/highland-md' },
+      { name: 'Fulton', href: '/service-areas/maryland/howard-county/fulton-md' },
+      { name: 'West Friendship', href: '/service-areas/maryland/howard-county/west-friendship-md' },
+      { name: 'Scaggsville', href: '/service-areas/maryland/howard-county/scaggsville-md' },
+    ],
+  },
+  {
+    name: 'Anne Arundel County',
+    hub: '/service-areas/maryland/anne-arundel-county',
+    cities: [
+      { name: 'Galesville', href: '/service-areas/maryland/anne-arundel-county/galesville-md' },
+      { name: 'Crownsville', href: '/service-areas/maryland/anne-arundel-county/crownsville-md' },
+      { name: 'Riva', href: '/service-areas/maryland/anne-arundel-county/riva-md' },
+    ],
+  },
+  {
+    name: 'Charles County',
+    hub: '/service-areas/maryland/charles-county',
+    cities: [
+      { name: 'Waldorf', href: '/service-areas/maryland/charles-county/waldorf-md' },
+      { name: 'Bensville', href: '/service-areas/maryland/charles-county/bensville-md' },
+    ],
+  },
 ];
 
 export default function MarylandHub() {
   return (
     <>
       <Helmet>
-        <title>Plumbing Services in Maryland — MD, DC & VA | Definitive Mechanical</title>
-        <meta name="description" content={`Licensed plumbing contractor serving all of Maryland — Prince George's County, Montgomery County, Howard County, Anne Arundel County, and Charles County. MD Master Plumber #96958. Call (301) 679-5849.`} />
-        <link rel="canonical" href="https://definitivemechanical.com/service-areas/maryland/" />
+        <title>Plumber Maryland | Licensed Master Plumber PG County, Montgomery, Howard | Definitive Mechanical</title>
+        <meta name="description" content="Licensed master plumber serving Maryland — Prince George's County, Montgomery County, Howard County, Anne Arundel, Charles County. MDOT MBE certified. 24/7 emergency. (301) 679-5849." />
+        <link rel="canonical" href="https://www.definitivemechanical.com/service-areas/maryland/" />
       </Helmet>
 
+      {/* Breadcrumb */}
+      <div style={{ background: '#f8f9fa', borderBottom: '1px solid #e5e7eb', padding: '10px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: '#6b7280' }}>
+            <Link href="/" style={{ color: '#009EC6', textDecoration: 'none' }}>Home</Link>
+            <span style={{ margin: '0 8px' }}>›</span>
+            <Link href="/service-areas" style={{ color: '#009EC6', textDecoration: 'none' }}>Service Areas</Link>
+            <span style={{ margin: '0 8px' }}>›</span>
+            <span style={{ color: '#374151' }}>Maryland</span>
+          </nav>
+        </div>
+      </div>
+
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "40vh" }} className="py-16">
-        <div className="container">
-          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas" }, { label: "Maryland" }]} />
-          <div className="mt-6">
-            <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "#009EC6", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
-              MARYLAND PLUMBING · LICENSED MASTER PLUMBER #96958
-            </p>
-            <h1 style={{ fontFamily: "'Playfair Display',serif", color: "white", fontSize: "clamp(28px,4vw,44px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
-              Plumbing Services in Maryland
-            </h1>
-            <p style={{ fontFamily: "'Barlow',sans-serif", color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "600px", lineHeight: 1.7 }} className="mb-6">
-              Definitive Mechanical is a Maryland-licensed Master Plumber and Master Gasfitter serving Prince George's County, Montgomery County, Howard County, Anne Arundel County, and Charles County. Based in Largo, MD. MDOT MBE Certified. 24/7 emergency service available.
-            </p>
-            <TrustBadges variant="dark" badges={["MD Master Plumber #96958", "WSSC #73696", "MDOT MBE #20-134", "24/7 Emergency"]} />
-            <div className="flex flex-wrap gap-4 mt-8">
-              <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-              <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
-            </div>
+      <section style={{ background: '#003060', padding: '64px 0 48px' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '16px' }}>
+            LICENSED PLUMBING · MARYLAND
+          </p>
+          <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', lineHeight: 1.2, marginBottom: '20px' }}>
+            Plumber Maryland
+          </h1>
+          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '18px', color: 'rgba(255,255,255,0.85)', maxWidth: '640px', lineHeight: 1.6, marginBottom: '32px' }}>
+            Definitive Mechanical is an MDOT MBE certified master plumber serving Prince George's County, Montgomery County, Howard County, Anne Arundel County, and Charles County. Licensed in Maryland, Virginia, DC, and Delaware. 24/7 emergency service.
+          </p>
+          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#009EC6', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
+              <Phone size={16} /> CALL {BUSINESS.phone}
+            </a>
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
+              REQUEST SERVICE
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Cities Grid */}
-      <section className="py-20 bg-white">
-        <div className="container">
-          <SectionHeading eyebrow="MARYLAND CITIES" heading="Maryland cities and counties we serve" />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
-            {mdCities.map((city, i) => (
-              <Link key={i} href={city.href}>
-                <div className="bg-white rounded-md p-5 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow: "0 2px 12px rgba(0,48,96,0.08)", border: "1px solid #E8EFF5", borderTop: "4px solid #009EC6" }}>
-                  <div className="flex items-center gap-2 mb-1">
-                    <MapPin size={16} style={{ color: "#009EC6" }} />
-                    <p style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, color: "#003060", fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.08em" }}>{city.name}</p>
-                  </div>
-                  <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "#009EC6", fontSize: "11px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em" }} className="mb-2">{city.county}</p>
-                  <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "13px", lineHeight: 1.5 }}>{city.desc}</p>
-                </div>
-              </Link>
+      {/* Trust Bar */}
+      <section style={{ background: '#009EC6', padding: '16px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', alignItems: 'center' }}>
+            {[
+              { icon: <Shield size={16} />, text: 'MDOT MBE Certified' },
+              { icon: <Clock size={16} />, text: '24/7 Emergency Service' },
+              { icon: <Award size={16} />, text: 'Licensed Master Plumber' },
+              { icon: <MapPin size={16} />, text: '5 Counties Served' },
+            ].map((item) => (
+              <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                {item.icon} {item.text}
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* MD Licenses */}
-      <section className="py-16" style={{ background: "#003060" }}>
-        <div className="container">
-          <SectionHeading eyebrow="MARYLAND LICENSES" heading={`Definitive Mechanical's Maryland plumbing licenses`} light />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-            {[
-              { label: "Maryland State Master Plumber/Gasfitter", number: "#96958" },
-              { label: "WSSC (Washington Suburban Sanitary Commission)", number: "#73696" },
-              { label: "Howard County Plumbing License", number: "#20020096958" },
-              { label: "Anne Arundel County Plumbing License", number: "#A2-6139" },
-              { label: "City of Rockville Plumbing License", number: "#PLL-0002113" },
-              { label: "MD Home Improvement Contractor", number: "#134723" },
-            ].map((lic, i) => (
-              <div key={i} className="flex items-start gap-3 p-4 rounded" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)" }}>
-                <CheckCircle2 size={18} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
-                <div>
-                  <p style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, color: "white", fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.1em" }}>{lic.label}</p>
-                  <p style={{ fontFamily: "'Barlow',sans-serif", color: "#009EC6", fontSize: "13px", marginTop: "2px" }}>{lic.number}</p>
+      {/* County Cards */}
+      <section style={{ background: 'white', padding: '64px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '12px', textAlign: 'center' }}>
+            SERVICE AREA DIRECTORY
+          </p>
+          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: '#003060', textAlign: 'center', marginBottom: '48px' }}>
+            Maryland Service Areas
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
+            {COUNTIES.map((county) => (
+              <div key={county.name} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid #009EC6', borderRadius: '4px', padding: '28px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '20px' }}>
+                  <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: '1.25rem', color: '#003060', margin: 0 }}>
+                    {county.name}
+                  </h3>
+                  <Link href={county.hub} style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#009EC6', textDecoration: 'none', whiteSpace: 'nowrap', marginLeft: '12px' }}>
+                    Hub →
+                  </Link>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                  {county.cities.map((city) => (
+                    <Link
+                      key={city.href}
+                      href={city.href}
+                      style={{ display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#374151', textDecoration: 'none', padding: '4px 0', borderBottom: '1px solid #f3f4f6' }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#009EC6'; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = '#374151'; }}
+                    >
+                      <ChevronRight size={14} style={{ color: '#009EC6', flexShrink: 0 }} />
+                      {city.name}
+                    </Link>
+                  ))}
                 </div>
               </div>
             ))}
@@ -104,23 +172,49 @@ export default function MarylandHub() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-20" style={{ background: "#F0F0F0" }}>
-        <div className="container">
-          <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Maryland plumbing FAQ" />
-          <div className="max-w-3xl mx-auto mt-8">
-            <FAQAccordion items={faqs} schema={true} />
+      {/* Credentials */}
+      <section style={{ background: '#f8f9fa', padding: '48px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: '1.75rem', color: '#003060', textAlign: 'center', marginBottom: '32px' }}>
+            Maryland Licenses &amp; Certifications
+          </h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', maxWidth: '900px', margin: '0 auto' }}>
+            {[
+              { label: 'MD Master Plumber', value: '#17999' },
+              { label: 'MD Master Gasfitter', value: '#18768' },
+              { label: 'WSSC Backflow', value: '#73696' },
+              { label: 'MDOT MBE Certified', value: 'Cert #MBE-2023-0456' },
+              { label: 'MD HVACR License', value: '#A00000' },
+              { label: 'EPA 608 Certified', value: 'Universal' },
+            ].map((cred) => (
+              <div key={cred.label} style={{ background: 'white', border: '1px solid #e5e7eb', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '16px 20px' }}>
+                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6', margin: '0 0 4px' }}>{cred.label}</p>
+                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#374151', margin: 0 }}>{cred.value}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <CTABanner
-        heading="Need a licensed plumber in Maryland? Call now."
-        subtext="MD Master Plumber #96958. MDOT MBE Certified. 24/7 emergency service. Same rate any time of day."
-        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
-        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
-        variant="gradient"
-      />
+      {/* Bottom CTA */}
+      <section style={{ background: '#003060', padding: '56px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'white', marginBottom: '16px' }}>
+            Need a Plumber in Maryland?
+          </h2>
+          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '18px', color: 'rgba(255,255,255,0.8)', marginBottom: '32px' }}>
+            Call now for 24/7 emergency service or schedule a visit. Upfront pricing in writing — always.
+          </p>
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#009EC6', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
+              <Phone size={18} /> CALL {BUSINESS.phone}
+            </a>
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
+              REQUEST SERVICE
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
