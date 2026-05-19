@@ -79,7 +79,7 @@ export default function EmergencyRockvilleMD() {
       {/* Hero */}
       <section style={{ background: "linear-gradient(135deg, #001830 0%, #003060 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container">
-          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Rockville MD" }]} dark />
+          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Rockville MD" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>
             24/7 EMERGENCY PLUMBER · ROCKVILLE, MD · CITY OF ROCKVILLE LICENSED
           </p>
@@ -96,7 +96,7 @@ export default function EmergencyRockvilleMD() {
               <Phone className="mr-3" size={24} /> CALL (301) 679-5849 — LIVE DISPATCHER 24/7
             </a>
             <div className="mt-3 flex justify-center">
-              <BookNowButton variant="outline" size="sm">Request Emergency Service</BookNowButton>
+              <BookNowButton variant="outline" size="sm" text="REQUEST EMERGENCY SERVICE" href="/contact/" />
             </div>
           </div>
 

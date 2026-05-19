@@ -61,7 +61,7 @@ export default function EmergencyAlexandriaVA() {
 
       <section style={{ background: "linear-gradient(135deg, #001830 0%, #003060 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
-          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Alexandria, VA" }]} dark />
+          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Alexandria, VA" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · ALEXANDRIA, VA · OLD TOWN & ALL NEIGHBORHOODS</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Emergency Plumber in Alexandria, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
@@ -71,7 +71,7 @@ export default function EmergencyAlexandriaVA() {
             <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "#009EC6", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
               <Phone className="mr-3" size={24} /> CALL (301) 679-5849 — LIVE DISPATCHER 24/7
             </a>
-            <div className="mt-3 flex justify-center"><BookNowButton variant="outline" size="sm">Request Emergency Service</BookNowButton></div>
+            <div className="mt-3 flex justify-center"><BookNowButton variant="outline" size="sm" text="REQUEST EMERGENCY SERVICE" href="/contact/" /></div>
           </div>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Master Plumber #2710064209</span>

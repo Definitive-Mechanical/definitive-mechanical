@@ -1,7 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import { Phone, ShieldCheck, Key } from "lucide-react";
 import BreadcrumbList from "@/components/ui/BreadcrumbList";
-import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABanner from "@/components/ui/CTABanner";
 
@@ -25,7 +24,7 @@ export default function LoudounCounty() {
 
       <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "45vh" }} className="flex items-center py-16">
         <div className="container text-center">
-          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Northern Virginia", href: "/service-areas/northern-virginia/" }, { label: "Loudoun County" }]} dark />
+          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Northern Virginia", href: "/service-areas/northern-virginia/" }, { label: "Loudoun County" }]}/>
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES · LOUDOUN COUNTY, VA</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Plumber in Loudoun County, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
@@ -35,7 +34,7 @@ export default function LoudounCounty() {
             <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
               <Phone size={20} /> CALL (301) 679-5849
             </a>
-            <BookNowButton variant="outline" size="lg">Request Service</BookNowButton>
+            <a href="/contact/" className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[#003060] transition-colors" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>Request Service</a>
           </div>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Class A #2705-183416-A</span>
