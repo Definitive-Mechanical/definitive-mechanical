@@ -62,10 +62,6 @@ const AREAS_DROPDOWN = [
   { label: 'Maryland', href: '/service-areas/maryland' },
   { label: 'Washington DC', href: '/service-areas/washington-dc' },
   { label: 'Northern Virginia', href: '/service-areas/northern-virginia' },
-  { label: 'Largo, MD', href: '/service-areas/maryland/prince-georges-county/largo-md' },
-  { label: 'Rockville, MD', href: '/service-areas/maryland/montgomery-county/rockville-md' },
-  { label: 'Alexandria, VA', href: '/service-areas/northern-virginia/fairfax-county/alexandria-va' },
-  { label: 'Arlington, VA', href: '/service-areas/northern-virginia/arlington-county/arlington-va' },
 ];
 
 export default function Header() {
