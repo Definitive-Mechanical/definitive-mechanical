@@ -72,7 +72,7 @@ export default function BackflowCertificationMaryland() {
 
       <section className="py-16 bg-white">
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="WSSC Requirement" title="What is WSSC's backflow preventer certification requirement?" />
+          <SectionHeading eyebrow="WSSC Requirement" heading="What is WSSC's backflow preventer certification requirement?" />
           <div className="mt-8 space-y-4">
             <p className="text-base" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               WSSC Water serves Prince George's County and Montgomery County. WSSC requires annual backflow preventer testing and certification for all commercial, industrial, and multi-family properties. Testing must be performed by a WSSC-licensed backflow tester and results submitted to WSSC. Failure to maintain current certification can result in water service interruption.
@@ -86,7 +86,7 @@ export default function BackflowCertificationMaryland() {
 
       <section className="py-16" style={{ background: "#F0F0F0" }}>
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Maryland Coverage" title="Which Maryland counties does Definitive Mechanical serve for backflow certification?" />
+          <SectionHeading eyebrow="Maryland Coverage" heading="Which Maryland counties does Definitive Mechanical serve for backflow certification?" />
           <div className="mt-8 overflow-x-auto">
             <table className="w-full text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
               <thead>
@@ -112,7 +112,7 @@ export default function BackflowCertificationMaryland() {
 
       <section className="py-16 bg-white">
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Services" title="Backflow preventer types we test and certify in Maryland" />
+          <SectionHeading eyebrow="Services" heading="Backflow preventer types we test and certify in Maryland" />
           <div className="mt-8 grid md:grid-cols-2 gap-4">
             {[
               { type: "Reduced Pressure Zone (RPZ)", desc: "Required for high-hazard applications including irrigation, fire suppression, and industrial processes." },
@@ -150,7 +150,7 @@ export default function BackflowCertificationMaryland() {
 
       <section className="py-16 bg-white">
         <div className="container max-w-3xl">
-          <SectionHeading eyebrow="FAQ" title="Backflow Certification Maryland — Frequently Asked Questions" />
+          <SectionHeading eyebrow="FAQ" heading="Backflow Certification Maryland — Frequently Asked Questions" />
           <div className="mt-8"><FAQAccordion items={FAQS} /></div>
         </div>
       </section>

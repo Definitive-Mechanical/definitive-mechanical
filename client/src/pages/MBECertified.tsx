@@ -112,7 +112,7 @@ export default function MBECertified() {
       {/* What is MDOT MBE */}
       <section className="py-16 bg-white">
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="About MBE Certification" title="What is MDOT MBE certification?" />
+          <SectionHeading eyebrow="About MBE Certification" heading="What is MDOT MBE certification?" />
           <div className="mt-8 space-y-4">
             <p className="text-base" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               MDOT MBE (Minority Business Enterprise) certification is administered by the Maryland Department of Transportation under the Minority Business Enterprise Program. To obtain and maintain MBE certification, a business must: (1) be at least 51% owned and controlled by a member of a socially and economically disadvantaged group; (2) be independently operated; (3) meet applicable size standards.
@@ -127,7 +127,7 @@ export default function MBECertified() {
       {/* Which Agencies */}
       <section className="py-16" style={{ background: "#F0F0F0" }}>
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Applicable Agencies" title="Which Maryland government contracts and agencies does MBE certification apply to?" />
+          <SectionHeading eyebrow="Applicable Agencies" heading="Which Maryland government contracts and agencies does MBE certification apply to?" />
           <div className="mt-8 grid md:grid-cols-2 gap-4">
             {[
               { title: "State of Maryland Agencies", body: "State Highway Administration, MDOT, Maryland Department of General Services, Department of Public Safety, and all State agencies with MBE participation goals." },
@@ -149,7 +149,7 @@ export default function MBECertified() {
       {/* Services for Government */}
       <section className="py-16 bg-white">
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Services" title="What plumbing and mechanical services does Definitive Mechanical provide to government and institutional clients?" />
+          <SectionHeading eyebrow="Services" heading="What plumbing and mechanical services does Definitive Mechanical provide to government and institutional clients?" />
           <div className="mt-8 grid md:grid-cols-2 gap-4">
             {[
               "Code-compliant facility plumbing repairs and maintenance",
@@ -171,7 +171,7 @@ export default function MBECertified() {
       {/* Engagement Pathway */}
       <section className="py-16" style={{ background: "#003060" }}>
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Engagement Process" title="How does a government agency or prime contractor engage Definitive Mechanical?" light />
+          <SectionHeading eyebrow="Engagement Process" heading="How does a government agency or prime contractor engage Definitive Mechanical?" light />
           <div className="mt-10 grid md:grid-cols-2 gap-6">
             {ENGAGEMENT_STEPS.map(s => (
               <div key={s.step} className="p-6 rounded-lg" style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(0,158,198,0.3)" }}>
@@ -202,7 +202,7 @@ export default function MBECertified() {
       {/* FAQ */}
       <section className="py-16 bg-white">
         <div className="container max-w-3xl">
-          <SectionHeading eyebrow="FAQ" title="MBE Certified Plumbing Contractor Maryland — Frequently Asked Questions" />
+          <SectionHeading eyebrow="FAQ" heading="MBE Certified Plumbing Contractor Maryland — Frequently Asked Questions" />
           <div className="mt-8">
             <FAQAccordion items={FAQS} />
           </div>

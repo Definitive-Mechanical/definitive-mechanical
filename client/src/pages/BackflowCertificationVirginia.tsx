@@ -73,7 +73,7 @@ export default function BackflowCertificationVirginia() {
 
       <section className="py-16 bg-white">
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Virginia Requirements" title="Which Virginia water authorities require annual backflow certification?" />
+          <SectionHeading eyebrow="Virginia Requirements" heading="Which Virginia water authorities require annual backflow certification?" />
           <div className="mt-8 overflow-x-auto">
             <table className="w-full text-sm" style={{ fontFamily: "\'Barlow\', sans-serif" }}>
               <thead>
@@ -99,7 +99,7 @@ export default function BackflowCertificationVirginia() {
 
       <section className="py-16" style={{ background: "#F0F0F0" }}>
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Services" title="Backflow preventer types we test and certify in Virginia" />
+          <SectionHeading eyebrow="Services" heading="Backflow preventer types we test and certify in Virginia" />
           <div className="mt-8 grid md:grid-cols-2 gap-4">
             {[
               { type: "Reduced Pressure Zone (RPZ)", desc: "Required for high-hazard applications including irrigation, fire suppression, and industrial processes." },
@@ -121,7 +121,7 @@ export default function BackflowCertificationVirginia() {
 
       <section className="py-16 bg-white">
         <div className="container max-w-3xl">
-          <SectionHeading eyebrow="FAQ" title="Backflow Certification Virginia — Frequently Asked Questions" />
+          <SectionHeading eyebrow="FAQ" heading="Backflow Certification Virginia — Frequently Asked Questions" />
           <div className="mt-8"><FAQAccordion items={FAQS} /></div>
         </div>
       </section>

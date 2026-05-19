@@ -92,7 +92,7 @@ export default function CommercialPlumberNorthernVirginia() {
       {/* NOVA Markets */}
       <section className="py-16 bg-white">
         <div className="container">
-          <SectionHeading eyebrow="Northern Virginia Markets" title="What commercial markets does Definitive Mechanical serve in Northern Virginia?" />
+          <SectionHeading eyebrow="Northern Virginia Markets" heading="What commercial markets does Definitive Mechanical serve in Northern Virginia?" />
           <div className="grid md:grid-cols-2 gap-6 mt-10">
             {NOVA_MARKETS.map(m => (
               <div key={m.title} className="p-6 rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
@@ -108,7 +108,7 @@ export default function CommercialPlumberNorthernVirginia() {
       {/* SWaM Section */}
       <section className="py-16" style={{ background: "#F0F0F0" }}>
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Government Procurement" title="Virginia SWaM certification for commercial and government contracting" />
+          <SectionHeading eyebrow="Government Procurement" heading="Virginia SWaM certification for commercial and government contracting" />
           <div className="mt-8 p-8 bg-white rounded-lg shadow-sm">
             <p className="text-base mb-4" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               Virginia SWaM (Small, Women-owned, and Minority-owned Business) certification is administered by the Virginia Department of Small Business and Supplier Diversity (SBSD). Definitive Mechanical holds SWaM Cert No. 815255, which qualifies us for procurement preferences with Virginia state agencies, universities, and local government purchasers.
@@ -126,7 +126,7 @@ export default function CommercialPlumberNorthernVirginia() {
       {/* Federal & Defense */}
       <section className="py-16 bg-white">
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Federal & Defense" title="Federal and defense contractor facilities in Northern Virginia" />
+          <SectionHeading eyebrow="Federal & Defense" heading="Federal and defense contractor facilities in Northern Virginia" />
           <div className="mt-8 space-y-4">
             <p className="text-base" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               Northern Virginia is home to the Pentagon, Fort Belvoir, NGA, and hundreds of defense contractor office buildings. Definitive Mechanical holds CAGE Code 8HCF6 and NAICS Code 238220, and is registered through the federal SAM.gov system. We are familiar with the access, badging, and compliance requirements common to defense-adjacent facility work.
@@ -141,7 +141,7 @@ export default function CommercialPlumberNorthernVirginia() {
       {/* Licensing Block */}
       <section className="py-16" style={{ background: "#F0F0F0" }}>
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Licensing" title="Are you licensed for commercial plumbing in all Northern Virginia jurisdictions?" />
+          <SectionHeading eyebrow="Licensing" heading="Are you licensed for commercial plumbing in all Northern Virginia jurisdictions?" />
           <div className="mt-8 grid md:grid-cols-2 gap-8">
             <div className="p-6 rounded-lg bg-white" style={{ border: "2px solid #003060" }}>
               <h3 className="font-bold text-lg mb-4" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Virginia License Portfolio</h3>
@@ -179,7 +179,7 @@ export default function CommercialPlumberNorthernVirginia() {
       {/* FAQ */}
       <section className="py-16 bg-white">
         <div className="container max-w-3xl">
-          <SectionHeading eyebrow="FAQ" title="Commercial Plumbing Northern Virginia — Frequently Asked Questions" />
+          <SectionHeading eyebrow="FAQ" heading="Commercial Plumbing Northern Virginia — Frequently Asked Questions" />
           <div className="mt-8">
             <FAQAccordion items={FAQS} />
           </div>

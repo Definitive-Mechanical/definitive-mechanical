@@ -64,7 +64,7 @@ export default function BackflowCertificationDC() {
 
       <section className="py-16 bg-white">
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="DC Water Requirement" title="What is DC Water's backflow preventer certification requirement?" />
+          <SectionHeading eyebrow="DC Water Requirement" heading="What is DC Water's backflow preventer certification requirement?" />
           <div className="mt-8 space-y-4">
             <p className="text-base" style={{ color: "#484848", fontFamily: "\'Barlow\', sans-serif", lineHeight: 1.7 }}>
               DC Water (DC Water and Sewer Authority) requires annual backflow preventer testing and certification for all commercial, industrial, and multi-family properties in Washington DC. Testing must be performed by a DC Water-approved backflow tester and results submitted directly to DC Water.
@@ -78,7 +78,7 @@ export default function BackflowCertificationDC() {
 
       <section className="py-16" style={{ background: "#F0F0F0" }}>
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="DC Neighborhoods Served" title="Washington DC neighborhoods and commercial corridors we serve" />
+          <SectionHeading eyebrow="DC Neighborhoods Served" heading="Washington DC neighborhoods and commercial corridors we serve" />
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
             {["Capitol Hill", "Downtown DC", "Georgetown", "Dupont Circle", "Adams Morgan", "Columbia Heights", "NoMa", "Navy Yard", "Southwest Waterfront", "Foggy Bottom", "Woodley Park", "Tenleytown", "Petworth", "Brookland", "Anacostia", "Congress Heights"].map(n => (
               <div key={n} className="p-3 bg-white rounded text-center text-sm font-medium" style={{ color: "#003060", fontFamily: "\'Barlow\', sans-serif" }}>{n}</div>
@@ -89,7 +89,7 @@ export default function BackflowCertificationDC() {
 
       <section className="py-16 bg-white">
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Services" title="Backflow preventer types we test and certify in Washington DC" />
+          <SectionHeading eyebrow="Services" heading="Backflow preventer types we test and certify in Washington DC" />
           <div className="mt-8 grid md:grid-cols-2 gap-4">
             {[
               { type: "Reduced Pressure Zone (RPZ)", desc: "Required for high-hazard applications including irrigation, fire suppression, and industrial processes." },
@@ -111,7 +111,7 @@ export default function BackflowCertificationDC() {
 
       <section className="py-16 bg-white">
         <div className="container max-w-3xl">
-          <SectionHeading eyebrow="FAQ" title="Backflow Certification Washington DC — Frequently Asked Questions" />
+          <SectionHeading eyebrow="FAQ" heading="Backflow Certification Washington DC — Frequently Asked Questions" />
           <div className="mt-8"><FAQAccordion items={FAQS} /></div>
         </div>
       </section>

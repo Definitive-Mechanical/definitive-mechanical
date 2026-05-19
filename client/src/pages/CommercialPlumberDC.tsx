@@ -93,7 +93,7 @@ export default function CommercialPlumberDC() {
       {/* DC Markets */}
       <section className="py-16 bg-white">
         <div className="container">
-          <SectionHeading eyebrow="DC Commercial Markets" title="What commercial properties do you serve in Washington, DC?" />
+          <SectionHeading eyebrow="DC Commercial Markets" heading="What commercial properties do you serve in Washington, DC?" />
           <div className="grid md:grid-cols-2 gap-6 mt-10">
             {DC_MARKETS.map(m => (
               <div key={m.title} className="p-6 rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
@@ -109,7 +109,7 @@ export default function CommercialPlumberDC() {
       {/* Why DC License Matters */}
       <section className="py-16" style={{ background: "#F0F0F0" }}>
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="DC Licensing" title="Why does DC commercial plumbing require a specifically DC-licensed contractor?" />
+          <SectionHeading eyebrow="DC Licensing" heading="Why does DC commercial plumbing require a specifically DC-licensed contractor?" />
           <div className="mt-8 p-8 bg-white rounded-lg shadow-sm">
             <p className="text-base mb-4" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               Washington DC issues its own plumbing licenses through the DC DCRA. A Maryland or Virginia license does not authorize work in DC. The DC Master Plumber/Gasfitter license (#PGM1002236) is separately issued and verified in the DCRA online database.
@@ -152,7 +152,7 @@ export default function CommercialPlumberDC() {
       {/* Government & Institutional */}
       <section className="py-16 bg-white">
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Government & Institutional" title="Government and institutional commercial properties in DC" />
+          <SectionHeading eyebrow="Government & Institutional" heading="Government and institutional commercial properties in DC" />
           <div className="mt-8 space-y-4">
             <p className="text-base" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               DC is heavily populated with government buildings, non-profit institutions, embassies, think tanks, and trade associations. Definitive Mechanical holds MDOT MBE Cert No. 20-134 and CAGE Code 8HCF6, and is familiar with the procurement requirements for contractors working on federally-adjacent or institutionally-managed properties in the District.
@@ -170,7 +170,7 @@ export default function CommercialPlumberDC() {
       {/* FAQ */}
       <section className="py-16" style={{ background: "#F0F0F0" }}>
         <div className="container max-w-3xl">
-          <SectionHeading eyebrow="FAQ" title="Commercial Plumbing Washington DC — Frequently Asked Questions" />
+          <SectionHeading eyebrow="FAQ" heading="Commercial Plumbing Washington DC — Frequently Asked Questions" />
           <div className="mt-8">
             <FAQAccordion items={FAQS} />
           </div>

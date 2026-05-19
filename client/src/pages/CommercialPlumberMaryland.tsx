@@ -234,7 +234,7 @@ export default function CommercialPlumberMaryland() {
       {/* FAQ */}
       <section className="py-16 bg-white">
         <div className="container max-w-3xl">
-          <SectionHeading eyebrow="FAQ" title="Commercial Plumbing Maryland — Frequently Asked Questions" />
+          <SectionHeading eyebrow="FAQ" heading="Commercial Plumbing Maryland — Frequently Asked Questions" />
           <div className="mt-8">
             <FAQAccordion items={FAQS} />
           </div>
