@@ -1,0 +1,40 @@
+import Tier3CityPage from "@/components/layout/Tier3CityPage";
+export default function BelmontVA() {
+  return <Tier3CityPage
+    metaTitle="Plumber in Belmont, VA | Licensed Plumbing | Definitive Mechanical"
+    metaDescription="Licensed plumber serving Belmont, VA (Loudoun County). Plumbing, water heater, gas & emergency service. VA #2710064008. Call (301) 679-5849."
+    canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/belmont-va/"
+    schemaCity="Belmont" schemaState="VA"
+    schemaUrl="https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/belmont-va/"
+    breadcrumbs={[
+      {label:"Home",href:"/"},
+      {label:"Service Areas",href:"/service-areas/"},
+      {label:"Northern Virginia",href:"/service-areas/northern-virginia/"},
+      {label:"Loudoun County",href:"/service-areas/northern-virginia/loudoun-county/"},
+      {label:"Belmont VA"}
+    ]}
+    eyebrow="Plumber in Belmont, VA · Loudoun County · Serving from Largo, MD"
+    h1="Plumber in Belmont, VA"
+    intro="Definitive Mechanical serves Belmont, Virginia — a community in Loudoun County near Ashburn and Leesburg, featuring a mix of estate properties and newer residential development. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
+    trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}
+    servicesHeading="What plumbing services are available in Belmont?"
+    services={[
+      {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
+      {label:"Water Heater Repair & Tankless Water Heaters",href:"/water-heater-repair/"},
+      {label:"Gas Line Repair — natural gas and propane",href:"/gas-line-repair/"},
+      {label:"Drain Cleaning & Sewer Line Repair",href:"/drain-cleaning/"},
+      {label:"Backflow Prevention & Annual Certification — estate irrigation systems",href:"/backflow-certification/"}
+    ]}
+    localContextHeading="Unique context for Belmont"
+    localContextBody={"Belmont's estate properties often have large irrigation systems requiring annual backflow certification. Loudoun Water serves portions of the community. Virginia License #2710064008 covers all permitted plumbing work in Loudoun County."}
+    nearbyAreas={[
+      {label:"Broadlands",href:"/service-areas/northern-virginia/loudoun-county/broadlands-va/"},
+      {label:"Ashburn",href:"/service-areas/northern-virginia/loudoun-county/ashburn-va/"},
+      {label:"Vienna",href:"/service-areas/northern-virginia/vienna-va/"}
+    ]}
+    countyHubLabel="Loudoun County"
+    countyHubHref="/service-areas/northern-virginia/loudoun-county/"
+    bottomCtaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
+    bottomCtaCity="Belmont"
+  />;
+}

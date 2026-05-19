@@ -148,6 +148,58 @@ import GreatFallsVA from "./pages/service-areas/fairfax-county/GreatFallsVA";
 import BrambletonVA from "./pages/service-areas/loudoun-county/BrambletonVA";
 import OneLoudounVA from "./pages/service-areas/loudoun-county/OneLoudounVA";
 
+// Tier 3 — Maryland (PG County)
+import UniversityParkMD from "./pages/service-areas/prince-georges-county/UniversityParkMD";
+import BrockHallMD from "./pages/service-areas/prince-georges-county/BrockHallMD";
+import QueenslandMD from "./pages/service-areas/prince-georges-county/QueenslandMD";
+import CroomMD from "./pages/service-areas/prince-georges-county/CroomMD";
+
+// Tier 3 — Maryland (Montgomery County)
+import TravilahMD from "./pages/service-areas/montgomery-county/TravilahMD";
+import SomersetMD from "./pages/service-areas/montgomery-county/SomersetMD";
+import MartinsAdditionsMD from "./pages/service-areas/montgomery-county/MartinsAdditionsMD";
+import ChevyChaseVillageMD from "./pages/service-areas/montgomery-county/ChevyChaseVillageMD";
+import ChevyChaseViewMD from "./pages/service-areas/montgomery-county/ChevyChaseViewMD";
+import BrookmontMD from "./pages/service-areas/montgomery-county/BrookmontMD";
+
+// Tier 3 — Maryland (Howard County)
+import HighlandMD from "./pages/service-areas/howard-county/HighlandMD";
+import FultonMD from "./pages/service-areas/howard-county/FultonMD";
+import WestFriendshipMD from "./pages/service-areas/howard-county/WestFriendshipMD";
+import ScaggsMD from "./pages/service-areas/howard-county/ScaggsMD";
+
+// Tier 3 — Maryland (Charles County)
+import BensvilleMD from "./pages/service-areas/charles-county/BensvilleMD";
+
+// Tier 3 — DC Wards
+import Ward1DC from "./pages/service-areas/washington-dc/Ward1DC";
+import Ward2DC from "./pages/service-areas/washington-dc/Ward2DC";
+import Ward3DC from "./pages/service-areas/washington-dc/Ward3DC";
+import Ward4DC from "./pages/service-areas/washington-dc/Ward4DC";
+import Ward5DC from "./pages/service-areas/washington-dc/Ward5DC";
+import Ward6DC from "./pages/service-areas/washington-dc/Ward6DC";
+import Ward7DC from "./pages/service-areas/washington-dc/Ward7DC";
+import Ward8DC from "./pages/service-areas/washington-dc/Ward8DC";
+
+// Tier 3 — Northern Virginia (Fairfax County)
+import DunnLoringVA from "./pages/service-areas/fairfax-county/DunnLoringVA";
+import FlorisVA from "./pages/service-areas/fairfax-county/FlorisVA";
+import CrosspointeVA from "./pages/service-areas/fairfax-county/CrosspointeVA";
+import DifficultRunVA from "./pages/service-areas/fairfax-county/DifficultRunVA";
+import GreatFallsCrossingVA from "./pages/service-areas/fairfax-county/GreatFallsCrossingVA";
+import SouthRunVA from "./pages/service-areas/fairfax-county/SouthRunVA";
+import UnionMillVA from "./pages/service-areas/fairfax-county/UnionMillVA";
+import WolfTrapVA from "./pages/service-areas/fairfax-county/WolfTrapVA";
+
+// Tier 3 — Northern Virginia (Loudoun County)
+import BelmontVA from "./pages/service-areas/loudoun-county/BelmontVA";
+import BroadlandsVA from "./pages/service-areas/loudoun-county/BroadlandsVA";
+
+// Tier 3 — Northern Virginia (Prince William County)
+import BullRunMountainVA from "./pages/service-areas/prince-william-county/BullRunMountainVA";
+import IndependentHillVA from "./pages/service-areas/prince-william-county/IndependentHillVA";
+import BuckhallVA from "./pages/service-areas/prince-william-county/BuckhallVA";
+
 // Blog
 import BlogIndex from "./pages/blog/BlogIndex";
 import BlogPost1Emergency from "./pages/blog/BlogPost1Emergency";
@@ -420,6 +472,94 @@ function Router() {
       <Route path="/service-areas/northern-virginia/loudoun-county/brambleton-va/" component={() => <Layout><BrambletonVA /></Layout>} />
       <Route path="/service-areas/northern-virginia/loudoun-county/one-loudoun-va" component={() => <Layout><OneLoudounVA /></Layout>} />
       <Route path="/service-areas/northern-virginia/loudoun-county/one-loudoun-va/" component={() => <Layout><OneLoudounVA /></Layout>} />
+
+      {/* Tier 3 — Maryland (PG County) */}
+      <Route path="/service-areas/maryland/prince-georges-county/university-park-md" component={() => <Layout><UniversityParkMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/university-park-md/" component={() => <Layout><UniversityParkMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/brock-hall-md" component={() => <Layout><BrockHallMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/brock-hall-md/" component={() => <Layout><BrockHallMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/queensland-md" component={() => <Layout><QueenslandMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/queensland-md/" component={() => <Layout><QueenslandMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/croom-md" component={() => <Layout><CroomMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/croom-md/" component={() => <Layout><CroomMD /></Layout>} />
+
+      {/* Tier 3 — Maryland (Montgomery County) */}
+      <Route path="/service-areas/maryland/montgomery-county/travilah-md" component={() => <Layout><TravilahMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/travilah-md/" component={() => <Layout><TravilahMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/somerset-md" component={() => <Layout><SomersetMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/somerset-md/" component={() => <Layout><SomersetMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/martins-additions-md" component={() => <Layout><MartinsAdditionsMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/martins-additions-md/" component={() => <Layout><MartinsAdditionsMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/chevy-chase-village-md" component={() => <Layout><ChevyChaseVillageMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/chevy-chase-village-md/" component={() => <Layout><ChevyChaseVillageMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/chevy-chase-view-md" component={() => <Layout><ChevyChaseViewMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/chevy-chase-view-md/" component={() => <Layout><ChevyChaseViewMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/brookmont-md" component={() => <Layout><BrookmontMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/brookmont-md/" component={() => <Layout><BrookmontMD /></Layout>} />
+
+      {/* Tier 3 — Maryland (Howard County) */}
+      <Route path="/service-areas/maryland/howard-county/highland-md" component={() => <Layout><HighlandMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/highland-md/" component={() => <Layout><HighlandMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/fulton-md" component={() => <Layout><FultonMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/fulton-md/" component={() => <Layout><FultonMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/west-friendship-md" component={() => <Layout><WestFriendshipMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/west-friendship-md/" component={() => <Layout><WestFriendshipMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/scaggsville-md" component={() => <Layout><ScaggsMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/scaggsville-md/" component={() => <Layout><ScaggsMD /></Layout>} />
+
+      {/* Tier 3 — Maryland (Charles County) */}
+      <Route path="/service-areas/maryland/charles-county/bensville-md" component={() => <Layout><BensvilleMD /></Layout>} />
+      <Route path="/service-areas/maryland/charles-county/bensville-md/" component={() => <Layout><BensvilleMD /></Layout>} />
+
+      {/* Tier 3 — DC Wards */}
+      <Route path="/service-areas/washington-dc/ward-1" component={() => <Layout><Ward1DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-1/" component={() => <Layout><Ward1DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-2" component={() => <Layout><Ward2DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-2/" component={() => <Layout><Ward2DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-3" component={() => <Layout><Ward3DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-3/" component={() => <Layout><Ward3DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-4" component={() => <Layout><Ward4DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-4/" component={() => <Layout><Ward4DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-5" component={() => <Layout><Ward5DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-5/" component={() => <Layout><Ward5DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-6" component={() => <Layout><Ward6DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-6/" component={() => <Layout><Ward6DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-7" component={() => <Layout><Ward7DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-7/" component={() => <Layout><Ward7DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-8" component={() => <Layout><Ward8DC /></Layout>} />
+      <Route path="/service-areas/washington-dc/ward-8/" component={() => <Layout><Ward8DC /></Layout>} />
+
+      {/* Tier 3 — Northern Virginia (Fairfax County) */}
+      <Route path="/service-areas/northern-virginia/fairfax-county/dunn-loring-va" component={() => <Layout><DunnLoringVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/dunn-loring-va/" component={() => <Layout><DunnLoringVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/floris-va" component={() => <Layout><FlorisVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/floris-va/" component={() => <Layout><FlorisVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/crosspointe-va" component={() => <Layout><CrosspointeVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/crosspointe-va/" component={() => <Layout><CrosspointeVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/difficult-run-va" component={() => <Layout><DifficultRunVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/difficult-run-va/" component={() => <Layout><DifficultRunVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/great-falls-crossing-va" component={() => <Layout><GreatFallsCrossingVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/great-falls-crossing-va/" component={() => <Layout><GreatFallsCrossingVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/south-run-va" component={() => <Layout><SouthRunVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/south-run-va/" component={() => <Layout><SouthRunVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/union-mill-va" component={() => <Layout><UnionMillVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/union-mill-va/" component={() => <Layout><UnionMillVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/wolf-trap-va" component={() => <Layout><WolfTrapVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/wolf-trap-va/" component={() => <Layout><WolfTrapVA /></Layout>} />
+
+      {/* Tier 3 — Northern Virginia (Loudoun County) */}
+      <Route path="/service-areas/northern-virginia/loudoun-county/belmont-va" component={() => <Layout><BelmontVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/loudoun-county/belmont-va/" component={() => <Layout><BelmontVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/loudoun-county/broadlands-va" component={() => <Layout><BroadlandsVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/loudoun-county/broadlands-va/" component={() => <Layout><BroadlandsVA /></Layout>} />
+
+      {/* Tier 3 — Northern Virginia (Prince William County) */}
+      <Route path="/service-areas/northern-virginia/prince-william-county/bull-run-mountain-estates-va" component={() => <Layout><BullRunMountainVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/prince-william-county/bull-run-mountain-estates-va/" component={() => <Layout><BullRunMountainVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/prince-william-county/independent-hill-va" component={() => <Layout><IndependentHillVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/prince-william-county/independent-hill-va/" component={() => <Layout><IndependentHillVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/prince-william-county/buckhall-va" component={() => <Layout><BuckhallVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/prince-william-county/buckhall-va/" component={() => <Layout><BuckhallVA /></Layout>} />
 
       {/* Fallback */}
       <Route path="/404" component={() => <Layout><NotFound /></Layout>} />
