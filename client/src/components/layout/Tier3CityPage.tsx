@@ -1,19 +1,61 @@
 /**
- * Tier3CityPage — Reusable component for all 36 Tier 3 city/community pages.
- * Design: Navy/Cyan brand system, Playfair Display + Barlow typography.
- *
- * Tier 3 differences from Tier 2:
- * - Single-column bulleted services list (teal checkmarks), not 2-column grid
- * - No standalone license/credentials section (folded into bottom CTA trust strip only)
- * - Well/Septic callout box (styled with left border) when wellSepticNote is provided
- * - DC Ward featured neighborhood cards (featuredNeighborhoods) rendered before services list
- * - Simpler layout, 500–700 word target
+ * Tier3CityPage — Reusable component for all DC ward/neighborhood city pages.
+ * Design: Matches the full Maryland/VA premium layout —
+ *   - Dark navy gradient hero with 5-col grid + image placeholder
+ *   - TrustBadges + BookNowButton components
+ *   - Icon service cards with cyan top border (same as BethesdaMD, RockvilleMD etc.)
+ *   - FAQAccordion component
+ *   - CTABanner component
+ *   - Proper BreadcrumbList component
  */
 
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import { Phone, ArrowRight, CheckCircle, MapPin, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import {
+  AlertTriangle, Droplets, Thermometer, Zap, GitBranch, Flame,
+  ShieldCheck, Wind, Building2, Wrench, MapPin, Landmark,
+} from "lucide-react";
+import BreadcrumbList from "@/components/ui/BreadcrumbList";
+import TrustBadges from "@/components/ui/TrustBadges";
+import BookNowButton from "@/components/ui/BookNowButton";
+import SectionHeading from "@/components/ui/SectionHeading";
+import FAQAccordion from "@/components/ui/FAQAccordion";
+import CTABanner from "@/components/ui/CTABanner";
+
+// Map common service labels to icons
+const ICON_MAP: Record<string, React.ComponentType<{ size?: number; style?: React.CSSProperties }>> = {
+  "24/7 Emergency Plumbing": AlertTriangle,
+  "Drain Cleaning": Droplets,
+  "Drain Cleaning and Hydro-Jetting": Droplets,
+  "Hydro-Jetting": Zap,
+  "Water Heater Repair": Thermometer,
+  "Water Heater Repair & Installation": Thermometer,
+  "Water Heater Repair and Installation": Thermometer,
+  "Sewer Line Repair": GitBranch,
+  "Sewer Line Repair and Camera Inspection": GitBranch,
+  "Gas Line Repair": Flame,
+  "Gas Line Repair — licensed DC Master Gasfitter": Flame,
+  "Gas Leak Repair": Flame,
+  "Backflow Prevention and Certification": ShieldCheck,
+  "Backflow Certification": ShieldCheck,
+  "Boiler & Furnace Repair": Wind,
+  "Commercial Plumbing": Building2,
+  "Water Line Repair": Wrench,
+  "Faucet & Toilet Repair": Wrench,
+  "Video Camera Inspection": Zap,
+  "Video Camera Inspection — clay lateral inspection before purchase or repair": Zap,
+  "Government & Municipal Plumbing": Landmark,
+};
+
+function getIcon(label: string) {
+  // Exact match first
+  if (ICON_MAP[label]) return ICON_MAP[label];
+  // Partial match fallback
+  for (const key of Object.keys(ICON_MAP)) {
+    if (label.toLowerCase().includes(key.toLowerCase())) return ICON_MAP[key];
+  }
+  return Wrench;
+}
 
 export interface Tier3ServiceItem {
   label: string;
@@ -97,7 +139,6 @@ export default function Tier3CityPage({
   bottomCtaLicenseLine,
   bottomCtaCity,
 }: Tier3CityPageProps) {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const schema: Record<string, unknown>[] = [
     {
@@ -139,6 +180,9 @@ export default function Tier3CityPage({
     });
   }
 
+  // Convert FAQs to format expected by FAQAccordion
+  const faqItems = (faqs || []).map(f => ({ question: f.question, answer: f.answer }));
+
   return (
     <>
       <Helmet>
@@ -152,89 +196,78 @@ export default function Tier3CityPage({
         ))}
       </Helmet>
 
-      {/* Mobile call bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#003060] text-white flex items-center justify-center py-3 gap-2 shadow-lg">
-        <Phone className="w-4 h-4" />
-        <a href="tel:+13016795849" className="font-bold text-sm tracking-wide">
-          CALL (301) 679-5849 — 24/7 EMERGENCY
-        </a>
-      </div>
-
-      {/* Breadcrumb */}
-      <nav className="bg-gray-50 border-b border-gray-200 py-2 px-4">
-        <div className="max-w-5xl mx-auto flex items-center gap-1 text-xs text-gray-500 flex-wrap">
-          {breadcrumbs.map((b, i) => (
-            <span key={i} className="flex items-center gap-1">
-              {i > 0 && <ChevronRight className="w-3 h-3" />}
-              {b.href ? (
-                <Link href={b.href} className="hover:text-[#186090] transition-colors">
-                  {b.label}
-                </Link>
-              ) : (
-                <span className="text-gray-700 font-medium">{b.label}</span>
-              )}
-            </span>
-          ))}
-        </div>
-      </nav>
-
-      {/* Hero — white background */}
-      <section className="bg-white py-12 md:py-16">
-        <div className="max-w-5xl mx-auto px-4">
-          <p className="text-xs font-bold tracking-widest text-[#186090] uppercase mb-3">
-            {eyebrow}
-          </p>
-          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-[#003060] mb-5 leading-tight">
-            {h1}
-          </h1>
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed max-w-3xl mb-7">
-            {intro}
-          </p>
-          {/* Dual CTA */}
-          <div className="flex flex-wrap gap-3 mb-8">
-            <a
-              href="tel:+13016795849"
-              className="inline-flex items-center gap-2 bg-[#003060] hover:bg-[#002040] text-white font-bold px-6 py-3 rounded transition-colors text-sm"
-            >
-              <Phone className="w-4 h-4" />
-              CALL (301) 679-5849
-            </a>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 border-2 border-[#003060] text-[#003060] hover:bg-[#003060] hover:text-white font-bold px-6 py-3 rounded transition-colors text-sm"
-            >
-              Request Service <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-          {/* Trust strip */}
-          <div className="flex flex-wrap gap-2">
-            {trustItems.map((item, i) => (
-              <span
-                key={i}
-                className="text-xs font-semibold bg-[#E8F4FB] text-[#003060] border border-[#186090]/30 px-3 py-1 rounded-full"
-              >
-                {item}
-              </span>
-            ))}
+      {/* S1: Hero — dark navy gradient matching MD/VA pages */}
+      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "50vh" }} className="py-16">
+        <div className="container">
+          <BreadcrumbList items={breadcrumbs.map(b => ({ label: b.label, href: b.href }))} />
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
+            <div className="lg:col-span-3">
+              <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "#009EC6", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
+                {eyebrow}
+              </p>
+              <h1 style={{ fontFamily: "'Playfair Display',serif", color: "white", fontSize: "clamp(28px,4vw,40px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
+                {h1}
+              </h1>
+              <p style={{ fontFamily: "'Barlow',sans-serif", color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "560px", lineHeight: 1.7 }} className="mb-6">
+                {intro}
+              </p>
+              <TrustBadges variant="dark" badges={trustItems} />
+              <div className="flex flex-wrap gap-4 mt-8">
+                <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+                <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
+              </div>
+            </div>
+            <div className="lg:col-span-2 hidden lg:block">
+              <img
+                src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=700&q=80"
+                alt={`Licensed plumber ${schemaCity} ${schemaState} — Definitive Mechanical`}
+                loading="eager"
+                className="rounded-lg w-full"
+                style={{ objectFit: "cover", height: "360px" }}
+              />
+            </div>
           </div>
         </div>
       </section>
 
       {/* DC Ward Featured Neighborhood Cards (optional) */}
       {featuredNeighborhoods && featuredNeighborhoods.length > 0 && (
-        <section className="bg-[#F0F7FF] py-6 border-y border-[#186090]/20">
-          <div className="max-w-5xl mx-auto px-4">
-            <p className="text-xs font-bold tracking-widest text-[#186090] uppercase mb-3">
-              Dedicated Pages Available
+        <section className="py-8 bg-white border-b border-gray-100">
+          <div className="container">
+            <p style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.25em", color: "#009EC6", marginBottom: "16px" }}>
+              Dedicated Neighborhood Pages
             </p>
             <div className="flex flex-wrap gap-3">
               {featuredNeighborhoods.map((n, i) => (
                 <Link
                   key={i}
                   href={n.href}
-                  className="inline-flex items-center gap-2 border-2 border-[#186090] text-[#186090] hover:bg-[#186090] hover:text-white font-semibold px-4 py-2 rounded transition-colors text-sm"
+                  className="no-underline"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "6px",
+                    border: "2px solid #009EC6",
+                    color: "#009EC6",
+                    fontFamily: "'Barlow Condensed',sans-serif",
+                    fontWeight: 700,
+                    fontSize: "13px",
+                    textTransform: "uppercase",
+                    letterSpacing: "0.1em",
+                    padding: "8px 16px",
+                    borderRadius: "2px",
+                    transition: "all 0.2s",
+                  }}
+                  onMouseEnter={e => {
+                    (e.currentTarget as HTMLElement).style.background = "#009EC6";
+                    (e.currentTarget as HTMLElement).style.color = "#003060";
+                  }}
+                  onMouseLeave={e => {
+                    (e.currentTarget as HTMLElement).style.background = "transparent";
+                    (e.currentTarget as HTMLElement).style.color = "#009EC6";
+                  }}
                 >
-                  {n.label} <ArrowRight className="w-3 h-3" />
+                  {n.label} →
                 </Link>
               ))}
             </div>
@@ -242,79 +275,126 @@ export default function Tier3CityPage({
         </section>
       )}
 
-      {/* Services List — surface gray, single-column */}
-      <section className="bg-[#F0F0F0] py-10 md:py-14">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-[#003060] mb-6">
-            {servicesHeading || `Services available in ${schemaCity}`}
-          </h2>
-          <ul className="space-y-3">
-            {services.map((s, i) => (
-              <li key={i} className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-[#186090] flex-shrink-0 mt-0.5" />
-                {s.href ? (
-                  <Link href={s.href} className="text-gray-800 hover:text-[#186090] transition-colors font-medium">
-                    {s.label}
-                  </Link>
-                ) : (
-                  <span className="text-gray-800 font-medium">{s.label}</span>
-                )}
-              </li>
-            ))}
-          </ul>
+      {/* S2: Services — icon cards matching MD/VA style */}
+      <section className="py-20 bg-white">
+        <div className="container">
+          <SectionHeading
+            eyebrow="LICENSED PLUMBING SERVICES"
+            heading={servicesHeading || `What licensed plumbing services are available in ${schemaCity}?`}
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {services.map((svc, i) => {
+              const Icon = getIcon(svc.label);
+              return (
+                <Link key={i} href={svc.href} className="no-underline block">
+                  <div
+                    className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
+                    style={{ borderTopColor: "#009EC6", border: "1px solid #E8EFF5", borderTop: "3px solid #009EC6" }}
+                  >
+                    <Icon size={20} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
+                    <p style={{ fontFamily: "'Barlow',sans-serif", fontWeight: 500, color: "#003060", fontSize: "14px", margin: 0 }}>
+                      {svc.label}
+                    </p>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
 
           {/* Well/Septic Callout Box */}
           {wellSepticNote && (
-            <div
-              className="mt-8 bg-[#F0F0F0] border-l-4 border-[#186090] p-4 rounded-r"
-              style={{ borderLeftColor: "#186090" }}
-            >
-              <h3
-                className="text-xs font-bold tracking-widest uppercase mb-2"
-                style={{ fontFamily: "'Barlow Condensed', sans-serif", color: "#186090" }}
-              >
+            <div className="mt-8 bg-gray-50 border-l-4 p-5 rounded-r" style={{ borderLeftColor: "#009EC6" }}>
+              <h3 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "#009EC6", marginBottom: "8px" }}>
                 About Well &amp; Septic Properties
               </h3>
-              <p className="text-sm text-[#484848] leading-relaxed">{wellSepticNote}</p>
+              <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "14px", lineHeight: 1.7 }}>{wellSepticNote}</p>
             </div>
           )}
         </div>
       </section>
 
-      {/* Local Context — white */}
-      <section className="bg-white py-10 md:py-14">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-[#003060] mb-5">
-            {localContextHeading}
-          </h2>
-          <div className="prose prose-gray max-w-none text-gray-700 leading-relaxed">
+      {/* S3: Emergency CTA strip */}
+      <section className="py-16" style={{ background: "#F0F0F0" }}>
+        <div className="container">
+          <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading={`Do you provide 24/7 emergency plumbing in ${schemaCity}?`} />
+          <div className="max-w-3xl mb-8">
+            <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "16px", lineHeight: 1.7 }}>
+              Yes. Emergency plumbing in {schemaCity} is available 24/7, 365 days a year. A live dispatcher answers every call. Licensed Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849.
+            </p>
+          </div>
+          <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+        </div>
+      </section>
+
+      {/* S4: Local Context */}
+      <section className="py-20 bg-white">
+        <div className="container">
+          <SectionHeading eyebrow="LOCAL PLUMBING NEEDS" heading={localContextHeading} />
+          <div className="max-w-3xl">
             {localContextBody.split("\n\n").map((para, i) => (
-              <p key={i} className="mb-4">{para}</p>
+              <p key={i} style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "16px", lineHeight: 1.7, marginBottom: "16px" }}>
+                {para}
+              </p>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Nearby Areas — pale blue */}
-      <section className="bg-[#C0D8F0] py-8 md:py-10">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex items-center gap-2 mb-4">
-            <MapPin className="w-5 h-5 text-[#003060]" />
-            <h2 className="font-display text-xl font-bold text-[#003060]">Nearby Service Areas</h2>
-          </div>
-          <div className="flex flex-wrap gap-2">
+      {/* S5: Nearby Areas */}
+      <section className="py-12 bg-white" style={{ borderTop: "1px solid #E8EFF5" }}>
+        <div className="container">
+          <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading={`Areas near ${schemaCity} we also serve`} />
+          <div className="flex flex-wrap gap-3 mb-4">
             {nearbyAreas.map((area, i) => (
               <Link
                 key={i}
                 href={area.href}
-                className="bg-white text-[#003060] border border-[#003060]/30 hover:bg-[#003060] hover:text-white font-semibold px-4 py-2 rounded-full text-sm transition-colors"
+                className="no-underline"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "4px",
+                  background: "white",
+                  border: "1px solid #E8EFF5",
+                  color: "#009EC6",
+                  fontFamily: "'Barlow',sans-serif",
+                  fontWeight: 500,
+                  fontSize: "14px",
+                  padding: "8px 16px",
+                  borderRadius: "4px",
+                  transition: "all 0.2s",
+                }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLElement).style.background = "#003060";
+                  (e.currentTarget as HTMLElement).style.color = "white";
+                  (e.currentTarget as HTMLElement).style.borderColor = "#003060";
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLElement).style.background = "white";
+                  (e.currentTarget as HTMLElement).style.color = "#009EC6";
+                  (e.currentTarget as HTMLElement).style.borderColor = "#E8EFF5";
+                }}
               >
+                <MapPin size={12} />
                 {area.label}
               </Link>
             ))}
             <Link
               href={countyHubHref}
-              className="bg-[#003060] text-white hover:bg-[#002040] font-semibold px-4 py-2 rounded-full text-sm transition-colors"
+              className="no-underline"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                background: "#003060",
+                color: "white",
+                fontFamily: "'Barlow Condensed',sans-serif",
+                fontWeight: 700,
+                fontSize: "13px",
+                textTransform: "uppercase",
+                letterSpacing: "0.1em",
+                padding: "8px 18px",
+                borderRadius: "4px",
+              }}
             >
               {countyHubLabel} →
             </Link>
@@ -322,68 +402,26 @@ export default function Tier3CityPage({
         </div>
       </section>
 
-      {/* FAQ — white, only if faqs provided */}
-      {faqs && faqs.length > 0 && (
-        <section className="bg-white py-10 md:py-14">
-          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="font-display text-2xl md:text-3xl font-bold text-[#003060] mb-6">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-3">
-              {faqs.map((faq, i) => (
-                <div key={i} className="border border-gray-200 rounded-lg overflow-hidden">
-                  <button
-                    className="w-full text-left px-5 py-4 flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors"
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  >
-                    <span className="font-semibold text-[#003060] text-sm md:text-base">
-                      {faq.question}
-                    </span>
-                    <ChevronRight
-                      className={`w-4 h-4 text-[#186090] flex-shrink-0 transition-transform ${
-                        openFaq === i ? "rotate-90" : ""
-                      }`}
-                    />
-                  </button>
-                  {openFaq === i && (
-                    <div className="px-5 pb-4 text-gray-700 text-sm leading-relaxed border-t border-gray-100">
-                      {faq.answer}
-                    </div>
-                  )}
-                </div>
-              ))}
+      {/* S6: FAQ */}
+      {faqItems.length > 0 && (
+        <section className="py-20" style={{ background: "#F0F0F0" }}>
+          <div className="container">
+            <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading={`Plumbing FAQ — ${schemaCity}`} />
+            <div className="max-w-3xl mx-auto">
+              <FAQAccordion items={faqItems} schema={false} />
             </div>
           </div>
         </section>
       )}
 
-      {/* Bottom CTA — navy */}
-      <section className="bg-[#003060] py-10 md:py-14">
-        <div className="max-w-5xl mx-auto px-4 text-center">
-          <p className="text-[#7EC8E3] text-xs font-bold tracking-widest uppercase mb-3">
-            Serving {bottomCtaCity} from Largo, MD
-          </p>
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-white mb-4">
-            Need a Plumber in {bottomCtaCity}?
-          </h2>
-          <p className="text-blue-200 mb-6 text-sm">{bottomCtaLicenseLine}</p>
-          <div className="flex flex-wrap justify-center gap-3">
-            <a
-              href="tel:+13016795849"
-              className="inline-flex items-center gap-2 bg-[#186090] hover:bg-[#1070A0] text-white font-bold px-7 py-3 rounded transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              (301) 679-5849
-            </a>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 border-2 border-white text-white hover:bg-white hover:text-[#003060] font-bold px-7 py-3 rounded transition-colors"
-            >
-              Request Service <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* S7: CTA Banner */}
+      <CTABanner
+        heading={`Need a licensed plumber in ${bottomCtaCity}?`}
+        subtext={`Serving ${bottomCtaCity} from our Largo, MD location. ${bottomCtaLicenseLine} · 24/7 Emergency · Upfront Pricing.`}
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+        variant="gradient"
+      />
     </>
   );
 }
