@@ -9,7 +9,7 @@ import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import {
   Phone, ArrowRight, Zap, Droplets, Flame, Wrench, Shield,
-  Home, Building2, Landmark, CheckCircle2, ChevronDown
+  Home, Building2, Landmark, CheckCircle2, ChevronDown, Thermometer
 } from "lucide-react";
 import { useState } from "react";
 import { BUSINESS } from "@/lib/constants";
@@ -83,17 +83,24 @@ const serviceCategories = [
   },
   {
     iconName: "Wrench",
-    category: "FIXTURES & HEATING",
+    category: "FIXTURES",
     services: [
       { label: "Faucet & Toilet Repair", href: "/faucet-toilet-repair/" },
+    ],
+    note: "Faucets, fixtures, toilets, and shut-off valves.",
+  },
+  {
+    iconName: "Thermometer",
+    category: "HEATING",
+    services: [
       { label: "Boiler & Furnace Repair", href: "/boiler-furnace-repair/" },
       { label: "Boiler & Furnace Installation", href: "/boiler-furnace-installation/" },
     ],
-    note: "",
+    note: "Hydronic heating systems, boilers, and furnaces.",
   },
 ];
 
-const iconMap: Record<string, React.ElementType> = { Zap, Droplets, Flame, Wrench, Shield };
+const iconMap: Record<string, React.ElementType> = { Zap, Droplets, Flame, Wrench, Shield, Thermometer };
 
 const installations = [
   "Water heater replacement (gas, electric, tankless) with permit and inspection coordination",
