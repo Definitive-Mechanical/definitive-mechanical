@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/98106163/Mxa9FkjQjimhEb95Dyj8bk",
+    "access_key_id": "ASIAZV3A2ECZPT72N7FQ",
+    "secret_access_key": "vA+vvW7ZL8QudBxLA7HVLcsGFLDzk/qeL9jzBDUD",
+    "session_token": "IQoJb3JpZ2luX2VjEBQaCXVzLWVhc3QtMSJHMEUCIQDaoZTxGGHuaK76o36D5Dc/0hyTaCs85TmE580QDIZCpgIgHlL0aoHivMl+uvdTFgjpAPH5sJRgU4M3QOMimdo7hE4q6wMI3P//////////ARAEGgw2NjUzODYwOTg4NjYiDMSi9xg6xY1VQb47Liq/AwRJSAgWMGix9QpYXDWnrlEm04UbKPG5hQoloxS7AXi8PRExD5ledIeCgPwO27cZD21s4NTN4JXGZlkeoW8PK03CT4LLe94mKhsZEaan4YTQ0f1tvOeqhyX4Pbps97l/zt7Ih3lMYVyj8sjOh+IOsyjvHSIWSe+lwFI4dlgjTbmlt9Uqu02Q5uf52zyZB2cX/4BKgCPKQMJiBsJgia63A4X5pEwlfOJ++prwcic7w0tKq4Sb9O2aVKrg8jbWOvm98ASspVcEde2BFjogE0TrgMbK1Pwo561fbCdtBmhebHaDAmU7pqAXwd2sFDIquyNnb7WBt7VW2rGj8NK9TRKGlgxIUwk8r1RSdEVFRuKNjzLw09T1HvEZG8+4b6BBcl6UWS3iy33a+Hl5e1A/3qrhf0lwaHKMGCwUvnNgk9qyWfGB5vY77nP0HdeJ/dylsu6s25m1VJO/IPrzms3DinWZy4ySRoSRkiuUQt9IsOhIaRr5tlWSxTOaQT6Y20HY58iG3vQykUjg90mUnkXFPJP5Z5Moug8C+gRtL3ajcupUq3zjHG1nC+UPuSXcP4J5avCNyZZAsF2PS60f+ZF/o7J4WzD46rLQBjqdASUSZmHvKLBa4+4DHS7gmkNfmjCOEUEvkTq3DxRSNYCPUIxbELQRMaIb5nW2ty054OnCEHYZkPvilCamwzWfmc+BbUqqtGJy952YCVG7X53bE/g3a+4Yl+ub1IOE8rzwfhfw2KSndkgL1m/dX4Pnp6e4V/cD78g85JOSjHEextdgAf1OAjQQ0pU694HGu/jpBpx1U12AM6izQvolh/M=",
+    "expiration": "2026-05-20T07:09:44.000Z"
+  },
+  "name": "definitive-mechanical",
+  "path": "/home/ubuntu/definitive-mechanical",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "kdYe83HTzsRkfWTaF3oAXB",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "4pnawMxYDjsfHnQZAzx6xB",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Gabriel Henley",
+    "OWNER_OPEN_ID": "9kZRyTS6grMSwTn9EZBU8L",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "5ae4eb0a-4bdd-4141-a910-f64daab636e2",
+    "VITE_APP_ID": "Mxa9FkjQjimhEb95Dyj8bk",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Definitive Mechanical",
+    "VITE_FRONTEND_FORGE_API_KEY": "5ALSRf2L78uUeG8nCxYfe8",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
