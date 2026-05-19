@@ -108,6 +108,16 @@ import ArlingtonCounty from "./pages/service-areas/ArlingtonCounty";
 import LoudounCounty from "./pages/service-areas/LoudounCounty";
 import PrinceWilliamCounty from "./pages/service-areas/PrinceWilliamCounty";
 
+// Commercial Differentiation — Regional
+import CommercialPlumberMaryland from "./pages/CommercialPlumberMaryland";
+import CommercialPlumberDC from "./pages/CommercialPlumberDC";
+import CommercialPlumberNorthernVirginia from "./pages/CommercialPlumberNorthernVirginia";
+
+// Backflow Certification — Regional
+import BackflowCertificationMaryland from "./pages/BackflowCertificationMaryland";
+import BackflowCertificationDC from "./pages/BackflowCertificationDC";
+import BackflowCertificationVirginia from "./pages/BackflowCertificationVirginia";
+
 // Commercial / Government
 import CommercialPlumbing from "./pages/CommercialPlumbing";
 import GovernmentMunicipalPlumbing from "./pages/GovernmentMunicipalPlumbing";
@@ -291,6 +301,22 @@ function Router() {
       <Route path="/mbe-certified-plumbing-contractor-maryland/" component={() => <Layout><MBECertified /></Layout>} />
       <Route path="/swam-certified-plumbing-contractor-virginia" component={() => <Layout><SWaMCertified /></Layout>} />
       <Route path="/swam-certified-plumbing-contractor-virginia/" component={() => <Layout><SWaMCertified /></Layout>} />
+
+      {/* Commercial Differentiation — Regional */}
+      <Route path="/commercial-plumber-maryland" component={() => <Layout><CommercialPlumberMaryland /></Layout>} />
+      <Route path="/commercial-plumber-maryland/" component={() => <Layout><CommercialPlumberMaryland /></Layout>} />
+      <Route path="/commercial-plumber-washington-dc" component={() => <Layout><CommercialPlumberDC /></Layout>} />
+      <Route path="/commercial-plumber-washington-dc/" component={() => <Layout><CommercialPlumberDC /></Layout>} />
+      <Route path="/commercial-plumber-northern-virginia" component={() => <Layout><CommercialPlumberNorthernVirginia /></Layout>} />
+      <Route path="/commercial-plumber-northern-virginia/" component={() => <Layout><CommercialPlumberNorthernVirginia /></Layout>} />
+
+      {/* Backflow Certification — Regional */}
+      <Route path="/backflow-certification-maryland" component={() => <Layout><BackflowCertificationMaryland /></Layout>} />
+      <Route path="/backflow-certification-maryland/" component={() => <Layout><BackflowCertificationMaryland /></Layout>} />
+      <Route path="/backflow-certification-washington-dc" component={() => <Layout><BackflowCertificationDC /></Layout>} />
+      <Route path="/backflow-certification-washington-dc/" component={() => <Layout><BackflowCertificationDC /></Layout>} />
+      <Route path="/backflow-certification-virginia" component={() => <Layout><BackflowCertificationVirginia /></Layout>} />
+      <Route path="/backflow-certification-virginia/" component={() => <Layout><BackflowCertificationVirginia /></Layout>} />
 
       {/* Commercial / Government */}
       <Route path="/commercial-plumbing" component={() => <Layout><CommercialPlumbing /></Layout>} />
