@@ -11,16 +11,37 @@ import FAQAccordion from '@/components/ui/FAQAccordion';
 import CTABanner from '@/components/ui/CTABanner';
 import ServiceAreaSearch from '@/components/ServiceAreaSearch';
 
-const HOME_SERVICES = [
-  { title: '24/7 Emergency Plumbing', icon: 'AlertTriangle', href: '/emergency-plumbing', description: 'Burst pipes, sewer backups, gas leaks — live dispatcher 24/7, 365 days a year. Licensed Master Plumber on every emergency call.', featured: true },
-  { title: 'Drain Cleaning', icon: 'Droplets', href: '/drain-cleaning', description: 'Professional drain clearing, hydro-jetting, and sewer stoppage service. We identify the root cause — not just the symptom.' },
-  { title: 'Water Heater Repair', icon: 'Thermometer', href: '/water-heater-repair', description: 'Gas, electric, and tankless water heater repair and replacement. Same-day service available. Financing for replacements.' },
-  { title: 'Sewer Line Repair', icon: 'GitBranch', href: '/sewer-line-repair', description: 'Camera inspection, sewer line repair and replacement, emergency sewer service across MD, DC, and Northern Virginia.' },
-  { title: 'Gas Line Service', icon: 'Flame', href: '/gas-line-repair', description: 'Licensed Master Gasfitter in MD, DC, VA & DE. Gas line repair, installation, and 24/7 emergency gas leak response.' },
-  { title: 'Backflow Certification', icon: 'ShieldCheck', href: '/backflow-certification', description: 'Annual backflow preventer testing, certification, repair, and replacement for commercial, municipal, and residential properties.' },
-  { title: 'Commercial Plumbing', icon: 'Building2', href: '/commercial-plumbing', description: 'Facility maintenance, code-compliant service, and emergency response for businesses, property managers, and institutions.' },
-  { title: 'Government & Municipal', icon: 'Landmark', href: '/government-municipal-plumbing', description: 'MDOT MBE and VA SWaM certified. Capability statement available. CAGE 8HCF6. NAICS 238220.' },
-  { title: 'View All Services', icon: 'ArrowRight', href: '/services', description: 'Water heater installation, tankless systems, water line repair, boiler service, faucet & toilet repair, and more.' },
+const SERVICE_CATEGORIES = [
+  {
+    label: 'Emergency & Drain',
+    services: [
+      { title: '24/7 Emergency Plumbing', icon: 'AlertTriangle', href: '/emergency-plumbing', description: 'Burst pipes, sewer backups, gas leaks — live dispatcher 24/7, 365 days a year. Licensed Master Plumber on every emergency call.', featured: true },
+      { title: 'Drain Cleaning', icon: 'Droplets', href: '/drain-cleaning', description: 'Professional drain clearing, hydro-jetting, and sewer stoppage service. We identify the root cause — not just the symptom.' },
+      { title: 'Hydro-Jetting', icon: 'Zap', href: '/hydro-jetting', description: 'High-pressure hydro-jetting clears grease, scale, and root intrusion that snaking cannot reach. Commercial and residential.' },
+      { title: 'Video Camera Inspection', icon: 'Camera', href: '/video-camera-inspection', description: 'Sewer and drain camera inspection to pinpoint blockages, cracks, and root intrusion before any excavation.' },
+      { title: 'Sewer Line Repair', icon: 'GitBranch', href: '/sewer-line-repair', description: 'Camera inspection, sewer line repair and replacement, emergency sewer service across MD, DC, and Northern Virginia.' },
+    ],
+  },
+  {
+    label: 'Water, Gas & More',
+    services: [
+      { title: 'Water Heater Repair', icon: 'Thermometer', href: '/water-heater-repair', description: 'Gas, electric, and tankless water heater repair and replacement. Same-day service available. Financing for replacements.' },
+      { title: 'Tankless Water Heater', icon: 'Zap', href: '/tankless-water-heater', description: 'Tankless water heater installation, repair, and conversion. Energy-efficient on-demand hot water for homes and businesses.' },
+      { title: 'Gas Line Repair', icon: 'Flame', href: '/gas-line-repair', description: 'Licensed Master Gasfitter in MD, DC, VA & DE. Gas line repair, installation, and 24/7 emergency gas leak response.' },
+      { title: 'Gas Leak Repair', icon: 'AlertOctagon', href: '/gas-leak-repair', description: '24/7 emergency gas leak detection and repair. Licensed Master Gasfitter — do not wait, call immediately.' },
+    ],
+  },
+  {
+    label: 'Backflow, Fixtures & Commercial',
+    services: [
+      { title: 'Backflow Certification', icon: 'ShieldCheck', href: '/backflow-certification', description: 'Annual backflow preventer testing, certification, repair, and replacement for commercial, municipal, and residential properties.' },
+      { title: 'Water Line Repair', icon: 'Waves', href: '/water-line-repair', description: 'Main water line repair and replacement. Leak detection, pressure issues, and full line replacement with minimal disruption.' },
+      { title: 'Boiler & Furnace', icon: 'Thermometer', href: '/boiler-furnace-repair', description: 'Boiler and furnace repair, maintenance, and replacement. Licensed in MD, DC, VA, and DE.' },
+      { title: 'Faucet & Toilet Repair', icon: 'Wrench', href: '/faucet-toilet-repair', description: 'Faucet repair and replacement, toilet repair, running toilets, and fixture upgrades for residential and commercial properties.' },
+      { title: 'Commercial Plumbing', icon: 'Building2', href: '/commercial-plumbing', description: 'Facility maintenance, code-compliant service, and emergency response for businesses, property managers, and institutions.' },
+      { title: 'Government & Municipal', icon: 'Landmark', href: '/government-municipal-plumbing', description: 'MDOT MBE and VA SWaM certified. Capability statement available. CAGE 8HCF6. NAICS 238220.' },
+    ],
+  },
 ];
 
 const CREDENTIALS = [
@@ -211,16 +232,40 @@ export default function Home() {
             subtext="From 24/7 emergency response to water heater repair, drain cleaning, gas lines, backflow certification, and government facility plumbing — we handle the full range of licensed mechanical services across Maryland, DC, and Northern Virginia."
             centered
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {HOME_SERVICES.map((service) => (
-              <ServiceCard
-                key={service.href}
-                title={service.title}
-                description={service.description}
-                href={service.href}
-                iconName={service.icon}
-                featured={service.featured}
-              />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '52px' }}>
+            {SERVICE_CATEGORIES.map((category) => (
+              <div key={category.label}>
+                {/* Category divider header */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '24px' }}>
+                  <div style={{ height: '2px', width: '28px', background: '#009EC6', flexShrink: 0 }} />
+                  <p style={{
+                    fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                    fontWeight: 700,
+                    fontSize: '11px',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.28em',
+                    color: '#009EC6',
+                    margin: 0,
+                    whiteSpace: 'nowrap',
+                  }}>
+                    {category.label}
+                  </p>
+                  <div style={{ height: '1px', flex: 1, background: '#E8EFF5' }} />
+                </div>
+                {/* Service tiles — identical style */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {category.services.map((service) => (
+                    <ServiceCard
+                      key={service.href}
+                      title={service.title}
+                      description={service.description}
+                      href={service.href}
+                      iconName={service.icon}
+                      featured={'featured' in service ? (service as { featured?: boolean }).featured : undefined}
+                    />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
