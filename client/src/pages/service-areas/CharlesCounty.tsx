@@ -1,0 +1,104 @@
+import { Helmet } from "react-helmet-async";
+import { Link } from "wouter";
+import { Phone, ShieldCheck, Key } from "lucide-react";
+import BreadcrumbList from "@/components/ui/BreadcrumbList";
+import BookNowButton from "@/components/ui/BookNowButton";
+import SectionHeading from "@/components/ui/SectionHeading";
+import FAQAccordion from "@/components/ui/FAQAccordion";
+import CTABanner from "@/components/ui/CTABanner";
+
+const CITIES = [
+  { name: "Waldorf, MD", href: "/service-areas/maryland/charles-county/waldorf-md/", note: "Largest community" },
+  { name: "La Plata, MD", href: "/service-areas/maryland/", note: "County seat" },
+  { name: "White Plains, MD", href: "/service-areas/maryland/", note: "Commercial corridor" },
+  { name: "Indian Head, MD", href: "/service-areas/maryland/", note: "Naval support facility" },
+  { name: "Bryans Road, MD", href: "/service-areas/maryland/", note: "Potomac River area" },
+  { name: "Accokeek, MD", href: "/service-areas/maryland/", note: "Rural residential" },
+  { name: "Brandywine, MD", href: "/service-areas/maryland/", note: "PG/Charles border" },
+];
+
+const FAQ_ITEMS = [
+  { question: "Are you licensed for plumbing in Charles County?", answer: "Yes. Maryland State Master Plumber/Gasfitter #96958 and Charles County registration authorize all plumbing and gas work throughout Charles County. Call (301) 679-5849." },
+  { question: "Do you serve Waldorf and all Charles County communities?", answer: "Yes. We serve Waldorf, La Plata, White Plains, Indian Head, Bryans Road, Accokeek, Brandywine, and all Charles County communities. Call (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Charles County?", answer: "Yes. Emergency plumbing available 24/7 across all of Charles County. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849." },
+];
+
+const SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://definitivemechanical.com/" }, { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://definitivemechanical.com/service-areas/" }, { "@type": "ListItem", "position": 3, "name": "Maryland", "item": "https://definitivemechanical.com/service-areas/maryland/" }, { "@type": "ListItem", "position": 4, "name": "Charles County" }] },
+    { "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) },
+  ],
+};
+
+export default function CharlesCounty() {
+  return (
+    <>
+      <Helmet>
+        <title>Plumber in Charles County MD | Definitive Mechanical | (301) 679-5849</title>
+        <meta name="description" content="Licensed plumbing services throughout Charles County MD including Waldorf, La Plata, White Plains. MD #96958. 24/7 emergency. Call (301) 679-5849." />
+        <link rel="canonical" href="https://definitivemechanical.com/service-areas/maryland/charles-county/" />
+        <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
+      </Helmet>
+
+      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "45vh" }} className="flex items-center py-16">
+        <div className="container text-center">
+          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Maryland", href: "/service-areas/maryland/" }, { label: "Charles County" }]} dark />
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES · CHARLES COUNTY, MD</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Plumber in Charles County, MD</h1>
+          <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
+            Definitive Mechanical provides licensed plumbing services throughout Charles County — Waldorf, La Plata, White Plains, Indian Head, and all county communities. MD State #96958. 24/7 emergency. Call (301) 679-5849.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
+              <Phone size={20} /> CALL (301) 679-5849
+            </a>
+            <BookNowButton variant="outline" size="lg">Request Service</BookNowButton>
+          </div>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
+            <span className="flex items-center gap-1"><ShieldCheck size={14} /> MD State #96958</span>
+            <span className="flex items-center gap-1"><ShieldCheck size={14} /> 24/7 Emergency</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="container">
+          <SectionHeading eyebrow="COMMUNITIES SERVED" heading="Charles County cities and communities we serve" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
+            {CITIES.map((city) => (
+              <Link key={city.name} href={city.href} className="bg-white border border-gray-200 rounded-md p-4 hover:border-cyan-400 hover:shadow-md transition-all group">
+                <p className="font-bold text-sm group-hover:text-cyan-600" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>{city.name}</p>
+                <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: "'Barlow', sans-serif" }}>{city.note}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ backgroundColor: "#003060" }} className="py-14">
+        <div className="container">
+          <SectionHeading eyebrow="CREDENTIALS" heading="Licensed for Charles County plumbing" light />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
+            {[{ label: "Maryland State Master Plumber/Gasfitter", num: "#96958" }, { label: "WSSC Master Plumber/Gasfitter", num: "#73696" }].map((cred) => (
+              <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
+                <Key size={24} style={{ color: "#009EC6" }} className="mb-2" />
+                <p className="text-xs font-semibold mb-1" style={{ color: "#003060", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
+                <p className="font-bold text-lg" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="container max-w-3xl mx-auto">
+          <SectionHeading eyebrow="FAQ" heading="Plumbing service in Charles County — common questions" />
+          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} /></div>
+        </div>
+      </section>
+
+      <CTABanner heading="Need a plumber in Charles County?" subtext="MD State #96958 · 24/7 Emergency · No Overtime Surcharge." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+    </>
+  );
+}

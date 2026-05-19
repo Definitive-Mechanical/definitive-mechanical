@@ -1,0 +1,111 @@
+import { Helmet } from "react-helmet-async";
+import { Link } from "wouter";
+import { Phone, ShieldCheck, Key } from "lucide-react";
+import BreadcrumbList from "@/components/ui/BreadcrumbList";
+import BookNowButton from "@/components/ui/BookNowButton";
+import SectionHeading from "@/components/ui/SectionHeading";
+import FAQAccordion from "@/components/ui/FAQAccordion";
+import CTABanner from "@/components/ui/CTABanner";
+
+const CITIES = [
+  { name: "McLean, VA", href: "/service-areas/northern-virginia/fairfax-county/mclean-va/", note: "Luxury estates" },
+  { name: "Springfield, VA", href: "/service-areas/northern-virginia/fairfax-county/springfield-va/", note: "I-95/I-395 corridor" },
+  { name: "Vienna, VA", href: "/service-areas/northern-virginia/fairfax-county/vienna-va/", note: "Town of Vienna" },
+  { name: "Reston, VA", href: "/service-areas/northern-virginia/", note: "Planned community" },
+  { name: "Herndon, VA", href: "/service-areas/northern-virginia/", note: "Tech corridor" },
+  { name: "Fairfax City, VA", href: "/service-areas/northern-virginia/", note: "County seat" },
+  { name: "Chantilly, VA", href: "/service-areas/northern-virginia/", note: "Dulles corridor" },
+  { name: "Centreville, VA", href: "/service-areas/northern-virginia/", note: "Suburban residential" },
+  { name: "Burke, VA", href: "/service-areas/northern-virginia/", note: "Established neighborhoods" },
+  { name: "Annandale, VA", href: "/service-areas/northern-virginia/", note: "Diverse community" },
+  { name: "Falls Church, VA", href: "/service-areas/northern-virginia/", note: "City of Falls Church" },
+  { name: "Tysons, VA", href: "/service-areas/northern-virginia/", note: "Urban commercial" },
+];
+
+const FAQ_ITEMS = [
+  { question: "Are you licensed for plumbing in Fairfax County, VA?", answer: "Yes. Virginia Class A Contractor #2705-183416-A and Virginia Master Plumber/Gasfitter #2710-183416-A authorize all plumbing and gas work throughout Fairfax County. Call (301) 679-5849." },
+  { question: "Do you serve McLean, Springfield, Vienna, and all Fairfax County communities?", answer: "Yes. We serve McLean, Springfield, Vienna, Reston, Herndon, Fairfax City, Chantilly, Centreville, Burke, Annandale, Falls Church, Tysons, and all Fairfax County communities. Call (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Fairfax County?", answer: "Yes. Emergency plumbing available 24/7 across all of Fairfax County. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849." },
+  { question: "Are you SWaM certified for government work in Fairfax County?", answer: "Yes. Virginia SWaM Certification supports government and procurement-eligible plumbing contracts throughout Fairfax County and the Commonwealth of Virginia." },
+];
+
+const SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://definitivemechanical.com/" }, { "@type": "ListItem", "position": 2, "name": "Service Areas", "item": "https://definitivemechanical.com/service-areas/" }, { "@type": "ListItem", "position": 3, "name": "Northern Virginia", "item": "https://definitivemechanical.com/service-areas/northern-virginia/" }, { "@type": "ListItem", "position": 4, "name": "Fairfax County" }] },
+    { "@type": "FAQPage", "mainEntity": FAQ_ITEMS.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) },
+  ],
+};
+
+export default function FairfaxCounty() {
+  return (
+    <>
+      <Helmet>
+        <title>Plumber in Fairfax County VA | Definitive Mechanical | (301) 679-5849</title>
+        <meta name="description" content="Licensed plumbing services throughout Fairfax County VA. VA Class A #2705-183416-A · VA Master Plumber #2710-183416-A · SWaM Certified. 24/7 emergency. Call (301) 679-5849." />
+        <link rel="canonical" href="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/" />
+        <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
+      </Helmet>
+
+      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "45vh" }} className="flex items-center py-16">
+        <div className="container text-center">
+          <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Northern Virginia", href: "/service-areas/northern-virginia/" }, { label: "Fairfax County" }]} dark />
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES · FAIRFAX COUNTY, VA</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Plumber in Fairfax County, VA</h1>
+          <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
+            Definitive Mechanical provides licensed plumbing services throughout Fairfax County — McLean, Springfield, Vienna, Reston, Herndon, and all county communities. VA Class A #2705-183416-A · VA Master Plumber #2710-183416-A · SWaM Certified. 24/7 emergency. Call (301) 679-5849.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
+              <Phone size={20} /> CALL (301) 679-5849
+            </a>
+            <BookNowButton variant="outline" size="lg">Request Service</BookNowButton>
+          </div>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
+            <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Class A #2705-183416-A</span>
+            <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Master Plumber #2710-183416-A</span>
+            <span className="flex items-center gap-1"><ShieldCheck size={14} /> SWaM Certified</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="container">
+          <SectionHeading eyebrow="COMMUNITIES SERVED" heading="Fairfax County cities and communities we serve" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
+            {CITIES.map((city) => (
+              <Link key={city.name} href={city.href} className="bg-white border border-gray-200 rounded-md p-4 hover:border-cyan-400 hover:shadow-md transition-all group">
+                <p className="font-bold text-sm group-hover:text-cyan-600" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>{city.name}</p>
+                <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: "'Barlow', sans-serif" }}>{city.note}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ backgroundColor: "#003060" }} className="py-14">
+        <div className="container">
+          <SectionHeading eyebrow="CREDENTIALS" heading="Virginia licenses for Fairfax County" light />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">
+            {[{ label: "Virginia Class A Contractor", num: "#2705-183416-A" }, { label: "Virginia Master Plumber/Gasfitter", num: "#2710-183416-A" }, { label: "Virginia SWaM Certification", num: "Certified" }].map((cred) => (
+              <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
+                <Key size={24} style={{ color: "#009EC6" }} className="mb-2" />
+                <p className="text-xs font-semibold mb-1" style={{ color: "#003060", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
+                <p className="font-bold text-lg" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="container max-w-3xl mx-auto">
+          <SectionHeading eyebrow="FAQ" heading="Plumbing service in Fairfax County — common questions" />
+          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} /></div>
+        </div>
+      </section>
+
+      <CTABanner heading="Need a plumber in Fairfax County?" subtext="VA Class A #2705-183416-A · VA Master Plumber #2710-183416-A · SWaM Certified · 24/7 Emergency." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+    </>
+  );
+}
