@@ -22,7 +22,13 @@ import {
   BlogUL,
   HowToStep,
 } from "@/components/layout/BlogLayout";
-import { PHONE, PHONE_DISPLAY, LICENSES } from "@/lib/constants";
+import { BUSINESS, LICENSES } from "@/lib/constants";
+
+const PHONE = BUSINESS.phoneRaw;
+const PHONE_DISPLAY = BUSINESS.phone;
+const LICENSE_MD = LICENSES.maryland[0].number;
+const LICENSE_DC = LICENSES.dc[0].number;
+const LICENSE_VA = LICENSES.virginia[0].number;
 
 const howToSchema = {
   "@context": "https://schema.org",
@@ -334,7 +340,7 @@ export default function BlogPost4BeforePlumber() {
           <br />
           When you call (301) 679-5849, you reach a live dispatcher — not an answering service. We dispatch a Licensed Master Plumber on every emergency call, typically arriving within 60–90 minutes in the DC metro area.
           <br /><br />
-          MD Master Plumber #{LICENSES.md_master} | DC #{LICENSES.dc} | VA #{LICENSES.va_master}
+          MD Master Plumber #{LICENSE_MD} | DC #{LICENSE_DC} | VA #{LICENSE_VA}
         </CalloutBox>
 
         <RelatedServicesBlock

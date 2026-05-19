@@ -7,7 +7,13 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import { Phone, ArrowRight, Clock, BookOpen, Zap, Shield, Wrench } from "lucide-react";
-import { PHONE, PHONE_DISPLAY, LICENSES } from "@/lib/constants";
+import { BUSINESS, LICENSES } from "@/lib/constants";
+
+const PHONE = BUSINESS.phoneRaw;
+const PHONE_DISPLAY = BUSINESS.phone;
+const LICENSE_MD = LICENSES.maryland[0].number;
+const LICENSE_DC = LICENSES.dc[0].number;
+const LICENSE_VA = LICENSES.virginia[0].number;
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -212,11 +218,11 @@ export default function BlogIndex() {
                   <div className="mt-4 pt-4 border-t border-white/10 space-y-2">
                     <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-['Barlow']">
                       <Shield className="w-3 h-3 text-[#009EC6]" />
-                      <span>MD #{LICENSES.md_master} | DC #{LICENSES.dc}</span>
+                      <span>MD #{LICENSE_MD} | DC #{LICENSE_DC}</span>
                     </div>
                     <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-['Barlow']">
                       <Shield className="w-3 h-3 text-[#009EC6]" />
-                      <span>VA #{LICENSES.va_master}</span>
+                      <span>VA #{LICENSE_VA}</span>
                     </div>
                   </div>
                 </div>
