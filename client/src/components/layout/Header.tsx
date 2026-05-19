@@ -346,11 +346,10 @@ export default function Header() {
           <nav className="flex-1 overflow-y-auto px-4 py-2">
             {[
               { label: 'Home', href: '/' },
-              { label: 'Services', key: 'services', subItems: [
-                ...MEGA_MENU.col1.items,
-                ...MEGA_MENU.col2.items,
-                ...MEGA_MENU.col3.items,
-                { label: 'View All Services', href: '/services' },
+              { label: 'Services', key: 'services', groups: [
+                MEGA_MENU.col1,
+                MEGA_MENU.col2,
+                MEGA_MENU.col3,
               ]},
               { label: 'Commercial & Gov', key: 'commercial', subItems: COMMERCIAL_DROPDOWN },
               { label: 'Service Areas', key: 'areas', subItems: AREAS_DROPDOWN },
@@ -405,19 +404,53 @@ export default function Header() {
                         }}
                       />
                     </button>
-                    {mobileExpanded === item.key && item.subItems && (
-                      <div className="pb-2 pl-4">
-                        {item.subItems.map((sub) => (
-                          <Link
-                            key={sub.href}
-                            href={sub.href}
-                            className="block py-2 no-underline"
-                            style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: 'rgba(255,255,255,0.75)' }}
-                            onClick={() => setMobileOpen(false)}
-                          >
-                            {sub.label}
-                          </Link>
-                        ))}
+                    {mobileExpanded === item.key && (
+                      <div className="pb-3">
+                        {'groups' in item && item.groups ? (
+                          <>
+                            {item.groups.map((group) => (
+                              <div key={group.title} style={{ marginBottom: '12px' }}>
+                                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', padding: '8px 0 4px 16px', margin: 0 }}>
+                                  {group.title}
+                                </p>
+                                {group.items.map((sub) => (
+                                  <Link
+                                    key={sub.href}
+                                    href={sub.href}
+                                    className="flex items-center gap-2 no-underline"
+                                    style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: 'rgba(255,255,255,0.75)', padding: '7px 0 7px 16px', borderBottom: '1px solid rgba(255,255,255,0.04)' }}
+                                    onClick={() => setMobileOpen(false)}
+                                  >
+                                    <ChevronRight size={12} style={{ color: '#009EC6', flexShrink: 0 }} />
+                                    {sub.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            ))}
+                            <div style={{ padding: '8px 0 4px 16px' }}>
+                              <Link
+                                href="/services"
+                                className="no-underline"
+                                style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6' }}
+                                onClick={() => setMobileOpen(false)}
+                              >
+                                View All Services →
+                              </Link>
+                            </div>
+                          </>
+                        ) : ('subItems' in item && item.subItems) ? (
+                          item.subItems.map((sub) => (
+                            <Link
+                              key={sub.href}
+                              href={sub.href}
+                              className="block py-2 no-underline"
+                              style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: 'rgba(255,255,255,0.75)', paddingLeft: '16px' }}
+                              onClick={() => setMobileOpen(false)}
+                            >
+                              {sub.label}
+                            </Link>
+                          ))
+                        ) : null}
                       </div>
                     )}
                   </>
