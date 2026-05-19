@@ -261,30 +261,6 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Emergency Button — Desktop Nav */}
-          <a
-            href="/emergency-plumbing"
-            className="hidden lg:flex items-center gap-1.5 no-underline transition-all duration-200"
-            style={{
-              background: '#CC2200',
-              color: 'white',
-              fontFamily: 'Barlow Condensed, Arial, sans-serif',
-              fontWeight: 700,
-              fontSize: '12px',
-              textTransform: 'uppercase',
-              letterSpacing: '0.15em',
-              borderRadius: '2px',
-              padding: '6px 14px',
-              marginRight: '8px',
-              border: '1px solid rgba(255,255,255,0.2)',
-            }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#AA1A00'; }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = '#CC2200'; }}
-          >
-            <span style={{ display: 'inline-block', width: '6px', height: '6px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
-            24/7 Emergency
-          </a>
-
           {/* Desktop Phone CTA */}
           <a
             href={`tel:${BUSINESS.phoneRaw}`}
