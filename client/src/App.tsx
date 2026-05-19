@@ -69,6 +69,21 @@ import McLeanVA from "./pages/service-areas/McLeanVA";
 import SpringfieldVA from "./pages/service-areas/SpringfieldVA";
 import ViennaVA from "./pages/service-areas/ViennaVA";
 
+// Contact & Financing
+import Contact from "./pages/Contact";
+import Financing from "./pages/Financing";
+import AllServices from "./pages/AllServices";
+
+// Government Certifications
+import MBECertified from "./pages/MBECertified";
+import SWaMCertified from "./pages/SWaMCertified";
+
+// Service Area Hubs
+import ServiceAreasHub from "./pages/service-areas/ServiceAreasHub";
+import MarylandHub from "./pages/service-areas/MarylandHub";
+import WashingtonDCHub from "./pages/service-areas/WashingtonDCHub";
+import NorthernVirginiaHub from "./pages/service-areas/NorthernVirginiaHub";
+
 // Commercial / Government
 import CommercialPlumbing from "./pages/CommercialPlumbing";
 import GovernmentMunicipalPlumbing from "./pages/GovernmentMunicipalPlumbing";
@@ -149,6 +164,21 @@ function Router() {
       <Route path="/service-areas/northern-virginia/fairfax-county/mclean-va" component={() => <Layout><McLeanVA /></Layout>} />
       <Route path="/service-areas/northern-virginia/fairfax-county/springfield-va" component={() => <Layout><SpringfieldVA /></Layout>} />
       <Route path="/service-areas/northern-virginia/fairfax-county/vienna-va" component={() => <Layout><ViennaVA /></Layout>} />
+
+      {/* Contact & Financing */}
+      <Route path="/contact" component={() => <Layout><Contact /></Layout>} />
+      <Route path="/financing" component={() => <Layout><Financing /></Layout>} />
+      <Route path="/plumbing" component={() => <Layout><AllServices /></Layout>} />
+
+      {/* Government Certifications */}
+      <Route path="/mbe-certified-plumbing-contractor-maryland" component={() => <Layout><MBECertified /></Layout>} />
+      <Route path="/swam-certified-plumbing-contractor-virginia" component={() => <Layout><SWaMCertified /></Layout>} />
+
+      {/* Service Area Hubs */}
+      <Route path="/service-areas" component={() => <Layout><ServiceAreasHub /></Layout>} />
+      <Route path="/service-areas/maryland" component={() => <Layout><MarylandHub /></Layout>} />
+      <Route path="/service-areas/washington-dc" component={() => <Layout><WashingtonDCHub /></Layout>} />
+      <Route path="/service-areas/northern-virginia" component={() => <Layout><NorthernVirginiaHub /></Layout>} />
 
       {/* Commercial / Government */}
       <Route path="/commercial-plumbing" component={() => <Layout><CommercialPlumbing /></Layout>} />
