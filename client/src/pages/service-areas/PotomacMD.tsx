@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import {
   AlertTriangle, Droplets, Thermometer, Zap, GitBranch, Flame,
