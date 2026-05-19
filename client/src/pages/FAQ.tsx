@@ -39,12 +39,35 @@ const FAQ_AREAS = [
   { question: "Do you serve Washington DC?", answer: "Yes. DC Master Plumber/Gasfitter #PL-2024-00065 authorizes all plumbing and gas work in Washington DC. We serve all DC neighborhoods including Capitol Hill, Georgetown, Shaw, Columbia Heights, Petworth, and all other DC areas." },
 ];
 
+const FAQ_WATER_HEATER = [
+  { question: "How do I know if my water heater needs to be replaced?", answer: "Signs you need a replacement: the unit is 10+ years old, you see rust-colored water, you hear rumbling or popping sounds, you have inconsistent hot water, or you notice water pooling around the base. A licensed plumber can assess whether repair or replacement is the better value. Call (301) 679-5849." },
+  { question: "How long does water heater installation take?", answer: "A standard tank water heater replacement typically takes 2–3 hours. A tankless water heater installation takes 4–6 hours due to the gas line and venting requirements. We handle permit filing and inspection scheduling." },
+  { question: "What is the difference between a tank and tankless water heater?", answer: "A tank water heater stores and continuously heats a fixed volume of water (40–80 gallons). A tankless unit heats water on demand with no storage tank, providing unlimited hot water and typically 20–30% better energy efficiency. Tankless units cost more upfront but last 20+ years vs. 10–12 years for tank units." },
+  { question: "Do you offer financing for water heater installation?", answer: "Yes. Financing through Synchrony Financial is available for qualifying customers. Ask about current promotional rates when you call (301) 679-5849." },
+];
+
+const FAQ_DRAIN_SEWER = [
+  { question: "What causes recurring drain clogs?", answer: "Recurring clogs are usually caused by grease and soap buildup (kitchen lines), hair and soap scum (bathroom lines), or root intrusion (main sewer line). A video camera inspection identifies the exact cause and location. Hydro-jetting clears buildup that snaking cannot remove." },
+  { question: "What is hydro-jetting and when do I need it?", answer: "Hydro-jetting uses high-pressure water (up to 4,000 PSI) to scour the interior of drain and sewer pipes, removing grease, scale, mineral deposits, and root intrusion. It is recommended when snaking fails to clear a blockage, for recurring clogs, and as preventive maintenance for commercial kitchen lines." },
+  { question: "What is a video camera inspection and what does it show?", answer: "A sewer camera inspection uses a waterproof HD camera on a flexible cable to inspect the interior of your drain and sewer lines. It shows blockages, root intrusion, pipe cracks, joint offsets, and pipe condition. We provide recorded footage and a written report. Call (301) 679-5849." },
+  { question: "How do I know if I have a sewer line problem?", answer: "Warning signs include: multiple drains backing up simultaneously, sewage odor inside the home, gurgling sounds from toilets, wet spots or unusually green patches in the yard, and slow drains throughout the house. These indicate a main sewer line issue rather than an isolated clog." },
+];
+
+const FAQ_BACKFLOW = [
+  { question: "What is backflow prevention and who needs it?", answer: "Backflow is the reversal of water flow that can pull contaminated water back into the clean supply. A backflow preventer is a mechanical device that stops this. Most commercial properties, restaurants, medical offices, buildings with irrigation systems, and multi-unit residential buildings are required to have one installed and tested annually." },
+  { question: "How often must backflow preventers be tested?", answer: "Annual testing is required by WSSC (Prince George's and Montgomery County), DC Water (Washington DC), Fairfax Water, Loudoun Water, PWCSA, and other local authorities in our service area. Non-compliance results in notices of violation and potential fines." },
+  { question: "What happens if I miss my annual backflow certification?", answer: "Your water authority issues a formal notice of non-compliance, followed by fines and ultimately potential water service interruption for continued non-compliance. We offer a compliance reminder service — contact us to enroll." },
+];
+
 const ALL_FAQS = [
-  { category: "Licensing & Certifications", items: FAQ_LICENSING },
-  { category: "Emergency Plumbing", items: FAQ_EMERGENCY },
-  { category: "Services", items: FAQ_SERVICES },
-  { category: "Pricing & Payment", items: FAQ_PRICING },
-  { category: "Service Areas", items: FAQ_AREAS },
+  { category: "Licensing & Certifications", anchor: "licensing", items: FAQ_LICENSING },
+  { category: "Emergency Plumbing", anchor: "emergency", items: FAQ_EMERGENCY },
+  { category: "Services", anchor: "services", items: FAQ_SERVICES },
+  { category: "Water Heaters", anchor: "water-heaters", items: FAQ_WATER_HEATER },
+  { category: "Drain & Sewer", anchor: "drain-sewer", items: FAQ_DRAIN_SEWER },
+  { category: "Backflow", anchor: "backflow", items: FAQ_BACKFLOW },
+  { category: "Pricing & Payment", anchor: "pricing", items: FAQ_PRICING },
+  { category: "Service Areas", anchor: "service-area", items: FAQ_AREAS },
 ];
 
 const SCHEMA = {
@@ -95,9 +118,25 @@ export default function FAQPage() {
         </div>
       </section>
 
+      {/* Jump Nav Pills */}
+      <div className="bg-white border-b border-[#C0D8F0] py-4 px-4 sticky top-0 z-30 shadow-sm">
+        <div className="max-w-5xl mx-auto flex flex-wrap gap-2">
+          {ALL_FAQS.map((section) => (
+            <a
+              key={section.anchor}
+              href={`#${section.anchor}`}
+              className="font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-full border border-[#003060] text-[#003060] hover:bg-[#003060] hover:text-white transition-colors"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+            >
+              {section.category}
+            </a>
+          ))}
+        </div>
+      </div>
+
       {/* FAQ sections by category */}
       {ALL_FAQS.map((section, idx) => (
-        <section key={section.category} className={idx % 2 === 0 ? "bg-white py-16" : "py-16"} style={idx % 2 !== 0 ? { backgroundColor: "#F0F0F0" } : {}}>
+        <section key={section.category} id={section.anchor} className={idx % 2 === 0 ? "bg-white py-16" : "py-16"} style={idx % 2 !== 0 ? { backgroundColor: "#F0F0F0" } : {}}>
           <div className="container max-w-3xl mx-auto">
             <SectionHeading eyebrow="FAQ" heading={section.category} />
             <div className="mt-8">
