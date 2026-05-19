@@ -2,6 +2,7 @@ import { Link } from 'wouter';
 import { Helmet } from 'react-helmet-async';
 import { Phone, ChevronRight, Shield, Clock, Award, MapPin } from 'lucide-react';
 import { BUSINESS } from '@/lib/constants';
+import ServiceAreaSearch from '@/components/ServiceAreaSearch';
 
 const COUNTIES = [
   {
@@ -110,6 +111,9 @@ export default function MarylandHub() {
             <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
               REQUEST SERVICE
             </Link>
+          </div>
+          <div style={{ marginTop: '32px' }}>
+            <ServiceAreaSearch variant="hero" />
           </div>
         </div>
       </section>
