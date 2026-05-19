@@ -72,7 +72,7 @@ export default function SWaMCertified() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <SectionHeading eyebrow="ABOUT VIRGINIA SWAM" heading="What is Virginia SWaM certification?" align="left" />
+              <SectionHeading eyebrow="ABOUT VIRGINIA SWAM" heading="What is Virginia SWaM certification?" />
               <div style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "16px", lineHeight: 1.7 }} className="space-y-4">
                 <p>Virginia SWaM (Small, Women-owned, and Minority-owned Business) certification is issued by the Virginia Department of Small Business & Supplier Diversity (SBSD). It confirms that a business qualifies as a small, women-owned, or minority-owned enterprise under Virginia's definitions.</p>
                 <p>Virginia state agencies and local governments often have SWaM utilization goals for contracts. Prime contractors working on Virginia government projects can document their engagement of SWaM-certified subcontractors toward those goals.</p>
@@ -80,7 +80,7 @@ export default function SWaMCertified() {
               </div>
             </div>
             <div>
-              <SectionHeading eyebrow="OUR CERTIFICATION" heading="Definitive Mechanical SWaM details" align="left" />
+              <SectionHeading eyebrow="OUR CERTIFICATION" heading="Definitive Mechanical SWaM details" />
               <div className="space-y-4">
                 {[
                   { label: "Certification Type", value: "Virginia SWaM (Small, Women-owned, Minority-owned Business)" },
@@ -107,7 +107,7 @@ export default function SWaMCertified() {
       {/* Why Hire SWaM */}
       <section className="py-20" style={{ background: "#003060" }}>
         <div className="container">
-          <SectionHeading eyebrow="WHY HIRE A SWAM CONTRACTOR" heading="Why hire a Virginia SWaM certified plumbing contractor?" variant="light" />
+          <SectionHeading eyebrow="WHY HIRE A SWAM CONTRACTOR" heading="Why hire a Virginia SWaM certified plumbing contractor?" light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {[
               { icon: Building2, title: "Meet SWaM Utilization Goals", body: "Virginia state agencies and local government contracts often carry SWaM utilization goals. Engaging Definitive Mechanical counts toward those goals with verifiable documentation." },

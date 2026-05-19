@@ -87,7 +87,7 @@ export default function Contact() {
 
             {/* LEFT — Contact Info */}
             <div className="lg:col-span-2">
-              <SectionHeading eyebrow="GET IN TOUCH" heading="How to reach us" align="left" />
+              <SectionHeading eyebrow="GET IN TOUCH" heading="How to reach us" />
 
               {/* Emergency CTA */}
               <div className="rounded-md p-6 mb-8" style={{ background: "#003060" }}>
@@ -150,7 +150,7 @@ export default function Contact() {
 
             {/* RIGHT — Form */}
             <div className="lg:col-span-3">
-              <SectionHeading eyebrow="SERVICE REQUEST" heading="Request non-emergency plumbing service" align="left" />
+              <SectionHeading eyebrow="SERVICE REQUEST" heading="Request non-emergency plumbing service" />
 
               {submitted ? (
                 <div className="rounded-md p-8 text-center" style={{ background: "#F0F0F0" }}>

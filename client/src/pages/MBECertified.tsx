@@ -72,7 +72,7 @@ export default function MBECertified() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <SectionHeading eyebrow="ABOUT MDOT MBE" heading="What is MDOT MBE certification?" align="left" />
+              <SectionHeading eyebrow="ABOUT MDOT MBE" heading="What is MDOT MBE certification?" />
               <div style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "16px", lineHeight: 1.7 }} className="space-y-4">
                 <p>MDOT MBE (Minority Business Enterprise) certification is issued by the Maryland Department of Transportation. It confirms that a business is at least 51% owned and controlled by socially and economically disadvantaged individuals — including Black Americans, Hispanic Americans, Asian Pacific Americans, and other groups recognized under federal and state guidelines.</p>
                 <p>Maryland's statewide aspirational MBE goal is 29% across participating agencies. State agencies, municipalities, and prime contractors subject to Maryland MBE participation requirements can document Definitive Mechanical's engagement toward those goals.</p>
@@ -80,7 +80,7 @@ export default function MBECertified() {
               </div>
             </div>
             <div>
-              <SectionHeading eyebrow="OUR CERTIFICATION" heading="Definitive Mechanical MBE details" align="left" />
+              <SectionHeading eyebrow="OUR CERTIFICATION" heading="Definitive Mechanical MBE details" />
               <div className="space-y-4">
                 {[
                   { label: "Certification Type", value: "MDOT Minority Business Enterprise (MBE)" },
@@ -107,7 +107,7 @@ export default function MBECertified() {
       {/* Why Hire MBE */}
       <section className="py-20" style={{ background: "#003060" }}>
         <div className="container">
-          <SectionHeading eyebrow="WHY HIRE AN MBE CONTRACTOR" heading="Why hire an MDOT MBE certified plumbing contractor?" variant="light" />
+          <SectionHeading eyebrow="WHY HIRE AN MBE CONTRACTOR" heading="Why hire an MDOT MBE certified plumbing contractor?" light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {[
               { icon: Building2, title: "Meet MBE Participation Goals", body: "Maryland state agencies and municipal contracts often carry MBE participation goals. Engaging Definitive Mechanical as a subcontractor or prime contractor counts toward those goals." },
