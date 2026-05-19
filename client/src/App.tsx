@@ -118,6 +118,13 @@ import BackflowCertificationMaryland from "./pages/BackflowCertificationMaryland
 import BackflowCertificationDC from "./pages/BackflowCertificationDC";
 import BackflowCertificationVirginia from "./pages/BackflowCertificationVirginia";
 
+// Blog
+import BlogIndex from "./pages/blog/BlogIndex";
+import BlogPost1Emergency from "./pages/blog/BlogPost1Emergency";
+import BlogPost2Cost from "./pages/blog/BlogPost2Cost";
+import BlogPost3LicensedPlumber from "./pages/blog/BlogPost3LicensedPlumber";
+import BlogPost4BeforePlumber from "./pages/blog/BlogPost4BeforePlumber";
+
 // Commercial / Government
 import CommercialPlumbing from "./pages/CommercialPlumbing";
 import GovernmentMunicipalPlumbing from "./pages/GovernmentMunicipalPlumbing";
@@ -323,6 +330,18 @@ function Router() {
       <Route path="/commercial-plumbing/" component={() => <Layout><CommercialPlumbing /></Layout>} />
       <Route path="/government-municipal-plumbing" component={() => <Layout><GovernmentMunicipalPlumbing /></Layout>} />
       <Route path="/government-municipal-plumbing/" component={() => <Layout><GovernmentMunicipalPlumbing /></Layout>} />
+
+      {/* Blog */}
+      <Route path="/blog" component={() => <BlogIndex />} />
+      <Route path="/blog/" component={() => <BlogIndex />} />
+      <Route path="/blog/what-qualifies-as-a-plumbing-emergency" component={() => <BlogPost1Emergency />} />
+      <Route path="/blog/what-qualifies-as-a-plumbing-emergency/" component={() => <BlogPost1Emergency />} />
+      <Route path="/blog/emergency-plumber-cost-maryland-dc-va" component={() => <BlogPost2Cost />} />
+      <Route path="/blog/emergency-plumber-cost-maryland-dc-va/" component={() => <BlogPost2Cost />} />
+      <Route path="/blog/how-to-choose-a-licensed-plumber-maryland-dc-virginia" component={() => <BlogPost3LicensedPlumber />} />
+      <Route path="/blog/how-to-choose-a-licensed-plumber-maryland-dc-virginia/" component={() => <BlogPost3LicensedPlumber />} />
+      <Route path="/blog/what-to-do-before-the-plumber-arrives" component={() => <BlogPost4BeforePlumber />} />
+      <Route path="/blog/what-to-do-before-the-plumber-arrives/" component={() => <BlogPost4BeforePlumber />} />
 
       {/* Fallback */}
       <Route path="/404" component={() => <Layout><NotFound /></Layout>} />
