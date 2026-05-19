@@ -93,10 +93,40 @@ export default function Header() {
 
   return (
     <>
+      {/* Emergency Announcement Bar */}
+      <div
+        className="fixed top-0 left-0 right-0 z-[101]"
+        style={{
+          background: '#CC2200',
+          height: '36px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <a
+          href={`tel:${BUSINESS.phoneRaw}`}
+          className="no-underline flex items-center gap-2"
+          style={{
+            fontFamily: 'Barlow Condensed, Arial, sans-serif',
+            fontWeight: 700,
+            fontSize: '13px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.18em',
+            color: 'white',
+          }}
+        >
+          <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
+          24/7 Emergency Plumbing — Call Now: {BUSINESS.phone}
+          <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite 0.7s', flexShrink: 0 }} />
+        </a>
+      </div>
+
       {/* Desktop Header */}
       <header
-        className="fixed top-0 left-0 right-0 z-[100] transition-shadow duration-300"
+        className="fixed left-0 right-0 z-[100] transition-shadow duration-300"
         style={{
+          top: '36px',
           background: '#003060',
           boxShadow: scrolled ? '0 4px 24px rgba(0,0,0,0.35)' : '0 2px 8px rgba(0,0,0,0.2)',
           height: '72px',
@@ -231,6 +261,30 @@ export default function Header() {
             ))}
           </nav>
 
+          {/* Emergency Button — Desktop Nav */}
+          <a
+            href="/emergency-plumbing"
+            className="hidden lg:flex items-center gap-1.5 no-underline transition-all duration-200"
+            style={{
+              background: '#CC2200',
+              color: 'white',
+              fontFamily: 'Barlow Condensed, Arial, sans-serif',
+              fontWeight: 700,
+              fontSize: '12px',
+              textTransform: 'uppercase',
+              letterSpacing: '0.15em',
+              borderRadius: '2px',
+              padding: '6px 14px',
+              marginRight: '8px',
+              border: '1px solid rgba(255,255,255,0.2)',
+            }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#AA1A00'; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = '#CC2200'; }}
+          >
+            <span style={{ display: 'inline-block', width: '6px', height: '6px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
+            24/7 Emergency
+          </a>
+
           {/* Desktop Phone CTA */}
           <a
             href={`tel:${BUSINESS.phoneRaw}`}
@@ -272,9 +326,9 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Spacer */}
-      <div style={{ height: '72px' }} className="hidden lg:block" />
-      <div style={{ height: '60px' }} className="lg:hidden" />
+      {/* Spacer — accounts for announcement bar (36px) + header (72px) */}
+      <div style={{ height: '108px' }} className="hidden lg:block" />
+      <div style={{ height: '36px' }} className="lg:hidden" />
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
