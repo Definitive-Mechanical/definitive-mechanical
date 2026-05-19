@@ -1,0 +1,143 @@
+import { Disc, Droplets, Snowflake, ZapOff, Timer, AlertTriangle, CheckCircle2, AlertCircle, ShieldCheck, Shield } from 'lucide-react';
+import { Link } from 'wouter';
+import BookNowButton from '@/components/ui/BookNowButton';
+import SectionHeading from '@/components/ui/SectionHeading';
+import BreadcrumbList from '@/components/ui/BreadcrumbList';
+import FAQAccordion from '@/components/ui/FAQAccordion';
+import CTABanner from '@/components/ui/CTABanner';
+import TrustBadges from '@/components/ui/TrustBadges';
+
+const FAQ_ITEMS = [
+  { question: "Can a failed backflow preventer be repaired or does it need to be replaced?", answer: "Most backflow preventer failures are repairable with internal repair kit installation — replacement of the check disc seals, relief valve seat, and/or other internal components. Full replacement is recommended when the device body is cracked or physically damaged, when the device is an older model for which repair kits are no longer available, when the device has failed multiple consecutive certification tests after repair, or when the installation requires upgrading to a higher-protection device class." },
+  { question: "Can you repair backflow preventers on-site?", answer: "Yes. Many backflow preventer failures can be repaired on site during the same service visit as the certification test. We carry common repair kits for the most prevalent device types and manufacturers in the DMV market." },
+  { question: "Do you refile the certification report after repair?", answer: "Yes. Report refiling with the relevant water supplier or jurisdiction is included in our repair service. After repair, we retest the device and file the updated certification report." },
+];
+
+const FAILURE_CAUSES = [
+  { Icon: Disc, title: "Check valve failure", body: "Internal check discs or rubber seats deteriorate and no longer seal properly." },
+  { Icon: Droplets, title: "Relief valve fouling", body: "Debris or mineral deposits prevent the relief valve from seating correctly, causing the device to weep or discharge continuously." },
+  { Icon: Snowflake, title: "Freeze damage", body: "Backflow preventers installed in exposed locations can freeze and crack during cold Maryland and Virginia winters." },
+  { Icon: ZapOff, title: "Physical damage", body: "Impact damage from equipment, landscaping, or vandalism." },
+  { Icon: Timer, title: "End of service life", body: "Most backflow preventer components have a finite service life and need periodic repair kit replacement." },
+  { Icon: AlertTriangle, title: "Improper installation", body: "A device installed incorrectly or without proper drainage provisions will fail sooner than one installed to code." },
+];
+
+export default function BackflowPreventerRepair() {
+  return (
+    <>
+      {/* SECTION 1: HERO */}
+      <section style={{ minHeight: '45vh', background: 'linear-gradient(135deg, #003060 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
+          <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Backflow Prevention', href: '/backflow-prevention' }, { label: 'Backflow Preventer Repair' }]} />
+          <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
+            <div className="lg:col-span-3">
+              <p className="eyebrow mb-3">BACKFLOW PREVENTER REPAIR · MD, DC & NORTHERN VIRGINIA</p>
+              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
+                Backflow Preventer Repair in Maryland, DC & Northern Virginia
+              </h1>
+              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+                Definitive Mechanical repairs and replaces backflow prevention devices that have failed certification testing or are showing signs of malfunction across Maryland, Washington DC, and Northern Virginia. Many backflow preventer failures can be repaired on site during the same service visit. Licensed. Report refiling included. Call (301) 679-5849.
+              </p>
+              <TrustBadges variant="dark" badges={["On-Site Repair Often Available", "Report Refiling Included", "Licensed", "Commercial & Residential"]} />
+              <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
+                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="outline" text="REQUEST BACKFLOW REPAIR" href="/contact" size="md" />
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-2">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Backflow preventer repair Maryland DC Northern Virginia — Definitive Mechanical" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 2: WHY THEY FAIL */}
+      <section style={{ background: 'white', padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading eyebrow="WHY BACKFLOW PREVENTERS FAIL" heading="Why do backflow preventers fail?" centered />
+          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, maxWidth: '640px', margin: '0 auto 40px', textAlign: 'center' }}>
+            Backflow preventers are mechanical devices exposed to water pressure, temperature fluctuation, debris, and chemical exposure. Over time, internal components wear.
+          </p>
+          <div className="space-y-3 max-w-3xl mx-auto">
+            {FAILURE_CAUSES.map(({ Icon, title, body }) => (
+              <div key={title} style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '16px', display: 'flex', gap: '14px', alignItems: 'flex-start', border: '1px solid #E8EFF5', borderLeftWidth: '4px', borderLeftColor: '#009EC6' }}>
+                <Icon size={22} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <div>
+                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '14px', marginBottom: '4px' }}>{title}</p>
+                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3: REPAIR VS REPLACE */}
+      <section style={{ background: '#F0F0F0', padding: '64px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading eyebrow="REPAIR OR REPLACE?" heading="Can a failed backflow preventer be repaired or does it need to be replaced?" centered />
+          <div className="grid lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* Repair */}
+            <div style={{ background: 'white', borderTop: '4px solid #1A7A4A', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(0,48,96,0.06)' }}>
+              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#1A7A4A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>USUALLY REPAIRABLE</p>
+              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.7, marginBottom: '16px' }}>
+                Most backflow preventer failures are repairable with internal repair kit installation — replacement of the check disc seals, relief valve seat, and/or other internal components. This is typically significantly less expensive than full device replacement.
+              </p>
+              <div className="space-y-2">
+                {["Check valve seal failure — usually repairable", "Relief valve failure — usually repairable", "Minor debris fouling — cleared and reseated on site"].map((item) => (
+                  <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                    <CheckCircle2 size={16} color="#1A7A4A" style={{ flexShrink: 0 }} />
+                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '13px' }}>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Replace */}
+            <div style={{ background: 'white', borderTop: '4px solid #F59E0B', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(0,48,96,0.06)' }}>
+              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#F59E0B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>REPLACEMENT RECOMMENDED WHEN:</p>
+              <div className="space-y-3">
+                {["The device body is cracked or physically damaged (freeze damage is the most common cause)", "The device is an older model for which repair kits are no longer available", "The device has failed multiple consecutive certification tests after repair", "The installation requires upgrading to a higher-protection device class"].map((item) => (
+                  <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
+                    <AlertCircle size={16} color="#F59E0B" style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '13px', lineHeight: 1.5 }}>{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '16px', textAlign: 'center', marginTop: '32px', maxWidth: '640px', margin: '32px auto 0' }}>
+            We assess each device and give you an honest repair-or-replace recommendation — not a replacement recommendation driven by margin.
+          </p>
+        </div>
+      </section>
+
+      {/* RELATED SERVICES */}
+      <section style={{ background: 'white', padding: '48px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            {[{ icon: ShieldCheck, label: 'Backflow Certification', href: '/backflow-certification' }, { icon: Shield, label: 'Backflow Prevention', href: '/backflow-prevention' }, { icon: CheckCircle2, label: 'Commercial Plumbing', href: '/commercial-plumbing' }].map((item) => (
+              <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '13px' }}>{item.label}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading eyebrow="FAQ" heading="Questions about backflow preventer repair in MD, DC & Northern VA" centered />
+          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px' }}>
+            <FAQAccordion items={FAQ_ITEMS} schema={true} />
+          </div>
+        </div>
+      </section>
+
+      <CTABanner heading="Backflow preventer failed its test or showing problems?" subtext="Repair or replacement assessment. Report refiling included. Licensed." primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST BACKFLOW REPAIR", href: "/contact" }} variant="gradient" />
+    </>
+  );
+}

@@ -60,7 +60,7 @@ export default function Footer() {
                 <img
                   src="/manus-storage/definitive-mechanical-logo_0084eea2.png"
                   alt="Definitive Mechanical"
-                  style={{ height: '52px', width: 'auto', display: 'block', filter: 'brightness(0) invert(1)' }}
+                  style={{ height: '52px', width: 'auto', display: 'block' }}
                 />
               </div>
               <div className="space-y-3">
