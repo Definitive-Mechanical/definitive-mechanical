@@ -9,6 +9,7 @@ import Footer from "./components/layout/Footer";
 
 // Core Pages
 import Home from "./pages/Home";
+import ServicesDirectory from "./pages/ServicesDirectory";
 import About from "./pages/About";
 import LicensesCertifications from "./pages/LicensesCertifications";
 import Reviews from "./pages/Reviews";
@@ -384,6 +385,8 @@ function Router() {
       <Route path="/financing/" component={() => <Layout><Financing /></Layout>} />
       <Route path="/plumbing" component={() => <Layout><AllServices /></Layout>} />
       <Route path="/plumbing/" component={() => <Layout><AllServices /></Layout>} />
+      <Route path="/services" component={() => <Layout><ServicesDirectory /></Layout>} />
+      <Route path="/services/" component={() => <Layout><ServicesDirectory /></Layout>} />
 
       {/* Government Certifications */}
       <Route path="/mbe-certified-plumbing-contractor-maryland" component={() => <Layout><MBECertified /></Layout>} />

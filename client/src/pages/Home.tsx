@@ -19,7 +19,7 @@ const HOME_SERVICES = [
   { title: 'Backflow Certification', icon: 'ShieldCheck', href: '/backflow-certification', description: 'Annual backflow preventer testing, certification, repair, and replacement for commercial, municipal, and residential properties.' },
   { title: 'Commercial Plumbing', icon: 'Building2', href: '/commercial-plumbing', description: 'Facility maintenance, code-compliant service, and emergency response for businesses, property managers, and institutions.' },
   { title: 'Government & Municipal', icon: 'Landmark', href: '/government-municipal-plumbing', description: 'MDOT MBE and VA SWaM certified. Capability statement available. CAGE 8HCF6. NAICS 238220.' },
-  { title: 'View All Services', icon: 'ArrowRight', href: '/plumbing', description: 'Water heater installation, tankless systems, water line repair, boiler service, faucet & toilet repair, and more.' },
+  { title: 'View All Services', icon: 'ArrowRight', href: '/services', description: 'Water heater installation, tankless systems, water line repair, boiler service, faucet & toilet repair, and more.' },
 ];
 
 const CREDENTIALS = [
@@ -218,7 +218,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton variant="ghost" text="VIEW ALL PLUMBING SERVICES" href="/plumbing" size="md" />
+            <BookNowButton variant="ghost" text="VIEW ALL PLUMBING SERVICES" href="/services" size="md" />
           </div>
         </div>
       </section>

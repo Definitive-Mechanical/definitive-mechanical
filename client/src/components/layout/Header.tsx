@@ -7,7 +7,7 @@ import { BUSINESS } from '@/lib/constants';
 
 const NAV_ITEMS = [
   { label: 'Home', href: '/' },
-  { label: 'Services', href: '/plumbing', hasMega: true },
+  { label: 'Services', href: '/services', hasMega: true },
   { label: 'Commercial & Gov', href: '/commercial-plumbing', hasDropdown: 'commercial' },
   { label: 'Service Areas', href: '/service-areas/maryland', hasDropdown: 'areas' },
   { label: 'About', href: '/about' },
@@ -179,7 +179,7 @@ export default function Header() {
                       ))}
                     </div>
                     <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', padding: '12px 24px' }}>
-                      <Link href="/plumbing" className="no-underline" style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6' }}>
+                      <Link href="/services" className="no-underline" style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6' }}>
                         View All Services →
                       </Link>
                     </div>
@@ -354,7 +354,7 @@ export default function Header() {
                 ...MEGA_MENU.col1.items,
                 ...MEGA_MENU.col2.items,
                 ...MEGA_MENU.col3.items,
-                { label: 'View All Services', href: '/plumbing' },
+                { label: 'View All Services', href: '/services' },
               ]},
               { label: 'Commercial & Gov', key: 'commercial', subItems: COMMERCIAL_DROPDOWN },
               { label: 'Service Areas', key: 'areas', subItems: AREAS_DROPDOWN },
