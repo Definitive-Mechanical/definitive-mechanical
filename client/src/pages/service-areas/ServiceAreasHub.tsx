@@ -8,6 +8,7 @@ import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import { MapPin, Phone, ArrowRight, CheckCircle2 } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
+import ServiceAreaSearch from "@/components/ServiceAreaSearch";
 
 const PHONE = BUSINESS.phoneRaw;
 const PHONE_DISPLAY = BUSINESS.phone;
@@ -207,6 +208,11 @@ export default function ServiceAreasHub() {
                 {r.label} &#8594;
               </Link>
             ))}
+          </div>
+
+          {/* Zip Code Lookup */}
+          <div style={{ marginTop: '32px' }}>
+            <ServiceAreaSearch variant="hero" />
           </div>
         </div>
       </section>

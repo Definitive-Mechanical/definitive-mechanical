@@ -9,6 +9,7 @@ import StarRating from '@/components/ui/StarRating';
 import TestimonialCard from '@/components/ui/TestimonialCard';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import CTABanner from '@/components/ui/CTABanner';
+import ServiceAreaSearch from '@/components/ServiceAreaSearch';
 
 const HOME_SERVICES = [
   { title: '24/7 Emergency Plumbing', icon: 'AlertTriangle', href: '/emergency-plumbing', description: 'Burst pipes, sewer backups, gas leaks — live dispatcher 24/7, 365 days a year. Licensed Master Plumber on every emergency call.', featured: true },
@@ -144,6 +145,11 @@ export default function Home() {
 
               <div style={{ marginTop: '24px' }}>
                 <StarRating rating={4.8} count={40} variant="dark" />
+              </div>
+
+              {/* Zip Code Service Area Lookup */}
+              <div style={{ marginTop: '32px' }}>
+                <ServiceAreaSearch variant="hero" />
               </div>
             </div>
 
