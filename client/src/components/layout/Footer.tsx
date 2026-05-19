@@ -57,8 +57,11 @@ export default function Footer() {
             {/* Column 1 — Contact */}
             <div>
               <div className="mb-5">
-                <span style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: '20px', display: 'block' }}>DEFINITIVE</span>
-                <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#009EC6', fontSize: '12px', letterSpacing: '0.4em', textTransform: 'uppercase' }}>MECHANICAL</span>
+                <img
+                  src="/manus-storage/definitive-mechanical-logo_0084eea2.png"
+                  alt="Definitive Mechanical"
+                  style={{ height: '52px', width: 'auto', display: 'block', filter: 'brightness(0) invert(1)' }}
+                />
               </div>
               <div className="space-y-3">
                 <div className="flex items-start gap-2">

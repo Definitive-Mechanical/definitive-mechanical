@@ -108,13 +108,12 @@ export default function Header() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-none no-underline">
-            <span style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: '22px' }}>
-              DEFINITIVE
-            </span>
-            <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#009EC6', fontSize: '13px', letterSpacing: '0.4em', textTransform: 'uppercase' }}>
-              MECHANICAL
-            </span>
+          <Link href="/" className="flex items-center no-underline" style={{ flexShrink: 0 }}>
+            <img
+              src="/manus-storage/definitive-mechanical-logo_0084eea2.png"
+              alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
+              style={{ height: '48px', width: 'auto', display: 'block' }}
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -289,9 +288,12 @@ export default function Header() {
         >
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
-            <Link href="/" className="flex flex-col leading-none no-underline" onClick={() => setMobileOpen(false)}>
-              <span style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: '18px' }}>DEFINITIVE</span>
-              <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#009EC6', fontSize: '11px', letterSpacing: '0.4em', textTransform: 'uppercase' }}>MECHANICAL</span>
+            <Link href="/" className="flex items-center no-underline" onClick={() => setMobileOpen(false)}>
+              <img
+                src="/manus-storage/definitive-mechanical-logo_0084eea2.png"
+                alt="Definitive Mechanical"
+                style={{ height: '40px', width: 'auto', display: 'block' }}
+              />
             </Link>
             <button
               onClick={() => setMobileOpen(false)}
