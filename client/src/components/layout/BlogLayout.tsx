@@ -7,7 +7,13 @@
 
 import { Link } from "wouter";
 import { Phone, ArrowRight, Clock, Shield, Wrench, Zap } from "lucide-react";
-import { PHONE, PHONE_DISPLAY, LICENSES } from "@/lib/constants";
+import { BUSINESS, LICENSES } from "@/lib/constants";
+
+const PHONE = BUSINESS.phoneRaw;
+const PHONE_DISPLAY = BUSINESS.phone;
+const LICENSE_MD = LICENSES.maryland[0].number;
+const LICENSE_DC = LICENSES.dc[0].number;
+const LICENSE_VA = LICENSES.virginia[0].number;
 
 interface RelatedService {
   title: string;
@@ -162,7 +168,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
             </Link>
           </div>
           <p className="font-['Barlow'] text-[#C0D8F0] text-sm mt-6">
-            MD Master Plumber #{LICENSES.md_master} | DC #{LICENSES.dc} | VA #{LICENSES.va_master}
+            MD Master Plumber #{LICENSE_MD} | DC #{LICENSE_DC} | VA #{LICENSE_VA}
           </p>
         </div>
       </div>
@@ -326,7 +332,7 @@ export function AuthorBlock({ date }: { date: string }) {
           Licensed Master Plumbers serving MD, DC &amp; Northern Virginia
         </p>
         <p className="font-['Barlow'] text-[#787878] text-xs">
-          MD #{LICENSES.md_master} | DC #{LICENSES.dc} | VA #{LICENSES.va_master}
+          MD #{LICENSE_MD} | DC #{LICENSE_DC} | VA #{LICENSE_VA}
         </p>
         <p className="font-['Barlow'] text-[#787878] text-xs mt-1">
           Published: {date}
