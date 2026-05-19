@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services', hasMega: true },
   { label: 'Commercial & Gov', href: '/commercial-plumbing', hasDropdown: 'commercial' },
-  { label: 'Service Areas', href: '/service-areas/maryland', hasDropdown: 'areas' },
+  { label: 'Service Areas', href: '/service-areas', hasDropdown: 'areas' },
   { label: 'About', href: '/about' },
   { label: 'Financing', href: '/financing' },
   { label: 'Contact', href: '/contact' },
