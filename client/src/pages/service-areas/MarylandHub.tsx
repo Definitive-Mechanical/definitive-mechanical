@@ -82,7 +82,7 @@ export default function MarylandHub() {
       {/* MD Licenses */}
       <section className="py-16" style={{ background: "#003060" }}>
         <div className="container">
-          <SectionHeading eyebrow="MARYLAND LICENSES" heading="Definitive Mechanical's Maryland plumbing licenses" variant="light" />
+          <SectionHeading eyebrow="MARYLAND LICENSES" heading="Definitive Mechanical's Maryland plumbing licenses" light />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
             {[
               { label: "Maryland State Master Plumber/Gasfitter", number: "#96958" },

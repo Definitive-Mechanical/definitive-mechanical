@@ -73,7 +73,7 @@ export default function WashingtonDCHub() {
       {/* DC License */}
       <section className="py-16" style={{ background: "#003060" }}>
         <div className="container">
-          <SectionHeading eyebrow="DC LICENSE" heading="Definitive Mechanical's Washington DC plumbing license" variant="light" />
+          <SectionHeading eyebrow="DC LICENSE" heading="Definitive Mechanical's Washington DC plumbing license" light />
           <div className="max-w-2xl mx-auto mt-8">
             <div className="flex items-start gap-4 p-6 rounded-md" style={{ background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.15)" }}>
               <CheckCircle2 size={24} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
