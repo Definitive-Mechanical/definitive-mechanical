@@ -118,6 +118,36 @@ import BackflowCertificationMaryland from "./pages/BackflowCertificationMaryland
 import BackflowCertificationDC from "./pages/BackflowCertificationDC";
 import BackflowCertificationVirginia from "./pages/BackflowCertificationVirginia";
 
+// Tier 2 City Pages — Maryland (Prince George's)
+import WoodmoreMD from "./pages/service-areas/prince-georges-county/WoodmoreMD";
+import FairwoodMD from "./pages/service-areas/prince-georges-county/FairwoodMD";
+
+// Tier 2 City Pages — Maryland (Montgomery)
+import ChevyChaseMD from "./pages/service-areas/montgomery-county/ChevyChaseMD";
+import CabinJohnMD from "./pages/service-areas/montgomery-county/CabinJohnMD";
+import DarnestownMD from "./pages/service-areas/montgomery-county/DarnestownMD";
+
+// Tier 2 City Pages — Maryland (Howard)
+import ClarksvilleMD from "./pages/service-areas/howard-county/ClarksvilleMD";
+import GlenelgMD from "./pages/service-areas/howard-county/GlenelgMD";
+
+// Tier 2 City Pages — Maryland (Anne Arundel)
+import GalesvilleMD from "./pages/service-areas/anne-arundel-county/GalesvilleMD";
+import CrownsvilleMD from "./pages/service-areas/anne-arundel-county/CrownsvilleMD";
+import RivaMD from "./pages/service-areas/anne-arundel-county/RivaMD";
+
+// Tier 2 City Pages — Washington DC Neighborhoods
+import GeorgetownDC from "./pages/service-areas/washington-dc/GeorgetownDC";
+import CapitolHillDC from "./pages/service-areas/washington-dc/CapitolHillDC";
+import DupontCircleDC from "./pages/service-areas/washington-dc/DupontCircleDC";
+import NavyYardDC from "./pages/service-areas/washington-dc/NavyYardDC";
+import NomaDC from "./pages/service-areas/washington-dc/NomaDC";
+
+// Tier 2 City Pages — Northern Virginia
+import GreatFallsVA from "./pages/service-areas/fairfax-county/GreatFallsVA";
+import BrambletonVA from "./pages/service-areas/loudoun-county/BrambletonVA";
+import OneLoudounVA from "./pages/service-areas/loudoun-county/OneLoudounVA";
+
 // Blog
 import BlogIndex from "./pages/blog/BlogIndex";
 import BlogPost1Emergency from "./pages/blog/BlogPost1Emergency";
@@ -342,6 +372,54 @@ function Router() {
       <Route path="/blog/how-to-choose-a-licensed-plumber-maryland-dc-virginia/" component={() => <BlogPost3LicensedPlumber />} />
       <Route path="/blog/what-to-do-before-the-plumber-arrives" component={() => <BlogPost4BeforePlumber />} />
       <Route path="/blog/what-to-do-before-the-plumber-arrives/" component={() => <BlogPost4BeforePlumber />} />
+
+      {/* Tier 2 City Pages — Maryland (Prince George's) */}
+      <Route path="/service-areas/maryland/prince-georges-county/woodmore-md" component={() => <Layout><WoodmoreMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/woodmore-md/" component={() => <Layout><WoodmoreMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/fairwood-md" component={() => <Layout><FairwoodMD /></Layout>} />
+      <Route path="/service-areas/maryland/prince-georges-county/fairwood-md/" component={() => <Layout><FairwoodMD /></Layout>} />
+
+      {/* Tier 2 City Pages — Maryland (Montgomery) */}
+      <Route path="/service-areas/maryland/montgomery-county/chevy-chase-md" component={() => <Layout><ChevyChaseMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/chevy-chase-md/" component={() => <Layout><ChevyChaseMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/cabin-john-md" component={() => <Layout><CabinJohnMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/cabin-john-md/" component={() => <Layout><CabinJohnMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/darnestown-md" component={() => <Layout><DarnestownMD /></Layout>} />
+      <Route path="/service-areas/maryland/montgomery-county/darnestown-md/" component={() => <Layout><DarnestownMD /></Layout>} />
+
+      {/* Tier 2 City Pages — Maryland (Howard) */}
+      <Route path="/service-areas/maryland/howard-county/clarksville-md" component={() => <Layout><ClarksvilleMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/clarksville-md/" component={() => <Layout><ClarksvilleMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/glenelg-md" component={() => <Layout><GlenelgMD /></Layout>} />
+      <Route path="/service-areas/maryland/howard-county/glenelg-md/" component={() => <Layout><GlenelgMD /></Layout>} />
+
+      {/* Tier 2 City Pages — Maryland (Anne Arundel) */}
+      <Route path="/service-areas/maryland/anne-arundel-county/galesville-md" component={() => <Layout><GalesvilleMD /></Layout>} />
+      <Route path="/service-areas/maryland/anne-arundel-county/galesville-md/" component={() => <Layout><GalesvilleMD /></Layout>} />
+      <Route path="/service-areas/maryland/anne-arundel-county/crownsville-md" component={() => <Layout><CrownsvilleMD /></Layout>} />
+      <Route path="/service-areas/maryland/anne-arundel-county/crownsville-md/" component={() => <Layout><CrownsvilleMD /></Layout>} />
+      <Route path="/service-areas/maryland/anne-arundel-county/riva-md" component={() => <Layout><RivaMD /></Layout>} />
+      <Route path="/service-areas/maryland/anne-arundel-county/riva-md/" component={() => <Layout><RivaMD /></Layout>} />
+
+      {/* Tier 2 City Pages — Washington DC Neighborhoods */}
+      <Route path="/service-areas/washington-dc/georgetown" component={() => <Layout><GeorgetownDC /></Layout>} />
+      <Route path="/service-areas/washington-dc/georgetown/" component={() => <Layout><GeorgetownDC /></Layout>} />
+      <Route path="/service-areas/washington-dc/capitol-hill" component={() => <Layout><CapitolHillDC /></Layout>} />
+      <Route path="/service-areas/washington-dc/capitol-hill/" component={() => <Layout><CapitolHillDC /></Layout>} />
+      <Route path="/service-areas/washington-dc/dupont-circle" component={() => <Layout><DupontCircleDC /></Layout>} />
+      <Route path="/service-areas/washington-dc/dupont-circle/" component={() => <Layout><DupontCircleDC /></Layout>} />
+      <Route path="/service-areas/washington-dc/navy-yard" component={() => <Layout><NavyYardDC /></Layout>} />
+      <Route path="/service-areas/washington-dc/navy-yard/" component={() => <Layout><NavyYardDC /></Layout>} />
+      <Route path="/service-areas/washington-dc/noma" component={() => <Layout><NomaDC /></Layout>} />
+      <Route path="/service-areas/washington-dc/noma/" component={() => <Layout><NomaDC /></Layout>} />
+
+      {/* Tier 2 City Pages — Northern Virginia */}
+      <Route path="/service-areas/northern-virginia/fairfax-county/great-falls-va" component={() => <Layout><GreatFallsVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/fairfax-county/great-falls-va/" component={() => <Layout><GreatFallsVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/loudoun-county/brambleton-va" component={() => <Layout><BrambletonVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/loudoun-county/brambleton-va/" component={() => <Layout><BrambletonVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/loudoun-county/one-loudoun-va" component={() => <Layout><OneLoudounVA /></Layout>} />
+      <Route path="/service-areas/northern-virginia/loudoun-county/one-loudoun-va/" component={() => <Layout><OneLoudounVA /></Layout>} />
 
       {/* Fallback */}
       <Route path="/404" component={() => <Layout><NotFound /></Layout>} />
