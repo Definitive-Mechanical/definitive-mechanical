@@ -104,7 +104,7 @@ export default function CommercialPlumberMaryland() {
         <div className="container">
           <SectionHeading
             eyebrow="Commercial Services"
-            title="What commercial plumbing services do you provide in Maryland?"
+            heading="What commercial plumbing services do you provide in Maryland?"
           />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
             {[
@@ -132,7 +132,7 @@ export default function CommercialPlumberMaryland() {
         <div className="container">
           <SectionHeading
             eyebrow="Service Area"
-            title="Which Maryland counties and markets do you serve commercially?"
+            heading="Which Maryland counties and markets do you serve commercially?"
           />
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {COUNTIES.map(c => (
@@ -175,7 +175,7 @@ export default function CommercialPlumberMaryland() {
         <div className="container">
           <SectionHeading
             eyebrow="Licensing"
-            title="Are you licensed for commercial plumbing throughout Maryland?"
+            heading="Are you licensed for commercial plumbing throughout Maryland?"
           />
           <div className="mt-10 grid md:grid-cols-2 gap-8">
             <div className="p-6 rounded-lg" style={{ background: "#F0F0F0", border: "2px solid #003060" }}>
