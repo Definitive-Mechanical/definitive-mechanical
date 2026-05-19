@@ -26,7 +26,7 @@ export default function ScaggsMD() {
       {label:"Backflow Prevention & Annual Certification",href:"/backflow-certification/"}
     ]}
     localContextHeading="Unique context for Scaggsville"
-    localContextBody="Scaggsville's location along the US-29 growth corridor means a mix of older housing stock and newer subdivisions. Howard County License #20020096958 is required for all permitted plumbing work. WSSC serves portions of the community for water and sewer."
+    localContextBody="Scaggsville&#39;s location along the US-29 growth corridor means a mix of older housing stock and newer subdivisions. Howard County License #20020096958 is required for all permitted plumbing work. WSSC serves portions of the community for water and sewer."
     nearbyAreas={[
       {label:"Fulton",href:"/service-areas/maryland/howard-county/fulton-md/"},
       {label:"Ellicott City",href:"/service-areas/maryland/ellicott-city-md/"},

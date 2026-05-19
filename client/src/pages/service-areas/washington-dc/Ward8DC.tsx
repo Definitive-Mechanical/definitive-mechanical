@@ -15,7 +15,7 @@ export default function Ward8DC() {
     ]}
     eyebrow="Plumber in DC Ward 8 · Congress Heights, Anacostia, Barry Farm, Bellevue"
     h1="Plumber in Washington DC Ward 8"
-    intro="Definitive Mechanical serves Washington DC Ward 8 — encompassing Congress Heights, Anacostia, Barry Farm, Bellevue, and Shipley Terrace. Ward 8 is DC's southernmost ward, bordering Maryland's Prince George's County — making our Largo, MD location particularly well-positioned to serve Ward 8 quickly. We hold DC Master Plumber License #LP2024-01234."
+    intro="Definitive Mechanical serves Washington DC Ward 8 — encompassing Congress Heights, Anacostia, Barry Farm, Bellevue, and Shipley Terrace. Ward 8 is DC&#39;s southernmost ward, bordering Maryland&#39;s Prince George&#39;s County — making our Largo, MD location particularly well-positioned to serve Ward 8 quickly. We hold DC Master Plumber License #LP2024-01234."
     trustItems={["DC License #LP2024-01234","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
     
     servicesHeading="Services available in DC Ward 8"

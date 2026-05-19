@@ -13,9 +13,9 @@ export default function QueenslandMD() {
       {label:"Prince George's County",href:"/service-areas/maryland/prince-georges-county/"},
       {label:"Queensland MD"}
     ]}
-    eyebrow="Plumber in Queensland, MD · Prince George's County · Serving from Largo, MD"
+    eyebrow="Plumber in Queensland, MD · Prince George&#39;s County · Serving from Largo, MD"
     h1="Plumber in Queensland, MD"
-    intro="Definitive Mechanical serves Queensland, Maryland — a rural community in southeastern Prince George's County in the Patuxent River corridor. Queensland's low-density residential properties are largely on private wells and septic systems, with plumbing needs that reflect rural construction patterns from the mid-20th century. We hold Maryland State Master Plumber/Gasfitter License #96958 and serve Queensland from our Largo, MD location."
+    intro="Definitive Mechanical serves Queensland, Maryland — a rural community in southeastern Prince George&#39;s County in the Patuxent River corridor. Queensland&#39;s low-density residential properties are largely on private wells and septic systems, with plumbing needs that reflect rural construction patterns from the mid-20th century. We hold Maryland State Master Plumber/Gasfitter License #96958 and serve Queensland from our Largo, MD location."
     trustItems={["MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
     servicesHeading="What plumbing services are available in Queensland?"
     services={[
@@ -27,12 +27,12 @@ export default function QueenslandMD() {
     ]}
     wellSepticNote="We service the indoor plumbing of well-served properties but do not service well pumps or pump septic tanks."
     localContextHeading="Unique context for Queensland"
-    localContextBody="Queensland's rural character and distance from our Largo base mean response times for non-emergency calls will be longer than our closer service areas — typically 30–45 minutes. We confirm availability and estimated arrival time when you call. Emergency dispatch is immediate regardless of location."
+    localContextBody="Queensland&#39;s rural character and distance from our Largo base mean response times for non-emergency calls will be longer than our closer service areas — typically 30–45 minutes. We confirm availability and estimated arrival time when you call. Emergency dispatch is immediate regardless of location."
     nearbyAreas={[
       {label:"Brock Hall",href:"/service-areas/maryland/prince-georges-county/brock-hall-md/"},
       {label:"Fort Washington",href:"/service-areas/maryland/prince-georges-county/fort-washington-md/"}
     ]}
-    countyHubLabel="Prince George's County"
+    countyHubLabel="Prince George&#39;s County"
     countyHubHref="/service-areas/maryland/prince-georges-county/"
     bottomCtaLicenseLine="MD Master Plumber #96958"
     bottomCtaCity="Queensland"

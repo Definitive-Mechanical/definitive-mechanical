@@ -2,7 +2,7 @@ import Tier3CityPage from "@/components/layout/Tier3CityPage";
 export default function SomersetMD() {
   return <Tier3CityPage
     metaTitle="Plumber in Somerset, MD | Licensed Plumbing | Definitive Mechanical"
-    metaDescription="Licensed plumber serving Somerset, MD. Plumbing, water heater & emergency service for Somerset's historic homes. WSSC #73696. Call (301) 679-5849."
+    metaDescription="Licensed plumber serving Somerset, MD. Plumbing, water heater & emergency service for Somerset&#39;s historic homes. WSSC #73696. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/somerset-md/"
     schemaCity="Somerset" schemaState="MD"
     schemaUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/somerset-md/"
@@ -26,7 +26,7 @@ export default function SomersetMD() {
       {label:"Water Line Repair — aging galvanized supply line service and replacement",href:"/water-line-repair/"}
     ]}
     localContextHeading="Unique context for Somerset"
-    localContextBody="Somerset's pre-war and early postwar housing stock has aging galvanized supply lines, clay sewer laterals with decades of root growth from mature street trees, and original cast iron drain systems. The community's small footprint and high property values mean plumbing damage events are taken seriously. WSSC serves Somerset for water and sewer — our WSSC License #73696 covers all permitted work."
+    localContextBody="Somerset&#39;s pre-war and early postwar housing stock has aging galvanized supply lines, clay sewer laterals with decades of root growth from mature street trees, and original cast iron drain systems. The community&#39;s small footprint and high property values mean plumbing damage events are taken seriously. WSSC serves Somerset for water and sewer — our WSSC License #73696 covers all permitted work."
     nearbyAreas={[
       {label:"Chevy Chase",href:"/service-areas/maryland/montgomery-county/chevy-chase-md/"},
       {label:"Bethesda",href:"/service-areas/maryland/bethesda-md/"},

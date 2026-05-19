@@ -27,7 +27,7 @@ export default function TravilahMD() {
       {label:"Drain Cleaning",href:"/drain-cleaning/"}
     ]}
     localContextHeading="Unique context for Travilah"
-    localContextBody="Travilah's large homes and extensive irrigation systems make backflow preventer installation and annual certification a common service need. We hold both WSSC (#73696) and Maryland State (#96958) credentials, covering both the WSSC-served and non-WSSC portions of the community."
+    localContextBody="Travilah&#39;s large homes and extensive irrigation systems make backflow preventer installation and annual certification a common service need. We hold both WSSC (#73696) and Maryland State (#96958) credentials, covering both the WSSC-served and non-WSSC portions of the community."
     nearbyAreas={[
       {label:"Rockville",href:"/service-areas/maryland/rockville-md/"},
       {label:"Potomac",href:"/service-areas/maryland/potomac-md/"},

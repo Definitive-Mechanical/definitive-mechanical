@@ -26,7 +26,7 @@ export default function FultonMD() {
       {label:"Backflow Prevention & Annual Certification",href:"/backflow-certification/"}
     ]}
     localContextHeading="Unique context for Fulton"
-    localContextBody="Fulton's newer subdivisions — built primarily in the 2000s–2010s — are entering the active water heater replacement cycle. The community's rapid growth means a mix of WSSC-served and well-served properties depending on the specific subdivision. Howard County License #20020096958 covers all permitted plumbing work."
+    localContextBody="Fulton&#39;s newer subdivisions — built primarily in the 2000s–2010s — are entering the active water heater replacement cycle. The community&#39;s rapid growth means a mix of WSSC-served and well-served properties depending on the specific subdivision. Howard County License #20020096958 covers all permitted plumbing work."
     nearbyAreas={[
       {label:"Highland",href:"/service-areas/maryland/howard-county/highland-md/"},
       {label:"Clarksville",href:"/service-areas/maryland/howard-county/clarksville-md/"},

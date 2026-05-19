@@ -26,9 +26,9 @@ export default function HighlandMD() {
       {label:"Backflow Prevention & Annual Certification — irrigation systems common on larger lots",href:"/backflow-certification/"},
       {label:"Indoor plumbing for well-served properties (supply lines, pressure tanks, water heaters, fixtures)",href:""}
     ]}
-    wellSepticNote="Highland's rural properties frequently use propane and private wells. We service propane gas lines and indoor plumbing for private well properties under our Howard County Master Gasfitter license. We do not service well pumps or pump septic tanks."
+    wellSepticNote="Highland&#39;s rural properties frequently use propane and private wells. We service propane gas lines and indoor plumbing for private well properties under our Howard County Master Gasfitter license. We do not service well pumps or pump septic tanks."
     localContextHeading="Unique context for Highland"
-    localContextBody="Howard County requires a county-specific license beyond the Maryland state credential — we hold #20020096958. Highland's estate-scale properties often have long service line runs, complex irrigation systems requiring annual backflow certification, and propane gas serving multiple structures on large lots."
+    localContextBody="Howard County requires a county-specific license beyond the Maryland state credential — we hold #20020096958. Highland&#39;s estate-scale properties often have long service line runs, complex irrigation systems requiring annual backflow certification, and propane gas serving multiple structures on large lots."
     nearbyAreas={[
       {label:"Clarksville",href:"/service-areas/maryland/howard-county/clarksville-md/"},
       {label:"Ellicott City",href:"/service-areas/maryland/ellicott-city-md/"},

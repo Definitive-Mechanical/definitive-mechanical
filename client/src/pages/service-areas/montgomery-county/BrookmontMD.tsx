@@ -26,7 +26,7 @@ export default function BrookmontMD() {
       {label:"Water Line Repair",href:"/water-line-repair/"}
     ]}
     localContextHeading="Unique context for Brookmont"
-    localContextBody="Brookmont's position along the Potomac creates specific plumbing considerations: the proximity to the river and C&O Canal floodplain means basement flooding and sewer backup risk during high-water events. Several Brookmont streets have experienced flooding from the Potomac. Homes in the flood-prone portions of the neighborhood should consider sewer backup valves as a protective measure."
+    localContextBody="Brookmont&#39;s position along the Potomac creates specific plumbing considerations: the proximity to the river and C&O Canal floodplain means basement flooding and sewer backup risk during high-water events. Several Brookmont streets have experienced flooding from the Potomac. Homes in the flood-prone portions of the neighborhood should consider sewer backup valves as a protective measure."
     nearbyAreas={[
       {label:"Cabin John",href:"/service-areas/maryland/montgomery-county/cabin-john-md/"},
       {label:"Chevy Chase",href:"/service-areas/maryland/montgomery-county/chevy-chase-md/"},

@@ -15,7 +15,7 @@ export default function Ward2DC() {
     ]}
     eyebrow="Plumber in DC Ward 2 · Georgetown, Dupont Circle, Logan Circle, Foggy Bottom"
     h1="Plumber in Washington DC Ward 2"
-    intro="Definitive Mechanical serves Washington DC Ward 2 — encompassing Georgetown, Dupont Circle, Logan Circle, Foggy Bottom, the West End, and downtown DC. Ward 2 contains some of the oldest residential architecture in the District, including Georgetown's Federal and Victorian rowhouses dating to the early 1800s, alongside modern high-rise condominiums and embassy buildings. We hold DC Master Plumber License #LP2024-01234."
+    intro="Definitive Mechanical serves Washington DC Ward 2 — encompassing Georgetown, Dupont Circle, Logan Circle, Foggy Bottom, the West End, and downtown DC. Ward 2 contains some of the oldest residential architecture in the District, including Georgetown&#39;s Federal and Victorian rowhouses dating to the early 1800s, alongside modern high-rise condominiums and embassy buildings. We hold DC Master Plumber License #LP2024-01234."
     trustItems={["DC License #LP2024-01234","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
     featuredNeighborhoods={[{label:"Georgetown",href:"/service-areas/washington-dc/georgetown/"},{label:"Dupont Circle",href:"/service-areas/washington-dc/dupont-circle/"}]}
     servicesHeading="Services available in DC Ward 2"

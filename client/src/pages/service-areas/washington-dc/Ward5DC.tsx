@@ -15,7 +15,7 @@ export default function Ward5DC() {
     ]}
     eyebrow="Plumber in DC Ward 5 · NoMa, Brookland, Eckington, Michigan Park"
     h1="Plumber in Washington DC Ward 5"
-    intro="Definitive Mechanical serves Washington DC Ward 5 — encompassing NoMa, Brookland, Eckington, Michigan Park, Fort Totten, and Woodridge. Ward 5 is one of DC's most rapidly developing wards, with significant new construction alongside established residential neighborhoods. We hold DC Master Plumber License #LP2024-01234."
+    intro="Definitive Mechanical serves Washington DC Ward 5 — encompassing NoMa, Brookland, Eckington, Michigan Park, Fort Totten, and Woodridge. Ward 5 is one of DC&#39;s most rapidly developing wards, with significant new construction alongside established residential neighborhoods. We hold DC Master Plumber License #LP2024-01234."
     trustItems={["DC License #LP2024-01234","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
     featuredNeighborhoods={[{label:"NoMa",href:"/service-areas/washington-dc/noma/"}]}
     servicesHeading="Services available in DC Ward 5"

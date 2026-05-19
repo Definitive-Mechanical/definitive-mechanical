@@ -2,7 +2,7 @@ import Tier3CityPage from "@/components/layout/Tier3CityPage";
 export default function ChevyChaseVillageMD() {
   return <Tier3CityPage
     metaTitle="Plumber in Chevy Chase Village, MD | Licensed Plumbing | Definitive Mechanical"
-    metaDescription="Licensed plumber serving Chevy Chase Village, MD. Plumbing, water heater & emergency service for Chevy Chase Village's historic homes. MD #96958. Call (301) 679-5849."
+    metaDescription="Licensed plumber serving Chevy Chase Village, MD. Plumbing, water heater & emergency service for Chevy Chase Village&#39;s historic homes. MD #96958. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/chevy-chase-village-md/"
     schemaCity="Chevy Chase Village" schemaState="MD"
     schemaUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/chevy-chase-village-md/"
@@ -15,7 +15,7 @@ export default function ChevyChaseVillageMD() {
     ]}
     eyebrow="Plumber in Chevy Chase Village, MD · Montgomery County · Serving from Largo, MD"
     h1="Plumber in Chevy Chase Village, MD"
-    intro="Definitive Mechanical serves Chevy Chase Village, Maryland — an incorporated municipality within Montgomery County just north of Washington DC, containing some of the region's finest early-20th-century residential architecture. Chevy Chase Village's homes were built predominantly between 1900 and 1940 in Colonial Revival, Georgian, and Tudor styles on large, tree-lined lots. The plumbing in these properties spans multiple eras and renovation layers. We hold Maryland State License #96958 and WSSC License #73696."
+    intro="Definitive Mechanical serves Chevy Chase Village, Maryland — an incorporated municipality within Montgomery County just north of Washington DC, containing some of the region&#39;s finest early-20th-century residential architecture. Chevy Chase Village&#39;s homes were built predominantly between 1900 and 1940 in Colonial Revival, Georgian, and Tudor styles on large, tree-lined lots. The plumbing in these properties spans multiple eras and renovation layers. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}
     servicesHeading="What plumbing services are available in Chevy Chase Village?"
     services={[
@@ -27,7 +27,7 @@ export default function ChevyChaseVillageMD() {
       {label:"Video Camera Inspection — essential before any sewer recommendation on 100-year-old clay laterals",href:"/video-camera-inspection/"}
     ]}
     localContextHeading="Unique context for Chevy Chase Village"
-    localContextBody="Chevy Chase Village has its own municipal processes for certain local permits separate from Montgomery County — we are familiar with local requirements. Pre-war homes frequently have original lead service lines from the municipal connection to the house; DC Water programs don't apply here, but property owners should be aware of lead line status."
+    localContextBody="Chevy Chase Village has its own municipal processes for certain local permits separate from Montgomery County — we are familiar with local requirements. Pre-war homes frequently have original lead service lines from the municipal connection to the house; DC Water programs don&#39;t apply here, but property owners should be aware of lead line status."
     nearbyAreas={[
       {label:"Chevy Chase",href:"/service-areas/maryland/montgomery-county/chevy-chase-md/"},
       {label:"Somerset",href:"/service-areas/maryland/montgomery-county/somerset-md/"},

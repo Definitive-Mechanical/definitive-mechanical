@@ -2,7 +2,7 @@ import Tier3CityPage from "@/components/layout/Tier3CityPage";
 export default function CroomMD() {
   return <Tier3CityPage
     metaTitle="Plumber in Croom, MD | Licensed Plumbing | Definitive Mechanical"
-    metaDescription="Licensed plumber serving Croom, MD. Emergency plumbing, water heater, drain & gas service for Croom's rural properties. MD #96958. Call (301) 679-5849."
+    metaDescription="Licensed plumber serving Croom, MD. Emergency plumbing, water heater, drain & gas service for Croom&#39;s rural properties. MD #96958. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/croom-md/"
     schemaCity="Croom" schemaState="MD"
     schemaUrl="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/croom-md/"
@@ -13,9 +13,9 @@ export default function CroomMD() {
       {label:"Prince George's County",href:"/service-areas/maryland/prince-georges-county/"},
       {label:"Croom MD"}
     ]}
-    eyebrow="Plumber in Croom, MD · Prince George's County · Serving from Largo, MD"
+    eyebrow="Plumber in Croom, MD · Prince George&#39;s County · Serving from Largo, MD"
     h1="Plumber in Croom, MD"
-    intro="Definitive Mechanical serves Croom, Maryland — a rural area in southern Prince George's County along the Patuxent River, known for its equestrian properties, the Patuxent River State Park, and low-density rural residential development. Most Croom properties are on private wells and septic systems. We hold Maryland State Master Plumber/Gasfitter License #96958."
+    intro="Definitive Mechanical serves Croom, Maryland — a rural area in southern Prince George&#39;s County along the Patuxent River, known for its equestrian properties, the Patuxent River State Park, and low-density rural residential development. Most Croom properties are on private wells and septic systems. We hold Maryland State Master Plumber/Gasfitter License #96958."
     trustItems={["MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
     servicesHeading="What plumbing services are available in Croom?"
     services={[
@@ -27,13 +27,13 @@ export default function CroomMD() {
     ]}
     wellSepticNote="We service indoor plumbing on private well properties but do not service well pumps or septic systems."
     localContextHeading="Unique context for Croom"
-    localContextBody="Croom's agricultural and equestrian properties often have complex propane systems serving multiple outbuildings, barns, and residences on a single large lot. We service propane gas lines and connections under our Maryland Master Gasfitter license (#96958). Rural response times to Croom are typically 30–50 minutes from our Largo location."
+    localContextBody="Croom&#39;s agricultural and equestrian properties often have complex propane systems serving multiple outbuildings, barns, and residences on a single large lot. We service propane gas lines and connections under our Maryland Master Gasfitter license (#96958). Rural response times to Croom are typically 30–50 minutes from our Largo location."
     nearbyAreas={[
       {label:"Queensland",href:"/service-areas/maryland/prince-georges-county/queensland-md/"},
       {label:"Brock Hall",href:"/service-areas/maryland/prince-georges-county/brock-hall-md/"},
       {label:"Waldorf",href:"/service-areas/maryland/charles-county/waldorf-md/"}
     ]}
-    countyHubLabel="Prince George's County"
+    countyHubLabel="Prince George&#39;s County"
     countyHubHref="/service-areas/maryland/prince-georges-county/"
     bottomCtaLicenseLine="MD Master Plumber #96958"
     bottomCtaCity="Croom"

@@ -25,9 +25,9 @@ export default function WestFriendshipMD() {
       {label:"Drain Cleaning & indoor plumbing repairs",href:"/drain-cleaning/"},
       {label:"Indoor plumbing for well-system properties (supply lines, pressure tanks, fixtures)",href:""}
     ]}
-    wellSepticNote="West Friendship's rural properties are predominantly on private wells and septic systems. We service indoor plumbing — supply lines, pressure tanks, water heaters, gas lines, fixtures, and drain lines. We do not service well pumps or pump septic tanks."
+    wellSepticNote="West Friendship&#39;s rural properties are predominantly on private wells and septic systems. We service indoor plumbing — supply lines, pressure tanks, water heaters, gas lines, fixtures, and drain lines. We do not service well pumps or pump septic tanks."
     localContextHeading="Unique context for West Friendship"
-    localContextBody="West Friendship's agricultural character and large lot sizes mean propane gas serving multiple outbuildings is common. Howard County requires a county-specific license (#20020096958) for all permitted plumbing work. Response times to West Friendship are typically 35–50 minutes from our Largo location."
+    localContextBody="West Friendship&#39;s agricultural character and large lot sizes mean propane gas serving multiple outbuildings is common. Howard County requires a county-specific license (#20020096958) for all permitted plumbing work. Response times to West Friendship are typically 35–50 minutes from our Largo location."
     nearbyAreas={[
       {label:"Glenelg",href:"/service-areas/maryland/howard-county/glenelg-md/"},
       {label:"Ellicott City",href:"/service-areas/maryland/ellicott-city-md/"},

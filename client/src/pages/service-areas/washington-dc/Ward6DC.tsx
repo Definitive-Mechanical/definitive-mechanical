@@ -15,7 +15,7 @@ export default function Ward6DC() {
     ]}
     eyebrow="Plumber in DC Ward 6 · Capitol Hill, Navy Yard, Eastern Market, Near Northeast"
     h1="Plumber in Washington DC Ward 6"
-    intro="Definitive Mechanical serves Washington DC Ward 6 — encompassing Capitol Hill, Navy Yard, Eastern Market, Near Northeast, and the Southwest Waterfront. Ward 6 is home to some of DC's most iconic residential neighborhoods alongside major new waterfront development. We hold DC Master Plumber License #LP2024-01234."
+    intro="Definitive Mechanical serves Washington DC Ward 6 — encompassing Capitol Hill, Navy Yard, Eastern Market, Near Northeast, and the Southwest Waterfront. Ward 6 is home to some of DC&#39;s most iconic residential neighborhoods alongside major new waterfront development. We hold DC Master Plumber License #LP2024-01234."
     trustItems={["DC License #LP2024-01234","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
     featuredNeighborhoods={[{label:"Capitol Hill",href:"/service-areas/washington-dc/capitol-hill/"},{label:"Navy Yard",href:"/service-areas/washington-dc/navy-yard/"}]}
     servicesHeading="Services available in DC Ward 6"

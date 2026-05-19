@@ -15,7 +15,7 @@ export default function Ward3DC() {
     ]}
     eyebrow="Plumber in DC Ward 3 · Cleveland Park, Tenleytown, Chevy Chase DC, AU Park"
     h1="Plumber in Washington DC Ward 3"
-    intro="Definitive Mechanical serves Washington DC Ward 3 — encompassing Cleveland Park, Tenleytown, American University Park, Chevy Chase DC, Forest Hills, and Friendship Heights. Ward 3 is DC's most affluent ward, featuring large single-family homes, many built in the 1920s–1940s, with the plumbing infrastructure challenges typical of that era. We hold DC Master Plumber License #LP2024-01234."
+    intro="Definitive Mechanical serves Washington DC Ward 3 — encompassing Cleveland Park, Tenleytown, American University Park, Chevy Chase DC, Forest Hills, and Friendship Heights. Ward 3 is DC&#39;s most affluent ward, featuring large single-family homes, many built in the 1920s–1940s, with the plumbing infrastructure challenges typical of that era. We hold DC Master Plumber License #LP2024-01234."
     trustItems={["DC License #LP2024-01234","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
     
     servicesHeading="Services available in DC Ward 3"

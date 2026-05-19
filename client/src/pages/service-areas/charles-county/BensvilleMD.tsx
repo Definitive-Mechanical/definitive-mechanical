@@ -26,7 +26,7 @@ export default function BensvilleMD() {
       {label:"Backflow Prevention & Annual Certification",href:"/backflow-certification/"}
     ]}
     localContextHeading="Unique context for Bensville"
-    localContextBody="Bensville's location along the Route 210 corridor places it within a 25–35 minute response window from our Largo, MD location. The community's mix of suburban and rural properties includes both public utility-served homes and properties on private wells. Maryland State License #96958 covers all permitted plumbing work in Charles County."
+    localContextBody="Bensville&#39;s location along the Route 210 corridor places it within a 25–35 minute response window from our Largo, MD location. The community&#39;s mix of suburban and rural properties includes both public utility-served homes and properties on private wells. Maryland State License #96958 covers all permitted plumbing work in Charles County."
     nearbyAreas={[
       {label:"Waldorf",href:"/service-areas/maryland/charles-county/waldorf-md/"},
       {label:"Fort Washington",href:"/service-areas/maryland/prince-georges-county/fort-washington-md/"},
