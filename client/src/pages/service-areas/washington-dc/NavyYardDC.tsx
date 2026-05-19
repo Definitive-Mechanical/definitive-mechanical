@@ -7,7 +7,7 @@ export default function NavyYardDC() {
   return (
     <Tier2CityPage
       metaTitle="Plumber in Navy Yard, DC | New Construction & Commercial Plumbing | Definitive Mechanical"
-      metaDescription="Licensed plumber serving Navy Yard, DC. Plumbing for Navy Yard's condos, apartments & commercial properties. DC Master Plumber #PGM1002236. Call (301) 679-5849."
+      metaDescription={`Licensed plumber serving Navy Yard, DC. Plumbing for Navy Yard's condos, apartments & commercial properties. DC Master Plumber #PGM1002236. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/navy-yard/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Washington DC",href:"/service-areas/washington-dc"},{label:"Navy Yard"}]}
       eyebrow="Plumber in Navy Yard, DC · DC License #PGM1002236"

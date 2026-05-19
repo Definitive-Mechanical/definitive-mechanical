@@ -61,7 +61,7 @@ export default function ServiceAreasHub() {
     <>
       <Helmet>
         <title>Plumbing Service Areas — MD, DC & Northern VA | Definitive Mechanical</title>
-        <meta name="description" content="Definitive Mechanical serves Maryland, Washington DC, and Northern Virginia. Licensed plumbing in Prince George's County, Montgomery County, Fairfax County, Arlington, and more. Call (301) 679-5849." />
+        <meta name="description" content={`Definitive Mechanical serves Maryland, Washington DC, and Northern Virginia. Licensed plumbing in Prince George's County, Montgomery County, Fairfax County, Arlington, and more. Call (301) 679-5849.`} />
         <link rel="canonical" href="https://definitivemechanical.com/service-areas/" />
       </Helmet>
 

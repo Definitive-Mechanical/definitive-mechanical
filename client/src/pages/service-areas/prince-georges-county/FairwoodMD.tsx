@@ -45,9 +45,9 @@ export default function FairwoodMD() {
         { label: "Prince George's County", href: "/service-areas/maryland/prince-georges-county" },
         { label: "Fairwood MD" }
       ]}
-      eyebrow="Plumber in Fairwood, MD · Prince George's County · Serving from Largo, MD"
+      eyebrow={`Plumber in Fairwood, MD · Prince George's County · Serving from Largo, MD`}
       h1="Plumber in Fairwood, MD"
-      introParagraph="Definitive Mechanical serves Fairwood, Maryland — a master-planned community in Prince George's County developed in the late 1990s and early 2000s with a mix of single-family homes, townhouses, and upscale community amenities. We hold Maryland State Master Plumber License #96958 and WSSC License #73696, and provide emergency, residential, and commercial plumbing service throughout Fairwood from our nearby Largo location."
+      introParagraph={`Definitive Mechanical serves Fairwood, Maryland — a master-planned community in Prince George's County developed in the late 1990s and early 2000s with a mix of single-family homes, townhouses, and upscale community amenities. We hold Maryland State Master Plumber License #96958 and WSSC License #73696, and provide emergency, residential, and commercial plumbing service throughout Fairwood from our nearby Largo location.`}
       trustItems={["MD Master Plumber #96958", "WSSC #73696", "MDOT MBE Cert 20-134", "24/7 Emergency"]}
       services={[
         { label: "24/7 Emergency Plumbing", href: "/emergency-plumbing" },
@@ -58,7 +58,7 @@ export default function FairwoodMD() {
         { label: "Backflow Prevention & Annual Certification", href: "/backflow-certification" }
       ]}
       localContextHeading="What are the common plumbing needs in Fairwood?"
-      localContextBody="Fairwood's housing stock — built primarily 1997–2008 — uses PVC drain lines and copper or CPVC supply lines. As these systems approach 20–25 years of age, fitting failures, water heater replacement cycles, and water pressure regulator issues become the most common service calls. Fairwood's HOA amenities (clubhouse, pool, community facilities) also require commercial-grade plumbing service and annual backflow certification."
+      localContextBody={`Fairwood's housing stock — built primarily 1997–2008 — uses PVC drain lines and copper or CPVC supply lines. As these systems approach 20–25 years of age, fitting failures, water heater replacement cycles, and water pressure regulator issues become the most common service calls. Fairwood's HOA amenities (clubhouse, pool, community facilities) also require commercial-grade plumbing service and annual backflow certification.`}
       calloutNote="WSSC serves Fairwood. All permitted plumbing requires a WSSC-licensed contractor."
       licenseHeading="Are you licensed for plumbing in Fairwood?"
       credentials={[
@@ -71,7 +71,7 @@ export default function FairwoodMD() {
         { label: "Largo", href: "/service-areas/maryland/prince-georges-county/largo-md" },
         { label: "Bowie", href: "/service-areas/maryland/prince-georges-county/bowie-md" }
       ]}
-      countyHubLabel="Prince George's County"
+      countyHubLabel={`Prince George's County`}
       countyHubHref="/service-areas/maryland/prince-georges-county"
       ctaCity="Fairwood"
       ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"

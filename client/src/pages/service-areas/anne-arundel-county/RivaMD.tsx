@@ -7,7 +7,7 @@ export default function RivaMD() {
   return (
     <Tier2CityPage
       metaTitle="Plumber in Riva, MD | Licensed Plumbing | Definitive Mechanical"
-      metaDescription="Licensed plumber serving Riva, MD. Plumbing, water heater, gas & emergency service for Riva's waterfront and suburban homes. Anne Arundel #A2-6139. Call (301) 679-5849."
+      metaDescription={`Licensed plumber serving Riva, MD. Plumbing, water heater, gas & emergency service for Riva's waterfront and suburban homes. Anne Arundel #A2-6139. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/anne-arundel-county/riva-md/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Maryland",href:"/service-areas/maryland"},{label:"Anne Arundel County",href:"/service-areas/maryland/anne-arundel-county"},{label:"Riva MD"}]}
       eyebrow="Plumber in Riva, MD · Anne Arundel County · Serving from Largo, MD"

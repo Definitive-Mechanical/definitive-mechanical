@@ -7,7 +7,7 @@ export default function GlenelgMD() {
   return (
     <Tier2CityPage
       metaTitle="Plumber in Glenelg, MD | Licensed Plumbing | Definitive Mechanical"
-      metaDescription="Licensed plumber serving Glenelg, MD. Plumbing, water heater, gas & emergency service for Glenelg's rural properties. Howard County License #20020096958. Call (301) 679-5849."
+      metaDescription={`Licensed plumber serving Glenelg, MD. Plumbing, water heater, gas & emergency service for Glenelg's rural properties. Howard County License #20020096958. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/howard-county/glenelg-md/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Maryland",href:"/service-areas/maryland"},{label:"Howard County",href:"/service-areas/maryland/howard-county"},{label:"Glenelg MD"}]}
       eyebrow="Plumber in Glenelg, MD · Howard County · Serving from Largo, MD"
@@ -16,9 +16,9 @@ export default function GlenelgMD() {
       trustItems={["Howard County License #20020096958","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
       services={[{label:"24/7 Emergency Plumbing",href:"/emergency-plumbing"},{label:"Water Heater Repair & Installation",href:"/water-heater-repair"},{label:"Drain Cleaning & Sewer Line Repair",href:"/drain-cleaning"},{label:"Gas Line Repair — propane and natural gas, licensed Master Gasfitter",href:"/gas-line-repair"},{label:"Well system plumbing — indoor plumbing for properties on private wells",href:"/water-line-repair"},{label:"Backflow Prevention & Annual Certification — for irrigation and agricultural connections",href:"/backflow-certification"}]}
       localContextHeading="What makes Glenelg unique for plumbing?"
-      localContextBody={"Glenelg is predominantly rural with many properties on private wells and septic systems. We service the plumbing side of these properties — indoor supply and drain lines — but do not pump septic or service well pumps. Properties in Glenelg frequently use propane for water heating, cooking, and heating systems; we service propane gas lines and appliance connections under our Howard County Master Gasfitter license.
+      localContextBody={`Glenelg is predominantly rural with many properties on private wells and septic systems. We service the plumbing side of these properties — indoor supply and drain lines — but do not pump septic or service well pumps. Properties in Glenelg frequently use propane for water heating, cooking, and heating systems; we service propane gas lines and appliance connections under our Howard County Master Gasfitter license.
 
-Large irrigation systems on Glenelg's agricultural and estate properties require backflow preventer installation and annual certification under Howard County regulations."}
+Large irrigation systems on Glenelg's agricultural and estate properties require backflow preventer installation and annual certification under Howard County regulations.`}
       licenseHeading="Are you licensed for plumbing in Glenelg?"
       credentials={[{label:"Howard County Master Plumber/Gasfitter License #20020096958"},{label:"Maryland State Master Plumber License #96958"},{label:"MDOT MBE Certification No. 20-134"}]}
       nearbyAreas={[{label:"Clarksville",href:"/service-areas/maryland/howard-county/clarksville-md"},{label:"Ellicott City",href:"/service-areas/maryland/howard-county/ellicott-city-md"}]}

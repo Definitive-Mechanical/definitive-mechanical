@@ -7,7 +7,7 @@ export default function GalesvilleMD() {
   return (
     <Tier2CityPage
       metaTitle="Plumber in Galesville, MD | Licensed Plumbing | Definitive Mechanical"
-      metaDescription="Licensed plumber serving Galesville, MD. Plumbing, water heater, gas & emergency service for Galesville's waterfront community. Anne Arundel #A2-6139. Call (301) 679-5849."
+      metaDescription={`Licensed plumber serving Galesville, MD. Plumbing, water heater, gas & emergency service for Galesville's waterfront community. Anne Arundel #A2-6139. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/anne-arundel-county/galesville-md/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Maryland",href:"/service-areas/maryland"},{label:"Anne Arundel County",href:"/service-areas/maryland/anne-arundel-county"},{label:"Galesville MD"}]}
       eyebrow="Plumber in Galesville, MD · Anne Arundel County · Serving from Largo, MD"

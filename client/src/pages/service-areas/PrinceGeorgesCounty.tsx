@@ -56,7 +56,7 @@ export default function PrinceGeorgesCounty() {
     <>
       <Helmet>
         <title>Plumber in Prince George's County MD | Definitive Mechanical | (301) 679-5849</title>
-        <meta name="description" content="Licensed plumbing services throughout Prince George's County MD. Based in Largo. WSSC #73696 · MD #96958 · MDOT MBE Cert 20-134. 24/7 emergency. Call (301) 679-5849." />
+        <meta name="description" content={`Licensed plumbing services throughout Prince George's County MD. Based in Largo. WSSC #73696 · MD #96958 · MDOT MBE Cert 20-134. 24/7 emergency. Call (301) 679-5849.`} />
         <link rel="canonical" href="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
@@ -87,7 +87,7 @@ export default function PrinceGeorgesCounty() {
       {/* Cities Grid */}
       <section className="bg-white py-16">
         <div className="container">
-          <SectionHeading eyebrow="COMMUNITIES SERVED" heading="Prince George's County cities and communities we serve" />
+          <SectionHeading eyebrow="COMMUNITIES SERVED" heading={`Prince George's County cities and communities we serve`} />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
             {CITIES.map((city) => (
               <Link key={city.name} href={city.href} className="bg-white border border-gray-200 rounded-md p-4 hover:border-cyan-400 hover:shadow-md transition-all group">
@@ -102,7 +102,7 @@ export default function PrinceGeorgesCounty() {
       {/* Services */}
       <section style={{ backgroundColor: "#F0F0F0" }} className="py-16">
         <div className="container">
-          <SectionHeading eyebrow="SERVICES" heading="Plumbing services available throughout Prince George's County" />
+          <SectionHeading eyebrow="SERVICES" heading={`Plumbing services available throughout Prince George's County`} />
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-10">
             {SERVICES.map((svc) => (
               <Link key={svc.name} href={svc.href} className="bg-white border-l-4 p-3 rounded-md font-medium text-sm hover:opacity-80 transition-opacity block" style={{ borderColor: "#009EC6", color: "#003060", fontFamily: "'Barlow', sans-serif" }}>
@@ -116,7 +116,7 @@ export default function PrinceGeorgesCounty() {
       {/* Credentials */}
       <section style={{ backgroundColor: "#003060" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="CREDENTIALS" heading="Licenses and certifications for Prince George's County" light />
+          <SectionHeading eyebrow="CREDENTIALS" heading={`Licenses and certifications for Prince George's County`} light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">
             {[{ label: "WSSC Master Plumber/Gasfitter", num: "#73696" }, { label: "Maryland State Master Plumber/Gasfitter", num: "#96958" }, { label: "MDOT MBE Certification", num: "Cert 20-134" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
@@ -132,12 +132,12 @@ export default function PrinceGeorgesCounty() {
       {/* FAQ */}
       <section className="bg-white py-20">
         <div className="container max-w-3xl mx-auto">
-          <SectionHeading eyebrow="FAQ" heading="Plumbing service in Prince George's County — common questions" />
+          <SectionHeading eyebrow="FAQ" heading={`Plumbing service in Prince George's County — common questions`} />
           <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} /></div>
         </div>
       </section>
 
-      <CTABanner heading="Need a plumber in Prince George's County?" subtext="Based in Largo, MD. WSSC #73696 · MD #96958 · MDOT MBE Cert 20-134 · 24/7 Emergency." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading={`Need a plumber in Prince George's County?`} subtext="Based in Largo, MD. WSSC #73696 · MD #96958 · MDOT MBE Cert 20-134 · 24/7 Emergency." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

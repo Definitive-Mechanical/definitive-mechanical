@@ -220,7 +220,7 @@ export default function LargoMD() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <TestimonialCard quote="I was extremely impressed — they were prompt, courteous, and professional. If you need plumbers, ask for DJ and Keon." name="Michael F." location="Largo, MD" service="Plumbing Service" />
-            <TestimonialCard quote="Everything went extremely well. They were punctual, cleaned up after themselves — very professional and courteous. This is my second time hiring this company." name="Millie H." location="Prince George's County" service="Plumbing Service" />
+            <TestimonialCard quote="Everything went extremely well. They were punctual, cleaned up after themselves — very professional and courteous. This is my second time hiring this company." name="Millie H." location={`Prince George's County`} service="Plumbing Service" />
             <TestimonialCard quote="Service was excellent — prompt, professional, diagnosed and replaced my toilet the same day, and left the bathroom spotless." name="Gayle T." location="Maryland" service="Toilet Repair" />
           </div>
           <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", textAlign:"center", marginTop:"24px" }}>
@@ -275,7 +275,7 @@ export default function LargoMD() {
 
       {/* S9: CTA Banner */}
       <CTABanner
-        heading="Largo's licensed Master Plumber — right in your community."
+        heading={`Largo's licensed Master Plumber — right in your community.`}
         subtext="9701 Apollo Drive, Suite 100, Largo, MD 20774 | 24/7 Emergency Service | Upfront Pricing | Licensed Master Plumber/Gasfitter | MDOT MBE Certified"
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}

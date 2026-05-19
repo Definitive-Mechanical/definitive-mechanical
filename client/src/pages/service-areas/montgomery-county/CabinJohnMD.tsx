@@ -7,7 +7,7 @@ export default function CabinJohnMD() {
   return (
     <Tier2CityPage
       metaTitle="Plumber in Cabin John, MD | Licensed Plumbing | Definitive Mechanical"
-      metaDescription="Licensed plumber serving Cabin John, MD. Plumbing, gas, water heater & emergency service for Cabin John's wooded community. WSSC-licensed. Call (301) 679-5849."
+      metaDescription={`Licensed plumber serving Cabin John, MD. Plumbing, gas, water heater & emergency service for Cabin John's wooded community. WSSC-licensed. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/cabin-john-md/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Maryland",href:"/service-areas/maryland"},{label:"Montgomery County",href:"/service-areas/maryland/montgomery-county"},{label:"Cabin John MD"}]}
       eyebrow="Plumber in Cabin John, MD · Montgomery County · Serving from Largo, MD"

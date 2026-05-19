@@ -7,7 +7,7 @@ export default function DarnestownMD() {
   return (
     <Tier2CityPage
       metaTitle="Plumber in Darnestown, MD | Licensed Plumbing | Definitive Mechanical"
-      metaDescription="Licensed plumber serving Darnestown, MD. Plumbing, gas, water heater & emergency service for Darnestown's estate homes. MD #96958. Call (301) 679-5849."
+      metaDescription={`Licensed plumber serving Darnestown, MD. Plumbing, gas, water heater & emergency service for Darnestown's estate homes. MD #96958. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/darnestown-md/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Maryland",href:"/service-areas/maryland"},{label:"Montgomery County",href:"/service-areas/maryland/montgomery-county"},{label:"Darnestown MD"}]}
       eyebrow="Plumber in Darnestown, MD · Montgomery County · Serving from Largo, MD"
@@ -16,9 +16,9 @@ export default function DarnestownMD() {
       trustItems={["MD Master Plumber #96958","WSSC #73696","City of Rockville #PLL-0002113","MDOT MBE Cert 20-134"]}
       services={[{label:"24/7 Emergency Plumbing",href:"/emergency-plumbing"},{label:"Water Heater Repair — including high-capacity units for large homes",href:"/water-heater-repair"},{label:"Drain Cleaning & Hydro-Jetting",href:"/drain-cleaning"},{label:"Sewer Line Repair & Video Camera Inspection",href:"/sewer-line-repair"},{label:"Gas Line Repair — propane and natural gas service",href:"/gas-line-repair"},{label:"Backflow Prevention & Annual Certification",href:"/backflow-certification"},{label:"Well system plumbing service — indoor plumbing for well-served properties",href:"/water-line-repair"}]}
       localContextHeading="What makes Darnestown unique for plumbing?"
-      localContextBody={"Darnestown's rural character means some properties are served by private wells and septic systems rather than WSSC public water and sewer. We serve the plumbing side of these properties — supply lines, pressure tanks, indoor distribution, and drain lines — but do not pump septic systems or service well pumps. For WSSC-served portions of Darnestown, our full range of services applies. Many Darnestown properties use propane rather than natural gas — we service both.
+      localContextBody={`Darnestown's rural character means some properties are served by private wells and septic systems rather than WSSC public water and sewer. We serve the plumbing side of these properties — supply lines, pressure tanks, indoor distribution, and drain lines — but do not pump septic systems or service well pumps. For WSSC-served portions of Darnestown, our full range of services applies. Many Darnestown properties use propane rather than natural gas — we service both.
 
-The large lot sizes in Darnestown mean long lateral runs, extended water service lines, and irrigation systems that all require backflow preventer installation and annual certification."}
+The large lot sizes in Darnestown mean long lateral runs, extended water service lines, and irrigation systems that all require backflow preventer installation and annual certification.`}
       licenseHeading="Are you licensed for plumbing in Darnestown?"
       credentials={[{label:"Maryland State Master Plumber/Gasfitter License #96958"},{label:"WSSC License #73696"},{label:"City of Rockville License #PLL-0002113"},{label:"MDOT MBE Certification No. 20-134"}]}
       nearbyAreas={[{label:"Rockville",href:"/service-areas/maryland/montgomery-county/rockville-md"},{label:"Potomac",href:"/service-areas/maryland/montgomery-county/potomac-md"},{label:"Cabin John",href:"/service-areas/maryland/montgomery-county/cabin-john-md"}]}

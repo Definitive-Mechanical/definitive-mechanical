@@ -7,7 +7,7 @@ export default function BrambletonVA() {
   return (
     <Tier2CityPage
       metaTitle="Plumber in Brambleton, VA | Licensed Plumbing | Definitive Mechanical"
-      metaDescription="Licensed plumber serving Brambleton, VA. Plumbing, water heater, gas & emergency service for Brambleton's planned community. VA Master Plumber #2710064209. Call (301) 679-5849."
+      metaDescription={`Licensed plumber serving Brambleton, VA. Plumbing, water heater, gas & emergency service for Brambleton's planned community. VA Master Plumber #2710064209. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/brambleton-va/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Northern Virginia",href:"/service-areas/northern-virginia"},{label:"Loudoun County",href:"/service-areas/northern-virginia/loudoun-county"},{label:"Brambleton VA"}]}
       eyebrow="Plumber in Brambleton, VA · Loudoun County · Serving from Largo, MD"

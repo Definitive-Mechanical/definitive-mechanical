@@ -7,7 +7,7 @@ export default function NomaDC() {
   return (
     <Tier2CityPage
       metaTitle="Plumber in NoMa, DC | Licensed Plumbing | Definitive Mechanical"
-      metaDescription="Licensed plumber serving NoMa (North of Massachusetts Avenue), DC. Plumbing for NoMa's condos, apartments & commercial buildings. DC #PGM1002236. Call (301) 679-5849."
+      metaDescription={`Licensed plumber serving NoMa (North of Massachusetts Avenue), DC. Plumbing for NoMa's condos, apartments & commercial buildings. DC #PGM1002236. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/noma/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Washington DC",href:"/service-areas/washington-dc"},{label:"NoMa"}]}
       eyebrow="Plumber in NoMa, DC · DC License #PGM1002236"

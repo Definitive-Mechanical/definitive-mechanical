@@ -8,7 +8,7 @@ export default function ChevyChaseMD() {
   return (
     <Tier2CityPage
       metaTitle="Plumber in Chevy Chase, MD | 24/7 Emergency Plumbing | Definitive Mechanical"
-      metaDescription="Licensed plumber in Chevy Chase, MD. Expert plumbing, gas, water heater & emergency service for Chevy Chase's historic homes. WSSC #73696. Call (301) 679-5849."
+      metaDescription={`Licensed plumber in Chevy Chase, MD. Expert plumbing, gas, water heater & emergency service for Chevy Chase's historic homes. WSSC #73696. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/chevy-chase-md/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Maryland",href:"/service-areas/maryland"},{label:"Montgomery County",href:"/service-areas/maryland/montgomery-county"},{label:"Chevy Chase MD"}]}
       eyebrow="Plumber in Chevy Chase, MD · Montgomery County · Serving from Largo, MD"
@@ -17,9 +17,9 @@ export default function ChevyChaseMD() {
       trustItems={["MD Master Plumber #96958","WSSC #73696","City of Rockville #PLL-0002113","MDOT MBE Cert 20-134","24/7 Emergency"]}
       services={[{label:"24/7 Emergency Plumbing — available for Chevy Chase addresses around the clock",href:"/emergency-plumbing"},{label:"Water Heater Repair & Installation — including high-recovery units for large estate homes",href:"/water-heater-repair"},{label:"Drain Cleaning & Sewer Line Repair — including camera inspection of aging clay laterals",href:"/drain-cleaning"},{label:"Gas Line Repair — licensed Master Gasfitter, MD #96958",href:"/gas-line-repair"},{label:"Water Line Repair — including aging galvanized and copper supply line replacement",href:"/water-line-repair"},{label:"Backflow Certification",href:"/backflow-certification"}]}
       localContextHeading="What makes Chevy Chase unique for plumbing?"
-      localContextBody={"Chevy Chase's pre-war and mid-century housing stock creates specific challenges: original galvanized supply lines from the 1920s–1950s that are well past their service life, clay sewer laterals with decades of root intrusion from the community's famous tree canopy, and large estate homes with complex mechanical systems. The high value of Chevy Chase properties means water damage from a burst pipe or failed water heater carries significant financial stakes.
+      localContextBody={`Chevy Chase's pre-war and mid-century housing stock creates specific challenges: original galvanized supply lines from the 1920s–1950s that are well past their service life, clay sewer laterals with decades of root intrusion from the community's famous tree canopy, and large estate homes with complex mechanical systems. The high value of Chevy Chase properties means water damage from a burst pipe or failed water heater carries significant financial stakes.
 
-We respond to Chevy Chase plumbing jobs with the care these properties require — careful access point selection, attention to finished surfaces, and clear documentation for insurance purposes."}
+We respond to Chevy Chase plumbing jobs with the care these properties require — careful access point selection, attention to finished surfaces, and clear documentation for insurance purposes.`}
       calloutNote="WSSC serves Chevy Chase for water and sewer. Note: Portions of Chevy Chase along the DC border may fall under DC Water jurisdiction — confirm your service provider before scheduling permitted work."
       licenseHeading="Are you licensed for plumbing in Chevy Chase?"
       credentials={[{label:"Maryland State Master Plumber/Gasfitter License #96958"},{label:"WSSC License #73696"},{label:"City of Rockville License #PLL-0002113"},{label:"MDOT MBE Certification No. 20-134"}]}

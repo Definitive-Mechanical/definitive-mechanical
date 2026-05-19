@@ -61,9 +61,9 @@ export default function WoodmoreMD() {
         { label: "Prince George's County", href: "/service-areas/maryland/prince-georges-county" },
         { label: "Woodmore MD" }
       ]}
-      eyebrow="Plumber in Woodmore, MD · Prince George's County · Serving from Largo, MD"
+      eyebrow={`Plumber in Woodmore, MD · Prince George's County · Serving from Largo, MD`}
       h1="Plumber in Woodmore, MD"
-      introParagraph="Definitive Mechanical provides licensed plumbing, gas, emergency, and commercial services in Woodmore, Maryland — a premier planned community in Prince George's County built around the Woodmore Country Club golf course, known for its large custom homes on wooded lots. We hold Maryland State Master Plumber/Gasfitter License #96958 and WSSC License #73696, and serve Woodmore from our nearby Largo, MD location."
+      introParagraph={`Definitive Mechanical provides licensed plumbing, gas, emergency, and commercial services in Woodmore, Maryland — a premier planned community in Prince George's County built around the Woodmore Country Club golf course, known for its large custom homes on wooded lots. We hold Maryland State Master Plumber/Gasfitter License #96958 and WSSC License #73696, and serve Woodmore from our nearby Largo, MD location.`}
       trustItems={["MD Master Plumber #96958", "WSSC #73696", "MDOT MBE Cert 20-134", "24/7 Emergency", "11 Years in Business"]}
       services={[
         { label: "24/7 Emergency Plumbing", href: "/emergency-plumbing" },
@@ -75,7 +75,7 @@ export default function WoodmoreMD() {
         { label: "Commercial Plumbing for HOA and community facilities", href: "/commercial-plumbing" }
       ]}
       localContextHeading="What are the common plumbing issues in Woodmore?"
-      localContextBody="Woodmore's custom homes — many built in the 1990s and early 2000s — are relatively newer but face distinct plumbing needs. Large lot sizes mean longer water service line runs and sewer laterals, increasing the likelihood of root intrusion from Woodmore's mature tree canopy. The community's affluent housing profile means finished basements and high-end mechanical rooms are common — making burst pipe and water damage events more costly than average."
+      localContextBody={`Woodmore's custom homes — many built in the 1990s and early 2000s — are relatively newer but face distinct plumbing needs. Large lot sizes mean longer water service line runs and sewer laterals, increasing the likelihood of root intrusion from Woodmore's mature tree canopy. The community's affluent housing profile means finished basements and high-end mechanical rooms are common — making burst pipe and water damage events more costly than average.`}
       calloutNote="WSSC serves Woodmore for water and sewer. All permitted plumbing work requires a WSSC-licensed contractor."
       licenseHeading="Are you licensed for plumbing in Woodmore?"
       credentials={[
@@ -89,7 +89,7 @@ export default function WoodmoreMD() {
         { label: "Fairwood", href: "/service-areas/maryland/prince-georges-county/fairwood-md" },
         { label: "Fort Washington", href: "/service-areas/maryland/prince-georges-county/fort-washington-md" }
       ]}
-      countyHubLabel="Prince George's County"
+      countyHubLabel={`Prince George's County`}
       countyHubHref="/service-areas/maryland/prince-georges-county"
       faqs={[
         { q: "How quickly can you respond to a Woodmore emergency?", a: "Woodmore is approximately 10–20 minutes from our Largo location depending on the specific address within the community. Emergency dispatch is immediate." },
