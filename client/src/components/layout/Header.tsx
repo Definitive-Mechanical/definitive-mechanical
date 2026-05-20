@@ -4,6 +4,11 @@ import {
   Phone, Menu, X, ChevronDown, ChevronRight
 } from 'lucide-react';
 import { BUSINESS } from '@/lib/constants';
+import {
+  SERVICE_CATEGORY_RESIDENTIAL,
+  SERVICE_CATEGORY_EMERGENCY,
+  SERVICE_CATEGORY_COMMERCIAL,
+} from '@/lib/serviceCategories';
 
 const NAV_ITEMS = [
   { label: 'Home', href: '/' },
@@ -16,39 +21,9 @@ const NAV_ITEMS = [
 ];
 
 const MEGA_MENU = {
-  col1: {
-    title: 'Emergency & Drain',
-    items: [
-      { label: 'Emergency Plumbing (24/7)', href: '/emergency-plumbing' },
-      { label: 'Drain Cleaning', href: '/drain-cleaning' },
-      { label: 'Hydro-Jetting', href: '/hydro-jetting' },
-      { label: 'Video Camera Inspection', href: '/video-camera-inspection' },
-      { label: 'Sewer Line Repair', href: '/sewer-line-repair' },
-      { label: 'Sewer Line Installation', href: '/sewer-line-installation' },
-    ],
-  },
-  col2: {
-    title: 'Water, Gas & More',
-    items: [
-      { label: 'Water Heater Repair', href: '/water-heater-repair' },
-      { label: 'Water Heater Installation', href: '/water-heater-installation' },
-      { label: 'Tankless Water Heaters', href: '/tankless-water-heaters' },
-      { label: 'Gas Line Repair', href: '/gas-line-repair' },
-      { label: 'Gas Line Installation', href: '/gas-line-installation' },
-      { label: 'Gas Leak Repair', href: '/gas-leak-repair' },
-    ],
-  },
-  col3: {
-    title: 'Backflow & Fixtures',
-    items: [
-      { label: 'Backflow Prevention', href: '/backflow-prevention' },
-      { label: 'Backflow Certification', href: '/backflow-certification' },
-      { label: 'Water Line Repair', href: '/water-line-repair' },
-      { label: 'Water Line Installation', href: '/water-line-installation' },
-      { label: 'Boiler & Furnace Repair', href: '/boiler-furnace-repair' },
-      { label: 'Faucet & Toilet Repair', href: '/faucet-toilet-repair' },
-    ],
-  },
+  col1: SERVICE_CATEGORY_RESIDENTIAL,
+  col2: SERVICE_CATEGORY_EMERGENCY,
+  col3: SERVICE_CATEGORY_COMMERCIAL,
 };
 
 const COMMERCIAL_DROPDOWN = [

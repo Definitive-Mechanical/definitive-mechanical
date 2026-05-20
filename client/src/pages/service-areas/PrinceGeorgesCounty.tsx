@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import { getServiceImage } from "@/lib/serviceImages";
-import { ALL_SERVICES } from "@/lib/allServices";
+import { ALL_SERVICE_CATEGORIES } from "@/lib/allServices";
 import { Phone, ShieldCheck, MapPin, Key } from "lucide-react";
 import BreadcrumbList from "@/components/ui/BreadcrumbList";
 import SectionHeading from "@/components/ui/SectionHeading";
@@ -18,21 +18,6 @@ const CITIES = [
   { name: "Brock Hall, MD", href: "/service-areas/maryland/prince-georges-county/brock-hall-md/", note: "Residential community" },
   { name: "Croom, MD", href: "/service-areas/maryland/prince-georges-county/croom-md/", note: "Rural southern PG" },
   { name: "Queensland, MD", href: "/service-areas/maryland/prince-georges-county/queensland-md/", note: "Residential area" },
-];
-
-const SERVICES = [
-  { name: "Emergency Plumbing", href: "/emergency-plumbing/" },
-  { name: "Drain Cleaning", href: "/drain-cleaning/" },
-  { name: "Water Heater Repair", href: "/water-heater-repair/" },
-  { name: "Water Heater Installation", href: "/water-heater-installation/" },
-  { name: "Sewer Line Repair", href: "/sewer-line-repair/" },
-  { name: "Sewer Line Installation", href: "/sewer-line-installation/" },
-  { name: "Gas Line Repair", href: "/gas-line-repair/" },
-  { name: "Gas Line Installation", href: "/gas-line-installation/" },
-  { name: "Backflow Prevention", href: "/backflow-prevention/" },
-  { name: "Backflow Certification", href: "/backflow-certification/" },
-  { name: "Hydro-Jetting", href: "/hydro-jetting/" },
-  { name: "Video Camera Inspection", href: "/video-camera-inspection/" },
 ];
 
 const FAQ_ITEMS = [
@@ -63,10 +48,10 @@ export default function PrinceGeorgesCounty() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Maryland", href: "/service-areas/maryland/" }, { label: "Prince George's County" }]}/>
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES  PRINCE GEORGE'S COUNTY, MD  HOME BASE</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES · PRINCE GEORGE'S COUNTY, MD · HOME BASE</p>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em', lineHeight: 1.0 }}>Plumber in Prince George's County, MD</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical is based in Largo, Prince George's County — providing licensed plumbing, gas, and mechanical services throughout PG County. WSSC #73696  MD State #96958  MDOT MBE Cert 20-134. 24/7 emergency service. Call (301) 679-5849.
+            Definitive Mechanical is based in Largo, Prince George's County — providing licensed plumbing, gas, and mechanical services throughout PG County. WSSC #73696 · MD State #96958 · MDOT MBE Cert 20-134. 24/7 emergency service. Call (301) 679-5849.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
@@ -98,17 +83,51 @@ export default function PrinceGeorgesCounty() {
         </div>
       </section>
 
-      {/* Services */}
-      <section style={{ backgroundColor: "var(--surface-1)" }} className="py-16">
+      {/* Services — categorized photo grid */}
+      <section style={{ backgroundColor: "var(--surface-1)", padding: "64px 0" }}>
         <div className="container">
-          <SectionHeading eyebrow="SERVICES" heading={`Plumbing services available throughout Prince George's County`} />
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-10">
-            {SERVICES.map((svc) => (
-              <Link key={svc.name} href={svc.href} className="bg-white border-l-4 p-3 rounded-md font-medium text-sm hover:opacity-80 transition-opacity block" style={{ borderColor: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>
-                {svc.name} →
-              </Link>
-            ))}
+          <div style={{ marginBottom: "36px" }}>
+            <SectionHeading eyebrow="OUR SERVICES" heading={`Plumbing services available throughout Prince George's County`} />
+            <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.75, marginTop: "12px", maxWidth: "640px" }}>
+              Full-service licensed plumbing for residential, commercial, and government clients throughout Prince George's County. Every job performed by a licensed Master Plumber.
+            </p>
           </div>
+
+          {ALL_SERVICE_CATEGORIES.map((cat) => (
+            <div key={cat.key} style={{ marginBottom: "36px" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "18px" }}>
+                <div style={{ height: "3px", width: "28px", background: cat.color, flexShrink: 0, borderRadius: "2px" }} />
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-navy)" }}>{cat.title}</span>
+                <div style={{ height: "1px", flex: 1, background: "#E6E8EE" }} />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {cat.items.map((svc, i) => (
+                  <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
+                    <div
+                      className="cursor-pointer"
+                      style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                    >
+                      <div style={{ position: "relative", height: "140px", overflow: "hidden" }}>
+                        <img
+                          src={getServiceImage(svc.href.replace(/^\//, "").replace(/\/$/, "").toLowerCase())}
+                          alt={svc.label}
+                          style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+                          loading="lazy"
+                        />
+                        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
+                      </div>
+                      <div style={{ padding: "14px 16px 16px" }}>
+                        <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                        <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -129,14 +148,14 @@ export default function PrinceGeorgesCounty() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-white py-20">
+      <section style={{ backgroundColor: "var(--brand-navy-dark)" }} className="py-20">
         <div className="container max-w-3xl mx-auto">
-          <SectionHeading eyebrow="FAQ" heading={`Plumbing service in Prince George's County — common questions`} />
+          <SectionHeading eyebrow="FAQ" heading={`Plumbing service in Prince George's County — common questions`} light />
           <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" /></div>
         </div>
       </section>
 
-      <CTABanner heading={`Need a plumber in Prince George's County?`} subtext="Based in Largo, MD. WSSC #73696  MD #96958  MDOT MBE Cert 20-134  24/7 Emergency." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading={`Need a plumber in Prince George's County?`} subtext="Based in Largo, MD. WSSC #73696 · MD #96958 · MDOT MBE Cert 20-134 · 24/7 Emergency." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

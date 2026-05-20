@@ -1,5 +1,5 @@
 import { getServiceImage } from '@/lib/serviceImages';
-import { ALL_SERVICES } from '@/lib/allServices';
+import { ALL_SERVICE_CATEGORIES } from '@/lib/allServices';
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import {
@@ -83,8 +83,23 @@ export default function EllicottCityMD() {
           <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
             Ellicott City is one of Howard County's most established and desirable communities — a mix of the historic Old Ellicott City district along the Patapsco River and the extensive residential and commercial development that has grown westward along US-40 and Route 108. Definitive Mechanical holds Howard County Master Plumber/Gasfitter License #MP-0000215 — a county-specific credential required for permitted plumbing work within Howard County.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {ALL_SERVICES.map((svc, i) => (
+          {ALL_SERVICE_CATEGORIES.map((cat) => (
+
+            <div key={cat.key} style={{ marginBottom: "36px" }}>
+
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "18px" }}>
+
+                <div style={{ height: "3px", width: "28px", background: cat.color, flexShrink: 0, borderRadius: "2px" }} />
+
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-navy)" }}>{cat.title}</span>
+
+                <div style={{ height: "1px", flex: 1, background: "#E6E8EE" }} />
+
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                {cat.items.map((svc, i) => (
               <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                 <div
                   className="cursor-pointer"
@@ -107,8 +122,10 @@ export default function EllicottCityMD() {
                   </div>
                 </div>
               </Link>
-            ))}
-          </div>
+            ))}  
+              </div>
+            </div>
+          ))}  
         </div>
       </section>
 

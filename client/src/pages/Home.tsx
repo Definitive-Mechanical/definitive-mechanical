@@ -659,16 +659,15 @@ export default function Home() {
       </section>
 
       {/* SECTION 11: FAQ */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="FREQUENTLY ASKED QUESTIONS"
             heading="Common questions about plumbing service in MD, DC & Northern VA"
             centered
+            light
           />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
-            <FAQAccordion items={HOME_FAQ} schema={true} />
-          </div>
+          <FAQAccordion items={HOME_FAQ} schema={true} variant="dark" />
         </div>
       </section>
 

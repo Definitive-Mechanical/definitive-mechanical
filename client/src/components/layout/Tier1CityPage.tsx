@@ -16,7 +16,7 @@ import {
 import { useState } from "react";
 import BreadcrumbList from "@/components/ui/BreadcrumbList";
 import { getServiceImage } from "@/lib/serviceImages";
-import { ALL_SERVICES } from "@/lib/allServices";
+import { ALL_SERVICE_CATEGORIES } from "@/lib/allServices";
 import CTABanner from "@/components/ui/CTABanner";
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
@@ -219,9 +219,16 @@ export default function Tier1CityPage({
               Full-service licensed plumbing for residential, commercial, and government clients in {cityName}. Every job performed by a licensed Master Plumber.
             </p>
           </div>
-          {/* 3-column photo card grid — all 18 services */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {ALL_SERVICES.map((svc, i) => {
+          {/* Categorized 3-column photo card grid */}
+          {ALL_SERVICE_CATEGORIES.map((cat) => (
+            <div key={cat.key} style={{ marginBottom: '36px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
+                <div style={{ height: '3px', width: '28px', background: cat.color, flexShrink: 0, borderRadius: '2px' }} />
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--brand-navy)' }}>{cat.title}</span>
+                <div style={{ height: '1px', flex: 1, background: '#E6E8EE' }} />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {cat.items.map((svc, i) => {
               const Icon = getIcon(svc.label);
               const slug = svc.href.replace(/^\//, "").toLowerCase();
               const imgSrc = getServiceImage(slug);
@@ -252,9 +259,11 @@ export default function Tier1CityPage({
                     </div>
                   </div>
                 </Link>
-              );
-            })}
-          </div>
+                            );
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

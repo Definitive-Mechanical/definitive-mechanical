@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { ALL_SERVICES } from '@/lib/allServices';
+import { ALL_SERVICE_CATEGORIES } from '@/lib/allServices';
 import { getServiceImage } from '@/lib/serviceImages';
 import { Link } from "wouter";
 import {
@@ -82,8 +82,23 @@ export default function PotomacMD() {
           <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
             Potomac is one of the most affluent communities in the United States — characterized by large estate homes, significant lot sizes, extensive landscaping with irrigation systems, outdoor entertainment areas, and a residential profile that creates demand for premium plumbing service. Potomac's large homes have correspondingly complex plumbing systems — multiple water heaters or commercial-grade units, extensive irrigation systems with backflow requirements, gas lines serving outdoor kitchens and generators, and well-maintained but aging sewer laterals that benefit from periodic camera inspection.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {ALL_SERVICES.map((svc, i) => (
+          {ALL_SERVICE_CATEGORIES.map((cat) => (
+
+            <div key={cat.key} style={{ marginBottom: "36px" }}>
+
+              <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "18px" }}>
+
+                <div style={{ height: "3px", width: "28px", background: cat.color, flexShrink: 0, borderRadius: "2px" }} />
+
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-navy)" }}>{cat.title}</span>
+
+                <div style={{ height: "1px", flex: 1, background: "#E6E8EE" }} />
+
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                {cat.items.map((svc, i) => (
               <Link key={i} href={svc.href}>
                 <div
                   className="cursor-pointer"
@@ -106,8 +121,10 @@ export default function PotomacMD() {
                   </div>
                 </div>
               </Link>
-            ))}
-          </div>
+            ))}  
+              </div>
+            </div>
+          ))}  
         </div>
       </section>
 
