@@ -1,4 +1,4 @@
-import Tier2CityPage from "@/components/layout/Tier2CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 const schema = [
   {"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","description":"Licensed plumber serving Georgetown, DC","url":"https://definitivemechanical.com/service-areas/washington-dc/georgetown/","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"Place","name":"Georgetown, Washington DC"},"openingHours":["Mo-Fr 09:00-17:00","Sa 09:00-14:00"]},
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you work on historic Georgetown rowhouses with original plumbing?","acceptedAnswer":{"@type":"Answer","text":"Yes. We have experience working in pre-war and 19th-century masonry construction where access and material choices require particular care. We discuss access options with homeowners before opening any wall or floor."}},{"@type":"Question","name":"Are you licensed by DCRA for Georgetown plumbing work?","acceptedAnswer":{"@type":"Answer","text":"Yes. DC Master Plumber/Gasfitter License #PGM1002236, verifiable at dcra.dc.gov."}}]},
@@ -6,7 +6,7 @@ const schema = [
 ];
 export default function GeorgetownDC() {
   return (
-    <Tier2CityPage
+    <Tier1CityPage
       metaTitle="Plumber in Georgetown, DC | Historic Property Plumbing | Definitive Mechanical"
       metaDescription={`Licensed plumber serving Georgetown, DC. Expert plumbing for Georgetown's historic rowhouses, condos & commercial properties. DC Master Plumber #PGM1002236. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/georgetown/"

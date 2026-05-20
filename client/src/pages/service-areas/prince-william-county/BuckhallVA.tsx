@@ -1,11 +1,10 @@
-import Tier3CityPage from "@/components/layout/Tier3CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 export default function BuckhallVA() {
-  return <Tier3CityPage
+  return <Tier1CityPage
     metaTitle="Plumber in Buckhall, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Buckhall, VA. Plumbing, water heater, gas & emergency service for Buckhall. VA #2710064008. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/prince-william-county/buckhall-va/"
-    schemaCity="Buckhall" schemaState="VA"
-    schemaUrl="https://definitivemechanical.com/service-areas/northern-virginia/prince-william-county/buckhall-va/"
+    schemaJson={[]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
@@ -15,9 +14,8 @@ export default function BuckhallVA() {
     ]}
     eyebrow="Plumber in Buckhall, VA · Prince William County · Serving from Largo, MD"
     h1="Plumber in Buckhall, VA"
-    intro="Definitive Mechanical serves Buckhall, Virginia — a community in Prince William County near Manassas, featuring a mix of established residential neighborhoods and rural properties. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
+    introParagraph="Definitive Mechanical serves Buckhall, Virginia — a community in Prince William County near Manassas, featuring a mix of established residential neighborhoods and rural properties. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}
-    servicesHeading="What plumbing services are available in Buckhall?"
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
       {label:"Water Heater Repair & Installation",href:"/water-heater-repair/"},
@@ -27,6 +25,8 @@ export default function BuckhallVA() {
     ]}
     localContextHeading="Unique context for Buckhall"
     localContextBody={"Buckhall's established neighborhoods have a mix of plumbing ages and service needs. Virginia License #2710064008 covers all permitted plumbing work in Prince William County."}
+    licenseHeading="Licensed in Virginia, Maryland & DC"
+    credentials={[{label:"VA Master Plumber #2710064008"},{label:"SWaM Certified"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
       {label:"Independent Hill",href:"/service-areas/northern-virginia/prince-william-county/independent-hill-va/"},
       {label:"Bull Run Mountain Estates",href:"/service-areas/northern-virginia/prince-william-county/bull-run-mountain-estates-va/"},
@@ -34,7 +34,7 @@ export default function BuckhallVA() {
     ]}
     countyHubLabel="Prince William County"
     countyHubHref="/service-areas/northern-virginia/prince-william-county/"
-    bottomCtaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
-    bottomCtaCity="Buckhall"
+    ctaCity="Buckhall"
+    ctaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
   />;
 }

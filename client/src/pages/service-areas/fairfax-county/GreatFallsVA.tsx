@@ -1,4 +1,4 @@
-import Tier2CityPage from "@/components/layout/Tier2CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 const schema = [
   {"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","description":"Licensed plumber serving Great Falls, VA","url":"https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/great-falls-va/","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"Great Falls, VA"},"openingHours":["Mo-Fr 09:00-17:00","Sa 09:00-14:00"]},
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you serve Great Falls properties on private wells?","acceptedAnswer":{"@type":"Answer","text":"We serve the plumbing inside the home — supply lines, fixtures, drain lines, water heaters, and gas lines. We do not service well pumps or septic systems. Call (301) 679-5849 to confirm what we can handle for your specific property."}},{"@type":"Question","name":"Are you licensed for all plumbing in Fairfax County?","acceptedAnswer":{"@type":"Answer","text":"Yes. Virginia Master Plumber/Gasfitter License #2710064209 and Class A Contractor #2705181061 cover all permitted plumbing work in Fairfax County, including Great Falls."}}]},
@@ -6,7 +6,7 @@ const schema = [
 ];
 export default function GreatFallsVA() {
   return (
-    <Tier2CityPage
+    <Tier1CityPage
       metaTitle="Plumber in Great Falls, VA | Estate Home Plumbing | Definitive Mechanical"
       metaDescription={`Licensed plumber serving Great Falls, VA. Expert plumbing for Great Falls' luxury estate homes on large wooded lots. VA Master Plumber #2710064209. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/great-falls-va/"

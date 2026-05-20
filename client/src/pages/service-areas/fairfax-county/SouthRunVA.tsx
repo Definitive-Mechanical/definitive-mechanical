@@ -1,11 +1,10 @@
-import Tier3CityPage from "@/components/layout/Tier3CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 export default function SouthRunVA() {
-  return <Tier3CityPage
+  return <Tier1CityPage
     metaTitle="Plumber in South Run, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving South Run, VA. Plumbing, water heater, gas & emergency service for South Run. VA #2710064008. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/south-run-va/"
-    schemaCity="South Run" schemaState="VA"
-    schemaUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/south-run-va/"
+    schemaJson={[]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
@@ -15,9 +14,8 @@ export default function SouthRunVA() {
     ]}
     eyebrow="Plumber in South Run, VA · Fairfax County · Serving from Largo, MD"
     h1="Plumber in South Run, VA"
-    intro="Definitive Mechanical serves South Run, Virginia — a residential community in southern Fairfax County near Burke and Springfield, featuring single-family homes and townhouses built in the 1980s–1990s. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
+    introParagraph="Definitive Mechanical serves South Run, Virginia — a residential community in southern Fairfax County near Burke and Springfield, featuring single-family homes and townhouses built in the 1980s–1990s. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}
-    servicesHeading="What plumbing services are available in South Run?"
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
       {label:"Water Heater Repair & Tankless Water Heaters — 1980s–1990s homes in replacement cycle",href:"/water-heater-repair/"},
@@ -27,6 +25,8 @@ export default function SouthRunVA() {
     ]}
     localContextHeading="Unique context for South Run"
     localContextBody={"South Run's 1980s–1990s homes are in the active water heater and drain service cycle. Fairfax Water serves the community. Virginia License #2710064008 covers all permitted plumbing work in Fairfax County."}
+    licenseHeading="Licensed in Virginia, Maryland & DC"
+    credentials={[{label:"VA Master Plumber #2710064008"},{label:"SWaM Certified"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
       {label:"Springfield",href:"/service-areas/northern-virginia/springfield-va/"},
       {label:"Burke",href:"/service-areas/northern-virginia/fairfax-county/burke-va/"},
@@ -34,7 +34,7 @@ export default function SouthRunVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
-    bottomCtaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
-    bottomCtaCity="South Run"
+    ctaCity="South Run"
+    ctaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
   />;
 }

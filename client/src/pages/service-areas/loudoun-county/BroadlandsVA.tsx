@@ -1,11 +1,10 @@
-import Tier3CityPage from "@/components/layout/Tier3CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 export default function BroadlandsVA() {
-  return <Tier3CityPage
+  return <Tier1CityPage
     metaTitle="Plumber in Broadlands, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Broadlands, VA. Plumbing, water heater, gas & emergency service for Broadlands. VA #2710064008. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/broadlands-va/"
-    schemaCity="Broadlands" schemaState="VA"
-    schemaUrl="https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/broadlands-va/"
+    schemaJson={[]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
@@ -15,9 +14,8 @@ export default function BroadlandsVA() {
     ]}
     eyebrow="Plumber in Broadlands, VA · Loudoun County · Serving from Largo, MD"
     h1="Plumber in Broadlands, VA"
-    intro="Definitive Mechanical serves Broadlands, Virginia — a large planned community in Loudoun County near Ashburn, featuring single-family homes, townhouses, and condominiums built primarily in the 2000s. Broadlands homes are entering the active water heater replacement cycle. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
+    introParagraph="Definitive Mechanical serves Broadlands, Virginia — a large planned community in Loudoun County near Ashburn, featuring single-family homes, townhouses, and condominiums built primarily in the 2000s. Broadlands homes are entering the active water heater replacement cycle. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}
-    servicesHeading="What plumbing services are available in Broadlands?"
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
       {label:"Water Heater Repair & Tankless Water Heaters — 2000s homes in replacement cycle",href:"/water-heater-repair/"},
@@ -27,6 +25,8 @@ export default function BroadlandsVA() {
     ]}
     localContextHeading="Unique context for Broadlands"
     localContextBody={"Broadlands' 2000s construction means original water heaters are at or past their 15–20 year service life. Loudoun Water serves the community. Virginia License #2710064008 covers all permitted plumbing work in Loudoun County."}
+    licenseHeading="Licensed in Virginia, Maryland & DC"
+    credentials={[{label:"VA Master Plumber #2710064008"},{label:"SWaM Certified"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
       {label:"Belmont",href:"/service-areas/northern-virginia/loudoun-county/belmont-va/"},
       {label:"Ashburn",href:"/service-areas/northern-virginia/loudoun-county/ashburn-va/"},
@@ -34,7 +34,7 @@ export default function BroadlandsVA() {
     ]}
     countyHubLabel="Loudoun County"
     countyHubHref="/service-areas/northern-virginia/loudoun-county/"
-    bottomCtaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
-    bottomCtaCity="Broadlands"
+    ctaCity="Broadlands"
+    ctaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
   />;
 }

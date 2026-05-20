@@ -1,4 +1,4 @@
-import Tier2CityPage from "@/components/layout/Tier2CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 
 const schema = [
   {
@@ -50,7 +50,7 @@ const schema = [
 
 export default function WoodmoreMD() {
   return (
-    <Tier2CityPage
+    <Tier1CityPage
       metaTitle="Plumber in Woodmore, MD | 24/7 Emergency Plumbing | Definitive Mechanical"
       metaDescription="Licensed plumber serving Woodmore, MD. Water heater repair, drain cleaning, sewer line service & emergency plumbing. MD Master Plumber #96958 + WSSC #73696. Call (301) 679-5849."
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/woodmore-md/"

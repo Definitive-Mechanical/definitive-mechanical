@@ -1,11 +1,10 @@
-import Tier3CityPage from "@/components/layout/Tier3CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 export default function GreatFallsCrossingVA() {
-  return <Tier3CityPage
+  return <Tier1CityPage
     metaTitle="Plumber in Great Falls Crossing, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Great Falls Crossing, VA. Plumbing, water heater, gas & emergency service. VA #2710064008. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/great-falls-crossing-va/"
-    schemaCity="Great Falls Crossing" schemaState="VA"
-    schemaUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/great-falls-crossing-va/"
+    schemaJson={[]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
@@ -15,9 +14,8 @@ export default function GreatFallsCrossingVA() {
     ]}
     eyebrow="Plumber in Great Falls Crossing, VA · Fairfax County · Serving from Largo, MD"
     h1="Plumber in Great Falls Crossing, VA"
-    intro="Definitive Mechanical serves Great Falls Crossing, Virginia — a residential subdivision in the Great Falls area of Fairfax County, featuring upscale single-family homes built in the 1990s–2000s. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
+    introParagraph="Definitive Mechanical serves Great Falls Crossing, Virginia — a residential subdivision in the Great Falls area of Fairfax County, featuring upscale single-family homes built in the 1990s–2000s. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}
-    servicesHeading="What plumbing services are available in Great Falls Crossing?"
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
       {label:"Water Heater Repair & Tankless Water Heaters",href:"/water-heater-repair/"},
@@ -27,6 +25,8 @@ export default function GreatFallsCrossingVA() {
     ]}
     localContextHeading="Unique context for Great Falls Crossing"
     localContextBody={"Great Falls Crossing's 1990s–2000s construction means original water heaters are at or past replacement age. The subdivision's upscale homes commonly have in-ground irrigation systems requiring annual backflow certification. Virginia License #2710064008 covers all permitted work."}
+    licenseHeading="Licensed in Virginia, Maryland & DC"
+    credentials={[{label:"VA Master Plumber #2710064008"},{label:"SWaM Certified"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
       {label:"Great Falls",href:"/service-areas/northern-virginia/great-falls-va/"},
       {label:"McLean",href:"/service-areas/northern-virginia/mclean-va/"},
@@ -34,7 +34,7 @@ export default function GreatFallsCrossingVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
-    bottomCtaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
-    bottomCtaCity="Great Falls Crossing"
+    ctaCity="Great Falls Crossing"
+    ctaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
   />;
 }

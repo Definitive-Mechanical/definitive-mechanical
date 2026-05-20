@@ -1,11 +1,11 @@
-import Tier2CityPage from "@/components/layout/Tier2CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 const schema = [
   {"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","description":"Licensed plumber serving Riva, MD","url":"https://definitivemechanical.com/service-areas/maryland/anne-arundel-county/riva-md/","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"Riva, MD"},"openingHours":["Mo-Fr 09:00-17:00","Sa 09:00-14:00"]},
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://definitivemechanical.com/"},{"@type":"ListItem","position":2,"name":"Service Areas","item":"https://definitivemechanical.com/service-areas/"},{"@type":"ListItem","position":3,"name":"Maryland","item":"https://definitivemechanical.com/service-areas/maryland/"},{"@type":"ListItem","position":4,"name":"Anne Arundel County","item":"https://definitivemechanical.com/service-areas/maryland/anne-arundel-county/"},{"@type":"ListItem","position":5,"name":"Riva, MD","item":"https://definitivemechanical.com/service-areas/maryland/anne-arundel-county/riva-md/"}]}
 ];
 export default function RivaMD() {
   return (
-    <Tier2CityPage
+    <Tier1CityPage
       metaTitle="Plumber in Riva, MD | Licensed Plumbing | Definitive Mechanical"
       metaDescription={`Licensed plumber serving Riva, MD. Plumbing, water heater, gas & emergency service for Riva's waterfront and suburban homes. Anne Arundel #A2-6139. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/anne-arundel-county/riva-md/"

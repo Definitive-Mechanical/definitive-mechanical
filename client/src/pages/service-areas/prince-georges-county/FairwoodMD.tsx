@@ -1,4 +1,4 @@
-import Tier2CityPage from "@/components/layout/Tier2CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 
 const schema = [
   {
@@ -34,7 +34,7 @@ const schema = [
 
 export default function FairwoodMD() {
   return (
-    <Tier2CityPage
+    <Tier1CityPage
       metaTitle="Plumber in Fairwood, MD | Licensed Plumbing | Definitive Mechanical"
       metaDescription="Licensed plumber serving Fairwood, MD. Emergency plumbing, water heater repair, drain cleaning & gas service. WSSC-licensed. MD #96958. Call (301) 679-5849."
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/fairwood-md/"

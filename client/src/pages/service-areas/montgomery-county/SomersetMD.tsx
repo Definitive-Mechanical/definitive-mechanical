@@ -1,11 +1,10 @@
-import Tier3CityPage from "@/components/layout/Tier3CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 export default function SomersetMD() {
-  return <Tier3CityPage
+  return <Tier1CityPage
     metaTitle="Plumber in Somerset, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Somerset, MD. Plumbing, water heater & emergency service for Somerset&#39;s historic homes. WSSC #73696. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/somerset-md/"
-    schemaCity="Somerset" schemaState="MD"
-    schemaUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/somerset-md/"
+    schemaJson={[]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
@@ -15,9 +14,8 @@ export default function SomersetMD() {
     ]}
     eyebrow="Plumber in Somerset, MD · Montgomery County · Serving from Largo, MD"
     h1="Plumber in Somerset, MD"
-    intro="Definitive Mechanical serves Somerset, Maryland — a small, incorporated municipality within Montgomery County, entirely surrounded by the towns of Chevy Chase. Somerset is a community of early-to-mid 20th century homes on a quiet residential grid, with housing stock that reflects the distinctive plumbing challenges of that era. We hold Maryland State License #96958 and WSSC License #73696."
+    introParagraph="Definitive Mechanical serves Somerset, Maryland — a small, incorporated municipality within Montgomery County, entirely surrounded by the towns of Chevy Chase. Somerset is a community of early-to-mid 20th century homes on a quiet residential grid, with housing stock that reflects the distinctive plumbing challenges of that era. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}
-    servicesHeading="What plumbing services are available in Somerset?"
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
       {label:"Water Heater Repair & Installation",href:"/water-heater-repair/"},
@@ -27,6 +25,8 @@ export default function SomersetMD() {
     ]}
     localContextHeading="Unique context for Somerset"
     localContextBody="Somerset&#39;s pre-war and early postwar housing stock has aging galvanized supply lines, clay sewer laterals with decades of root growth from mature street trees, and original cast iron drain systems. The community&#39;s small footprint and high property values mean plumbing damage events are taken seriously. WSSC serves Somerset for water and sewer — our WSSC License #73696 covers all permitted work."
+    licenseHeading="Licensed in Maryland, DC & Virginia"
+    credentials={[{label:"MD Master Plumber #96958"},{label:"WSSC #73696"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
       {label:"Chevy Chase",href:"/service-areas/maryland/montgomery-county/chevy-chase-md/"},
       {label:"Bethesda",href:"/service-areas/maryland/bethesda-md/"},
@@ -34,7 +34,7 @@ export default function SomersetMD() {
     ]}
     countyHubLabel="Montgomery County"
     countyHubHref="/service-areas/maryland/montgomery-county/"
-    bottomCtaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
-    bottomCtaCity="Somerset"
+    ctaCity="Somerset"
+    ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
   />;
 }

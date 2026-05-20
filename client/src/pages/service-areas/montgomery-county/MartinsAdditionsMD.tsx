@@ -1,11 +1,10 @@
-import Tier3CityPage from "@/components/layout/Tier3CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 export default function MartinsAdditionsMD() {
-  return <Tier3CityPage
+  return <Tier1CityPage
     metaTitle="Plumber in Martin&#39;s Additions, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Martin&#39;s Additions, MD. Plumbing, water heater & emergency service. WSSC #73696. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/martins-additions-md/"
-    schemaCity="Martin&#39;s Additions" schemaState="MD"
-    schemaUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/martins-additions-md/"
+    schemaJson={[]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
@@ -15,9 +14,8 @@ export default function MartinsAdditionsMD() {
     ]}
     eyebrow="Plumber in Martin&#39;s Additions, MD · Montgomery County · Serving from Largo, MD"
     h1="Plumber in Martin&#39;s Additions, MD"
-    intro="Definitive Mechanical serves Martin&#39;s Additions, Maryland — a small community within unincorporated Chevy Chase in Montgomery County, tucked between Chevy Chase Village and Kensington. Martin&#39;s Additions features a tight grid of mid-20th century bungalow, cape cod, and colonial-style homes with the aging plumbing infrastructure typical of 1940s–1960s construction. We hold Maryland State License #96958 and WSSC License #73696."
+    introParagraph="Definitive Mechanical serves Martin&#39;s Additions, Maryland — a small community within unincorporated Chevy Chase in Montgomery County, tucked between Chevy Chase Village and Kensington. Martin&#39;s Additions features a tight grid of mid-20th century bungalow, cape cod, and colonial-style homes with the aging plumbing infrastructure typical of 1940s–1960s construction. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}
-    servicesHeading="What plumbing services are available in Martin&#39;s Additions?"
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
       {label:"Water Heater Repair & Installation",href:"/water-heater-repair/"},
@@ -28,6 +26,8 @@ export default function MartinsAdditionsMD() {
     ]}
     localContextHeading="Unique context for Martin&#39;s Additions"
     localContextBody="The 1940s–1960s construction in Martin&#39;s Additions is at peak galvanized pipe replacement demand. WSSC License #73696 covers all permitted plumbing work in the community."
+    licenseHeading="Licensed in Maryland, DC & Virginia"
+    credentials={[{label:"MD Master Plumber #96958"},{label:"WSSC #73696"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
       {label:"Chevy Chase",href:"/service-areas/maryland/montgomery-county/chevy-chase-md/"},
       {label:"Bethesda",href:"/service-areas/maryland/bethesda-md/"},
@@ -35,7 +35,7 @@ export default function MartinsAdditionsMD() {
     ]}
     countyHubLabel="Montgomery County"
     countyHubHref="/service-areas/maryland/montgomery-county/"
-    bottomCtaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
-    bottomCtaCity="Martin&#39;s Additions"
+    ctaCity="Martin&#39;s Additions"
+    ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
   />;
 }

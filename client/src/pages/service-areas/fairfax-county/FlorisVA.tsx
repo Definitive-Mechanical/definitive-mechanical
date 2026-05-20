@@ -1,11 +1,10 @@
-import Tier3CityPage from "@/components/layout/Tier3CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 export default function FlorisVA() {
-  return <Tier3CityPage
+  return <Tier1CityPage
     metaTitle="Plumber in Floris, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Floris, VA. Plumbing, water heater, gas & emergency service for Floris. VA Master Plumber #2710064008. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/floris-va/"
-    schemaCity="Floris" schemaState="VA"
-    schemaUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/floris-va/"
+    schemaJson={[]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
@@ -15,9 +14,8 @@ export default function FlorisVA() {
     ]}
     eyebrow="Plumber in Floris, VA · Fairfax County · Serving from Largo, MD"
     h1="Plumber in Floris, VA"
-    intro="Definitive Mechanical serves Floris, Virginia — a rural and semi-rural community in western Fairfax County near Herndon and Chantilly, with a mix of equestrian properties, custom homes on large lots, and newer residential subdivisions. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
+    introParagraph="Definitive Mechanical serves Floris, Virginia — a rural and semi-rural community in western Fairfax County near Herndon and Chantilly, with a mix of equestrian properties, custom homes on large lots, and newer residential subdivisions. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}
-    servicesHeading="What plumbing services are available in Floris?"
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
       {label:"Water Heater Repair & Tankless Water Heaters",href:"/water-heater-repair/"},
@@ -26,9 +24,10 @@ export default function FlorisVA() {
       {label:"Backflow Prevention & Annual Certification — large lot irrigation systems",href:"/backflow-certification/"},
       {label:"Indoor plumbing for well-system properties",href:""}
     ]}
-    wellSepticNote="Some Floris properties are on private wells. We service indoor plumbing — supply lines, pressure tanks, water heaters, gas lines, and fixtures — but do not service well pumps or pump septic tanks."
     localContextHeading="Unique context for Floris"
     localContextBody={"Floris's large-lot properties often have complex propane systems and in-ground irrigation requiring annual backflow certification. Virginia License #2710064008 covers all permitted plumbing work in Fairfax County."}
+    licenseHeading="Licensed in Virginia, Maryland & DC"
+    credentials={[{label:"VA Master Plumber #2710064008"},{label:"SWaM Certified"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
       {label:"Herndon",href:"/service-areas/northern-virginia/herndon-va/"},
       {label:"Vienna",href:"/service-areas/northern-virginia/vienna-va/"},
@@ -36,7 +35,7 @@ export default function FlorisVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
-    bottomCtaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
-    bottomCtaCity="Floris"
+    ctaCity="Floris"
+    ctaLicenseLine="VA Master Plumber #2710064008 | SWaM Certified"
   />;
 }

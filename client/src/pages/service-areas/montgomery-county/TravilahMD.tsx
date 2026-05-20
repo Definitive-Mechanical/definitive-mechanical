@@ -1,11 +1,10 @@
-import Tier3CityPage from "@/components/layout/Tier3CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 export default function TravilahMD() {
-  return <Tier3CityPage
+  return <Tier1CityPage
     metaTitle="Plumber in Travilah, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Travilah, MD. Plumbing, water heater, gas & emergency service for Travilah estate properties. WSSC #73696. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/travilah-md/"
-    schemaCity="Travilah" schemaState="MD"
-    schemaUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/travilah-md/"
+    schemaJson={[]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
@@ -15,9 +14,8 @@ export default function TravilahMD() {
     ]}
     eyebrow="Plumber in Travilah, MD · Montgomery County · Serving from Largo, MD"
     h1="Plumber in Travilah, MD"
-    intro="Definitive Mechanical serves Travilah, Maryland — a semi-rural, low-density community in western Montgomery County between Rockville, Potomac, and Darnestown, characterized by large custom homes and estate properties on significant acreage. Travilah sits between WSSC and county well/septic service areas — confirm your service provider before scheduling permitted work. We hold Maryland State License #96958 and WSSC License #73696."
+    introParagraph="Definitive Mechanical serves Travilah, Maryland — a semi-rural, low-density community in western Montgomery County between Rockville, Potomac, and Darnestown, characterized by large custom homes and estate properties on significant acreage. Travilah sits between WSSC and county well/septic service areas — confirm your service provider before scheduling permitted work. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}
-    servicesHeading="What plumbing services are available in Travilah?"
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
       {label:"Water Heater Repair & Tankless Water Heaters",href:"/water-heater-repair/"},
@@ -28,6 +26,8 @@ export default function TravilahMD() {
     ]}
     localContextHeading="Unique context for Travilah"
     localContextBody="Travilah&#39;s large homes and extensive irrigation systems make backflow preventer installation and annual certification a common service need. We hold both WSSC (#73696) and Maryland State (#96958) credentials, covering both the WSSC-served and non-WSSC portions of the community."
+    licenseHeading="Licensed in Maryland, DC & Virginia"
+    credentials={[{label:"MD Master Plumber #96958"},{label:"WSSC #73696"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
       {label:"Rockville",href:"/service-areas/maryland/rockville-md/"},
       {label:"Potomac",href:"/service-areas/maryland/potomac-md/"},
@@ -35,7 +35,7 @@ export default function TravilahMD() {
     ]}
     countyHubLabel="Montgomery County"
     countyHubHref="/service-areas/maryland/montgomery-county/"
-    bottomCtaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
-    bottomCtaCity="Travilah"
+    ctaCity="Travilah"
+    ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
   />;
 }

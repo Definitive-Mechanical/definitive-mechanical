@@ -1,11 +1,10 @@
-import Tier3CityPage from "@/components/layout/Tier3CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 export default function BensvilleMD() {
-  return <Tier3CityPage
+  return <Tier1CityPage
     metaTitle="Plumber in Bensville, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Bensville, MD. Emergency plumbing, water heater, drain & gas service for Bensville. MD #96958. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/charles-county/bensville-md/"
-    schemaCity="Bensville" schemaState="MD"
-    schemaUrl="https://definitivemechanical.com/service-areas/maryland/charles-county/bensville-md/"
+    schemaJson={[]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
@@ -15,9 +14,8 @@ export default function BensvilleMD() {
     ]}
     eyebrow="Plumber in Bensville, MD · Charles County · Serving from Largo, MD"
     h1="Plumber in Bensville, MD"
-    intro="Definitive Mechanical serves Bensville, Maryland — a community in Charles County between Waldorf and Indian Head, with a mix of established residential neighborhoods and rural properties along the Route 210 corridor. We hold Maryland State Master Plumber/Gasfitter License #96958 and serve Bensville from our Largo, MD location."
+    introParagraph="Definitive Mechanical serves Bensville, Maryland — a community in Charles County between Waldorf and Indian Head, with a mix of established residential neighborhoods and rural properties along the Route 210 corridor. We hold Maryland State Master Plumber/Gasfitter License #96958 and serve Bensville from our Largo, MD location."
     trustItems={["MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
-    servicesHeading="What plumbing services are available in Bensville?"
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
       {label:"Water Heater Repair & Installation",href:"/water-heater-repair/"},
@@ -27,6 +25,8 @@ export default function BensvilleMD() {
     ]}
     localContextHeading="Unique context for Bensville"
     localContextBody="Bensville&#39;s location along the Route 210 corridor places it within a 25–35 minute response window from our Largo, MD location. The community&#39;s mix of suburban and rural properties includes both public utility-served homes and properties on private wells. Maryland State License #96958 covers all permitted plumbing work in Charles County."
+    licenseHeading="Licensed in Maryland, DC & Virginia"
+    credentials={[{label:"MD Master Plumber #96958"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
       {label:"Waldorf",href:"/service-areas/maryland/charles-county/waldorf-md/"},
       {label:"Fort Washington",href:"/service-areas/maryland/prince-georges-county/fort-washington-md/"},
@@ -34,7 +34,7 @@ export default function BensvilleMD() {
     ]}
     countyHubLabel="Charles County"
     countyHubHref="/service-areas/maryland/charles-county/"
-    bottomCtaLicenseLine="MD Master Plumber #96958 | MDOT MBE Cert 20-134"
-    bottomCtaCity="Bensville"
+    ctaCity="Bensville"
+    ctaLicenseLine="MD Master Plumber #96958 | MDOT MBE Cert 20-134"
   />;
 }

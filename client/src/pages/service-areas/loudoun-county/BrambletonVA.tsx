@@ -1,11 +1,11 @@
-import Tier2CityPage from "@/components/layout/Tier2CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 const schema = [
   {"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","description":"Licensed plumber serving Brambleton, VA","url":"https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/brambleton-va/","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"Brambleton, VA"},"openingHours":["Mo-Fr 09:00-17:00","Sa 09:00-14:00"]},
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://definitivemechanical.com/"},{"@type":"ListItem","position":2,"name":"Service Areas","item":"https://definitivemechanical.com/service-areas/"},{"@type":"ListItem","position":3,"name":"Northern Virginia","item":"https://definitivemechanical.com/service-areas/northern-virginia/"},{"@type":"ListItem","position":4,"name":"Loudoun County","item":"https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/"},{"@type":"ListItem","position":5,"name":"Brambleton, VA","item":"https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/brambleton-va/"}]}
 ];
 export default function BrambletonVA() {
   return (
-    <Tier2CityPage
+    <Tier1CityPage
       metaTitle="Plumber in Brambleton, VA | Licensed Plumbing | Definitive Mechanical"
       metaDescription={`Licensed plumber serving Brambleton, VA. Plumbing, water heater, gas & emergency service for Brambleton's planned community. VA Master Plumber #2710064209. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/brambleton-va/"
