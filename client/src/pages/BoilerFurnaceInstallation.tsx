@@ -79,7 +79,7 @@ export default function BoilerFurnaceInstallation() {
       })}} />
 
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '48vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '48vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Boiler & Furnace Repair', href: '/boiler-furnace-repair' }, { label: 'Boiler & Furnace Installation' }]} />
@@ -145,7 +145,7 @@ export default function BoilerFurnaceInstallation() {
           <SectionHeading eyebrow="HEATING SYSTEM TYPES" heading="What types of heating systems does Definitive Mechanical install?" centered />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {SYSTEM_TYPES.map(({ Icon, title, body }) => (
-              <div key={title} style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+              <div key={title} style={{ background: 'white', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
                 <Icon size={36} color="var(--brand-cyan)" style={{ marginBottom: '14px' }} />
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '8px' }}>{title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>

@@ -59,11 +59,11 @@ export default function EmergencyAlexandriaVA() {
         </a>
       </div>
 
-      <section style={{ background: "linear-gradient(135deg, #001830 0%, #003060 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Alexandria, VA" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · ALEXANDRIA, VA · OLD TOWN & ALL NEIGHBORHOODS</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Emergency Plumber in Alexandria, VA</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Alexandria, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Definitive Mechanical provides 24/7 emergency plumbing in Alexandria, Virginia — from historic Old Town to Del Ray, West End, Potomac Yard, and all Alexandria neighborhoods. A live dispatcher answers every call. Virginia Master Plumber/Gasfitter #2710064209. No overtime surcharge. Call (301) 679-5849.
           </p>

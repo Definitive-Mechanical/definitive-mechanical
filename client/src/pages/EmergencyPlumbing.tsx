@@ -79,7 +79,7 @@ export default function EmergencyPlumbing() {
       {/* HERO */}
       <section style={{
         minHeight: '65vh',
-        background: 'linear-gradient(135deg, #001830 0%, #003060 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -215,7 +215,7 @@ export default function EmergencyPlumbing() {
           {/* Promise box */}
           <div style={{
             background: 'white',
-            borderLeft: '4px solid #009EC6',
+            borderLeft: '4px solid var(--brand-cyan)',
             borderRadius: '4px',
             padding: '24px',
             maxWidth: '600px',
@@ -297,7 +297,7 @@ export default function EmergencyPlumbing() {
               { state: 'Washington DC', areas: ['All DC Wards & Neighborhoods'], cities: 'Georgetown, Capitol Hill, Dupont Circle, Navy Yard, NoMa' },
               { state: 'Northern Virginia', areas: ['Fairfax County', 'Arlington County', 'Loudoun County', 'Prince William County'], cities: 'Alexandria, Arlington, McLean, Springfield, Vienna' },
             ].map((area) => (
-              <div key={area.state} style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '24px', borderTop: '3px solid #009EC6' }}>
+              <div key={area.state} style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '24px', borderTop: '3px solid var(--brand-cyan)' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '10px' }}>
                   {area.state}
                 </h3>

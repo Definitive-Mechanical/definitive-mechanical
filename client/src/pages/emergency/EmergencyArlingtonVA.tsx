@@ -61,11 +61,11 @@ export default function EmergencyArlingtonVA() {
       </div>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #001830 0%, #003060 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Arlington, VA" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · ARLINGTON, VA · VA MASTER PLUMBER LICENSED</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Emergency Plumber in Arlington, VA</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Arlington, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Definitive Mechanical provides 24/7 emergency plumbing in Arlington, Virginia — one of the most densely populated jurisdictions in the DC metro area. A live dispatcher answers every call. Virginia Master Plumber/Gasfitter #2710064209, Class A Contractor #2705181061. No overtime surcharge. Call (301) 679-5849.
           </p>
@@ -151,7 +151,7 @@ export default function EmergencyArlingtonVA() {
       {/* Section 6 — Arlington Urgency */}
       <section style={{ backgroundColor: "var(--surface-1)" }} className="py-12">
         <div className="container max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Playfair Display', serif" }}>Why Arlington emergency plumbing requires immediate response</h2>
+          <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--brand-navy)", fontFamily: 'var(--font-display)' }}>Why Arlington emergency plumbing requires immediate response</h2>
           <p className="text-gray-600 mb-6" style={{ fontFamily: "'Barlow', sans-serif", fontSize: "16px", lineHeight: "1.8" }}>
             Arlington's density creates a compounding urgency that does not exist in lower-density markets. A sewer backup in a high-rise affects multiple floors. A burst pipe in a townhouse floods multiple units. A gas leak in a dense residential corridor creates risk for adjacent properties. Emergency response in Arlington is not just a convenience — it is often a multi-party safety matter. We dispatch licensed Virginia Master Plumbers 24/7 with no overtime surcharge.
           </p>

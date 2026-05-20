@@ -75,7 +75,7 @@ export default function ResidentialPlumbing() {
       })}} />
 
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '55vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '55vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Residential Plumbing' }]} />
@@ -107,7 +107,7 @@ export default function ResidentialPlumbing() {
           <SectionHeading eyebrow="RESIDENTIAL SERVICES" heading="What residential plumbing services does Definitive Mechanical provide?" subtext="Definitive Mechanical handles the full range of residential plumbing for homeowners across the DMV — from small repairs to major system work." centered />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {SERVICE_CARDS.map(({ Icon, title, items }) => (
-              <div key={title} style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '24px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+              <div key={title} style={{ background: 'white', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
                 <Icon size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '12px' }}>{title}</p>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>

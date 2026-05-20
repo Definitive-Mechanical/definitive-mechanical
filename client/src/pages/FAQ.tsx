@@ -102,11 +102,11 @@ export default function FAQPage() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "38vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "38vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>FREQUENTLY ASKED QUESTIONS</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Common Questions About Definitive Mechanical</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Common Questions About Definitive Mechanical</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Answers to the most common questions about our licensing, emergency service, pricing, and service area. Can't find your answer? Call (301) 679-5849.
           </p>
@@ -125,7 +125,7 @@ export default function FAQPage() {
             <a
               key={section.anchor}
               href={`#${section.anchor}`}
-              className="font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-full border border-[#003060] text-[#003060] hover:bg-[#003060] hover:text-white transition-colors"
+              className="font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-full border border-[var(--brand-navy)] text-[var(--brand-navy)] hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
               style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               {section.category}

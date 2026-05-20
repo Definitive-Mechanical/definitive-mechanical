@@ -212,13 +212,13 @@ export default function BlogPost1Emergency() {
 
         <BlogH2>Is a water heater failure a plumbing emergency?</BlogH2>
         <BlogP>It depends on what kind of failure. Some water heater failures are emergencies; others are urgent but not emergency-level situations.</BlogP>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>Emergency situations:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>Emergency situations:</p>
         <BlogUL>
           <li>Water heater tank rupture with active flooding — shut the cold supply valve and call immediately</li>
           <li>Gas smell from the water heater — follow gas leak protocol above</li>
           <li>Water heater making extreme banging or rumbling sounds combined with pressure relief valve discharge — risk of pressure vessel failure</li>
         </BlogUL>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>Urgent but not emergency:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>Urgent but not emergency:</p>
         <BlogUL>
           <li>No hot water (pilot light out, thermostat failure, burned heating element) — schedule same-day or next-day service</li>
           <li>Lukewarm water — schedule service within a few days</li>
@@ -241,20 +241,20 @@ export default function BlogPost1Emergency() {
 
         <BlogH2>What should I do while waiting for an emergency plumber?</BlogH2>
         <BlogP>The most important actions while waiting for an emergency plumber:</BlogP>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>For water-related emergencies:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>For water-related emergencies:</p>
         <BlogUL>
           <li>Shut off the water supply at the appropriate valve (fixture shutoff, section shutoff, or main)</li>
           <li>Move valuables away from the water path</li>
           <li>Document the damage with photos and video</li>
           <li>Start removing standing water if safe to do so (towels, wet vac)</li>
         </BlogUL>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>For gas emergencies:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>For gas emergencies:</p>
         <BlogUL>
           <li>Do not re-enter the building</li>
           <li>Keep others away from the building</li>
           <li>Wait for the utility and emergency responders to clear the scene</li>
         </BlogUL>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>For sewer backups:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>For sewer backups:</p>
         <BlogUL>
           <li>Cease all water use</li>
           <li>Do not attempt to use plungers or chemical cleaners on a backed-up main line — they won't help and may make things worse</li>
@@ -262,7 +262,7 @@ export default function BlogPost1Emergency() {
         </BlogUL>
 
         <BlogH2>When should I call a plumber's emergency line vs. regular line?</BlogH2>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>Call the emergency line (24/7) for:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>Call the emergency line (24/7) for:</p>
         <BlogUL>
           <li>Active flooding or burst pipe</li>
           <li>Sewer backup reaching fixtures</li>
@@ -270,14 +270,14 @@ export default function BlogPost1Emergency() {
           <li>Water heater tank rupture</li>
           <li>Complete loss of water to the whole property</li>
         </BlogUL>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>Call the regular line (schedule next available) for:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>Call the regular line (schedule next available) for:</p>
         <BlogUL>
           <li>Dripping faucets, slow drains, running toilets</li>
           <li>Water heater not heating adequately</li>
           <li>Low water pressure at fixtures</li>
           <li>Minor leaks you can control by closing a valve</li>
         </BlogUL>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>Call the regular line with a same-day urgency for:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>Call the regular line with a same-day urgency for:</p>
         <BlogUL>
           <li>Toilet not flushing in a single-bathroom home</li>
           <li>Water heater completely out in cold weather</li>

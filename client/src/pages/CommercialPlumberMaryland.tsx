@@ -76,11 +76,11 @@ export default function CommercialPlumberMaryland() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)" }} className="py-20 md:py-28">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Commercial Plumbing", href: "/commercial-plumbing/" }, { label: "Commercial Plumber Maryland" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing · Maryland · All Five Counties</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Licensed Commercial Plumber in Maryland
           </h1>
           <p className="text-white/85 text-lg max-w-3xl mb-8" style={{ fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
@@ -149,7 +149,7 @@ export default function CommercialPlumberMaryland() {
       <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>What commercial plumbing situations require immediate response?</h2>
+            <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-display)' }}>What commercial plumbing situations require immediate response?</h2>
             <p className="text-white/80 text-lg mb-6" style={{ fontFamily: "'Barlow', sans-serif" }}>Commercial plumbing emergency in Maryland?</p>
           </div>
           <div className="max-w-2xl mx-auto">
@@ -178,7 +178,7 @@ export default function CommercialPlumberMaryland() {
             heading="Are you licensed for commercial plumbing throughout Maryland?"
           />
           <div className="mt-10 grid md:grid-cols-2 gap-8">
-            <div className="p-6 rounded-lg" style={{ background: "var(--surface-1)", border: "2px solid #003060" }}>
+            <div className="p-6 rounded-lg" style={{ background: "var(--surface-1)", border: "2px solid var(--brand-navy)" }}>
               <h3 className="font-bold text-lg mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Maryland License Portfolio</h3>
               <ul className="space-y-2">
                 {[
@@ -220,7 +220,7 @@ export default function CommercialPlumberMaryland() {
       <section className="py-12" style={{ background: "var(--surface-1)" }}>
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Playfair Display', serif" }}>Commercial backflow certification and compliance in Maryland</h2>
+            <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--brand-navy)", fontFamily: 'var(--font-display)' }}>Commercial backflow certification and compliance in Maryland</h2>
             <p className="text-base mb-6" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               WSSC requires annual backflow preventer testing for all commercial properties in Prince George's and Montgomery County. Failure to certify by the WSSC deadline triggers violation notices and potential water service interruption. Definitive Mechanical performs annual backflow certification tests and files all required documentation with WSSC on the property owner's behalf.
             </p>
@@ -263,7 +263,7 @@ export default function CommercialPlumberMaryland() {
       {/* Bottom CTA */}
       <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container text-center">
-          <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>Need a licensed commercial plumber in Maryland?</h2>
+          <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a licensed commercial plumber in Maryland?</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}>📞 Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>MD Master Plumber #96958 | WSSC #73696 | MDOT MBE Cert 20-134 | CAGE 8HCF6</p>
           <div className="flex flex-wrap justify-center gap-4">

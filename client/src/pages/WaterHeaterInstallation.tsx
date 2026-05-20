@@ -39,7 +39,7 @@ export default function WaterHeaterInstallation() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PAGE_SCHEMA) }} />
 
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '60vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '60vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Heater Repair', href: '/water-heater-repair/' }, { label: 'Water Heater Installation' }]} />
@@ -93,7 +93,7 @@ export default function WaterHeaterInstallation() {
               </div>
             </div>
           </div>
-          <div style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '20px', maxWidth: '672px', margin: '32px auto 0', boxShadow: '0 2px 8px rgba(6,59,99,0.08)' }}>
+          <div style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', maxWidth: '672px', margin: '32px auto 0', boxShadow: '0 2px 8px rgba(6,59,99,0.08)' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, marginBottom: '12px' }}>
               "If you are uncertain, call (301) 679-5849. We will give you an honest assessment — not a recommendation shaped by which option creates a larger invoice."
             </p>

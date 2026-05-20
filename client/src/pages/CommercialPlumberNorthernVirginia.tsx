@@ -67,11 +67,11 @@ export default function CommercialPlumberNorthernVirginia() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)" }} className="py-20 md:py-28">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Commercial Plumbing", href: "/commercial-plumbing/" }, { label: "Commercial Plumber Northern Virginia" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing · Northern Virginia · Fairfax · Arlington · Loudoun · Prince William</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Licensed Commercial Plumber in Northern Virginia
           </h1>
           <p className="text-white/85 text-lg max-w-3xl mb-8" style={{ fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
@@ -143,7 +143,7 @@ export default function CommercialPlumberNorthernVirginia() {
         <div className="container max-w-4xl">
           <SectionHeading eyebrow="Licensing" heading="Are you licensed for commercial plumbing in all Northern Virginia jurisdictions?" />
           <div className="mt-8 grid md:grid-cols-2 gap-8">
-            <div className="p-6 rounded-lg bg-white" style={{ border: "2px solid #003060" }}>
+            <div className="p-6 rounded-lg bg-white" style={{ border: "2px solid var(--brand-navy)" }}>
               <h3 className="font-bold text-lg mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Virginia License Portfolio</h3>
               <ul className="space-y-2">
                 {LICENSES.map(l => (
@@ -208,7 +208,7 @@ export default function CommercialPlumberNorthernVirginia() {
       {/* Bottom CTA */}
       <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container text-center">
-          <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>Need a licensed commercial plumber in Northern Virginia?</h2>
+          <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a licensed commercial plumber in Northern Virginia?</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}>📞 Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>VA Master Plumber #2710064209 | SWaM Cert 815255 | CAGE 8HCF6</p>
           <div className="flex flex-wrap justify-center gap-4">

@@ -33,7 +33,7 @@ export default function GasLeakRepair() {
       </a>
 
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '55vh', background: 'linear-gradient(135deg, #001830 0%, #003060 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '55vh', background: 'linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair', href: '/gas-line-repair' }, { label: 'Gas Leak Repair' }]} />

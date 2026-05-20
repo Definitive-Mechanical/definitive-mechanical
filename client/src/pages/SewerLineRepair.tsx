@@ -27,7 +27,7 @@ export default function SewerLineRepair() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '60vh', background: 'linear-gradient(135deg, #001830 0%, #003060 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '60vh', background: 'linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Drain Cleaning', href: '/drain-cleaning' }, { label: 'Sewer Line Repair' }]} />
@@ -100,7 +100,7 @@ export default function SewerLineRepair() {
               { Icon: Utensils, title: "Grease accumulation.", body: "In kitchen drain lines and commercial properties, accumulated grease builds up over years and eventually causes near-complete blockage. This is a leading cause of commercial sewer line failures." },
               { Icon: Package, title: "Foreign material accumulation.", body: "Wipes, sanitary products, paper towels, and other non-flushable items are a common cause of partial and full blockages, particularly in older lines with rough interior surfaces." },
             ].map(({ Icon, title, body }) => (
-              <div key={title} style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '20px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+              <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
                 <Icon size={28} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
@@ -128,7 +128,7 @@ export default function SewerLineRepair() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
                 We show you the camera footage and explain what we see in plain language before recommending a repair path.
               </p>
-              <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '16px', borderLeft: '4px solid #009EC6', marginBottom: '16px' }}>
+              <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '16px', borderLeft: '4px solid var(--brand-cyan)', marginBottom: '16px' }}>
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px' }}>
                   "You see the same picture we do before we recommend any course of action."
                 </p>

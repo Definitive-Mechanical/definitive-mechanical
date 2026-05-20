@@ -1,7 +1,7 @@
 /**
  * Tier2CityPage — Reusable layout component for all 18 Tier 2 city pages.
- * Design system: navy #003060, teal #009EC6, pale blue #C0D8F0, surface gray #F0F0F0
- * Typography: Playfair Display (headings), Barlow Condensed (eyebrows/CTAs), Barlow (body)
+ * Design system: navy var(--brand-navy), teal var(--brand-cyan), pale blue #C0D8F0, surface gray #F0F0F0
+ * Typography: Barlow Condensed (display), Public Sans (body)
  */
 
 import { Link } from "wouter";
@@ -73,12 +73,12 @@ function FAQAccordionItem({ q, a }: { q: string; a: string }) {
         aria-expanded={open}
         style={{ minHeight: "52px" }}
       >
-        <span style={{ fontFamily: "'Barlow', sans-serif" }} className="font-medium text-[#003060] text-base leading-snug">{q}</span>
-        <ChevronDown className={`w-5 h-5 text-[#009EC6] flex-shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+        <span style={{ fontFamily: "'Barlow', sans-serif" }} className="font-medium text-[var(--brand-navy)] text-base leading-snug">{q}</span>
+        <ChevronDown className={`w-5 h-5 text-[var(--brand-cyan)] flex-shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
       </button>
       {open && (
-        <div className="border-l-4 border-[#009EC6] bg-[#EAF4FA] px-5 py-4 mb-2">
-          <p style={{ fontFamily: "'Barlow', sans-serif" }} className="text-[#484848] text-base leading-[1.75]">{a}</p>
+        <div className="border-l-4 border-[var(--brand-cyan)] bg-[#EAF4FA] px-5 py-4 mb-2">
+          <p style={{ fontFamily: "'Barlow', sans-serif" }} className="text-[var(--ink-2)] text-base leading-[1.75]">{a}</p>
         </div>
       )}
     </div>
@@ -128,9 +128,9 @@ export default function Tier2CityPage({
               <span key={i} className="flex items-center gap-1">
                 {i > 0 && <span>›</span>}
                 {crumb.href ? (
-                  <Link href={crumb.href} className="hover:text-[#009EC6] transition-colors">{crumb.label}</Link>
+                  <Link href={crumb.href} className="hover:text-[var(--brand-cyan)] transition-colors">{crumb.label}</Link>
                 ) : (
-                  <span className="text-[#484848]">{crumb.label}</span>
+                  <span className="text-[var(--ink-2)]">{crumb.label}</span>
                 )}
               </span>
             ))}
@@ -141,19 +141,19 @@ export default function Tier2CityPage({
       {/* Hero — white background, place-identity format */}
       <section className="bg-white py-14 px-4 border-b border-[#C0D8F0]">
         <div className="max-w-5xl mx-auto">
-          <p style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-xs font-bold uppercase tracking-widest text-[#009EC6] mb-3">
+          <p style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             {eyebrow}
           </p>
-          <h1 style={{ fontFamily: "'Playfair Display', serif" }} className="font-bold text-[#003060] text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
+          <h1 style={{ fontFamily: 'var(--font-display)' }} className="font-bold text-[var(--brand-navy)] text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
             {h1}
           </h1>
-          <p style={{ fontFamily: "'Barlow', sans-serif" }} className="text-[#484848] text-[17px] leading-[1.75] mb-8 max-w-3xl">
+          <p style={{ fontFamily: "'Barlow', sans-serif" }} className="text-[var(--ink-2)] text-[17px] leading-[1.75] mb-8 max-w-3xl">
             {introParagraph}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="tel:+13016795849"
-              className="flex items-center justify-center gap-2 bg-[#009EC6] text-[#003060] py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "18px", textTransform: "uppercase", letterSpacing: "0.05em" }}
             >
               <Phone className="w-5 h-5" />
@@ -161,7 +161,7 @@ export default function Tier2CityPage({
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-[#003060] text-[#003060] py-4 px-8 rounded-sm hover:bg-[#003060] hover:text-white transition-colors"
+              className="flex items-center justify-center gap-2 border-2 border-[var(--brand-navy)] text-[var(--brand-navy)] py-4 px-8 rounded-sm hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "18px", textTransform: "uppercase", letterSpacing: "0.05em" }}
             >
               REQUEST SERVICE <ArrowRight className="w-5 h-5" />
@@ -174,7 +174,7 @@ export default function Tier2CityPage({
       <section className="bg-[#C0D8F0] py-4 px-4 overflow-x-auto">
         <div className="max-w-5xl mx-auto flex flex-wrap gap-x-6 gap-y-2 items-center">
           {trustItems.map((item) => (
-            <span key={item} style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-[#003060] font-bold text-sm uppercase tracking-wide whitespace-nowrap">
+            <span key={item} style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-[var(--brand-navy)] font-bold text-sm uppercase tracking-wide whitespace-nowrap">
               {item}
             </span>
           ))}
@@ -184,7 +184,7 @@ export default function Tier2CityPage({
       {/* Section 2 — Services List */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="font-semibold text-[#003060] text-[clamp(20px,3vw,28px)] mb-8">
+          <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-semibold text-[var(--brand-navy)] text-[clamp(20px,3vw,28px)] mb-8">
             What plumbing services are available in {h1.replace("Plumber in ", "")}?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -195,8 +195,8 @@ export default function Tier2CityPage({
                 className="flex items-start gap-3 p-3 rounded-sm hover:bg-[#EAF4FA] transition-colors group"
                 style={{ minHeight: "44px" }}
               >
-                <CheckCircle2 className="w-5 h-5 text-[#009EC6] flex-shrink-0 mt-0.5" />
-                <span style={{ fontFamily: "'Barlow', sans-serif" }} className="font-medium text-[#003060] text-base group-hover:text-[#009EC6] transition-colors leading-snug">
+                <CheckCircle2 className="w-5 h-5 text-[var(--brand-cyan)] flex-shrink-0 mt-0.5" />
+                <span style={{ fontFamily: "'Barlow', sans-serif" }} className="font-medium text-[var(--brand-navy)] text-base group-hover:text-[var(--brand-cyan)] transition-colors leading-snug">
                   {svc.label}
                 </span>
               </Link>
@@ -208,10 +208,10 @@ export default function Tier2CityPage({
       {/* Section 3 — Local Context */}
       <section className="bg-[#F0F0F0] py-14 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="font-semibold text-[#003060] text-[clamp(20px,3vw,28px)] mb-6">
+          <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-semibold text-[var(--brand-navy)] text-[clamp(20px,3vw,28px)] mb-6">
             {localContextHeading}
           </h2>
-          <div style={{ fontFamily: "'Barlow', sans-serif" }} className="text-[#484848] text-[17px] leading-[1.75] max-w-3xl space-y-4">
+          <div style={{ fontFamily: "'Barlow', sans-serif" }} className="text-[var(--ink-2)] text-[17px] leading-[1.75] max-w-3xl space-y-4">
             {localContextBody.split("\n").filter(Boolean).map((para, i) => (
               <p key={i}>{para}</p>
             ))}
@@ -221,7 +221,7 @@ export default function Tier2CityPage({
               className="mt-6 max-w-3xl"
               style={{
                 background: "var(--surface-1)",
-                borderLeft: "4px solid #009EC6",
+                borderLeft: "4px solid var(--brand-cyan)",
                 padding: "14px 18px",
                 fontFamily: "'Barlow', sans-serif",
                 fontSize: "15px",
@@ -237,10 +237,10 @@ export default function Tier2CityPage({
       {/* Section 4 — License Block */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="font-semibold text-[#003060] text-[clamp(20px,3vw,28px)] mb-4">
+          <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-semibold text-[var(--brand-navy)] text-[clamp(20px,3vw,28px)] mb-4">
             {licenseHeading}
           </h2>
-          <p style={{ fontFamily: "'Barlow', sans-serif" }} className="text-[#484848] text-[17px] mb-6">Yes. We hold the following credentials for this jurisdiction:</p>
+          <p style={{ fontFamily: "'Barlow', sans-serif" }} className="text-[var(--ink-2)] text-[17px] mb-6">Yes. We hold the following credentials for this jurisdiction:</p>
           <div className="flex flex-wrap gap-2">
             {credentials.map((cred) => (
               <span
@@ -282,7 +282,7 @@ export default function Tier2CityPage({
                 href={area.href}
                 style={{
                   display: "inline-block",
-                  border: "1px solid #003060",
+                  border: "1px solid var(--brand-navy)",
                   borderRadius: "20px",
                   padding: "8px 16px",
                   fontFamily: "'Barlow Condensed', sans-serif",
@@ -293,7 +293,7 @@ export default function Tier2CityPage({
                   minHeight: "44px",
                   lineHeight: "28px",
                 }}
-                className="hover:bg-[#009EC6] hover:text-white hover:border-[#009EC6] transition-colors"
+                className="hover:bg-[var(--brand-cyan)] hover:text-white hover:border-[var(--brand-cyan)] transition-colors"
               >
                 {area.label} →
               </Link>
@@ -302,7 +302,7 @@ export default function Tier2CityPage({
           <Link
             href={countyHubHref}
             style={{ fontFamily: "'Barlow', sans-serif" }}
-            className="font-medium text-[#009EC6] underline hover:text-[#003060] transition-colors"
+            className="font-medium text-[var(--brand-cyan)] underline hover:text-[var(--brand-navy)] transition-colors"
           >
             {countyHubLabel} Service Area →
           </Link>
@@ -313,7 +313,7 @@ export default function Tier2CityPage({
       {faqs && faqs.length > 0 && (
         <section className="bg-white py-14 px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="font-semibold text-[#003060] text-[clamp(20px,3vw,28px)] mb-6">
+            <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-semibold text-[var(--brand-navy)] text-[clamp(20px,3vw,28px)] mb-6">
               Frequently Asked Questions
             </h2>
             {faqs.map((faq) => (
@@ -324,18 +324,18 @@ export default function Tier2CityPage({
       )}
 
       {/* Section 7 — Bottom CTA */}
-      <section className="bg-[#003060] py-14 px-4">
+      <section className="bg-[var(--brand-navy)] py-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <p style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-xs font-bold uppercase tracking-widest text-[#009EC6] mb-3">
+          <p style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             LICENSED PLUMBER · SERVING {ctaCity.toUpperCase()}
           </p>
-          <h2 style={{ fontFamily: "'Playfair Display', serif" }} className="font-bold text-white text-[clamp(22px,3vw,32px)] mb-8">
+          <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-bold text-white text-[clamp(22px,3vw,32px)] mb-8">
             Serving {ctaCity} from our Largo, MD location
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <a
               href="tel:+13016795849"
-              className="flex items-center justify-center gap-2 bg-[#009EC6] text-[#003060] py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors w-full sm:w-auto"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors w-full sm:w-auto"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "18px", textTransform: "uppercase", letterSpacing: "0.05em" }}
             >
               <Phone className="w-5 h-5" />
@@ -343,7 +343,7 @@ export default function Tier2CityPage({
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-white text-white py-4 px-8 rounded-sm hover:bg-white hover:text-[#003060] transition-colors w-full sm:w-auto"
+              className="flex items-center justify-center gap-2 border-2 border-white text-white py-4 px-8 rounded-sm hover:bg-white hover:text-[var(--brand-navy)] transition-colors w-full sm:w-auto"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "18px", textTransform: "uppercase", letterSpacing: "0.05em" }}
             >
               REQUEST SERVICE <ArrowRight className="w-5 h-5" />
@@ -359,7 +359,7 @@ export default function Tier2CityPage({
       <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
         <a
           href="tel:+13016795849"
-          className="flex items-center justify-center gap-2 w-full bg-[#009EC6] text-[#003060] h-14"
+          className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] h-14"
           style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.05em" }}
         >
           <Phone className="w-4 h-4" />

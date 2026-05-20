@@ -102,7 +102,7 @@ export default function Home() {
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '75vh',
-        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)',
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
@@ -340,7 +340,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 5: EMERGENCY CTA */}
-      <section style={{ background: 'linear-gradient(135deg, var(--brand-navy), #001830)', padding: '64px 0' }}>
+      <section style={{ background: 'linear-gradient(135deg, var(--brand-navy), var(--brand-navy-dark))', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AlertTriangle size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
@@ -526,7 +526,7 @@ export default function Home() {
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div style={{
-            background: 'linear-gradient(135deg, var(--brand-navy), #186090)',
+            background: 'linear-gradient(135deg, var(--brand-navy), var(--brand-blue))',
             borderRadius: '8px',
             padding: '40px',
           }}>

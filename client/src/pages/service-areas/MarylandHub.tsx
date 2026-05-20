@@ -147,7 +147,7 @@ export default function MarylandHub() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px' }}>
             {COUNTIES.map((county) => (
-              <div key={county.name} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid #009EC6', borderRadius: '4px', padding: '28px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+              <div key={county.name} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '28px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '20px' }}>
                   <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.25rem', color: 'var(--brand-navy)', margin: 0 }}>
                     {county.name}
@@ -191,7 +191,7 @@ export default function MarylandHub() {
               { label: 'MD HVACR License', value: '#A00000' },
               { label: 'EPA 608 Certified', value: 'Universal' },
             ].map((cred) => (
-              <div key={cred.label} style={{ background: 'white', border: '1px solid #e5e7eb', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '16px 20px' }}>
+              <div key={cred.label} style={{ background: 'white', border: '1px solid #e5e7eb', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px 20px' }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--brand-cyan)', margin: '0 0 4px' }}>{cred.label}</p>
                 <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: '#374151', margin: 0 }}>{cred.value}</p>
               </div>

@@ -35,7 +35,7 @@ export default function TanklessWaterHeaters() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '58vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '58vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Heater Repair', href: '/water-heater-repair' }, { label: 'Tankless Water Heaters' }]} />
@@ -98,7 +98,7 @@ export default function TanklessWaterHeaters() {
               { Icon: Maximize2, title: "Space savings.", body: "Tankless units are wall-mounted and occupy a fraction of the floor space of a 50-gallon tank. This matters in smaller Maryland rowhouses, DC condos, and Northern Virginia townhomes where mechanical space is limited." },
               { Icon: ShieldCheck, title: "Reduced water damage risk.", body: "A failed tank water heater can release 40–80 gallons of water into your home. A tankless unit has no tank to rupture." },
             ].map(({ Icon, title, body }) => (
-              <div key={title} style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '24px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
+              <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '24px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
                 <Icon size={32} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '6px' }}>{title}</p>

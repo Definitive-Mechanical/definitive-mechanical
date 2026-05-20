@@ -192,7 +192,7 @@ export default function Footer() {
                 style={{
                   background: 'transparent',
                   color: 'var(--brand-cyan)',
-                  border: '2px solid #009EC6',
+                  border: '2px solid var(--brand-cyan)',
                   fontFamily: 'var(--font-display)',
                   fontWeight: 700,
                   fontSize: '12px',

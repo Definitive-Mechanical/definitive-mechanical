@@ -197,7 +197,7 @@ export default function Tier3CityPage({
       </Helmet>
 
       {/* S1: Hero — dark navy gradient matching MD/VA pages */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "50vh" }} className="py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "50vh" }} className="py-16">
         <div className="container">
           <BreadcrumbList items={breadcrumbs.map(b => ({ label: b.label, href: b.href }))} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
@@ -247,7 +247,7 @@ export default function Tier3CityPage({
                     display: "inline-flex",
                     alignItems: "center",
                     gap: "6px",
-                    border: "2px solid #009EC6",
+                    border: "2px solid var(--brand-cyan)",
                     color: "var(--brand-cyan)",
                     fontFamily: 'var(--font-display)',
                     fontWeight: 700,
@@ -289,7 +289,7 @@ export default function Tier3CityPage({
                 <Link key={i} href={svc.href} className="no-underline block">
                   <div
                     className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
-                    style={{ borderTopColor: "var(--brand-cyan)", border: "1px solid #E8EFF5", borderTop: "3px solid #009EC6" }}
+                    style={{ borderTopColor: "var(--brand-cyan)", border: "1px solid #E8EFF5", borderTop: "3px solid var(--brand-cyan)" }}
                   >
                     <Icon size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                     <p style={{ fontFamily: 'var(--font-body)', fontWeight: 500, color: "var(--brand-navy)", fontSize: "14px", margin: 0 }}>

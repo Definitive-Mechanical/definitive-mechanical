@@ -29,7 +29,7 @@ export default function GasLineInstallation() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair', href: '/gas-line-repair' }, { label: 'Gas Line Installation' }]} />
@@ -67,7 +67,7 @@ export default function GasLineInstallation() {
               { Icon: Building2, title: "Commercial Gas Systems", body: "Gas line installation for restaurants, commercial kitchens, industrial facilities, government buildings, and multi-unit properties. Commercial systems involve larger pipe diameters, higher flow requirements, and code requirements specific to commercial occupancies." },
               { Icon: MapPin, title: "Underground Gas Line Installation", body: "Buried gas lines for outdoor appliances, detached structures, and outdoor kitchen or entertainment areas. Requires permits and specific burial depth standards that vary by jurisdiction." },
             ].map(({ Icon, title, body, list }: any) => (
-              <div key={title} style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '20px', display: 'flex', gap: '16px', alignItems: 'flex-start', border: '1px solid #E8EFF5', borderLeftWidth: '4px', borderLeftColor: 'var(--brand-cyan)' }}>
+              <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', display: 'flex', gap: '16px', alignItems: 'flex-start', border: '1px solid #E8EFF5', borderLeftWidth: '4px', borderLeftColor: 'var(--brand-cyan)' }}>
                 <Icon size={28} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '6px' }}>{title}</p>

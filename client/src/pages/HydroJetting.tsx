@@ -42,7 +42,7 @@ export default function HydroJetting() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Drain Cleaning', href: '/drain-cleaning' }, { label: 'Hydro-Jetting' }]} />
@@ -124,7 +124,7 @@ export default function HydroJetting() {
           <SectionHeading eyebrow="WHEN TO USE HYDRO-JETTING" heading="When should you use hydro-jetting instead of snaking?" centered />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {WHEN_TO_USE.map((item) => (
-              <div key={item} style={{ background: 'white', borderTop: '3px solid #009EC6', borderRadius: '4px', padding: '20px', border: '1px solid #E8EFF5', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+              <div key={item} style={{ background: 'white', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', border: '1px solid #E8EFF5', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
                 <ChevronRight size={18} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{item}</span>
               </div>

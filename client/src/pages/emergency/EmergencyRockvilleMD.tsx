@@ -77,13 +77,13 @@ export default function EmergencyRockvilleMD() {
       </div>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #001830 0%, #003060 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Rockville MD" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
             24/7 EMERGENCY PLUMBER · ROCKVILLE, MD · CITY OF ROCKVILLE LICENSED
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>
             Emergency Plumber in Rockville, MD
           </h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto text-center mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
@@ -190,7 +190,7 @@ export default function EmergencyRockvilleMD() {
       {/* Section 6 — Related Pages */}
       <section style={{ backgroundColor: "var(--surface-1)" }} className="py-12">
         <div className="container">
-          <h2 className="text-xl font-bold mb-6" style={{ color: "var(--brand-navy)", fontFamily: "'Playfair Display', serif" }}>Related Plumbing Services</h2>
+          <h2 className="text-xl font-bold mb-6" style={{ color: "var(--brand-navy)", fontFamily: 'var(--font-display)' }}>Related Plumbing Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { label: "Plumber in Rockville, MD", href: "/service-areas/maryland/montgomery-county/rockville-md/" },

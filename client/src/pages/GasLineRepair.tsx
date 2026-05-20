@@ -30,7 +30,7 @@ export default function GasLineRepair() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '60vh', background: 'linear-gradient(135deg, #001830 0%, #003060 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '60vh', background: 'linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair' }]} />
@@ -105,7 +105,7 @@ export default function GasLineRepair() {
               { Icon: Gauge, title: "Gas Pressure Testing", body: "Pressure testing of the gas supply system after any repair or modification — required by code in most jurisdictions before the gas supply is restored.", link: null },
               { Icon: Phone, title: "Gas Meter and Service Line Coordination", body: "Coordination with your gas utility (Washington Gas, BGE where applicable) for meter-side issues that require utility involvement alongside our service-side repair.", link: null },
             ].map(({ Icon, title, body, link }) => (
-              <div key={title} style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '24px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+              <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '24px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
                 <Icon size={28} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '6px' }}>{title}</p>

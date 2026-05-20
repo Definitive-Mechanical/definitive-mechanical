@@ -11,7 +11,7 @@ export default function TestimonialCard({ quote, name, location, service }: Test
   return (
     <div style={{
       background: 'white',
-      borderLeft: '4px solid #009EC6',
+      borderLeft: '4px solid var(--brand-cyan)',
       borderRadius: '6px',
       padding: '32px',
       boxShadow: '0 2px 12px rgba(6,59,99,0.08)',

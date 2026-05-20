@@ -1,6 +1,6 @@
 // ServiceAreaSearch — Zip code service area lookup widget
-// Design: Navy #003060 / Cyan #009EC6 brand system
-// Playfair Display headings, Barlow Condensed labels, Barlow body
+// Design: Navy var(--brand-navy) / Cyan var(--brand-cyan) brand system
+// Barlow Condensed display, Public Sans body
 
 import { useState, useRef } from 'react';
 import { Link } from 'wouter';

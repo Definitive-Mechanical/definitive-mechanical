@@ -26,7 +26,7 @@ export default function BackflowPreventerRepair() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '45vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '45vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Backflow Prevention', href: '/backflow-prevention' }, { label: 'Backflow Preventer Repair' }]} />
@@ -61,7 +61,7 @@ export default function BackflowPreventerRepair() {
           </p>
           <div className="space-y-3 max-w-3xl mx-auto">
             {FAILURE_CAUSES.map(({ Icon, title, body }) => (
-              <div key={title} style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '16px', display: 'flex', gap: '14px', alignItems: 'flex-start', border: '1px solid #E8EFF5', borderLeftWidth: '4px', borderLeftColor: 'var(--brand-cyan)' }}>
+              <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', gap: '14px', alignItems: 'flex-start', border: '1px solid #E8EFF5', borderLeftWidth: '4px', borderLeftColor: 'var(--brand-cyan)' }}>
                 <Icon size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '4px' }}>{title}</p>

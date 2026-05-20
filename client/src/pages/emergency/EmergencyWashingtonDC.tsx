@@ -61,11 +61,11 @@ export default function EmergencyWashingtonDC() {
         </a>
       </div>
 
-      <section style={{ background: "linear-gradient(135deg, #001830 0%, #003060 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Washington DC" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · WASHINGTON DC · DC MASTER PLUMBER #PGM1002236</p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Emergency Plumber in Washington DC</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Washington DC</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Definitive Mechanical provides 24/7 emergency plumbing across all Washington DC wards and neighborhoods. A live dispatcher answers every call. DC Master Plumber and Master Gasfitter license #PGM1002236. No overtime surcharge. Serving DC from our Largo, MD location. Call (301) 679-5849.
           </p>
@@ -145,7 +145,7 @@ export default function EmergencyWashingtonDC() {
 
       <section style={{ backgroundColor: "var(--surface-1)" }} className="py-12">
         <div className="container">
-          <h2 className="text-2xl font-bold mb-3 text-center" style={{ color: "var(--brand-navy)", fontFamily: "'Playfair Display', serif" }}>All DC wards and neighborhoods — 24/7</h2>
+          <h2 className="text-2xl font-bold mb-3 text-center" style={{ color: "var(--brand-navy)", fontFamily: 'var(--font-display)' }}>All DC wards and neighborhoods — 24/7</h2>
           <p className="text-center text-gray-600 mb-6 max-w-2xl mx-auto" style={{ fontFamily: "'Barlow', sans-serif" }}>We serve all eight DC wards for emergency plumbing. Response time varies by neighborhood and conditions at the time of call. Our dispatcher gives you an honest ETA on every call.</p>
           <div className="flex flex-wrap gap-2 justify-center max-w-3xl mx-auto">
             {DC_NEIGHBORHOODS.map((n) => (

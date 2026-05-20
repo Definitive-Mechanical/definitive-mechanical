@@ -10,7 +10,7 @@ export default function LicensesCertifications() {
     <>
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)',
         padding: '80px 0',
         position: 'relative',
         overflow: 'hidden',
@@ -42,7 +42,7 @@ export default function LicensesCertifications() {
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {LICENSES.maryland.map((lic) => (
-              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid #009EC6' }}>
+              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid var(--brand-cyan)' }}>
                 <ShieldCheck size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '4px' }}>{lic.type}</p>
@@ -57,7 +57,7 @@ export default function LicensesCertifications() {
           <SectionHeading eyebrow="VIRGINIA" heading="Virginia Plumbing & Contractor Licenses" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {LICENSES.virginia.map((lic) => (
-              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid #009EC6' }}>
+              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid var(--brand-cyan)' }}>
                 <ShieldCheck size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '4px' }}>{lic.type}</p>
@@ -72,7 +72,7 @@ export default function LicensesCertifications() {
           <SectionHeading eyebrow="WASHINGTON DC" heading="Washington DC Plumbing License" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {LICENSES.dc.map((lic) => (
-              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid #009EC6' }}>
+              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid var(--brand-cyan)' }}>
                 <ShieldCheck size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '4px' }}>{lic.type}</p>
@@ -87,7 +87,7 @@ export default function LicensesCertifications() {
           <SectionHeading eyebrow="DELAWARE" heading="Delaware Plumbing License" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {LICENSES.delaware.map((lic) => (
-              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid #009EC6' }}>
+              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid var(--brand-cyan)' }}>
                 <ShieldCheck size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '4px' }}>{lic.type}</p>
@@ -102,7 +102,7 @@ export default function LicensesCertifications() {
           <SectionHeading eyebrow="EPA CERTIFICATION" heading="EPA Universal 608 Certification" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {LICENSES.epa.map((lic) => (
-              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid #009EC6' }}>
+              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid var(--brand-cyan)' }}>
                 <ShieldCheck size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '4px' }}>{lic.type}</p>

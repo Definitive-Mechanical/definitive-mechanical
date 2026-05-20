@@ -1,6 +1,6 @@
 /**
  * BlogLayout — Definitive Mechanical Blog
- * Design: Navy/Cyan brand system, Playfair Display headings, Barlow body
+ * Design: Navy/Cyan brand system, Barlow Condensed display, Public Sans body
  * Layout: 65% article body + 35% sticky sidebar (desktop), stacked on mobile
  * Sidebar: Call Now box (navy bg, teal button) + Related Services cards
  */
@@ -40,9 +40,9 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
     <div className="min-h-screen bg-white">
       {/* Emergency Bar */}
       {showEmergencyBar && (
-        <div className="bg-[#009EC6] py-3 px-4">
+        <div className="bg-[var(--brand-cyan)] py-3 px-4">
           <div className="max-w-6xl mx-auto flex items-center justify-between gap-4 flex-wrap">
-            <div className="flex items-center gap-2 text-[#003060] font-bold">
+            <div className="flex items-center gap-2 text-[var(--brand-navy)] font-bold">
               <Zap className="w-4 h-4 flex-shrink-0" />
               <span className="font-['Barlow_Condensed'] text-sm uppercase tracking-wide">
                 Is this an active emergency? Call (301) 679-5849 — 24/7 live dispatcher
@@ -50,7 +50,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
             </div>
             <a
               href={`tel:${PHONE}`}
-              className="flex items-center gap-1 text-[#003060] font-['Barlow_Condensed'] font-bold text-sm uppercase tracking-wide hover:underline whitespace-nowrap"
+              className="flex items-center gap-1 text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-sm uppercase tracking-wide hover:underline whitespace-nowrap"
             >
               Call Now <ArrowRight className="w-3 h-3" />
             </a>
@@ -70,8 +70,8 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
           <aside className="lg:w-80 xl:w-96 flex-shrink-0">
             <div className="lg:sticky lg:top-24 space-y-6">
               {/* Call Now Box */}
-              <div className="bg-[#003060] rounded-sm p-6 text-white">
-                <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[#009EC6] mb-2">
+              <div className="bg-[var(--brand-navy)] rounded-sm p-6 text-white">
+                <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-2">
                   Need a plumber right now?
                 </p>
                 <p className="font-['Playfair_Display'] text-xl font-bold text-white mb-4 leading-snug">
@@ -79,21 +79,21 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
                 </p>
                 <a
                   href={`tel:${PHONE}`}
-                  className="flex items-center justify-center gap-2 w-full bg-[#009EC6] text-[#003060] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide py-4 px-4 rounded-sm hover:bg-[#00b8e6] transition-colors mb-3"
+                  className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide py-4 px-4 rounded-sm hover:bg-[#00b8e6] transition-colors mb-3"
                 >
                   <Phone className="w-4 h-4" />
                   {PHONE_DISPLAY}
                 </a>
-                <p className="text-[#C0D8F0] font-['Barlow'] text-xs text-center">
+                <p className="text-[#C0D8F0] font-sans text-xs text-center">
                   24/7 live dispatcher · Licensed Master Plumber on every call
                 </p>
                 <div className="mt-4 pt-4 border-t border-white/10">
-                  <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-['Barlow']">
-                    <Clock className="w-3 h-3 text-[#009EC6]" />
+                  <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-sans">
+                    <Clock className="w-3 h-3 text-[var(--brand-cyan)]" />
                     <span>Average response: 60–90 min</span>
                   </div>
-                  <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-['Barlow'] mt-2">
-                    <Shield className="w-3 h-3 text-[#009EC6]" />
+                  <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-sans mt-2">
+                    <Shield className="w-3 h-3 text-[var(--brand-cyan)]" />
                     <span>Licensed MD, DC, VA &amp; DE</span>
                   </div>
                 </div>
@@ -102,8 +102,8 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
               {/* Related Services */}
               {relatedServices.length > 0 && (
                 <div className="border border-[#C0D8F0] rounded-sm overflow-hidden">
-                  <div className="bg-[#003060] px-4 py-3">
-                    <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[#009EC6]">
+                  <div className="bg-[var(--brand-navy)] px-4 py-3">
+                    <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)]">
                       Related Services
                     </p>
                   </div>
@@ -112,18 +112,18 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
                       const Icon = svc.icon ? iconMap[svc.icon] : Wrench;
                       return (
                         <Link key={i} href={svc.href} className="flex items-start gap-3 p-4 hover:bg-[#F0F7FF] transition-colors group">
-                          <div className="w-8 h-8 bg-[#009EC6]/10 rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <Icon className="w-4 h-4 text-[#009EC6]" />
+                          <div className="w-8 h-8 bg-[var(--brand-cyan)]/10 rounded-sm flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <Icon className="w-4 h-4 text-[var(--brand-cyan)]" />
                           </div>
                           <div className="min-w-0">
-                            <p className="font-['Barlow'] font-semibold text-[#003060] text-sm group-hover:text-[#009EC6] transition-colors">
+                            <p className="font-sans font-semibold text-[var(--brand-navy)] text-sm group-hover:text-[var(--brand-cyan)] transition-colors">
                               {svc.title}
                             </p>
-                            <p className="font-['Barlow'] text-[#484848] text-xs mt-0.5 leading-relaxed line-clamp-2">
+                            <p className="font-sans text-[var(--ink-2)] text-xs mt-0.5 leading-relaxed line-clamp-2">
                               {svc.description}
                             </p>
                           </div>
-                          <ArrowRight className="w-3 h-3 text-[#009EC6] flex-shrink-0 mt-1 opacity-0 group-hover:opacity-100 transition-opacity" />
+                          <ArrowRight className="w-3 h-3 text-[var(--brand-cyan)] flex-shrink-0 mt-1 opacity-0 group-hover:opacity-100 transition-opacity" />
                         </Link>
                       );
                     })}
@@ -134,7 +134,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
               {/* Request Service CTA */}
               <Link
                 href="/contact"
-                className="flex items-center justify-center gap-2 w-full border-2 border-[#003060] text-[#003060] font-['Barlow_Condensed'] font-bold text-sm uppercase tracking-wide py-3 px-4 rounded-sm hover:bg-[#003060] hover:text-white transition-colors"
+                className="flex items-center justify-center gap-2 w-full border-2 border-[var(--brand-navy)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-sm uppercase tracking-wide py-3 px-4 rounded-sm hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
               >
                 Request Service <ArrowRight className="w-4 h-4" />
               </Link>
@@ -144,9 +144,9 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
       </div>
 
       {/* Bottom CTA Block */}
-      <div className="bg-[#003060] py-14 px-4 mt-12">
+      <div className="bg-[var(--brand-navy)] py-14 px-4 mt-12">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[#009EC6] mb-3">
+          <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             Licensed Emergency Plumber · MD, DC &amp; Northern VA
           </p>
           <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-bold text-white mb-8">
@@ -155,19 +155,19 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`tel:${PHONE}`}
-              className="flex items-center justify-center gap-2 bg-[#009EC6] text-[#003060] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
             >
               <Phone className="w-5 h-5" />
               CALL {PHONE_DISPLAY}
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[#003060] transition-colors"
+              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[var(--brand-navy)] transition-colors"
             >
               REQUEST SERVICE <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
-          <p className="font-['Barlow'] text-[#C0D8F0] text-sm mt-6">
+          <p className="font-sans text-[#C0D8F0] text-sm mt-6">
             MD Master Plumber #{LICENSE_MD} | DC #{LICENSE_DC} | VA #{LICENSE_VA}
           </p>
         </div>
@@ -177,7 +177,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
       <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
         <a
           href={`tel:${PHONE}`}
-          className="flex items-center justify-center gap-2 w-full bg-[#009EC6] text-[#003060] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide h-14"
+          className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide h-14"
         >
           <Phone className="w-4 h-4" />
           CALL {PHONE_DISPLAY} — 24/7 EMERGENCY
@@ -194,7 +194,7 @@ export function FeaturedSnippet({ children }: { children: React.ReactNode }) {
       className="rounded-sm mb-8"
       style={{
         background: "var(--surface-1)",
-        borderLeft: "4px solid #009EC6",
+        borderLeft: "4px solid var(--brand-cyan)",
         padding: "20px 24px",
         fontFamily: "'Barlow', sans-serif",
         fontSize: "17px",
@@ -284,7 +284,7 @@ export function InlineCTA() {
 export function RelatedServicesBlock({ services }: { services: Array<{ title: string; description: string; href: string; icon?: "wrench" | "zap" | "shield" | "phone" }> }) {
   return (
     <div className="mt-12 pt-10 border-t border-[#C0D8F0]">
-      <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[#009EC6] mb-6">
+      <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-6">
         Related Services
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -294,19 +294,19 @@ export function RelatedServicesBlock({ services }: { services: Array<{ title: st
             <Link
               key={i}
               href={svc.href}
-              className="border border-[#C0D8F0] rounded-sm p-4 hover:border-[#009EC6] transition-colors group"
-              style={{ borderTop: "3px solid #009EC6" }}
+              className="border border-[#C0D8F0] rounded-sm p-4 hover:border-[var(--brand-cyan)] transition-colors group"
+              style={{ borderTop: "3px solid var(--brand-cyan)" }}
             >
-              <div className="w-8 h-8 bg-[#009EC6]/10 rounded-sm flex items-center justify-center mb-3">
-                <Icon className="w-4 h-4 text-[#009EC6]" />
+              <div className="w-8 h-8 bg-[var(--brand-cyan)]/10 rounded-sm flex items-center justify-center mb-3">
+                <Icon className="w-4 h-4 text-[var(--brand-cyan)]" />
               </div>
-              <p className="font-['Barlow'] font-semibold text-[#003060] text-sm mb-1 group-hover:text-[#009EC6] transition-colors">
+              <p className="font-sans font-semibold text-[var(--brand-navy)] text-sm mb-1 group-hover:text-[var(--brand-cyan)] transition-colors">
                 {svc.title}
               </p>
-              <p className="font-['Barlow'] text-[#484848] text-xs leading-relaxed mb-3 line-clamp-2">
+              <p className="font-sans text-[var(--ink-2)] text-xs leading-relaxed mb-3 line-clamp-2">
                 {svc.description}
               </p>
-              <span className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-[#009EC6] flex items-center gap-1">
+              <span className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-[var(--brand-cyan)] flex items-center gap-1">
                 Learn More <ArrowRight className="w-3 h-3" />
               </span>
             </Link>
@@ -321,20 +321,20 @@ export function RelatedServicesBlock({ services }: { services: Array<{ title: st
 export function AuthorBlock({ date }: { date: string }) {
   return (
     <div className="flex items-start gap-3 mb-6 pb-6 border-b border-[#C0D8F0]">
-      <div className="w-10 h-10 bg-[#003060] rounded-full flex items-center justify-center flex-shrink-0">
-        <Wrench className="w-5 h-5 text-[#009EC6]" />
+      <div className="w-10 h-10 bg-[var(--brand-navy)] rounded-full flex items-center justify-center flex-shrink-0">
+        <Wrench className="w-5 h-5 text-[var(--brand-cyan)]" />
       </div>
       <div>
-        <p className="font-['Barlow'] font-semibold text-[#003060] text-sm">
+        <p className="font-sans font-semibold text-[var(--brand-navy)] text-sm">
           Definitive Mechanical Team
         </p>
-        <p className="font-['Barlow'] text-[#787878] text-xs">
+        <p className="font-sans text-[#787878] text-xs">
           Licensed Master Plumbers serving MD, DC &amp; Northern Virginia
         </p>
-        <p className="font-['Barlow'] text-[#787878] text-xs">
+        <p className="font-sans text-[#787878] text-xs">
           MD #{LICENSE_MD} | DC #{LICENSE_DC} | VA #{LICENSE_VA}
         </p>
-        <p className="font-['Barlow'] text-[#787878] text-xs mt-1">
+        <p className="font-sans text-[#787878] text-xs mt-1">
           Published: {date}
         </p>
       </div>
@@ -439,7 +439,7 @@ export function PricingTable({ headers, rows }: { headers: string[]; rows: strin
               {row.map((cell, ci) => (
                 <td
                   key={ci}
-                  className="px-4 py-3 font-['Barlow'] text-[#484848]"
+                  className="px-4 py-3 font-sans text-[var(--ink-2)]"
                   style={{ fontWeight: ci === 1 ? 500 : 400 }}
                 >
                   {cell}
@@ -472,16 +472,16 @@ export function HowToStep({ number, children }: { number: number; children: Reac
 export function BlogBreadcrumb({ items }: { items: Array<{ label: string; href?: string }> }) {
   return (
     <nav className="mb-6" aria-label="Breadcrumb">
-      <ol className="flex flex-wrap items-center gap-1 font-['Barlow'] text-sm text-[#787878]">
+      <ol className="flex flex-wrap items-center gap-1 font-sans text-sm text-[#787878]">
         {items.map((item, i) => (
           <li key={i} className="flex items-center gap-1">
             {i > 0 && <span className="text-[#C0D8F0]">/</span>}
             {item.href ? (
-              <Link href={item.href} className="hover:text-[#009EC6] transition-colors">
+              <Link href={item.href} className="hover:text-[var(--brand-cyan)] transition-colors">
                 {item.label}
               </Link>
             ) : (
-              <span className="text-[#484848]">{item.label}</span>
+              <span className="text-[var(--ink-2)]">{item.label}</span>
             )}
           </li>
         ))}

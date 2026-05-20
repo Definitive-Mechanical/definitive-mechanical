@@ -169,18 +169,18 @@ export default function BlogPost3LicensedPlumber() {
 
         <BlogH2>How do I verify a plumber's license in Maryland, DC, and Virginia?</BlogH2>
         <BlogP>Each jurisdiction has a separate online database for license verification:</BlogP>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>Maryland:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>Maryland:</p>
         <BlogUL>
           <li>WSSC licensed contractor search: wsscwater.com (for Prince George's and Montgomery County work)</li>
           <li>Maryland DPHLM license lookup (for state master plumber license)</li>
           <li>Definitive Mechanical: MD State Master Plumber #96958 | WSSC #73696</li>
         </BlogUL>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>Washington, DC:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>Washington, DC:</p>
         <BlogUL>
           <li>DCRA license verification: dcra.dc.gov (search contractor license database)</li>
           <li>Definitive Mechanical: DC Master Plumber/Gasfitter #PGM1002236</li>
         </BlogUL>
-        <p className="font-['Barlow'] font-semibold text-[#003060] mb-2" style={{ fontSize: "16px" }}>Virginia:</p>
+        <p className="font-sans font-semibold text-[var(--brand-navy)] mb-2" style={{ fontSize: "16px" }}>Virginia:</p>
         <BlogUL>
           <li>Virginia DPOR license lookup: dpor.virginia.gov</li>
           <li>Definitive Mechanical: VA Master Plumber/Gasfitter #2710064209 | Class A Contractor #2705181061</li>

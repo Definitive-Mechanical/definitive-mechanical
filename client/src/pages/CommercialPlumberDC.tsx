@@ -68,11 +68,11 @@ export default function CommercialPlumberDC() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)" }} className="py-20 md:py-28">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Commercial Plumbing", href: "/commercial-plumbing/" }, { label: "Commercial Plumber Washington DC" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing · Washington, DC · All 8 Wards · DC-Licensed</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Licensed Commercial Plumber in Washington, DC
           </h1>
           <p className="text-white/85 text-lg max-w-3xl mb-8" style={{ fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
@@ -117,7 +117,7 @@ export default function CommercialPlumberDC() {
             <p className="text-base mb-4" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               Many contractors serving the DC metro area do not hold this credential and cannot legally pull permits in DC. Definitive Mechanical is licensed independently in DC, Maryland, Virginia, and Delaware — making us one of the few contractors in the region who can legally perform permitted commercial plumbing work in all four jurisdictions.
             </p>
-            <div className="p-4 rounded-lg" style={{ background: "var(--surface-1)", borderLeft: "4px solid #009EC6" }}>
+            <div className="p-4 rounded-lg" style={{ background: "var(--surface-1)", borderLeft: "4px solid var(--brand-cyan)" }}>
               <p className="text-sm font-bold" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>
                 DC Master Plumber/Gasfitter #PGM1002236 — DCRA-issued. Verify at dcra.dc.gov.
               </p>
@@ -130,7 +130,7 @@ export default function CommercialPlumberDC() {
       <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Commercial emergency plumbing in Washington, DC</h2>
+            <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-display)' }}>Commercial emergency plumbing in Washington, DC</h2>
             <p className="text-white/80 text-lg" style={{ fontFamily: "'Barlow', sans-serif" }}>24/7 live dispatcher — we coordinate with DC building emergency protocols and property management companies.</p>
           </div>
           <div className="max-w-2xl mx-auto">
@@ -199,7 +199,7 @@ export default function CommercialPlumberDC() {
       {/* Bottom CTA */}
       <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container text-center">
-          <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>Need a DC-licensed commercial plumber?</h2>
+          <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a DC-licensed commercial plumber?</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}>📞 Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>DC Master Plumber #PGM1002236 | MDOT MBE Cert 20-134</p>
           <div className="flex flex-wrap justify-center gap-4">

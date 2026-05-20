@@ -1,7 +1,7 @@
 /**
  * Service Areas Hub — /service-areas/
  * Lists every city, county, and community page we have built.
- * Design system: Navy #003060, Cyan #009EC6, Playfair Display / Barlow Condensed / Barlow
+ * Design system: Navy var(--brand-navy), Cyan var(--brand-cyan), var(--font-display) / var(--font-body)
  */
 
 import { Link } from "wouter";
@@ -157,39 +157,39 @@ export default function ServiceAreasHub() {
       </Helmet>
 
       {/* Breadcrumb */}
-      <div className="bg-[#F0F0F0] py-2 px-4 border-b border-[#C0D8F0]">
+      <div className="bg-[var(--surface-1)] py-2 px-4 border-b border-[var(--border)]">
         <div className="max-w-6xl mx-auto">
-          <nav className="font-['Barlow'] text-sm text-[#787878]">
-            <Link href="/" className="hover:text-[#009EC6] transition-colors">Home</Link>
+          <nav className="font-sans text-sm text-[#787878]">
+            <Link href="/" className="hover:text-[var(--brand-cyan)] transition-colors">Home</Link>
             <span className="mx-2">&#8250;</span>
-            <span className="text-[#484848]">Service Areas</span>
+            <span className="text-[var(--ink-2)]">Service Areas</span>
           </nav>
         </div>
       </div>
 
       {/* Hero */}
-      <section className="bg-[#003060] py-16 px-4">
+      <section className="bg-[var(--brand-navy)] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[#009EC6] mb-3">
+          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             Licensed in Maryland · Washington DC · Virginia · Delaware
           </p>
           <h1 className="font-['Playfair_Display'] font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
             Plumbing Service Areas
           </h1>
-          <p className="font-['Barlow'] text-white/90 text-[17px] leading-relaxed max-w-2xl mb-8">
+          <p className="font-sans text-white/90 text-[17px] leading-relaxed max-w-2xl mb-8">
             Definitive Mechanical is a licensed Master Plumber and Master Gasfitter serving the entire Maryland-DC-Northern Virginia metro area. We cover Prince George's County, Montgomery County, Howard County, Anne Arundel County, Charles County, all eight DC wards, Fairfax County, Arlington County, Loudoun County, and Prince William County with 24/7 emergency response throughout.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <a
               href={`tel:${PHONE}`}
-              className="flex items-center justify-center gap-2 bg-[#009EC6] text-[#003060] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
             >
               <Phone className="w-5 h-5" />
               CALL {PHONE_DISPLAY}
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[#003060] transition-colors"
+              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[var(--brand-navy)] transition-colors"
             >
               REQUEST SERVICE <ArrowRight className="w-5 h-5" />
             </Link>
@@ -203,7 +203,7 @@ export default function ServiceAreasHub() {
               <Link
                 key={r.href}
                 href={r.href}
-                className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-wide bg-white/10 text-white border border-white/30 px-4 py-2 rounded-sm hover:bg-[#009EC6] hover:text-[#003060] hover:border-[#009EC6] transition-colors"
+                className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-wide bg-white/10 text-white border border-white/30 px-4 py-2 rounded-sm hover:bg-[var(--brand-cyan)] hover:text-[var(--brand-navy)] hover:border-[var(--brand-cyan)] transition-colors"
               >
                 {r.label} &#8594;
               </Link>
@@ -221,23 +221,23 @@ export default function ServiceAreasHub() {
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
-            <MapPin className="w-6 h-6 text-[#009EC6]" />
-            <h2 className="font-['Playfair_Display'] font-semibold text-[#003060] text-[clamp(22px,3vw,30px)]">
+            <MapPin className="w-6 h-6 text-[var(--brand-cyan)]" />
+            <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
               Maryland Service Areas
             </h2>
-            <Link href="/service-areas/maryland" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[#009EC6] hover:underline ml-2">
+            <Link href="/service-areas/maryland" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline ml-2">
               View Maryland Hub &#8594;
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {MARYLAND_COUNTIES.map((county) => (
-              <div key={county.county} className="bg-white border border-[#C0D8F0] rounded-md overflow-hidden hover:shadow-md transition-shadow" style={{ borderTop: "3px solid #009EC6" }}>
+              <div key={county.county} className="bg-white border border-[var(--border)] rounded-md overflow-hidden hover:shadow-md transition-shadow" style={{ borderTop: "3px solid var(--brand-cyan)" }}>
                 <div className="p-5">
                   <div className="flex items-center justify-between mb-4">
-                    <p className="font-['Barlow_Condensed'] font-bold text-[#003060] text-xs uppercase tracking-widest">
+                    <p className="font-['Barlow_Condensed'] font-bold text-[var(--brand-navy)] text-xs uppercase tracking-widest">
                       {county.county}
                     </p>
-                    <Link href={county.hub} className="font-['Barlow_Condensed'] text-[10px] font-bold uppercase tracking-wide text-[#009EC6] hover:underline">
+                    <Link href={county.hub} className="font-['Barlow_Condensed'] text-[10px] font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline">
                       Hub &#8594;
                     </Link>
                   </div>
@@ -246,9 +246,9 @@ export default function ServiceAreasHub() {
                       <li key={city.href}>
                         <Link
                           href={city.href}
-                          className="font-['Barlow'] text-[#484848] text-sm hover:text-[#009EC6] transition-colors flex items-center gap-1"
+                          className="font-sans text-[var(--ink-2)] text-sm hover:text-[var(--brand-cyan)] transition-colors flex items-center gap-1"
                         >
-                          <ArrowRight className="w-3 h-3 text-[#009EC6] flex-shrink-0" />
+                          <ArrowRight className="w-3 h-3 text-[var(--brand-cyan)] flex-shrink-0" />
                           {city.label}
                         </Link>
                       </li>
@@ -262,20 +262,20 @@ export default function ServiceAreasHub() {
       </section>
 
       {/* Washington DC */}
-      <section className="bg-[#F0F0F0] py-16 px-4 border-t border-[#C0D8F0]">
+      <section className="bg-[var(--surface-1)] py-16 px-4 border-t border-[var(--border)]">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
-            <MapPin className="w-6 h-6 text-[#009EC6]" />
-            <h2 className="font-['Playfair_Display'] font-semibold text-[#003060] text-[clamp(22px,3vw,30px)]">
+            <MapPin className="w-6 h-6 text-[var(--brand-cyan)]" />
+            <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
               Washington DC Service Areas
             </h2>
-            <Link href="/service-areas/washington-dc" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[#009EC6] hover:underline ml-2">
+            <Link href="/service-areas/washington-dc" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline ml-2">
               View DC Hub &#8594;
             </Link>
           </div>
-          <div className="bg-white border border-[#C0D8F0] rounded-md overflow-hidden" style={{ borderTop: "3px solid #009EC6" }}>
+          <div className="bg-white border border-[var(--border)] rounded-md overflow-hidden" style={{ borderTop: "3px solid var(--brand-cyan)" }}>
             <div className="p-6">
-              <p className="font-['Barlow_Condensed'] font-bold text-[#003060] text-xs uppercase tracking-widest mb-4">
+              <p className="font-['Barlow_Condensed'] font-bold text-[var(--brand-navy)] text-xs uppercase tracking-widest mb-4">
                 All 8 Wards + Featured Neighborhoods
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5">
@@ -283,9 +283,9 @@ export default function ServiceAreasHub() {
                   <Link
                     key={area.href}
                     href={area.href}
-                    className="font-['Barlow'] text-[#484848] text-sm hover:text-[#009EC6] transition-colors flex items-center gap-1 py-1"
+                    className="font-sans text-[var(--ink-2)] text-sm hover:text-[var(--brand-cyan)] transition-colors flex items-center gap-1 py-1"
                   >
-                    <ArrowRight className="w-3 h-3 text-[#009EC6] flex-shrink-0" />
+                    <ArrowRight className="w-3 h-3 text-[var(--brand-cyan)] flex-shrink-0" />
                     {area.label}
                   </Link>
                 ))}
@@ -296,26 +296,26 @@ export default function ServiceAreasHub() {
       </section>
 
       {/* Northern Virginia */}
-      <section className="bg-white py-16 px-4 border-t border-[#C0D8F0]">
+      <section className="bg-white py-16 px-4 border-t border-[var(--border)]">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
-            <MapPin className="w-6 h-6 text-[#009EC6]" />
-            <h2 className="font-['Playfair_Display'] font-semibold text-[#003060] text-[clamp(22px,3vw,30px)]">
+            <MapPin className="w-6 h-6 text-[var(--brand-cyan)]" />
+            <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
               Northern Virginia Service Areas
             </h2>
-            <Link href="/service-areas/northern-virginia" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[#009EC6] hover:underline ml-2">
+            <Link href="/service-areas/northern-virginia" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline ml-2">
               View NoVA Hub &#8594;
             </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {VA_COUNTIES.map((county) => (
-              <div key={county.county} className="bg-white border border-[#C0D8F0] rounded-md overflow-hidden hover:shadow-md transition-shadow" style={{ borderTop: "3px solid #009EC6" }}>
+              <div key={county.county} className="bg-white border border-[var(--border)] rounded-md overflow-hidden hover:shadow-md transition-shadow" style={{ borderTop: "3px solid var(--brand-cyan)" }}>
                 <div className="p-5">
                   <div className="flex items-center justify-between mb-4">
-                    <p className="font-['Barlow_Condensed'] font-bold text-[#003060] text-xs uppercase tracking-widest">
+                    <p className="font-['Barlow_Condensed'] font-bold text-[var(--brand-navy)] text-xs uppercase tracking-widest">
                       {county.county}
                     </p>
-                    <Link href={county.hub} className="font-['Barlow_Condensed'] text-[10px] font-bold uppercase tracking-wide text-[#009EC6] hover:underline">
+                    <Link href={county.hub} className="font-['Barlow_Condensed'] text-[10px] font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline">
                       Hub &#8594;
                     </Link>
                   </div>
@@ -324,9 +324,9 @@ export default function ServiceAreasHub() {
                       <li key={city.href}>
                         <Link
                           href={city.href}
-                          className="font-['Barlow'] text-[#484848] text-sm hover:text-[#009EC6] transition-colors flex items-center gap-1"
+                          className="font-sans text-[var(--ink-2)] text-sm hover:text-[var(--brand-cyan)] transition-colors flex items-center gap-1"
                         >
-                          <ArrowRight className="w-3 h-3 text-[#009EC6] flex-shrink-0" />
+                          <ArrowRight className="w-3 h-3 text-[var(--brand-cyan)] flex-shrink-0" />
                           {city.label}
                         </Link>
                       </li>
@@ -340,9 +340,9 @@ export default function ServiceAreasHub() {
       </section>
 
       {/* Credentials bar */}
-      <section className="bg-[#003060] py-10 px-4">
+      <section className="bg-[var(--brand-navy)] py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[#009EC6] mb-5 text-center">
+          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-5 text-center">
             Licensed in Every Jurisdiction We Serve
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
@@ -355,8 +355,8 @@ export default function ServiceAreasHub() {
               "VA SWaM Cert 815255",
             ].map((badge) => (
               <div key={badge} className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[#009EC6] flex-shrink-0" />
-                <span className="font-['Barlow'] text-white/80 text-xs">{badge}</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-[var(--brand-cyan)] flex-shrink-0" />
+                <span className="font-sans text-white/80 text-xs">{badge}</span>
               </div>
             ))}
           </div>
@@ -364,25 +364,25 @@ export default function ServiceAreasHub() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-[#F7F9FC] py-12 px-4 border-t border-[#C0D8F0]">
+      <section className="bg-[#F7F9FC] py-12 px-4 border-t border-[var(--border)]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-['Playfair_Display'] font-bold text-[#003060] text-[clamp(22px,3vw,30px)] mb-3">
+          <h2 className="font-['Playfair_Display'] font-bold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-3">
             Don't See Your City? Call Us.
           </h2>
-          <p className="font-['Barlow'] text-[#484848] text-[17px] leading-relaxed mb-6 max-w-xl mx-auto">
+          <p className="font-sans text-[var(--ink-2)] text-[17px] leading-relaxed mb-6 max-w-xl mx-auto">
             Our service area is expanding. If you don't see your community listed, call us — we likely serve your area or can refer you to a trusted partner.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`tel:${PHONE}`}
-              className="inline-flex items-center justify-center gap-2 bg-[#003060] text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#004080] transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-[var(--brand-navy)] text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#004080] transition-colors"
             >
               <Phone className="w-5 h-5" />
               CALL {PHONE_DISPLAY}
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 border-2 border-[#003060] text-[#003060] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#003060] hover:text-white transition-colors"
+              className="inline-flex items-center justify-center gap-2 border-2 border-[var(--brand-navy)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
             >
               REQUEST SERVICE <ArrowRight className="w-5 h-5" />
             </Link>

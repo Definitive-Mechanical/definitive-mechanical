@@ -204,13 +204,13 @@ function FAQItem({ q, a }: { q: string; a: string }) {
         className="w-full flex items-center justify-between gap-4 py-5 text-left"
         aria-expanded={open}
       >
-        <span className="font-['Barlow'] font-medium text-[#003060] text-[17px] leading-snug">{q}</span>
+        <span className="font-sans font-medium text-[var(--brand-navy)] text-[17px] leading-snug">{q}</span>
         <ChevronDown
-          className={`w-5 h-5 text-[#009EC6] flex-shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          className={`w-5 h-5 text-[var(--brand-cyan)] flex-shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
         />
       </button>
       {open && (
-        <div className="bg-[#C0D8F0] border-l-[3px] border-[#009EC6] px-5 py-4 mb-2 font-['Barlow'] text-[#484848] text-base leading-[1.7]">
+        <div className="bg-[#C0D8F0] border-l-[3px] border-[var(--brand-cyan)] px-5 py-4 mb-2 font-sans text-[var(--ink-2)] text-base leading-[1.7]">
           {a}
         </div>
       )}
@@ -232,39 +232,39 @@ export default function AllServices() {
       </Helmet>
 
       {/* Breadcrumb */}
-      <div className="bg-[#F0F0F0] py-2 px-4 border-b border-[#C0D8F0]">
+      <div className="bg-[var(--surface-1)] py-2 px-4 border-b border-[#C0D8F0]">
         <div className="max-w-6xl mx-auto">
-          <nav className="font-['Barlow'] text-sm text-[#787878]">
-            <Link href="/" className="hover:text-[#009EC6] transition-colors">Home</Link>
+          <nav className="font-sans text-sm text-[#787878]">
+            <Link href="/" className="hover:text-[var(--brand-cyan)] transition-colors">Home</Link>
             <span className="mx-2">›</span>
-            <span className="text-[#484848]">Plumbing Services</span>
+            <span className="text-[var(--ink-2)]">Plumbing Services</span>
           </nav>
         </div>
       </div>
 
       {/* Hero */}
-      <section className="bg-[#003060] py-16 px-4">
+      <section className="bg-[var(--brand-navy)] py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[#009EC6] mb-3">
+          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             Licensed Plumbing Services · Maryland · Washington DC · Northern Virginia
           </p>
           <h1 className="font-['Playfair_Display'] font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
             Plumbing Services in Maryland, DC &amp; Northern Virginia
           </h1>
-          <p className="font-['Barlow'] text-white/90 text-[17px] leading-relaxed max-w-2xl mb-8">
+          <p className="font-sans text-white/90 text-[17px] leading-relaxed max-w-2xl mb-8">
             Definitive Mechanical provides residential and commercial plumbing services throughout Maryland, Washington DC, and Northern Virginia. We are licensed as Master Plumber and Master Gasfitter in all three jurisdictions — Maryland (#96958), DC (#PGM1002236), and Virginia (#2710064209) — and have served the DC metro area for over 11 years. Every job is handled by a licensed technician. Upfront pricing in writing before work begins.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <a
               href={`tel:${PHONE}`}
-              className="flex items-center justify-center gap-2 bg-[#009EC6] text-[#003060] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
             >
               <Phone className="w-5 h-5" />
               CALL {PHONE_DISPLAY}
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[#003060] transition-colors"
+              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[var(--brand-navy)] transition-colors"
             >
               REQUEST SERVICE <ArrowRight className="w-5 h-5" />
             </Link>
@@ -282,7 +282,7 @@ export default function AllServices() {
       {/* Service Category Grid */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[#003060] text-[clamp(22px,3vw,30px)] mb-10">
+          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-10">
             What plumbing repairs do you handle?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -292,13 +292,13 @@ export default function AllServices() {
                 <div
                   key={cat.category}
                   className="bg-white border border-[#C0D8F0] rounded-md overflow-hidden hover:shadow-md transition-shadow"
-                  style={{ borderTop: "3px solid #009EC6" }}
+                  style={{ borderTop: "3px solid var(--brand-cyan)" }}
                 >
                   <div className="p-6">
-                    <div className="w-10 h-10 bg-[#009EC6]/10 rounded-sm flex items-center justify-center mb-4">
-                      <Icon className="w-5 h-5 text-[#009EC6]" />
+                    <div className="w-10 h-10 bg-[var(--brand-cyan)]/10 rounded-sm flex items-center justify-center mb-4">
+                      <Icon className="w-5 h-5 text-[var(--brand-cyan)]" />
                     </div>
-                    <p className="font-['Barlow_Condensed'] font-bold text-[#186090] text-xs uppercase tracking-widest mb-4">
+                    <p className="font-['Barlow_Condensed'] font-bold text-[var(--brand-blue)] text-xs uppercase tracking-widest mb-4">
                       {cat.category}
                     </p>
                     <ul className="space-y-2 mb-4">
@@ -306,16 +306,16 @@ export default function AllServices() {
                         <li key={svc.href}>
                           <Link
                             href={svc.href}
-                            className="font-['Barlow'] text-[#484848] text-sm hover:text-[#009EC6] transition-colors flex items-center gap-1"
+                            className="font-sans text-[var(--ink-2)] text-sm hover:text-[var(--brand-cyan)] transition-colors flex items-center gap-1"
                           >
-                            <ArrowRight className="w-3 h-3 text-[#009EC6] flex-shrink-0" />
+                            <ArrowRight className="w-3 h-3 text-[var(--brand-cyan)] flex-shrink-0" />
                             {svc.label}
                           </Link>
                         </li>
                       ))}
                     </ul>
                     {cat.note && (
-                      <p className="font-['Barlow'] text-[#787878] text-xs leading-relaxed border-t border-[#C0D8F0] pt-3">
+                      <p className="font-sans text-[#787878] text-xs leading-relaxed border-t border-[#C0D8F0] pt-3">
                         {cat.note}
                       </p>
                     )}
@@ -330,38 +330,38 @@ export default function AllServices() {
       {/* Installations */}
       <section className="bg-white py-12 px-4 border-t border-[#C0D8F0]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[#003060] text-[clamp(22px,3vw,30px)] mb-4">
+          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-4">
             What plumbing installations do you do?
           </h2>
-          <p className="font-['Barlow'] text-[#484848] text-[17px] mb-8 max-w-2xl">
+          <p className="font-sans text-[var(--ink-2)] text-[17px] mb-8 max-w-2xl">
             We handle full plumbing installations for new construction, renovation, and system replacement:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             {installations.map((item) => (
               <div key={item} className="flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-[#009EC6] flex-shrink-0 mt-0.5" />
-                <span className="font-['Barlow'] text-[#484848] text-base leading-relaxed">{item}</span>
+                <CheckCircle2 className="w-5 h-5 text-[var(--brand-cyan)] flex-shrink-0 mt-0.5" />
+                <span className="font-sans text-[var(--ink-2)] text-base leading-relaxed">{item}</span>
               </div>
             ))}
           </div>
-          <p className="font-['Barlow'] text-[#484848] text-base">
+          <p className="font-sans text-[var(--ink-2)] text-base">
             All installation work includes permit filing, inspection scheduling, and completion documentation where required.
           </p>
         </div>
       </section>
 
       {/* Emergency CTA */}
-      <section className="bg-[#003060] py-14 px-4">
+      <section className="bg-[var(--brand-navy)] py-14 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-['Playfair_Display'] font-semibold text-white text-[clamp(22px,3vw,30px)] mb-5">
             Do you handle emergency plumbing?
           </h2>
-          <p className="font-['Barlow'] text-[#C0D8F0] text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="font-sans text-[#C0D8F0] text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
             Yes — 24 hours a day, 7 days a week, including holidays. Our emergency line is answered by a live person, not a call center. We dispatch immediately for burst pipes, sewer backups, gas leaks, flooding, and any situation where delay will cause significant damage.
           </p>
           <a
             href={`tel:${PHONE}`}
-            className="inline-flex items-center justify-center gap-2 bg-[#009EC6] text-[#003060] font-['Barlow_Condensed'] font-bold text-xl uppercase tracking-wide py-5 px-10 rounded-sm hover:bg-[#00b8e6] transition-colors mb-8"
+            className="inline-flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-xl uppercase tracking-wide py-5 px-10 rounded-sm hover:bg-[#00b8e6] transition-colors mb-8"
           >
             <Phone className="w-5 h-5" />
             CALL {PHONE_DISPLAY} — 24/7
@@ -377,7 +377,7 @@ export default function AllServices() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-['Barlow_Condensed'] font-bold text-sm uppercase tracking-wide text-[#009EC6] border border-[#009EC6]/40 px-4 py-2 rounded-full hover:bg-[#009EC6]/10 transition-colors"
+                className="font-['Barlow_Condensed'] font-bold text-sm uppercase tracking-wide text-[var(--brand-cyan)] border border-[var(--brand-cyan)]/40 px-4 py-2 rounded-full hover:bg-[var(--brand-cyan)]/10 transition-colors"
               >
                 {link.label} →
               </Link>
@@ -387,12 +387,12 @@ export default function AllServices() {
       </section>
 
       {/* Service Areas */}
-      <section className="bg-[#F0F0F0] py-14 px-4">
+      <section className="bg-[var(--surface-1)] py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[#003060] text-[clamp(22px,3vw,30px)] mb-4">
+          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-4">
             What areas do you serve?
           </h2>
-          <p className="font-['Barlow'] text-[#484848] text-[17px] mb-10 max-w-2xl">
+          <p className="font-sans text-[var(--ink-2)] text-[17px] mb-10 max-w-2xl">
             We serve Maryland, Washington DC, and Northern Virginia — covering more than 50 communities across five Maryland counties, all eight DC wards, and four Northern Virginia counties.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -404,15 +404,15 @@ export default function AllServices() {
               <Link
                 key={area.href}
                 href={area.href}
-                className="bg-white border border-[#C0D8F0] rounded-sm p-6 hover:border-[#009EC6] hover:shadow-sm transition-all group block"
-                style={{ borderLeft: "4px solid #003060" }}
+                className="bg-white border border-[#C0D8F0] rounded-sm p-6 hover:border-[var(--brand-cyan)] hover:shadow-sm transition-all group block"
+                style={{ borderLeft: "4px solid var(--brand-navy)" }}
               >
-                <p className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-widest text-[#009EC6] mb-2">
+                <p className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-2">
                   Service Area
                 </p>
-                <p className="font-['Playfair_Display'] font-semibold text-[#003060] text-xl mb-2">{area.label}</p>
-                <p className="font-['Barlow'] text-[#484848] text-sm mb-4">{area.desc}</p>
-                <span className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-[#009EC6] flex items-center gap-1">
+                <p className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-xl mb-2">{area.label}</p>
+                <p className="font-sans text-[var(--ink-2)] text-sm mb-4">{area.desc}</p>
+                <span className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-[var(--brand-cyan)] flex items-center gap-1">
                   {area.label} service areas <ArrowRight className="w-3 h-3" />
                 </span>
               </Link>
@@ -424,10 +424,10 @@ export default function AllServices() {
       {/* Residential & Commercial */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[#003060] text-[clamp(22px,3vw,30px)] mb-6">
+          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-6">
             Do you serve both residential and commercial clients?
           </h2>
-          <p className="font-['Barlow'] text-[#484848] text-[17px] mb-10">Yes. Definitive Mechanical serves:</p>
+          <p className="font-sans text-[var(--ink-2)] text-[17px] mb-10">Yes. Definitive Mechanical serves:</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
@@ -450,15 +450,15 @@ export default function AllServices() {
               },
             ].map((block) => (
               <div key={block.label} className="flex flex-col">
-                <div className="w-12 h-12 bg-[#009EC6]/10 rounded-sm flex items-center justify-center mb-4">
-                  <block.Icon className="w-6 h-6 text-[#009EC6]" />
+                <div className="w-12 h-12 bg-[var(--brand-cyan)]/10 rounded-sm flex items-center justify-center mb-4">
+                  <block.Icon className="w-6 h-6 text-[var(--brand-cyan)]" />
                 </div>
-                <p className="font-['Barlow_Condensed'] font-bold text-[#003060] text-sm uppercase tracking-wide mb-3">
+                <p className="font-['Barlow_Condensed'] font-bold text-[var(--brand-navy)] text-sm uppercase tracking-wide mb-3">
                   {block.label}
                 </p>
-                <p className="font-['Barlow'] text-[#484848] text-base leading-relaxed mb-3">{block.body}</p>
+                <p className="font-sans text-[var(--ink-2)] text-base leading-relaxed mb-3">{block.body}</p>
                 {block.link && (
-                  <Link href={block.link.href} className="font-['Barlow_Condensed'] font-bold text-sm text-[#009EC6] hover:underline">
+                  <Link href={block.link.href} className="font-['Barlow_Condensed'] font-bold text-sm text-[var(--brand-cyan)] hover:underline">
                     {block.link.label}
                   </Link>
                 )}
@@ -469,13 +469,13 @@ export default function AllServices() {
       </section>
 
       {/* Credential Badge Grid */}
-      <section className="bg-[#F0F0F0] py-14 px-4">
+      <section className="bg-[var(--surface-1)] py-14 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-wrap gap-2 mb-4">
             {navyBadges.map((b) => (
               <span
                 key={b}
-                className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-white bg-[#003060] px-3 py-1.5 rounded-sm"
+                className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-white bg-[var(--brand-navy)] px-3 py-1.5 rounded-sm"
               >
                 {b}
               </span>
@@ -483,13 +483,13 @@ export default function AllServices() {
             {tealBadges.map((b) => (
               <span
                 key={b}
-                className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-white bg-[#009EC6] px-3 py-1.5 rounded-sm"
+                className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-white bg-[var(--brand-cyan)] px-3 py-1.5 rounded-sm"
               >
                 {b}
               </span>
             ))}
           </div>
-          <Link href="/licenses-certifications/" className="font-['Barlow'] text-[#787878] text-sm hover:text-[#009EC6] transition-colors">
+          <Link href="/licenses-certifications/" className="font-sans text-[#787878] text-sm hover:text-[var(--brand-cyan)] transition-colors">
             View all licenses and certifications →
           </Link>
         </div>
@@ -498,7 +498,7 @@ export default function AllServices() {
       {/* FAQ */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[#003060] text-[clamp(22px,3vw,30px)] mb-8">
+          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-8">
             Frequently Asked Questions
           </h2>
           <div>
@@ -510,9 +510,9 @@ export default function AllServices() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-[#003060] py-14 px-4">
+      <section className="bg-[var(--brand-navy)] py-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[#009EC6] mb-3">
+          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             LICENSED PLUMBING · MD, DC &amp; NORTHERN VIRGINIA
           </p>
           <h2 className="font-['Playfair_Display'] font-bold text-white text-[clamp(24px,3vw,34px)] mb-8">
@@ -521,22 +521,22 @@ export default function AllServices() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <a
               href={`tel:${PHONE}`}
-              className="flex items-center justify-center gap-2 bg-[#009EC6] text-[#003060] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
             >
               <Phone className="w-5 h-5" />
               {PHONE_DISPLAY}
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[#003060] transition-colors"
+              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[var(--brand-navy)] transition-colors"
             >
               REQUEST SERVICE <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
-          <p className="font-['Barlow'] text-[#C0D8F0] text-sm">
+          <p className="font-sans text-[#C0D8F0] text-sm">
             Definitive Mechanical · 9701 Apollo Drive, Suite 100 · Largo, MD 20774
           </p>
-          <p className="font-['Barlow'] text-[#C0D8F0] text-sm mt-1">
+          <p className="font-sans text-[#C0D8F0] text-sm mt-1">
             MD Master Plumber #96958 | DC #PGM1002236 | VA #2710064209 | MDOT MBE Cert 20-134
           </p>
         </div>
@@ -546,7 +546,7 @@ export default function AllServices() {
       <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
         <a
           href={`tel:${PHONE}`}
-          className="flex items-center justify-center gap-2 w-full bg-[#009EC6] text-[#003060] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide h-14"
+          className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide h-14"
         >
           <Phone className="w-4 h-4" />
           CALL {PHONE_DISPLAY} — 24/7 EMERGENCY

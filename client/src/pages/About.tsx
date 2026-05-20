@@ -11,7 +11,7 @@ export default function About() {
     <>
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)',
         padding: '80px 0',
         position: 'relative',
         overflow: 'hidden',

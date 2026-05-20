@@ -35,7 +35,7 @@ export default function GovernmentMunicipalPlumbing() {
       {/* HERO */}
       <section style={{
         minHeight: '60vh',
-        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -111,7 +111,7 @@ export default function GovernmentMunicipalPlumbing() {
               <div key={service.title} style={{
                 background: 'white',
                 border: '1px solid #E8EFF5',
-                borderTop: '3px solid #009EC6',
+                borderTop: '3px solid var(--brand-cyan)',
                 borderRadius: '6px',
                 padding: '24px',
                 boxShadow: '0 2px 12px rgba(6,59,99,0.08)',

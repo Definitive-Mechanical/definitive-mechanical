@@ -80,7 +80,7 @@ export default function FaucetToiletRepair() {
       })}} />
 
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Faucet & Toilet Repair' }]} />
@@ -168,7 +168,7 @@ export default function FaucetToiletRepair() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="REPAIR OR REPLACE?" heading="When should you replace a faucet or toilet rather than repair it?" centered />
           <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div style={{ background: '#F8FAFC', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '24px' }}>
+            <div style={{ background: '#F8FAFC', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px' }}>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>REPLACE A FAUCET WHEN:</p>
               <div className="space-y-3">
                 {REPLACE_FAUCET.map((item) => (
@@ -179,7 +179,7 @@ export default function FaucetToiletRepair() {
                 ))}
               </div>
             </div>
-            <div style={{ background: '#F8FAFC', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '24px' }}>
+            <div style={{ background: '#F8FAFC', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px' }}>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>REPLACE A TOILET WHEN:</p>
               <div className="space-y-3">
                 {REPLACE_TOILET.map((item) => (
