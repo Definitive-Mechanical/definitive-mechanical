@@ -34,7 +34,7 @@ export default function About() {
             </div>
             <div className="hidden lg:block lg:col-span-2">
               <img
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&q=80"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/service-commercial-plumbing-2xEEBXLpEGRhRrMgq7KFQJ.webp"
                 alt="Definitive Mechanical team — Licensed plumbers Maryland DC Northern Virginia"
                 style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }}
               />
@@ -76,7 +76,7 @@ export default function About() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/service-water-heater-repair-FHtPdqJjVdqxqBRJBSXhwE.webp"
                 alt="Definitive Mechanical plumbing service Maryland"
                 style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }}
               />

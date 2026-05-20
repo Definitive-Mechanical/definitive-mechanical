@@ -221,7 +221,7 @@ export default function Tier3CityPage({
             </div>
             <div className="lg:col-span-2 hidden lg:block">
               <img
-                src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=700&q=80"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/service-drain-cleaning-RkMgBt5ypuTCJt7Kk5YBFN.webp"
                 alt={`Licensed plumber ${schemaCity} ${schemaState} — Definitive Mechanical`}
                 loading="eager"
                 className="rounded-lg w-full"

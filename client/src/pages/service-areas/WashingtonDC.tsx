@@ -102,7 +102,7 @@ export default function WashingtonDC() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&h=500&fit=crop&q=80" alt="Licensed plumber Washington DC — DC Master Plumber #PGA2022-00025, MDOT MBE Certified" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/hub-maryland-fNjmenZ5ppBTF8B5kUjTVP.webp" alt="Licensed plumber Washington DC — DC Master Plumber #PGA2022-00025, MDOT MBE Certified" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>
         </div>

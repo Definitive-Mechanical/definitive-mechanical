@@ -70,7 +70,7 @@ export default function WaldorfMD() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=700&h=500&fit=crop&q=80" alt="Licensed plumber Waldorf Maryland — Definitive Mechanical" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/service-drain-cleaning-RkMgBt5ypuTCJt7Kk5YBFN.webp" alt="Licensed plumber Waldorf Maryland — Definitive Mechanical" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>
         </div>
