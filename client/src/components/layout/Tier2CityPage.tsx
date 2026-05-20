@@ -4,6 +4,7 @@
  * Typography: Barlow Condensed (display), Public Sans (body)
  */
 
+import { getServiceImage } from "@/lib/serviceImages";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import { Phone, ArrowRight, ChevronDown, CheckCircle2 } from "lucide-react";
@@ -187,18 +188,33 @@ export default function Tier2CityPage({
           <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-semibold text-[var(--brand-navy)] text-[clamp(20px,3vw,28px)] mb-8">
             What plumbing services are available in {h1.replace("Plumber in ", "")}?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((svc) => (
               <Link
                 key={svc.href}
                 href={svc.href}
-                className="flex items-start gap-3 p-3 rounded-sm hover:bg-[#EAF4FA] transition-colors group"
-                style={{ minHeight: "44px" }}
+                style={{ textDecoration: "none", display: "block" }}
               >
-                <CheckCircle2 className="w-5 h-5 text-[var(--brand-cyan)] flex-shrink-0 mt-0.5" />
-                <span style={{ fontFamily: "'Barlow', sans-serif" }} className="font-medium text-[var(--brand-navy)] text-base group-hover:text-[var(--brand-cyan)] transition-colors leading-snug">
-                  {svc.label}
-                </span>
+                <div
+                  className="cursor-pointer"
+                  style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "8px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                >
+                  <div style={{ position: "relative", height: "130px", overflow: "hidden" }}>
+                    <img
+                      src={getServiceImage(svc.href.replace(/^\//, "").toLowerCase())}
+                      alt={svc.label}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+                      loading="lazy"
+                    />
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.2) 0%, rgba(3,24,56,0.5) 100%)" }} />
+                  </div>
+                  <div style={{ padding: "12px 14px 14px" }}>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "14px", color: "var(--brand-navy)", marginBottom: "4px", lineHeight: 1.2 }}>{svc.label}</div>
+                    <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Learn more →</span>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>

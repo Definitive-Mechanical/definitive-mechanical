@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { getServiceImage } from '@/lib/serviceImages';
 import { Link } from "wouter";
 import {
   AlertTriangle, Droplets, Thermometer, Zap, GitBranch, Flame,
@@ -141,9 +142,15 @@ export default function WashingtonDC() {
                   onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
                   onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                 >
-                  <div style={{ background: "linear-gradient(135deg, #063B63, #0a3a5e)", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px 0" }}>
-                    <svc.icon size={40} color="#4FB3E8" strokeWidth={1.8} />
-                  </div>
+                  <div style={{ position: "relative", height: "140px", overflow: "hidden" }}>
+                      <img
+                        src={getServiceImage(svc.href.replace(/^\//, "").toLowerCase())}
+                        alt={svc.label}
+                        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+                        loading="lazy"
+                      />
+                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
+                    </div>
                   <div style={{ padding: "14px 16px 16px" }}>
                     <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
                     <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>

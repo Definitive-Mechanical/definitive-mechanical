@@ -1,3 +1,4 @@
+import { getServiceImage } from '@/lib/serviceImages';
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import {
@@ -83,10 +84,26 @@ export default function WaldorfMD() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((svc, i) => (
-              <Link key={i} href={svc.href}>
-                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(6,59,99,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid var(--brand-cyan)" }}>
-                  <svc.icon size={20} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
-                  <p style={{ fontFamily:"var(--font-body)", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
+              <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
+                <div
+                  className="cursor-pointer"
+                  style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "8px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                >
+                  <div style={{ position: "relative", height: "130px", overflow: "hidden" }}>
+                    <img
+                      src={getServiceImage(svc.href.replace(/^\//, "").toLowerCase())}
+                      alt={svc.label}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+                      loading="lazy"
+                    />
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.2) 0%, rgba(3,24,56,0.5) 100%)" }} />
+                  </div>
+                  <div style={{ padding: "12px 14px 14px" }}>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "14px", color: "var(--brand-navy)", marginBottom: "4px", lineHeight: 1.2 }}>{svc.label}</div>
+                    <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Learn more →</span>
+                  </div>
                 </div>
               </Link>
             ))}
