@@ -53,13 +53,13 @@ export default function FortWashingtonMD() {
           ]} />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
-              <p style={{ fontFamily:"'var(--font-display)'", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
+              <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
                 PLUMBING SERVICE · FORT WASHINGTON, MD · PRINCE GEORGE'S COUNTY
               </p>
-              <h1 style={{ fontFamily:"'var(--font-display)'", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
+              <h1 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in Fort Washington, MD
               </h1>
-              <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
+              <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
                 Definitive Mechanical provides licensed plumbing service in Fort Washington, Maryland — serving from our Largo, MD base. Emergency plumbing, water heater repair, drain cleaning, sewer service, gas line work, and commercial plumbing available 24/7. Maryland Master Plumber/Gasfitter #96958, WSSC #73696. Upfront pricing in writing. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber","WSSC #73696","24/7 Emergency","Near Fort Washington, MD","Serving from Largo, MD"]} />
@@ -79,7 +79,7 @@ export default function FortWashingtonMD() {
       <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Fort Washington, MD?" />
-          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
+          <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
             Fort Washington is a primarily residential community along the Potomac River in southern Prince George's County — characterized by well-established single-family neighborhoods, waterfront properties, and proximity to the National Harbor corridor. The housing stock ranges from mid-century homes to 1980s and 1990s construction, with a mix of plumbing systems that reflects that age range.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -87,7 +87,7 @@ export default function FortWashingtonMD() {
               <Link key={i} href={svc.href}>
                 <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(6,59,99,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid var(--brand-cyan)" }}>
                   <svc.icon size={20} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
-                  <p style={{ fontFamily:"'var(--font-body)'", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
+                  <p style={{ fontFamily:"var(--font-body)", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
                 </div>
               </Link>
             ))}
@@ -132,7 +132,7 @@ export default function FortWashingtonMD() {
       <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="RESIDENTIAL PLUMBING" heading="What plumbing issues are common in Fort Washington homes?" />
-          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
+          <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
             Fort Washington's residential neighborhoods include a significant number of homes built in the 1960s through 1980s. Plumbing systems of this era frequently include:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
@@ -145,9 +145,9 @@ export default function FortWashingtonMD() {
               <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
                   <card.icon size={24} style={{ color:"var(--brand-cyan)" }} />
-                  <p style={{ fontFamily:"'var(--font-body)'", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
+                  <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
                 </div>
-                <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
+                <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
               </div>
             ))}
           </div>
@@ -179,14 +179,14 @@ export default function FortWashingtonMD() {
         <div className="container">
           <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading="Areas near Fort Washington we also serve" />
           <div className="mb-3">
-            <span style={{ fontFamily:"'var(--font-display)'", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
-            <Link href="/service-areas/maryland/charles-county/waldorf-md" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Waldorf, MD</Link>
-            <Link href="/service-areas/maryland/prince-georges-county/largo-md" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Largo, MD</Link>
+            <span style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
+            <Link href="/service-areas/maryland/charles-county/waldorf-md" style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Waldorf, MD</Link>
+            <Link href="/service-areas/maryland/prince-georges-county/largo-md" style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Largo, MD</Link>
             {["Oxon Hill, MD","Accokeek, MD","Brandywine, MD","Clinton, MD","Temple Hills, MD","National Harbor, MD"].map((city, i) => (
-              <span key={i} style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", marginRight:"12px" }}>{city}</span>
+              <span key={i} style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", marginRight:"12px" }}>{city}</span>
             ))}
           </div>
-          <Link href="/service-areas" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
+          <Link href="/service-areas" style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
         </div>
       </section>
 

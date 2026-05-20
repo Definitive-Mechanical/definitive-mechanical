@@ -84,13 +84,13 @@ export default function WashingtonDC() {
           ]} />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
-              <p style={{ fontFamily:"'var(--font-display)'", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
+              <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
                 PLUMBING SERVICE · WASHINGTON, DC · DISTRICT OF COLUMBIA
               </p>
-              <h1 style={{ fontFamily:"'var(--font-display)'", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
+              <h1 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in Washington, DC
               </h1>
-              <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
+              <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
                 Definitive Mechanical provides licensed plumbing service in Washington, DC for homeowners, businesses, and government facilities. Emergency plumbing, water heater repair, drain cleaning, sewer service, gas line work, and backflow certification available 24/7. DC Master Plumber/Gasfitter #PGA2022-00025. MDOT MBE Certified. CAGE Code 8HCF6. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["DC Master Plumber/Gasfitter #PGA2022-00025","MDOT MBE Cert 20-134","CAGE 8HCF6","24/7 Emergency","Serving DC from Largo, MD"]} />
@@ -110,13 +110,13 @@ export default function WashingtonDC() {
       <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Washington, DC?" />
-          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
+          <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
             Washington DC is one of the most complex plumbing markets in the country — a dense urban environment with a mix of historic residential properties, modern high-rise development, government facilities, commercial buildings, and a regulatory environment that requires specific DC licensure for all permitted plumbing work.
           </p>
 
           {/* DC License Callout */}
           <div className="bg-white border-2 rounded-lg p-5 max-w-2xl mx-auto mb-8" style={{ borderColor:"var(--brand-cyan)" }}>
-            <p style={{ fontFamily:"'var(--font-display)'", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", letterSpacing:"0.1em", marginBottom:"12px" }}>
+            <p style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", letterSpacing:"0.1em", marginBottom:"12px" }}>
               DC PLUMBING CREDENTIALS
             </p>
             {[
@@ -127,7 +127,7 @@ export default function WashingtonDC() {
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-2 mb-2">
                 <CheckCircle2 size={16} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
-                <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px" }}>{item}</p>
+                <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px" }}>{item}</p>
               </div>
             ))}
           </div>
@@ -138,8 +138,8 @@ export default function WashingtonDC() {
                 <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(6,59,99,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid var(--brand-cyan)" }}>
                   <svc.icon size={20} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
                   <div>
-                    <p style={{ fontFamily:"'var(--font-body)'", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
-                    {svc.note && <p style={{ fontFamily:"'var(--font-body)'", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
+                    <p style={{ fontFamily:"var(--font-body)", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
+                    {svc.note && <p style={{ fontFamily:"var(--font-body)", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
                   </div>
                 </div>
               </Link>
@@ -190,9 +190,9 @@ export default function WashingtonDC() {
               <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
                   <card.icon size={24} style={{ color:"var(--brand-cyan)" }} />
-                  <p style={{ fontFamily:"'var(--font-body)'", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
+                  <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
                 </div>
-                <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
+                <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
               </div>
             ))}
           </div>
@@ -203,17 +203,17 @@ export default function WashingtonDC() {
       <section className="py-16" style={{ background:"var(--brand-navy)" }}>
         <div className="container text-center">
           <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Commercial & Government Plumbing in Washington DC" light />
-          <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
+          <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
             Washington DC is the center of federal government procurement in the United States. Definitive Mechanical holds MDOT MBE Certification (Cert No. 20-134) and CAGE Code 8HCF6 — and is licensed under DC Master Plumber/Gasfitter #PGA2022-00025 for all DC plumbing work. We can serve as a prime contractor or subcontractor for federal and DC government plumbing projects.
           </p>
           <div className="flex flex-wrap gap-2 justify-center mt-6 mb-6">
             {["DC #PGA2022-00025","MDOT MBE Cert 20-134","CAGE 8HCF6","SWaM Cert 815255"].map((badge, i) => (
-              <span key={i} style={{ background:"white", color:"var(--brand-navy)", fontFamily:"'var(--font-display)'", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
+              <span key={i} style={{ background:"white", color:"var(--brand-navy)", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
             ))}
           </div>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'var(--font-body)'", fontSize:"14px", fontWeight:500 }}>Commercial Plumbing →</Link>
-            <Link href="/government-municipal-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'var(--font-body)'", fontSize:"14px", fontWeight:500 }}>Government & Municipal →</Link>
+            <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500 }}>Commercial Plumbing →</Link>
+            <Link href="/government-municipal-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500 }}>Government & Municipal →</Link>
           </div>
         </div>
       </section>

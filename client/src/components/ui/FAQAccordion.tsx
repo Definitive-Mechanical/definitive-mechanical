@@ -9,10 +9,13 @@ interface FAQItem {
 interface FAQAccordionProps {
   items: FAQItem[];
   schema?: boolean;
+  variant?: 'light' | 'dark';
 }
 
-export default function FAQAccordion({ items, schema = false }: FAQAccordionProps) {
+export default function FAQAccordion({ items, schema = false, variant = 'light' }: FAQAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const isDark = variant === 'dark';
 
   const faqSchema = {
     "@context": "https://schema.org",
@@ -41,7 +44,7 @@ export default function FAQAccordion({ items, schema = false }: FAQAccordionProp
           return (
             <div
               key={index}
-              style={{ borderBottom: index < items.length - 1 ? '1px solid #E8EFF5' : 'none' }}
+              style={{ borderBottom: index < items.length - 1 ? `1px solid ${isDark ? 'rgba(255,255,255,0.15)' : '#E8EFF5'}` : 'none' }}
             >
               <button
                 onClick={() => setOpenIndex(isOpen ? null : index)}
@@ -56,11 +59,13 @@ export default function FAQAccordion({ items, schema = false }: FAQAccordionProp
                 }}
               >
                 <span style={{
-                  fontFamily: 'var(--font-body)',
-                  fontWeight: 600,
-                  color: isOpen ? 'var(--brand-cyan)' : 'var(--brand-navy)',
+                  fontFamily: 'var(--font-display)',
+                  fontWeight: 700,
+                  color: isOpen ? 'var(--brand-cyan)' : (isDark ? 'white' : 'var(--brand-navy)'),
                   fontSize: '16px',
                   lineHeight: 1.4,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.02em',
                   transition: 'color 0.2s',
                 }}>
                   {item.question}
@@ -79,7 +84,7 @@ export default function FAQAccordion({ items, schema = false }: FAQAccordionProp
                   <p style={{
                     fontFamily: 'var(--font-body)',
                     fontWeight: 400,
-                    color: 'var(--ink-2)',
+                    color: isDark ? 'rgba(255,255,255,0.8)' : 'var(--ink-2)',
                     fontSize: '15px',
                     lineHeight: 1.7,
                   }}>

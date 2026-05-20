@@ -100,7 +100,7 @@ export default function FairfaxCounty() {
       <section className="bg-white py-20">
         <div className="container max-w-3xl mx-auto">
           <SectionHeading eyebrow="FAQ" heading="Plumbing service in Fairfax County — common questions" />
-          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} /></div>
+          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" /></div>
         </div>
       </section>
 

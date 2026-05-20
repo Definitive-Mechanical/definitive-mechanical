@@ -86,13 +86,13 @@ export default function LargoMD() {
           ]} />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
-              <p style={{ fontFamily:"'var(--font-display)'", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
+              <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
                 PLUMBING SERVICE · LARGO, MD · PRINCE GEORGE'S COUNTY
               </p>
-              <h1 style={{ fontFamily:"'var(--font-display)'", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
+              <h1 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in Largo, MD
               </h1>
-              <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
+              <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
                 Definitive Mechanical is based in Largo, Maryland at 9701 Apollo Drive, Suite 100 — and has served the Largo community for 11 years. We provide licensed plumbing, gas, drain, water heater, sewer, backflow, and emergency mechanical service for homes and businesses in Largo and throughout Prince George's County. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Based in Largo, MD","11 Years Serving Largo","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]} />
@@ -115,7 +115,7 @@ export default function LargoMD() {
       <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Largo, MD?" />
-          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
+          <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
             Largo is our home base. When you call Definitive Mechanical for plumbing service in Largo, you are calling a team that has operated in this community for over a decade — from our office at 9701 Apollo Drive, Suite 100, just off Central Avenue. Response times in Largo are among the fastest in our service area because we are already here.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -124,8 +124,8 @@ export default function LargoMD() {
                 <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(6,59,99,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid var(--brand-cyan)" }}>
                   <svc.icon size={20} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
                   <div>
-                    <p style={{ fontFamily:"'var(--font-body)'", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
-                    {svc.note && <p style={{ fontFamily:"'var(--font-body)'", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
+                    <p style={{ fontFamily:"var(--font-body)", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
+                    {svc.note && <p style={{ fontFamily:"var(--font-body)", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
                   </div>
                 </div>
               </Link>
@@ -171,7 +171,7 @@ export default function LargoMD() {
       <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="RESIDENTIAL PLUMBING" heading="What residential plumbing services do Largo homeowners use most?" />
-          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
+          <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
             Largo's housing stock includes a significant number of homes built in the 1970s through 1990s — a range where original water heaters, cast iron drain lines, and galvanized supply lines are either approaching or well past end of life. The most common residential service calls we handle in Largo include:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
@@ -184,9 +184,9 @@ export default function LargoMD() {
               <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
                   <card.icon size={24} style={{ color:"var(--brand-cyan)" }} />
-                  <p style={{ fontFamily:"'var(--font-body)'", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
+                  <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
                 </div>
-                <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
+                <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
               </div>
             ))}
           </div>
@@ -197,19 +197,19 @@ export default function LargoMD() {
       <section className="py-16" style={{ background:"var(--brand-navy)" }}>
         <div className="container text-center">
           <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Do you serve commercial and government clients in Largo?" light />
-          <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
+          <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
             Yes. Largo and the surrounding Central Avenue corridor is home to commercial retail, office, government-adjacent facilities, and businesses that require commercial plumbing maintenance and compliance services. Definitive Mechanical is MDOT MBE Certified (Cert No. 20-134) and Virginia SWaM Certified (Cert No. 815255) — and holds CAGE Code 8HCF6 and NAICS Code 238220 for government procurement.
           </p>
-          <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
+          <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
             For commercial clients in Largo, we provide facility maintenance, backflow certification, commercial drain service, gas line work, and emergency response.
           </p>
           <div className="flex flex-wrap gap-2 justify-center mt-6">
             {["MDOT MBE Cert 20-134","SWaM Cert 815255","CAGE 8HCF6"].map((badge, i) => (
-              <span key={i} style={{ background:"white", color:"var(--brand-navy)", fontFamily:"'var(--font-display)'", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
+              <span key={i} style={{ background:"white", color:"var(--brand-navy)", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
             ))}
           </div>
           <p className="mt-4">
-            <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'var(--font-body)'", fontSize:"14px", fontWeight:500 }}>
+            <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500 }}>
               Learn more about commercial plumbing →
             </Link>
           </p>
@@ -228,7 +228,7 @@ export default function LargoMD() {
             <TestimonialCard quote="Everything went extremely well. They were punctual, cleaned up after themselves — very professional and courteous. This is my second time hiring this company." name="Millie H." location={`Prince George's County`} service="Plumbing Service" />
             <TestimonialCard quote="Service was excellent — prompt, professional, diagnosed and replaced my toilet the same day, and left the bathroom spotless." name="Gayle T." location="Maryland" service="Toilet Repair" />
           </div>
-          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", textAlign:"center", marginTop:"24px" }}>
+          <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", textAlign:"center", marginTop:"24px" }}>
             4.8★ on Google | Based in Largo, MD | 11 Years in Business
           </p>
         </div>
@@ -238,33 +238,33 @@ export default function LargoMD() {
       <section className="py-12 bg-white">
         <div className="container">
           <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading="What areas near Largo does Definitive Mechanical also serve?" />
-          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"15px" }} className="mb-4">
+          <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"15px" }} className="mb-4">
             From our Largo location, we serve the surrounding Prince George's County communities and the broader DMV area:
           </p>
           <div className="mb-3">
-            <span style={{ fontFamily:"'var(--font-display)'", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
+            <span style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
             {[
               { label:"Bowie, MD", href:"/service-areas/maryland/prince-georges-county/bowie-md" },
               { label:"Fort Washington, MD", href:"/service-areas/maryland/prince-georges-county/fort-washington-md" },
             ].map((l, i) => (
-              <Link key={i} href={l.href} style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>{l.label}</Link>
+              <Link key={i} href={l.href} style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>{l.label}</Link>
             ))}
             {["Upper Marlboro, MD","Landover, MD","Hyattsville, MD","Forestville, MD","Fairwood, MD","Woodmore, MD","Capitol Heights, MD"].map((city, i) => (
-              <span key={i} style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", marginRight:"12px" }}>{city}</span>
+              <span key={i} style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", marginRight:"12px" }}>{city}</span>
             ))}
           </div>
           <hr style={{ borderColor:"var(--border)", margin:"16px 0" }} />
           <div className="mb-4">
-            <span style={{ fontFamily:"'var(--font-display)'", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Also serving:</span>
+            <span style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Also serving:</span>
             {[
               { label:"Washington DC", href:"/service-areas/washington-dc" },
               { label:"Montgomery County, MD", href:"/service-areas/maryland/montgomery-county" },
               { label:"Northern Virginia", href:"/service-areas/northern-virginia" },
             ].map((l, i) => (
-              <Link key={i} href={l.href} style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>{l.label}</Link>
+              <Link key={i} href={l.href} style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>{l.label}</Link>
             ))}
           </div>
-          <Link href="/service-areas" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
+          <Link href="/service-areas" style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
         </div>
       </section>
 
