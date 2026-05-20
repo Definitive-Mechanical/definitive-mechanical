@@ -40,7 +40,7 @@ export default function PotomacMD() {
       </Helmet>
 
       {/* S1: Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "50vh" }} className="py-16">
+      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "60vh" }} className="py-20">
         <div className="container">
           <BreadcrumbList items={[
             {label:"Home",href:"/"},
@@ -49,8 +49,8 @@ export default function PotomacMD() {
             {label:"Montgomery County",href:"/service-areas/maryland/montgomery-county"},
             {label:"Potomac, MD"}
           ]} />
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
-            <div className="lg:col-span-3">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
+            <div className="">
               <p style={{ fontFamily:"'Barlow Condensed',sans-serif", color:"#009EC6", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
                 PLUMBING SERVICE · POTOMAC, MD · MONTGOMERY COUNTY
               </p>
@@ -66,15 +66,15 @@ export default function PotomacMD() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="lg:col-span-2 hidden lg:block">
-              <img src="https://placehold.co/700x500/186090/C0D8F0?text=Plumber+Potomac+MD+Estate+Homes" alt="Licensed plumber Potomac Maryland — Definitive Mechanical estate home service" loading="eager" className="rounded-lg w-full" />
+            <div className="hidden lg:block">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&h=500&fit=crop&q=80" alt="Licensed plumber Potomac Maryland — Definitive Mechanical estate home service" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>
         </div>
       </section>
 
       {/* S2: Services */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Potomac, MD?" />
           <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
@@ -83,7 +83,7 @@ export default function PotomacMD() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((svc, i) => (
               <Link key={i} href={svc.href}>
-                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5" style={{ borderTopColor:"#009EC6" }}>
+                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(0,48,96,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid #009EC6" }}>
                   <svc.icon size={20} style={{ color:"#009EC6", flexShrink:0, marginTop:2 }} />
                   <div>
                     <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:500, color:"#003060", fontSize:"14px" }}>{svc.label}</p>
@@ -112,7 +112,7 @@ export default function PotomacMD() {
       </section>
 
       {/* S4: Local Context */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="LOCAL PLUMBING NEEDS" heading="What plumbing needs are most common for Potomac homes?" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
