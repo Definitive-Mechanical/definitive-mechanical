@@ -5,6 +5,7 @@ import { BUSINESS, TESTIMONIALS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
 import TrustBadges from '@/components/ui/TrustBadges';
 import ServiceCard from '@/components/ui/ServiceCard';
+import { ALL_SERVICE_CATEGORIES } from '@/lib/serviceCategories';
 import { getServiceImage } from '@/lib/serviceImages';
 import SectionHeading from '@/components/ui/SectionHeading';
 import StarRating from '@/components/ui/StarRating';
@@ -13,7 +14,7 @@ import FAQAccordion from '@/components/ui/FAQAccordion';
 import CTABanner from '@/components/ui/CTABanner';
 import ServiceAreaSearch from '@/components/ServiceAreaSearch';
 
-const SERVICE_CATEGORIES = [
+const _UNUSED_SERVICE_CATEGORIES_REPLACED = [
   {
     label: 'Emergency & Drain',
     services: [
@@ -314,12 +315,12 @@ export default function Home() {
             subtext="From 24/7 emergency response to water heater repair, drain cleaning, gas lines, backflow certification, and government facility plumbing — we handle the full range of licensed mechanical services across Maryland, DC, and Northern Virginia."
             centered
           />
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '52px' }}>
-            {SERVICE_CATEGORIES.map((category) => (
-              <div key={category.label}>
-                {/* Category divider header */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '48px' }}>
+            {ALL_SERVICE_CATEGORIES.map((cat) => (
+              <div key={cat.key}>
+                {/* Category divider header — matches city pages */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '24px' }}>
-                  <div style={{ height: '3px', width: '32px', background: 'var(--brand-cyan)', flexShrink: 0 }} />
+                  <div style={{ height: '3px', width: '32px', background: cat.color, flexShrink: 0, borderRadius: '2px' }} />
                   <p style={{
                     fontFamily: 'var(--font-display)',
                     fontWeight: 700,
@@ -330,25 +331,23 @@ export default function Home() {
                     margin: 0,
                     whiteSpace: 'nowrap',
                   }}>
-                    {category.label}
+                    {cat.title}
                   </p>
                   <div style={{ height: '1px', flex: 1, background: 'var(--border)' }} />
                 </div>
-                {/* Service tiles — identical style */}
+                {/* Service tiles */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {category.services.map((service) => {
-                    // Use full path (minus leading slash) so e.g. /backflow-certification maps correctly
-                    const slug = service.href.replace(/^\//,'');
+                  {cat.items.map((svc) => {
+                    const slug = svc.href.replace(/^\//, '');
                     return (
                       <ServiceCard
-                        key={service.href}
-                        title={service.title}
-                        description={service.description}
-                        href={service.href}
-                        iconName={service.icon}
-                        featured={'featured' in service ? (service as { featured?: boolean }).featured : undefined}
+                        key={svc.href}
+                        title={svc.label}
+                        description=''
+                        href={svc.href}
+                        iconName='Wrench'
                         image={getServiceImage(slug)}
-                        imageAlt={`${service.title} in Maryland, DC, and Northern Virginia`}
+                        imageAlt={`${svc.label} in Maryland, DC, and Northern Virginia`}
                       />
                     );
                   })}
