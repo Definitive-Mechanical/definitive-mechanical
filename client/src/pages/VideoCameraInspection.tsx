@@ -59,7 +59,7 @@ export default function VideoCameraInspection() {
               </div>
             </div>
             <div className="hidden lg:block lg:col-span-2">
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Video camera sewer inspection Maryland DC Northern Virginia — Definitive Mechanical" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
+              <img src="/manus-storage/service-video-camera-inspection_8f462e65.jpg" alt="Video camera sewer inspection Maryland DC Northern Virginia — Definitive Mechanical" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
           </div>
         </div>

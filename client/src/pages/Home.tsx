@@ -5,6 +5,7 @@ import { BUSINESS, TESTIMONIALS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
 import TrustBadges from '@/components/ui/TrustBadges';
 import ServiceCard from '@/components/ui/ServiceCard';
+import { getServiceImage } from '@/lib/serviceImages';
 import SectionHeading from '@/components/ui/SectionHeading';
 import StarRating from '@/components/ui/StarRating';
 import TestimonialCard from '@/components/ui/TestimonialCard';
@@ -335,16 +336,22 @@ export default function Home() {
                 </div>
                 {/* Service tiles — identical style */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {category.services.map((service) => (
-                    <ServiceCard
-                      key={service.href}
-                      title={service.title}
-                      description={service.description}
-                      href={service.href}
-                      iconName={service.icon}
-                      featured={'featured' in service ? (service as { featured?: boolean }).featured : undefined}
-                    />
-                  ))}
+                  {category.services.map((service) => {
+                    // Use full path (minus leading slash) so e.g. /backflow-certification maps correctly
+                    const slug = service.href.replace(/^\//,'');
+                    return (
+                      <ServiceCard
+                        key={service.href}
+                        title={service.title}
+                        description={service.description}
+                        href={service.href}
+                        iconName={service.icon}
+                        featured={'featured' in service ? (service as { featured?: boolean }).featured : undefined}
+                        image={getServiceImage(slug)}
+                        imageAlt={`${service.title} in Maryland, DC, and Northern Virginia`}
+                      />
+                    );
+                  })}
                 </div>
               </div>
             ))}

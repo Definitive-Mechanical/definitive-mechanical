@@ -74,7 +74,7 @@ export default function GasLeakRepair() {
               </p>
             </div>
             <div className="hidden lg:block lg:col-span-2">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Licensed gas leak repair 24/7 Maryland DC Virginia — Definitive Mechanical Master Gasfitter" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
+              <img src="/manus-storage/service-gas-leak-repair_426928c3.jpg" alt="Licensed gas leak repair 24/7 Maryland DC Virginia — Definitive Mechanical Master Gasfitter" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
           </div>
         </div>

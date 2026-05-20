@@ -8,9 +8,11 @@ interface ServiceCardProps {
   href: string;
   iconName: string;
   featured?: boolean;
+  image?: string;
+  imageAlt?: string;
 }
 
-export default function ServiceCard({ title, description, href, iconName, featured }: ServiceCardProps) {
+export default function ServiceCard({ title, description, href, iconName, featured, image, imageAlt }: ServiceCardProps) {
   const IconComponent = ((Icons as unknown) as Record<string, React.ComponentType<LucideProps>>)[iconName] || Icons.Wrench;
 
   return (
@@ -36,15 +38,64 @@ export default function ServiceCard({ title, description, href, iconName, featur
         (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
       }}
     >
-      {/* Navy gradient icon header */}
+      {/* Card header — photo if available, navy gradient fallback */}
       <div style={{
-        aspectRatio: '4/3',
-        background: 'linear-gradient(135deg, #063B63, #0a3a5e)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        aspectRatio: '16/9',
         position: 'relative',
+        overflow: 'hidden',
+        background: 'linear-gradient(135deg, #063B63, #0a3a5e)',
       }}>
+        {image ? (
+          <>
+            <img
+              src={image}
+              alt={imageAlt || title}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                display: 'block',
+                transition: 'transform 0.4s cubic-bezier(0.23,1,0.32,1)',
+              }}
+              className="group-hover:[transform:scale(1.04)]"
+              loading="lazy"
+            />
+            {/* Dark overlay for legibility */}
+            <div style={{
+              position: 'absolute',
+              inset: 0,
+              background: 'linear-gradient(to bottom, rgba(6,59,99,0.15) 0%, rgba(6,59,99,0.45) 100%)',
+            }} />
+            {/* Icon badge bottom-left */}
+            <div style={{
+              position: 'absolute',
+              bottom: '10px',
+              left: '12px',
+              background: 'rgba(6,59,99,0.75)',
+              backdropFilter: 'blur(4px)',
+              borderRadius: '6px',
+              padding: '6px 8px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              <IconComponent size={20} color="#4FB3E8" strokeWidth={1.8} />
+            </div>
+          </>
+        ) : (
+          <>
+            <div style={{
+              width: '100%',
+              height: '100%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}>
+              <IconComponent size={56} color="#4FB3E8" strokeWidth={1.8} />
+            </div>
+          </>
+        )}
+
         {featured && (
           <span style={{
             position: 'absolute',
@@ -63,7 +114,6 @@ export default function ServiceCard({ title, description, href, iconName, featur
             Most Popular
           </span>
         )}
-        <IconComponent size={56} color="#4FB3E8" strokeWidth={1.8} />
       </div>
 
       {/* Card body */}

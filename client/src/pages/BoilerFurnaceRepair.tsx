@@ -112,7 +112,7 @@ export default function BoilerFurnaceRepair() {
               </div>
             </div>
             <div className="hidden lg:block lg:col-span-2">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Boiler and furnace repair Maryland DC Northern Virginia — 24/7 emergency heating" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
+              <img src="/manus-storage/service-boiler-repair_fe1a2660.jpg" alt="Boiler and furnace repair Maryland DC Northern Virginia — 24/7 emergency heating" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
           </div>
         </div>

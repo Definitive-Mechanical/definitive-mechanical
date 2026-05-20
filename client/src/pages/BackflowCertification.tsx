@@ -51,7 +51,7 @@ export default function BackflowCertification() {
               </div>
             </div>
             <div className="hidden lg:block lg:col-span-2">
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80" alt="Annual backflow preventer certification Maryland DC Northern Virginia" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
+              <img src="/manus-storage/service-backflow-prevention_3ef7968a.jpg" alt="Annual backflow preventer certification Maryland DC Northern Virginia" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
           </div>
         </div>

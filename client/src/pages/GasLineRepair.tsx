@@ -50,7 +50,7 @@ export default function GasLineRepair() {
               </div>
             </div>
             <div className="hidden lg:block lg:col-span-2">
-              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Licensed Master Gasfitter gas line repair Maryland DC Northern Virginia — Definitive Mechanical" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
+              <img src="/manus-storage/service-gas-line-repair_29e6c51c.jpg" alt="Licensed Master Gasfitter gas line repair Maryland DC Northern Virginia — Definitive Mechanical" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
           </div>
         </div>

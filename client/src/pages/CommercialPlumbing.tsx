@@ -73,7 +73,7 @@ export default function CommercialPlumbing() {
             </div>
             <div className="hidden lg:block lg:col-span-2">
               <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80"
+                src="/manus-storage/service-commercial-plumbing_88f441f4.jpg"
                 alt="Commercial plumbing Maryland DC Northern Virginia"
                 style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }}
               />

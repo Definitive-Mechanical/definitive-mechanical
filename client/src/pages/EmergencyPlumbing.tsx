@@ -144,7 +144,7 @@ export default function EmergencyPlumbing() {
 
             <div className="hidden lg:block lg:col-span-2">
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80"
+                src="/manus-storage/service-emergency-plumbing_ac2151e7.jpg"
                 alt="24/7 emergency plumber Maryland DC Northern Virginia — Definitive Mechanical"
                 style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }}
               />
