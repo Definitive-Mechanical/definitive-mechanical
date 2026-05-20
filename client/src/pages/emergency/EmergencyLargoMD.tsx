@@ -48,24 +48,24 @@ export default function EmergencyLargoMD() {
     <>
       <Helmet>
         <title>Emergency Plumber in Largo MD | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Largo MD — based here. Fastest response in our service area. WSSC #73696 · MD #96958 · 24/7 live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Largo MD — based here. Fastest response in our service area. WSSC #73696  MD #96958  24/7 live dispatcher. No overtime surcharge. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-largo-md/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
 
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-          ⚠️ LARGO PLUMBING EMERGENCY? CALL (301) 679-5849 — WE'RE BASED IN LARGO · FASTEST RESPONSE
+           LARGO PLUMBING EMERGENCY? CALL (301) 679-5849 — WE'RE BASED IN LARGO  FASTEST RESPONSE
         </a>
       </div>
 
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Largo MD" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · LARGO, MD · BASED RIGHT HERE</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  LARGO, MD  BASED RIGHT HERE</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Largo, MD</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical is based in Largo at 9701 Apollo Drive, Suite 100 — making our emergency response to Largo addresses the fastest in our service area. A live dispatcher answers every call. WSSC Master Plumber/Gasfitter #73696 · MD State #96958. No overtime surcharge. Call (301) 679-5849.
+            Definitive Mechanical is based in Largo at 9701 Apollo Drive, Suite 100 — making our emergency response to Largo addresses the fastest in our service area. A live dispatcher answers every call. WSSC Master Plumber/Gasfitter #73696  MD State #96958. No overtime surcharge. Call (301) 679-5849.
           </p>
           <div className="max-w-2xl mx-auto">
             <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -107,14 +107,14 @@ export default function EmergencyLargoMD() {
             ))}
           </div>
           <p className="text-center text-sm italic text-gray-500 max-w-2xl mx-auto mt-6" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Largo's mix of 1970s–1990s residential neighborhoods, the Central Avenue commercial corridor, and government-adjacent facilities near the Metro create a wide range of emergency scenarios. Being based here means our team knows Largo's streets and fastest routes — day or night.
+            Largo's mix of 1970s-1990s residential neighborhoods, the Central Avenue commercial corridor, and government-adjacent facilities near the Metro create a wide range of emergency scenarios. Being based here means our team knows Largo's streets and fastest routes — day or night.
           </p>
         </div>
       </section>
 
       <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="LICENSE PROOF" heading="WSSC and Maryland Licensed · Based in Largo" light />
+          <SectionHeading eyebrow="LICENSE PROOF" heading="WSSC and Maryland Licensed  Based in Largo" light />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
             {[{ label: "WSSC Master Plumber/Gasfitter", num: "#73696" }, { label: "Maryland State Master Plumber/Gasfitter", num: "#96958" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
@@ -165,7 +165,7 @@ export default function EmergencyLargoMD() {
         </div>
       </section>
 
-      <CTABanner heading="Largo plumbing emergency? We're based here." subtext="9701 Apollo Drive, Largo MD · WSSC #73696 · MD #96958 · 24/7 Live Dispatcher · No Overtime Surcharge." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Largo plumbing emergency? We're based here." subtext="9701 Apollo Drive, Largo MD  WSSC #73696  MD #96958  24/7 Live Dispatcher  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

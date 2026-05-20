@@ -12,7 +12,7 @@ export default function FlorisVA() {
       {label:"Fairfax County",href:"/service-areas/northern-virginia/fairfax-county/"},
       {label:"Floris VA"}
     ]}
-    eyebrow="Plumber in Floris, VA · Fairfax County · Serving from Largo, MD"
+    eyebrow="Plumber in Floris, VA  Fairfax County  Serving from Largo, MD"
     h1="Plumber in Floris, VA"
     introParagraph="Definitive Mechanical serves Floris, Virginia — a rural and semi-rural community in western Fairfax County near Herndon and Chantilly, with a mix of equestrian properties, custom homes on large lots, and newer residential subdivisions. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}

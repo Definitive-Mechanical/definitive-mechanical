@@ -19,18 +19,18 @@ const PAGE_SCHEMA = {
 };
 
 const FAQ_ITEMS = [
-  { question: "How long does a water heater last?", answer: "Standard gas and electric tank water heaters typically last 8–12 years with regular maintenance (annual flushing). Tankless water heaters typically last 15–20 years. Hard water areas — common in parts of Maryland and Northern Virginia — can shorten tank life due to mineral scale buildup without regular service." },
+  { question: "How long does a water heater last?", answer: "Standard gas and electric tank water heaters typically last 8-12 years with regular maintenance (annual flushing). Tankless water heaters typically last 15-20 years. Hard water areas — common in parts of Maryland and Northern Virginia — can shorten tank life due to mineral scale buildup without regular service." },
   { question: "Who installs water heaters in Maryland, DC, and Virginia?", answer: "Water heater installation should be performed by a licensed Master Plumber in every DMV jurisdiction. In Maryland, this includes compliance with WSSC regulations in Prince George's and Montgomery Counties. In DC, a DC Master Plumber license (#PGM1002236) is required. In Virginia, a state Master Plumber license (#2710064209) is required. Definitive Mechanical holds all of these. Unlicensed installation voids warranties and creates code violations." },
-  { question: "What size water heater do I need?", answer: "For a household of 1–2 people, a 30–40 gallon tank typically suffices. For 3–4 people, 40–50 gallons. For 5+ people or high-demand homes, 50–80 gallons or a tankless system. Commercial properties are sized based on peak demand load calculations. Our technicians assess your specific household or facility needs and recommend the right size — not the most expensive unit." },
+  { question: "What size water heater do I need?", answer: "For a household of 1-2 people, a 30-40 gallon tank typically suffices. For 3-4 people, 40-50 gallons. For 5+ people or high-demand homes, 50-80 gallons or a tankless system. Commercial properties are sized based on peak demand load calculations. Our technicians assess your specific household or facility needs and recommend the right size — not the most expensive unit." },
   { question: "Can you install a water heater the same day I call?", answer: "Same-day installation is available in many cases, depending on the unit type, technician availability, and permit requirements in your jurisdiction. Call (301) 679-5849 and we will give you an honest availability answer specific to your situation." },
 ];
 
 const PRICING_ROWS = [
-  { type: "Gas tank (40–50 gallon)", range: "$900–$1,600" },
-  { type: "Electric tank (40–50 gallon)", range: "$700–$1,300" },
-  { type: "Gas tank (75+ gallon, commercial-grade)", range: "$1,500–$2,800" },
-  { type: "Tankless gas (residential)", range: "$1,800–$3,500" },
-  { type: "Tankless electric (residential)", range: "$1,200–$2,500" },
+  { type: "Gas tank (40-50 gallon)", range: "$900-$1,600" },
+  { type: "Electric tank (40-50 gallon)", range: "$700-$1,300" },
+  { type: "Gas tank (75+ gallon, commercial-grade)", range: "$1,500-$2,800" },
+  { type: "Tankless gas (residential)", range: "$1,800-$3,500" },
+  { type: "Tankless electric (residential)", range: "$1,200-$2,500" },
 ];
 
 export default function WaterHeaterInstallation() {
@@ -45,7 +45,7 @@ export default function WaterHeaterInstallation() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Heater Repair', href: '/water-heater-repair/' }, { label: 'Water Heater Installation' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">WATER HEATER INSTALLATION · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">WATER HEATER INSTALLATION  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Water Heater Installation in Maryland, DC & Northern Virginia
               </h1>
@@ -84,7 +84,7 @@ export default function WaterHeaterInstallation() {
             <div>
               <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '16px' }}>Repair rather than replace when:</p>
               <div className="space-y-3">
-                {["The unit is under 8–10 years old with a single component failure", "The repair cost is under $300–$400 for a unit in otherwise good condition", "The tank has no corrosion and has been maintained with annual flushing"].map((item) => (
+                {["The unit is under 8-10 years old with a single component failure", "The repair cost is under $300-$400 for a unit in otherwise good condition", "The tank has no corrosion and has been maintained with annual flushing"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                     <CheckCircle2 size={18} color="#1A7A4A" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{item}</span>
@@ -109,7 +109,7 @@ export default function WaterHeaterInstallation() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <ServiceCard title="Gas Tank Water Heaters" iconName="Flame" href="/water-heater-installation" description="The most common type in MD, DC, and Northern VA homes. Gas units heat water faster at lower cost per gallon. We install 30, 40, 50, and 75+ gallon units. Gas installation requires a licensed Master Gasfitter — we hold that license in MD, DC, VA & DE." />
             <ServiceCard title="Electric Tank Water Heaters" iconName="Zap" href="/water-heater-installation" description="Common in homes without a gas connection or where running a gas line is not practical. We install 30, 40, 50, and 80+ gallon electric units with proper electrical connection and code-compliant installation." />
-            <ServiceCard title="Tankless Water Heaters" iconName="Waves" href="/tankless-water-heaters" description="Heat water on demand — no stored tank, no standby heat loss, significantly longer service life (15–20 years vs. 8–12 for tank units). Increasingly popular in MD and Northern VA for utility savings and space efficiency." featured />
+            <ServiceCard title="Tankless Water Heaters" iconName="Waves" href="/tankless-water-heaters" description="Heat water on demand — no stored tank, no standby heat loss, significantly longer service life (15-20 years vs. 8-12 for tank units). Increasingly popular in MD and Northern VA for utility savings and space efficiency." featured />
             <ServiceCard title="Indirect Water Heaters" iconName="Thermometer" href="/boiler-furnace-repair" description="Connected to a boiler system — common in older Maryland and DC-area homes with hydronic heating. We install and connect indirect water heater tanks as part of boiler system service." />
           </div>
         </div>
@@ -160,9 +160,9 @@ export default function WaterHeaterInstallation() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {[
-              { state: "MARYLAND", detail: "State #96958 · WSSC #73696 · Howard County · Anne Arundel County · City of Rockville #PLL-0002113" },
+              { state: "MARYLAND", detail: "State #96958  WSSC #73696  Howard County  Anne Arundel County  City of Rockville #PLL-0002113" },
               { state: "WASHINGTON DC", detail: "DC Master Plumber/Gasfitter #PGM1002236" },
-              { state: "VIRGINIA", detail: "State Master Plumber/Gasfitter #2710064209 · Class A Contractor #2705181061" },
+              { state: "VIRGINIA", detail: "State Master Plumber/Gasfitter #2710064209  Class A Contractor #2705181061" },
             ].map((item) => (
               <div key={item.state} style={{ background: 'white', borderRadius: '6px', padding: '28px', textAlign: 'center' }}>
                 <MapPin size={36} color="var(--brand-cyan)" style={{ margin: '0 auto 12px' }} />
@@ -188,7 +188,7 @@ export default function WaterHeaterInstallation() {
               <p className="eyebrow mb-2">HOW LONG DOES IT TAKE?</p>
               <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>How long does water heater installation take?</h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
-                A standard water heater replacement — same location, same fuel type, same approximate capacity — typically takes 2–4 hours for a licensed technician. This includes disconnecting and removing the old unit, connecting the new unit to existing supply lines and gas or electrical connections, testing, and cleanup.
+                A standard water heater replacement — same location, same fuel type, same approximate capacity — typically takes 2-4 hours for a licensed technician. This includes disconnecting and removing the old unit, connecting the new unit to existing supply lines and gas or electrical connections, testing, and cleanup.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 More complex installations — those requiring new gas line runs, new electrical circuits, venting modifications, or relocation of the unit — may take a full day or require scheduling a follow-up visit for additional trades work.

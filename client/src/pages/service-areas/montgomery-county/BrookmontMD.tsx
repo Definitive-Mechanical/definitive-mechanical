@@ -12,7 +12,7 @@ export default function BrookmontMD() {
       {label:"Montgomery County",href:"/service-areas/maryland/montgomery-county/"},
       {label:"Brookmont MD"}
     ]}
-    eyebrow="Plumber in Brookmont, MD · Montgomery County · Serving from Largo, MD"
+    eyebrow="Plumber in Brookmont, MD  Montgomery County  Serving from Largo, MD"
     h1="Plumber in Brookmont, MD"
     introParagraph="Definitive Mechanical serves Brookmont, Maryland — a small community in Montgomery County along the Potomac River, sandwiched between the Clara Barton Parkway and the D.C. border. Brookmont is a quiet neighborhood of mid-century homes with a wooded, riverine character and proximity to the C&O Canal. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}

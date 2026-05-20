@@ -18,11 +18,11 @@ const WATER_HEATER_SERVICES = [
 const WATER_HEATER_FAQ = [
   {
     question: 'How much does water heater repair cost in Maryland?',
-    answer: 'Water heater repair costs in Maryland depend on the type of failure, the unit type (gas, electric, or tankless), and whether parts are needed. Simple repairs like thermocouple replacement or element replacement typically range from $150–$350. Major repairs or replacements vary. Definitive Mechanical provides written pricing before any work begins. Call (301) 679-5849 for an estimate.',
+    answer: 'Water heater repair costs in Maryland depend on the type of failure, the unit type (gas, electric, or tankless), and whether parts are needed. Simple repairs like thermocouple replacement or element replacement typically range from $150-$350. Major repairs or replacements vary. Definitive Mechanical provides written pricing before any work begins. Call (301) 679-5849 for an estimate.',
   },
   {
     question: 'How do I know if my water heater needs to be repaired or replaced?',
-    answer: 'Water heaters typically last 8–12 years for tank units and 15–20 years for tankless units. If your unit is more than 10 years old and experiencing problems, replacement is often more cost-effective than repair. Signs that replacement may be the better option include: rust-colored water, rumbling or popping sounds, visible corrosion on the tank, or a unit that has required multiple repairs in the past year. We will give you an honest assessment — not a sales pitch.',
+    answer: 'Water heaters typically last 8-12 years for tank units and 15-20 years for tankless units. If your unit is more than 10 years old and experiencing problems, replacement is often more cost-effective than repair. Signs that replacement may be the better option include: rust-colored water, rumbling or popping sounds, visible corrosion on the tank, or a unit that has required multiple repairs in the past year. We will give you an honest assessment — not a sales pitch.',
   },
   {
     question: 'Do you install tankless water heaters in Maryland and Virginia?',
@@ -56,7 +56,7 @@ export default function WaterHeaterRepair() {
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
-                WATER HEATER REPAIR & REPLACEMENT · MD, DC & NORTHERN VIRGINIA
+                WATER HEATER REPAIR & REPLACEMENT  MD, DC & NORTHERN VIRGINIA
               </p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Water Heater Repair & Replacement — Maryland, DC & Northern Virginia
@@ -125,7 +125,7 @@ export default function WaterHeaterRepair() {
               { title: 'Rumbling, popping, or banging sounds', desc: 'Sediment buildup on the bottom of the tank. Annual flushing can prevent this from becoming a major problem.' },
               { title: 'Water pooling around the base of the unit', desc: 'Could indicate a leaking pressure relief valve, loose connections, or a failing tank. Do not ignore water at the base of a water heater.' },
               { title: 'Inconsistent water temperature', desc: 'Fluctuating hot water temperature typically indicates a failing thermostat or heating element.' },
-              { title: 'Unit is 10+ years old', desc: 'Standard tank water heaters have an average lifespan of 8–12 years. If yours is approaching or past this age, a proactive replacement can prevent an emergency.' },
+              { title: 'Unit is 10+ years old', desc: 'Standard tank water heaters have an average lifespan of 8-12 years. If yours is approaching or past this age, a proactive replacement can prevent an emergency.' },
             ].map((item) => (
               <div key={item.title} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', background: 'white', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px' }}>
                 <Thermometer size={20} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
@@ -145,7 +145,7 @@ export default function WaterHeaterRepair() {
           <SectionHeading
             eyebrow="TANKLESS WATER HEATERS"
             heading="Is a tankless water heater right for your home or building?"
-            subtext="Tankless water heaters provide on-demand hot water with no standby heat loss — and a lifespan of 15–20 years versus 8–12 for standard tank units."
+            subtext="Tankless water heaters provide on-demand hot water with no standby heat loss — and a lifespan of 15-20 years versus 8-12 for standard tank units."
             centered
             light
           />
@@ -153,7 +153,7 @@ export default function WaterHeaterRepair() {
             {[
               { icon: Zap, title: 'Unlimited Hot Water', desc: 'On-demand heating means no running out of hot water during peak usage.' },
               { icon: Flame, title: 'Energy Efficient', desc: 'No standby heat loss. Only heats water when you need it.' },
-              { icon: CheckCircle2, title: 'Longer Lifespan', desc: '15–20 year lifespan versus 8–12 for standard tank units.' },
+              { icon: CheckCircle2, title: 'Longer Lifespan', desc: '15-20 year lifespan versus 8-12 for standard tank units.' },
               { icon: ChevronRight, title: 'Space Saving', desc: 'Wall-mounted units free up significant floor space versus tank units.' },
             ].map((item) => (
               <div key={item.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '6px', padding: '24px', textAlign: 'center' }}>

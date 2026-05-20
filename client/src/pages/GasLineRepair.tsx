@@ -36,7 +36,7 @@ export default function GasLineRepair() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">GAS LINE REPAIR · LICENSED MASTER GASFITTER · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">GAS LINE REPAIR  LICENSED MASTER GASFITTER  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Gas Line Repair — Licensed Master Gasfitter Serving Maryland, DC & Northern Virginia
               </h1>
@@ -99,7 +99,7 @@ export default function GasLineRepair() {
           <SectionHeading eyebrow="GAS LINE REPAIR SERVICES" heading="What gas line repair services does Definitive Mechanical provide?" centered />
           <div className="max-w-4xl mx-auto space-y-4">
             {[
-              { Icon: Search, title: "Gas Leak Detection and Repair", body: "Using pressure testing and specialized gas leak detection equipment, we locate and repair gas leaks in supply lines, fittings, connections, and appliance hookups.", link: { label: "Gas Leak Repair →", href: "/gas-leak-repair" } },
+              { Icon: Search, title: "Gas Leak Detection and Repair", body: "Using pressure testing and specialized gas leak detection equipment, we locate and repair gas leaks in supply lines, fittings, connections, and appliance hookups.", link: { label: "Gas Leak Repair ->", href: "/gas-leak-repair" } },
               { Icon: Wrench, title: "Gas Pipe Repair and Replacement", body: "Repair or replacement of corroded, damaged, or undersized gas supply piping — both interior and exterior.", link: null },
               { Icon: Link2, title: "Gas Appliance Connection Repair", body: "Repair and replacement of flexible appliance connectors, shut-off valves, and fitting connections to gas ranges, dryers, water heaters, fireplaces, HVAC systems, generators, and other gas appliances.", link: null },
               { Icon: Gauge, title: "Gas Pressure Testing", body: "Pressure testing of the gas supply system after any repair or modification — required by code in most jurisdictions before the gas supply is restored.", link: null },

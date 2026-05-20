@@ -9,7 +9,7 @@ import TrustBadges from '@/components/ui/TrustBadges';
 
 const FAQ_ITEMS = [
   { question: "What are the warning signs of a water line problem?", answer: "Key warning signs include an unexplained spike in your water bill, reduced water pressure throughout the home, discolored water, wet spots or soggy areas in the yard (particularly along the water line path), and sounds of running water when no fixtures are in use. Any of these warrant a professional assessment." },
-  { question: "How much does water line repair cost?", answer: "Water line repair ranges from $400–$1,000 for accessible pipe repairs to $3,000–$8,000+ for full residential service line replacement, depending on depth, access, pipe material, and scope. We provide written pricing after assessment — before any excavation begins." },
+  { question: "How much does water line repair cost?", answer: "Water line repair ranges from $400-$1,000 for accessible pipe repairs to $3,000-$8,000+ for full residential service line replacement, depending on depth, access, pipe material, and scope. We provide written pricing after assessment — before any excavation begins." },
   { question: "Do you handle emergency water line repairs?", answer: "Yes. Emergency water line repair is available 24/7 across Maryland, DC, and Northern Virginia. Call (301) 679-5849 immediately for an active water line failure. Our first step is typically to help you locate and shut off the main supply valve while we are in transit." },
 ];
 
@@ -24,10 +24,10 @@ const WARNING_SIGNS = [
 ];
 
 const PRICING_ROWS = [
-  { type: "Accessible pipe section repair", range: "$400–$1,000" },
-  { type: "Excavation and spot repair", range: "$1,000–$3,500" },
-  { type: "Full service line replacement (residential)", range: "$3,000–$8,000+" },
-  { type: "Emergency response and containment", range: "$500–$2,000" },
+  { type: "Accessible pipe section repair", range: "$400-$1,000" },
+  { type: "Excavation and spot repair", range: "$1,000-$3,500" },
+  { type: "Full service line replacement (residential)", range: "$3,000-$8,000+" },
+  { type: "Emergency response and containment", range: "$500-$2,000" },
 ];
 
 export default function WaterLineRepair() {
@@ -40,7 +40,7 @@ export default function WaterLineRepair() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Line Repair' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">WATER LINE REPAIR · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">WATER LINE REPAIR  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Water Line Repair in Maryland, DC & Northern Virginia
               </h1>

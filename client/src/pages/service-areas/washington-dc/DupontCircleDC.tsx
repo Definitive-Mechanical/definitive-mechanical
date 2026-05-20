@@ -10,13 +10,13 @@ export default function DupontCircleDC() {
       metaDescription={`Licensed plumber serving Dupont Circle, DC. Plumbing, gas, water heater & emergency service for Dupont Circle's rowhouses, condos & embassies. DC #PGM1002236. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/dupont-circle/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Washington DC",href:"/service-areas/washington-dc"},{label:"Dupont Circle"}]}
-      eyebrow="Plumber in Dupont Circle, DC · DC License #PGM1002236"
+      eyebrow="Plumber in Dupont Circle, DC  DC License #PGM1002236"
       h1="Plumber in Dupont Circle, DC"
       introParagraph={`Definitive Mechanical provides licensed plumbing, gas, emergency, and commercial services in Dupont Circle — a vibrant, densely populated DC neighborhood characterized by Beaux-Arts and Victorian rowhouses, apartment buildings, embassy properties, and an active commercial corridor along Connecticut and Massachusetts Avenues. We hold DC Master Plumber/Gasfitter License #PGM1002236 for all licensed plumbing work in the District.`}
       trustItems={["DC Master Plumber/Gasfitter #PGM1002236","MDOT MBE Cert 20-134","24/7 Emergency","CAGE 8HCF6"]}
       services={[{label:"24/7 Emergency Plumbing",href:"/emergency-plumbing"},{label:"Water Heater Repair & Installation",href:"/water-heater-repair"},{label:"Drain Cleaning & Sewer Line Repair",href:"/drain-cleaning"},{label:"Gas Line Repair — DC DCRA-licensed Master Gasfitter",href:"/gas-line-repair"},{label:"Backflow Certification — DC Water compliant",href:"/backflow-certification"},{label:"Commercial Plumbing — restaurant and retail on the Circle and nearby avenues",href:"/commercial-plumbing"}]}
       localContextHeading="What makes Dupont Circle unique for plumbing?"
-      localContextBody={`Dupont Circle's housing stock dates primarily from 1890–1930, with significant apartment building construction in the 1920s–1950s. Pre-war apartment buildings in the neighborhood have central plumbing infrastructure — building-wide supply risers, shared sewer stacks, and aging boiler and steam heating systems — that requires coordination with building management for any repair or emergency response.
+      localContextBody={`Dupont Circle's housing stock dates primarily from 1890-1930, with significant apartment building construction in the 1920s-1950s. Pre-war apartment buildings in the neighborhood have central plumbing infrastructure — building-wide supply risers, shared sewer stacks, and aging boiler and steam heating systems — that requires coordination with building management for any repair or emergency response.
 
 The neighborhood's embassy corridor along Massachusetts Avenue NW presents commercial-grade plumbing requirements, including backflow certification and gas compliance documentation.`}
       licenseHeading="Are you licensed for Dupont Circle plumbing work?"

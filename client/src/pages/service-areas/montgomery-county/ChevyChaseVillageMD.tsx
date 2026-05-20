@@ -12,7 +12,7 @@ export default function ChevyChaseVillageMD() {
       {label:"Montgomery County",href:"/service-areas/maryland/montgomery-county/"},
       {label:"Chevy Chase Village MD"}
     ]}
-    eyebrow="Plumber in Chevy Chase Village, MD · Montgomery County · Serving from Largo, MD"
+    eyebrow="Plumber in Chevy Chase Village, MD  Montgomery County  Serving from Largo, MD"
     h1="Plumber in Chevy Chase Village, MD"
     introParagraph="Definitive Mechanical serves Chevy Chase Village, Maryland — an incorporated municipality within Montgomery County just north of Washington DC, containing some of the region&#39;s finest early-20th-century residential architecture. Chevy Chase Village&#39;s homes were built predominantly between 1900 and 1940 in Colonial Revival, Georgian, and Tudor styles on large, tree-lined lots. The plumbing in these properties spans multiple eras and renovation layers. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}

@@ -6,7 +6,7 @@ export default function Ward5DC() {
     canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/ward-5/"
     schemaJson={[]}
     breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas/"},{label:"Washington DC",href:"/service-areas/washington-dc/"},{label:"Ward 5"}]}
-    eyebrow="Plumber in DC Ward 5 · Brookland, Woodridge, Michigan Park, Brentwood"
+    eyebrow="Plumber in DC Ward 5  Brookland, Woodridge, Michigan Park, Brentwood"
     h1="Plumber in Washington DC Ward 5"
     introParagraph="Definitive Mechanical serves Washington DC Ward 5 — encompassing Brookland, Woodridge, Michigan Park, Brentwood, Edgewood, and Langdon. Ward 5 is a diverse residential ward with a mix of single-family homes, rowhouses, and multi-unit buildings. We hold DC Master Plumber License #LP2024-01234."
     trustItems={["DC License #LP2024-01234","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}

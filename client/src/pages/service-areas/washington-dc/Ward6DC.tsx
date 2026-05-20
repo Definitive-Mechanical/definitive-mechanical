@@ -6,7 +6,7 @@ export default function Ward6DC() {
     canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/ward-6/"
     schemaJson={[]}
     breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas/"},{label:"Washington DC",href:"/service-areas/washington-dc/"},{label:"Ward 6"}]}
-    eyebrow="Plumber in DC Ward 6 · Capitol Hill, Navy Yard, NoMa, Near Northeast"
+    eyebrow="Plumber in DC Ward 6  Capitol Hill, Navy Yard, NoMa, Near Northeast"
     h1="Plumber in Washington DC Ward 6"
     introParagraph="Definitive Mechanical serves Washington DC Ward 6 — encompassing Capitol Hill, Navy Yard, NoMa, Near Northeast, and Barracks Row. Ward 6 combines historic Capitol Hill rowhouses with new high-rise residential and commercial development at Navy Yard and NoMa. We hold DC Master Plumber License #LP2024-01234."
     trustItems={["DC License #LP2024-01234","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}

@@ -12,7 +12,7 @@ export default function SomersetMD() {
       {label:"Montgomery County",href:"/service-areas/maryland/montgomery-county/"},
       {label:"Somerset MD"}
     ]}
-    eyebrow="Plumber in Somerset, MD · Montgomery County · Serving from Largo, MD"
+    eyebrow="Plumber in Somerset, MD  Montgomery County  Serving from Largo, MD"
     h1="Plumber in Somerset, MD"
     introParagraph="Definitive Mechanical serves Somerset, Maryland — a small, incorporated municipality within Montgomery County, entirely surrounded by the towns of Chevy Chase. Somerset is a community of early-to-mid 20th century homes on a quiet residential grid, with housing stock that reflects the distinctive plumbing challenges of that era. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}

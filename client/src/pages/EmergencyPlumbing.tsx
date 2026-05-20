@@ -98,7 +98,7 @@ export default function EmergencyPlumbing() {
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
-                24/7 EMERGENCY SERVICE · MD, DC & NORTHERN VIRGINIA
+                24/7 EMERGENCY SERVICE  MD, DC & NORTHERN VIRGINIA
               </p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 24/7 Emergency Plumbing Service — Maryland, DC & Northern Virginia
@@ -136,7 +136,7 @@ export default function EmergencyPlumbing() {
               </a>
 
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.7)', fontSize: '14px', marginBottom: '16px' }}>
-                ✓ Licensed Master Plumber on Every Emergency Call &nbsp;✓ Upfront Flat Pricing &nbsp;✓ MD, DC, VA & DE Licensed
+                 Licensed Master Plumber on Every Emergency Call &nbsp; Upfront Flat Pricing &nbsp; MD, DC, VA & DE Licensed
               </p>
 
               <BookNowButton variant="outline" text="REQUEST EMERGENCY SERVICE" href="/contact" size="md" />

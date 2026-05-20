@@ -91,7 +91,7 @@ export default function About() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {[
               { number: '11', label: 'Years in Business', icon: Clock },
-              { number: '4.8★', label: 'Google Rating', icon: Star },
+              { number: '4.8', label: 'Google Rating', icon: Star },
               { number: '4', label: 'States Licensed', icon: ShieldCheck },
               { number: '25+', label: 'Years Trade Experience', icon: Award },
             ].map((stat, index) => (

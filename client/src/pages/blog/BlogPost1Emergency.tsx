@@ -38,7 +38,7 @@ const faqSchema = {
       name: "Is a burst pipe a plumbing emergency?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes — always. A burst pipe at full line pressure can release 200–400 gallons of water per hour. Shut off the main water valve immediately and call your plumber's emergency line.",
+        text: "Yes — always. A burst pipe at full line pressure can release 200-400 gallons of water per hour. Shut off the main water valve immediately and call your plumber's emergency line.",
       },
     },
     {
@@ -150,7 +150,7 @@ export default function BlogPost1Emergency() {
           ]}
         />
 
-        <BlogEyebrow>Emergency Plumbing Guide · 6 min read</BlogEyebrow>
+        <BlogEyebrow>Emergency Plumbing Guide  6 min read</BlogEyebrow>
         <BlogH1>What Qualifies as a Plumbing Emergency?</BlogH1>
         <AuthorBlock date="January 15, 2026" />
 
@@ -174,7 +174,7 @@ export default function BlogPost1Emergency() {
 
         <BlogH2>Is a burst pipe a plumbing emergency?</BlogH2>
         <BlogP>
-          Yes — always. A burst pipe at full line pressure can release 200–400 gallons of water per hour. At that rate, a 30-minute delay before shutting off the water can mean thousands of dollars in structural and contents damage. If you have a burst pipe:
+          Yes — always. A burst pipe at full line pressure can release 200-400 gallons of water per hour. At that rate, a 30-minute delay before shutting off the water can mean thousands of dollars in structural and contents damage. If you have a burst pipe:
         </BlogP>
         <BlogUL>
           <li>Find your main water shutoff valve and turn it off immediately (clockwise to close).</li>
@@ -182,7 +182,7 @@ export default function BlogPost1Emergency() {
           <li>Document the damage with photos before any cleanup — your insurance company will need this.</li>
         </BlogUL>
         <BlogP>
-          A licensed plumber can typically complete a pipe repair in 1–3 hours once on-site. The damage from waiting is almost always more expensive than the repair itself.
+          A licensed plumber can typically complete a pipe repair in 1-3 hours once on-site. The damage from waiting is almost always more expensive than the repair itself.
         </BlogP>
 
         <BlogH2>Is a sewer backup a plumbing emergency?</BlogH2>
@@ -290,7 +290,7 @@ export default function BlogPost1Emergency() {
           Definitive Mechanical provides 24/7 emergency plumbing service throughout Maryland, Washington DC, and Northern Virginia. Our emergency line is staffed by a live person — not an answering service. Licensed Master Plumber on every emergency call.
           <br />
           <br />
-          📞 Call (301) 679-5849 — 24/7 Emergency Line
+           Call (301) 679-5849 — 24/7 Emergency Line
           <br />
           MD Master Plumber #96958 | DC Master Plumber #PGM1002236 | VA Master Plumber #2710064209
         </CalloutBox>

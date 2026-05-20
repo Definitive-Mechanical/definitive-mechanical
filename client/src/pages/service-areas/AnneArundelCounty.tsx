@@ -36,7 +36,7 @@ export default function AnneArundelCounty() {
     <>
       <Helmet>
         <title>Plumber in Anne Arundel County MD | Definitive Mechanical | (301) 679-5849</title>
-        <meta name="description" content="Licensed plumbing services throughout Anne Arundel County MD. Anne Arundel County #A2-6139 · MD #96958. 24/7 emergency. Call (301) 679-5849." />
+        <meta name="description" content="Licensed plumbing services throughout Anne Arundel County MD. Anne Arundel County #A2-6139  MD #96958. 24/7 emergency. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/service-areas/maryland/anne-arundel-county/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
@@ -44,10 +44,10 @@ export default function AnneArundelCounty() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Maryland", href: "/service-areas/maryland/" }, { label: "Anne Arundel County" }]}/>
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES · ANNE ARUNDEL COUNTY, MD</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES  ANNE ARUNDEL COUNTY, MD</p>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em', lineHeight: 1.0 }}>Plumber in Anne Arundel County, MD</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical provides licensed plumbing services throughout Anne Arundel County — Annapolis, Glen Burnie, Severn, Severna Park, and all county communities. Anne Arundel County #A2-6139 · MD State #96958. 24/7 emergency. Call (301) 679-5849.
+            Definitive Mechanical provides licensed plumbing services throughout Anne Arundel County — Annapolis, Glen Burnie, Severn, Severna Park, and all county communities. Anne Arundel County #A2-6139  MD State #96958. 24/7 emergency. Call (301) 679-5849.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
@@ -98,7 +98,7 @@ export default function AnneArundelCounty() {
         </div>
       </section>
 
-      <CTABanner heading="Need a plumber in Anne Arundel County?" subtext="Anne Arundel County #A2-6139 · MD #96958 · 24/7 Emergency." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Need a plumber in Anne Arundel County?" subtext="Anne Arundel County #A2-6139  MD #96958  24/7 Emergency." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

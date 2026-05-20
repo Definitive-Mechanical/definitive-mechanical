@@ -10,7 +10,7 @@ import TrustBadges from '@/components/ui/TrustBadges';
 
 const FAQ_ITEMS = [
   { question: "Is hydro-jetting better than snaking?", answer: "For most recurring clogs and commercial drain systems, yes. Hydro-jetting cleans the full interior of the pipe rather than just breaking through the center of a blockage. For a simple, first-time clog in an otherwise healthy line, cable snaking is fast and effective. Our technician will recommend the appropriate method after assessment — we do not upsell hydro-jetting when snaking will solve the problem." },
-  { question: "How often should commercial drains be hydro-jetted?", answer: "Restaurant and food service facilities with heavy grease production typically benefit from hydro-jetting every 3–6 months depending on volume. Commercial properties with high use but lower grease loads may benefit from annual jetting. We can set up a scheduled maintenance program for your facility." },
+  { question: "How often should commercial drains be hydro-jetted?", answer: "Restaurant and food service facilities with heavy grease production typically benefit from hydro-jetting every 3-6 months depending on volume. Commercial properties with high use but lower grease loads may benefit from annual jetting. We can set up a scheduled maintenance program for your facility." },
   { question: "Can hydro-jetting damage pipes?", answer: "Hydro-jetting can damage pipes that are already severely deteriorated or structurally compromised. This is why camera inspection before jetting is important for older systems. Definitive Mechanical assesses pipe condition before recommending hydro-jetting and does not jet pipes that show signs of imminent failure." },
 ];
 
@@ -24,9 +24,9 @@ const COMPARISON_ROWS = [
 ];
 
 const PRICING_ROWS = [
-  { type: "Residential hydro-jetting (drain line)", range: "$300–$600" },
-  { type: "Residential hydro-jetting (sewer line)", range: "$400–$800" },
-  { type: "Commercial hydro-jetting", range: "$500–$1,500+ depending on line size and length" },
+  { type: "Residential hydro-jetting (drain line)", range: "$300-$600" },
+  { type: "Residential hydro-jetting (sewer line)", range: "$400-$800" },
+  { type: "Commercial hydro-jetting", range: "$500-$1,500+ depending on line size and length" },
 ];
 
 const WHEN_TO_USE = [
@@ -48,7 +48,7 @@ export default function HydroJetting() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Drain Cleaning', href: '/drain-cleaning' }, { label: 'Hydro-Jetting' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">HYDRO-JETTING SERVICE · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">HYDRO-JETTING SERVICE  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Hydro-Jetting Service in Maryland, DC & Northern Virginia
               </h1>
@@ -76,14 +76,14 @@ export default function HydroJetting() {
               <p className="eyebrow mb-2">HOW IT WORKS</p>
               <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>What is hydro-jetting and how does it work?</h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
-                Hydro-jetting is a drain and sewer line cleaning method that uses a high-pressure water stream — typically 1,500–4,000 PSI — delivered through a specialized nozzle inserted into the drain or sewer line. The nozzle simultaneously jets water forward to break up blockages and backwards against the pipe wall to scour grease, scale, mineral deposits, and debris from the interior surface.
+                Hydro-jetting is a drain and sewer line cleaning method that uses a high-pressure water stream — typically 1,500-4,000 PSI — delivered through a specialized nozzle inserted into the drain or sewer line. The nozzle simultaneously jets water forward to break up blockages and backwards against the pipe wall to scour grease, scale, mineral deposits, and debris from the interior surface.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
                 Unlike cable snaking, which punches a hole through a blockage without necessarily clearing the pipe walls, hydro-jetting cleans the entire interior circumference of the pipe from cleanout to cleanout. The result is a pipe that flows at near-original capacity rather than a pipe with a cleared center and heavily coated walls.
               </p>
               <div style={{ background: 'var(--surface-1)', borderRadius: '4px', padding: '16px' }}>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--brand-navy)', fontSize: '14px', lineHeight: 1.6 }}>
-                  Hydro-jetting operates at 1,500–4,000 PSI — enough pressure to remove decades of grease, scale, and root mass from pipe walls.
+                  Hydro-jetting operates at 1,500-4,000 PSI — enough pressure to remove decades of grease, scale, and root mass from pipe walls.
                 </p>
               </div>
             </div>

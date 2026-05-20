@@ -10,15 +10,15 @@ import TrustBadges from '@/components/ui/TrustBadges';
 
 const FAQ_ITEMS = [
   { question: "Is a tankless water heater worth it?", answer: "For most homeowners in Maryland, DC, and Northern Virginia who plan to stay in their home for 5+ years, yes — the energy savings, longer lifespan, and continuous hot water supply typically justify the higher upfront cost. For homes with very low hot water usage or short-term ownership plans, a standard tank replacement may make more financial sense. We give honest guidance based on your specific situation." },
-  { question: "How long do tankless water heaters last?", answer: "Tankless water heaters typically last 15–20 years with regular maintenance, including annual descaling in hard water areas. This is significantly longer than the 8–12 year average for tank-style water heaters, which contributes to tankless being cost-competitive over a full ownership period." },
+  { question: "How long do tankless water heaters last?", answer: "Tankless water heaters typically last 15-20 years with regular maintenance, including annual descaling in hard water areas. This is significantly longer than the 8-12 year average for tank-style water heaters, which contributes to tankless being cost-competitive over a full ownership period." },
   { question: "What size tankless water heater do I need?", answer: "Sizing depends on your peak simultaneous hot water demand (how many fixtures run at the same time) and your incoming water temperature (colder in winter, which affects the temperature rise required). Our licensed technicians calculate the correct size for your household or facility — under-sizing a tankless unit is one of the most common installation mistakes made by unlicensed installers." },
   { question: "Can a tankless water heater run out of hot water?", answer: "A properly sized tankless unit will not run out of hot water the way a tank does. It heats water continuously as long as demand exists. However, an undersized unit may not maintain target temperature if multiple high-demand fixtures run simultaneously — which is why correct sizing by a licensed plumber matters." },
 ];
 
 const PRICING_ROWS = [
-  { type: "Gas tankless (residential, standard)", range: "$1,800–$3,000" },
-  { type: "Gas tankless (high-output or whole-home)", range: "$2,500–$3,500+" },
-  { type: "Electric tankless (residential)", range: "$1,200–$2,500" },
+  { type: "Gas tankless (residential, standard)", range: "$1,800-$3,000" },
+  { type: "Gas tankless (high-output or whole-home)", range: "$2,500-$3,500+" },
+  { type: "Electric tankless (residential)", range: "$1,200-$2,500" },
   { type: "Commercial tankless installation", range: "Custom quote based on demand load" },
 ];
 
@@ -41,7 +41,7 @@ export default function TanklessWaterHeaters() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Heater Repair', href: '/water-heater-repair' }, { label: 'Tankless Water Heaters' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">TANKLESS WATER HEATERS · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">TANKLESS WATER HEATERS  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Tankless Water Heater Installation & Repair in Maryland, DC & Northern Virginia
               </h1>
@@ -71,11 +71,11 @@ export default function TanklessWaterHeaters() {
                 A tankless water heater — also called an on-demand water heater — heats water directly as it flows through the unit rather than storing a preheated tank of water. When you open a hot water tap, cold water travels through a pipe into the unit where it is heated by a gas burner or electric element. The result: hot water delivered continuously, without the wait for a tank to refill and reheat.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
-                Traditional tank water heaters maintain a constant supply of heated water — which means they are continuously using energy to keep that water hot even when no one is using it. This standby heat loss accounts for 15–20% of a typical home's water heating energy use according to the U.S. Department of Energy. Tankless units eliminate standby loss entirely.
+                Traditional tank water heaters maintain a constant supply of heated water — which means they are continuously using energy to keep that water hot even when no one is using it. This standby heat loss accounts for 15-20% of a typical home's water heating energy use according to the U.S. Department of Energy. Tankless units eliminate standby loss entirely.
               </p>
               <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '20px' }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '18px', lineHeight: 1.5 }}>
-                  "15–20% of home water heating energy is wasted on standby heat loss in tank units. Tankless eliminates it."
+                  "15-20% of home water heating energy is wasted on standby heat loss in tank units. Tankless eliminates it."
                 </p>
               </div>
             </div>
@@ -93,10 +93,10 @@ export default function TanklessWaterHeaters() {
           <div className="max-w-4xl mx-auto space-y-4">
             {[
               { Icon: Infinity, title: "Continuous hot water supply.", body: "A properly sized tankless unit never runs out of hot water the way a tank unit does during high-demand periods — multiple showers, laundry, and dishwasher running simultaneously." },
-              { Icon: TrendingDown, title: "Lower energy costs.", body: "The U.S. Department of Energy estimates tankless water heaters can be 24–34% more energy efficient than conventional storage tanks for homes that use 41 gallons or less of hot water daily." },
-              { Icon: Clock, title: "Longer service life.", body: "Tankless units typically last 15–20 years — compared to 8–12 years for tank units. Over a 20-year period, the total cost of ownership for tankless is often lower despite the higher upfront installation cost." },
+              { Icon: TrendingDown, title: "Lower energy costs.", body: "The U.S. Department of Energy estimates tankless water heaters can be 24-34% more energy efficient than conventional storage tanks for homes that use 41 gallons or less of hot water daily." },
+              { Icon: Clock, title: "Longer service life.", body: "Tankless units typically last 15-20 years — compared to 8-12 years for tank units. Over a 20-year period, the total cost of ownership for tankless is often lower despite the higher upfront installation cost." },
               { Icon: Maximize2, title: "Space savings.", body: "Tankless units are wall-mounted and occupy a fraction of the floor space of a 50-gallon tank. This matters in smaller Maryland rowhouses, DC condos, and Northern Virginia townhomes where mechanical space is limited." },
-              { Icon: ShieldCheck, title: "Reduced water damage risk.", body: "A failed tank water heater can release 40–80 gallons of water into your home. A tankless unit has no tank to rupture." },
+              { Icon: ShieldCheck, title: "Reduced water damage risk.", body: "A failed tank water heater can release 40-80 gallons of water into your home. A tankless unit has no tank to rupture." },
             ].map(({ Icon, title, body }) => (
               <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '24px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
                 <Icon size={32} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
@@ -116,7 +116,7 @@ export default function TanklessWaterHeaters() {
           <SectionHeading eyebrow="BEING HONEST WITH YOU" heading="Are there any drawbacks to tankless water heaters?" subtext="Being honest matters more than making a sale. Tankless systems are not the right fit for every home or budget." centered />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {[
-              { Icon: DollarSign, title: "Higher upfront cost.", body: "Tankless installation typically costs $1,800–$3,500+ for gas units — compared to $700–$1,600 for a standard tank replacement. The long-term savings are real, but the upfront investment is larger. Financing available through Synchrony." },
+              { Icon: DollarSign, title: "Higher upfront cost.", body: "Tankless installation typically costs $1,800-$3,500+ for gas units — compared to $700-$1,600 for a standard tank replacement. The long-term savings are real, but the upfront investment is larger. Financing available through Synchrony." },
               { Icon: GitBranch, title: "May require gas line upgrades.", body: "High-output gas tankless units often require a larger gas supply line than what currently serves the home's water heater location. If your existing gas line is undersized, a gas line run increases the installation cost." },
               { Icon: Zap, title: "May require electrical upgrades.", body: "Electric tankless units — particularly whole-home units — draw significant amperage and often require dedicated circuit additions or panel upgrades." },
               { Icon: Snowflake, title: "Cold climate performance.", body: "In Maryland and Northern Virginia winters, incoming water temperature drops significantly, which can reduce the flow rate. Proper sizing accounts for this — which is why sizing by a licensed plumber matters." },

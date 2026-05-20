@@ -58,7 +58,7 @@ export default function Contact() {
 
       {/* Emergency Top Bar */}
       <a href="tel:+13016795849" className="block w-full py-3 text-center" style={{ background: "var(--brand-cyan)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--brand-navy)", textDecoration: "none" }}>
-        ⚡ Plumbing Emergency? Call (301) 679-5849 — Live Dispatcher Answering 24/7, 365 Days
+         Plumbing Emergency? Call (301) 679-5849 — Live Dispatcher Answering 24/7, 365 Days
       </a>
 
       {/* Hero */}
@@ -67,7 +67,7 @@ export default function Contact() {
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
           <div className="mt-6">
             <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
-              CONTACT US · LARGO, MD · SERVING MD, DC & NORTHERN VIRGINIA
+              CONTACT US  LARGO, MD  SERVING MD, DC & NORTHERN VIRGINIA
             </p>
             <h1 style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "clamp(28px,4vw,44px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
               Contact Definitive Mechanical
@@ -75,7 +75,7 @@ export default function Contact() {
             <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "600px", lineHeight: 1.7 }} className="mb-6">
               For 24/7 emergency plumbing, call (301) 679-5849 — a live dispatcher answers every call. For non-emergency service requests, use the form below and we will respond within one business day.
             </p>
-            <TrustBadges variant="dark" badges={["24/7 Emergency Line", "Licensed Master Plumber", "MD · DC · VA · DE", "MDOT MBE Certified"]} />
+            <TrustBadges variant="dark" badges={["24/7 Emergency Line", "Licensed Master Plumber", "MD  DC  VA  DE", "MDOT MBE Certified"]} />
           </div>
         </div>
       </section>
@@ -131,8 +131,8 @@ export default function Contact() {
                   <div>
                     <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Hours</p>
                     <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.6 }}>
-                      Mon–Fri: 9am–5pm<br />
-                      Saturday: 9am–2pm<br />
+                      Mon-Fri: 9am-5pm<br />
+                      Saturday: 9am-2pm<br />
                       <span style={{ color: "var(--brand-cyan)", fontWeight: 600 }}>24/7 Emergency Service</span>
                     </p>
                   </div>
@@ -143,7 +143,7 @@ export default function Contact() {
               <div className="mt-8 p-4 rounded" style={{ background: "var(--surface-1)" }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em" }} className="mb-1">SERVICE AREA</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }}>
-                  Maryland (Prince George's, Montgomery, Howard, Anne Arundel, Charles Counties) · Washington DC · Northern Virginia (Fairfax, Arlington, Loudoun, Prince William Counties)
+                  Maryland (Prince George's, Montgomery, Howard, Anne Arundel, Charles Counties)  Washington DC  Northern Virginia (Fairfax, Arlington, Loudoun, Prince William Counties)
                 </p>
               </div>
             </div>
@@ -166,7 +166,7 @@ export default function Contact() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Free Estimate · No Obligation</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Free Estimate  No Obligation</p>
                     <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'white', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                     {/* Name + Phone */}
@@ -240,7 +240,7 @@ export default function Contact() {
 
                     <button type="submit" disabled={submitting}
                       style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
-                      {submitting ? 'Submitting…' : 'SUBMIT SERVICE REQUEST'}
+                      {submitting ? 'Submitting...' : 'SUBMIT SERVICE REQUEST'}
                     </button>
 
                     <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>

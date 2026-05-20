@@ -41,7 +41,7 @@ export default function SWaMCertified() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
             <div className="lg:col-span-3">
               <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
-                VIRGINIA SWAM CERTIFIED · CERT NO. 815255 · NORTHERN VIRGINIA
+                VIRGINIA SWAM CERTIFIED  CERT NO. 815255  NORTHERN VIRGINIA
               </p>
               <h1 style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "clamp(28px,4vw,42px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
                 Virginia SWaM Certified Plumbing Contractor

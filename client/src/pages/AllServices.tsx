@@ -124,7 +124,7 @@ const faqs = [
   },
   {
     q: "How fast can you come for an emergency?",
-    a: "Emergency calls are dispatched immediately 24/7. Most addresses within our core service area receive a response within 45–75 minutes. From our Largo, MD location, PG County and nearby communities receive our fastest emergency response times.",
+    a: "Emergency calls are dispatched immediately 24/7. Most addresses within our core service area receive a response within 45-75 minutes. From our Largo, MD location, PG County and nearby communities receive our fastest emergency response times.",
   },
   {
     q: "Do you offer financing?",
@@ -246,7 +246,7 @@ export default function AllServices() {
       <section className="bg-[var(--brand-navy)] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
-            Licensed Plumbing Services · Maryland · Washington DC · Northern Virginia
+            Licensed Plumbing Services  Maryland  Washington DC  Northern Virginia
           </p>
           <h1 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
             Plumbing Services in Maryland, DC &amp; Northern Virginia
@@ -270,7 +270,7 @@ export default function AllServices() {
             </Link>
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
-            {["11 Years in Business", "Licensed Master Plumber/Gasfitter MD · DC · VA", "MDOT MBE Cert 20-134", "VA SWaM Cert 815255", "24/7 Emergency", "Financing Available"].map((t) => (
+            {["11 Years in Business", "Licensed Master Plumber/Gasfitter MD  DC  VA", "MDOT MBE Cert 20-134", "VA SWaM Cert 815255", "24/7 Emergency", "Financing Available"].map((t) => (
               <span key={t} className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-white/70">
                 {t}
               </span>
@@ -440,13 +440,13 @@ export default function AllServices() {
                 Icon: Building2,
                 label: "COMMERCIAL FACILITY MANAGERS",
                 body: "Planned maintenance, backflow certification, commercial drain and gas service, and emergency commercial response.",
-                link: { label: "Commercial Plumbing →", href: "/commercial-plumbing/" },
+                link: { label: "Commercial Plumbing ->", href: "/commercial-plumbing/" },
               },
               {
                 Icon: Landmark,
                 label: "GOVERNMENT & MUNICIPAL CLIENTS",
                 body: "MDOT MBE Certified (No. 20-134), Virginia SWaM Certified (No. 815255), CAGE Code 8HCF6, NAICS 238220.",
-                link: { label: "Government/Municipal Plumbing →", href: "/government-municipal-plumbing/" },
+                link: { label: "Government/Municipal Plumbing ->", href: "/government-municipal-plumbing/" },
               },
             ].map((block) => (
               <div key={block.label} className="flex flex-col">
@@ -513,7 +513,7 @@ export default function AllServices() {
       <section className="bg-[var(--brand-navy)] py-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
-            LICENSED PLUMBING · MD, DC &amp; NORTHERN VIRGINIA
+            LICENSED PLUMBING  MD, DC &amp; NORTHERN VIRGINIA
           </p>
           <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-white text-[clamp(24px,3vw,34px)] mb-8">
             Request plumbing service in MD, DC or Northern VA
@@ -534,7 +534,7 @@ export default function AllServices() {
             </Link>
           </div>
           <p className="font-sans text-[#C0D8F0] text-sm">
-            Definitive Mechanical · 9701 Apollo Drive, Suite 100 · Largo, MD 20774
+            Definitive Mechanical  9701 Apollo Drive, Suite 100  Largo, MD 20774
           </p>
           <p className="font-sans text-[#C0D8F0] text-sm mt-1">
             MD Master Plumber #96958 | DC #PGM1002236 | VA #2710064209 | MDOT MBE Cert 20-134

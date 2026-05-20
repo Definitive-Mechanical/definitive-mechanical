@@ -12,7 +12,7 @@ export default function HighlandMD() {
       {label:"Howard County",href:"/service-areas/maryland/howard-county/"},
       {label:"Highland MD"}
     ]}
-    eyebrow="Plumber in Highland, MD · Howard County · Serving from Largo, MD"
+    eyebrow="Plumber in Highland, MD  Howard County  Serving from Largo, MD"
     h1="Plumber in Highland, MD"
     introParagraph="Definitive Mechanical serves Highland, Maryland — a rural and semi-rural community in Howard County between Clarksville and Fulton, with a mix of custom estate homes, farm properties, and newer residential subdivisions. We hold Howard County Master Plumber/Gasfitter License #20020096958 — the county-specific credential required for permitted plumbing in Howard County — and Maryland State License #96958."
     trustItems={["Howard County License #20020096958","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}

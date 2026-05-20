@@ -19,11 +19,11 @@ const DRAIN_SERVICES = [
 const DRAIN_FAQ = [
   {
     question: 'How much does drain cleaning cost in Maryland?',
-    answer: 'Drain cleaning costs in Maryland vary by the type of drain, severity of the blockage, and method required. Simple drain clearing typically ranges from $150–$300. Hydro-jetting and main sewer line clearing may cost more depending on the scope. Definitive Mechanical provides written pricing before any work begins. Call (301) 679-5849 for an estimate.',
+    answer: 'Drain cleaning costs in Maryland vary by the type of drain, severity of the blockage, and method required. Simple drain clearing typically ranges from $150-$300. Hydro-jetting and main sewer line clearing may cost more depending on the scope. Definitive Mechanical provides written pricing before any work begins. Call (301) 679-5849 for an estimate.',
   },
   {
     question: 'What is the difference between drain snaking and hydro-jetting?',
-    answer: 'Drain snaking (also called augering) uses a rotating cable to break through or retrieve a blockage. It is effective for soft clogs but does not clean pipe walls. Hydro-jetting uses high-pressure water (typically 3,000–4,000 PSI) to scour the interior of the pipe, removing grease buildup, scale, and debris that snaking leaves behind. For recurring clogs or grease-heavy drain systems, hydro-jetting provides a more thorough and longer-lasting result.',
+    answer: 'Drain snaking (also called augering) uses a rotating cable to break through or retrieve a blockage. It is effective for soft clogs but does not clean pipe walls. Hydro-jetting uses high-pressure water (typically 3,000-4,000 PSI) to scour the interior of the pipe, removing grease buildup, scale, and debris that snaking leaves behind. For recurring clogs or grease-heavy drain systems, hydro-jetting provides a more thorough and longer-lasting result.',
   },
   {
     question: 'Why does my drain keep clogging?',
@@ -57,7 +57,7 @@ export default function DrainCleaning() {
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
-                DRAIN CLEANING · HYDRO-JETTING · SEWER CLEARING
+                DRAIN CLEANING  HYDRO-JETTING  SEWER CLEARING
               </p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Professional Drain Cleaning — Maryland, DC & Northern Virginia

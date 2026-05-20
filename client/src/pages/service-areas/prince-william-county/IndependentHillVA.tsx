@@ -12,7 +12,7 @@ export default function IndependentHillVA() {
       {label:"Prince William County",href:"/service-areas/northern-virginia/prince-william-county/"},
       {label:"Independent Hill VA"}
     ]}
-    eyebrow="Plumber in Independent Hill, VA · Prince William County · Serving from Largo, MD"
+    eyebrow="Plumber in Independent Hill, VA  Prince William County  Serving from Largo, MD"
     h1="Plumber in Independent Hill, VA"
     introParagraph="Definitive Mechanical serves Independent Hill, Virginia — a community in Prince William County near Manassas and Woodbridge, featuring a mix of residential subdivisions and rural properties. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}

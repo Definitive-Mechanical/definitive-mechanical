@@ -10,16 +10,16 @@ import TrustBadges from '@/components/ui/TrustBadges';
 
 const FAQ_ITEMS = [
   { question: "Do I need a permit to install a gas line?", answer: "Yes, in virtually all Maryland, DC, and Virginia jurisdictions. Gas line installation must be permitted, performed by a licensed Master Gasfitter, and inspected before the gas supply is restored. Unpermitted gas work is a code violation that can affect insurance, create sale complications, and pose safety risks. Definitive Mechanical handles permits under our own licenses." },
-  { question: "How long does gas line installation take?", answer: "A standard appliance hookup from an existing nearby gas line typically takes 2–4 hours. A new gas line run through walls or floors may take a full day. Longer runs, underground installations, or commercial projects are quoted with specific timelines after site assessment." },
+  { question: "How long does gas line installation take?", answer: "A standard appliance hookup from an existing nearby gas line typically takes 2-4 hours. A new gas line run through walls or floors may take a full day. Longer runs, underground installations, or commercial projects are quoted with specific timelines after site assessment." },
   { question: "Can you install gas lines for outdoor kitchens and fire pits?", answer: "Yes. We install underground gas lines for outdoor kitchens, fire pits, gas grills, decorative fire features, pool heaters, and other outdoor gas applications. Underground gas line installation requires permits and specific burial depth and pipe material standards that vary by jurisdiction." },
 ];
 
 const PRICING_ROWS = [
-  { type: "Short gas appliance hookup (existing nearby line)", range: "$200–$500" },
-  { type: "New gas line run (indoor, standard access, 15–25 ft)", range: "$400–$900" },
-  { type: "New gas line run (longer or complex routing)", range: "$800–$2,000+" },
-  { type: "Underground gas line installation", range: "$1,000–$3,000+ depending on length" },
-  { type: "Gas line upsizing for tankless or high-output appliance", range: "$500–$1,500" },
+  { type: "Short gas appliance hookup (existing nearby line)", range: "$200-$500" },
+  { type: "New gas line run (indoor, standard access, 15-25 ft)", range: "$400-$900" },
+  { type: "New gas line run (longer or complex routing)", range: "$800-$2,000+" },
+  { type: "Underground gas line installation", range: "$1,000-$3,000+ depending on length" },
+  { type: "Gas line upsizing for tankless or high-output appliance", range: "$500-$1,500" },
   { type: "Commercial gas installation", range: "Custom quote based on scope" },
 ];
 
@@ -35,7 +35,7 @@ export default function GasLineInstallation() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair', href: '/gas-line-repair' }, { label: 'Gas Line Installation' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">GAS LINE INSTALLATION · LICENSED MASTER GASFITTER · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">GAS LINE INSTALLATION  LICENSED MASTER GASFITTER  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Gas Line Installation in Maryland, DC & Northern Virginia
               </h1>

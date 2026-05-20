@@ -422,7 +422,7 @@ export default function Tier3CityPage({
       {/* S7: CTA Banner */}
       <CTABanner
         heading={`Need a licensed plumber in ${bottomCtaCity}?`}
-        subtext={`Serving ${bottomCtaCity} from our Largo, MD location. ${bottomCtaLicenseLine} · 24/7 Emergency · Upfront Pricing.`}
+        subtext={`Serving ${bottomCtaCity} from our Largo, MD location. ${bottomCtaLicenseLine}  24/7 Emergency  Upfront Pricing.`}
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
         variant="gradient"

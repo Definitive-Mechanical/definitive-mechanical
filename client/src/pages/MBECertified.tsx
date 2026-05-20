@@ -70,7 +70,7 @@ export default function MBECertified() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Government & Commercial", href: "/government-municipal-plumbing/" }, { label: "MBE Certified Plumbing Contractor Maryland" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Government Procurement · Maryland · MDOT MBE Certified</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Government Procurement  Maryland  MDOT MBE Certified</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             MDOT MBE Certified Plumbing Contractor — Maryland
           </h1>

@@ -10,7 +10,7 @@ import TrustBadges from '@/components/ui/TrustBadges';
 const FAQ_ITEMS = [
   { question: "Do you install water lines for commercial and government properties?", answer: "Yes. Definitive Mechanical installs water service lines for commercial properties, government facilities, and institutional buildings. Our MDOT MBE and VA SWaM certifications make us a qualified contractor for government and publicly-funded projects. We have installed water service lines for commercial build-outs, government facility upgrades, and institutional properties across the DMV." },
   { question: "What pipe materials do you use for water line installation?", answer: "The most common material for new residential water service line installation in the DMV is copper or PEX (cross-linked polyethylene). PEX has become increasingly common for residential service lines due to its flexibility, freeze resistance, and lower material cost. For commercial and institutional applications, the appropriate material depends on the application, local code requirements, and the water supplier's specifications. We recommend and install the appropriate material for each project." },
-  { question: "How long does water line installation take?", answer: "A standard residential service line replacement typically takes 1–2 days including excavation, installation, and restoration. New construction service connections depend on depth, distance from the main, and local utility coordination. Commercial projects are quoted with specific timelines after site assessment." },
+  { question: "How long does water line installation take?", answer: "A standard residential service line replacement typically takes 1-2 days including excavation, installation, and restoration. New construction service connections depend on depth, distance from the main, and local utility coordination. Commercial projects are quoted with specific timelines after site assessment." },
 ];
 
 const WHEN_NEEDED = [
@@ -32,7 +32,7 @@ export default function WaterLineInstallation() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Line Repair', href: '/water-line-repair' }, { label: 'Water Line Installation' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">WATER LINE INSTALLATION · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">WATER LINE INSTALLATION  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Water Line Installation in Maryland, DC & Northern Virginia
               </h1>

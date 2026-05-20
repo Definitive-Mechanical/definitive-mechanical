@@ -12,7 +12,7 @@ export default function TravilahMD() {
       {label:"Montgomery County",href:"/service-areas/maryland/montgomery-county/"},
       {label:"Travilah MD"}
     ]}
-    eyebrow="Plumber in Travilah, MD · Montgomery County · Serving from Largo, MD"
+    eyebrow="Plumber in Travilah, MD  Montgomery County  Serving from Largo, MD"
     h1="Plumber in Travilah, MD"
     introParagraph="Definitive Mechanical serves Travilah, Maryland — a semi-rural, low-density community in western Montgomery County between Rockville, Potomac, and Darnestown, characterized by large custom homes and estate properties on significant acreage. Travilah sits between WSSC and county well/septic service areas — confirm your service provider before scheduling permitted work. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}

@@ -17,7 +17,7 @@ const ALL_BADGES = [
   { key: 'cage', src: '/manus-storage/cage_583d6988.svg', alt: 'Federal CAGE Code 8HCF6' },
   { key: 'google-reviews', src: '/manus-storage/google-reviews_bff3e9fc.svg', alt: '4.8 on Google — 40+ Verified Reviews' },
   { key: 'years', src: '/manus-storage/years_b9ac7de5.svg', alt: '11 Years Serving the DMV' },
-  { key: 'dmv', src: '/manus-storage/dmv_30e2ff57.svg', alt: 'Serving MD · DC · VA' },
+  { key: 'dmv', src: '/manus-storage/dmv_30e2ff57.svg', alt: 'Serving MD  DC  VA' },
 ];
 
 export default function TrustBadges({ variant = 'dark', size = 'md', badges }: TrustBadgesProps) {

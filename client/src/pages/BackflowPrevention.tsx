@@ -25,7 +25,7 @@ export default function BackflowPrevention() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Backflow Prevention' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">BACKFLOW PREVENTION · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">BACKFLOW PREVENTION  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Backflow Prevention Services in Maryland, DC & Northern Virginia
               </h1>
@@ -129,9 +129,9 @@ export default function BackflowPrevention() {
           <SectionHeading eyebrow="OUR SERVICES" heading="What backflow prevention services does Definitive Mechanical provide?" centered light />
           <div className="max-w-3xl mx-auto">
             {[
-              { label: "Backflow Preventer Installation", body: "Installation of the correct device type for your property and cross-connection hazard level.", link: { label: "Learn more →", href: "/backflow-prevention" } },
-              { label: "Backflow Preventer Testing and Certification", body: "Annual testing and certification required for most commercial properties.", link: { label: "Backflow Certification →", href: "/backflow-certification" } },
-              { label: "Backflow Preventer Repair", body: "Repair of failed or failing backflow prevention devices.", link: { label: "Backflow Preventer Repair →", href: "/backflow-preventer-repair" } },
+              { label: "Backflow Preventer Installation", body: "Installation of the correct device type for your property and cross-connection hazard level.", link: { label: "Learn more ->", href: "/backflow-prevention" } },
+              { label: "Backflow Preventer Testing and Certification", body: "Annual testing and certification required for most commercial properties.", link: { label: "Backflow Certification ->", href: "/backflow-certification" } },
+              { label: "Backflow Preventer Repair", body: "Repair of failed or failing backflow prevention devices.", link: { label: "Backflow Preventer Repair ->", href: "/backflow-preventer-repair" } },
               { label: "Backflow Preventer Replacement", body: "Replacement of devices that cannot be repaired or have reached end of life.", link: null },
             ].map((item) => (
               <div key={item.label} style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', padding: '16px', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>

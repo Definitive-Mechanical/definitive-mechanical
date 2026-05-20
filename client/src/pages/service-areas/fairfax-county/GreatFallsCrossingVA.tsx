@@ -12,9 +12,9 @@ export default function GreatFallsCrossingVA() {
       {label:"Fairfax County",href:"/service-areas/northern-virginia/fairfax-county/"},
       {label:"Great Falls Crossing VA"}
     ]}
-    eyebrow="Plumber in Great Falls Crossing, VA · Fairfax County · Serving from Largo, MD"
+    eyebrow="Plumber in Great Falls Crossing, VA  Fairfax County  Serving from Largo, MD"
     h1="Plumber in Great Falls Crossing, VA"
-    introParagraph="Definitive Mechanical serves Great Falls Crossing, Virginia — a residential subdivision in the Great Falls area of Fairfax County, featuring upscale single-family homes built in the 1990s–2000s. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
+    introParagraph="Definitive Mechanical serves Great Falls Crossing, Virginia — a residential subdivision in the Great Falls area of Fairfax County, featuring upscale single-family homes built in the 1990s-2000s. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
@@ -24,7 +24,7 @@ export default function GreatFallsCrossingVA() {
       {label:"Drain Cleaning & Sewer Line Repair",href:"/drain-cleaning/"}
     ]}
     localContextHeading="Unique context for Great Falls Crossing"
-    localContextBody={"Great Falls Crossing's 1990s–2000s construction means original water heaters are at or past replacement age. The subdivision's upscale homes commonly have in-ground irrigation systems requiring annual backflow certification. Virginia License #2710064008 covers all permitted work."}
+    localContextBody={"Great Falls Crossing's 1990s-2000s construction means original water heaters are at or past replacement age. The subdivision's upscale homes commonly have in-ground irrigation systems requiring annual backflow certification. Virginia License #2710064008 covers all permitted work."}
     licenseHeading="Licensed in Virginia, Maryland & DC"
     credentials={[{label:"VA Master Plumber #2710064008"},{label:"SWaM Certified"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[

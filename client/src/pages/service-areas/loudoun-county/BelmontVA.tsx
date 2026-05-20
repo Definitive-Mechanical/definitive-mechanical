@@ -12,7 +12,7 @@ export default function BelmontVA() {
       {label:"Loudoun County",href:"/service-areas/northern-virginia/loudoun-county/"},
       {label:"Belmont VA"}
     ]}
-    eyebrow="Plumber in Belmont, VA · Loudoun County · Serving from Largo, MD"
+    eyebrow="Plumber in Belmont, VA  Loudoun County  Serving from Largo, MD"
     h1="Plumber in Belmont, VA"
     introParagraph="Definitive Mechanical serves Belmont, Virginia — a community in Loudoun County near Ashburn and Leesburg, featuring a mix of estate properties and newer residential development. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}

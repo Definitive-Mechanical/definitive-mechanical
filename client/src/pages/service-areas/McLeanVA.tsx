@@ -53,7 +53,7 @@ export default function McLeanVA() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
               <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
-                PLUMBING SERVICE · McLEAN, VA · FAIRFAX COUNTY
+                PLUMBING SERVICE  McLEAN, VA  FAIRFAX COUNTY
               </p>
               <h1 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in McLean, VA
@@ -116,7 +116,7 @@ export default function McLeanVA() {
               <a href="tel:+13016795849" style={{ display:"inline-flex", alignItems:"center", gap:"10px", background:"#dc2626", color:"white", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"15px", textTransform:"uppercase", letterSpacing:"0.08em", padding:"14px 28px", borderRadius:"3px", textDecoration:"none" }}>CALL (301) 679-5849</a>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              {[{emoji:"💧",title:"Burst Pipe",body:"Immediate shut-off and repair to prevent water damage."},{emoji:"🚽",title:"Sewer Backup",body:"Camera diagnosis and hydro-jet clearing, same visit."},{emoji:"🔥",title:"Gas Leak",body:"Licensed gasfitter response — evacuate and call us."},{emoji:"🌡️",title:"No Hot Water",body:"Water heater diagnosis and same-day replacement available."}].map((card,i)=>(
+              {[{emoji:"",title:"Burst Pipe",body:"Immediate shut-off and repair to prevent water damage."},{emoji:"",title:"Sewer Backup",body:"Camera diagnosis and hydro-jet clearing, same visit."},{emoji:"",title:"Gas Leak",body:"Licensed gasfitter response — evacuate and call us."},{emoji:"",title:"No Hot Water",body:"Water heater diagnosis and same-day replacement available."}].map((card,i)=>(
                 <div key={i} style={{ background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:"8px", padding:"20px 16px" }}>
                   <div style={{ fontSize:"28px", marginBottom:"8px" }}>{card.emoji}</div>
                   <p style={{ fontFamily:"var(--font-display)", color:"white", fontWeight:700, fontSize:"14px", textTransform:"uppercase", marginBottom:"6px" }}>{card.title}</p>
@@ -136,7 +136,7 @@ export default function McLeanVA() {
               { icon: Thermometer, title: "High-demand water heating", body: "McLean's larger homes require properly sized water heating systems. Tankless conversions are popular — eliminating standby heat loss and providing unlimited hot water for large households with high simultaneous demand." },
               { icon: ShieldCheck, title: "Irrigation backflow certification", body: "McLean's landscaped estate properties frequently have irrigation systems requiring annual backflow preventer testing and certification. We provide annual certification and can manage compliance scheduling." },
               { icon: Flame, title: "Gas line service", body: "Outdoor entertainment areas — kitchens, fire features, pool and spa heaters, whole-home generators — are common in McLean and each requires a permitted, licensed gas line installation." },
-              { icon: GitBranch, title: "Sewer lateral inspection", body: "McLean's mature tree canopy creates root intrusion risk for original sewer laterals. Camera inspection every 3–5 years is a prudent maintenance practice for properties with clay or aging PVC laterals." },
+              { icon: GitBranch, title: "Sewer lateral inspection", body: "McLean's mature tree canopy creates root intrusion risk for original sewer laterals. Camera inspection every 3-5 years is a prudent maintenance practice for properties with clay or aging PVC laterals." },
             ].map((card, i) => (
               <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
@@ -178,7 +178,7 @@ export default function McLeanVA() {
 
       <CTABanner
         heading="Need a licensed plumber in McLean, VA?"
-        subtext="Serving McLean from our Largo, MD location. VA Master Plumber #2710064209 · SWaM Cert 815255 · Class A Contractor · 24/7 Emergency."
+        subtext="Serving McLean from our Largo, MD location. VA Master Plumber #2710064209  SWaM Cert 815255  Class A Contractor  24/7 Emergency."
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
         variant="gradient"

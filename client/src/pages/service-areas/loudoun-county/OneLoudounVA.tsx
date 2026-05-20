@@ -10,7 +10,7 @@ export default function OneLoudounVA() {
       metaDescription={`Licensed plumber serving One Loudoun, VA. Plumbing, water heater, gas & emergency service for One Loudoun's mixed-use community. VA #2710064209. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/one-loudoun-va/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Northern Virginia",href:"/service-areas/northern-virginia"},{label:"Loudoun County",href:"/service-areas/northern-virginia/loudoun-county"},{label:"One Loudoun VA"}]}
-      eyebrow="Plumber in One Loudoun, VA · Loudoun County · Serving from Largo, MD"
+      eyebrow="Plumber in One Loudoun, VA  Loudoun County  Serving from Largo, MD"
       h1="Plumber in One Loudoun, VA"
       introParagraph={`Definitive Mechanical provides licensed plumbing, gas, emergency, residential, and commercial services in One Loudoun — Loudoun County's premier mixed-use development in Ashburn, combining upscale retail, restaurants, multi-family residences, and single-family homes in a walkable town center format. We hold Virginia Master Plumber/Gasfitter License #2710064209 and Virginia Class A Contractor License #2705181061 for all permitted plumbing work throughout Loudoun County.`}
       trustItems={["VA Master Plumber #2710064209","VA Class A Contractor #2705181061","SWaM Cert 815255","CAGE 8HCF6","24/7 Emergency"]}

@@ -78,7 +78,7 @@ export default function NorthernVirginiaHub() {
       <section style={{ background: 'var(--brand-navy)', padding: '64px 0 48px' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
-            LICENSED PLUMBING · NORTHERN VIRGINIA
+            LICENSED PLUMBING  NORTHERN VIRGINIA
           </p>
           <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', lineHeight: 1.2, marginBottom: '20px' }}>
             Plumber Northern Virginia

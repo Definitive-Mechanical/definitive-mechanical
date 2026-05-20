@@ -85,12 +85,12 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
                   {PHONE_DISPLAY}
                 </a>
                 <p className="text-[#C0D8F0] font-sans text-xs text-center">
-                  24/7 live dispatcher · Licensed Master Plumber on every call
+                  24/7 live dispatcher  Licensed Master Plumber on every call
                 </p>
                 <div className="mt-4 pt-4 border-t border-white/10">
                   <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-sans">
                     <Clock className="w-3 h-3 text-[var(--brand-cyan)]" />
-                    <span>Average response: 60–90 min</span>
+                    <span>Average response: 60-90 min</span>
                   </div>
                   <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-sans mt-2">
                     <Shield className="w-3 h-3 text-[var(--brand-cyan)]" />
@@ -147,7 +147,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
       <div className="bg-[var(--brand-navy)] py-14 px-4 mt-12">
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
-            Licensed Emergency Plumber · MD, DC &amp; Northern VA
+            Licensed Emergency Plumber  MD, DC &amp; Northern VA
           </p>
           <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide text-3xl md:text-4xl font-bold text-white mb-8">
             Need a plumber now?
@@ -264,7 +264,7 @@ export function InlineCTA() {
           marginBottom: "12px",
         }}
       >
-        📞 CALL {PHONE_DISPLAY}
+         CALL {PHONE_DISPLAY}
       </a>
       <p
         style={{
@@ -274,7 +274,7 @@ export function InlineCTA() {
           margin: 0,
         }}
       >
-        24/7 live dispatcher · Licensed Master Plumber on every call
+        24/7 live dispatcher  Licensed Master Plumber on every call
       </p>
     </div>
   );

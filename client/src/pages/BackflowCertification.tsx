@@ -37,7 +37,7 @@ export default function BackflowCertification() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Backflow Prevention', href: '/backflow-prevention' }, { label: 'Backflow Certification' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">BACKFLOW CERTIFICATION · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">BACKFLOW CERTIFICATION  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Backflow Preventer Certification Service in Maryland, DC & Northern Virginia
               </h1>

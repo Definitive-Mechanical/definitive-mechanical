@@ -10,7 +10,7 @@ export default function GlenelgMD() {
       metaDescription={`Licensed plumber serving Glenelg, MD. Plumbing, water heater, gas & emergency service for Glenelg's rural properties. Howard County License #20020096958. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/howard-county/glenelg-md/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Maryland",href:"/service-areas/maryland"},{label:"Howard County",href:"/service-areas/maryland/howard-county"},{label:"Glenelg MD"}]}
-      eyebrow="Plumber in Glenelg, MD · Howard County · Serving from Largo, MD"
+      eyebrow="Plumber in Glenelg, MD  Howard County  Serving from Largo, MD"
       h1="Plumber in Glenelg, MD"
       introParagraph="Definitive Mechanical serves Glenelg, Maryland — a rural western Howard County community of horse farms, large custom homes, and wooded estate properties. We hold Howard County Master Plumber/Gasfitter License #20020096958 and Maryland State License #96958, covering all permitted plumbing and gas work in Glenelg and the surrounding western Howard County area."
       trustItems={["Howard County License #20020096958","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}

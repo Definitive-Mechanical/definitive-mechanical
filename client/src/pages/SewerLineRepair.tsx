@@ -10,17 +10,17 @@ import TrustBadges from '@/components/ui/TrustBadges';
 
 const FAQ_ITEMS = [
   { question: "What are the main sewer line clog symptoms?", answer: "The most reliable signs of a main sewer line clog are multiple fixtures draining slowly at the same time, gurgling sounds from toilets or floor drains, sewage odor inside the home, and water backing up into a tub or floor drain when the toilet is flushed. A single slow drain is usually a lateral line issue. Multiple affected fixtures point to the main line." },
-  { question: "How much does sewer line repair cost?", answer: "Sewer line repair ranges from $250–$500 for a cable clearing to $4,000–$12,000+ for full excavation and replacement, depending on the type of repair needed. Camera inspection — typically $200–$400 — identifies exactly what type of repair is required and prevents paying for excavation when a clearing would have resolved the issue." },
+  { question: "How much does sewer line repair cost?", answer: "Sewer line repair ranges from $250-$500 for a cable clearing to $4,000-$12,000+ for full excavation and replacement, depending on the type of repair needed. Camera inspection — typically $200-$400 — identifies exactly what type of repair is required and prevents paying for excavation when a clearing would have resolved the issue." },
   { question: "Do you use camera inspection before sewer line repair?", answer: "Yes, always for suspected structural issues. Camera inspection shows us exactly what is happening inside the line before we recommend a repair path. We show you the footage and explain what we see before recommending anything." },
   { question: "Can you repair commercial sewer lines?", answer: "Yes. We repair commercial sewer lines for restaurants, office buildings, multi-family properties, government facilities, and industrial properties across Maryland, DC, and Northern Virginia. Commercial properties with high-grease drain loads benefit from scheduled maintenance programs. Contact (301) 679-5849 to discuss your commercial property's needs." },
 ];
 
 const PRICING_ROWS = [
-  { type: "Camera inspection", range: "$200–$400" },
-  { type: "Cable clearing / rooter", range: "$250–$500" },
-  { type: "Hydro-jetting", range: "$350–$700" },
-  { type: "Spot repair (localized excavation)", range: "$1,500–$4,000" },
-  { type: "Full sewer line replacement", range: "$4,000–$12,000+" },
+  { type: "Camera inspection", range: "$200-$400" },
+  { type: "Cable clearing / rooter", range: "$250-$500" },
+  { type: "Hydro-jetting", range: "$350-$700" },
+  { type: "Spot repair (localized excavation)", range: "$1,500-$4,000" },
+  { type: "Full sewer line replacement", range: "$4,000-$12,000+" },
 ];
 
 export default function SewerLineRepair() {
@@ -33,7 +33,7 @@ export default function SewerLineRepair() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Drain Cleaning', href: '/drain-cleaning' }, { label: 'Sewer Line Repair' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">SEWER LINE REPAIR · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">SEWER LINE REPAIR  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Sewer Line Repair in Maryland, DC & Northern Virginia
               </h1>
@@ -151,9 +151,9 @@ export default function SewerLineRepair() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { Icon: Wrench, title: "CABLE CLEARING / ROOTER SERVICE", body: "For blockages caused by debris accumulation, minor root intrusion, or grease buildup. A cable machine clears the obstruction and restores flow. This is a clearing service, not a structural repair — if the line has structural damage, clearing addresses symptoms rather than cause.", link: null },
-              { Icon: Waves, title: "HYDRO-JETTING", body: "High-pressure water jetting scours the full interior of the sewer line, removing root intrusion remnants, grease, scale, and debris more thoroughly than cable clearing. Recommended when root intrusion is confirmed or for commercial properties with heavy grease accumulation.", link: { label: "Learn more about hydro-jetting →", href: "/hydro-jetting" } },
+              { Icon: Waves, title: "HYDRO-JETTING", body: "High-pressure water jetting scours the full interior of the sewer line, removing root intrusion remnants, grease, scale, and debris more thoroughly than cable clearing. Recommended when root intrusion is confirmed or for commercial properties with heavy grease accumulation.", link: { label: "Learn more about hydro-jetting ->", href: "/hydro-jetting" } },
               { Icon: MapPin, title: "SPOT REPAIR / PIPE SECTION REPLACEMENT", body: "When camera inspection reveals a localized crack, joint failure, or collapse in a specific section of the line, a targeted excavation and repair of that section is often sufficient — and far less costly than full line replacement.", link: null },
-              { Icon: RotateCcw, title: "FULL SEWER LINE REPLACEMENT", body: "When the line is deteriorated beyond repair along its full length, complete replacement is necessary. We use camera inspection to confirm this recommendation before advising a full replacement.", link: { label: "Learn about sewer line installation →", href: "/sewer-line-installation" } },
+              { Icon: RotateCcw, title: "FULL SEWER LINE REPLACEMENT", body: "When the line is deteriorated beyond repair along its full length, complete replacement is necessary. We use camera inspection to confirm this recommendation before advising a full replacement.", link: { label: "Learn about sewer line installation ->", href: "/sewer-line-installation" } },
             ].map(({ Icon, title, body, link }) => (
               <div key={title} style={{ background: 'white', borderRadius: '6px', padding: '28px', boxShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
                 <Icon size={36} color="var(--brand-cyan)" style={{ marginBottom: '16px' }} />

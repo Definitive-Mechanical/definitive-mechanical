@@ -10,7 +10,7 @@ export default function CabinJohnMD() {
       metaDescription={`Licensed plumber serving Cabin John, MD. Plumbing, gas, water heater & emergency service for Cabin John's wooded community. WSSC-licensed. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/cabin-john-md/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Maryland",href:"/service-areas/maryland"},{label:"Montgomery County",href:"/service-areas/maryland/montgomery-county"},{label:"Cabin John MD"}]}
-      eyebrow="Plumber in Cabin John, MD · Montgomery County · Serving from Largo, MD"
+      eyebrow="Plumber in Cabin John, MD  Montgomery County  Serving from Largo, MD"
       h1="Plumber in Cabin John, MD"
       introParagraph="Definitive Mechanical serves Cabin John, Maryland — a small, historic, wooded community between the Potomac River and the Capital Beltway, with a mix of mid-century homes and renovated properties on large forested lots. We hold Maryland State Master Plumber/Gasfitter License #96958 and WSSC License #73696 for all permitted plumbing work in Cabin John and the surrounding Montgomery County area."
       trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}

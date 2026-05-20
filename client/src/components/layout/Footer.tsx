@@ -91,7 +91,7 @@ export default function Footer() {
                   <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.7 }}>
                     <div>{BUSINESS.hours.weekdays}</div>
                     <div>{BUSINESS.hours.saturday}</div>
-                    <div style={{ color: 'var(--brand-cyan)', fontWeight: 600 }}>⚡ {BUSINESS.hours.emergency}</div>
+                    <div style={{ color: 'var(--brand-cyan)', fontWeight: 600 }}> {BUSINESS.hours.emergency}</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 mt-4">
@@ -217,13 +217,13 @@ export default function Footer() {
               Licenses &amp; Certifications
             </p>
             <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7 }}>
-              Maryland Master Plumber/Master Gasfitter #96958 · WSSC Master Plumber/Master Gasfitter #73696 · Howard County Master Plumber/Master Gasfitter #20020096958 · Anne Arundel County Master Plumber/Master Gasfitter #A2-6139 · City of Rockville Master Plumber/Master Gasfitter #PLL-0002113 · MD Home Improvement Contractor/Salesman #134723 / #109901
+              Maryland Master Plumber/Master Gasfitter #96958  WSSC Master Plumber/Master Gasfitter #73696  Howard County Master Plumber/Master Gasfitter #20020096958  Anne Arundel County Master Plumber/Master Gasfitter #A2-6139  City of Rockville Master Plumber/Master Gasfitter #PLL-0002113  MD Home Improvement Contractor/Salesman #134723 / #109901
             </p>
             <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginTop: '4px' }}>
-              Virginia Master Plumber/Master Gasfitter #2710064209 · Virginia Class A Contractor #2705181061 · DC Master Plumber/Master Gasfitter #PGM1002236 · Delaware Master Plumber/Master Gasfitter #PL-0012866 · Universal EPA 608 Certification #YbKLqI5cGf
+              Virginia Master Plumber/Master Gasfitter #2710064209  Virginia Class A Contractor #2705181061  DC Master Plumber/Master Gasfitter #PGM1002236  Delaware Master Plumber/Master Gasfitter #PL-0012866  Universal EPA 608 Certification #YbKLqI5cGf
             </p>
             <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginTop: '4px' }}>
-              MDOT MBE Cert No. {CERTIFICATIONS.mdotMBE.certNo} · SWaM Cert No. {CERTIFICATIONS.swam.certNo} · NAICS Code: {CERTIFICATIONS.naics} · SIC Code: {CERTIFICATIONS.sic} · CAGE: {CERTIFICATIONS.cage}
+              MDOT MBE Cert No. {CERTIFICATIONS.mdotMBE.certNo}  SWaM Cert No. {CERTIFICATIONS.swam.certNo}  NAICS Code: {CERTIFICATIONS.naics}  SIC Code: {CERTIFICATIONS.sic}  CAGE: {CERTIFICATIONS.cage}
             </p>
           </div>
         </div>

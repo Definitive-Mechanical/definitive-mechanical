@@ -48,7 +48,7 @@ export default function EmergencyArlingtonVA() {
     <>
       <Helmet>
         <title>Emergency Plumber in Arlington VA | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Arlington VA — available 24/7. Virginia Master Plumber #2710064209 · Class A Contractor #2705181061. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Arlington VA — available 24/7. Virginia Master Plumber #2710064209  Class A Contractor #2705181061. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-arlington-va/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
@@ -56,7 +56,7 @@ export default function EmergencyArlingtonVA() {
       {/* Safety Top Bar */}
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-          ⚠️ ARLINGTON PLUMBING EMERGENCY? CALL (301) 679-5849 — 24/7 LIVE DISPATCHER · NO OVERTIME SURCHARGE
+           ARLINGTON PLUMBING EMERGENCY? CALL (301) 679-5849 — 24/7 LIVE DISPATCHER  NO OVERTIME SURCHARGE
         </a>
       </div>
 
@@ -64,7 +64,7 @@ export default function EmergencyArlingtonVA() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Arlington, VA" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · ARLINGTON, VA · VA MASTER PLUMBER LICENSED</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  ARLINGTON, VA  VA MASTER PLUMBER LICENSED</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Arlington, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Definitive Mechanical provides 24/7 emergency plumbing in Arlington, Virginia — one of the most densely populated jurisdictions in the DC metro area. A live dispatcher answers every call. Virginia Master Plumber/Gasfitter #2710064209, Class A Contractor #2705181061. No overtime surcharge. Call (301) 679-5849.
@@ -180,7 +180,7 @@ export default function EmergencyArlingtonVA() {
         </div>
       </section>
 
-      <CTABanner heading="Arlington plumbing emergency? Call now." subtext="VA Master Plumber #2710064209 · Class A Contractor #2705181061 · SWaM Cert 815255 · 24/7 Live Dispatcher · No Overtime Surcharge." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Arlington plumbing emergency? Call now." subtext="VA Master Plumber #2710064209  Class A Contractor #2705181061  SWaM Cert 815255  24/7 Live Dispatcher  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

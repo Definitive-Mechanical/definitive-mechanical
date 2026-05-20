@@ -70,7 +70,7 @@ export default function CommercialPlumberNorthernVirginia() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Commercial Plumbing", href: "/commercial-plumbing/" }, { label: "Commercial Plumber Northern Virginia" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing · Northern Virginia · Fairfax · Arlington · Loudoun · Prince William</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing  Northern Virginia  Fairfax  Arlington  Loudoun  Prince William</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Licensed Commercial Plumber in Northern Virginia
           </h1>
@@ -209,7 +209,7 @@ export default function CommercialPlumberNorthernVirginia() {
       <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a licensed commercial plumber in Northern Virginia?</h2>
-          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}>📞 Call (301) 679-5849</p>
+          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>VA Master Plumber #2710064209 | SWaM Cert 815255 | CAGE 8HCF6</p>
           <div className="flex flex-wrap justify-center gap-4">
             <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />

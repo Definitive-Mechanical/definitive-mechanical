@@ -171,7 +171,7 @@ export default function BlogIndex() {
                             <span className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-[var(--brand-cyan)]">
                               {post.category}
                             </span>
-                            <span className="text-[#C0D8F0]">·</span>
+                            <span className="text-[#C0D8F0]"></span>
                             <span className="font-sans text-[#787878] text-xs flex items-center gap-1">
                               <Clock className="w-3 h-3" />
                               {post.readTime}
@@ -213,7 +213,7 @@ export default function BlogIndex() {
                     {PHONE_DISPLAY}
                   </a>
                   <p className="text-[#C0D8F0] font-sans text-xs text-center">
-                    24/7 live dispatcher · Licensed Master Plumber
+                    24/7 live dispatcher  Licensed Master Plumber
                   </p>
                   <div className="mt-4 pt-4 border-t border-white/10 space-y-2">
                     <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-sans">
@@ -276,7 +276,7 @@ export default function BlogIndex() {
         <div className="bg-[var(--brand-navy)] py-14 px-4 mt-4">
           <div className="max-w-3xl mx-auto text-center">
             <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
-              Licensed Emergency Plumber · MD, DC &amp; Northern VA
+              Licensed Emergency Plumber  MD, DC &amp; Northern VA
             </p>
             <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide text-3xl md:text-4xl font-bold text-white mb-8">
               Need a plumber now?

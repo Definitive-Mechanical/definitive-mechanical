@@ -43,7 +43,7 @@ export default function CharlesCounty() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Maryland", href: "/service-areas/maryland/" }, { label: "Charles County" }]}/>
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES · CHARLES COUNTY, MD</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES  CHARLES COUNTY, MD</p>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em', lineHeight: 1.0 }}>Plumber in Charles County, MD</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Definitive Mechanical provides licensed plumbing services throughout Charles County — Waldorf, La Plata, White Plains, Indian Head, and all county communities. MD State #96958. 24/7 emergency. Call (301) 679-5849.
@@ -97,7 +97,7 @@ export default function CharlesCounty() {
         </div>
       </section>
 
-      <CTABanner heading="Need a plumber in Charles County?" subtext="MD State #96958 · 24/7 Emergency · No Overtime Surcharge." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Need a plumber in Charles County?" subtext="MD State #96958  24/7 Emergency  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

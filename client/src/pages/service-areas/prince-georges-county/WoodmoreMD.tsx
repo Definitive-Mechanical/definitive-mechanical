@@ -26,7 +26,7 @@ const schema = [
       {
         "@type": "Question",
         "name": "How quickly can you respond to a Woodmore emergency?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Woodmore is approximately 10–20 minutes from our Largo location depending on the specific address within the community. Emergency dispatch is immediate." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Woodmore is approximately 10-20 minutes from our Largo location depending on the specific address within the community. Emergency dispatch is immediate." }
       },
       {
         "@type": "Question",
@@ -61,7 +61,7 @@ export default function WoodmoreMD() {
         { label: "Prince George's County", href: "/service-areas/maryland/prince-georges-county" },
         { label: "Woodmore MD" }
       ]}
-      eyebrow={`Plumber in Woodmore, MD · Prince George's County · Serving from Largo, MD`}
+      eyebrow={`Plumber in Woodmore, MD  Prince George's County  Serving from Largo, MD`}
       h1="Plumber in Woodmore, MD"
       introParagraph={`Definitive Mechanical provides licensed plumbing, gas, emergency, and commercial services in Woodmore, Maryland — a premier planned community in Prince George's County built around the Woodmore Country Club golf course, known for its large custom homes on wooded lots. We hold Maryland State Master Plumber/Gasfitter License #96958 and WSSC License #73696, and serve Woodmore from our nearby Largo, MD location.`}
       trustItems={["MD Master Plumber #96958", "WSSC #73696", "MDOT MBE Cert 20-134", "24/7 Emergency", "11 Years in Business"]}
@@ -92,7 +92,7 @@ export default function WoodmoreMD() {
       countyHubLabel={`Prince George's County`}
       countyHubHref="/service-areas/maryland/prince-georges-county"
       faqs={[
-        { q: "How quickly can you respond to a Woodmore emergency?", a: "Woodmore is approximately 10–20 minutes from our Largo location depending on the specific address within the community. Emergency dispatch is immediate." },
+        { q: "How quickly can you respond to a Woodmore emergency?", a: "Woodmore is approximately 10-20 minutes from our Largo location depending on the specific address within the community. Emergency dispatch is immediate." },
         { q: "Are you WSSC-licensed for work in Woodmore?", a: "Yes. WSSC License #73696 covers all permitted plumbing and gas work in Woodmore and throughout the WSSC service territory in Prince George's County." }
       ]}
       ctaCity="Woodmore"

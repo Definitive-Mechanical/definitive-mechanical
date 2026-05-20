@@ -52,7 +52,7 @@ export default function PotomacMD() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
               <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
-                PLUMBING SERVICE · POTOMAC, MD · MONTGOMERY COUNTY
+                PLUMBING SERVICE  POTOMAC, MD  MONTGOMERY COUNTY
               </p>
               <h1 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in Potomac, MD
@@ -120,10 +120,10 @@ export default function PotomacMD() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { emoji: "💧", title: "Burst Pipe", body: "Immediate shut-off and repair to prevent water damage." },
-                { emoji: "🚽", title: "Sewer Backup", body: "Camera diagnosis and hydro-jet clearing, same visit." },
-                { emoji: "🔥", title: "Gas Leak", body: "Licensed gasfitter response — evacuate and call us." },
-                { emoji: "🌡️", title: "No Hot Water", body: "Water heater diagnosis and same-day replacement available." },
+                { emoji: "", title: "Burst Pipe", body: "Immediate shut-off and repair to prevent water damage." },
+                { emoji: "", title: "Sewer Backup", body: "Camera diagnosis and hydro-jet clearing, same visit." },
+                { emoji: "", title: "Gas Leak", body: "Licensed gasfitter response — evacuate and call us." },
+                { emoji: "", title: "No Hot Water", body: "Water heater diagnosis and same-day replacement available." },
               ].map((card, i) => (
                 <div key={i} style={{ background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:"8px", padding:"20px 16px" }}>
                   <div style={{ fontSize:"28px", marginBottom:"8px" }}>{card.emoji}</div>
@@ -145,7 +145,7 @@ export default function PotomacMD() {
               { icon: Thermometer, title: "High-demand water heating", body: "Potomac's larger homes require properly sized water heating systems. Tankless conversions are popular — eliminating standby heat loss and providing unlimited hot water for large households with high simultaneous demand." },
               { icon: ShieldCheck, title: "Irrigation backflow certification", body: "Potomac's landscaped estate properties frequently have irrigation systems requiring annual backflow preventer testing and certification. We provide annual certification and can manage compliance scheduling." },
               { icon: Flame, title: "Gas line service", body: "Outdoor entertainment areas — kitchens, fire features, pool and spa heaters, whole-home generators — are common in Potomac and each requires a permitted, licensed gas line installation." },
-              { icon: GitBranch, title: "Sewer lateral inspection", body: "Potomac's mature tree canopy creates root intrusion risk for original sewer laterals. Camera inspection every 3–5 years is a prudent maintenance practice for properties with clay or aging PVC laterals." },
+              { icon: GitBranch, title: "Sewer lateral inspection", body: "Potomac's mature tree canopy creates root intrusion risk for original sewer laterals. Camera inspection every 3-5 years is a prudent maintenance practice for properties with clay or aging PVC laterals." },
             ].map((card, i) => (
               <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
@@ -190,7 +190,7 @@ export default function PotomacMD() {
       {/* S9: CTA Banner */}
       <CTABanner
         heading="Need a licensed plumber in Potomac, MD?"
-        subtext="Serving Potomac from our Largo, MD location. Maryland Master Plumber #96958 · WSSC #73696 · 24/7 Emergency · Estate Home Experience."
+        subtext="Serving Potomac from our Largo, MD location. Maryland Master Plumber #96958  WSSC #73696  24/7 Emergency  Estate Home Experience."
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
         variant="gradient"

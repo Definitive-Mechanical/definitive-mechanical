@@ -51,7 +51,7 @@ export default function BackflowCertificationMaryland() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Backflow Prevention", href: "/backflow-prevention/" }, { label: "Backflow Certification Maryland" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Backflow Certification · Maryland · WSSC · PG County · Montgomery County</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Backflow Certification  Maryland  WSSC  PG County  Montgomery County</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Backflow Preventer Certification in Maryland
           </h1>
@@ -176,7 +176,7 @@ export default function BackflowCertificationMaryland() {
       <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Schedule your Maryland backflow certification today</h2>
-          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}>📞 Call (301) 679-5849</p>
+          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>WSSC Backflow Tester #73696 | MD Master Plumber #96958 | MDOT MBE Cert 20-134</p>
           <div className="flex flex-wrap justify-center gap-4">
             <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />

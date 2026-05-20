@@ -15,7 +15,7 @@ export default function BethesdaMD() {
         { label: "Montgomery County", href: "/service-areas/maryland/montgomery-county" },
         { label: "Bethesda MD" },
       ]}
-      eyebrow="Plumbing Service · Bethesda, MD · Montgomery County"
+      eyebrow="Plumbing Service  Bethesda, MD  Montgomery County"
       h1="Plumber in Bethesda, MD"
       introParagraph="Definitive Mechanical provides licensed plumbing service in Bethesda, Maryland for homeowners, businesses, and commercial properties. Emergency plumbing, water heater repair, drain cleaning, gas line service, sewer repair, and backflow certification available 24/7. Maryland Master Plumber/Gasfitter #96958, WSSC #73696. Upfront pricing."
       trustItems={["MD Master Plumber #96958", "WSSC #73696", "24/7 Emergency", "Serving Bethesda from Largo, MD", "MDOT MBE Certified"]}
@@ -41,7 +41,7 @@ export default function BethesdaMD() {
         { icon: Thermometer, title: "High-demand water heating", body: "Bethesda's larger homes require properly sized water heating systems. Tankless conversions are popular — eliminating standby heat loss and providing unlimited hot water for large households." },
         { icon: ShieldCheck, title: "Irrigation backflow certification", body: "Bethesda's landscaped properties frequently have irrigation systems requiring annual backflow preventer testing and certification. We provide annual certification and manage compliance scheduling." },
         { icon: Flame, title: "Gas line service", body: "Outdoor entertainment areas — kitchens, fire features, pool and spa heaters — are common in Bethesda and each requires a permitted, licensed gas line installation." },
-        { icon: GitBranch, title: "Sewer lateral inspection", body: "Bethesda's mature tree canopy creates root intrusion risk for original sewer laterals. Camera inspection every 3–5 years is prudent for properties with clay or aging PVC laterals." },
+        { icon: GitBranch, title: "Sewer lateral inspection", body: "Bethesda's mature tree canopy creates root intrusion risk for original sewer laterals. Camera inspection every 3-5 years is prudent for properties with clay or aging PVC laterals." },
       ]}
       licenseHeading="Licensed in Maryland, DC & Virginia"
       credentials={[
@@ -76,7 +76,7 @@ export default function BethesdaMD() {
         { question: "Do you handle high-end residential plumbing in Bethesda?", answer: "Yes. Bethesda's premium residential market requires plumbing contractors with the experience, licensing, and professionalism to work in high-value homes. We provide water heater replacement, gas line installation for outdoor kitchens and generators, backflow certification for irrigation systems, and full plumbing service for Bethesda homeowners." },
       ]}
       ctaHeading="Need a licensed plumber in Bethesda, MD?"
-      ctaSubtext="Serving Bethesda from our Largo, MD location. Maryland Master Plumber #96958 · WSSC #73696 · MDOT MBE Cert 20-134 · 24/7 Emergency."
+      ctaSubtext="Serving Bethesda from our Largo, MD location. Maryland Master Plumber #96958  WSSC #73696  MDOT MBE Cert 20-134  24/7 Emergency."
     />
   );
 }

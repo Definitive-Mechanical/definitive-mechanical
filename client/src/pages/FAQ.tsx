@@ -41,8 +41,8 @@ const FAQ_AREAS = [
 
 const FAQ_WATER_HEATER = [
   { question: "How do I know if my water heater needs to be replaced?", answer: "Signs you need a replacement: the unit is 10+ years old, you see rust-colored water, you hear rumbling or popping sounds, you have inconsistent hot water, or you notice water pooling around the base. A licensed plumber can assess whether repair or replacement is the better value. Call (301) 679-5849." },
-  { question: "How long does water heater installation take?", answer: "A standard tank water heater replacement typically takes 2–3 hours. A tankless water heater installation takes 4–6 hours due to the gas line and venting requirements. We handle permit filing and inspection scheduling." },
-  { question: "What is the difference between a tank and tankless water heater?", answer: "A tank water heater stores and continuously heats a fixed volume of water (40–80 gallons). A tankless unit heats water on demand with no storage tank, providing unlimited hot water and typically 20–30% better energy efficiency. Tankless units cost more upfront but last 20+ years vs. 10–12 years for tank units." },
+  { question: "How long does water heater installation take?", answer: "A standard tank water heater replacement typically takes 2-3 hours. A tankless water heater installation takes 4-6 hours due to the gas line and venting requirements. We handle permit filing and inspection scheduling." },
+  { question: "What is the difference between a tank and tankless water heater?", answer: "A tank water heater stores and continuously heats a fixed volume of water (40-80 gallons). A tankless unit heats water on demand with no storage tank, providing unlimited hot water and typically 20-30% better energy efficiency. Tankless units cost more upfront but last 20+ years vs. 10-12 years for tank units." },
   { question: "Do you offer financing for water heater installation?", answer: "Yes. Financing through Synchrony Financial is available for qualifying customers. Ask about current promotional rates when you call (301) 679-5849." },
 ];
 
@@ -169,7 +169,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <CTABanner heading="Still have questions? Call us." subtext="A live dispatcher answers every call at (301) 679-5849 — 24 hours a day, 7 days a week." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "CONTACT US", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Still have questions? Call us." subtext="A live dispatcher answers every call at (301) 679-5849 — 24 hours a day, 7 days a week." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "CONTACT US", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

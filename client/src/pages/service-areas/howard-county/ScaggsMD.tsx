@@ -12,7 +12,7 @@ export default function ScaggsMD() {
       {label:"Howard County",href:"/service-areas/maryland/howard-county/"},
       {label:"Scaggsville MD"}
     ]}
-    eyebrow="Plumber in Scaggsville, MD · Howard County · Serving from Largo, MD"
+    eyebrow="Plumber in Scaggsville, MD  Howard County  Serving from Largo, MD"
     h1="Plumber in Scaggsville, MD"
     introParagraph="Definitive Mechanical serves Scaggsville, Maryland — a community in Howard County along the US-29 corridor near Laurel and Fulton, with a mix of established residential neighborhoods and newer development. We hold Howard County Master Plumber/Gasfitter License #20020096958 and Maryland State License #96958."
     trustItems={["Howard County License #20020096958","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}

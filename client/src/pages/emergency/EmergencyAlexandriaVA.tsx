@@ -48,21 +48,21 @@ export default function EmergencyAlexandriaVA() {
     <>
       <Helmet>
         <title>Emergency Plumber in Alexandria VA | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Alexandria VA — available 24/7. Virginia Master Plumber #2710064209 · Class A Contractor #2705181061. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Alexandria VA — available 24/7. Virginia Master Plumber #2710064209  Class A Contractor #2705181061. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-alexandria-va/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
 
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-          ⚠️ ALEXANDRIA PLUMBING EMERGENCY? CALL (301) 679-5849 — VA LICENSED · 24/7 · NO OVERTIME CHARGE
+           ALEXANDRIA PLUMBING EMERGENCY? CALL (301) 679-5849 — VA LICENSED  24/7  NO OVERTIME CHARGE
         </a>
       </div>
 
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Alexandria, VA" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · ALEXANDRIA, VA · OLD TOWN & ALL NEIGHBORHOODS</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  ALEXANDRIA, VA  OLD TOWN & ALL NEIGHBORHOODS</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Alexandria, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Definitive Mechanical provides 24/7 emergency plumbing in Alexandria, Virginia — from historic Old Town to Del Ray, West End, Potomac Yard, and all Alexandria neighborhoods. A live dispatcher answers every call. Virginia Master Plumber/Gasfitter #2710064209. No overtime surcharge. Call (301) 679-5849.
@@ -159,7 +159,7 @@ export default function EmergencyAlexandriaVA() {
         </div>
       </section>
 
-      <CTABanner heading="Alexandria plumbing emergency? Call now." subtext="VA Master Plumber #2710064209 · Class A Contractor · SWaM Cert 815255 · 24/7 Live Dispatcher · No Overtime Surcharge." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Alexandria plumbing emergency? Call now." subtext="VA Master Plumber #2710064209  Class A Contractor  SWaM Cert 815255  24/7 Live Dispatcher  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

@@ -12,9 +12,9 @@ export default function UnionMillVA() {
       {label:"Fairfax County",href:"/service-areas/northern-virginia/fairfax-county/"},
       {label:"Union Mill VA"}
     ]}
-    eyebrow="Plumber in Union Mill, VA · Fairfax County · Serving from Largo, MD"
+    eyebrow="Plumber in Union Mill, VA  Fairfax County  Serving from Largo, MD"
     h1="Plumber in Union Mill, VA"
-    introParagraph="Definitive Mechanical serves Union Mill, Virginia — a residential community in western Fairfax County near Centreville and Chantilly, featuring single-family homes and townhouses built in the 1990s–2000s. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
+    introParagraph="Definitive Mechanical serves Union Mill, Virginia — a residential community in western Fairfax County near Centreville and Chantilly, featuring single-family homes and townhouses built in the 1990s-2000s. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
@@ -24,7 +24,7 @@ export default function UnionMillVA() {
       {label:"Backflow Prevention & Annual Certification",href:"/backflow-certification/"}
     ]}
     localContextHeading="Unique context for Union Mill"
-    localContextBody={"Union Mill's 1990s–2000s construction means water heaters are entering the replacement cycle. Fairfax Water serves the community. Virginia License #2710064008 covers all permitted plumbing work in Fairfax County."}
+    localContextBody={"Union Mill's 1990s-2000s construction means water heaters are entering the replacement cycle. Fairfax Water serves the community. Virginia License #2710064008 covers all permitted plumbing work in Fairfax County."}
     licenseHeading="Licensed in Virginia, Maryland & DC"
     credentials={[{label:"VA Master Plumber #2710064008"},{label:"SWaM Certified"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[

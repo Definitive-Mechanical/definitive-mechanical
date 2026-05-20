@@ -23,7 +23,7 @@ const categories = [
     Icon: Zap,
     label: "EMERGENCY PLUMBING",
     badge: "24/7 AVAILABLE",
-    note: "Live dispatcher on call around the clock. We respond in 45–75 minutes.",
+    note: "Live dispatcher on call around the clock. We respond in 45-75 minutes.",
     services: [
       { label: "24/7 Emergency Plumbing", href: "/emergency-plumbing/" },
       { label: "Emergency Plumber Largo, MD", href: "/emergency-plumber-largo-md/" },
@@ -158,7 +158,7 @@ export default function ServicesDirectory() {
       <section className="bg-[var(--brand-navy)] py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
-            Licensed Plumbing Services · Maryland · Washington DC · Northern Virginia
+            Licensed Plumbing Services  Maryland  Washington DC  Northern Virginia
           </p>
           <h1 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
             All Plumbing Services
@@ -182,7 +182,7 @@ export default function ServicesDirectory() {
             </Link>
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
-            {["11 Years in Business", "Licensed Master Plumber/Gasfitter MD · DC · VA", "MDOT MBE Cert 20-134", "VA SWaM Cert 815255", "24/7 Emergency", "Financing Available"].map((t) => (
+            {["11 Years in Business", "Licensed Master Plumber/Gasfitter MD  DC  VA", "MDOT MBE Cert 20-134", "VA SWaM Cert 815255", "24/7 Emergency", "Financing Available"].map((t) => (
               <span key={t} className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-white/70">
                 {t}
               </span>

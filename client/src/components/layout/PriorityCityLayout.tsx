@@ -7,7 +7,7 @@
  *
  * Sections:
  *  S1  Hero            — full-bleed navy gradient, left copy + right form card
- *  S2  Stats bar       — cyan band: 24/7 | 11+ yrs | 4 states | MD·DC·VA
+ *  S2  Stats bar       — cyan band: 24/7 | 11+ yrs | 4 states | MDDCVA
  *  S3  Services        — white bg, 1/3 intro + 2/3 card grid (cyan top-border)
  *  S4  Emergency       — dark navy, red glow, 4 scenario cards + red CTA
  *  S5  Local context   — light grey, 3/5 copy + 2/5 navy credentials card
@@ -238,7 +238,7 @@ export default function PriorityCityLayout({
               {/* Stars */}
               <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                 {[...Array(5)].map((_, i) => <Star key={i} size={14} fill="var(--brand-cyan)" color="var(--brand-cyan)" />)}
-                <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "13px", marginLeft: 4 }}>4.8 · 40+ verified reviews</span>
+                <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "13px", marginLeft: 4 }}>4.8  40+ verified reviews</span>
               </div>
             </div>
             {/* Right: trust card */}
@@ -254,7 +254,7 @@ export default function PriorityCityLayout({
                 {[
                   { icon: Clock, text: "24/7 emergency — live dispatcher, no voicemail" },
                   { icon: ShieldCheck, text: "Licensed Master Plumber & Gasfitter in MD, DC & VA" },
-                  { icon: Award, text: "MDOT MBE Certified · CAGE Code 8HCF6" },
+                  { icon: Award, text: "MDOT MBE Certified  CAGE Code 8HCF6" },
                   { icon: CheckCircle, text: "Upfront written pricing — no overtime surcharge" },
                   { icon: MapPin, text: "Serving from Largo, MD — fast response across the DMV" },
                 ].map((item, i) => (
@@ -277,7 +277,7 @@ export default function PriorityCityLayout({
               { value: "24/7", label: "Emergency Response" },
               { value: "11+", label: "Years in Business" },
               { value: "4", label: "State Licenses" },
-              { value: "MD · DC · VA", label: "Service Region" },
+              { value: "MD  DC  VA", label: "Service Region" },
             ].map((stat, i) => (
               <div key={i} style={{ textAlign: "center" }}>
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "22px", color: "var(--brand-navy)", textTransform: "uppercase", letterSpacing: "0.02em", margin: 0, lineHeight: 1 }}>{stat.value}</p>

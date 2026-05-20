@@ -10,7 +10,7 @@ export default function NavyYardDC() {
       metaDescription={`Licensed plumber serving Navy Yard, DC. Plumbing for Navy Yard's condos, apartments & commercial properties. DC Master Plumber #PGM1002236. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/navy-yard/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Washington DC",href:"/service-areas/washington-dc"},{label:"Navy Yard"}]}
-      eyebrow="Plumber in Navy Yard, DC · DC License #PGM1002236"
+      eyebrow="Plumber in Navy Yard, DC  DC License #PGM1002236"
       h1="Plumber in Navy Yard, DC"
       introParagraph={"Definitive Mechanical provides licensed plumbing, emergency, and commercial services in Navy Yard — one of DC's most rapidly transformed neighborhoods, developed from a former federal shipyard into a mixed-use urban district anchored by Nationals Park and dense residential and commercial construction. Unlike most DC neighborhoods, Navy Yard's housing stock is predominantly new — built between 2005 and the present — with modern high-rise condominiums, apartment towers, and commercial buildings along the Anacostia riverfront. We hold DC Master Plumber/Gasfitter License #PGM1002236."}
       trustItems={["DC Master Plumber/Gasfitter #PGM1002236","MDOT MBE Cert 20-134","24/7 Emergency","CAGE 8HCF6"]}

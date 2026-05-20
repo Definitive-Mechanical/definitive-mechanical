@@ -6,7 +6,7 @@ export default function Ward2DC() {
     canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/ward-2/"
     schemaJson={[]}
     breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas/"},{label:"Washington DC",href:"/service-areas/washington-dc/"},{label:"Ward 2"}]}
-    eyebrow="Plumber in DC Ward 2 · Georgetown, Dupont Circle, Logan Circle, Shaw"
+    eyebrow="Plumber in DC Ward 2  Georgetown, Dupont Circle, Logan Circle, Shaw"
     h1="Plumber in Washington DC Ward 2"
     introParagraph="Definitive Mechanical serves Washington DC Ward 2 — encompassing Georgetown, Dupont Circle, Logan Circle, Shaw, Kalorama, West End, and Foggy Bottom. Ward 2 contains some of DC&#39;s most historically significant and high-value residential properties. We hold DC Master Plumber License #LP2024-01234."
     trustItems={["DC License #LP2024-01234","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}

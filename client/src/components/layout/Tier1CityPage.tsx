@@ -171,7 +171,7 @@ export default function Tier1CityPage({
                   <div style={{ display: "flex", gap: "2px" }}>
                     {[...Array(5)].map((_, i) => <Star key={i} size={14} style={{ color: "#FFD700", fill: "#FFD700" }} />)}
                   </div>
-                  <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "13px" }}>4.8 · 40+ Google Reviews</span>
+                  <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "13px" }}>4.8  40+ Google Reviews</span>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@ export default function Tier1CityPage({
               { icon: Clock, stat: "24/7", label: "Emergency Response" },
               { icon: Award, stat: "11+", label: "Years in Business" },
               { icon: ShieldCheck, stat: "4 States", label: "Licensed & Insured" },
-              { icon: MapPin, stat: "MD · DC · VA", label: "Service Area" },
+              { icon: MapPin, stat: "MD  DC  VA", label: "Service Area" },
             ].map(({ icon: Icon, stat, label }) => (
               <div key={label} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                 <Icon size={20} style={{ color: "var(--brand-navy)" }} />
@@ -262,7 +262,7 @@ export default function Tier1CityPage({
                 Burst pipe, sewer backup, gas leak, no hot water — a live dispatcher answers every call around the clock. Licensed Master Plumber dispatched immediately. No overtime surcharge, ever.
               </p>
               <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "15px", lineHeight: 1.7 }}>
-                We serve {cityName} and the surrounding area from our Largo, MD location. Most emergency calls are reached within 60–90 minutes.
+                We serve {cityName} and the surrounding area from our Largo, MD location. Most emergency calls are reached within 60-90 minutes.
               </p>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
@@ -423,7 +423,7 @@ export default function Tier1CityPage({
       {/* ── S9: CTA Banner ───────────────────────────────────────────────── */}
       <CTABanner
         heading={`Need a licensed plumber in ${cityName}?`}
-        subtext={`Serving ${cityName} from our Largo, MD location. ${ctaLicenseLine} · 24/7 Emergency · Upfront Pricing.`}
+        subtext={`Serving ${cityName} from our Largo, MD location. ${ctaLicenseLine}  24/7 Emergency  Upfront Pricing.`}
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
         variant="gradient"

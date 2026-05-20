@@ -48,24 +48,24 @@ export default function EmergencyBowieMD() {
     <>
       <Helmet>
         <title>Emergency Plumber in Bowie MD | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Bowie MD — available 24/7. WSSC #73696 · MD Master Plumber #96958. Just minutes from Bowie. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Bowie MD — available 24/7. WSSC #73696  MD Master Plumber #96958. Just minutes from Bowie. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-bowie-md/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
 
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-          ⚠️ BOWIE PLUMBING EMERGENCY? CALL (301) 679-5849 — FROM LARGO · WSSC LICENSED · 24/7
+           BOWIE PLUMBING EMERGENCY? CALL (301) 679-5849 — FROM LARGO  WSSC LICENSED  24/7
         </a>
       </div>
 
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Bowie, MD" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · BOWIE, MD · PRINCE GEORGE'S COUNTY</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  BOWIE, MD  PRINCE GEORGE'S COUNTY</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Bowie, MD</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical provides 24/7 emergency plumbing in Bowie, Maryland — dispatching from our Largo, MD base just minutes from most Bowie neighborhoods. A live dispatcher answers every call. WSSC Master Plumber/Gasfitter #73696 · MD State #96958. No overtime surcharge. Call (301) 679-5849.
+            Definitive Mechanical provides 24/7 emergency plumbing in Bowie, Maryland — dispatching from our Largo, MD base just minutes from most Bowie neighborhoods. A live dispatcher answers every call. WSSC Master Plumber/Gasfitter #73696  MD State #96958. No overtime surcharge. Call (301) 679-5849.
           </p>
           <div className="max-w-2xl mx-auto">
             <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -159,7 +159,7 @@ export default function EmergencyBowieMD() {
         </div>
       </section>
 
-      <CTABanner heading="Bowie plumbing emergency? Call now." subtext="Dispatching from Largo MD — minutes from Bowie. WSSC #73696 · MD #96958 · 24/7 Live Dispatcher · No Overtime Surcharge." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Bowie plumbing emergency? Call now." subtext="Dispatching from Largo MD — minutes from Bowie. WSSC #73696  MD #96958  24/7 Live Dispatcher  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

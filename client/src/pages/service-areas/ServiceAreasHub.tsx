@@ -176,13 +176,13 @@ export default function ServiceAreasHub() {
       <section style={{ background: 'var(--brand-navy)', padding: '64px 0 48px' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
-            Licensed in Maryland · Washington DC · Virginia · Delaware
+            Licensed in Maryland  Washington DC  Virginia  Delaware
           </p>
           <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', lineHeight: 1.1, marginBottom: '20px', textTransform: 'uppercase' }}>
             Plumbing Service Areas
           </h1>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', color: 'rgba(255,255,255,0.85)', maxWidth: '640px', lineHeight: 1.6, marginBottom: '32px' }}>
-            Definitive Mechanical is a licensed Master Plumber and Master Gasfitter serving the entire Maryland–DC–Northern Virginia metro area. We cover Prince George's County, Montgomery County, Howard County, Anne Arundel County, Charles County, all eight DC wards, Fairfax County, Arlington County, Loudoun County, and Prince William County with 24/7 emergency response throughout.
+            Definitive Mechanical is a licensed Master Plumber and Master Gasfitter serving the entire Maryland-DC-Northern Virginia metro area. We cover Prince George's County, Montgomery County, Howard County, Anne Arundel County, Charles County, all eight DC wards, Fairfax County, Arlington County, Loudoun County, and Prince William County with 24/7 emergency response throughout.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '24px' }}>
             <a
@@ -227,7 +227,7 @@ export default function ServiceAreasHub() {
               { icon: <Shield size={16} />, text: 'MDOT MBE Certified' },
               { icon: <Clock size={16} />, text: '24/7 Emergency Service' },
               { icon: <Award size={16} />, text: 'Licensed Master Plumber' },
-              { icon: <MapPin size={16} />, text: 'MD · DC · VA · DE' },
+              { icon: <MapPin size={16} />, text: 'MD  DC  VA  DE' },
             ].map((item) => (
               <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                 {item.icon} {item.text}

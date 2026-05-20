@@ -12,9 +12,9 @@ export default function MartinsAdditionsMD() {
       {label:"Montgomery County",href:"/service-areas/maryland/montgomery-county/"},
       {label:"Martin's Additions MD"}
     ]}
-    eyebrow="Plumber in Martin&#39;s Additions, MD · Montgomery County · Serving from Largo, MD"
+    eyebrow="Plumber in Martin&#39;s Additions, MD  Montgomery County  Serving from Largo, MD"
     h1="Plumber in Martin&#39;s Additions, MD"
-    introParagraph="Definitive Mechanical serves Martin&#39;s Additions, Maryland — a small community within unincorporated Chevy Chase in Montgomery County, tucked between Chevy Chase Village and Kensington. Martin&#39;s Additions features a tight grid of mid-20th century bungalow, cape cod, and colonial-style homes with the aging plumbing infrastructure typical of 1940s–1960s construction. We hold Maryland State License #96958 and WSSC License #73696."
+    introParagraph="Definitive Mechanical serves Martin&#39;s Additions, Maryland — a small community within unincorporated Chevy Chase in Montgomery County, tucked between Chevy Chase Village and Kensington. Martin&#39;s Additions features a tight grid of mid-20th century bungalow, cape cod, and colonial-style homes with the aging plumbing infrastructure typical of 1940s-1960s construction. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}
     services={[
       {label:"24/7 Emergency Plumbing",href:"/emergency-plumbing/"},
@@ -25,7 +25,7 @@ export default function MartinsAdditionsMD() {
       {label:"Water Line Repair — galvanized supply line service",href:"/water-line-repair/"}
     ]}
     localContextHeading="Unique context for Martin&#39;s Additions"
-    localContextBody="The 1940s–1960s construction in Martin&#39;s Additions is at peak galvanized pipe replacement demand. WSSC License #73696 covers all permitted plumbing work in the community."
+    localContextBody="The 1940s-1960s construction in Martin&#39;s Additions is at peak galvanized pipe replacement demand. WSSC License #73696 covers all permitted plumbing work in the community."
     licenseHeading="Licensed in Maryland, DC & Virginia"
     credentials={[{label:"MD Master Plumber #96958"},{label:"WSSC #73696"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[

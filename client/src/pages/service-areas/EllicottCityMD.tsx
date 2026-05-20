@@ -53,7 +53,7 @@ export default function EllicottCityMD() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
               <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
-                PLUMBING SERVICE · ELLICOTT CITY, MD · HOWARD COUNTY
+                PLUMBING SERVICE  ELLICOTT CITY, MD  HOWARD COUNTY
               </p>
               <h1 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in Ellicott City, MD
@@ -111,10 +111,10 @@ export default function EllicottCityMD() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { emoji: "💧", title: "Burst Pipe", body: "Immediate shut-off and repair to prevent water damage." },
-                { emoji: "🚽", title: "Sewer Backup", body: "Camera diagnosis and hydro-jet clearing, same visit." },
-                { emoji: "🔥", title: "Gas Leak", body: "Licensed gasfitter response — evacuate and call us." },
-                { emoji: "🌡️", title: "No Hot Water", body: "Water heater diagnosis and same-day replacement available." },
+                { emoji: "", title: "Burst Pipe", body: "Immediate shut-off and repair to prevent water damage." },
+                { emoji: "", title: "Sewer Backup", body: "Camera diagnosis and hydro-jet clearing, same visit." },
+                { emoji: "", title: "Gas Leak", body: "Licensed gasfitter response — evacuate and call us." },
+                { emoji: "", title: "No Hot Water", body: "Water heater diagnosis and same-day replacement available." },
               ].map((card, i) => (
                 <div key={i} style={{ background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:"8px", padding:"20px 16px" }}>
                   <div style={{ fontSize:"28px", marginBottom:"8px" }}>{card.emoji}</div>
@@ -179,7 +179,7 @@ export default function EllicottCityMD() {
       {/* S9: CTA Banner */}
       <CTABanner
         heading="Need a licensed plumber in Ellicott City, MD?"
-        subtext="Serving Ellicott City from our Largo, MD location. Howard County Master Plumber #MP-0000215 · MD State #96958 · 24/7 Emergency."
+        subtext="Serving Ellicott City from our Largo, MD location. Howard County Master Plumber #MP-0000215  MD State #96958  24/7 Emergency."
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
         variant="gradient"

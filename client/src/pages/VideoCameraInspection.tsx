@@ -9,7 +9,7 @@ import CTABanner from '@/components/ui/CTABanner';
 import TrustBadges from '@/components/ui/TrustBadges';
 
 const FAQ_ITEMS = [
-  { question: "How much does a sewer camera inspection cost?", answer: "A standard sewer camera inspection for a residential property in the DMV market typically costs $200–$400. Commercial inspections and longer line assessments may cost more depending on line length and access. When camera inspection is performed in conjunction with a repair, the cost may be rolled into the overall service." },
+  { question: "How much does a sewer camera inspection cost?", answer: "A standard sewer camera inspection for a residential property in the DMV market typically costs $200-$400. Commercial inspections and longer line assessments may cost more depending on line length and access. When camera inspection is performed in conjunction with a repair, the cost may be rolled into the overall service." },
   { question: "When should I get a sewer camera inspection?", answer: "Before any major sewer repair recommendation, when buying an older home, when multiple fixtures are draining slowly, after a sewage backup, as part of routine maintenance for commercial properties, or when purchasing an older commercial property. Camera inspection is the most cost-effective way to understand what is actually happening inside your sewer line." },
   { question: "What does a sewer camera inspection reveal?", answer: "A sewer camera inspection reveals blockages and their cause, root intrusion, pipe cracks and fractures, pipe collapse, joint offsets, bellying or sagging, grease accumulation, corrosion, and foreign material. It also locates exactly where in the line any issue exists — typically measured in feet from the cleanout — which allows for precise spot repair rather than guesswork excavation." },
 ];
@@ -45,7 +45,7 @@ export default function VideoCameraInspection() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Sewer Line Repair', href: '/sewer-line-repair' }, { label: 'Video Camera Inspection' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">VIDEO CAMERA INSPECTION · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">VIDEO CAMERA INSPECTION  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Video Camera Inspection for Drains & Sewer Lines in Maryland, DC & Northern Virginia
               </h1>
@@ -109,10 +109,10 @@ export default function VideoCameraInspection() {
             <div>
               <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>What does a sewer camera inspection cost?</h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
-                A standard sewer camera inspection for a residential property in the DMV market typically costs $200–$400. Commercial inspections and longer line assessments may cost more depending on line length and access. When camera inspection is performed in conjunction with a repair, the cost may be rolled into the overall service.
+                A standard sewer camera inspection for a residential property in the DMV market typically costs $200-$400. Commercial inspections and longer line assessments may cost more depending on line length and access. When camera inspection is performed in conjunction with a repair, the cost may be rolled into the overall service.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
-                Consider that a camera inspection at $200–$400 can prevent a $5,000–$12,000 excavation that turns out to be unnecessary. It is the most cost-effective diagnostic tool available for sewer line problems.
+                Consider that a camera inspection at $200-$400 can prevent a $5,000-$12,000 excavation that turns out to be unnecessary. It is the most cost-effective diagnostic tool available for sewer line problems.
               </p>
               <BookNowButton variant="phone" text="CALL TO SCHEDULE INSPECTION" href="tel:+13016795849" size="md" />
             </div>

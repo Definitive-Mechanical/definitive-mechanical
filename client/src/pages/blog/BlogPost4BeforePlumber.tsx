@@ -186,17 +186,17 @@ export default function BlogPost4BeforePlumber() {
           ]}
         />
 
-        <BlogEyebrow>Emergency Plumbing Guide · 5 min read</BlogEyebrow>
+        <BlogEyebrow>Emergency Plumbing Guide  5 min read</BlogEyebrow>
         <BlogH1>What To Do Before the Plumber Arrives</BlogH1>
         <AuthorBlock date="January 15, 2026" />
 
         <FeaturedSnippet>
-          The most important thing to do before the plumber arrives is shut off the water supply — at the fixture shutoff, section shutoff, or main shutoff, depending on the severity. Then document the damage with photos, remove standing water if safe, and move valuables out of the water path. These steps take 10–15 minutes and can prevent thousands of dollars in additional damage.
+          The most important thing to do before the plumber arrives is shut off the water supply — at the fixture shutoff, section shutoff, or main shutoff, depending on the severity. Then document the damage with photos, remove standing water if safe, and move valuables out of the water path. These steps take 10-15 minutes and can prevent thousands of dollars in additional damage.
         </FeaturedSnippet>
 
         <BlogH2>Why what you do before the plumber arrives matters</BlogH2>
         <BlogP>
-          The average emergency plumber response time in the DC metro area is 60–90 minutes. In a burst pipe situation, that's 200–400 gallons of water per hour at full line pressure — if the water is still running. Shutting off the water supply immediately and taking a few preparatory steps can mean the difference between a $500 repair and a $15,000 water damage restoration project.
+          The average emergency plumber response time in the DC metro area is 60-90 minutes. In a burst pipe situation, that's 200-400 gallons of water per hour at full line pressure — if the water is still running. Shutting off the water supply immediately and taking a few preparatory steps can mean the difference between a $500 repair and a $15,000 water damage restoration project.
         </BlogP>
         <BlogP>
           This guide gives you the 7 steps to take while waiting for your plumber — in order of priority.
@@ -338,7 +338,7 @@ export default function BlogPost4BeforePlumber() {
         <CalloutBox variant="info">
           <strong>Call Definitive Mechanical — 24/7 Emergency Plumbing in MD, DC &amp; VA</strong>
           <br />
-          When you call (301) 679-5849, you reach a live dispatcher — not an answering service. We dispatch a Licensed Master Plumber on every emergency call, typically arriving within 60–90 minutes in the DC metro area.
+          When you call (301) 679-5849, you reach a live dispatcher — not an answering service. We dispatch a Licensed Master Plumber on every emergency call, typically arriving within 60-90 minutes in the DC metro area.
           <br /><br />
           MD Master Plumber #{LICENSE_MD} | DC #{LICENSE_DC} | VA #{LICENSE_VA}
         </CalloutBox>

@@ -12,7 +12,7 @@ export default function BroadlandsVA() {
       {label:"Loudoun County",href:"/service-areas/northern-virginia/loudoun-county/"},
       {label:"Broadlands VA"}
     ]}
-    eyebrow="Plumber in Broadlands, VA · Loudoun County · Serving from Largo, MD"
+    eyebrow="Plumber in Broadlands, VA  Loudoun County  Serving from Largo, MD"
     h1="Plumber in Broadlands, VA"
     introParagraph="Definitive Mechanical serves Broadlands, Virginia — a large planned community in Loudoun County near Ashburn, featuring single-family homes, townhouses, and condominiums built primarily in the 2000s. Broadlands homes are entering the active water heater replacement cycle. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}
@@ -24,7 +24,7 @@ export default function BroadlandsVA() {
       {label:"Backflow Prevention & Annual Certification",href:"/backflow-certification/"}
     ]}
     localContextHeading="Unique context for Broadlands"
-    localContextBody={"Broadlands' 2000s construction means original water heaters are at or past their 15–20 year service life. Loudoun Water serves the community. Virginia License #2710064008 covers all permitted plumbing work in Loudoun County."}
+    localContextBody={"Broadlands' 2000s construction means original water heaters are at or past their 15-20 year service life. Loudoun Water serves the community. Virginia License #2710064008 covers all permitted plumbing work in Loudoun County."}
     licenseHeading="Licensed in Virginia, Maryland & DC"
     credentials={[{label:"VA Master Plumber #2710064008"},{label:"SWaM Certified"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[

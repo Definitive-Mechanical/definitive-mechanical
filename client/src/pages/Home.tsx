@@ -59,7 +59,7 @@ const CREDENTIALS = [
 const HOME_FAQ = [
   {
     question: 'How much does a plumber charge per hour in Maryland?',
-    answer: 'Plumbing rates in Maryland vary based on the service type, urgency, and materials required. Standard service calls typically range from $150–$300 for diagnosis and simple repairs. Emergency and after-hours service may carry a premium with other providers — Definitive Mechanical charges the same rate regardless of time of day. Call (301) 679-5849 for an upfront estimate before any work begins.',
+    answer: 'Plumbing rates in Maryland vary based on the service type, urgency, and materials required. Standard service calls typically range from $150-$300 for diagnosis and simple repairs. Emergency and after-hours service may carry a premium with other providers — Definitive Mechanical charges the same rate regardless of time of day. Call (301) 679-5849 for an upfront estimate before any work begins.',
   },
   {
     question: 'What qualifies as a plumbing emergency?',
@@ -126,10 +126,10 @@ function HeroSection() {
           {/* LEFT — headline & trust signals — 3/5 */}
           <div className="lg:col-span-3">
             <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
-              LICENSED PLUMBING · MARYLAND · WASHINGTON DC · NORTHERN VIRGINIA
+              LICENSED PLUMBING  MARYLAND  WASHINGTON DC  NORTHERN VIRGINIA
             </p>
             <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.01em', color: 'white', fontSize: 'clamp(34px, 5vw, 64px)', lineHeight: 1.0, marginBottom: '20px' }}>
-              Licensed Master Plumbers. Honest Service. No Sales Pitch.
+              Licensed Master Plumbers. Honest Service.
             </h1>
             <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '540px', marginBottom: '24px' }}>
               Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor serving homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia. Master Plumber and Master Gasfitter licensed in four states. 24/7 emergency service. Upfront pricing in writing — always.
@@ -158,7 +158,7 @@ function HeroSection() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Free Estimate · No Obligation</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Free Estimate  No Obligation</p>
                   <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'white', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                   {/* Name + Phone */}
@@ -232,7 +232,7 @@ function HeroSection() {
 
                   <button type="submit" disabled={submitting}
                     style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
-                    {submitting ? 'Submitting…' : 'Get My Free Estimate'}
+                    {submitting ? 'Submitting...' : 'Get My Free Estimate'}
                   </button>
 
                   <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
@@ -279,7 +279,7 @@ export default function Home() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {[
               { number: '11', label: 'Years in Business', icon: Award },
-              { number: '4.8★', label: 'Google Rating', icon: Star },
+              { number: '4.8', label: 'Google Rating', icon: Star },
               { number: '24/7', label: 'Emergency Service', icon: Clock },
               { number: '4 States', label: 'Master Licensed', icon: ShieldCheck },
             ].map((stat, index) => (
@@ -484,7 +484,7 @@ export default function Home() {
                 {
                   icon: MapPin,
                   heading: 'Maryland',
-                  body: "Prince George's County · Montgomery County · Howard County · Anne Arundel County · Charles County",
+                  body: "Prince George's County  Montgomery County  Howard County  Anne Arundel County  Charles County",
                   cities: 'Largo, Bowie, Rockville, Bethesda, Potomac, Waldorf, Ellicott City',
                   href: '/service-areas/maryland',
                 },
@@ -620,7 +620,7 @@ export default function Home() {
                   We work with government agencies and commercial clients
                 </h2>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7 }}>
-                  MDOT MBE Certified · VA SWaM Certified · CAGE 8HCF6 · NAICS 238220. Capability statement available. Master Plumber and Master Gasfitter licensed in four states.
+                  MDOT MBE Certified  VA SWaM Certified  CAGE 8HCF6  NAICS 238220. Capability statement available. Master Plumber and Master Gasfitter licensed in four states.
                 </p>
               </div>
               <div style={{ textAlign: 'center' }}>
@@ -668,7 +668,7 @@ export default function Home() {
       {/* SECTION 12: FINAL CTA */}
       <CTABanner
         heading="Ready for licensed plumbing service in Maryland, DC, or Northern Virginia?"
-        subtext="We answer 24/7 for emergencies. Office hours Monday–Friday 9am–5pm, Saturday 9am–2pm. Upfront pricing in writing on every job."
+        subtext="We answer 24/7 for emergencies. Office hours Monday-Friday 9am-5pm, Saturday 9am-2pm. Upfront pricing in writing on every job."
         primaryBtn={{ text: `CALL ${BUSINESS.phone}`, href: `tel:${BUSINESS.phoneRaw}` }}
         secondaryBtn={{ text: 'REQUEST SERVICE ONLINE', href: '/contact' }}
         variant="gradient"

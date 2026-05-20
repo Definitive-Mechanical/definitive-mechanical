@@ -12,7 +12,7 @@ export default function WolfTrapVA() {
       {label:"Fairfax County",href:"/service-areas/northern-virginia/fairfax-county/"},
       {label:"Wolf Trap VA"}
     ]}
-    eyebrow="Plumber in Wolf Trap, VA · Fairfax County · Serving from Largo, MD"
+    eyebrow="Plumber in Wolf Trap, VA  Fairfax County  Serving from Largo, MD"
     h1="Plumber in Wolf Trap, VA"
     introParagraph="Definitive Mechanical serves Wolf Trap, Virginia — an unincorporated community in Fairfax County near Vienna and McLean, home to the Wolf Trap National Park for the Performing Arts. Wolf Trap features a mix of mid-century and newer single-family homes in a wooded, semi-rural setting. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}

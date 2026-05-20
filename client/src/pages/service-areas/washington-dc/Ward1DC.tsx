@@ -6,7 +6,7 @@ export default function Ward1DC() {
     canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/ward-1/"
     schemaJson={[]}
     breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas/"},{label:"Washington DC",href:"/service-areas/washington-dc/"},{label:"Ward 1"}]}
-    eyebrow="Plumber in DC Ward 1 · Columbia Heights, Mount Pleasant, Adams Morgan"
+    eyebrow="Plumber in DC Ward 1  Columbia Heights, Mount Pleasant, Adams Morgan"
     h1="Plumber in Washington DC Ward 1"
     introParagraph="Definitive Mechanical serves Washington DC Ward 1 — encompassing Columbia Heights, Mount Pleasant, Adams Morgan, Lanier Heights, and Columbia Heights. Ward 1 is one of DC&#39;s most densely populated wards, with a mix of early-20th-century rowhouses, multi-unit apartment buildings, and converted Victorian-era homes. We hold DC Master Plumber License #LP2024-01234 and Maryland State License #96958."
     trustItems={["DC License #LP2024-01234","MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}

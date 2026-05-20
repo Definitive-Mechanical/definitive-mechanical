@@ -12,7 +12,7 @@ export default function ChevyChaseViewMD() {
       {label:"Montgomery County",href:"/service-areas/maryland/montgomery-county/"},
       {label:"Chevy Chase View MD"}
     ]}
-    eyebrow="Plumber in Chevy Chase View, MD · Montgomery County · Serving from Largo, MD"
+    eyebrow="Plumber in Chevy Chase View, MD  Montgomery County  Serving from Largo, MD"
     h1="Plumber in Chevy Chase View, MD"
     introParagraph="Definitive Mechanical serves Chevy Chase View, Maryland — a small residential community in Montgomery County within the greater Chevy Chase area. Chevy Chase View features mid-century single-family homes in the post-war rancher and cape cod styles common throughout the inner Montgomery County suburbs. We hold Maryland State License #96958 and WSSC License #73696."
     trustItems={["MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}

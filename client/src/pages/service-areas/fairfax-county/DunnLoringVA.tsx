@@ -12,7 +12,7 @@ export default function DunnLoringVA() {
       {label:"Fairfax County",href:"/service-areas/northern-virginia/fairfax-county/"},
       {label:"Dunn Loring VA"}
     ]}
-    eyebrow="Plumber in Dunn Loring, VA · Fairfax County · Serving from Largo, MD"
+    eyebrow="Plumber in Dunn Loring, VA  Fairfax County  Serving from Largo, MD"
     h1="Plumber in Dunn Loring, VA"
     introParagraph="Definitive Mechanical serves Dunn Loring, Virginia — a small unincorporated community in Fairfax County along the Orange Line Metro corridor between Merrifield and Vienna. Dunn Loring features a mix of post-war single-family homes and newer townhouse and condominium developments. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified by the Virginia Department of Small Business and Supplier Diversity."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}

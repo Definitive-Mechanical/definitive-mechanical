@@ -36,7 +36,7 @@ export default function HowardCounty() {
     <>
       <Helmet>
         <title>Plumber in Howard County MD | Definitive Mechanical | (301) 679-5849</title>
-        <meta name="description" content="Licensed plumbing services throughout Howard County MD. Howard County #20020096958 · WSSC #73696 · MD #96958. 24/7 emergency. Call (301) 679-5849." />
+        <meta name="description" content="Licensed plumbing services throughout Howard County MD. Howard County #20020096958  WSSC #73696  MD #96958. 24/7 emergency. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/service-areas/maryland/howard-county/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
@@ -44,10 +44,10 @@ export default function HowardCounty() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Maryland", href: "/service-areas/maryland/" }, { label: "Howard County" }]}/>
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES · HOWARD COUNTY, MD</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES  HOWARD COUNTY, MD</p>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em', lineHeight: 1.0 }}>Plumber in Howard County, MD</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical provides licensed plumbing services throughout Howard County — Ellicott City, Columbia, Clarksville, Fulton, and all Howard County communities. Howard County #20020096958 · WSSC #73696 · MD State #96958. 24/7 emergency. Call (301) 679-5849.
+            Definitive Mechanical provides licensed plumbing services throughout Howard County — Ellicott City, Columbia, Clarksville, Fulton, and all Howard County communities. Howard County #20020096958  WSSC #73696  MD State #96958. 24/7 emergency. Call (301) 679-5849.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
@@ -99,7 +99,7 @@ export default function HowardCounty() {
         </div>
       </section>
 
-      <CTABanner heading="Need a plumber in Howard County?" subtext="Howard County #20020096958 · WSSC #73696 · MD #96958 · 24/7 Emergency." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Need a plumber in Howard County?" subtext="Howard County #20020096958  WSSC #73696  MD #96958  24/7 Emergency." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

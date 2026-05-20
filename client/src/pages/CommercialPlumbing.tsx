@@ -58,7 +58,7 @@ export default function CommercialPlumbing() {
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
-                COMMERCIAL PLUMBING · MD, DC & NORTHERN VIRGINIA
+                COMMERCIAL PLUMBING  MD, DC & NORTHERN VIRGINIA
               </p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Commercial Plumbing Service — Maryland, DC & Northern Virginia

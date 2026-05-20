@@ -64,7 +64,7 @@ export default function EmergencyRockvilleMD() {
     <>
       <Helmet>
         <title>Emergency Plumber in Rockville MD | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Rockville MD — available 24/7. City of Rockville licensed #PLL-0002113 · WSSC #73696 · MD #96958. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Rockville MD — available 24/7. City of Rockville licensed #PLL-0002113  WSSC #73696  MD #96958. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-rockville-md/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
@@ -72,7 +72,7 @@ export default function EmergencyRockvilleMD() {
       {/* Safety Top Bar */}
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase text-xs tracking-wide" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-          ⚠️ ROCKVILLE PLUMBING EMERGENCY? CALL (301) 679-5849 — LIVE DISPATCHER 24/7 · NO OVERTIME SURCHARGE
+           ROCKVILLE PLUMBING EMERGENCY? CALL (301) 679-5849 — LIVE DISPATCHER 24/7  NO OVERTIME SURCHARGE
         </a>
       </div>
 
@@ -81,7 +81,7 @@ export default function EmergencyRockvilleMD() {
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Rockville MD" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
-            24/7 EMERGENCY PLUMBER · ROCKVILLE, MD · CITY OF ROCKVILLE LICENSED
+            24/7 EMERGENCY PLUMBER  ROCKVILLE, MD  CITY OF ROCKVILLE LICENSED
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>
             Emergency Plumber in Rockville, MD
@@ -218,8 +218,8 @@ export default function EmergencyRockvilleMD() {
 
       <CTABanner
         heading="Rockville plumbing emergency? Don't wait."
-        subtext="City of Rockville #PLL-0002113 · WSSC #73696 · MD #96958 · 24/7 Live Dispatcher · No Overtime Surcharge."
-        primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }}
+        subtext="City of Rockville #PLL-0002113  WSSC #73696  MD #96958  24/7 Live Dispatcher  No Overtime Surcharge."
+        primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }}
         variant="gradient"
       />

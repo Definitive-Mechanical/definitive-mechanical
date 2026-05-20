@@ -79,7 +79,7 @@ export default function CommercialPlumberMaryland() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Commercial Plumbing", href: "/commercial-plumbing/" }, { label: "Commercial Plumber Maryland" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing · Maryland · All Five Counties</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing  Maryland  All Five Counties</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Licensed Commercial Plumber in Maryland
           </h1>
@@ -162,7 +162,7 @@ export default function CommercialPlumberMaryland() {
               ))}
             </ul>
             <div className="text-center p-6 rounded-lg" style={{ background: "rgba(0,158,198,0.15)", border: "1px solid rgba(0,158,198,0.4)" }}>
-              <p className="text-white font-bold text-xl mb-2" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>📞 Call (301) 679-5849 — 24/7 live dispatcher</p>
+              <p className="text-white font-bold text-xl mb-2" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}> Call (301) 679-5849 — 24/7 live dispatcher</p>
               <p className="text-white/80 text-sm mb-4" style={{ fontFamily: "'Barlow', sans-serif" }}>We coordinate with property managers, building engineers, and facility staff.</p>
               <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             </div>
@@ -264,14 +264,14 @@ export default function CommercialPlumberMaryland() {
       <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a licensed commercial plumber in Maryland?</h2>
-          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}>📞 Call (301) 679-5849</p>
+          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>MD Master Plumber #96958 | WSSC #73696 | MDOT MBE Cert 20-134 | CAGE 8HCF6</p>
           <div className="flex flex-wrap justify-center gap-4">
             <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             <BookNowButton variant="outline" text="REQUEST COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
             <BookNowButton variant="ghost" text="DOWNLOAD CAPABILITY STATEMENT" href="/capability-statement.pdf" size="lg" />
           </div>
-          <p className="mt-6 text-white/50 text-xs" style={{ fontFamily: "'Barlow', sans-serif" }}>Definitive Mechanical · 9701 Apollo Drive, Suite 100 · Largo, MD 20774</p>
+          <p className="mt-6 text-white/50 text-xs" style={{ fontFamily: "'Barlow', sans-serif" }}>Definitive Mechanical  9701 Apollo Drive, Suite 100  Largo, MD 20774</p>
         </div>
       </section>
     </div>

@@ -64,13 +64,13 @@ const FURNACE_REPAIRS = [
 ];
 
 const PRICING_ROWS = [
-  { type: "Thermostat replacement", range: "$150–$350" },
-  { type: "Ignition/pilot repair (gas furnace or boiler)", range: "$200–$500" },
-  { type: "Circulator pump replacement (boiler)", range: "$400–$900" },
-  { type: "Zone valve replacement", range: "$250–$600 per zone" },
-  { type: "Heat exchanger inspection", range: "$150–$300" },
-  { type: "Gas valve replacement", range: "$300–$700" },
-  { type: "Pressure relief valve (boiler)", range: "$150–$300" },
+  { type: "Thermostat replacement", range: "$150-$350" },
+  { type: "Ignition/pilot repair (gas furnace or boiler)", range: "$200-$500" },
+  { type: "Circulator pump replacement (boiler)", range: "$400-$900" },
+  { type: "Zone valve replacement", range: "$250-$600 per zone" },
+  { type: "Heat exchanger inspection", range: "$150-$300" },
+  { type: "Gas valve replacement", range: "$300-$700" },
+  { type: "Pressure relief valve (boiler)", range: "$150-$300" },
 ];
 
 export default function BoilerFurnaceRepair() {
@@ -98,7 +98,7 @@ export default function BoilerFurnaceRepair() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Boiler & Furnace Repair' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">BOILER & FURNACE REPAIR · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">BOILER & FURNACE REPAIR  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Boiler & Furnace Repair in Maryland, DC & Northern Virginia
               </h1>

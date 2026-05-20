@@ -47,7 +47,7 @@ export default function GovernmentMunicipalPlumbing() {
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
-                GOVERNMENT & MUNICIPAL PLUMBING · MDOT MBE · VA SWAM CERTIFIED
+                GOVERNMENT & MUNICIPAL PLUMBING  MDOT MBE  VA SWAM CERTIFIED
               </p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Government & Municipal Plumbing — MDOT MBE & VA SWaM Certified
@@ -183,7 +183,7 @@ export default function GovernmentMunicipalPlumbing() {
 
       <CTABanner
         heading="Government or municipal plumbing project in Maryland, DC, or Northern Virginia?"
-        subtext="MDOT MBE Certified · VA SWaM Certified · CAGE 8HCF6 · NAICS 238220 · Capability statement available."
+        subtext="MDOT MBE Certified  VA SWaM Certified  CAGE 8HCF6  NAICS 238220  Capability statement available."
         primaryBtn={{ text: `CALL ${BUSINESS.phone}`, href: `tel:${BUSINESS.phoneRaw}` }}
         secondaryBtn={{ text: 'REQUEST CAPABILITY STATEMENT', href: '/contact' }}
         variant="gradient"

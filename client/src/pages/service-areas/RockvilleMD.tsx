@@ -52,7 +52,7 @@ export default function RockvilleMD() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
               <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
-                PLUMBING SERVICE · ROCKVILLE, MD · MONTGOMERY COUNTY
+                PLUMBING SERVICE  ROCKVILLE, MD  MONTGOMERY COUNTY
               </p>
               <h1 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in Rockville, MD
@@ -137,10 +137,10 @@ export default function RockvilleMD() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               {[
-                { emoji: "💧", title: "Burst Pipe", body: "Immediate shut-off and repair to prevent water damage." },
-                { emoji: "🚽", title: "Sewer Backup", body: "Camera diagnosis and hydro-jet clearing, same visit." },
-                { emoji: "🔥", title: "Gas Leak", body: "Licensed gasfitter response — evacuate and call us." },
-                { emoji: "🌡️", title: "No Hot Water", body: "Water heater diagnosis and same-day replacement available." },
+                { emoji: "", title: "Burst Pipe", body: "Immediate shut-off and repair to prevent water damage." },
+                { emoji: "", title: "Sewer Backup", body: "Camera diagnosis and hydro-jet clearing, same visit." },
+                { emoji: "", title: "Gas Leak", body: "Licensed gasfitter response — evacuate and call us." },
+                { emoji: "", title: "No Hot Water", body: "Water heater diagnosis and same-day replacement available." },
               ].map((card, i) => (
                 <div key={i} style={{ background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:"8px", padding:"20px 16px" }}>
                   <div style={{ fontSize:"28px", marginBottom:"8px" }}>{card.emoji}</div>
@@ -160,7 +160,7 @@ export default function RockvilleMD() {
           <div className="max-w-3xl">
             <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }} className="mb-2">Residential:</p>
             <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
-              Rockville's housing stock spans from mid-century Twinbrook ranchers (1950s–1960s, often with original cast iron drain lines and galvanized water supply that have been updated over decades) to newer construction in Fallsgrove, King Farm, and Rockville Town Square where modern systems are reaching their first major service milestones. Common residential calls in Rockville include water heater replacement (gas and electric), drain cleaning in mid-century homes, sewer camera inspection before home purchase, and gas line service for kitchen renovations and outdoor appliance additions.
+              Rockville's housing stock spans from mid-century Twinbrook ranchers (1950s-1960s, often with original cast iron drain lines and galvanized water supply that have been updated over decades) to newer construction in Fallsgrove, King Farm, and Rockville Town Square where modern systems are reaching their first major service milestones. Common residential calls in Rockville include water heater replacement (gas and electric), drain cleaning in mid-century homes, sewer camera inspection before home purchase, and gas line service for kitchen renovations and outdoor appliance additions.
             </p>
             <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }} className="mb-2 mt-6">Commercial:</p>
             <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
@@ -227,7 +227,7 @@ export default function RockvilleMD() {
       {/* S9: CTA Banner */}
       <CTABanner
         heading="Need a licensed plumber in Rockville, MD?"
-        subtext="Serving Rockville from our Largo, MD location. City of Rockville #PLL-0002113 · WSSC #73696 · MD State #96958 · 24/7 Emergency."
+        subtext="Serving Rockville from our Largo, MD location. City of Rockville #PLL-0002113  WSSC #73696  MD State #96958  24/7 Emergency."
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
         variant="gradient"

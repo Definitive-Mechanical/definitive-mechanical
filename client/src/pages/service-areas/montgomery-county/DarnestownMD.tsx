@@ -10,7 +10,7 @@ export default function DarnestownMD() {
       metaDescription={`Licensed plumber serving Darnestown, MD. Plumbing, gas, water heater & emergency service for Darnestown's estate homes. MD #96958. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/darnestown-md/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Maryland",href:"/service-areas/maryland"},{label:"Montgomery County",href:"/service-areas/maryland/montgomery-county"},{label:"Darnestown MD"}]}
-      eyebrow="Plumber in Darnestown, MD · Montgomery County · Serving from Largo, MD"
+      eyebrow="Plumber in Darnestown, MD  Montgomery County  Serving from Largo, MD"
       h1="Plumber in Darnestown, MD"
       introParagraph="Definitive Mechanical serves Darnestown, Maryland — a largely rural and semi-rural community in western Montgomery County characterized by large estate properties, horse farms, and upscale custom homes on significant acreage. We hold Maryland State Master Plumber/Gasfitter License #96958 and WSSC License #73696, and serve Darnestown alongside the City of Rockville (License #PLL-0002113) and the broader Montgomery County area."
       trustItems={["MD Master Plumber #96958","WSSC #73696","City of Rockville #PLL-0002113","MDOT MBE Cert 20-134"]}

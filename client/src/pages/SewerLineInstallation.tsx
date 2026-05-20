@@ -11,7 +11,7 @@ import ProcessStep from '@/components/ui/ProcessStep';
 
 const FAQ_ITEMS = [
   { question: "How do I know if I need full sewer line replacement vs. repair?", answer: "Camera inspection tells you. A sewer camera shows the interior condition of the full line — localized damage calls for spot repair, widespread deterioration calls for replacement. We use camera inspection before recommending any full replacement. Call (301) 679-5849 for a camera inspection." },
-  { question: "How long does sewer line installation take?", answer: "A standard residential sewer line replacement typically takes 1–3 days including excavation, pipe installation, and backfill. Larger or more complex jobs — deep lines, concrete removal, or complex routing — may take longer. We provide a realistic timeline estimate before the job begins." },
+  { question: "How long does sewer line installation take?", answer: "A standard residential sewer line replacement typically takes 1-3 days including excavation, pipe installation, and backfill. Larger or more complex jobs — deep lines, concrete removal, or complex routing — may take longer. We provide a realistic timeline estimate before the job begins." },
   { question: "Do you handle sewer line installation for commercial properties?", answer: "Yes. We install and replace sewer lines for commercial properties, multi-family buildings, government facilities, and new construction projects across Maryland, DC, and Northern Virginia. Contact (301) 679-5849 to discuss your commercial project." },
 ];
 
@@ -27,10 +27,10 @@ const PROCESS_STEPS = [
 ];
 
 const PRICING_ROWS = [
-  { scope: "Residential sewer line replacement (50–100 ft)", range: "$5,000–$12,000" },
-  { scope: "Residential new installation (new construction)", range: "$4,000–$10,000" },
+  { scope: "Residential sewer line replacement (50-100 ft)", range: "$5,000-$12,000" },
+  { scope: "Residential new installation (new construction)", range: "$4,000-$10,000" },
   { scope: "Commercial sewer line replacement", range: "Custom quote" },
-  { scope: "Permit fees (vary by jurisdiction)", range: "$150–$800+" },
+  { scope: "Permit fees (vary by jurisdiction)", range: "$150-$800+" },
 ];
 
 const LICENSE_BADGES = ["MD #96958", "WSSC #73696", "DC #PGM1002236", "VA #2710064209"];
@@ -45,7 +45,7 @@ export default function SewerLineInstallation() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Sewer Line Repair', href: '/sewer-line-repair' }, { label: 'Sewer Line Installation' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">SEWER LINE INSTALLATION · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">SEWER LINE INSTALLATION  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Sewer Line Installation in Maryland, DC & Northern Virginia
               </h1>
@@ -73,7 +73,7 @@ export default function SewerLineInstallation() {
             Camera inspection typically makes this determination — which is why we use it before recommending replacement. Full sewer line installation or replacement is necessary when:
           </p>
           <div className="max-w-3xl mx-auto space-y-3 mb-8">
-            {["The existing line is deteriorated beyond repair along its full length (common in homes with original clay or cast iron lines from the 1940s–1970s)", "The line has collapsed in multiple sections", "Root intrusion has progressed to the point where the pipe wall integrity is compromised throughout", "The line has a chronic belly (low spot) causing repeated backups that cannot be corrected by spot repair", "New construction requires a new sewer line from the building to the municipal connection", "A property is adding a structure or addition that requires extending the sewer system"].map((item) => (
+            {["The existing line is deteriorated beyond repair along its full length (common in homes with original clay or cast iron lines from the 1940s-1970s)", "The line has collapsed in multiple sections", "Root intrusion has progressed to the point where the pipe wall integrity is compromised throughout", "The line has a chronic belly (low spot) causing repeated backups that cannot be corrected by spot repair", "New construction requires a new sewer line from the building to the municipal connection", "A property is adding a structure or addition that requires extending the sewer system"].map((item) => (
               <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <CheckCircle2 size={18} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.6 }}>{item}</span>

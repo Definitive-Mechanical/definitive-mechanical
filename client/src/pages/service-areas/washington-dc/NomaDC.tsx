@@ -10,7 +10,7 @@ export default function NomaDC() {
       metaDescription={`Licensed plumber serving NoMa (North of Massachusetts Avenue), DC. Plumbing for NoMa's condos, apartments & commercial buildings. DC #PGM1002236. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/noma/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Washington DC",href:"/service-areas/washington-dc"},{label:"NoMa"}]}
-      eyebrow="Plumber in NoMa, DC · DC License #PGM1002236"
+      eyebrow="Plumber in NoMa, DC  DC License #PGM1002236"
       h1="Plumber in NoMa, DC"
       introParagraph={"Definitive Mechanical provides licensed plumbing, emergency, and commercial services in NoMa (North of Massachusetts Avenue NE) — a rapidly growing DC neighborhood that has transformed from light-industrial to a dense mixed-use district of apartment towers, condominiums, hotels, office buildings, and retail around the NoMa-Gallaudet Metro station. We hold DC Master Plumber/Gasfitter License #PGM1002236 for all licensed plumbing work in the District."}
       trustItems={["DC Master Plumber/Gasfitter #PGM1002236","MDOT MBE Cert 20-134","24/7 Emergency","CAGE 8HCF6"]}

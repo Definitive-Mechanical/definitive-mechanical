@@ -30,7 +30,7 @@ export default function Financing() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
             <div className="lg:col-span-3">
               <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
-                PLUMBING FINANCING · MD, DC & NORTHERN VIRGINIA
+                PLUMBING FINANCING  MD, DC & NORTHERN VIRGINIA
               </p>
               <h1 style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "clamp(28px,4vw,44px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
                 Plumbing Financing Available
@@ -38,7 +38,7 @@ export default function Financing() {
               <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "560px", lineHeight: 1.7 }} className="mb-6">
                 Definitive Mechanical offers financing through Synchrony Financial for qualified customers. Don't let cost delay a necessary repair — financing options are available for water heater replacements, sewer line work, gas line installations, and more across Maryland, Washington DC, and Northern Virginia.
               </p>
-              <TrustBadges variant="dark" badges={["Synchrony Financing", "Quick Application", "Licensed Master Plumber", "MD · DC · VA · DE"]} />
+              <TrustBadges variant="dark" badges={["Synchrony Financing", "Quick Application", "Licensed Master Plumber", "MD  DC  VA  DE"]} />
               <div className="flex flex-wrap gap-4 mt-8">
                 <a
                   href="https://www.mysynchrony.com/mmc/S6240351600"
@@ -138,7 +138,7 @@ export default function Financing() {
           <SectionHeading eyebrow="WHY FINANCE" heading="Why finance a plumbing repair or installation?" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 max-w-4xl mx-auto">
             {[
-              { icon: DollarSign, title: "Manage large unexpected costs", body: "A sewer line replacement, water heater installation, or gas line repair can run $1,500–$8,000+. Financing spreads that cost over time without delaying a necessary repair." },
+              { icon: DollarSign, title: "Manage large unexpected costs", body: "A sewer line replacement, water heater installation, or gas line repair can run $1,500-$8,000+. Financing spreads that cost over time without delaying a necessary repair." },
               { icon: Clock, title: "Don't delay a critical repair", body: "Delaying a plumbing repair often increases the damage and the final cost. Financing allows you to address the problem immediately without waiting to save up." },
               { icon: ShieldCheck, title: "Protect your home's value", body: "Deferred plumbing maintenance — especially sewer lines, water heaters, and water lines — can affect your home's value and insurability. Financing keeps your home protected." },
               { icon: CheckCircle2, title: "Transparent pricing, no surprises", body: "Definitive Mechanical provides written pricing before any work begins. You know the full cost before you approve the work — financing or not." },

@@ -12,7 +12,7 @@ export default function BullRunMountainVA() {
       {label:"Prince William County",href:"/service-areas/northern-virginia/prince-william-county/"},
       {label:"Bull Run Mountain Estates VA"}
     ]}
-    eyebrow="Plumber in Bull Run Mountain Estates, VA · Prince William County · Serving from Largo, MD"
+    eyebrow="Plumber in Bull Run Mountain Estates, VA  Prince William County  Serving from Largo, MD"
     h1="Plumber in Bull Run Mountain Estates, VA"
     introParagraph="Definitive Mechanical serves Bull Run Mountain Estates, Virginia — a residential community in Prince William County near Gainesville and Haymarket, featuring single-family homes in a wooded, semi-rural setting. Many properties are on private wells. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}

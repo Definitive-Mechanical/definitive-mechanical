@@ -159,7 +159,7 @@ export default function ReviewsPage() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "40vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Reviews" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>CUSTOMER REVIEWS · DEFINITIVE MECHANICAL</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>CUSTOMER REVIEWS  DEFINITIVE MECHANICAL</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>What Our Customers Say</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Verified reviews from homeowners and businesses across Maryland, Virginia, and Washington DC. Licensed, certified, and consistently 4.8-star rated on Google.
@@ -179,7 +179,7 @@ export default function ReviewsPage() {
       <section style={{ backgroundColor: "var(--brand-cyan)" }} className="py-6">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
-            {[{ num: "40", label: "Google Reviews" }, { num: "4.8★", label: "Average Rating" }, { num: "13+", label: "Years in Business" }, { num: "24/7", label: "Emergency Service" }].map((s) => (
+            {[{ num: "40", label: "Google Reviews" }, { num: "4.8", label: "Average Rating" }, { num: "13+", label: "Years in Business" }, { num: "24/7", label: "Emergency Service" }].map((s) => (
               <div key={s.label}>
                 <p className="text-2xl font-bold" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{s.num}</p>
                 <p className="text-sm text-white/80" style={{ fontFamily: "'Barlow', sans-serif" }}>{s.label}</p>
@@ -219,7 +219,7 @@ export default function ReviewsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {[
               { icon: ThumbsUp, title: "Transparent Pricing", body: "Every review that mentions pricing reflects our commitment to written estimates before any work begins — no surprise invoices, no after-hours surcharges." },
-              { icon: Award, title: "Licensed Professionals", body: "Every technician dispatched holds the required state and local licenses. WSSC #73696 · MD #96958 · VA #2710-183416-A · DC #PL-2024-00065." },
+              { icon: Award, title: "Licensed Professionals", body: "Every technician dispatched holds the required state and local licenses. WSSC #73696  MD #96958  VA #2710-183416-A  DC #PL-2024-00065." },
               { icon: Star, title: "Consistent Standards", body: "Whether it's a 2 AM emergency or a scheduled installation, the same standards apply — clean work, clear communication, and verified results." },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-lg p-6 shadow-sm">
@@ -232,7 +232,7 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-      <CTABanner heading="Ready to experience 5-star plumbing service?" subtext="Licensed · Certified · 24/7 Emergency · No Overtime Surcharge · Written Pricing." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Ready to experience 5-star plumbing service?" subtext="Licensed  Certified  24/7 Emergency  No Overtime Surcharge  Written Pricing." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

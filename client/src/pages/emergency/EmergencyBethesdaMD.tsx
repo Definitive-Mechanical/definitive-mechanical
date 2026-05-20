@@ -28,7 +28,7 @@ const EMERGENCY_TYPES = [
 ];
 
 const FAQ_ITEMS = [
-  { question: "Do you provide 24/7 emergency plumbing in all Bethesda neighborhoods?", answer: "Yes. Emergency service available 24/7 in all Bethesda neighborhoods including Kenwood, Burning Tree, Bradley Hills, Chevy Chase sections of Bethesda, downtown Bethesda high-rises, and the medical corridor. WSSC #73696 · MD #96958. Call (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in all Bethesda neighborhoods?", answer: "Yes. Emergency service available 24/7 in all Bethesda neighborhoods including Kenwood, Burning Tree, Bradley Hills, Chevy Chase sections of Bethesda, downtown Bethesda high-rises, and the medical corridor. WSSC #73696  MD #96958. Call (301) 679-5849." },
   { question: "Are you licensed for emergency plumbing in Bethesda and Montgomery County?", answer: "Yes. Maryland State Master Plumber/Gasfitter #96958 and WSSC Master Plumber/Gasfitter #73696 cover all emergency plumbing work in Bethesda and throughout Montgomery County." },
   { question: "Do you handle emergency plumbing in Bethesda high-rise buildings?", answer: "Yes. We coordinate with building management for emergency access in Bethesda condominiums and high-rise properties. Call (301) 679-5849 immediately — our dispatcher can advise on building entry and main valve location while en route." },
   { question: "Do you charge extra for night or weekend emergency plumbing in Bethesda?", answer: "No. No overtime surcharge. Same rate regardless of hour. Written pricing before any work begins. Call (301) 679-5849." },
@@ -48,24 +48,24 @@ export default function EmergencyBethesdaMD() {
     <>
       <Helmet>
         <title>Emergency Plumber in Bethesda MD | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Bethesda MD — available 24/7. WSSC #73696 · MD Master Plumber #96958. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Bethesda MD — available 24/7. WSSC #73696  MD Master Plumber #96958. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-bethesda-md/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
 
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-          ⚠️ BETHESDA PLUMBING EMERGENCY? CALL (301) 679-5849 — WSSC LICENSED · 24/7 · NO OVERTIME SURCHARGE
+           BETHESDA PLUMBING EMERGENCY? CALL (301) 679-5849 — WSSC LICENSED  24/7  NO OVERTIME SURCHARGE
         </a>
       </div>
 
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Bethesda, MD" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · BETHESDA, MD · WSSC #73696 · MD #96958</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  BETHESDA, MD  WSSC #73696  MD #96958</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Bethesda, MD</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical provides 24/7 emergency plumbing across all Bethesda neighborhoods — from Kenwood and Burning Tree to downtown Bethesda high-rises and the medical corridor. A live dispatcher answers every call. WSSC #73696 · MD State #96958. No overtime surcharge. Call (301) 679-5849.
+            Definitive Mechanical provides 24/7 emergency plumbing across all Bethesda neighborhoods — from Kenwood and Burning Tree to downtown Bethesda high-rises and the medical corridor. A live dispatcher answers every call. WSSC #73696  MD State #96958. No overtime surcharge. Call (301) 679-5849.
           </p>
           <div className="max-w-2xl mx-auto">
             <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -158,7 +158,7 @@ export default function EmergencyBethesdaMD() {
         </div>
       </section>
 
-      <CTABanner heading="Bethesda plumbing emergency? Call now." subtext="WSSC #73696 · MD #96958 · 24/7 Live Dispatcher · No Overtime Surcharge." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Bethesda plumbing emergency? Call now." subtext="WSSC #73696  MD #96958  24/7 Live Dispatcher  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

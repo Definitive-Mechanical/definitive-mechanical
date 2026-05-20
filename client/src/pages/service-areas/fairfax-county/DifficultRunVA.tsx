@@ -12,7 +12,7 @@ export default function DifficultRunVA() {
       {label:"Fairfax County",href:"/service-areas/northern-virginia/fairfax-county/"},
       {label:"Difficult Run VA"}
     ]}
-    eyebrow="Plumber in Difficult Run, VA · Fairfax County · Serving from Largo, MD"
+    eyebrow="Plumber in Difficult Run, VA  Fairfax County  Serving from Largo, MD"
     h1="Plumber in Difficult Run, VA"
     introParagraph="Definitive Mechanical serves the Difficult Run corridor in Fairfax County — the stream valley and surrounding communities between Great Falls and McLean, including Hunter Mill and Fox Mill Road areas. This part of western Fairfax County features large custom homes on wooded lots with complex plumbing needs. We hold Virginia Master Plumber/Gasfitter License #2710064008 and are SWaM Certified."
     trustItems={["VA Master Plumber #2710064008","SWaM Certified","MDOT MBE Cert 20-134","24/7 Emergency"]}

@@ -11,7 +11,7 @@ export default function GreatFallsVA() {
       metaDescription={`Licensed plumber serving Great Falls, VA. Expert plumbing for Great Falls' luxury estate homes on large wooded lots. VA Master Plumber #2710064209. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/great-falls-va/"
       breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas"},{label:"Northern Virginia",href:"/service-areas/northern-virginia"},{label:"Fairfax County",href:"/service-areas/northern-virginia/fairfax-county"},{label:"Great Falls VA"}]}
-      eyebrow="Plumber in Great Falls, VA · Fairfax County · Serving from Largo, MD"
+      eyebrow="Plumber in Great Falls, VA  Fairfax County  Serving from Largo, MD"
       h1="Plumber in Great Falls, VA"
       introParagraph={`Definitive Mechanical provides licensed plumbing, gas, emergency, and residential services in Great Falls, Virginia — one of the most affluent communities in the DC metro area, characterized by large luxury estate homes on multi-acre wooded lots, many on private wells and septic systems. We hold Virginia Master Plumber/Gasfitter License #2710064209 and Virginia Class A Contractor License #2705181061 for all licensed plumbing work throughout Fairfax County and Great Falls.`}
       trustItems={["VA Master Plumber #2710064209","VA Class A Contractor #2705181061","SWaM Cert 815255","CAGE 8HCF6","24/7 Emergency"]}

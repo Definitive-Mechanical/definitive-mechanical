@@ -10,7 +10,7 @@ import TrustBadges from '@/components/ui/TrustBadges';
 const FAQ_ITEMS = [
   {
     question: "How do I know if I need a new boiler or furnace?",
-    answer: "Consider replacement when the unit is 15–20+ years old and requiring significant repair, when the repair cost exceeds 50% of replacement cost, when the unit has had multiple major failures in recent years, or when the heat exchanger on a furnace is cracked (a carbon monoxide risk). We provide an honest repair-or-replace assessment after diagnosis."
+    answer: "Consider replacement when the unit is 15-20+ years old and requiring significant repair, when the repair cost exceeds 50% of replacement cost, when the unit has had multiple major failures in recent years, or when the heat exchanger on a furnace is cracked (a carbon monoxide risk). We provide an honest repair-or-replace assessment after diagnosis."
   },
   {
     question: "Does boiler or furnace installation require a permit?",
@@ -23,16 +23,16 @@ const FAQ_ITEMS = [
 ];
 
 const REPLACE_WHEN = [
-  "The unit is 15–20 years old and requiring significant repair",
+  "The unit is 15-20 years old and requiring significant repair",
   "The repair cost exceeds 50% of the replacement cost",
   "The unit has experienced multiple major failures within the past few years",
-  "The unit's efficiency rating is significantly below modern equipment (older units: 60–70% AFUE; modern high-efficiency: 95–98% AFUE)",
+  "The unit's efficiency rating is significantly below modern equipment (older units: 60-70% AFUE; modern high-efficiency: 95-98% AFUE)",
   "The heat exchanger on a furnace is cracked — this is a carbon monoxide risk and typically makes repair impractical",
   "The boiler has a cracked pressure vessel or extensive internal corrosion",
 ];
 
 const KEEP_WHEN = [
-  "The unit is under 10–12 years old with a single-component failure",
+  "The unit is under 10-12 years old with a single-component failure",
   "The repair cost is reasonable relative to the unit's remaining life",
   "The unit is operating efficiently and the failure is a wear component",
 ];
@@ -85,7 +85,7 @@ export default function BoilerFurnaceInstallation() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Boiler & Furnace Repair', href: '/boiler-furnace-repair' }, { label: 'Boiler & Furnace Installation' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">BOILER & FURNACE INSTALLATION · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">BOILER & FURNACE INSTALLATION  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Boiler & Furnace Installation in Maryland, DC & Northern Virginia
               </h1>

@@ -12,7 +12,7 @@ export default function BrockHallMD() {
       {label:"Prince George's County",href:"/service-areas/maryland/prince-georges-county/"},
       {label:"Brock Hall MD"}
     ]}
-    eyebrow="Plumber in Brock Hall, MD · Prince George&#39;s County · Serving from Largo, MD"
+    eyebrow="Plumber in Brock Hall, MD  Prince George&#39;s County  Serving from Largo, MD"
     h1="Plumber in Brock Hall, MD"
     introParagraph="Definitive Mechanical serves Brock Hall, Maryland — an unincorporated census-designated community in southeastern Prince George&#39;s County near Upper Marlboro and the Patuxent River corridor. Brock Hall&#39;s residential character is a mix of single-family homes and rural properties, some served by private wells and septic. We hold Maryland State Master Plumber/Gasfitter License #96958, and serve Brock Hall from our Largo, MD location."
     trustItems={["MD Master Plumber #96958","MDOT MBE Cert 20-134","24/7 Emergency"]}
@@ -24,7 +24,7 @@ export default function BrockHallMD() {
       {label:"Backflow Prevention for properties with irrigation connections",href:"/backflow-prevention/"}
     ]}
     localContextHeading="Unique context for Brock Hall"
-    localContextBody="Brock Hall&#39;s rural-to-suburban character includes older housing stock with the plumbing characteristics typical of mid-century rural Maryland construction — larger lot sizes with longer lateral and service line runs, a higher prevalence of private well systems, and propane gas rather than natural gas in many areas. Response time from our Largo, MD location is approximately 20–35 minutes depending on the specific address."
+    localContextBody="Brock Hall&#39;s rural-to-suburban character includes older housing stock with the plumbing characteristics typical of mid-century rural Maryland construction — larger lot sizes with longer lateral and service line runs, a higher prevalence of private well systems, and propane gas rather than natural gas in many areas. Response time from our Largo, MD location is approximately 20-35 minutes depending on the specific address."
     licenseHeading="Licensed in Maryland, DC & Virginia"
     credentials={[{label:"MD Master Plumber #96958"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[

@@ -10,11 +10,11 @@ import TrustBadges from '@/components/ui/TrustBadges';
 const FAQ_ITEMS = [
   {
     question: "How much does toilet repair cost?",
-    answer: "Common toilet repairs in the DMV market range from $100–$300 for most flapper, fill valve, or flush valve repairs. Wax ring replacement (toilet rocking at the base or leaking at the floor) typically runs $200–$400 including the repair and reset. Toilet replacement with a standard unit runs $300–$600 for the installation, depending on the fixture. Call (301) 679-5849 for written pricing specific to your situation."
+    answer: "Common toilet repairs in the DMV market range from $100-$300 for most flapper, fill valve, or flush valve repairs. Wax ring replacement (toilet rocking at the base or leaking at the floor) typically runs $200-$400 including the repair and reset. Toilet replacement with a standard unit runs $300-$600 for the installation, depending on the fixture. Call (301) 679-5849 for written pricing specific to your situation."
   },
   {
     question: "How much does faucet repair cost?",
-    answer: "Faucet cartridge or valve replacement typically runs $150–$300 for a standard residential faucet. Faucet replacement (installing a new fixture) typically runs $200–$450 for labor plus the fixture cost. We can install a fixture you provide or recommend one appropriate for your application."
+    answer: "Faucet cartridge or valve replacement typically runs $150-$300 for a standard residential faucet. Faucet replacement (installing a new fixture) typically runs $200-$450 for labor plus the fixture cost. We can install a fixture you provide or recommend one appropriate for your application."
   },
   {
     question: "Is a dripping faucet worth repairing?",
@@ -48,7 +48,7 @@ const TOILET_REPAIRS = [
 ];
 
 const REPLACE_FAUCET = [
-  "The fixture is 15–20+ years old and replacement parts cost approaches a new fixture",
+  "The fixture is 15-20+ years old and replacement parts cost approaches a new fixture",
   "The finish is significantly deteriorated (corrosion, mineral buildup that cannot be cleaned)",
   "You are upgrading for efficiency (low-flow faucets reduce water use by 30%+ vs. older models)",
   "You want to update the fixture's style as part of a bathroom or kitchen renovation",
@@ -86,7 +86,7 @@ export default function FaucetToiletRepair() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Faucet & Toilet Repair' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">FAUCET & TOILET REPAIR · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">FAUCET & TOILET REPAIR  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Faucet & Toilet Repair in Maryland, DC & Northern Virginia
               </h1>

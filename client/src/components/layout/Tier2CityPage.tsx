@@ -327,7 +327,7 @@ export default function Tier2CityPage({
       <section className="bg-[var(--brand-navy)] py-14 px-4">
         <div className="max-w-3xl mx-auto text-center">
           <p style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
-            LICENSED PLUMBER · SERVING {ctaCity.toUpperCase()}
+            LICENSED PLUMBER  SERVING {ctaCity.toUpperCase()}
           </p>
           <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-bold text-white text-[clamp(22px,3vw,32px)] mb-8">
             Serving {ctaCity} from our Largo, MD location

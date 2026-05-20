@@ -28,7 +28,7 @@ export default function GasLeakRepair() {
       <a href="tel:+13016795849" style={{ background: '#C0392B', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', padding: '14px 16px', textDecoration: 'none', flexWrap: 'wrap' }}>
         <AlertTriangle size={20} color="white" style={{ flexShrink: 0 }} />
         <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.05em', textAlign: 'center' }}>
-          IF YOU SMELL GAS RIGHT NOW: Leave immediately · Do not use any switches or phone inside · Call your gas company from outside · Call 911 if needed · Then call (301) 679-5849 for licensed repair
+          IF YOU SMELL GAS RIGHT NOW: Leave immediately  Do not use any switches or phone inside  Call your gas company from outside  Call 911 if needed  Then call (301) 679-5849 for licensed repair
         </span>
       </a>
 
@@ -39,7 +39,7 @@ export default function GasLeakRepair() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair', href: '/gas-line-repair' }, { label: 'Gas Leak Repair' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p className="eyebrow mb-3">GAS LEAK REPAIR · 24/7 EMERGENCY · MD, DC & NORTHERN VIRGINIA</p>
+              <p className="eyebrow mb-3">GAS LEAK REPAIR  24/7 EMERGENCY  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '20px' }}>
                 Gas Leak Repair — 24/7 Emergency Gas Service in Maryland, DC & Northern Virginia
               </h1>
@@ -49,7 +49,7 @@ export default function GasLeakRepair() {
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '12px' }}>
                   <AlertTriangle size={32} color="#F59E0B" />
                 </div>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center', marginBottom: '12px' }}>⚠️ IF YOU SMELL GAS RIGHT NOW:</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center', marginBottom: '12px' }}> IF YOU SMELL GAS RIGHT NOW:</p>
                 <div className="space-y-2">
                   {["Leave the building immediately — do not turn any lights or switches on or off", "Do not use your phone inside the building", "Once safely outside, call your gas company's emergency line", "Call 911 if there is any active danger", "Once the gas company has responded and shut off supply, call Definitive Mechanical"].map((item, i) => (
                     <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
@@ -70,7 +70,7 @@ export default function GasLeakRepair() {
                 After your gas company has shut off supply and cleared the scene, Definitive Mechanical provides licensed gas leak repair 24/7 across Maryland, Washington DC, and Northern Virginia. Every gas leak repair is performed by a licensed Master Gasfitter. We locate the leak, repair the line, pressure-test, and restore service.
               </p>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'rgba(255,255,255,0.65)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
-                MD Gasfitter #96958 · DC #PGM1002236 · VA #2710064209 · DE #PL-0012866
+                MD Gasfitter #96958  DC #PGM1002236  VA #2710064209  DE #PL-0012866
               </p>
             </div>
             <div className="hidden lg:block lg:col-span-2">

@@ -43,28 +43,28 @@ const SCHEMA = {
   ],
 };
 
-const DC_NEIGHBORHOODS = ["Georgetown", "Capitol Hill", "Dupont Circle", "Adams Morgan", "Columbia Heights", "Navy Yard", "NoMa", "Anacostia", "Brookland", "Shaw", "Petworth", "Friendship Heights", "Foggy Bottom", "Tenleytown", "Woodbridge", "All DC Wards 1–8"];
+const DC_NEIGHBORHOODS = ["Georgetown", "Capitol Hill", "Dupont Circle", "Adams Morgan", "Columbia Heights", "Navy Yard", "NoMa", "Anacostia", "Brookland", "Shaw", "Petworth", "Friendship Heights", "Foggy Bottom", "Tenleytown", "Woodbridge", "All DC Wards 1-8"];
 
 export default function EmergencyWashingtonDC() {
   return (
     <>
       <Helmet>
         <title>Emergency Plumber in Washington DC | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Washington DC — available 24/7. DC Master Plumber #PGM1002236 · All DC Wards & Neighborhoods. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Washington DC — available 24/7. DC Master Plumber #PGM1002236  All DC Wards & Neighborhoods. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-washington-dc/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
 
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-          ⚠️ DC PLUMBING EMERGENCY? CALL (301) 679-5849 — ALL DC WARDS · DC LICENSED · LIVE DISPATCHER 24/7
+           DC PLUMBING EMERGENCY? CALL (301) 679-5849 — ALL DC WARDS  DC LICENSED  LIVE DISPATCHER 24/7
         </a>
       </div>
 
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Washington DC" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · WASHINGTON DC · DC MASTER PLUMBER #PGM1002236</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  WASHINGTON DC  DC MASTER PLUMBER #PGM1002236</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Washington DC</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Definitive Mechanical provides 24/7 emergency plumbing across all Washington DC wards and neighborhoods. A live dispatcher answers every call. DC Master Plumber and Master Gasfitter license #PGM1002236. No overtime surcharge. Serving DC from our Largo, MD location. Call (301) 679-5849.
@@ -124,7 +124,7 @@ export default function EmergencyWashingtonDC() {
             <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>Issued by DC's Department of Consumer and Regulatory Affairs (DCRA). Required for all licensed plumbing and gas work within the District of Columbia.</p>
           </div>
           <div className="flex flex-wrap justify-center gap-4 mt-4 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            <span>MDOT MBE Cert 20-134</span><span>·</span><span>CAGE 8HCF6</span><span>·</span><span>NAICS 238220</span>
+            <span>MDOT MBE Cert 20-134</span><span></span><span>CAGE 8HCF6</span><span></span><span>NAICS 238220</span>
           </div>
         </div>
       </section>
@@ -173,7 +173,7 @@ export default function EmergencyWashingtonDC() {
         </div>
       </section>
 
-      <CTABanner heading="DC plumbing emergency? Call (301) 679-5849 — 24/7." subtext="DC Master Plumber #PGM1002236 · All DC Wards · MDOT MBE Cert 20-134 · No Overtime Surcharge." primaryBtn={{ text: "📞 CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="DC plumbing emergency? Call (301) 679-5849 — 24/7." subtext="DC Master Plumber #PGM1002236  All DC Wards  MDOT MBE Cert 20-134  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

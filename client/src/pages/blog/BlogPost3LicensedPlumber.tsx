@@ -38,7 +38,7 @@ const faqSchema = {
       name: "What is the difference between a Master Plumber and a regular plumber in Maryland, DC, and Virginia?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The hierarchy is Apprentice → Journeyman → Master Plumber. A Master Plumber has passed the master exam, typically has 4–8 years of experience, and is qualified to supervise all plumbing work, pull permits, and take full responsibility for code compliance. Commercial and most permitted residential work legally requires a Master Plumber.",
+        text: "The hierarchy is Apprentice -> Journeyman → Master Plumber. A Master Plumber has passed the master exam, typically has 4-8 years of experience, and is qualified to supervise all plumbing work, pull permits, and take full responsibility for code compliance. Commercial and most permitted residential work legally requires a Master Plumber.",
       },
     },
     {
@@ -132,7 +132,7 @@ export default function BlogPost3LicensedPlumber() {
           ]}
         />
 
-        <BlogEyebrow>Buyer's Guide · 7 min read</BlogEyebrow>
+        <BlogEyebrow>Buyer's Guide  7 min read</BlogEyebrow>
         <BlogH1>How to Choose a Licensed Plumber in MD, DC, or VA</BlogH1>
         <AuthorBlock date="January 15, 2026" />
 
@@ -161,7 +161,7 @@ export default function BlogPost3LicensedPlumber() {
         <BlogUL>
           <li><strong>Apprentice Plumber:</strong> In training under a licensed journeyman or master plumber. Cannot perform work independently.</li>
           <li><strong>Journeyman Plumber:</strong> Licensed to perform plumbing work under the supervision of a Master Plumber. May work independently on smaller scopes in some jurisdictions.</li>
-          <li><strong>Master Plumber:</strong> The highest license classification. Has passed the master plumber exam, typically has 4–8 years of experience (including apprenticeship), and is qualified to supervise all plumbing work, pull permits, and take full responsibility for the quality and code compliance of a job.</li>
+          <li><strong>Master Plumber:</strong> The highest license classification. Has passed the master plumber exam, typically has 4-8 years of experience (including apprenticeship), and is qualified to supervise all plumbing work, pull permits, and take full responsibility for the quality and code compliance of a job.</li>
         </BlogUL>
         <BlogP>
           Why it matters: In Maryland, DC, and Virginia, commercial plumbing work and most permitted residential work legally requires a Master Plumber to be the responsible party. Ask specifically whether the company dispatching to you has a Master Plumber on-staff who will be accountable for the work — not just a journeyman or apprentice working alone.
@@ -237,7 +237,7 @@ export default function BlogPost3LicensedPlumber() {
           <br />
           Definitive Mechanical holds Master Plumber and Master Gasfitter licenses in Maryland, Washington DC, Virginia, and Delaware. We provide written estimates before work begins, pull all required permits, and dispatch licensed technicians — not subcontractors — on every job.
           <br /><br />
-          📞 Call (301) 679-5849 | Request Service →
+           Call (301) 679-5849 | Request Service →
           <br />
           MD Master Plumber #96958 | DC Master Plumber #PGM1002236 | VA Master Plumber #2710064209
         </CalloutBox>

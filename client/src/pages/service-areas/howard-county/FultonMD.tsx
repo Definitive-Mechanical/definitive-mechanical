@@ -12,7 +12,7 @@ export default function FultonMD() {
       {label:"Howard County",href:"/service-areas/maryland/howard-county/"},
       {label:"Fulton MD"}
     ]}
-    eyebrow="Plumber in Fulton, MD · Howard County · Serving from Largo, MD"
+    eyebrow="Plumber in Fulton, MD  Howard County  Serving from Largo, MD"
     h1="Plumber in Fulton, MD"
     introParagraph="Definitive Mechanical serves Fulton, Maryland — a growing community in Howard County along the US-29 corridor between Columbia and Laurel, featuring newer planned residential subdivisions alongside older rural properties. We hold Howard County Master Plumber/Gasfitter License #20020096958 and Maryland State License #96958. WSSC serves portions of Fulton for water and sewer."
     trustItems={["Howard County License #20020096958","MD Master Plumber #96958","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]}
@@ -24,7 +24,7 @@ export default function FultonMD() {
       {label:"Backflow Prevention & Annual Certification",href:"/backflow-certification/"}
     ]}
     localContextHeading="Unique context for Fulton"
-    localContextBody="Fulton&#39;s newer subdivisions — built primarily in the 2000s–2010s — are entering the active water heater replacement cycle. The community&#39;s rapid growth means a mix of WSSC-served and well-served properties depending on the specific subdivision. Howard County License #20020096958 covers all permitted plumbing work."
+    localContextBody="Fulton&#39;s newer subdivisions — built primarily in the 2000s-2010s — are entering the active water heater replacement cycle. The community&#39;s rapid growth means a mix of WSSC-served and well-served properties depending on the specific subdivision. Howard County License #20020096958 covers all permitted plumbing work."
     licenseHeading="Licensed in Maryland, DC & Virginia"
     credentials={[{label:"Howard County License #20020096958"},{label:"MD Master Plumber #96958"},{label:"WSSC #73696"},{label:"MDOT MBE Cert 20-134"},{label:"24/7 Emergency"}]}
     nearbyAreas={[
