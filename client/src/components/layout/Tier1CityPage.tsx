@@ -391,7 +391,7 @@ export default function Tier1CityPage({
 
       {/* ── S8: FAQ — dark navy bg ───────────────────────────────────────── */}
       {faqs && faqs.length > 0 && (
-        <section className="py-20" style={{ background: "#031838" }}>
+        <section className="py-20" style={{ background: "var(--brand-navy)" }}>
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div>
