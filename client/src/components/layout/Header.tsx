@@ -510,14 +510,7 @@ export default function Header() {
         </div>
       )}
 
-      {/* Mobile Sticky Bottom Call Bar */}
-      <a
-        href={`tel:${BUSINESS.phoneRaw}`}
-        className="mobile-call-bar lg:hidden"
-      >
-        <Phone size={16} />
-        CALL {BUSINESS.phone} — 24/7 EMERGENCY
-      </a>
+
     </>
   );
 }

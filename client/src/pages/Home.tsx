@@ -303,8 +303,8 @@ export default function Home() {
               },
             ].map((col) => (
               <div key={col.title} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '32px 28px', boxShadow: '0 2px 12px rgba(0,0,0,0.07)', textAlign: 'center' }}>
-                <div style={{ width: '56px', height: '56px', borderRadius: '4px', background: 'var(--brand-navy)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
-                  <col.icon size={28} color="var(--brand-cyan)" />
+                <div style={{ width: '48px', height: '48px', borderRadius: '10px', background: 'rgba(0,117,186,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
+                  <col.icon size={24} color="var(--brand-blue)" />
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '20px', textTransform: 'uppercase', letterSpacing: '0.03em', marginBottom: '12px' }}>
                   {col.title}
