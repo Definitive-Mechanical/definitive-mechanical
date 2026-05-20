@@ -29,7 +29,7 @@ export default function BackflowPrevention() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-backflow-prevention_3ef7968a.jpg"
+            src="/manus-storage/service-backflow-prevention_a9ee0c58.webp"
             alt="Backflow prevention Maryland DC Northern Virginia"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

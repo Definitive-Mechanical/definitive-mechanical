@@ -89,7 +89,7 @@ export default function FaucetToiletRepair() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-faucet-fixture_20f87571.jpg"
+            src="/manus-storage/service-faucet-fixture_179c658a.webp"
             alt="Faucet and toilet repair Maryland DC Northern Virginia"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

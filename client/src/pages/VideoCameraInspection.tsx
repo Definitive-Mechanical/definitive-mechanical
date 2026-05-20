@@ -48,7 +48,7 @@ export default function VideoCameraInspection() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-video-camera-inspection_8f462e65.jpg"
+            src="/manus-storage/service-video-camera-inspection_a80ee887.webp"
             alt="Video camera sewer inspection Maryland DC Northern Virginia"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

@@ -87,7 +87,7 @@ export default function EmergencyPlumbing() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-emergency-plumbing_ac2151e7.jpg"
+            src="/manus-storage/service-emergency-plumbing_c2ea2831.webp"
             alt="24/7 emergency plumbing Maryland DC Northern Virginia"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

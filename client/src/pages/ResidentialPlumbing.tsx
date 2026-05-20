@@ -85,7 +85,7 @@ export default function ResidentialPlumbing() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-pipe-repair_f934d611.jpg"
+            src="/manus-storage/service-pipe-repair_97801b59.webp"
             alt="Residential plumbing Maryland DC Northern Virginia — Licensed Master Plumber"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

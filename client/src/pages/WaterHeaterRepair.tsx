@@ -52,7 +52,7 @@ export default function WaterHeaterRepair() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-water-heater-repair_03e68d7c.jpg"
+            src="/manus-storage/service-water-heater-repair_eb0f11ba.webp"
             alt="Water heater repair Maryland DC Northern Virginia"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

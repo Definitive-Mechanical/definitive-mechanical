@@ -37,7 +37,7 @@ export default function SewerLineRepair() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-sewer-line-repair_e3bf8f22.jpg"
+            src="/manus-storage/service-sewer-line-repair_5b4e6ab3.webp"
             alt="Sewer line repair Maryland DC Northern Virginia"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"
