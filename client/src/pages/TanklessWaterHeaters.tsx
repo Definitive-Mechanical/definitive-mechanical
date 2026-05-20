@@ -36,11 +36,10 @@ export default function TanklessWaterHeaters() {
     <>
       {/* SECTION 1: HERO */}
       <section style={{ minHeight: '58vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Heater Repair', href: '/water-heater-repair' }, { label: 'Tankless Water Heaters' }]} />
-          <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
-            <div className="lg:col-span-3">
+          <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>
+            <div className="">
               <p className="eyebrow mb-3">TANKLESS WATER HEATERS  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Tankless Water Heater Installation & Repair in Maryland, DC & Northern Virginia
@@ -53,9 +52,6 @@ export default function TanklessWaterHeaters() {
                 <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
                 <BookNowButton variant="outline" text="REQUEST TANKLESS ESTIMATE" href="/contact" size="md" />
               </div>
-            </div>
-            <div className="hidden lg:block lg:col-span-2">
-              <img src="/manus-storage/service-tankless-water-heater_ac5bee74.jpg" alt="Tankless water heater installation repair Maryland DC Northern Virginia — Definitive Mechanical" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
           </div>
         </div>

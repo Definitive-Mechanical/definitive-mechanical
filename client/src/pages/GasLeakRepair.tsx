@@ -34,11 +34,10 @@ export default function GasLeakRepair() {
 
       {/* SECTION 1: HERO */}
       <section style={{ minHeight: '55vh', background: 'linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair', href: '/gas-line-repair' }, { label: 'Gas Leak Repair' }]} />
-          <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
-            <div className="lg:col-span-3">
+          <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>
+            <div className="">
               <p className="eyebrow mb-3">GAS LEAK REPAIR  24/7 EMERGENCY  MD, DC & NORTHERN VIRGINIA</p>
               <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '20px' }}>
                 Gas Leak Repair — 24/7 Emergency Gas Service in Maryland, DC & Northern Virginia
@@ -72,9 +71,6 @@ export default function GasLeakRepair() {
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'rgba(255,255,255,0.65)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                 MD Gasfitter #96958  DC #PGM1002236  VA #2710064209  DE #PL-0012866
               </p>
-            </div>
-            <div className="hidden lg:block lg:col-span-2">
-              <img src="/manus-storage/service-gas-leak-repair_426928c3.jpg" alt="Licensed gas leak repair 24/7 Maryland DC Virginia — Definitive Mechanical Master Gasfitter" loading="eager" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
           </div>
         </div>

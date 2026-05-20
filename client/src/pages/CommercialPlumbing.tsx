@@ -45,18 +45,27 @@ export default function CommercialPlumbing() {
     <>
       {/* HERO */}
       <section style={{
-        minHeight: '60vh',
-        background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)',
+        minHeight: '65vh',
+        position: 'relative',
         display: 'flex',
         alignItems: 'center',
-        position: 'relative',
         overflow: 'hidden',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.05)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
+        {/* Full-bleed background photo */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <img
+            src="/manus-storage/service-commercial-plumbing_88f441f4.jpg"
+            alt="Commercial plumbing Maryland DC Northern Virginia — MDOT MBE Certified"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
+            loading="eager"
+          />
+          {/* Dark navy overlay — matches homepage hero */}
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Commercial Plumbing' }]} />
-          <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
-            <div className="lg:col-span-3">
+          <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>
+            <div className="">
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 COMMERCIAL PLUMBING  MD, DC & NORTHERN VIRGINIA
               </p>
@@ -70,13 +79,6 @@ export default function CommercialPlumbing() {
                 <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
                 <BookNowButton variant="outline" text="REQUEST SERVICE" href="/contact" size="lg" />
               </div>
-            </div>
-            <div className="hidden lg:block lg:col-span-2">
-              <img
-                src="/manus-storage/service-commercial-plumbing_88f441f4.jpg"
-                alt="Commercial plumbing Maryland DC Northern Virginia"
-                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }}
-              />
             </div>
           </div>
         </div>
