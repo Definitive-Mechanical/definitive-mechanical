@@ -1,4 +1,4 @@
-import Tier2CityPage from "@/components/layout/Tier2CityPage";
+import Tier1CityPage from "@/components/layout/Tier1CityPage";
 const schema = [
   {"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","description":"Licensed plumber serving Chevy Chase, MD","url":"https://definitivemechanical.com/service-areas/maryland/montgomery-county/chevy-chase-md/","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"Chevy Chase, MD"},"openingHours":["Mo-Fr 09:00-17:00","Sa 09:00-14:00"]},
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Chevy Chase have its own permit requirements?","acceptedAnswer":{"@type":"Answer","text":"Chevy Chase (unincorporated) falls under Montgomery County DPIE for permits and inspections. The incorporated village portions (Chevy Chase Village, Town of Chevy Chase) have their own municipal processes. We are familiar with all local permitting authorities in the area."}},{"@type":"Question","name":"Are you licensed to work on older Chevy Chase homes with original plumbing?","acceptedAnswer":{"@type":"Answer","text":"Yes. We work extensively in homes with galvanized supply lines, cast iron drain lines, and aging clay laterals — common in Chevy Chase's pre-1960 housing stock."}}]},
@@ -6,7 +6,7 @@ const schema = [
 ];
 export default function ChevyChaseMD() {
   return (
-    <Tier2CityPage
+    <Tier1CityPage
       metaTitle="Plumber in Chevy Chase, MD | 24/7 Emergency Plumbing | Definitive Mechanical"
       metaDescription={`Licensed plumber in Chevy Chase, MD. Expert plumbing, gas, water heater & emergency service for Chevy Chase's historic homes. WSSC #73696. Call (301) 679-5849.`}
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/chevy-chase-md/"
