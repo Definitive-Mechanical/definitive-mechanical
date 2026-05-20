@@ -160,7 +160,7 @@ export default function Financing() {
         <div className="container">
           <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Plumbing financing FAQ" />
           <div className="max-w-3xl mx-auto mt-8">
-            <FAQAccordion items={faqs} schema={true} />
+            <FAQAccordion items={faqs} schema={true} variant="light" />
           </div>
         </div>
       </section>

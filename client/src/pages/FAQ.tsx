@@ -140,7 +140,7 @@ export default function FAQPage() {
           <div className="container max-w-3xl mx-auto">
             <SectionHeading eyebrow="FAQ" heading={section.category} />
             <div className="mt-8">
-              <FAQAccordion items={section.items} schema={false} />
+              <FAQAccordion items={section.items} schema={false} variant="light" />
             </div>
           </div>
         </section>

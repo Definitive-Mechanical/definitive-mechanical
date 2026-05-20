@@ -112,7 +112,7 @@ export default function BackflowCertificationDC() {
       <section className="py-16 bg-white">
         <div className="container max-w-3xl">
           <SectionHeading eyebrow="FAQ" heading="Backflow Certification Washington DC — Frequently Asked Questions" />
-          <div className="mt-8"><FAQAccordion items={FAQS} /></div>
+          <div className="mt-8"><FAQAccordion items={FAQS} variant="light" /></div>
         </div>
       </section>
 

@@ -12,7 +12,7 @@ interface FAQAccordionProps {
   variant?: 'light' | 'dark';
 }
 
-export default function FAQAccordion({ items, schema = false, variant = 'light' }: FAQAccordionProps) {
+export default function FAQAccordion({ items, schema = false, variant = 'dark' }: FAQAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const isDark = variant === 'dark';

@@ -204,7 +204,7 @@ export default function MBECertified() {
         <div className="container max-w-3xl">
           <SectionHeading eyebrow="FAQ" heading="MBE Certified Plumbing Contractor Maryland — Frequently Asked Questions" />
           <div className="mt-8">
-            <FAQAccordion items={FAQS} />
+            <FAQAccordion items={FAQS} variant="light" />
           </div>
         </div>
       </section>

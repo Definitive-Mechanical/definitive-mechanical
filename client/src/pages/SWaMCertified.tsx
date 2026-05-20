@@ -129,7 +129,7 @@ export default function SWaMCertified() {
         <div className="container">
           <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Virginia SWaM certification FAQ" />
           <div className="max-w-3xl mx-auto mt-8">
-            <FAQAccordion items={faqs} schema={true} />
+            <FAQAccordion items={faqs} schema={true} variant="light" />
           </div>
         </div>
       </section>

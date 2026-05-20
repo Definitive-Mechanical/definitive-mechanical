@@ -281,7 +281,7 @@ export default function LargoMD() {
           <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
           <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>
           <div className="max-w-3xl">
-            <FAQAccordion items={faqs} schema={true} />
+            <FAQAccordion items={faqs} schema={true} variant="dark" />
           </div>
         </div>
       </section>
