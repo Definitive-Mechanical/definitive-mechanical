@@ -1,4 +1,4 @@
-import { AlertCircle, AlertTriangle, Phone, TreePine, Clock, Activity, Utensils, Package, Wrench, Waves, RotateCcw, CreditCard, Search, MapPin } from 'lucide-react';
+import { AlertCircle, AlertTriangle, Phone, TreePine, Clock, Activity, Utensils, Package, Wrench, Waves, RotateCcw, CreditCard, Search, MapPin, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import { BUSINESS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -45,7 +45,7 @@ export default function SewerLineRepair() {
           {/* Dark navy overlay — matches homepage hero */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Drain Cleaning', href: '/drain-cleaning' }, { label: 'Sewer Line Repair' }]} />
           <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>
             <div className="">
@@ -68,8 +68,12 @@ export default function SewerLineRepair() {
 
       {/* SECTION 2: WARNING SIGNS */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="WARNING SIGNS" heading="What are the warning signs of a sewer line problem?" subtext="Sewer line issues rarely appear without warning. Recognizing the early signs prevents a manageable repair from becoming a major excavation." centered />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WARNING SIGNS</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What are the warning signs of a sewer line problem?</h2>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Sewer line issues rarely appear without warning. Recognizing the early signs prevents a manageable repair from becoming a major excavation.</p>
+        </div>
           <div className="grid lg:grid-cols-2 gap-10">
             <div>
               <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '16px' }}>Early warning signs:</p>
@@ -102,9 +106,13 @@ export default function SewerLineRepair() {
       </section>
 
       {/* SECTION 3: CAUSES */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="COMMON CAUSES" heading="What causes sewer line damage in Maryland, DC, and Virginia?" subtext="Understanding the cause of sewer line failure helps explain why some repairs are straightforward and others are more complex." centered />
+      <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>COMMON CAUSES</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What causes sewer line damage in Maryland, DC, and Virginia?</h2>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Understanding the cause of sewer line failure helps explain why some repairs are straightforward and others are more complex.</p>
+        </div>
           <div className="max-w-4xl mx-auto space-y-4">
             {[
               { Icon: TreePine, title: "Root intrusion.", body: "Tree and shrub roots naturally seek moisture and nutrients — and sewer lines are an abundant source of both. Root intrusion is the most common cause of sewer line blockages and damage in Maryland and Northern Virginia neighborhoods with mature trees. Roots penetrate joints and cracks, eventually obstructing or rupturing the line." },
@@ -126,8 +134,8 @@ export default function SewerLineRepair() {
       </section>
 
       {/* SECTION 4: DIAGNOSIS PROCESS */}
-      <section style={{ background: 'white', padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section style={{ background: 'white', padding: '80px 0' }}>
+        <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="eyebrow mb-2">HOW WE DIAGNOSE</p>
@@ -141,7 +149,7 @@ export default function SewerLineRepair() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
                 We show you the camera footage and explain what we see in plain language before recommending a repair path.
               </p>
-              <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '16px', borderLeft: '4px solid var(--brand-cyan)', marginBottom: '16px' }}>
+              <div style={{ background: '#F0F5FA', borderRadius: '6px', padding: '16px', borderLeft: '4px solid var(--brand-cyan)', marginBottom: '16px' }}>
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px' }}>
                   "You see the same picture we do before we recommend any course of action."
                 </p>
@@ -151,7 +159,17 @@ export default function SewerLineRepair() {
               </Link>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Sewer camera inspection before sewer line repair — Definitive Mechanical Maryland" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }} />
+              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
+                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px 14px' }}>
+                      <ShieldCheck size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                      <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.88)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -159,7 +177,7 @@ export default function SewerLineRepair() {
 
       {/* SECTION 5: REPAIR OPTIONS */}
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <SectionHeading eyebrow="REPAIR OPTIONS" heading="What sewer line repair options are available?" centered light />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -180,10 +198,14 @@ export default function SewerLineRepair() {
       </section>
 
       {/* SECTION 6: PRICING */}
-      <section style={{ background: 'var(--surface-1)', padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="REPAIR COSTS" heading="What does sewer line repair cost in Maryland, DC, or Virginia?" subtext="Sewer line repair cost varies significantly based on the repair type, depth, access, and length of pipe affected." centered />
-          <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', maxWidth: '672px', margin: '0 auto 16px', overflow: 'hidden' }}>
+      <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR COSTS</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What does sewer line repair cost in Maryland, DC, or Virginia?</h2>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Sewer line repair cost varies significantly based on the repair type, depth, access, and length of pipe affected.</p>
+        </div>
+          <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '672px', margin: '0 auto 16px', overflow: 'hidden' }}>
             <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
@@ -208,11 +230,11 @@ export default function SewerLineRepair() {
 
       {/* SECTION 7: RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
             {[{ icon: Search, label: 'Video Camera Inspection', href: '/video-camera-inspection' }, { icon: Waves, label: 'Hydro-Jetting', href: '/hydro-jetting' }, { icon: RotateCcw, label: 'Sewer Line Installation', href: '/sewer-line-installation' }, { icon: Wrench, label: 'Drain Cleaning', href: '/drain-cleaning' }, { icon: Phone, label: 'Emergency Plumbing', href: '/emergency-plumbing' }].map((item) => (
-              <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+              <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
                 <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
                 <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
@@ -222,11 +244,14 @@ export default function SewerLineRepair() {
       </section>
 
       {/* SECTION 8: FAQ */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="FAQ" heading="Questions about sewer line repair in MD, DC & Northern VA" centered />
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about sewer line repair in MD, DC & Northern VA</h2>
+        </div>
           <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px' }}>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
           </div>
         </div>
       </section>

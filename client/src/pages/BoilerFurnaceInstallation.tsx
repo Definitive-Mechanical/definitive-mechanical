@@ -1,7 +1,6 @@
 import { AlertCircle, CheckCircle2, Wind, Thermometer, Flame, Building2, CreditCard } from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
-import SectionHeading from '@/components/ui/SectionHeading';
 import BreadcrumbList from '@/components/ui/BreadcrumbList';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import CTABanner from '@/components/ui/CTABanner';
@@ -97,7 +96,7 @@ export default function BoilerFurnaceInstallation() {
           {/* Dark navy overlay — matches homepage hero */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Boiler & Furnace Repair', href: '/boiler-furnace-repair' }, { label: 'Boiler & Furnace Installation' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
@@ -120,10 +119,13 @@ export default function BoilerFurnaceInstallation() {
 
       {/* SECTION 2: REPAIR OR REPLACE */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="REPAIR OR REPLACE?" heading="When should a boiler or furnace be replaced rather than repaired?" centered />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR OR REPLACE?</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>When should a boiler or furnace be replaced rather than repaired?</h2>
+        </div>
           <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div style={{ background: 'white', borderTop: '4px solid #F59E0B', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+            <div style={{ background: 'white', borderTop: '4px solid #F59E0B', borderRadius: '6px', padding: '28px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)' }}>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>CONSIDER REPLACEMENT WHEN:</p>
               <div className="space-y-3">
                 {REPLACE_WHEN.map((item) => (
@@ -134,7 +136,7 @@ export default function BoilerFurnaceInstallation() {
                 ))}
               </div>
             </div>
-            <div style={{ background: 'white', borderTop: '4px solid #1A7A4A', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+            <div style={{ background: 'white', borderTop: '4px solid #1A7A4A', borderRadius: '6px', padding: '28px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)' }}>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#1A7A4A', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>KEEP REPAIRING WHEN:</p>
               <div className="space-y-3">
                 {KEEP_WHEN.map((item) => (
@@ -153,12 +155,15 @@ export default function BoilerFurnaceInstallation() {
       </section>
 
       {/* SECTION 3: SYSTEM TYPES */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="HEATING SYSTEM TYPES" heading="What types of heating systems does Definitive Mechanical install?" centered />
+      <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>HEATING SYSTEM TYPES</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What types of heating systems does Definitive Mechanical install?</h2>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {SYSTEM_TYPES.map(({ Icon, title, body }) => (
-              <div key={title} style={{ background: 'white', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+              <div key={title} style={{ background: 'white', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '28px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)' }}>
                 <Icon size={36} color="var(--brand-cyan)" style={{ marginBottom: '14px' }} />
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '8px' }}>{title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
@@ -169,8 +174,8 @@ export default function BoilerFurnaceInstallation() {
       </section>
 
       {/* SECTION 4: PERMITS + FINANCING */}
-      <section style={{ background: 'white', padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section style={{ background: 'white', padding: '80px 0' }}>
+        <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>Does boiler or furnace installation require a permit?</h2>
@@ -183,7 +188,7 @@ export default function BoilerFurnaceInstallation() {
                 ))}
               </div>
             </div>
-            <div style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', textAlign: 'center' }}>
+            <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', padding: '28px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', textAlign: 'center' }}>
               <CreditCard size={32} color="var(--brand-cyan)" style={{ margin: '0 auto 12px' }} />
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '12px' }}>Financing Available</p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '20px' }}>
@@ -196,8 +201,8 @@ export default function BoilerFurnaceInstallation() {
       </section>
 
       {/* RELATED SERVICES */}
-      <section style={{ background: 'var(--surface-1)', padding: '48px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section style={{ background: '#F0F5FA', padding: '48px 0' }}>
+        <div className="container">
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -206,7 +211,7 @@ export default function BoilerFurnaceInstallation() {
               { icon: Building2, label: 'Commercial Plumbing', href: '/commercial-plumbing' },
               { icon: CreditCard, label: 'Financing Options', href: 'https://www.mysynchrony.com/mmc/S6240351600' },
             ].map((item) => (
-              <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+              <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
                 <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
                 <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
@@ -217,10 +222,13 @@ export default function BoilerFurnaceInstallation() {
 
       {/* FAQ */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="FAQ" heading="Questions about boiler and furnace installation in MD, DC & Northern VA" centered />
-          <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '8px 32px' }}>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about boiler and furnace installation in MD, DC & Northern VA</h2>
+        </div>
+          <div style={{ background: '#F0F5FA', borderRadius: '6px', padding: '8px 32px' }}>
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
           </div>
         </div>
       </section>

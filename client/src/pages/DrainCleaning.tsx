@@ -61,7 +61,7 @@ export default function DrainCleaning() {
           {/* Dark navy overlay — matches homepage hero */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Drain Cleaning' }]} />
           <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>
             <div className="">
@@ -85,24 +85,22 @@ export default function DrainCleaning() {
 
       {/* SERVICES */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="DRAIN CLEANING SERVICES"
-            heading="What drain cleaning services does Definitive Mechanical provide?"
-            subtext="From kitchen and bathroom drains to main sewer line clearing and hydro-jetting, we handle the full range of drain and sewer services for residential, commercial, and government properties."
-            centered
-          />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>DRAIN CLEANING SERVICES</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What drain cleaning services does Definitive Mechanical provide?</h2>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>From kitchen and bathroom drains to main sewer line clearing and hydro-jetting, we handle the full range of drain and sewer services for residential, commercial, and government properties.</p>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {DRAIN_SERVICES.map((service) => (
               <div key={service.title} style={{
                 background: 'white',
-                border: '1px solid #E8EFF5',
-                borderTop: '3px solid var(--brand-cyan)',
+                border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)',
                 borderRadius: '6px',
                 padding: '28px',
-                boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
+                boxShadow: '0 4px 16px rgba(6,59,99,0.10)',
               }}>
-                <div style={{ width: '44px', height: '44px', background: 'rgba(0,158,198,0.1)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
+                <div style={{ width: '44px', height: '44px', background: 'rgba(0,117,186,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
                   <Droplets size={22} color="var(--brand-cyan)" />
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
@@ -114,14 +112,14 @@ export default function DrainCleaning() {
       </section>
 
       {/* WHY CHOOSE */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
+        <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <SectionHeading
-                eyebrow="WHY CHOOSE DEFINITIVE MECHANICAL"
-                heading="Why choose Definitive Mechanical for drain cleaning in the DMV?"
-              />
+              <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WHY CHOOSE DEFINITIVE MECHANICAL</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Why choose Definitive Mechanical for drain cleaning in the DMV?</h2>
+        </div>
               <div className="space-y-4">
                 {[
                   { title: 'Licensed Master Plumber on Every Job', desc: 'Every drain cleaning call is handled by a licensed Master Plumber — not an unlicensed tech with a snake.' },
@@ -140,11 +138,17 @@ export default function DrainCleaning() {
               </div>
             </div>
             <div>
-              <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
-                alt="Drain cleaning service Maryland"
-                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }}
-              />
+              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
+                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px 14px' }}>
+                      <ShieldCheck size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                      <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.88)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -152,7 +156,7 @@ export default function DrainCleaning() {
 
       {/* HYDRO-JETTING */}
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <SectionHeading
             eyebrow="HYDRO-JETTING"
             heading="What is hydro-jetting and when is it the right solution?"
@@ -167,7 +171,7 @@ export default function DrainCleaning() {
               { title: 'Recurring Clogs', desc: 'If the same drain clogs repeatedly, hydro-jetting removes the buildup that keeps catching debris.' },
               { title: 'Pre-Lining Preparation', desc: 'Before pipe lining or relining, hydro-jetting ensures the pipe wall is clean for proper adhesion.' },
             ].map((item) => (
-              <div key={item.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '6px', padding: '24px', display: 'flex', gap: '12px' }}>
+              <div key={item.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.14)', borderRadius: '6px', padding: '24px', display: 'flex', gap: '12px' }}>
                 <ChevronRight size={20} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'white', fontSize: '15px', marginBottom: '6px' }}>{item.title}</p>
@@ -183,12 +187,13 @@ export default function DrainCleaning() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="FAQ" heading="Drain Cleaning Questions" centered />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
-            <FAQAccordion items={DRAIN_FAQ} schema={true} variant="light" />
-          </div>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Drain Cleaning Questions</h2>
+        </div>
+                      <FAQAccordion items={DRAIN_FAQ} schema={true} variant="dark" />
         </div>
       </section>
 

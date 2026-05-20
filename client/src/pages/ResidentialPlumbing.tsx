@@ -1,4 +1,4 @@
-import { CheckCircle2, Wrench, Plus, AlertTriangle, ClipboardCheck, AlertCircle, FileX, XCircle, ShieldAlert, CreditCard } from 'lucide-react';
+import { CheckCircle2, Wrench, Plus, AlertTriangle, ClipboardCheck, AlertCircle, FileX, XCircle, ShieldAlert, CreditCard, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
 import SectionHeading from '@/components/ui/SectionHeading';
@@ -93,7 +93,7 @@ export default function ResidentialPlumbing() {
           {/* Dark navy overlay — matches homepage hero */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Residential Plumbing' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
@@ -116,11 +116,15 @@ export default function ResidentialPlumbing() {
 
       {/* SECTION 2: SERVICES LIST */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="RESIDENTIAL SERVICES" heading="What residential plumbing services does Definitive Mechanical provide?" subtext="Definitive Mechanical handles the full range of residential plumbing for homeowners across the DMV — from small repairs to major system work." centered />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>RESIDENTIAL SERVICES</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What residential plumbing services does Definitive Mechanical provide?</h2>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Definitive Mechanical handles the full range of residential plumbing for homeowners across the DMV — from small repairs to major system work.</p>
+        </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {SERVICE_CARDS.map(({ Icon, title, items }) => (
-              <div key={title} style={{ background: 'white', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+              <div key={title} style={{ background: 'white', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)' }}>
                 <Icon size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '12px' }}>{title}</p>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -136,7 +140,7 @@ export default function ResidentialPlumbing() {
 
       {/* SECTION 3: WHY LICENSED MASTER PLUMBER */}
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <SectionHeading eyebrow="WHY IT MATTERS" heading="Why should homeowners choose a licensed Master Plumber?" centered light />
           <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '700px', margin: '0 auto 40px', textAlign: 'center' }}>
             In Maryland, Washington DC, and Virginia, a Master Plumber license represents a significant level of tested, verified competency and legal accountability. Unlicensed plumbing work is common in the DMV market.
@@ -161,8 +165,8 @@ export default function ResidentialPlumbing() {
       </section>
 
       {/* SECTION 4: HONEST PRICING */}
-      <section style={{ background: 'var(--surface-1)', padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
+        <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '8px' }}>How does Definitive Mechanical's pricing work for residential clients?</h2>
@@ -183,7 +187,17 @@ export default function ResidentialPlumbing() {
               </div>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80" alt="Upfront pricing residential plumbing Maryland DC Virginia" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)', objectFit: 'cover', aspectRatio: '3/2' }} />
+              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
+                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px 14px' }}>
+                      <ShieldCheck size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                      <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.88)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -191,8 +205,8 @@ export default function ResidentialPlumbing() {
 
       {/* SECTION 5: FINANCING */}
       <section style={{ background: 'white', padding: '48px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div style={{ background: 'var(--surface-1)', borderRadius: '8px', padding: '28px', maxWidth: '700px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+        <div className="container">
+          <div style={{ background: '#F0F5FA', borderRadius: '8px', padding: '28px', maxWidth: '700px', margin: '0 auto', display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
             <CreditCard size={48} color="var(--brand-navy)" style={{ flexShrink: 0 }} />
             <div style={{ flex: 1 }}>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, marginBottom: '16px' }}>
@@ -205,8 +219,8 @@ export default function ResidentialPlumbing() {
       </section>
 
       {/* RELATED SERVICES */}
-      <section style={{ background: 'var(--surface-1)', padding: '48px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section style={{ background: '#F0F5FA', padding: '48px 0' }}>
+        <div className="container">
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
             {[
@@ -216,7 +230,7 @@ export default function ResidentialPlumbing() {
               { icon: AlertCircle, label: 'Gas Line Repair', href: '/gas-line-repair' },
               { icon: CreditCard, label: 'Financing', href: 'https://www.mysynchrony.com/mmc/S6240351600' },
             ].map((item) => (
-              <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '14px', display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
+              <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '14px', display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
                 <item.icon size={18} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
                 <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '12px' }}>{item.label}</span>
               </Link>
@@ -227,10 +241,13 @@ export default function ResidentialPlumbing() {
 
       {/* FAQ */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="FAQ" heading="Questions about residential plumbing in MD, DC & Northern VA" centered />
-          <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '8px 32px' }}>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about residential plumbing in MD, DC & Northern VA</h2>
+        </div>
+          <div style={{ background: '#F0F5FA', borderRadius: '6px', padding: '8px 32px' }}>
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
           </div>
         </div>
       </section>

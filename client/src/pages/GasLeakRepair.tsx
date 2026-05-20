@@ -51,7 +51,7 @@ export default function GasLeakRepair() {
           {/* Dark navy overlay — matches homepage hero */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair', href: '/gas-line-repair' }, { label: 'Gas Leak Repair' }]} />
           <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>
             <div className="">
@@ -95,8 +95,11 @@ export default function GasLeakRepair() {
 
       {/* SECTION 2: CAUSES */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="GAS LEAK CAUSES" heading="What causes gas leaks in homes and commercial properties?" centered />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>GAS LEAK CAUSES</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What causes gas leaks in homes and commercial properties?</h2>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {[
               { Icon: Clock, title: "Corroded or deteriorating pipe", body: "Particularly in older homes with aging steel or cast iron gas supply lines — a common issue in pre-1980s DMV properties." },
@@ -106,7 +109,7 @@ export default function GasLeakRepair() {
               { Icon: UserX, title: "Improper installation", body: "Gas work performed without a licensed gasfitter is among the most common causes of documented residential gas incidents." },
               { Icon: Lock, title: "Failed shut-off valve", body: "Valves that no longer seal completely when closed — often discovered during annual gas system checks." },
             ].map(({ Icon, title, body }) => (
-              <div key={title} style={{ background: 'white', borderTop: '3px solid #F59E0B', borderRadius: '4px', padding: '20px', border: '1px solid #E8EFF5' }}>
+              <div key={title} style={{ background: 'white', borderTop: '3px solid #F59E0B', borderRadius: '4px', padding: '20px' }}>
                 <Icon size={24} color="#F59E0B" style={{ marginBottom: '10px' }} />
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '6px' }}>{title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.6 }}>{body}</p>
@@ -117,9 +120,13 @@ export default function GasLeakRepair() {
       </section>
 
       {/* SECTION 3: REPAIR PROCESS */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="HOW WE REPAIR GAS LEAKS" heading="How does Definitive Mechanical repair a gas leak?" subtext="Once the gas company has shut off the supply and cleared the scene for entry:" centered />
+      <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>HOW WE REPAIR GAS LEAKS</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>How does Definitive Mechanical repair a gas leak?</h2>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Once the gas company has shut off the supply and cleared the scene for entry:</p>
+        </div>
           <div className="max-w-3xl mx-auto">
             {REPAIR_STEPS.map((step, i) => (
               <ProcessStep key={step.title} number={i + 1} icon={step.icon} title={step.title} description={step.description} isLast={i === REPAIR_STEPS.length - 1} />
@@ -132,7 +139,7 @@ export default function GasLeakRepair() {
       </section>
 
       {/* SECTION 4: LICENSING */}
-      <section style={{ background: 'var(--brand-navy)', padding: '64px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeading eyebrow="LICENSING" heading="Are you licensed to repair gas leaks in Maryland, DC, and Virginia?" centered light />
           <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px' }}>
@@ -148,11 +155,11 @@ export default function GasLeakRepair() {
 
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Wrench, label: 'Gas Line Repair', href: '/gas-line-repair' }, { icon: Search, label: 'Gas Line Installation', href: '/gas-line-installation' }, { icon: AlertTriangle, label: 'Emergency Plumbing', href: '/emergency-plumbing' }, { icon: CheckCircle2, label: 'Licenses & Certifications', href: '/licenses-certifications' }].map((item) => (
-              <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+              <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
                 <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
                 <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
@@ -162,11 +169,14 @@ export default function GasLeakRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="FAQ" heading="Questions about gas leak repair in MD, DC & Northern VA" centered />
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about gas leak repair in MD, DC & Northern VA</h2>
+        </div>
           <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px' }}>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
           </div>
         </div>
       </section>

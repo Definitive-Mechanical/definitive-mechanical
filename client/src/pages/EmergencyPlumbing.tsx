@@ -95,7 +95,7 @@ export default function EmergencyPlumbing() {
           {/* Dark navy overlay — matches homepage hero */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Emergency Plumbing' }]} />
           <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>
             <div className="">
@@ -149,13 +149,12 @@ export default function EmergencyPlumbing() {
 
       {/* WHAT QUALIFIES */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="EMERGENCY SITUATIONS"
-            heading="What qualifies as a plumbing emergency?"
-            subtext="A plumbing emergency is any situation that poses an immediate risk to your property, safety, or water supply — problems that cannot safely wait until the next business day."
-            centered
-          />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>EMERGENCY SITUATIONS</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What qualifies as a plumbing emergency?</h2>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>A plumbing emergency is any situation that poses an immediate risk to your property, safety, or water supply — problems that cannot safely wait until the next business day.</p>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {EMERGENCY_SCENARIOS.map((scenario) => (
               <div key={scenario.title} style={{
@@ -163,7 +162,7 @@ export default function EmergencyPlumbing() {
                 gap: '16px',
                 alignItems: 'flex-start',
                 background: 'white',
-                border: '1px solid #E8EFF5',
+                border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)',
                 borderRadius: '4px',
                 padding: '16px',
               }}>
@@ -185,14 +184,13 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* HOW WE RESPOND */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="OUR EMERGENCY PROCESS"
-            heading="How quickly does Definitive Mechanical respond to plumbing emergencies?"
-            subtext="We answer every emergency call with a live dispatcher — not a voicemail, not an after-hours recording. We dispatch licensed technicians across our full MD, DC, and Northern VA service area 24/7/365 — including weekends, holidays, and severe weather."
-            centered
-          />
+      <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>OUR EMERGENCY PROCESS</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>How quickly does Definitive Mechanical respond to plumbing emergencies?</h2>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>We answer every emergency call with a live dispatcher — not a voicemail, not an after-hours recording. We dispatch licensed technicians across our full MD, DC, and Northern VA service area 24/7/365 — including weekends, holidays, and severe weather.</p>
+        </div>
           <div>
             {RESPONSE_STEPS.map((step, index) => (
               <ProcessStep
@@ -233,7 +231,7 @@ export default function EmergencyPlumbing() {
 
       {/* WHAT TO DO BEFORE WE ARRIVE */}
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <SectionHeading
             eyebrow="WHILE YOU WAIT"
             heading="What should I do before the emergency plumber arrives?"
@@ -278,20 +276,19 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* SERVICE AREA */}
-      <section style={{ background: 'white', padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="EMERGENCY SERVICE AREA"
-            heading="Where does Definitive Mechanical provide 24/7 emergency plumbing?"
-            centered
-          />
+      <section style={{ background: 'white', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>EMERGENCY SERVICE AREA</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Where does Definitive Mechanical provide 24/7 emergency plumbing?</h2>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { state: 'Maryland', areas: ["Prince George's County", 'Montgomery County', 'Howard County', 'Anne Arundel County', 'Charles County'], cities: 'Largo, Bowie, Rockville, Bethesda, Waldorf' },
               { state: 'Washington DC', areas: ['All DC Wards & Neighborhoods'], cities: 'Georgetown, Capitol Hill, Dupont Circle, Navy Yard, NoMa' },
               { state: 'Northern Virginia', areas: ['Fairfax County', 'Arlington County', 'Loudoun County', 'Prince William County'], cities: 'Alexandria, Arlington, McLean, Springfield, Vienna' },
             ].map((area) => (
-              <div key={area.state} style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '24px', borderTop: '3px solid var(--brand-cyan)' }}>
+              <div key={area.state} style={{ background: '#F0F5FA', borderRadius: '6px', padding: '24px', borderTop: '3px solid var(--brand-cyan)' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '10px' }}>
                   {area.state}
                 </h3>
@@ -306,12 +303,13 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="FAQ" heading="Emergency Plumbing Questions" centered />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
-            <FAQAccordion items={EMERGENCY_FAQ} schema={true} variant="light" />
-          </div>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Emergency Plumbing Questions</h2>
+        </div>
+                      <FAQAccordion items={EMERGENCY_FAQ} schema={true} variant="dark" />
         </div>
       </section>
 

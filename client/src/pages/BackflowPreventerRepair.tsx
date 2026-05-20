@@ -1,7 +1,6 @@
 import { Disc, Droplets, Snowflake, ZapOff, Timer, AlertTriangle, CheckCircle2, AlertCircle, ShieldCheck, Shield } from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
-import SectionHeading from '@/components/ui/SectionHeading';
 import BreadcrumbList from '@/components/ui/BreadcrumbList';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import CTABanner from '@/components/ui/CTABanner';
@@ -44,7 +43,7 @@ export default function BackflowPreventerRepair() {
           {/* Dark navy overlay — matches homepage hero */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Backflow Prevention', href: '/backflow-prevention' }, { label: 'Backflow Preventer Repair' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
@@ -67,14 +66,17 @@ export default function BackflowPreventerRepair() {
 
       {/* SECTION 2: WHY THEY FAIL */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="WHY BACKFLOW PREVENTERS FAIL" heading="Why do backflow preventers fail?" centered />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WHY BACKFLOW PREVENTERS FAIL</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Why do backflow preventers fail?</h2>
+        </div>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '640px', margin: '0 auto 40px', textAlign: 'center' }}>
             Backflow preventers are mechanical devices exposed to water pressure, temperature fluctuation, debris, and chemical exposure. Over time, internal components wear.
           </p>
           <div className="space-y-3 max-w-3xl mx-auto">
             {FAILURE_CAUSES.map(({ Icon, title, body }) => (
-              <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', gap: '14px', alignItems: 'flex-start', border: '1px solid #E8EFF5', borderLeftWidth: '4px', borderLeftColor: 'var(--brand-cyan)' }}>
+              <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', gap: '14px', alignItems: 'flex-start', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderLeftWidth: '4px', borderLeftColor: 'var(--brand-cyan)' }}>
                 <Icon size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '4px' }}>{title}</p>
@@ -87,12 +89,15 @@ export default function BackflowPreventerRepair() {
       </section>
 
       {/* SECTION 3: REPAIR VS REPLACE */}
-      <section style={{ background: 'var(--surface-1)', padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="REPAIR OR REPLACE?" heading="Can a failed backflow preventer be repaired or does it need to be replaced?" centered />
+      <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR OR REPLACE?</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Can a failed backflow preventer be repaired or does it need to be replaced?</h2>
+        </div>
           <div className="grid lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Repair */}
-            <div style={{ background: 'white', borderTop: '4px solid #1A7A4A', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+            <div style={{ background: 'white', borderTop: '4px solid #1A7A4A', borderRadius: '6px', padding: '28px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)' }}>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#1A7A4A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>USUALLY REPAIRABLE</p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '16px' }}>
                 Most backflow preventer failures are repairable with internal repair kit installation — replacement of the check disc seals, relief valve seat, and/or other internal components. This is typically significantly less expensive than full device replacement.
@@ -107,7 +112,7 @@ export default function BackflowPreventerRepair() {
               </div>
             </div>
             {/* Replace */}
-            <div style={{ background: 'white', borderTop: '4px solid #F59E0B', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+            <div style={{ background: 'white', borderTop: '4px solid #F59E0B', borderRadius: '6px', padding: '28px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)' }}>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>REPLACEMENT RECOMMENDED WHEN:</p>
               <div className="space-y-3">
                 {["The device body is cracked or physically damaged (freeze damage is the most common cause)", "The device is an older model for which repair kits are no longer available", "The device has failed multiple consecutive certification tests after repair", "The installation requires upgrading to a higher-protection device class"].map((item) => (
@@ -127,11 +132,11 @@ export default function BackflowPreventerRepair() {
 
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             {[{ icon: ShieldCheck, label: 'Backflow Certification', href: '/backflow-certification' }, { icon: Shield, label: 'Backflow Prevention', href: '/backflow-prevention' }, { icon: CheckCircle2, label: 'Commercial Plumbing', href: '/commercial-plumbing' }].map((item) => (
-              <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
+              <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
                 <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
                 <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
@@ -141,11 +146,14 @@ export default function BackflowPreventerRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="FAQ" heading="Questions about backflow preventer repair in MD, DC & Northern VA" centered />
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about backflow preventer repair in MD, DC & Northern VA</h2>
+        </div>
           <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px' }}>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
           </div>
         </div>
       </section>

@@ -51,7 +51,7 @@ export default function GovernmentMunicipalPlumbing() {
           {/* Dark navy overlay — matches homepage hero */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Government & Municipal Plumbing' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
@@ -75,7 +75,7 @@ export default function GovernmentMunicipalPlumbing() {
 
       {/* CERTIFICATIONS */}
       <section style={{ background: 'var(--brand-cyan)', padding: '32px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { icon: Award, label: 'MDOT MBE', value: 'Cert No. 20-134' },
@@ -95,12 +95,11 @@ export default function GovernmentMunicipalPlumbing() {
 
       {/* SERVICES */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="GOVERNMENT & MUNICIPAL SERVICES"
-            heading="Plumbing services for government agencies and public institutions"
-            centered
-          />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>GOVERNMENT & MUNICIPAL SERVICES</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Plumbing services for government agencies and public institutions</h2>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { title: 'Federal & State Facility Plumbing', desc: 'Plumbing repair, maintenance, and installation for federal buildings, state facilities, and municipal properties.' },
@@ -112,11 +111,10 @@ export default function GovernmentMunicipalPlumbing() {
             ].map((service) => (
               <div key={service.title} style={{
                 background: 'white',
-                border: '1px solid #E8EFF5',
-                borderTop: '3px solid var(--brand-cyan)',
+                border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)',
                 borderRadius: '6px',
                 padding: '24px',
-                boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
+                boxShadow: '0 4px 16px rgba(6,59,99,0.10)',
               }}>
                 <Landmark size={22} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
                 <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{service.title}</h3>
@@ -129,7 +127,7 @@ export default function GovernmentMunicipalPlumbing() {
 
       {/* CREDENTIALS DETAIL */}
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <SectionHeading
             eyebrow="CREDENTIALS & COMPLIANCE"
             heading="Definitive Mechanical's government contracting credentials"
@@ -156,7 +154,7 @@ export default function GovernmentMunicipalPlumbing() {
                 items: ['Maryland Master Plumber/Gasfitter #96958', 'WSSC Master Plumber/Gasfitter #73696', 'DC Master Plumber/Gasfitter #PGM1002236', 'Virginia Master Plumber/Gasfitter #2710064209', 'Virginia Class A Contractor #2705181061', 'Delaware Master Plumber/Gasfitter #PL-0012866'],
               },
             ].map((section) => (
-              <div key={section.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '6px', padding: '24px' }}>
+              <div key={section.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.14)', borderRadius: '6px', padding: '24px' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '12px' }}>{section.title}</h3>
                 {section.items.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '8px' }}>
@@ -174,12 +172,13 @@ export default function GovernmentMunicipalPlumbing() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="FAQ" heading="Government & Municipal Plumbing Questions" centered />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
-            <FAQAccordion items={GOV_FAQ} schema={true} variant="light" />
-          </div>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Government & Municipal Plumbing Questions</h2>
+        </div>
+                      <FAQAccordion items={GOV_FAQ} schema={true} variant="dark" />
         </div>
       </section>
 

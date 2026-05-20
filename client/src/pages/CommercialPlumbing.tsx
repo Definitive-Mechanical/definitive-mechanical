@@ -1,7 +1,6 @@
 import { Building2, CheckCircle2, ShieldCheck, FileText, Clock, Users } from 'lucide-react';
 import { BUSINESS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
-import SectionHeading from '@/components/ui/SectionHeading';
 import BreadcrumbList from '@/components/ui/BreadcrumbList';
 import FAQAccordion from '@/components/ui/FAQAccordion';
 import CTABanner from '@/components/ui/CTABanner';
@@ -62,7 +61,7 @@ export default function CommercialPlumbing() {
           {/* Dark navy overlay — matches homepage hero */}
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
+        <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Commercial Plumbing' }]} />
           <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>
             <div className="">
@@ -86,21 +85,19 @@ export default function CommercialPlumbing() {
 
       {/* SERVICES */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="COMMERCIAL PLUMBING SERVICES"
-            heading="What commercial plumbing services does Definitive Mechanical provide?"
-            centered
-          />
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>COMMERCIAL PLUMBING SERVICES</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What commercial plumbing services does Definitive Mechanical provide?</h2>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {COMMERCIAL_SERVICES.map((service) => (
               <div key={service.title} style={{
                 background: 'white',
-                border: '1px solid #E8EFF5',
-                borderTop: '3px solid var(--brand-cyan)',
+                border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)',
                 borderRadius: '6px',
                 padding: '24px',
-                boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
+                boxShadow: '0 4px 16px rgba(6,59,99,0.10)',
               }}>
                 <Building2 size={22} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
                 <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{service.title}</h3>
@@ -112,13 +109,12 @@ export default function CommercialPlumbing() {
       </section>
 
       {/* WHY CHOOSE */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading
-            eyebrow="WHY CHOOSE DEFINITIVE MECHANICAL"
-            heading="Why do commercial clients choose Definitive Mechanical?"
-            centered
-          />
+      <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WHY CHOOSE DEFINITIVE MECHANICAL</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Why do commercial clients choose Definitive Mechanical?</h2>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { icon: ShieldCheck, title: 'Licensed in Four States', body: 'Master Plumber and Master Gasfitter licenses in Maryland, DC, Virginia, and Delaware. Commercial work requires the right license in the right jurisdiction.' },
@@ -140,7 +136,7 @@ export default function CommercialPlumbing() {
 
       {/* CERTIFICATIONS BANNER */}
       <section style={{ background: 'var(--brand-navy)', padding: '48px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>
@@ -171,12 +167,13 @@ export default function CommercialPlumbing() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeading eyebrow="FAQ" heading="Commercial Plumbing Questions" centered />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
-            <FAQAccordion items={COMMERCIAL_FAQ} schema={true} variant="light" />
-          </div>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+        <div className="container">
+          <div style={{ marginBottom: '40px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Commercial Plumbing Questions</h2>
+        </div>
+                      <FAQAccordion items={COMMERCIAL_FAQ} schema={true} variant="dark" />
         </div>
       </section>
 
