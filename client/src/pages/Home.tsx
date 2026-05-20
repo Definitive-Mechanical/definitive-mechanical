@@ -1,4 +1,5 @@
-import { Phone, Award, Star, Clock, ShieldCheck, FileText, Users, CheckCircle, AlertTriangle, MapPin, Building2, MapPinned, KeyRound, Briefcase, Leaf, CheckCircle2 } from 'lucide-react';
+import { Phone, Award, Star, Clock, ShieldCheck, FileText, Users, CheckCircle, AlertTriangle, MapPin, Building2, MapPinned, KeyRound, Briefcase, Leaf, CheckCircle2, Send } from 'lucide-react';
+import { useState } from 'react';
 import { Link } from 'wouter';
 import { BUSINESS, TESTIMONIALS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -78,6 +79,197 @@ const HOME_FAQ = [
   },
 ];
 
+function HeroSection() {
+  const [formData, setFormData] = useState({ name: '', phone: '', email: '', service: '', message: '' });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // In production this would POST to a backend / email service
+    setSubmitted(true);
+  };
+
+  const SERVICES = [
+    'Emergency Plumbing',
+    'Drain Cleaning / Hydro-Jetting',
+    'Water Heater Repair / Replacement',
+    'Gas Line Repair',
+    'Backflow Certification',
+    'Sewer Line Repair',
+    'Water Line Repair',
+    'Boiler / Furnace Repair',
+    'Commercial Plumbing',
+    'Other',
+  ];
+
+  return (
+    <section
+      style={{
+        minHeight: '85vh',
+        position: 'relative',
+        display: 'flex',
+        alignItems: 'center',
+        overflow: 'hidden',
+      }}
+    >
+      {/* Background plumber photo */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: 'url(https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=85)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 30%',
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+      {/* Deep navy/blue overlay */}
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)',
+        }}
+      />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
+        <div className="grid lg:grid-cols-5 gap-10 items-center">
+
+          {/* LEFT — headline & trust signals — 3/5 */}
+          <div className="lg:col-span-3">
+            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
+              LICENSED PLUMBING · MARYLAND · WASHINGTON DC · NORTHERN VIRGINIA
+            </p>
+            <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.01em', color: 'white', fontSize: 'clamp(34px, 5vw, 64px)', lineHeight: 1.0, marginBottom: '20px' }}>
+              Licensed Master Plumbers. Honest Service. No Sales Pitch.
+            </h1>
+            <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '540px', marginBottom: '24px' }}>
+              Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor serving homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia. Master Plumber and Master Gasfitter licensed in four states. 24/7 emergency service. Upfront pricing in writing — always.
+            </p>
+            <TrustBadges variant="dark" badges={['11 Years in Business', '24/7 Emergency', 'Licensed Master Plumber/Gasfitter', 'MDOT MBE Certified', 'VA SWaM Certified']} />
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
+              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            </div>
+            <div style={{ marginTop: '20px' }}>
+              <StarRating rating={4.8} count={40} variant="dark" />
+            </div>
+          </div>
+
+          {/* RIGHT — contact form — 2/5 */}
+          <div className="lg:col-span-2">
+            <div
+              style={{
+                background: 'rgba(255,255,255,0.97)',
+                borderRadius: '6px',
+                padding: '32px 28px',
+                boxShadow: '0 24px 64px rgba(0,0,0,0.45)',
+                borderTop: '4px solid var(--brand-cyan)',
+              }}
+            >
+              {submitted ? (
+                <div style={{ textAlign: 'center', padding: '24px 0' }}>
+                  <CheckCircle size={48} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '22px', textTransform: 'uppercase', color: 'var(--brand-navy)', marginBottom: '8px' }}>
+                    Request Received!
+                  </h3>
+                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '15px', color: '#374151', lineHeight: 1.6 }}>
+                    We'll call you back within 30 minutes. For emergencies call <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-cyan)', fontWeight: 700 }}>{BUSINESS.phone}</a> now.
+                  </p>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit}>
+                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '6px' }}>
+                    Free Estimate · No Obligation
+                  </p>
+                  <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '22px', textTransform: 'uppercase', color: 'var(--brand-navy)', marginBottom: '20px', lineHeight: 1.1 }}>
+                    Request Service
+                  </h2>
+
+                  {/* Name */}
+                  <div style={{ marginBottom: '14px' }}>
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Full Name *</label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="John Smith"
+                      value={formData.name}
+                      onChange={e => setFormData(p => ({ ...p, name: e.target.value }))}
+                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#111827', outline: 'none', boxSizing: 'border-box' }}
+                    />
+                  </div>
+
+                  {/* Phone */}
+                  <div style={{ marginBottom: '14px' }}>
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Phone Number *</label>
+                    <input
+                      type="tel"
+                      required
+                      placeholder="(301) 555-0100"
+                      value={formData.phone}
+                      onChange={e => setFormData(p => ({ ...p, phone: e.target.value }))}
+                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#111827', outline: 'none', boxSizing: 'border-box' }}
+                    />
+                  </div>
+
+                  {/* Email */}
+                  <div style={{ marginBottom: '14px' }}>
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Email Address</label>
+                    <input
+                      type="email"
+                      placeholder="john@example.com"
+                      value={formData.email}
+                      onChange={e => setFormData(p => ({ ...p, email: e.target.value }))}
+                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#111827', outline: 'none', boxSizing: 'border-box' }}
+                    />
+                  </div>
+
+                  {/* Service */}
+                  <div style={{ marginBottom: '14px' }}>
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Service Needed *</label>
+                    <select
+                      required
+                      value={formData.service}
+                      onChange={e => setFormData(p => ({ ...p, service: e.target.value }))}
+                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: formData.service ? '#111827' : '#9ca3af', outline: 'none', background: 'white', boxSizing: 'border-box' }}
+                    >
+                      <option value="" disabled>Select a service...</option>
+                      {SERVICES.map(s => <option key={s} value={s}>{s}</option>)}
+                    </select>
+                  </div>
+
+                  {/* Message */}
+                  <div style={{ marginBottom: '20px' }}>
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Brief Description</label>
+                    <textarea
+                      rows={3}
+                      placeholder="Describe the issue..."
+                      value={formData.message}
+                      onChange={e => setFormData(p => ({ ...p, message: e.target.value }))}
+                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#111827', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }}
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px', borderRadius: '4px', border: 'none', cursor: 'pointer' }}
+                  >
+                    <Send size={16} /> GET FREE ESTIMATE
+                  </button>
+
+                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: '#6b7280', textAlign: 'center', marginTop: '10px' }}>
+                    Or call directly: <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-cyan)', fontWeight: 700 }}>{BUSINESS.phone}</a> — 24/7
+                  </p>
+                </form>
+              )}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -100,99 +292,7 @@ export default function Home() {
       />
 
       {/* SECTION 1: HERO */}
-      <section style={{
-        minHeight: '75vh',
-        background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)',
-        position: 'relative',
-        display: 'flex',
-        alignItems: 'center',
-        overflow: 'hidden',
-      }}>
-        {/* Diagonal overlay */}
-        <div style={{
-          position: 'absolute',
-          inset: 0,
-          background: 'rgba(0,158,198,0.06)',
-          transform: 'skewY(-5deg)',
-          transformOrigin: 'top right',
-          pointerEvents: 'none',
-        }} />
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
-          <div className="grid lg:grid-cols-5 gap-12 items-center">
-            {/* Left content — 3/5 */}
-            <div className="lg:col-span-3">
-              <p style={{
-                fontFamily: 'var(--font-display)',
-                fontWeight: 700,
-                fontSize: '11px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.25em',
-                color: 'var(--brand-cyan)',
-                marginBottom: '16px',
-              }}>
-                LICENSED PLUMBING · MARYLAND · WASHINGTON DC · NORTHERN VIRGINIA
-              </p>
-
-              <h1 style={{
-                fontFamily: 'var(--font-display)',
-                fontWeight: 700,
-                textTransform: 'uppercase',
-                letterSpacing: '0.01em',
-                color: 'white',
-                fontSize: 'clamp(34px, 5vw, 64px)',
-                lineHeight: 1.0,
-                marginBottom: '20px',
-              }}>
-                Licensed Master Plumbers. Honest Service. No Sales Pitch.
-              </h1>
-
-              <p style={{
-                fontFamily: 'var(--font-body)',
-                fontWeight: 400,
-                color: 'rgba(255,255,255,0.85)',
-                fontSize: '17px',
-                lineHeight: 1.7,
-                maxWidth: '540px',
-                marginBottom: '24px',
-              }}>
-                Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor serving homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia. Master Plumber and Master Gasfitter licensed in four states. 24/7 emergency service. Upfront pricing in writing — always.
-              </p>
-
-              <TrustBadges variant="dark" badges={['11 Years in Business', '24/7 Emergency', 'Licensed Master Plumber/Gasfitter', 'MDOT MBE Certified', 'VA SWaM Certified']} />
-
-              <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-                <BookNowButton variant="outline" text="REQUEST SERVICE" href="/contact" size="lg" />
-              </div>
-
-              <div style={{ marginTop: '24px' }}>
-                <StarRating rating={4.8} count={40} variant="dark" />
-              </div>
-
-              {/* Zip Code Service Area Lookup */}
-              <div style={{ marginTop: '32px' }}>
-                <ServiceAreaSearch variant="hero" />
-              </div>
-            </div>
-
-            {/* Right image — 2/5 */}
-            <div className="hidden lg:block lg:col-span-2">
-              <img
-                src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800&q=80"
-                alt="Licensed Master Plumber Largo MD — Definitive Mechanical"
-                style={{
-                  width: '100%',
-                  borderRadius: '6px',
-                  boxShadow: '0 20px 60px rgba(0,0,0,0.4)',
-                  objectFit: 'cover',
-                  aspectRatio: '4/3',
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* SECTION 2: TRUST STATS BAR */}
       <section style={{ background: 'var(--brand-cyan)', padding: '32px 0' }}>
