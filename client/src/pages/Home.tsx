@@ -302,9 +302,11 @@ export default function Home() {
                 body: 'Definitive Mechanical has operated out of Largo, MD for 11 years. Our reputation was built one job at a time. When you call us, you reach a real dispatcher. When a technician arrives, you get their name.',
               },
             ].map((col) => (
-              <div key={col.title} style={{ textAlign: 'center', padding: '16px' }}>
-                <col.icon size={48} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
-                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '18px', marginBottom: '12px' }}>
+              <div key={col.title} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '32px 28px', boxShadow: '0 2px 12px rgba(0,0,0,0.07)', textAlign: 'center' }}>
+                <div style={{ width: '56px', height: '56px', borderRadius: '4px', background: 'var(--brand-navy)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
+                  <col.icon size={28} color="var(--brand-cyan)" />
+                </div>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '20px', textTransform: 'uppercase', letterSpacing: '0.03em', marginBottom: '12px' }}>
                   {col.title}
                 </h3>
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7 }}>
