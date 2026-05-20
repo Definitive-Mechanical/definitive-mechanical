@@ -19,89 +19,90 @@ export default function ServiceCard({ title, description, href, iconName, featur
       className="block no-underline group"
       style={{
         background: 'white',
-        border: '1px solid var(--border)',
-        borderTop: '3px solid var(--brand-blue)',
-        borderRadius: '8px',
-        padding: '32px 28px 28px',
-        transition: 'transform 0.22s var(--ease-out), box-shadow 0.22s var(--ease-out)',
-        boxShadow: 'var(--shadow-1)',
-        position: 'relative',
+        border: '1px solid #E6E8EE',
+        borderRadius: '12px',
+        overflow: 'hidden',
+        boxShadow: '0 4px 12px rgba(6,59,99,0.08)',
+        transition: 'transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)',
         display: 'block',
+        position: 'relative',
       }}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow-2)';
+        (e.currentTarget as HTMLElement).style.boxShadow = '0 12px 32px rgba(6,59,99,0.16)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(-4px)';
       }}
       onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow-1)';
+        (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(6,59,99,0.08)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
       }}
     >
-      {featured && (
-        <span style={{
-          position: 'absolute',
-          top: '12px',
-          right: '12px',
-          background: 'var(--brand-blue)',
-          color: 'white',
-          fontFamily: 'var(--font-body)',
-          fontWeight: 700,
-          fontSize: '10px',
-          textTransform: 'uppercase',
-          letterSpacing: '0.15em',
-          padding: '3px 8px',
-          borderRadius: '2px',
-        }}>
-          Most Popular
-        </span>
-      )}
-
+      {/* Navy gradient icon header */}
       <div style={{
-        width: '48px',
-        height: '48px',
-        background: 'rgba(0,117,186,0.08)',
-        borderRadius: '10px',
+        aspectRatio: '4/3',
+        background: 'linear-gradient(135deg, #063B63, #0a3a5e)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom: '16px',
+        position: 'relative',
       }}>
-        <IconComponent size={24} color="var(--brand-blue)" />
+        {featured && (
+          <span style={{
+            position: 'absolute',
+            top: '10px',
+            right: '10px',
+            background: 'var(--brand-cyan)',
+            color: 'var(--brand-navy)',
+            fontFamily: 'var(--font-display)',
+            fontWeight: 700,
+            fontSize: '10px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.12em',
+            padding: '3px 8px',
+            borderRadius: '2px',
+          }}>
+            Most Popular
+          </span>
+        )}
+        <IconComponent size={56} color="#4FB3E8" strokeWidth={1.8} />
       </div>
 
-      <h3 style={{
-        fontFamily: 'var(--font-display)',
-        fontWeight: 700,
-        textTransform: 'uppercase',
-        color: 'var(--brand-navy)',
-        fontSize: '20px',
-        marginBottom: '10px',
-        lineHeight: 1.15,
-      }}>
-        {title}
-      </h3>
+      {/* Card body */}
+      <div style={{ padding: '18px 20px 20px' }}>
+        <div style={{
+          fontFamily: 'var(--font-display)',
+          fontWeight: 700,
+          textTransform: 'uppercase',
+          fontSize: '18px',
+          color: 'var(--brand-navy)',
+          marginBottom: '6px',
+          lineHeight: 1.15,
+        }}>
+          {title}
+        </div>
 
-      <p style={{
-        fontFamily: 'var(--font-body)',
-        fontWeight: 400,
-        color: 'var(--ink-2)',
-        fontSize: '14px',
-        lineHeight: 1.7,
-        marginBottom: '20px',
-      }}>
-        {description}
-      </p>
+        <p style={{
+          fontFamily: 'var(--font-body)',
+          fontWeight: 400,
+          color: 'var(--ink-2)',
+          fontSize: '13px',
+          lineHeight: 1.5,
+          marginBottom: '10px',
+          margin: '6px 0 10px',
+        }}>
+          {description}
+        </p>
 
-      <span style={{
-        fontFamily: 'var(--font-display)',
-        fontWeight: 700,
-        color: 'var(--brand-blue)',
-        fontSize: '12px',
-        textTransform: 'uppercase',
-        letterSpacing: '0.1em',
-      }}>
-        VIEW SERVICE →
-      </span>
+        <span style={{
+          fontFamily: 'var(--font-display)',
+          fontWeight: 700,
+          color: '#0075BA',
+          fontSize: '13px',
+          textTransform: 'uppercase',
+          letterSpacing: '0.04em',
+        }}>
+          Read more →
+        </span>
+      </div>
     </Link>
   );
 }

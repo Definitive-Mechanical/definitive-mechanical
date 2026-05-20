@@ -48,7 +48,7 @@ export interface Tier1CityPageProps {
 }
 
 /* ─── Icon map ───────────────────────────────────────────────────────────── */
-const ICON_MAP: Record<string, React.ComponentType<{ size?: number; style?: React.CSSProperties }>> = {
+const ICON_MAP: Record<string, React.ComponentType<{ size?: number; style?: React.CSSProperties; color?: string; strokeWidth?: number }>> = {
   emergency: AlertTriangle,
   drain: Droplets,
   "water heater": Thermometer,
@@ -216,18 +216,25 @@ export default function Tier1CityPage({
                 <Phone size={14} /> Call Now
               </a>
             </div>
-            {/* Right services grid */}
-            <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {/* Right services grid — new card style */}
+            <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
               {services.map((svc, i) => {
                 const Icon = getIcon(svc.label);
                 return (
-                  <Link key={i} href={svc.href}>
-                    <div className="flex items-center gap-3 p-4 rounded-lg cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
-                      style={{ background: "#F5F8FC", border: "1px solid #E0EAF4", borderLeft: "3px solid var(--brand-cyan)" }}>
-                      <div style={{ width: "36px", height: "36px", borderRadius: "8px", background: "rgba(0,158,198,0.1)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                        <Icon size={18} style={{ color: "var(--brand-cyan)" }} />
+                  <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
+                    <div
+                      className="cursor-pointer"
+                      style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                    >
+                      <div style={{ background: "linear-gradient(135deg, #063B63, #0a3a5e)", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px 0" }}>
+                        <Icon size={40} color="#4FB3E8" strokeWidth={1.8} />
                       </div>
-                      <span style={{ fontFamily: "var(--font-body)", fontWeight: 500, color: "var(--brand-navy)", fontSize: "14px" }}>{svc.label}</span>
+                      <div style={{ padding: "14px 16px 16px" }}>
+                        <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                        <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                      </div>
                     </div>
                   </Link>
                 );

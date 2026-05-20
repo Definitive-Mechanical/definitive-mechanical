@@ -313,29 +313,25 @@ export default function PriorityCityLayout({
                 <Phone size={14} /> CALL NOW
               </a>
             </div>
-            {/* Right: service cards */}
+            {/* Right: service cards — new style */}
             <div className="lg:col-span-2">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {services.map((svc, i) => {
                   const Icon = getServiceIcon(svc.label);
                   return (
-                    <Link key={i} href={svc.href}>
-                      <div style={{
-                        background: "white", borderRadius: "3px", padding: "14px 16px",
-                        borderTop: "3px solid var(--brand-cyan)",
-                        boxShadow: "0 1px 4px rgba(6,59,99,0.08)",
-                        display: "flex", alignItems: "flex-start", gap: 12,
-                        cursor: "pointer", transition: "all 200ms ease",
-                      }}
-                        onMouseEnter={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "0 6px 20px rgba(6,59,99,0.14)"; (e.currentTarget as HTMLDivElement).style.transform = "translateY(-2px)"; }}
-                        onMouseLeave={e => { (e.currentTarget as HTMLDivElement).style.boxShadow = "0 1px 4px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLDivElement).style.transform = "none"; }}
+                    <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
+                      <div
+                        className="cursor-pointer"
+                        style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+                        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                       >
-                        <div style={{ background: "rgba(0,117,186,0.08)", borderRadius: "8px", padding: "8px", flexShrink: 0 }}>
-                          <Icon size={18} style={{ color: "var(--brand-blue)", display: "block" }} />
+                        <div style={{ background: "linear-gradient(135deg, #063B63, #0a3a5e)", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px 0" }}>
+                          <Icon size={40} color="#4FB3E8" strokeWidth={1.8} />
                         </div>
-                        <div>
-                          <p style={{ fontFamily: "var(--font-body)", fontWeight: 500, color: "var(--brand-navy)", fontSize: "13px", margin: 0, lineHeight: 1.4 }}>{svc.label}</p>
-                          {svc.note && <p style={{ fontFamily: "var(--font-body)", color: "#888", fontSize: "11px", margin: "2px 0 0" }}>{svc.note}</p>}
+                        <div style={{ padding: "14px 16px 16px" }}>
+                          <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                          <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                         </div>
                       </div>
                     </Link>

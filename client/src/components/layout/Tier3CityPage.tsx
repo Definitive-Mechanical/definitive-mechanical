@@ -286,15 +286,20 @@ export default function Tier3CityPage({
             {services.map((svc, i) => {
               const Icon = getIcon(svc.label);
               return (
-                <Link key={i} href={svc.href} className="no-underline block">
+                <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                   <div
-                    className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
-                    style={{ borderTopColor: "var(--brand-cyan)", border: "1px solid #E8EFF5", borderTop: "3px solid var(--brand-cyan)" }}
+                    className="cursor-pointer"
+                    style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                   >
-                    <Icon size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
-                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 500, color: "var(--brand-navy)", fontSize: "14px", margin: 0 }}>
-                      {svc.label}
-                    </p>
+                    <div style={{ background: "linear-gradient(135deg, #063B63, #0a3a5e)", display: "flex", alignItems: "center", justifyContent: "center", padding: "24px 0" }}>
+                      <Icon size={40} color="#4FB3E8" strokeWidth={1.8} />
+                    </div>
+                    <div style={{ padding: "14px 16px 16px" }}>
+                      <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                    </div>
                   </div>
                 </Link>
               );
