@@ -315,9 +315,67 @@ export default function Home() {
             subtext="From 24/7 emergency response to water heater repair, drain cleaning, gas lines, backflow certification, and government facility plumbing — we handle the full range of licensed mechanical services across Maryland, DC, and Northern Virginia."
             centered
           />
+
+          {/* Sticky category pill tabs */}
+          <div style={{
+            position: 'sticky',
+            top: '72px',
+            zIndex: 30,
+            background: 'white',
+            paddingTop: '12px',
+            paddingBottom: '12px',
+            marginBottom: '40px',
+            borderBottom: '1px solid var(--border)',
+          }}>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', justifyContent: 'center' }}>
+              {ALL_SERVICE_CATEGORIES.map((cat) => (
+                <button
+                  key={cat.key}
+                  onClick={() => {
+                    const el = document.getElementById(`service-cat-${cat.key}`);
+                    if (el) {
+                      const offset = 130;
+                      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+                      window.scrollTo({ top, behavior: 'smooth' });
+                    }
+                  }}
+                  style={{
+                    fontFamily: 'var(--font-display)',
+                    fontWeight: 700,
+                    fontSize: '13px',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.1em',
+                    padding: '10px 24px',
+                    borderRadius: '999px',
+                    border: `2px solid ${cat.color}`,
+                    background: 'transparent',
+                    color: 'var(--brand-navy)',
+                    cursor: 'pointer',
+                    transition: 'all 180ms cubic-bezier(0.23,1,0.32,1)',
+                    whiteSpace: 'nowrap',
+                  }}
+                  onMouseEnter={e => {
+                    (e.currentTarget as HTMLElement).style.background = cat.color;
+                    (e.currentTarget as HTMLElement).style.color = 'white';
+                    (e.currentTarget as HTMLElement).style.transform = 'scale(1.03)';
+                  }}
+                  onMouseLeave={e => {
+                    (e.currentTarget as HTMLElement).style.background = 'transparent';
+                    (e.currentTarget as HTMLElement).style.color = 'var(--brand-navy)';
+                    (e.currentTarget as HTMLElement).style.transform = 'scale(1)';
+                  }}
+                  onMouseDown={e => (e.currentTarget as HTMLElement).style.transform = 'scale(0.97)'}
+                  onMouseUp={e => (e.currentTarget as HTMLElement).style.transform = 'scale(1.03)'}
+                >
+                  {cat.title}
+                </button>
+              ))}
+            </div>
+          </div>
+
           <div style={{ display: 'flex', flexDirection: 'column', gap: '48px' }}>
             {ALL_SERVICE_CATEGORIES.map((cat) => (
-              <div key={cat.key}>
+              <div key={cat.key} id={`service-cat-${cat.key}`}>
                 {/* Category divider header — matches city pages */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '24px' }}>
                   <div style={{ height: '3px', width: '32px', background: cat.color, flexShrink: 0, borderRadius: '2px' }} />

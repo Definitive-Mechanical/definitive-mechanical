@@ -143,12 +143,7 @@ export default function Footer() {
                   { label: 'Maryland', href: '/service-areas/maryland' },
                   { label: 'Washington DC', href: '/service-areas/washington-dc' },
                   { label: 'Northern Virginia', href: '/service-areas/northern-virginia' },
-                  { label: 'Largo, MD', href: '/service-areas/maryland/prince-georges-county/largo-md' },
-                  { label: 'Bowie, MD', href: '/service-areas/maryland' },
-                  { label: 'Rockville, MD', href: '/service-areas/maryland/montgomery-county/rockville-md' },
-                  { label: 'Bethesda, MD', href: '/service-areas/maryland' },
-                  { label: 'Alexandria, VA', href: '/service-areas/northern-virginia/fairfax-county/alexandria-va' },
-                  { label: 'Arlington, VA', href: '/service-areas/northern-virginia/arlington-county/arlington-va' },
+                  { label: 'View All Service Areas', href: '/service-areas' },
                 ].map((link) => (
                   <Link key={link.href + link.label} href={link.href}
                     className="block no-underline transition-colors duration-150"
