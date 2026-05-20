@@ -60,22 +60,6 @@ export default function GasLeakRepair() {
                 Gas Leak Repair — 24/7 Emergency Gas Service in Maryland, DC & Northern Virginia
               </h1>
 
-              {/* Safety box */}
-              <div style={{ background: 'rgba(255,255,255,0.08)', border: '2px solid rgba(255,180,0,0.5)', borderRadius: '6px', padding: '24px', marginBottom: '24px', maxWidth: '560px' }}>
-                <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '12px' }}>
-                  <AlertTriangle size={32} color="#F59E0B" />
-                </div>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', textAlign: 'center', marginBottom: '12px' }}> IF YOU SMELL GAS RIGHT NOW:</p>
-                <div className="space-y-2">
-                  {["Leave the building immediately — do not turn any lights or switches on or off", "Do not use your phone inside the building", "Once safely outside, call your gas company's emergency line", "Call 911 if there is any active danger", "Once the gas company has responded and shut off supply, call Definitive Mechanical"].map((item, i) => (
-                    <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
-                      <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '14px', flexShrink: 0, minWidth: '18px' }}>{i + 1}.</span>
-                      <span style={{ fontFamily: 'var(--font-body)', color: 'white', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
               {/* Dominant phone CTA */}
               <a href="tel:+13016795849" style={{ background: 'var(--brand-cyan)', borderRadius: '4px', padding: '20px 24px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', textDecoration: 'none', width: '100%', maxWidth: '560px', marginBottom: '20px' }}>
                 <Phone size={24} color="var(--brand-navy)" />
@@ -88,6 +72,26 @@ export default function GasLeakRepair() {
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'rgba(255,255,255,0.65)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                 MD Gasfitter #96958  DC #PGM1002236  VA #2710064209  DE #PL-0012866
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SAFETY BOX */}
+      <section style={{ background: '#1a0a00', padding: '48px 0' }}>
+        <div className="container">
+          <div style={{ background: 'rgba(245,158,11,0.08)', border: '2px solid rgba(245,158,11,0.5)', borderRadius: '8px', padding: '32px', maxWidth: '760px', margin: '0 auto' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
+              <AlertTriangle size={32} color="#F59E0B" style={{ flexShrink: 0 }} />
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.1em', margin: 0 }}>IF YOU SMELL GAS RIGHT NOW:</p>
+            </div>
+            <div className="space-y-3">
+              {["Leave the building immediately — do not turn any lights or switches on or off", "Do not use your phone inside the building", "Once safely outside, call your gas company's emergency line", "Call 911 if there is any active danger", "Once the gas company has responded and shut off supply, call Definitive Mechanical at (301) 679-5849"].map((item, i) => (
+                <div key={item} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '15px', flexShrink: 0, minWidth: '22px' }}>{i + 1}.</span>
+                  <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.9)', fontSize: '15px', lineHeight: 1.6 }}>{item}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
