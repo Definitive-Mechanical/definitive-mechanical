@@ -7,14 +7,9 @@ import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
 
 const CITIES = [
-  { name: "Annapolis, MD", href: "/service-areas/maryland/", note: "State capital" },
-  { name: "Glen Burnie, MD", href: "/service-areas/maryland/", note: "Commercial corridor" },
-  { name: "Severn, MD", href: "/service-areas/maryland/", note: "Suburban residential" },
-  { name: "Severna Park, MD", href: "/service-areas/maryland/", note: "Waterfront community" },
-  { name: "Pasadena, MD", href: "/service-areas/maryland/", note: "Bay area" },
-  { name: "Odenton, MD", href: "/service-areas/maryland/", note: "MARC corridor" },
-  { name: "Crofton, MD", href: "/service-areas/maryland/", note: "Planned community" },
-  { name: "Arnold, MD", href: "/service-areas/maryland/", note: "Chesapeake area" },
+  { name: "Crownsville, MD", href: "/service-areas/maryland/anne-arundel-county/crownsville-md/", note: "Historic community" },
+  { name: "Galesville, MD", href: "/service-areas/maryland/anne-arundel-county/galesville-md/", note: "Waterfront village" },
+  { name: "Riva, MD", href: "/service-areas/maryland/anne-arundel-county/riva-md/", note: "South River area" },
 ];
 
 const FAQ_ITEMS = [

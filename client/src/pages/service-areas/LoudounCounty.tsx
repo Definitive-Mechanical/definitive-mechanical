@@ -1,10 +1,16 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "wouter";
 import { Phone, ShieldCheck, Key } from "lucide-react";
 import BreadcrumbList from "@/components/ui/BreadcrumbList";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CTABanner from "@/components/ui/CTABanner";
 
-const COMMUNITIES = ["Leesburg", "Ashburn", "Sterling", "Lansdowne", "Brambleton", "South Riding", "Purcellville", "Lovettsville"];
+const CITIES = [
+  { name: "Brambleton, VA", href: "/service-areas/northern-virginia/loudoun-county/brambleton-va/", note: "Master-planned community" },
+  { name: "One Loudoun, VA", href: "/service-areas/northern-virginia/loudoun-county/one-loudoun-va/", note: "Urban mixed-use district" },
+  { name: "Belmont, VA", href: "/service-areas/northern-virginia/loudoun-county/belmont-va/", note: "Ashburn area" },
+  { name: "Broadlands, VA", href: "/service-areas/northern-virginia/loudoun-county/broadlands-va/", note: "Planned community" },
+];
 
 const SCHEMA = {
   "@context": "https://schema.org",
@@ -47,10 +53,11 @@ export default function LoudounCounty() {
         <div className="container">
           <SectionHeading eyebrow="COMMUNITIES SERVED" heading="Loudoun County communities we serve" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
-            {COMMUNITIES.map((c) => (
-              <div key={c} className="bg-white border border-gray-200 rounded-md p-4 text-center">
-                <p className="font-bold text-sm" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{c}, VA</p>
-              </div>
+            {CITIES.map((city) => (
+              <Link key={city.name} href={city.href} className="bg-white border border-gray-200 rounded-md p-4 hover:border-cyan-400 hover:shadow-md transition-all group">
+                <p className="font-bold text-sm group-hover:text-cyan-600" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{city.name}</p>
+                <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: "'Barlow', sans-serif" }}>{city.note}</p>
+              </Link>
             ))}
           </div>
         </div>

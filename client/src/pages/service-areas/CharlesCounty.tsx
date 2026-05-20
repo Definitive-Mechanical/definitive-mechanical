@@ -8,12 +8,7 @@ import CTABanner from "@/components/ui/CTABanner";
 
 const CITIES = [
   { name: "Waldorf, MD", href: "/service-areas/maryland/charles-county/waldorf-md/", note: "Largest community" },
-  { name: "La Plata, MD", href: "/service-areas/maryland/", note: "County seat" },
-  { name: "White Plains, MD", href: "/service-areas/maryland/", note: "Commercial corridor" },
-  { name: "Indian Head, MD", href: "/service-areas/maryland/", note: "Naval support facility" },
-  { name: "Bryans Road, MD", href: "/service-areas/maryland/", note: "Potomac River area" },
-  { name: "Accokeek, MD", href: "/service-areas/maryland/", note: "Rural residential" },
-  { name: "Brandywine, MD", href: "/service-areas/maryland/", note: "PG/Charles border" },
+  { name: "Bensville, MD", href: "/service-areas/maryland/charles-county/bensville-md/", note: "Waldorf area community" },
 ];
 
 const FAQ_ITEMS = [

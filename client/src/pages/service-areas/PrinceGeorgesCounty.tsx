@@ -10,15 +10,12 @@ const CITIES = [
   { name: "Largo, MD", href: "/service-areas/maryland/prince-georges-county/largo-md/", note: "Our home base" },
   { name: "Bowie, MD", href: "/service-areas/maryland/prince-georges-county/bowie-md/", note: "Belair neighborhoods" },
   { name: "Fort Washington, MD", href: "/service-areas/maryland/prince-georges-county/fort-washington-md/", note: "Waterfront communities" },
-  { name: "Hyattsville, MD", href: "/service-areas/maryland/", note: "Arts District & historic" },
-  { name: "College Park, MD", href: "/service-areas/maryland/", note: "University area" },
-  { name: "Laurel, MD", href: "/service-areas/maryland/", note: "I-95 corridor" },
-  { name: "Greenbelt, MD", href: "/service-areas/maryland/", note: "NASA/USDA corridor" },
-  { name: "Upper Marlboro, MD", href: "/service-areas/maryland/", note: "County seat" },
-  { name: "Oxon Hill, MD", href: "/service-areas/maryland/", note: "National Harbor area" },
-  { name: "Landover, MD", href: "/service-areas/maryland/", note: "Central PG County" },
-  { name: "Capitol Heights, MD", href: "/service-areas/maryland/", note: "DC border" },
-  { name: "Suitland, MD", href: "/service-areas/maryland/", note: "Federal facilities" },
+  { name: "University Park, MD", href: "/service-areas/maryland/prince-georges-county/university-park-md/", note: "College Park adjacent" },
+  { name: "Woodmore, MD", href: "/service-areas/maryland/prince-georges-county/woodmore-md/", note: "Luxury golf community" },
+  { name: "Fairwood, MD", href: "/service-areas/maryland/prince-georges-county/fairwood-md/", note: "Planned community" },
+  { name: "Brock Hall, MD", href: "/service-areas/maryland/prince-georges-county/brock-hall-md/", note: "Residential community" },
+  { name: "Croom, MD", href: "/service-areas/maryland/prince-georges-county/croom-md/", note: "Rural southern PG" },
+  { name: "Queensland, MD", href: "/service-areas/maryland/prince-georges-county/queensland-md/", note: "Residential area" },
 ];
 
 const SERVICES = [

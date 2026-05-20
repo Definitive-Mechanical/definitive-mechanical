@@ -7,14 +7,7 @@ import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
 
 const NEIGHBORHOODS = [
-  { name: "Rosslyn", href: "/service-areas/northern-virginia/arlington-county/", note: "High-rise corridor" },
-  { name: "Ballston", href: "/service-areas/northern-virginia/arlington-county/", note: "Metro corridor" },
-  { name: "Clarendon", href: "/service-areas/northern-virginia/arlington-county/", note: "Urban village" },
-  { name: "Crystal City", href: "/service-areas/northern-virginia/arlington-county/", note: "Amazon HQ2 area" },
-  { name: "Pentagon City", href: "/service-areas/northern-virginia/arlington-county/", note: "Commercial & residential" },
-  { name: "Shirlington", href: "/service-areas/northern-virginia/arlington-county/", note: "Urban village" },
-  { name: "Lyon Village", href: "/service-areas/northern-virginia/arlington-county/", note: "Historic residential" },
-  { name: "Nauck", href: "/service-areas/northern-virginia/arlington-county/", note: "Established neighborhood" },
+  { name: "Arlington, VA", href: "/service-areas/northern-virginia/arlington-county/arlington-va/", note: "Full county coverage" },
 ];
 
 const FAQ_ITEMS = [

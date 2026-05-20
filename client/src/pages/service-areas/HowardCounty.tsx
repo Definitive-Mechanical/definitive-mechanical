@@ -8,13 +8,12 @@ import CTABanner from "@/components/ui/CTABanner";
 
 const CITIES = [
   { name: "Ellicott City, MD", href: "/service-areas/maryland/howard-county/ellicott-city-md/", note: "Historic district & new development" },
-  { name: "Columbia, MD", href: "/service-areas/maryland/", note: "Planned community" },
-  { name: "Clarksville, MD", href: "/service-areas/maryland/", note: "Luxury residential" },
-  { name: "Fulton, MD", href: "/service-areas/maryland/", note: "New construction" },
-  { name: "Jessup, MD", href: "/service-areas/maryland/", note: "Industrial & commercial" },
-  { name: "Laurel, MD (Howard)", href: "/service-areas/maryland/", note: "County border" },
-  { name: "Savage, MD", href: "/service-areas/maryland/", note: "Historic mill town" },
-  { name: "Elkridge, MD", href: "/service-areas/maryland/", note: "I-95 corridor" },
+  { name: "Clarksville, MD", href: "/service-areas/maryland/howard-county/clarksville-md/", note: "Luxury residential" },
+  { name: "Fulton, MD", href: "/service-areas/maryland/howard-county/fulton-md/", note: "New construction" },
+  { name: "Glenelg, MD", href: "/service-areas/maryland/howard-county/glenelg-md/", note: "Rural western Howard" },
+  { name: "Highland, MD", href: "/service-areas/maryland/howard-county/highland-md/", note: "Equestrian community" },
+  { name: "Scaggsville, MD", href: "/service-areas/maryland/howard-county/scaggsville-md/", note: "Laurel area" },
+  { name: "West Friendship, MD", href: "/service-areas/maryland/howard-county/west-friendship-md/", note: "Rural residential" },
 ];
 
 const FAQ_ITEMS = [
