@@ -1,80 +1,78 @@
 /**
  * Service Areas Hub — /service-areas/
- * Lists every city, county, and community page we have built.
- * Design system: Navy var(--brand-navy), Cyan var(--brand-cyan), var(--font-display) / var(--font-body)
+ * Design system: var(--font-display) Barlow Condensed, var(--font-body) Public Sans,
+ * var(--brand-navy), var(--brand-cyan), var(--brand-red)
+ * Matches MarylandHub / WashingtonDCHub / NorthernVirginiaHub styling.
  */
 
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
-import { MapPin, Phone, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Phone, ChevronRight, Shield, Clock, Award, MapPin } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 import ServiceAreaSearch from "@/components/ServiceAreaSearch";
-
-const PHONE = BUSINESS.phoneRaw;
-const PHONE_DISPLAY = BUSINESS.phone;
 
 const MARYLAND_COUNTIES = [
   {
     county: "Prince George's County",
     hub: "/service-areas/maryland/prince-georges-county/",
     cities: [
-      { label: "Largo, MD", href: "/service-areas/maryland/prince-georges-county/largo-md" },
-      { label: "Bowie, MD", href: "/service-areas/maryland/prince-georges-county/bowie-md" },
-      { label: "Fort Washington, MD", href: "/service-areas/maryland/prince-georges-county/fort-washington-md" },
-      { label: "Woodmore, MD", href: "/service-areas/maryland/prince-georges-county/woodmore-md" },
-      { label: "Fairwood, MD", href: "/service-areas/maryland/prince-georges-county/fairwood-md" },
-      { label: "University Park, MD", href: "/service-areas/maryland/prince-georges-county/university-park-md" },
-      { label: "Brock Hall, MD", href: "/service-areas/maryland/prince-georges-county/brock-hall-md" },
-      { label: "Queensland, MD", href: "/service-areas/maryland/prince-georges-county/queensland-md" },
-      { label: "Croom, MD", href: "/service-areas/maryland/prince-georges-county/croom-md" },
+      { label: "Largo", href: "/service-areas/maryland/prince-georges-county/largo-md" },
+      { label: "Bowie", href: "/service-areas/maryland/prince-georges-county/bowie-md" },
+      { label: "Fort Washington", href: "/service-areas/maryland/prince-georges-county/fort-washington-md" },
+      { label: "Woodmore", href: "/service-areas/maryland/prince-georges-county/woodmore-md" },
+      { label: "Fairwood", href: "/service-areas/maryland/prince-georges-county/fairwood-md" },
+      { label: "University Park", href: "/service-areas/maryland/prince-georges-county/university-park-md" },
+      { label: "Brock Hall", href: "/service-areas/maryland/prince-georges-county/brock-hall-md" },
+      { label: "Queensland", href: "/service-areas/maryland/prince-georges-county/queensland-md" },
+      { label: "Croom", href: "/service-areas/maryland/prince-georges-county/croom-md" },
     ],
   },
   {
     county: "Montgomery County",
     hub: "/service-areas/maryland/montgomery-county/",
     cities: [
-      { label: "Rockville, MD", href: "/service-areas/maryland/montgomery-county/rockville-md" },
-      { label: "Bethesda, MD", href: "/service-areas/maryland/montgomery-county/bethesda-md" },
-      { label: "Potomac, MD", href: "/service-areas/maryland/montgomery-county/potomac-md" },
-      { label: "Chevy Chase, MD", href: "/service-areas/maryland/montgomery-county/chevy-chase-md" },
-      { label: "Cabin John, MD", href: "/service-areas/maryland/montgomery-county/cabin-john-md" },
-      { label: "Darnestown, MD", href: "/service-areas/maryland/montgomery-county/darnestown-md" },
-      { label: "Travilah, MD", href: "/service-areas/maryland/montgomery-county/travilah-md" },
-      { label: "Somerset, MD", href: "/service-areas/maryland/montgomery-county/somerset-md" },
-      { label: "Martins Additions, MD", href: "/service-areas/maryland/montgomery-county/martins-additions-md" },
-      { label: "Chevy Chase Village, MD", href: "/service-areas/maryland/montgomery-county/chevy-chase-village-md" },
-      { label: "Chevy Chase View, MD", href: "/service-areas/maryland/montgomery-county/chevy-chase-view-md" },
-      { label: "Brookmont, MD", href: "/service-areas/maryland/montgomery-county/brookmont-md" },
+      { label: "Rockville", href: "/service-areas/maryland/montgomery-county/rockville-md" },
+      { label: "Bethesda", href: "/service-areas/maryland/montgomery-county/bethesda-md" },
+      { label: "Potomac", href: "/service-areas/maryland/montgomery-county/potomac-md" },
+      { label: "Chevy Chase", href: "/service-areas/maryland/montgomery-county/chevy-chase-md" },
+      { label: "Cabin John", href: "/service-areas/maryland/montgomery-county/cabin-john-md" },
+      { label: "Darnestown", href: "/service-areas/maryland/montgomery-county/darnestown-md" },
+      { label: "Travilah", href: "/service-areas/maryland/montgomery-county/travilah-md" },
+      { label: "Somerset", href: "/service-areas/maryland/montgomery-county/somerset-md" },
+      { label: "Martins Additions", href: "/service-areas/maryland/montgomery-county/martins-additions-md" },
+      { label: "Chevy Chase Village", href: "/service-areas/maryland/montgomery-county/chevy-chase-village-md" },
+      { label: "Chevy Chase View", href: "/service-areas/maryland/montgomery-county/chevy-chase-view-md" },
+      { label: "Brookmont", href: "/service-areas/maryland/montgomery-county/brookmont-md" },
     ],
   },
   {
     county: "Howard County",
     hub: "/service-areas/maryland/howard-county/",
     cities: [
-      { label: "Ellicott City, MD", href: "/service-areas/maryland/howard-county/ellicott-city-md" },
-      { label: "Clarksville, MD", href: "/service-areas/maryland/howard-county/clarksville-md" },
-      { label: "Glenelg, MD", href: "/service-areas/maryland/howard-county/glenelg-md" },
-      { label: "Highland, MD", href: "/service-areas/maryland/howard-county/highland-md" },
-      { label: "Fulton, MD", href: "/service-areas/maryland/howard-county/fulton-md" },
-      { label: "West Friendship, MD", href: "/service-areas/maryland/howard-county/west-friendship-md" },
-      { label: "Scaggsville, MD", href: "/service-areas/maryland/howard-county/scaggsville-md" },
+      { label: "Ellicott City", href: "/service-areas/maryland/howard-county/ellicott-city-md" },
+      { label: "Clarksville", href: "/service-areas/maryland/howard-county/clarksville-md" },
+      { label: "Glenelg", href: "/service-areas/maryland/howard-county/glenelg-md" },
+      { label: "Highland", href: "/service-areas/maryland/howard-county/highland-md" },
+      { label: "Fulton", href: "/service-areas/maryland/howard-county/fulton-md" },
+      { label: "West Friendship", href: "/service-areas/maryland/howard-county/west-friendship-md" },
+      { label: "Scaggsville", href: "/service-areas/maryland/howard-county/scaggsville-md" },
     ],
   },
   {
     county: "Anne Arundel County",
     hub: "/service-areas/maryland/anne-arundel-county/",
     cities: [
-      { label: "Galesville, MD", href: "/service-areas/maryland/anne-arundel-county/galesville-md" },
-      { label: "Crownsville, MD", href: "/service-areas/maryland/anne-arundel-county/crownsville-md" },
-      { label: "Riva, MD", href: "/service-areas/maryland/anne-arundel-county/riva-md" },
+      { label: "Galesville", href: "/service-areas/maryland/anne-arundel-county/galesville-md" },
+      { label: "Crownsville", href: "/service-areas/maryland/anne-arundel-county/crownsville-md" },
+      { label: "Riva", href: "/service-areas/maryland/anne-arundel-county/riva-md" },
     ],
   },
   {
     county: "Charles County",
     hub: "/service-areas/maryland/charles-county/",
     cities: [
-      { label: "Waldorf, MD", href: "/service-areas/maryland/charles-county/waldorf-md" },
-      { label: "Bensville, MD", href: "/service-areas/maryland/charles-county/bensville-md" },
+      { label: "Waldorf", href: "/service-areas/maryland/charles-county/waldorf-md" },
+      { label: "Bensville", href: "/service-areas/maryland/charles-county/bensville-md" },
     ],
   },
 ];
@@ -101,47 +99,54 @@ const VA_COUNTIES = [
     county: "Fairfax County",
     hub: "/service-areas/northern-virginia/fairfax-county/",
     cities: [
-      { label: "Alexandria, VA", href: "/service-areas/northern-virginia/fairfax-county/alexandria-va" },
-      { label: "McLean, VA", href: "/service-areas/northern-virginia/fairfax-county/mclean-va" },
-      { label: "Springfield, VA", href: "/service-areas/northern-virginia/fairfax-county/springfield-va" },
-      { label: "Vienna, VA", href: "/service-areas/northern-virginia/fairfax-county/vienna-va" },
-      { label: "Great Falls, VA", href: "/service-areas/northern-virginia/fairfax-county/great-falls-va" },
-      { label: "Dunn Loring, VA", href: "/service-areas/northern-virginia/fairfax-county/dunn-loring-va" },
-      { label: "Floris, VA", href: "/service-areas/northern-virginia/fairfax-county/floris-va" },
-      { label: "Crosspointe, VA", href: "/service-areas/northern-virginia/fairfax-county/crosspointe-va" },
-      { label: "Difficult Run, VA", href: "/service-areas/northern-virginia/fairfax-county/difficult-run-va" },
-      { label: "Great Falls Crossing, VA", href: "/service-areas/northern-virginia/fairfax-county/great-falls-crossing-va" },
-      { label: "South Run, VA", href: "/service-areas/northern-virginia/fairfax-county/south-run-va" },
-      { label: "Union Mill, VA", href: "/service-areas/northern-virginia/fairfax-county/union-mill-va" },
-      { label: "Wolf Trap, VA", href: "/service-areas/northern-virginia/fairfax-county/wolf-trap-va" },
+      { label: "Alexandria", href: "/service-areas/northern-virginia/fairfax-county/alexandria-va" },
+      { label: "McLean", href: "/service-areas/northern-virginia/fairfax-county/mclean-va" },
+      { label: "Springfield", href: "/service-areas/northern-virginia/fairfax-county/springfield-va" },
+      { label: "Vienna", href: "/service-areas/northern-virginia/fairfax-county/vienna-va" },
+      { label: "Great Falls", href: "/service-areas/northern-virginia/fairfax-county/great-falls-va" },
+      { label: "Dunn Loring", href: "/service-areas/northern-virginia/fairfax-county/dunn-loring-va" },
+      { label: "Floris", href: "/service-areas/northern-virginia/fairfax-county/floris-va" },
+      { label: "Crosspointe", href: "/service-areas/northern-virginia/fairfax-county/crosspointe-va" },
+      { label: "Difficult Run", href: "/service-areas/northern-virginia/fairfax-county/difficult-run-va" },
+      { label: "South Run", href: "/service-areas/northern-virginia/fairfax-county/south-run-va" },
+      { label: "Wolf Trap", href: "/service-areas/northern-virginia/fairfax-county/wolf-trap-va" },
     ],
   },
   {
     county: "Arlington County",
     hub: "/service-areas/northern-virginia/arlington-county/",
     cities: [
-      { label: "Arlington, VA", href: "/service-areas/northern-virginia/arlington-county/arlington-va" },
+      { label: "Arlington", href: "/service-areas/northern-virginia/arlington-county/arlington-va" },
     ],
   },
   {
     county: "Loudoun County",
     hub: "/service-areas/northern-virginia/loudoun-county/",
     cities: [
-      { label: "Brambleton, VA", href: "/service-areas/northern-virginia/loudoun-county/brambleton-va" },
-      { label: "One Loudoun, VA", href: "/service-areas/northern-virginia/loudoun-county/one-loudoun-va" },
-      { label: "Belmont, VA", href: "/service-areas/northern-virginia/loudoun-county/belmont-va" },
-      { label: "Broadlands, VA", href: "/service-areas/northern-virginia/loudoun-county/broadlands-va" },
+      { label: "Brambleton", href: "/service-areas/northern-virginia/loudoun-county/brambleton-va" },
+      { label: "One Loudoun", href: "/service-areas/northern-virginia/loudoun-county/one-loudoun-va" },
+      { label: "Belmont", href: "/service-areas/northern-virginia/loudoun-county/belmont-va" },
+      { label: "Broadlands", href: "/service-areas/northern-virginia/loudoun-county/broadlands-va" },
     ],
   },
   {
     county: "Prince William County",
     hub: "/service-areas/northern-virginia/prince-william-county/",
     cities: [
-      { label: "Bull Run Mountain Estates, VA", href: "/service-areas/northern-virginia/prince-william-county/bull-run-mountain-va" },
-      { label: "Independent Hill, VA", href: "/service-areas/northern-virginia/prince-william-county/independent-hill-va" },
-      { label: "Buckhall, VA", href: "/service-areas/northern-virginia/prince-william-county/buckhall-va" },
+      { label: "Bull Run Mountain Estates", href: "/service-areas/northern-virginia/prince-william-county/bull-run-mountain-va" },
+      { label: "Independent Hill", href: "/service-areas/northern-virginia/prince-william-county/independent-hill-va" },
+      { label: "Buckhall", href: "/service-areas/northern-virginia/prince-william-county/buckhall-va" },
     ],
   },
+];
+
+const CREDENTIALS = [
+  "MD Master Plumber #96958",
+  "DC Master Plumber #PT2-0003033",
+  "VA Master Plumber #2710064209",
+  "WSSC Backflow Tester #73696",
+  "MDOT MBE Cert 20-134",
+  "VA SWaM Cert 815255",
 ];
 
 export default function ServiceAreasHub() {
@@ -157,44 +162,44 @@ export default function ServiceAreasHub() {
       </Helmet>
 
       {/* Breadcrumb */}
-      <div className="bg-[var(--surface-1)] py-2 px-4 border-b border-[var(--border)]">
-        <div className="max-w-6xl mx-auto">
-          <nav className="font-sans text-sm text-[#787878]">
-            <Link href="/" className="hover:text-[var(--brand-cyan)] transition-colors">Home</Link>
-            <span className="mx-2">&#8250;</span>
-            <span className="text-[var(--ink-2)]">Service Areas</span>
+      <div style={{ background: '#f8f9fa', borderBottom: '1px solid #e5e7eb', padding: '10px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <nav style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#6b7280' }}>
+            <Link href="/" style={{ color: 'var(--brand-cyan)', textDecoration: 'none' }}>Home</Link>
+            <span style={{ margin: '0 8px' }}>›</span>
+            <span style={{ color: '#374151' }}>Service Areas</span>
           </nav>
         </div>
       </div>
 
       {/* Hero */}
-      <section className="bg-[var(--brand-navy)] py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
+      <section style={{ background: 'var(--brand-navy)', padding: '64px 0 48px' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
             Licensed in Maryland · Washington DC · Virginia · Delaware
           </p>
-          <h1 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
+          <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', lineHeight: 1.1, marginBottom: '20px', textTransform: 'uppercase' }}>
             Plumbing Service Areas
           </h1>
-          <p className="font-sans text-white/90 text-[17px] leading-relaxed max-w-2xl mb-8">
-            Definitive Mechanical is a licensed Master Plumber and Master Gasfitter serving the entire Maryland-DC-Northern Virginia metro area. We cover Prince George's County, Montgomery County, Howard County, Anne Arundel County, Charles County, all eight DC wards, Fairfax County, Arlington County, Loudoun County, and Prince William County with 24/7 emergency response throughout.
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', color: 'rgba(255,255,255,0.85)', maxWidth: '640px', lineHeight: 1.6, marginBottom: '32px' }}>
+            Definitive Mechanical is a licensed Master Plumber and Master Gasfitter serving the entire Maryland–DC–Northern Virginia metro area. We cover Prince George's County, Montgomery County, Howard County, Anne Arundel County, Charles County, all eight DC wards, Fairfax County, Arlington County, Loudoun County, and Prince William County with 24/7 emergency response throughout.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '24px' }}>
             <a
-              href={`tel:${PHONE}`}
-              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
+              href={`tel:${BUSINESS.phoneRaw}`}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}
             >
-              <Phone className="w-5 h-5" />
-              CALL {PHONE_DISPLAY}
+              <Phone size={16} /> CALL {BUSINESS.phone}
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[var(--brand-navy)] transition-colors"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}
             >
-              REQUEST SERVICE <ArrowRight className="w-5 h-5" />
+              REQUEST SERVICE
             </Link>
           </div>
-          <div className="flex flex-wrap gap-3">
+          {/* Region quick-links */}
+          <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', marginBottom: '32px' }}>
             {[
               { label: "Maryland", href: "/service-areas/maryland" },
               { label: "Washington DC", href: "/service-areas/washington-dc" },
@@ -203,57 +208,73 @@ export default function ServiceAreasHub() {
               <Link
                 key={r.href}
                 href={r.href}
-                className="font-['Barlow_Condensed'] text-sm font-bold uppercase tracking-wide bg-white/10 text-white border border-white/30 px-4 py-2 rounded-sm hover:bg-[var(--brand-cyan)] hover:text-[var(--brand-navy)] hover:border-[var(--brand-cyan)] transition-colors"
+                style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'white', background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.3)', padding: '8px 18px', borderRadius: '2px', textDecoration: 'none' }}
               >
-                {r.label} &#8594;
+                {r.label} →
               </Link>
             ))}
           </div>
-
           {/* Zip Code Lookup */}
-          <div style={{ marginTop: '32px' }}>
-            <ServiceAreaSearch variant="hero" />
+          <ServiceAreaSearch variant="hero" />
+        </div>
+      </section>
+
+      {/* Trust Bar */}
+      <section style={{ background: 'var(--brand-cyan)', padding: '16px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', alignItems: 'center' }}>
+            {[
+              { icon: <Shield size={16} />, text: 'MDOT MBE Certified' },
+              { icon: <Clock size={16} />, text: '24/7 Emergency Service' },
+              { icon: <Award size={16} />, text: 'Licensed Master Plumber' },
+              { icon: <MapPin size={16} />, text: 'MD · DC · VA · DE' },
+            ].map((item) => (
+              <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+                {item.icon} {item.text}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Maryland */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <MapPin className="w-6 h-6 text-[var(--brand-cyan)]" />
-            <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
-              Maryland Service Areas
+      <section style={{ background: 'white', padding: '64px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
+            Maryland Service Areas
+          </p>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: '16px', marginBottom: '40px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'var(--brand-navy)', margin: 0 }}>
+              Maryland Counties &amp; Cities
             </h2>
-            <Link href="/service-areas/maryland" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline ml-2">
-              View Maryland Hub &#8594;
+            <Link href="/service-areas/maryland" style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-cyan)', textDecoration: 'none' }}>
+              View Maryland Hub →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '28px' }}>
             {MARYLAND_COUNTIES.map((county) => (
-              <div key={county.county} className="bg-white border border-[var(--border)] rounded-md overflow-hidden hover:shadow-md transition-shadow" style={{ borderTop: "3px solid var(--brand-cyan)" }}>
-                <div className="p-5">
-                  <div className="flex items-center justify-between mb-4">
-                    <p className="font-['Barlow_Condensed'] font-bold text-[var(--brand-navy)] text-xs uppercase tracking-widest">
-                      {county.county}
-                    </p>
-                    <Link href={county.hub} className="font-['Barlow_Condensed'] text-[10px] font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline">
-                      Hub &#8594;
+              <div key={county.county} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '24px 28px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.1rem', color: 'var(--brand-navy)', margin: 0, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    {county.county}
+                  </h3>
+                  <Link href={county.hub} style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-cyan)', textDecoration: 'none', whiteSpace: 'nowrap', marginLeft: '12px' }}>
+                    Hub →
+                  </Link>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  {county.cities.map((city) => (
+                    <Link
+                      key={city.href}
+                      href={city.href}
+                      style={{ display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#374151', textDecoration: 'none', padding: '4px 0', borderBottom: '1px solid #f3f4f6' }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--brand-cyan)'; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = '#374151'; }}
+                    >
+                      <ChevronRight size={13} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                      {city.label}
                     </Link>
-                  </div>
-                  <ul className="space-y-1.5">
-                    {county.cities.map((city) => (
-                      <li key={city.href}>
-                        <Link
-                          href={city.href}
-                          className="font-sans text-[var(--ink-2)] text-sm hover:text-[var(--brand-cyan)] transition-colors flex items-center gap-1"
-                        >
-                          <ArrowRight className="w-3 h-3 text-[var(--brand-cyan)] flex-shrink-0" />
-                          {city.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  ))}
                 </div>
               </div>
             ))}
@@ -262,76 +283,79 @@ export default function ServiceAreasHub() {
       </section>
 
       {/* Washington DC */}
-      <section className="bg-[var(--surface-1)] py-16 px-4 border-t border-[var(--border)]">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <MapPin className="w-6 h-6 text-[var(--brand-cyan)]" />
-            <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
-              Washington DC Service Areas
+      <section style={{ background: '#f8f9fa', padding: '64px 0', borderTop: '1px solid #e5e7eb' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
+            Washington DC Service Areas
+          </p>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: '16px', marginBottom: '40px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'var(--brand-navy)', margin: 0 }}>
+              Washington DC — All 8 Wards
             </h2>
-            <Link href="/service-areas/washington-dc" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline ml-2">
-              View DC Hub &#8594;
+            <Link href="/service-areas/washington-dc" style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-cyan)', textDecoration: 'none' }}>
+              View DC Hub →
             </Link>
           </div>
-          <div className="bg-white border border-[var(--border)] rounded-md overflow-hidden" style={{ borderTop: "3px solid var(--brand-cyan)" }}>
-            <div className="p-6">
-              <p className="font-['Barlow_Condensed'] font-bold text-[var(--brand-navy)] text-xs uppercase tracking-widest mb-4">
-                All 8 Wards + Featured Neighborhoods
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5">
-                {DC_AREAS.map((area) => (
-                  <Link
-                    key={area.href}
-                    href={area.href}
-                    className="font-sans text-[var(--ink-2)] text-sm hover:text-[var(--brand-cyan)] transition-colors flex items-center gap-1 py-1"
-                  >
-                    <ArrowRight className="w-3 h-3 text-[var(--brand-cyan)] flex-shrink-0" />
-                    {area.label}
-                  </Link>
-                ))}
-              </div>
+          <div style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '28px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--brand-cyan)', marginBottom: '20px' }}>
+              All 8 Wards + Featured Neighborhoods
+            </p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '4px' }}>
+              {DC_AREAS.map((area) => (
+                <Link
+                  key={area.href}
+                  href={area.href}
+                  style={{ display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#374151', textDecoration: 'none', padding: '6px 0', borderBottom: '1px solid #f3f4f6' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--brand-cyan)'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = '#374151'; }}
+                >
+                  <ChevronRight size={13} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                  {area.label}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* Northern Virginia */}
-      <section className="bg-white py-16 px-4 border-t border-[var(--border)]">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-8">
-            <MapPin className="w-6 h-6 text-[var(--brand-cyan)]" />
-            <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
-              Northern Virginia Service Areas
+      <section style={{ background: 'white', padding: '64px 0', borderTop: '1px solid #e5e7eb' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
+            Northern Virginia Service Areas
+          </p>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: '16px', marginBottom: '40px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'var(--brand-navy)', margin: 0 }}>
+              Northern Virginia Counties &amp; Cities
             </h2>
-            <Link href="/service-areas/northern-virginia" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline ml-2">
-              View NoVA Hub &#8594;
+            <Link href="/service-areas/northern-virginia" style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-cyan)', textDecoration: 'none' }}>
+              View NoVA Hub →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '28px' }}>
             {VA_COUNTIES.map((county) => (
-              <div key={county.county} className="bg-white border border-[var(--border)] rounded-md overflow-hidden hover:shadow-md transition-shadow" style={{ borderTop: "3px solid var(--brand-cyan)" }}>
-                <div className="p-5">
-                  <div className="flex items-center justify-between mb-4">
-                    <p className="font-['Barlow_Condensed'] font-bold text-[var(--brand-navy)] text-xs uppercase tracking-widest">
-                      {county.county}
-                    </p>
-                    <Link href={county.hub} className="font-['Barlow_Condensed'] text-[10px] font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline">
-                      Hub &#8594;
+              <div key={county.county} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '24px 28px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.1rem', color: 'var(--brand-navy)', margin: 0, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                    {county.county}
+                  </h3>
+                  <Link href={county.hub} style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-cyan)', textDecoration: 'none', whiteSpace: 'nowrap', marginLeft: '12px' }}>
+                    Hub →
+                  </Link>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                  {county.cities.map((city) => (
+                    <Link
+                      key={city.href}
+                      href={city.href}
+                      style={{ display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#374151', textDecoration: 'none', padding: '4px 0', borderBottom: '1px solid #f3f4f6' }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--brand-cyan)'; }}
+                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = '#374151'; }}
+                    >
+                      <ChevronRight size={13} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                      {city.label}
                     </Link>
-                  </div>
-                  <ul className="space-y-1.5">
-                    {county.cities.map((city) => (
-                      <li key={city.href}>
-                        <Link
-                          href={city.href}
-                          className="font-sans text-[var(--ink-2)] text-sm hover:text-[var(--brand-cyan)] transition-colors flex items-center gap-1"
-                        >
-                          <ArrowRight className="w-3 h-3 text-[var(--brand-cyan)] flex-shrink-0" />
-                          {city.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                  ))}
                 </div>
               </div>
             ))}
@@ -339,24 +363,17 @@ export default function ServiceAreasHub() {
         </div>
       </section>
 
-      {/* Credentials bar */}
-      <section className="bg-[var(--brand-navy)] py-10 px-4">
-        <div className="max-w-6xl mx-auto">
-          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-5 text-center">
+      {/* Credentials Bar */}
+      <section style={{ background: '#f8f9fa', padding: '48px 0', borderTop: '1px solid #e5e7eb' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '24px', textAlign: 'center' }}>
             Licensed in Every Jurisdiction We Serve
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {[
-              "MD Master Plumber #96958",
-              "DC Master Plumber #PGM1002236",
-              "VA Master Plumber #2710064209",
-              "WSSC Backflow Tester #73696",
-              "MDOT MBE Cert 20-134",
-              "VA SWaM Cert 815255",
-            ].map((badge) => (
-              <div key={badge} className="flex items-center gap-2">
-                <CheckCircle2 className="w-3.5 h-3.5 text-[var(--brand-cyan)] flex-shrink-0" />
-                <span className="font-sans text-white/80 text-xs">{badge}</span>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', maxWidth: '960px', margin: '0 auto' }}>
+            {CREDENTIALS.map((badge) => (
+              <div key={badge} style={{ background: 'white', border: '1px solid #e5e7eb', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '14px 18px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <Award size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#374151' }}>{badge}</span>
               </div>
             ))}
           </div>
@@ -364,27 +381,26 @@ export default function ServiceAreasHub() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="bg-[#F7F9FC] py-12 px-4 border-t border-[var(--border)]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-3">
+      <section style={{ background: 'var(--brand-navy)', padding: '56px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'white', marginBottom: '16px', textTransform: 'uppercase' }}>
             Don't See Your City? Call Us.
           </h2>
-          <p className="font-sans text-[var(--ink-2)] text-[17px] leading-relaxed mb-6 max-w-xl mx-auto">
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', color: 'rgba(255,255,255,0.8)', marginBottom: '32px', maxWidth: '540px', margin: '0 auto 32px' }}>
             Our service area is expanding. If you don't see your community listed, call us — we likely serve your area or can refer you to a trusted partner.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <a
-              href={`tel:${PHONE}`}
-              className="inline-flex items-center justify-center gap-2 bg-[var(--brand-navy)] text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#004080] transition-colors"
+              href={`tel:${BUSINESS.phoneRaw}`}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}
             >
-              <Phone className="w-5 h-5" />
-              CALL {PHONE_DISPLAY}
+              <Phone size={18} /> CALL {BUSINESS.phone}
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 border-2 border-[var(--brand-navy)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}
             >
-              REQUEST SERVICE <ArrowRight className="w-5 h-5" />
+              REQUEST SERVICE
             </Link>
           </div>
         </div>
