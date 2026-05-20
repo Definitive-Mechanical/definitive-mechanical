@@ -173,6 +173,10 @@ import ScaggsMD from "./pages/service-areas/howard-county/ScaggsMD";
 // Tier 3 — Maryland (Charles County)
 import BensvilleMD from "./pages/service-areas/charles-county/BensvilleMD";
 
+// DC Sub-Hubs
+import DCWardsHub from "./pages/service-areas/washington-dc/DCWardsHub";
+import DCNeighborhoodsHub from "./pages/service-areas/washington-dc/DCNeighborhoodsHub";
+
 // Tier 3 — DC Wards
 import Ward1DC from "./pages/service-areas/washington-dc/Ward1DC";
 import Ward2DC from "./pages/service-areas/washington-dc/Ward2DC";
@@ -322,6 +326,10 @@ function Router() {
       <Route path="/service-areas/maryland/" component={() => <Layout><MarylandHub /></Layout>} />
       <Route path="/service-areas/washington-dc" component={() => <Layout><WashingtonDCHub /></Layout>} />
       <Route path="/service-areas/washington-dc/" component={() => <Layout><WashingtonDCHub /></Layout>} />
+      <Route path="/service-areas/washington-dc/wards" component={() => <Layout><DCWardsHub /></Layout>} />
+      <Route path="/service-areas/washington-dc/wards/" component={() => <Layout><DCWardsHub /></Layout>} />
+      <Route path="/service-areas/washington-dc/neighborhoods" component={() => <Layout><DCNeighborhoodsHub /></Layout>} />
+      <Route path="/service-areas/washington-dc/neighborhoods/" component={() => <Layout><DCNeighborhoodsHub /></Layout>} />
       <Route path="/service-areas/northern-virginia" component={() => <Layout><NorthernVirginiaHub /></Layout>} />
       <Route path="/service-areas/northern-virginia/" component={() => <Layout><NorthernVirginiaHub /></Layout>} />
 

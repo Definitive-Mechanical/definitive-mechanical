@@ -7,7 +7,7 @@ import ServiceAreaSearch from '@/components/ServiceAreaSearch';
 const DC_SECTIONS = [
   {
     name: 'DC Wards',
-    hub: '/service-areas/washington-dc',
+    hub: '/service-areas/washington-dc/wards',
     cities: [
       { name: 'Ward 1 — Columbia Heights, Adams Morgan', href: '/service-areas/washington-dc/ward-1' },
       { name: 'Ward 2 — Dupont Circle, Georgetown, Foggy Bottom', href: '/service-areas/washington-dc/ward-2' },
@@ -21,7 +21,7 @@ const DC_SECTIONS = [
   },
   {
     name: 'Featured DC Neighborhoods',
-    hub: '/service-areas/washington-dc',
+    hub: '/service-areas/washington-dc/neighborhoods',
     cities: [
       { name: 'Georgetown', href: '/service-areas/washington-dc/georgetown' },
       { name: 'Capitol Hill', href: '/service-areas/washington-dc/capitol-hill' },
