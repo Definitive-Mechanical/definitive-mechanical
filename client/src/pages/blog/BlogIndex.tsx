@@ -108,7 +108,7 @@ export default function BlogIndex() {
             <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
               Expert Plumbing Resources
             </p>
-            <h1 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="font-['Barlow_Condensed'] uppercase tracking-wide text-4xl md:text-5xl font-bold text-white mb-4">
               Plumbing Blog
             </h1>
             <p className="font-sans text-[#C0D8F0] text-lg max-w-2xl">
@@ -140,7 +140,7 @@ export default function BlogIndex() {
                       </span>
                       <span className="font-sans text-[#787878] text-sm">{featured.date}</span>
                     </div>
-                    <h2 className="font-['Playfair_Display'] text-2xl sm:text-3xl font-bold text-[var(--brand-navy)] mb-3 group-hover:text-[var(--brand-cyan)] transition-colors leading-snug">
+                    <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide text-2xl sm:text-3xl font-bold text-[var(--brand-navy)] mb-3 group-hover:text-[var(--brand-cyan)] transition-colors leading-snug">
                       {featured.title}
                     </h2>
                     <p className="font-sans text-[var(--ink-2)] text-base leading-relaxed mb-5">
@@ -177,7 +177,7 @@ export default function BlogIndex() {
                               {post.readTime}
                             </span>
                           </div>
-                          <h3 className="font-['Playfair_Display'] text-lg font-bold text-[var(--brand-navy)] mb-2 group-hover:text-[var(--brand-cyan)] transition-colors leading-snug">
+                          <h3 className="font-['Barlow_Condensed'] uppercase tracking-wide text-lg font-bold text-[var(--brand-navy)] mb-2 group-hover:text-[var(--brand-cyan)] transition-colors leading-snug">
                             {post.title}
                           </h3>
                           <p className="font-sans text-[var(--ink-2)] text-sm leading-relaxed mb-4 line-clamp-3">
@@ -202,7 +202,7 @@ export default function BlogIndex() {
                   <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-2">
                     Need a plumber?
                   </p>
-                  <p className="font-['Playfair_Display'] text-xl font-bold text-white mb-4 leading-snug">
+                  <p className="font-['Barlow_Condensed'] uppercase tracking-wide text-xl font-bold text-white mb-4 leading-snug">
                     24/7 Emergency Service
                   </p>
                   <a
@@ -278,7 +278,7 @@ export default function BlogIndex() {
             <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
               Licensed Emergency Plumber · MD, DC &amp; Northern VA
             </p>
-            <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-bold text-white mb-8">
+            <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide text-3xl md:text-4xl font-bold text-white mb-8">
               Need a plumber now?
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

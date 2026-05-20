@@ -160,7 +160,7 @@ export default function ServicesDirectory() {
           <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             Licensed Plumbing Services · Maryland · Washington DC · Northern Virginia
           </p>
-          <h1 className="font-['Playfair_Display'] font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
+          <h1 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
             All Plumbing Services
           </h1>
           <p className="font-sans text-white/90 text-[17px] leading-relaxed max-w-2xl mb-8">
@@ -194,7 +194,7 @@ export default function ServicesDirectory() {
       {/* Service Categories Grid */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-10">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-10">
             Browse Services by Category
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -249,7 +249,7 @@ export default function ServicesDirectory() {
       {/* Commercial & Residential Links */}
       <section className="bg-[var(--surface-1)] py-14 px-4 border-t border-[#C0D8F0]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-10">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-10">
             Commercial, Government & Additional Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -313,7 +313,7 @@ export default function ServicesDirectory() {
       {/* Emergency CTA */}
       <section className="bg-[var(--brand-navy)] py-14 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-['Playfair_Display'] font-semibold text-white text-[clamp(22px,3vw,30px)] mb-5">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-white text-[clamp(22px,3vw,30px)] mb-5">
             Plumbing Emergency? We Respond 24/7.
           </h2>
           <p className="font-sans text-[#C0D8F0] text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -332,7 +332,7 @@ export default function ServicesDirectory() {
       {/* Bottom CTA */}
       <section className="bg-[#F7F9FC] py-12 px-4 border-t border-[#C0D8F0]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-['Playfair_Display'] font-bold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-3">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-3">
             Not Sure Which Service You Need?
           </h2>
           <p className="font-sans text-[var(--ink-2)] text-[17px] leading-relaxed mb-6 max-w-xl mx-auto">

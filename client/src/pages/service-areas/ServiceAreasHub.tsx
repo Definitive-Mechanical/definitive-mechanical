@@ -173,7 +173,7 @@ export default function ServiceAreasHub() {
           <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             Licensed in Maryland · Washington DC · Virginia · Delaware
           </p>
-          <h1 className="font-['Playfair_Display'] font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
+          <h1 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
             Plumbing Service Areas
           </h1>
           <p className="font-sans text-white/90 text-[17px] leading-relaxed max-w-2xl mb-8">
@@ -222,7 +222,7 @@ export default function ServiceAreasHub() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <MapPin className="w-6 h-6 text-[var(--brand-cyan)]" />
-            <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
+            <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
               Maryland Service Areas
             </h2>
             <Link href="/service-areas/maryland" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline ml-2">
@@ -266,7 +266,7 @@ export default function ServiceAreasHub() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <MapPin className="w-6 h-6 text-[var(--brand-cyan)]" />
-            <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
+            <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
               Washington DC Service Areas
             </h2>
             <Link href="/service-areas/washington-dc" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline ml-2">
@@ -300,7 +300,7 @@ export default function ServiceAreasHub() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
             <MapPin className="w-6 h-6 text-[var(--brand-cyan)]" />
-            <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
+            <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)]">
               Northern Virginia Service Areas
             </h2>
             <Link href="/service-areas/northern-virginia" className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-wide text-[var(--brand-cyan)] hover:underline ml-2">
@@ -366,7 +366,7 @@ export default function ServiceAreasHub() {
       {/* Bottom CTA */}
       <section className="bg-[#F7F9FC] py-12 px-4 border-t border-[var(--border)]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-['Playfair_Display'] font-bold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-3">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-3">
             Don't See Your City? Call Us.
           </h2>
           <p className="font-sans text-[var(--ink-2)] text-[17px] leading-relaxed mb-6 max-w-xl mx-auto">

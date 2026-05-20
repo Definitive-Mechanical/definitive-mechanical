@@ -74,7 +74,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
                 <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-2">
                   Need a plumber right now?
                 </p>
-                <p className="font-['Playfair_Display'] text-xl font-bold text-white mb-4 leading-snug">
+                <p className="font-['Barlow_Condensed'] uppercase tracking-wide text-xl font-bold text-white mb-4 leading-snug">
                   24/7 Emergency Service
                 </p>
                 <a
@@ -149,7 +149,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
           <p className="font-['Barlow_Condensed'] text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             Licensed Emergency Plumber · MD, DC &amp; Northern VA
           </p>
-          <h2 className="font-['Playfair_Display'] text-3xl md:text-4xl font-bold text-white mb-8">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide text-3xl md:text-4xl font-bold text-white mb-8">
             Need a plumber now?
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -346,7 +346,7 @@ export function AuthorBlock({ date }: { date: string }) {
 export function BlogH1({ children }: { children: React.ReactNode }) {
   return (
     <h1
-      className="font-['Playfair_Display'] font-bold leading-tight mb-4"
+      className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold leading-tight mb-4"
       style={{ fontSize: "clamp(28px, 4vw, 38px)", color: "var(--brand-navy)" }}
     >
       {children}
@@ -359,7 +359,7 @@ export function BlogH2({ children, id }: { children: React.ReactNode; id?: strin
   return (
     <h2
       id={id}
-      className="font-['Playfair_Display'] font-semibold leading-snug mt-10 mb-4"
+      className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold leading-snug mt-10 mb-4"
       style={{ fontSize: "clamp(22px, 3vw, 26px)", color: "var(--brand-navy)" }}
     >
       {children}
@@ -458,7 +458,7 @@ export function HowToStep({ number, children }: { number: number; children: Reac
   return (
     <div className="flex gap-5 mt-10 mb-2">
       <div
-        className="flex-shrink-0 w-12 h-12 rounded-sm flex items-center justify-center font-['Playfair_Display'] font-bold text-2xl text-white"
+        className="flex-shrink-0 w-12 h-12 rounded-sm flex items-center justify-center font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-2xl text-white"
         style={{ background: "var(--brand-cyan)", minWidth: "48px" }}
       >
         {number}

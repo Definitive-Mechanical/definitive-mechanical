@@ -248,7 +248,7 @@ export default function AllServices() {
           <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             Licensed Plumbing Services · Maryland · Washington DC · Northern Virginia
           </p>
-          <h1 className="font-['Playfair_Display'] font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
+          <h1 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-white text-[clamp(28px,4vw,38px)] leading-tight mb-5 max-w-3xl">
             Plumbing Services in Maryland, DC &amp; Northern Virginia
           </h1>
           <p className="font-sans text-white/90 text-[17px] leading-relaxed max-w-2xl mb-8">
@@ -282,7 +282,7 @@ export default function AllServices() {
       {/* Service Category Grid */}
       <section className="bg-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-10">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-10">
             What plumbing repairs do you handle?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -330,7 +330,7 @@ export default function AllServices() {
       {/* Installations */}
       <section className="bg-white py-12 px-4 border-t border-[#C0D8F0]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-4">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-4">
             What plumbing installations do you do?
           </h2>
           <p className="font-sans text-[var(--ink-2)] text-[17px] mb-8 max-w-2xl">
@@ -353,7 +353,7 @@ export default function AllServices() {
       {/* Emergency CTA */}
       <section className="bg-[var(--brand-navy)] py-14 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-['Playfair_Display'] font-semibold text-white text-[clamp(22px,3vw,30px)] mb-5">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-white text-[clamp(22px,3vw,30px)] mb-5">
             Do you handle emergency plumbing?
           </h2>
           <p className="font-sans text-[#C0D8F0] text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -389,7 +389,7 @@ export default function AllServices() {
       {/* Service Areas */}
       <section className="bg-[var(--surface-1)] py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-4">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-4">
             What areas do you serve?
           </h2>
           <p className="font-sans text-[var(--ink-2)] text-[17px] mb-10 max-w-2xl">
@@ -410,7 +410,7 @@ export default function AllServices() {
                 <p className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-widest text-[var(--brand-cyan)] mb-2">
                   Service Area
                 </p>
-                <p className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-xl mb-2">{area.label}</p>
+                <p className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-xl mb-2">{area.label}</p>
                 <p className="font-sans text-[var(--ink-2)] text-sm mb-4">{area.desc}</p>
                 <span className="font-['Barlow_Condensed'] font-bold text-xs uppercase tracking-wide text-[var(--brand-cyan)] flex items-center gap-1">
                   {area.label} service areas <ArrowRight className="w-3 h-3" />
@@ -424,7 +424,7 @@ export default function AllServices() {
       {/* Residential & Commercial */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-6">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-6">
             Do you serve both residential and commercial clients?
           </h2>
           <p className="font-sans text-[var(--ink-2)] text-[17px] mb-10">Yes. Definitive Mechanical serves:</p>
@@ -498,7 +498,7 @@ export default function AllServices() {
       {/* FAQ */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-['Playfair_Display'] font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-8">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-8">
             Frequently Asked Questions
           </h2>
           <div>
@@ -515,7 +515,7 @@ export default function AllServices() {
           <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             LICENSED PLUMBING · MD, DC &amp; NORTHERN VIRGINIA
           </p>
-          <h2 className="font-['Playfair_Display'] font-bold text-white text-[clamp(24px,3vw,34px)] mb-8">
+          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-white text-[clamp(24px,3vw,34px)] mb-8">
             Request plumbing service in MD, DC or Northern VA
           </h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
