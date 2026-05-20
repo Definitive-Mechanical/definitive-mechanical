@@ -39,17 +39,17 @@ export default function VideoCameraInspection() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, #003060 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Sewer Line Repair', href: '/sewer-line-repair' }, { label: 'Video Camera Inspection' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p className="eyebrow mb-3">VIDEO CAMERA INSPECTION · MD, DC & NORTHERN VIRGINIA</p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Video Camera Inspection for Drains & Sewer Lines in Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
                 Definitive Mechanical uses professional video camera inspection to see inside sewer and drain lines before recommending any repair. A waterproof camera transmits real-time footage of the pipe interior — showing blockages, cracks, root intrusion, pipe collapse, and offsets. Know what you are dealing with before you excavate. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["See Before You Dig", "Real-Time Footage", "Licensed Master Plumber", "Residential & Commercial"]} />
@@ -72,29 +72,29 @@ export default function VideoCameraInspection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {WHAT_IT_FINDS.map(({ Icon, title, body }) => (
               <div key={title} style={{ background: 'white', borderTop: '3px solid #009EC6', borderRadius: '4px', padding: '20px', border: '1px solid #E8EFF5' }}>
-                <Icon size={24} color="#009EC6" style={{ marginBottom: '10px' }} />
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '14px', marginBottom: '6px' }}>{title}</p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '13px', lineHeight: 1.6 }}>{body}</p>
+                <Icon size={24} color="var(--brand-cyan)" style={{ marginBottom: '10px' }} />
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '6px' }}>{title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.6 }}>{body}</p>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.7, maxWidth: '560px', margin: '24px auto 0', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, maxWidth: '560px', margin: '24px auto 0', textAlign: 'center' }}>
             The camera also locates exactly where in the line any issue exists — typically measured in feet from the cleanout — which allows for precise spot repair rather than guesswork excavation.
           </p>
         </div>
       </section>
 
       {/* SECTION 3: WHEN TO GET ONE */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="WHEN TO GET A CAMERA INSPECTION" heading="When should you get a sewer camera inspection?" centered />
           <div className="max-w-4xl mx-auto space-y-4">
             {WHEN_TO_GET.map(({ Icon, title, body }) => (
               <div key={title} style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '20px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                <Icon size={24} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <Icon size={24} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
                 </div>
               </div>
             ))}
@@ -107,31 +107,31 @@ export default function VideoCameraInspection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>What does a sewer camera inspection cost?</h2>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>What does a sewer camera inspection cost?</h2>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 A standard sewer camera inspection for a residential property in the DMV market typically costs $200–$400. Commercial inspections and longer line assessments may cost more depending on line length and access. When camera inspection is performed in conjunction with a repair, the cost may be rolled into the overall service.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
                 Consider that a camera inspection at $200–$400 can prevent a $5,000–$12,000 excavation that turns out to be unnecessary. It is the most cost-effective diagnostic tool available for sewer line problems.
               </p>
               <BookNowButton variant="phone" text="CALL TO SCHEDULE INSPECTION" href="tel:+13016795849" size="md" />
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Sewer camera inspection cost Maryland DC Virginia — Definitive Mechanical" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)' }} />
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Sewer camera inspection cost Maryland DC Virginia — Definitive Mechanical" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }} />
             </div>
           </div>
         </div>
       </section>
 
       {/* RELATED SERVICES */}
-      <section style={{ background: '#F0F0F0', padding: '48px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Waves, label: 'Hydro-Jetting', href: '/hydro-jetting' }, { icon: Wrench, label: 'Sewer Line Repair', href: '/sewer-line-repair' }, { icon: Search, label: 'Sewer Line Installation', href: '/sewer-line-installation' }, { icon: Wrench, label: 'Drain Cleaning', href: '/drain-cleaning' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '13px' }}>{item.label}</span>
+                <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
             ))}
           </div>
@@ -142,7 +142,7 @@ export default function VideoCameraInspection() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about video camera inspection in MD, DC & Northern VA" centered />
-          <div style={{ background: '#F0F0F0', borderRadius: '6px', padding: '8px 32px' }}>
+          <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '8px 32px' }}>
             <FAQAccordion items={FAQ_ITEMS} schema={true} />
           </div>
         </div>

@@ -19,17 +19,17 @@ export default function BackflowPrevention() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '50vh', background: 'linear-gradient(135deg, #003060 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '50vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Backflow Prevention' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p className="eyebrow mb-3">BACKFLOW PREVENTION · MD, DC & NORTHERN VIRGINIA</p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Backflow Prevention Services in Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
                 Definitive Mechanical provides backflow prevention services across Maryland, Washington DC, and Northern Virginia — including device testing, certification, repair, replacement, and installation. We serve commercial, municipal, and residential properties. Annual certification programs available. Licensed. Report filing included. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Commercial & Residential", "Annual Certification Programs", "Licensed", "Report Filing Included"]} />
@@ -51,45 +51,45 @@ export default function BackflowPrevention() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="eyebrow mb-2">UNDERSTANDING BACKFLOW</p>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>What is backflow and why does it matter?</h2>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>What is backflow and why does it matter?</h2>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 Backflow is the unintended reversal of water flow in a plumbing system — water flowing backward from a potentially contaminated source into the clean drinking water supply. This can occur when there is a pressure drop in the public water supply (during a water main break or heavy firefighting demand) or when back-pressure from a secondary water source pushes water backward through a connection.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 The risk: water from an irrigation system, fire suppression system, swimming pool, boiler, or commercial process can potentially flow backward into the main water supply — carrying fertilizers, pesticides, chemicals, or microbial contaminants with it.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7 }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7 }}>
                 Backflow prevention devices — installed at the connection points between potentially contaminated water sources and the public supply — physically prevent this reversal from occurring.
               </p>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Backflow prevention device types Maryland plumber" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)' }} />
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Backflow prevention device types Maryland plumber" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }} />
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 3: WHO NEEDS IT */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="WHO NEEDS BACKFLOW PREVENTION?" heading="Who needs backflow prevention devices?" centered />
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', marginBottom: '16px' }}>Required by code in most cases for:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '16px' }}>Required by code in most cases for:</p>
               <div className="space-y-2">
                 {REQUIRED_FOR.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                    <CheckCircle2 size={16} color="#009EC6" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{item}</span>
+                    <CheckCircle2 size={16} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div>
-              <div style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '6px', padding: '24px', boxShadow: '0 2px 8px rgba(0,48,96,0.08)' }}>
-                <HelpCircle size={32} color="#009EC6" style={{ marginBottom: '12px' }} />
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '16px', marginBottom: '12px' }}>What about residential properties?</p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.7, marginBottom: '16px' }}>
+              <div style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '6px', padding: '24px', boxShadow: '0 2px 8px rgba(6,59,99,0.08)' }}>
+                <HelpCircle size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '12px' }}>What about residential properties?</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '16px' }}>
                   Some Maryland, DC, and Virginia jurisdictions require backflow prevention devices on residential properties with irrigation systems or other cross-connection risks. Requirements vary by jurisdiction and water supplier (including WSSC in Prince George's and Montgomery Counties). If you are not certain whether your property requires a backflow device, call (301) 679-5849 — we can assess your property's connection points and local code requirements.
                 </p>
                 <BookNowButton variant="ghost" text="ASK ABOUT YOUR PROPERTY" href="tel:+13016795849" size="sm" />
@@ -109,22 +109,22 @@ export default function BackflowPrevention() {
               { Icon: ShieldAlert, title: "DOUBLE CHECK VALVE ASSEMBLY (DCVA)", body: "Used for medium-hazard applications including commercial irrigation, fire suppression systems, and multi-family properties. Prevents both back-siphonage and back-pressure.", badge: "TYPICAL FOR: Commercial Irrigation, Fire Suppression" },
               { Icon: ShieldCheck, title: "REDUCED PRESSURE ZONE ASSEMBLY (RPZ)", body: "Required for high-hazard applications including chemical injection systems, boilers with chemical additives, healthcare facilities, and industrial connections. Provides the highest level of backflow protection.", badge: "TYPICAL FOR: Healthcare, Industrial, Boilers" },
             ].map(({ Icon, title, body, badge }) => (
-              <div key={title} style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)', border: '1px solid #E8EFF5', borderTopWidth: '4px', borderTopColor: '#009EC6' }}>
-                <Icon size={36} color="#009EC6" style={{ marginBottom: '16px' }} />
-                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>{title}</p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.6, marginBottom: '16px' }}>{body}</p>
-                <span style={{ background: '#C0D8F0', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '4px 10px', borderRadius: '3px' }}>{badge}</span>
+              <div key={title} style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', border: '1px solid #E8EFF5', borderTopWidth: '4px', borderTopColor: 'var(--brand-cyan)' }}>
+                <Icon size={36} color="var(--brand-cyan)" style={{ marginBottom: '16px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>{title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6, marginBottom: '16px' }}>{body}</p>
+                <span style={{ background: 'var(--surface-1)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '4px 10px', borderRadius: '3px' }}>{badge}</span>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.7, maxWidth: '560px', margin: '24px auto 0', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, maxWidth: '560px', margin: '24px auto 0', textAlign: 'center' }}>
             The correct device type for your property depends on the hazard level of the cross-connection and the requirements of your jurisdiction and water supplier. We assess and recommend the appropriate device.
           </p>
         </div>
       </section>
 
       {/* SECTION 5: SERVICES */}
-      <section style={{ background: '#003060', padding: '64px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="OUR SERVICES" heading="What backflow prevention services does Definitive Mechanical provide?" centered light />
           <div className="max-w-3xl mx-auto">
@@ -135,11 +135,11 @@ export default function BackflowPrevention() {
               { label: "Backflow Preventer Replacement", body: "Replacement of devices that cannot be repaired or have reached end of life.", link: null },
             ].map((item) => (
               <div key={item.label} style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', padding: '16px', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                <ChevronRight size={18} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <ChevronRight size={18} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: 'white', fontSize: '15px', marginBottom: '4px' }}>{item.label}</p>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.7)', fontSize: '14px', lineHeight: 1.5, marginBottom: item.link ? '6px' : 0 }}>{item.body}</p>
-                  {item.link && <Link href={item.link.href} style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 500, color: '#009EC6', fontSize: '13px', textDecoration: 'none' }}>{item.link.label}</Link>}
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'white', fontSize: '15px', marginBottom: '4px' }}>{item.label}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.7)', fontSize: '14px', lineHeight: 1.5, marginBottom: item.link ? '6px' : 0 }}>{item.body}</p>
+                  {item.link && <Link href={item.link.href} style={{ fontFamily: 'var(--font-body)', fontWeight: 500, color: 'var(--brand-cyan)', fontSize: '13px', textDecoration: 'none' }}>{item.link.label}</Link>}
                 </div>
               </div>
             ))}
@@ -150,12 +150,12 @@ export default function BackflowPrevention() {
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: ShieldCheck, label: 'Backflow Certification', href: '/backflow-certification' }, { icon: Shield, label: 'Backflow Preventer Repair', href: '/backflow-preventer-repair' }, { icon: ShieldAlert, label: 'Commercial Plumbing', href: '/commercial-plumbing' }, { icon: CheckCircle2, label: 'Government & Municipal', href: '/government-municipal-plumbing' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '13px' }}>{item.label}</span>
+                <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
             ))}
           </div>
@@ -163,7 +163,7 @@ export default function BackflowPrevention() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about backflow prevention in MD, DC & Northern VA" centered />
           <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px' }}>

@@ -14,7 +14,7 @@ export default function TestimonialCard({ quote, name, location, service }: Test
       borderLeft: '4px solid #009EC6',
       borderRadius: '6px',
       padding: '32px',
-      boxShadow: '0 2px 12px rgba(0,48,96,0.08)',
+      boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
       position: 'relative',
       overflow: 'hidden',
     }}>
@@ -23,9 +23,9 @@ export default function TestimonialCard({ quote, name, location, service }: Test
         position: 'absolute',
         top: '-10px',
         left: '16px',
-        fontFamily: 'Playfair Display, Georgia, serif',
+        fontFamily: 'var(--font-display)',
         fontSize: '72px',
-        color: '#009EC6',
+        color: 'var(--brand-cyan)',
         opacity: 0.15,
         lineHeight: 1,
         pointerEvents: 'none',
@@ -37,10 +37,10 @@ export default function TestimonialCard({ quote, name, location, service }: Test
       <StarRating rating={5} count={0} />
 
       <p style={{
-        fontFamily: 'Barlow, Arial, sans-serif',
+        fontFamily: 'var(--font-body)',
         fontWeight: 400,
         fontStyle: 'italic',
-        color: '#484848',
+        color: 'var(--ink-2)',
         fontSize: '15px',
         lineHeight: 1.7,
         margin: '12px 0 16px',
@@ -49,10 +49,10 @@ export default function TestimonialCard({ quote, name, location, service }: Test
       </p>
 
       <div>
-        <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', marginBottom: '2px' }}>
+        <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '2px' }}>
           {name}
         </p>
-        <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 400, color: '#787878', fontSize: '13px' }}>
+        <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'var(--ink-3)', fontSize: '13px' }}>
           {location} · {service}
         </p>
       </div>

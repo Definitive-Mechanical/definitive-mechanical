@@ -102,16 +102,16 @@ export default function FAQPage() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "38vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "38vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>FREQUENTLY ASKED QUESTIONS</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>FREQUENTLY ASKED QUESTIONS</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Common Questions About Definitive Mechanical</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Answers to the most common questions about our licensing, emergency service, pricing, and service area. Can't find your answer? Call (301) 679-5849.
           </p>
           <div className="mt-6">
-            <a href="tel:+13016795849" className="inline-flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
+            <a href="tel:+13016795849" className="inline-flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
               <Phone size={20} /> CALL (301) 679-5849
             </a>
           </div>
@@ -136,7 +136,7 @@ export default function FAQPage() {
 
       {/* FAQ sections by category */}
       {ALL_FAQS.map((section, idx) => (
-        <section key={section.category} id={section.anchor} className={idx % 2 === 0 ? "bg-white py-16" : "py-16"} style={idx % 2 !== 0 ? { backgroundColor: "#F0F0F0" } : {}}>
+        <section key={section.category} id={section.anchor} className={idx % 2 === 0 ? "bg-white py-16" : "py-16"} style={idx % 2 !== 0 ? { backgroundColor: "var(--surface-1)" } : {}}>
           <div className="container max-w-3xl mx-auto">
             <SectionHeading eyebrow="FAQ" heading={section.category} />
             <div className="mt-8">
@@ -161,7 +161,7 @@ export default function FAQPage() {
               { label: "About Us", href: "/about/" },
               { label: "Contact", href: "/contact/" },
             ].map((link) => (
-              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium text-sm hover:opacity-80 transition-opacity block" style={{ borderColor: "#009EC6", color: "#003060", fontFamily: "'Barlow', sans-serif" }}>
+              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium text-sm hover:opacity-80 transition-opacity block" style={{ borderColor: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>
                 {link.label} →
               </Link>
             ))}

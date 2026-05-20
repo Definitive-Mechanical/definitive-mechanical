@@ -67,10 +67,10 @@ export default function MBECertified() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)" }} className="py-20 md:py-28">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Government & Commercial", href: "/government-municipal-plumbing/" }, { label: "MBE Certified Plumbing Contractor Maryland" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>Government Procurement · Maryland · MDOT MBE Certified</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Government Procurement · Maryland · MDOT MBE Certified</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
             MDOT MBE Certified Plumbing Contractor — Maryland
           </h1>
@@ -80,7 +80,7 @@ export default function MBECertified() {
 
           {/* Procurement Quick-Reference Box */}
           <div className="inline-block p-6 rounded-lg mb-8" style={{ background: "rgba(255,255,255,0.05)", border: "2px solid rgba(0,158,198,0.6)" }}>
-            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>Procurement Quick Reference</p>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Procurement Quick Reference</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-1 text-sm text-white/90" style={{ fontFamily: "'Barlow', sans-serif" }}>
               {[
                 ["Legal Name", "Definitive Mechanical"],
@@ -95,7 +95,7 @@ export default function MBECertified() {
                 ["POC", "(301) 679-5849 | info@definitivemechanical.com"],
               ].map(([k, v]) => (
                 <div key={k} className="flex gap-2">
-                  <span className="font-bold" style={{ color: "#009EC6", minWidth: "120px" }}>{k}:</span>
+                  <span className="font-bold" style={{ color: "var(--brand-cyan)", minWidth: "120px" }}>{k}:</span>
                   <span>{v}</span>
                 </div>
               ))}
@@ -114,10 +114,10 @@ export default function MBECertified() {
         <div className="container max-w-4xl">
           <SectionHeading eyebrow="About MBE Certification" heading="What is MDOT MBE certification?" />
           <div className="mt-8 space-y-4">
-            <p className="text-base" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
+            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               MDOT MBE (Minority Business Enterprise) certification is administered by the Maryland Department of Transportation under the Minority Business Enterprise Program. To obtain and maintain MBE certification, a business must: (1) be at least 51% owned and controlled by a member of a socially and economically disadvantaged group; (2) be independently operated; (3) meet applicable size standards.
             </p>
-            <p className="text-base" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
+            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               Certified MBE firms are eligible for participation in State of Maryland procurement goals, prime contract set-asides, and subcontracting requirements established by State agencies. Definitive Mechanical has held MDOT MBE Cert No. 20-134 since initial certification.
             </p>
           </div>
@@ -125,7 +125,7 @@ export default function MBECertified() {
       </section>
 
       {/* Which Agencies */}
-      <section className="py-16" style={{ background: "#F0F0F0" }}>
+      <section className="py-16" style={{ background: "var(--surface-1)" }}>
         <div className="container max-w-4xl">
           <SectionHeading eyebrow="Applicable Agencies" heading="Which Maryland government contracts and agencies does MBE certification apply to?" />
           <div className="mt-8 grid md:grid-cols-2 gap-4">
@@ -138,8 +138,8 @@ export default function MBECertified() {
               { title: "Private-Sector Prime Contractors", body: "Many private-sector prime contractors on Maryland government projects are required to document MBE subcontractor participation — Definitive Mechanical satisfies this requirement." },
             ].map(a => (
               <div key={a.title} className="p-5 bg-white rounded-lg shadow-sm">
-                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>{a.title}</h3>
-                <p className="text-sm" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{a.body}</p>
+                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{a.title}</h3>
+                <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{a.body}</p>
               </div>
             ))}
           </div>
@@ -159,9 +159,9 @@ export default function MBECertified() {
               "Commercial water heater replacement programs",
               "Multi-facility preventative maintenance contracts",
             ].map(s => (
-              <div key={s} className="flex items-start gap-3 p-4 rounded-lg" style={{ background: "#F0F0F0" }}>
-                <CheckCircle size={18} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
-                <p className="text-sm" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{s}</p>
+              <div key={s} className="flex items-start gap-3 p-4 rounded-lg" style={{ background: "var(--surface-1)" }}>
+                <CheckCircle size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
+                <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{s}</p>
               </div>
             ))}
           </div>
@@ -169,13 +169,13 @@ export default function MBECertified() {
       </section>
 
       {/* Engagement Pathway */}
-      <section className="py-16" style={{ background: "#003060" }}>
+      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container max-w-4xl">
           <SectionHeading eyebrow="Engagement Process" heading="How does a government agency or prime contractor engage Definitive Mechanical?" light />
           <div className="mt-10 grid md:grid-cols-2 gap-6">
             {ENGAGEMENT_STEPS.map(s => (
               <div key={s.step} className="p-6 rounded-lg" style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(0,158,198,0.3)" }}>
-                <p className="text-4xl font-bold mb-3" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>{s.step}</p>
+                <p className="text-4xl font-bold mb-3" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>{s.step}</p>
                 <h3 className="font-bold text-base text-white mb-2" style={{ fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>{s.title}</h3>
                 <p className="text-sm text-white/80" style={{ fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{s.body}</p>
               </div>
@@ -185,11 +185,11 @@ export default function MBECertified() {
       </section>
 
       {/* Capability Statement */}
-      <section className="py-16" style={{ background: "#F0F0F0" }}>
+      <section className="py-16" style={{ background: "var(--surface-1)" }}>
         <div className="container max-w-3xl text-center">
-          <Award size={40} style={{ color: "#009EC6" }} className="mx-auto mb-4" />
-          <h2 className="text-2xl font-bold mb-4" style={{ color: "#003060", fontFamily: "'Playfair Display', serif" }}>Capability Statement</h2>
-          <p className="text-base mb-6" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
+          <Award size={40} style={{ color: "var(--brand-cyan)" }} className="mx-auto mb-4" />
+          <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Playfair Display', serif" }}>Capability Statement</h2>
+          <p className="text-base mb-6" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
             Our Capability Statement includes: legal name, UEI, CAGE 8HCF6, NAICS 238220, SIC 171, MDOT MBE Cert 20-134, SWaM Cert 815255, all license numbers, years in business, bonding capacity, past performance summary, and point of contact.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -210,9 +210,9 @@ export default function MBECertified() {
       </section>
 
       {/* Internal Links */}
-      <section className="py-10" style={{ background: "#F0F0F0" }}>
+      <section className="py-10" style={{ background: "var(--surface-1)" }}>
         <div className="container">
-          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>Related Pages</p>
+          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>Related Pages</p>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Government & Municipal Plumbing", href: "/government-municipal-plumbing/" },
@@ -222,7 +222,7 @@ export default function MBECertified() {
               { label: "Commercial Plumbing", href: "/commercial-plumbing/" },
               { label: "Backflow Certification Maryland", href: "/backflow-certification-maryland/" },
             ].map(l => (
-              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "#003060", borderColor: "#003060", fontFamily: "'Barlow', sans-serif" }}>{l.label}</a>
+              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-navy)", borderColor: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{l.label}</a>
             ))}
           </div>
         </div>

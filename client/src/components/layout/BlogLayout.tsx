@@ -193,13 +193,13 @@ export function FeaturedSnippet({ children }: { children: React.ReactNode }) {
     <div
       className="rounded-sm mb-8"
       style={{
-        background: "#C0D8F0",
+        background: "var(--surface-1)",
         borderLeft: "4px solid #009EC6",
         padding: "20px 24px",
         fontFamily: "'Barlow', sans-serif",
         fontSize: "17px",
         lineHeight: "1.7",
-        color: "#484848",
+        color: "var(--ink-2)",
       }}
     >
       {children}
@@ -213,11 +213,11 @@ export function CalloutBox({ children, variant = "info" }: { children: React.Rea
     <div
       className="rounded-sm my-7"
       style={{
-        background: variant === "warning" ? "#FEF3C7" : "#C0D8F0",
-        borderLeft: `4px solid ${variant === "warning" ? "#D97706" : "#009EC6"}`,
+        background: variant === "warning" ? "#FEF3C7" : "var(--surface-1)",
+        borderLeft: `4px solid ${variant === "warning" ? "#D97706" : "var(--brand-cyan)"}`,
         padding: "16px 20px",
         fontStyle: "italic",
-        color: "#484848",
+        color: "var(--ink-2)",
         fontFamily: "'Barlow', sans-serif",
         fontSize: "16px",
         lineHeight: "1.7",
@@ -233,11 +233,11 @@ export function InlineCTA() {
   return (
     <div
       className="rounded-sm my-10 text-center"
-      style={{ background: "#003060", padding: "32px" }}
+      style={{ background: "var(--brand-navy)", padding: "32px" }}
     >
       <p
         style={{
-          color: "#C0D8F0",
+          color: "var(--surface-1)",
           fontFamily: "'Barlow Condensed', sans-serif",
           fontSize: "13px",
           letterSpacing: "0.1em",
@@ -251,8 +251,8 @@ export function InlineCTA() {
         href={`tel:${PHONE}`}
         style={{
           display: "block",
-          background: "#009EC6",
-          color: "#003060",
+          background: "var(--brand-cyan)",
+          color: "var(--brand-navy)",
           fontFamily: "'Barlow Condensed', sans-serif",
           fontWeight: 700,
           fontSize: "18px",
@@ -268,7 +268,7 @@ export function InlineCTA() {
       </a>
       <p
         style={{
-          color: "#C0D8F0",
+          color: "var(--surface-1)",
           fontFamily: "'Barlow', sans-serif",
           fontSize: "14px",
           margin: 0,
@@ -347,7 +347,7 @@ export function BlogH1({ children }: { children: React.ReactNode }) {
   return (
     <h1
       className="font-['Playfair_Display'] font-bold leading-tight mb-4"
-      style={{ fontSize: "clamp(28px, 4vw, 38px)", color: "#003060" }}
+      style={{ fontSize: "clamp(28px, 4vw, 38px)", color: "var(--brand-navy)" }}
     >
       {children}
     </h1>
@@ -360,7 +360,7 @@ export function BlogH2({ children, id }: { children: React.ReactNode; id?: strin
     <h2
       id={id}
       className="font-['Playfair_Display'] font-semibold leading-snug mt-10 mb-4"
-      style={{ fontSize: "clamp(22px, 3vw, 26px)", color: "#003060" }}
+      style={{ fontSize: "clamp(22px, 3vw, 26px)", color: "var(--brand-navy)" }}
     >
       {children}
     </h2>
@@ -372,7 +372,7 @@ export function BlogH3({ children }: { children: React.ReactNode }) {
   return (
     <h3
       className="font-['Barlow_Condensed'] font-bold uppercase tracking-wide mt-6 mb-3"
-      style={{ fontSize: "16px", color: "#186090" }}
+      style={{ fontSize: "16px", color: "var(--brand-blue)" }}
     >
       {children}
     </h3>
@@ -384,7 +384,7 @@ export function BlogP({ children }: { children: React.ReactNode }) {
   return (
     <p
       className="mb-4 leading-[1.75]"
-      style={{ fontFamily: "'Barlow', sans-serif", fontSize: "17px", color: "#484848" }}
+      style={{ fontFamily: "'Barlow', sans-serif", fontSize: "17px", color: "var(--ink-2)" }}
     >
       {children}
     </p>
@@ -396,7 +396,7 @@ export function BlogUL({ children }: { children: React.ReactNode }) {
   return (
     <ul
       className="mb-6 space-y-2 pl-5"
-      style={{ fontFamily: "'Barlow', sans-serif", fontSize: "17px", color: "#484848", listStyleType: "disc" }}
+      style={{ fontFamily: "'Barlow', sans-serif", fontSize: "17px", color: "var(--ink-2)", listStyleType: "disc" }}
     >
       {children}
     </ul>
@@ -408,7 +408,7 @@ export function BlogEyebrow({ children }: { children: React.ReactNode }) {
   return (
     <p
       className="font-['Barlow_Condensed'] font-bold uppercase tracking-widest mb-3"
-      style={{ fontSize: "13px", color: "#009EC6" }}
+      style={{ fontSize: "13px", color: "var(--brand-cyan)" }}
     >
       {children}
     </p>
@@ -421,7 +421,7 @@ export function PricingTable({ headers, rows }: { headers: string[]; rows: strin
     <div className="overflow-x-auto my-6 rounded-sm border border-[#C0D8F0]">
       <table className="w-full min-w-[400px] text-sm">
         <thead>
-          <tr style={{ background: "#003060" }}>
+          <tr style={{ background: "var(--brand-navy)" }}>
             {headers.map((h, i) => (
               <th
                 key={i}
@@ -435,7 +435,7 @@ export function PricingTable({ headers, rows }: { headers: string[]; rows: strin
         </thead>
         <tbody>
           {rows.map((row, ri) => (
-            <tr key={ri} style={{ background: ri % 2 === 0 ? "#ffffff" : "#F0F0F0" }}>
+            <tr key={ri} style={{ background: ri % 2 === 0 ? "#ffffff" : "var(--surface-1)" }}>
               {row.map((cell, ci) => (
                 <td
                   key={ci}
@@ -459,7 +459,7 @@ export function HowToStep({ number, children }: { number: number; children: Reac
     <div className="flex gap-5 mt-10 mb-2">
       <div
         className="flex-shrink-0 w-12 h-12 rounded-sm flex items-center justify-center font-['Playfair_Display'] font-bold text-2xl text-white"
-        style={{ background: "#009EC6", minWidth: "48px" }}
+        style={{ background: "var(--brand-cyan)", minWidth: "48px" }}
       >
         {number}
       </div>

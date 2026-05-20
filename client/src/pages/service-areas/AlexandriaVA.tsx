@@ -49,7 +49,7 @@ export default function AlexandriaVA() {
       </Helmet>
 
       {/* S1: Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "60vh" }} className="py-20">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "60vh" }} className="py-20">
         <div className="container">
           <BreadcrumbList items={[
             {label:"Home",href:"/"},
@@ -60,13 +60,13 @@ export default function AlexandriaVA() {
           ]} />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
-              <p style={{ fontFamily:"'Barlow Condensed',sans-serif", color:"#009EC6", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
+              <p style={{ fontFamily:"'var(--font-display)'", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
                 PLUMBING SERVICE · ALEXANDRIA, VA · NORTHERN VIRGINIA
               </p>
-              <h1 style={{ fontFamily:"'Playfair Display',serif", color:"white", fontSize:"clamp(28px,4vw,40px)", fontWeight:700, lineHeight:1.15 }} className="mb-4">
+              <h1 style={{ fontFamily:"'var(--font-display)'", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in Alexandria, VA
               </h1>
-              <p style={{ fontFamily:"'Barlow',sans-serif", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
+              <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
                 Definitive Mechanical provides licensed plumbing service in Alexandria, Virginia for homeowners, businesses, and government facilities. Emergency plumbing, water heater repair, drain cleaning, sewer service, gas line work, and backflow certification available 24/7. Virginia Master Plumber/Gasfitter #2710064209, Class A Contractor #2705181061, SWaM Cert No. 815255. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["VA Master Plumber/Gasfitter #2710064209","VA Class A Contractor #2705181061","VA SWaM Cert 815255","24/7 Emergency","Serving Alexandria from Largo, MD"]} />
@@ -86,21 +86,21 @@ export default function AlexandriaVA() {
       <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Alexandria, VA?" />
-          <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
+          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
             Alexandria is one of the most historically significant and densely populated cities in Northern Virginia — a mix of pre-Civil War townhomes in Old Town, mid-20th century residential neighborhoods in Del Ray and Rosemont, newer high-rise development in Potomac Yard, and a major commercial and government corridor along Route 1 and Duke Street. Each part of Alexandria presents a different plumbing service profile.
           </p>
 
           {/* VA Credentials */}
           <div className="mb-8 max-w-2xl">
-            <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:600, color:"#003060", fontSize:"15px" }} className="mb-3">Virginia credentials that matter in Alexandria:</p>
+            <p style={{ fontFamily:"'var(--font-body)'", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }} className="mb-3">Virginia credentials that matter in Alexandria:</p>
             {[
               "Virginia State Master Plumber/Gasfitter #2710064209",
               "Virginia Class A Contractor #2705181061 — required for projects over $120,000",
               "Virginia SWaM Certification No. 815255 — eligible for Virginia government procurement",
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2 mb-2">
-                <CheckCircle2 size={16} style={{ color:"#009EC6", flexShrink:0 }} />
-                <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"15px" }}>{item}</p>
+                <CheckCircle2 size={16} style={{ color:"var(--brand-cyan)", flexShrink:0 }} />
+                <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"15px" }}>{item}</p>
               </div>
             ))}
           </div>
@@ -108,11 +108,11 @@ export default function AlexandriaVA() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((svc, i) => (
               <Link key={i} href={svc.href}>
-                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(0,48,96,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid #009EC6" }}>
-                  <svc.icon size={20} style={{ color:"#009EC6", flexShrink:0, marginTop:2 }} />
+                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(6,59,99,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid #009EC6" }}>
+                  <svc.icon size={20} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
                   <div>
-                    <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:500, color:"#003060", fontSize:"14px" }}>{svc.label}</p>
-                    {svc.note && <p style={{ fontFamily:"'Barlow',sans-serif", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
+                    <p style={{ fontFamily:"'var(--font-body)'", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
+                    {svc.note && <p style={{ fontFamily:"'var(--font-body)'", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
                   </div>
                 </div>
               </Link>
@@ -122,14 +122,14 @@ export default function AlexandriaVA() {
       </section>
 
       {/* S3: Emergency */}
-      <section className="py-16" style={{ background:"#F0F0F0" }}>
+      <section className="py-16" style={{ background:"var(--surface-1)" }}>
         <div className="container">
           <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading="Do you provide 24/7 emergency plumbing in Alexandria?" />
           <div className="max-w-3xl mb-8">
-            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
+            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
               Yes. Emergency plumbing in Alexandria is available 24/7. We serve Alexandria from our Largo, MD base — accessible via the Wilson Bridge on the Capital Beltway. Alexandria emergency plumbing carries some of the highest keyword values in our service area, reflecting the density of demand and the urgency of plumbing needs in this densely populated city.
             </p>
-            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }}>
+            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }}>
               A live dispatcher answers every call. Licensed Virginia Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849.
             </p>
           </div>
@@ -145,12 +145,12 @@ export default function AlexandriaVA() {
           <SectionHeading eyebrow="LOCAL PLUMBING NEEDS" heading="What plumbing needs are specific to Alexandria?" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
             {alexAreas.map((card, i) => (
-              <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"#009EC6" }}>
+              <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
-                  <card.icon size={24} style={{ color:"#009EC6" }} />
-                  <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:600, color:"#003060", fontSize:"15px" }}>{card.title}</p>
+                  <card.icon size={24} style={{ color:"var(--brand-cyan)" }} />
+                  <p style={{ fontFamily:"'var(--font-body)'", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
                 </div>
-                <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
+                <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
               </div>
             ))}
           </div>
@@ -158,15 +158,15 @@ export default function AlexandriaVA() {
       </section>
 
       {/* S5: Commercial */}
-      <section className="py-16" style={{ background:"#003060" }}>
+      <section className="py-16" style={{ background:"var(--brand-navy)" }}>
         <div className="container text-center">
           <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Commercial & Government Plumbing in Alexandria, VA" light />
-          <p style={{ fontFamily:"'Barlow',sans-serif", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
+          <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
             SWaM Cert 815255 + CAGE 8HCF6 + VA credentials for Alexandria commercial and government work.
           </p>
           <div className="flex flex-wrap gap-2 justify-center mt-6">
             {["VA #2710064209","SWaM Cert 815255","Class A #2705181061"].map((badge, i) => (
-              <span key={i} style={{ background:"white", color:"#003060", fontFamily:"'Barlow Condensed',sans-serif", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
+              <span key={i} style={{ background:"white", color:"var(--brand-navy)", fontFamily:"'var(--font-display)'", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
             ))}
           </div>
         </div>
@@ -177,24 +177,24 @@ export default function AlexandriaVA() {
         <div className="container">
           <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading="Areas near Alexandria we also serve" />
           <div className="mb-3">
-            <span style={{ fontFamily:"'Barlow Condensed',sans-serif", fontWeight:700, color:"#003060", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
-            <Link href="/service-areas/northern-virginia/arlington-county/arlington-va" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>Arlington, VA</Link>
-            <Link href="/service-areas/northern-virginia/fairfax-county/mclean-va" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>McLean, VA</Link>
-            <Link href="/service-areas/northern-virginia/fairfax-county/springfield-va" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>Springfield, VA</Link>
-            <Link href="/service-areas/washington-dc" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>Washington DC</Link>
+            <span style={{ fontFamily:"'var(--font-display)'", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
+            <Link href="/service-areas/northern-virginia/arlington-county/arlington-va" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Arlington, VA</Link>
+            <Link href="/service-areas/northern-virginia/fairfax-county/mclean-va" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>McLean, VA</Link>
+            <Link href="/service-areas/northern-virginia/fairfax-county/springfield-va" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Springfield, VA</Link>
+            <Link href="/service-areas/washington-dc" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Washington DC</Link>
             {["Annandale, VA","Falls Church, VA","Fort Belvoir, VA","Mount Vernon, VA"].map((city, i) => (
-              <span key={i} style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", marginRight:"12px" }}>{city}</span>
+              <span key={i} style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", marginRight:"12px" }}>{city}</span>
             ))}
           </div>
           <div className="flex flex-wrap gap-4 mt-2">
-            <Link href="/service-areas/northern-virginia" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", fontWeight:500 }}>Northern Virginia Plumbing →</Link>
-            <Link href="/service-areas" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", fontWeight:500 }}>Full Service Area →</Link>
+            <Link href="/service-areas/northern-virginia" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>Northern Virginia Plumbing →</Link>
+            <Link href="/service-areas" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>Full Service Area →</Link>
           </div>
         </div>
       </section>
 
       {/* S8: FAQ */}
-      <section className="py-20" style={{ background:"#F0F0F0" }}>
+      <section className="py-20" style={{ background:"var(--surface-1)" }}>
         <div className="container">
           <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Plumbing FAQ — Alexandria, VA" />
           <div className="max-w-3xl mx-auto">

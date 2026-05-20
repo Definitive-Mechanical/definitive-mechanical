@@ -46,7 +46,7 @@ export default function CommercialPlumbing() {
       {/* HERO */}
       <section style={{
         minHeight: '60vh',
-        background: 'linear-gradient(135deg, #003060 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -57,13 +57,13 @@ export default function CommercialPlumbing() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Commercial Plumbing' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 COMMERCIAL PLUMBING · MD, DC & NORTHERN VIRGINIA
               </p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Commercial Plumbing Service — Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
                 Definitive Mechanical provides commercial plumbing service for businesses, property managers, HOAs, and institutions across Maryland, Washington DC, and Northern Virginia. MDOT MBE and VA SWaM Certified. Licensed Master Plumber and Master Gasfitter in four states. 24/7 emergency response.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
@@ -98,11 +98,11 @@ export default function CommercialPlumbing() {
                 borderTop: '3px solid #009EC6',
                 borderRadius: '6px',
                 padding: '24px',
-                boxShadow: '0 2px 12px rgba(0,48,96,0.08)',
+                boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
               }}>
-                <Building2 size={22} color="#009EC6" style={{ marginBottom: '12px' }} />
-                <h3 style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '15px', marginBottom: '8px' }}>{service.title}</h3>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '13px', lineHeight: 1.7 }}>{service.desc}</p>
+                <Building2 size={22} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
+                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{service.title}</h3>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.7 }}>{service.desc}</p>
               </div>
             ))}
           </div>
@@ -110,7 +110,7 @@ export default function CommercialPlumbing() {
       </section>
 
       {/* WHY CHOOSE */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="WHY CHOOSE DEFINITIVE MECHANICAL"
@@ -127,9 +127,9 @@ export default function CommercialPlumbing() {
               { icon: Building2, title: 'Facility Maintenance Programs', body: 'Scheduled preventive maintenance reduces emergency costs and helps avoid code violations. Ask about our commercial maintenance programs.' },
             ].map((item) => (
               <div key={item.title} style={{ textAlign: 'center', padding: '16px' }}>
-                <item.icon size={40} color="#009EC6" style={{ margin: '0 auto 16px' }} />
-                <h3 style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '16px', marginBottom: '10px' }}>{item.title}</h3>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>
+                <item.icon size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
+                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '10px' }}>{item.title}</h3>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>
               </div>
             ))}
           </div>
@@ -137,17 +137,17 @@ export default function CommercialPlumbing() {
       </section>
 
       {/* CERTIFICATIONS BANNER */}
-      <section style={{ background: '#003060', padding: '48px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '8px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>
                 GOVERNMENT & COMMERCIAL CERTIFICATIONS
               </p>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '12px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '12px' }}>
                 MDOT MBE and Virginia SWaM Certified
               </h2>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7 }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7 }}>
                 Definitive Mechanical is certified as a Minority Business Enterprise (MBE) by the Maryland Department of Transportation and as a Small, Women-owned, and Minority-owned Business (SWaM) by the Commonwealth of Virginia. Capability statement available upon request.
               </p>
             </div>
@@ -159,8 +159,8 @@ export default function CommercialPlumbing() {
                 { label: 'NAICS Code', value: '238220' },
               ].map((item) => (
                 <div key={item.label} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '4px', padding: '16px 24px', textAlign: 'center' }}>
-                  <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#009EC6', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '4px' }}>{item.label}</p>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'white', fontSize: '14px' }}>{item.value}</p>
+                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '4px' }}>{item.label}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'white', fontSize: '14px' }}>{item.value}</p>
                 </div>
               ))}
             </div>
@@ -169,10 +169,10 @@ export default function CommercialPlumbing() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Commercial Plumbing Questions" centered />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)' }}>
+          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
             <FAQAccordion items={COMMERCIAL_FAQ} schema={true} />
           </div>
         </div>

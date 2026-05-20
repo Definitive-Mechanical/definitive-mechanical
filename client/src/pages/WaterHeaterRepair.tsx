@@ -44,7 +44,7 @@ export default function WaterHeaterRepair() {
       {/* HERO */}
       <section style={{
         minHeight: '60vh',
-        background: 'linear-gradient(135deg, #003060 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -55,13 +55,13 @@ export default function WaterHeaterRepair() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Heater Repair' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 WATER HEATER REPAIR & REPLACEMENT · MD, DC & NORTHERN VIRGINIA
               </p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Water Heater Repair & Replacement — Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
                 Definitive Mechanical repairs and replaces gas, electric, and tankless water heaters across Maryland, Washington DC, and Northern Virginia. Same-day service available. Financing available for replacements. Licensed Master Plumber and Master Gasfitter on every job.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
@@ -97,13 +97,13 @@ export default function WaterHeaterRepair() {
                 borderTop: '3px solid #009EC6',
                 borderRadius: '6px',
                 padding: '28px',
-                boxShadow: '0 2px 12px rgba(0,48,96,0.08)',
+                boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
               }}>
                 <div style={{ width: '44px', height: '44px', background: 'rgba(0,158,198,0.1)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
-                  <Thermometer size={22} color="#009EC6" />
+                  <Thermometer size={22} color="var(--brand-cyan)" />
                 </div>
-                <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 600, color: '#003060', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.7 }}>{service.desc}</p>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{service.desc}</p>
               </div>
             ))}
           </div>
@@ -111,7 +111,7 @@ export default function WaterHeaterRepair() {
       </section>
 
       {/* SIGNS YOU NEED SERVICE */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="SIGNS OF WATER HEATER FAILURE"
@@ -128,10 +128,10 @@ export default function WaterHeaterRepair() {
               { title: 'Unit is 10+ years old', desc: 'Standard tank water heaters have an average lifespan of 8–12 years. If yours is approaching or past this age, a proactive replacement can prevent an emergency.' },
             ].map((item) => (
               <div key={item.title} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start', background: 'white', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px' }}>
-                <Thermometer size={20} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <Thermometer size={20} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', marginBottom: '4px' }}>{item.title}</p>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '13px', lineHeight: 1.6 }}>{item.desc}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '4px' }}>{item.title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.6 }}>{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -140,7 +140,7 @@ export default function WaterHeaterRepair() {
       </section>
 
       {/* TANKLESS */}
-      <section style={{ background: '#003060', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="TANKLESS WATER HEATERS"
@@ -157,9 +157,9 @@ export default function WaterHeaterRepair() {
               { icon: ChevronRight, title: 'Space Saving', desc: 'Wall-mounted units free up significant floor space versus tank units.' },
             ].map((item) => (
               <div key={item.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '6px', padding: '24px', textAlign: 'center' }}>
-                <item.icon size={28} color="#009EC6" style={{ margin: '0 auto 12px' }} />
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '15px', marginBottom: '8px' }}>{item.title}</p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.75)', fontSize: '13px', lineHeight: 1.6 }}>{item.desc}</p>
+                <item.icon size={28} color="var(--brand-cyan)" style={{ margin: '0 auto 12px' }} />
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'white', fontSize: '15px', marginBottom: '8px' }}>{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.75)', fontSize: '13px', lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -170,15 +170,15 @@ export default function WaterHeaterRepair() {
       </section>
 
       {/* FINANCING */}
-      <section style={{ background: '#F0F0F0', padding: '64px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '64px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
             FINANCING AVAILABLE
           </p>
-          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>
             Financing available for water heater replacement and tankless installation
           </h2>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.7, maxWidth: '560px', margin: '0 auto 24px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, maxWidth: '560px', margin: '0 auto 24px' }}>
             Apply for Synchrony consumer financing in 60 seconds. Monthly payment options available for qualified customers. No impact to your credit score during pre-qualification.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -192,7 +192,7 @@ export default function WaterHeaterRepair() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Water Heater Repair & Replacement Questions" centered />
-          <div style={{ background: '#F0F0F0', borderRadius: '6px', padding: '8px 32px' }}>
+          <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '8px 32px' }}>
             <FAQAccordion items={WATER_HEATER_FAQ} schema={true} />
           </div>
         </div>

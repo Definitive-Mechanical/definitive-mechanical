@@ -45,7 +45,7 @@ export default function DrainCleaning() {
       {/* HERO */}
       <section style={{
         minHeight: '60vh',
-        background: 'linear-gradient(135deg, #003060 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -56,13 +56,13 @@ export default function DrainCleaning() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Drain Cleaning' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 DRAIN CLEANING · HYDRO-JETTING · SEWER CLEARING
               </p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Professional Drain Cleaning — Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
                 Definitive Mechanical provides professional drain cleaning, hydro-jetting, and sewer line clearing across Maryland, Washington DC, and Northern Virginia. We identify the root cause of recurring clogs — not just clear the symptom. Licensed Master Plumber on every job. Written pricing before work begins.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
@@ -98,13 +98,13 @@ export default function DrainCleaning() {
                 borderTop: '3px solid #009EC6',
                 borderRadius: '6px',
                 padding: '28px',
-                boxShadow: '0 2px 12px rgba(0,48,96,0.08)',
+                boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
               }}>
                 <div style={{ width: '44px', height: '44px', background: 'rgba(0,158,198,0.1)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
-                  <Droplets size={22} color="#009EC6" />
+                  <Droplets size={22} color="var(--brand-cyan)" />
                 </div>
-                <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 600, color: '#003060', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.7 }}>{service.desc}</p>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{service.desc}</p>
               </div>
             ))}
           </div>
@@ -112,7 +112,7 @@ export default function DrainCleaning() {
       </section>
 
       {/* WHY CHOOSE */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -128,10 +128,10 @@ export default function DrainCleaning() {
                   { title: 'Written Pricing Before We Start', desc: 'No surprise fees. You receive written pricing before we begin. Same rate regardless of time of day.' },
                 ].map((item) => (
                   <div key={item.title} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                    <CheckCircle2 size={20} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <CheckCircle2 size={20} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div>
-                      <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '15px', marginBottom: '4px' }}>{item.title}</p>
-                      <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.6 }}>{item.desc}</p>
+                      <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '4px' }}>{item.title}</p>
+                      <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -141,7 +141,7 @@ export default function DrainCleaning() {
               <img
                 src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
                 alt="Drain cleaning service Maryland"
-                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)' }}
+                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }}
               />
             </div>
           </div>
@@ -149,7 +149,7 @@ export default function DrainCleaning() {
       </section>
 
       {/* HYDRO-JETTING */}
-      <section style={{ background: '#003060', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="HYDRO-JETTING"
@@ -166,10 +166,10 @@ export default function DrainCleaning() {
               { title: 'Pre-Lining Preparation', desc: 'Before pipe lining or relining, hydro-jetting ensures the pipe wall is clean for proper adhesion.' },
             ].map((item) => (
               <div key={item.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '6px', padding: '24px', display: 'flex', gap: '12px' }}>
-                <ChevronRight size={20} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <ChevronRight size={20} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '15px', marginBottom: '6px' }}>{item.title}</p>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.75)', fontSize: '14px', lineHeight: 1.6 }}>{item.desc}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'white', fontSize: '15px', marginBottom: '6px' }}>{item.title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.75)', fontSize: '14px', lineHeight: 1.6 }}>{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -181,10 +181,10 @@ export default function DrainCleaning() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Drain Cleaning Questions" centered />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)' }}>
+          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
             <FAQAccordion items={DRAIN_FAQ} schema={true} />
           </div>
         </div>

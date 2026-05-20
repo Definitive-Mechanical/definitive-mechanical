@@ -64,13 +64,13 @@ export default function EmergencyArlingtonVA() {
       <section style={{ background: "linear-gradient(135deg, #001830 0%, #003060 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Arlington, VA" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · ARLINGTON, VA · VA MASTER PLUMBER LICENSED</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER · ARLINGTON, VA · VA MASTER PLUMBER LICENSED</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Emergency Plumber in Arlington, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Definitive Mechanical provides 24/7 emergency plumbing in Arlington, Virginia — one of the most densely populated jurisdictions in the DC metro area. A live dispatcher answers every call. Virginia Master Plumber/Gasfitter #2710064209, Class A Contractor #2705181061. No overtime surcharge. Call (301) 679-5849.
           </p>
           <div className="max-w-2xl mx-auto">
-            <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "#009EC6", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
+            <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
               <Phone className="mr-3" size={24} /> CALL (301) 679-5849 — LIVE DISPATCHER 24/7
             </a>
             <div className="mt-3 flex justify-center"><BookNowButton variant="outline" size="sm" text="REQUEST EMERGENCY SERVICE" href="/contact/" /></div>
@@ -98,14 +98,14 @@ export default function EmergencyArlingtonVA() {
       </section>
 
       {/* Section 3 — Emergency Types */}
-      <section style={{ backgroundColor: "#F0F0F0" }} className="py-16">
+      <section style={{ backgroundColor: "var(--surface-1)" }} className="py-16">
         <div className="container">
           <SectionHeading eyebrow="EMERGENCY TYPES" heading="Arlington emergency plumbing situations we handle" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
             {EMERGENCY_TYPES.map((type) => (
               <div key={type.title} className="bg-white rounded-md p-4 shadow-sm">
-                <type.icon size={28} style={{ color: "#009EC6" }} className="mb-2" />
-                <h3 className="font-bold text-sm mb-1" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
+                <type.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
+                <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
                 <p className="text-xs text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{type.body}</p>
               </div>
             ))}
@@ -117,15 +117,15 @@ export default function EmergencyArlingtonVA() {
       </section>
 
       {/* Section 4 — License Proof */}
-      <section style={{ backgroundColor: "#003060" }} className="py-14">
+      <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="LICENSE PROOF" heading="Licensed for emergency plumbing in Arlington County, Virginia" light />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
             {[{ label: "Virginia Master Plumber/Gasfitter", num: "#2710064209" }, { label: "Virginia Class A Contractor", num: "#2705181061" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
-                <Key size={28} style={{ color: "#009EC6" }} className="mb-2" />
-                <p className="text-sm font-semibold" style={{ color: "#003060", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
-                <p className="font-bold text-xl" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
+                <Key size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
+                <p className="text-sm font-semibold" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
+                <p className="font-bold text-xl" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
               </div>
             ))}
           </div>
@@ -138,9 +138,9 @@ export default function EmergencyArlingtonVA() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[{ icon: Clock, title: "Same Rate — Day or Night", body: "No overtime surcharge. No after-hours premium. The rate you pay at 2 AM is the same as 2 PM." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
-              <div key={item.title} style={{ backgroundColor: "#F0F0F0" }} className="rounded-md p-5">
-                <item.icon size={24} style={{ color: "#009EC6" }} className="mb-2" />
-                <h3 className="font-bold mb-1" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
+              <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
+                <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
+                <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
                 <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{item.body}</p>
               </div>
             ))}
@@ -149,24 +149,24 @@ export default function EmergencyArlingtonVA() {
       </section>
 
       {/* Section 6 — Arlington Urgency */}
-      <section style={{ backgroundColor: "#F0F0F0" }} className="py-12">
+      <section style={{ backgroundColor: "var(--surface-1)" }} className="py-12">
         <div className="container max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4" style={{ color: "#003060", fontFamily: "'Playfair Display', serif" }}>Why Arlington emergency plumbing requires immediate response</h2>
+          <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Playfair Display', serif" }}>Why Arlington emergency plumbing requires immediate response</h2>
           <p className="text-gray-600 mb-6" style={{ fontFamily: "'Barlow', sans-serif", fontSize: "16px", lineHeight: "1.8" }}>
             Arlington's density creates a compounding urgency that does not exist in lower-density markets. A sewer backup in a high-rise affects multiple floors. A burst pipe in a townhouse floods multiple units. A gas leak in a dense residential corridor creates risk for adjacent properties. Emergency response in Arlington is not just a convenience — it is often a multi-party safety matter. We dispatch licensed Virginia Master Plumbers 24/7 with no overtime surcharge.
           </p>
-          <a href="tel:+13016795849" className="inline-flex items-center justify-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
+          <a href="tel:+13016795849" className="inline-flex items-center justify-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
             <Phone size={20} /> CALL (301) 679-5849 NOW
           </a>
         </div>
       </section>
 
       {/* Section 7 — Related */}
-      <section style={{ backgroundColor: "#F0F0F0" }} className="py-12">
+      <section style={{ backgroundColor: "var(--surface-1)" }} className="py-12">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ label: "Plumber in Arlington, VA", href: "/service-areas/northern-virginia/arlington-county/" }, { label: "Emergency Plumbing Service", href: "/emergency-plumbing/" }, { label: "Sewer Line Repair", href: "/sewer-line-repair/" }, { label: "Gas Line Repair", href: "/gas-line-repair/" }].map((link) => (
-              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium hover:opacity-80 transition-opacity block" style={{ borderColor: "#009EC6", color: "#009EC6", fontFamily: "'Barlow', sans-serif" }}>{link.label} →</Link>
+              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium hover:opacity-80 transition-opacity block" style={{ borderColor: "var(--brand-cyan)", color: "var(--brand-cyan)", fontFamily: "'Barlow', sans-serif" }}>{link.label} →</Link>
             ))}
           </div>
         </div>

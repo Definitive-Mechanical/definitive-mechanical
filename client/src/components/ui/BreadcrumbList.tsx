@@ -32,13 +32,13 @@ export default function BreadcrumbList({ items }: BreadcrumbListProps) {
           {items.map((item, index) => (
             <li key={index} style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
               {index > 0 && (
-                <span style={{ color: '#C0D8F0', fontSize: '13px' }}>/</span>
+                <span style={{ color: 'var(--surface-1)', fontSize: '13px' }}>/</span>
               )}
               {item.href && index < items.length - 1 ? (
                 <Link
                   href={item.href}
                   style={{
-                    fontFamily: 'Barlow, Arial, sans-serif',
+                    fontFamily: 'var(--font-body)',
                     fontSize: '13px',
                     color: 'rgba(255,255,255,0.6)',
                     textDecoration: 'none',
@@ -46,14 +46,14 @@ export default function BreadcrumbList({ items }: BreadcrumbListProps) {
                     display: 'flex',
                     alignItems: 'center',
                   }}
-                  onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                   onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.6)')}
                 >
                   {item.label}
                 </Link>
               ) : (
                 <span style={{
-                  fontFamily: 'Barlow, Arial, sans-serif',
+                  fontFamily: 'var(--font-body)',
                   fontWeight: 500,
                   fontSize: '13px',
                   color: 'rgba(255,255,255,0.85)',

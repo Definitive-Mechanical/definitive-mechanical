@@ -65,13 +65,13 @@ export default function EmergencyPlumbing() {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '8px',
-          background: '#009EC6',
+          background: 'var(--brand-cyan)',
           padding: '12px 16px',
           textDecoration: 'none',
         }}
       >
-        <Zap size={16} color="#003060" />
-        <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#003060' }}>
+        <Zap size={16} color="var(--brand-navy)" />
+        <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-navy)' }}>
           Plumbing Emergency? Call {BUSINESS.phone} — Live Dispatcher Answering 24/7, 365 Days
         </span>
       </a>
@@ -97,13 +97,13 @@ export default function EmergencyPlumbing() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Emergency Plumbing' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 24/7 EMERGENCY SERVICE · MD, DC & NORTHERN VIRGINIA
               </p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 24/7 Emergency Plumbing Service — Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
                 Definitive Mechanical provides 24/7 emergency plumbing service across Maryland, Washington DC, and Northern Virginia. A live dispatcher answers every call — day or night, weekday or holiday. Every emergency call is handled by a licensed Master Plumber and Master Gasfitter. We arrive, diagnose, and provide written pricing before work begins.
               </p>
 
@@ -114,9 +114,9 @@ export default function EmergencyPlumbing() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '12px',
-                  background: '#009EC6',
-                  color: '#003060',
-                  fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                  background: 'var(--brand-cyan)',
+                  color: 'var(--brand-navy)',
+                  fontFamily: 'var(--font-display)',
                   fontWeight: 700,
                   fontSize: '18px',
                   textTransform: 'uppercase',
@@ -129,13 +129,13 @@ export default function EmergencyPlumbing() {
                   marginBottom: '12px',
                 }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#007BA0'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(0,158,198,0.4)'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = '#009EC6'; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-cyan)'; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}
               >
                 <Phone size={24} />
                 CALL {BUSINESS.phone} — EMERGENCY LINE OPEN 24/7
               </a>
 
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.7)', fontSize: '14px', marginBottom: '16px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.7)', fontSize: '14px', marginBottom: '16px' }}>
                 ✓ Licensed Master Plumber on Every Emergency Call &nbsp;✓ Upfront Flat Pricing &nbsp;✓ MD, DC, VA & DE Licensed
               </p>
 
@@ -173,15 +173,15 @@ export default function EmergencyPlumbing() {
                 borderRadius: '4px',
                 padding: '16px',
               }}>
-                <scenario.icon size={22} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <scenario.icon size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', marginBottom: '2px' }}>{scenario.title}</p>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#787878', fontSize: '13px' }}>{scenario.desc}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '2px' }}>{scenario.title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '13px' }}>{scenario.desc}</p>
                 </div>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontStyle: 'italic', color: '#484848', fontSize: '15px', textAlign: 'center', marginBottom: '24px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', color: 'var(--ink-2)', fontSize: '15px', textAlign: 'center', marginBottom: '24px' }}>
             If you are unsure whether your situation qualifies, call anyway. Our dispatcher will help you assess the situation at no cost.
           </p>
           <div style={{ textAlign: 'center' }}>
@@ -191,7 +191,7 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* HOW WE RESPOND */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="OUR EMERGENCY PROCESS"
@@ -224,12 +224,12 @@ export default function EmergencyPlumbing() {
             gap: '16px',
             alignItems: 'flex-start',
           }}>
-            <ShieldCheck size={32} color="#009EC6" style={{ flexShrink: 0 }} />
+            <ShieldCheck size={32} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
             <div>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '16px', marginBottom: '6px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '6px' }}>
                 Same rate regardless of time of day.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.7 }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>
                 We do not charge a premium for nights, weekends, or holidays. The rate you receive at 2am is the same as the rate at 2pm.
               </p>
             </div>
@@ -238,7 +238,7 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* WHAT TO DO BEFORE WE ARRIVE */}
-      <section style={{ background: '#003060', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="WHILE YOU WAIT"
@@ -248,7 +248,7 @@ export default function EmergencyPlumbing() {
           />
           <div className="grid lg:grid-cols-2 gap-10">
             <div>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6', marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 If you have a burst pipe or major leak:
               </p>
               {[
@@ -258,13 +258,13 @@ export default function EmergencyPlumbing() {
                 'Do not use electrical appliances in wet areas',
               ].map((item) => (
                 <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', marginBottom: '10px' }}>
-                  <ChevronRight size={16} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
-                  <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '14px', lineHeight: 1.6 }}>{item}</span>
+                  <ChevronRight size={16} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                  <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '14px', lineHeight: 1.6 }}>{item}</span>
                 </div>
               ))}
             </div>
             <div>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6', marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 If you smell gas:
               </p>
               {[
@@ -274,8 +274,8 @@ export default function EmergencyPlumbing() {
                 'Call 911 and then call us from outside',
               ].map((item) => (
                 <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', marginBottom: '10px' }}>
-                  <ChevronRight size={16} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
-                  <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '14px', lineHeight: 1.6 }}>{item}</span>
+                  <ChevronRight size={16} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                  <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '14px', lineHeight: 1.6 }}>{item}</span>
                 </div>
               ))}
             </div>
@@ -297,14 +297,14 @@ export default function EmergencyPlumbing() {
               { state: 'Washington DC', areas: ['All DC Wards & Neighborhoods'], cities: 'Georgetown, Capitol Hill, Dupont Circle, Navy Yard, NoMa' },
               { state: 'Northern Virginia', areas: ['Fairfax County', 'Arlington County', 'Loudoun County', 'Prince William County'], cities: 'Alexandria, Arlington, McLean, Springfield, Vienna' },
             ].map((area) => (
-              <div key={area.state} style={{ background: '#F0F0F0', borderRadius: '6px', padding: '24px', borderTop: '3px solid #009EC6' }}>
-                <h3 style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '10px' }}>
+              <div key={area.state} style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '24px', borderTop: '3px solid #009EC6' }}>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '10px' }}>
                   {area.state}
                 </h3>
                 {area.areas.map((a) => (
-                  <p key={a} style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: '#484848', marginBottom: '4px' }}>{a}</p>
+                  <p key={a} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-2)', marginBottom: '4px' }}>{a}</p>
                 ))}
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '12px', color: '#787878', marginTop: '8px' }}>{area.cities}</p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'var(--ink-3)', marginTop: '8px' }}>{area.cities}</p>
               </div>
             ))}
           </div>
@@ -312,10 +312,10 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Emergency Plumbing Questions" centered />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)' }}>
+          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
             <FAQAccordion items={EMERGENCY_FAQ} schema={true} />
           </div>
         </div>

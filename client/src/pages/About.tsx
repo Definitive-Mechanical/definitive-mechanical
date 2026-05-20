@@ -11,7 +11,7 @@ export default function About() {
     <>
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, #003060 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
         padding: '80px 0',
         position: 'relative',
         overflow: 'hidden',
@@ -21,13 +21,13 @@ export default function About() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 ABOUT DEFINITIVE MECHANICAL
               </p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 About Definitive Mechanical — Licensed Plumbing in MD, DC & Northern VA
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
                 Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor based in Largo, Maryland. We have served homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia for over 11 years. Master Plumber and Master Gasfitter licensed in four states.
               </p>
               <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
@@ -49,13 +49,13 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <SectionHeading eyebrow="OUR STORY" heading="What is Definitive Mechanical?" />
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
                 Definitive Mechanical was founded with a straightforward premise: provide licensed, honest plumbing service without the sales pressure, inflated pricing, and upselling that has become the norm in the DMV plumbing market.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
                 We are based in Largo, Maryland and have operated in the DMV for over 11 years. Our team holds Master Plumber and Master Gasfitter licenses in Maryland, Washington DC, Virginia, and Delaware — a credential combination that no other local plumbing company in this market holds simultaneously.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.8, marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.8, marginBottom: '24px' }}>
                 We serve residential homeowners, commercial facility managers, property management companies, HOAs, and government agencies. Every job — from a clogged drain to a government facility sewer replacement — is handled by a licensed Master Plumber with written pricing provided before work begins.
               </p>
               <div className="space-y-3">
@@ -68,8 +68,8 @@ export default function About() {
                   'Upfront written pricing on every job',
                 ].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                    <CheckCircle2 size={18} color="#009EC6" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{item}</span>
+                    <CheckCircle2 size={18} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -78,7 +78,7 @@ export default function About() {
               <img
                 src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80"
                 alt="Definitive Mechanical plumbing service Maryland"
-                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)' }}
+                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }}
               />
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function About() {
       </section>
 
       {/* STATS */}
-      <section style={{ background: '#009EC6', padding: '48px 0' }}>
+      <section style={{ background: 'var(--brand-cyan)', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {[
@@ -95,10 +95,10 @@ export default function About() {
               { number: '4', label: 'States Licensed', icon: ShieldCheck },
               { number: '25+', label: 'Years Trade Experience', icon: Award },
             ].map((stat, index) => (
-              <div key={stat.label} style={{ textAlign: 'center', padding: '16px', borderRight: index < 3 ? '1px solid rgba(0,48,96,0.2)' : 'none' }}>
-                <stat.icon size={24} color="#003060" style={{ margin: '0 auto 8px' }} />
-                <p style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: '32px', color: '#003060', lineHeight: 1 }}>{stat.number}</p>
-                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#003060', marginTop: '4px' }}>{stat.label}</p>
+              <div key={stat.label} style={{ textAlign: 'center', padding: '16px', borderRight: index < 3 ? '1px solid rgba(6,59,99,0.2)' : 'none' }}>
+                <stat.icon size={24} color="var(--brand-navy)" style={{ margin: '0 auto 8px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '32px', color: 'var(--brand-navy)', lineHeight: 1 }}>{stat.number}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-navy)', marginTop: '4px' }}>{stat.label}</p>
               </div>
             ))}
           </div>
@@ -106,7 +106,7 @@ export default function About() {
       </section>
 
       {/* OUR APPROACH */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="OUR APPROACH"
@@ -131,10 +131,10 @@ export default function About() {
                 body: 'When a Definitive Mechanical technician arrives at your property, you get their name. You can call our office and ask about them. We stand behind every technician we send.',
               },
             ].map((item) => (
-              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)', textAlign: 'center' }}>
-                <item.icon size={40} color="#009EC6" style={{ margin: '0 auto 16px' }} />
-                <h3 style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>
+              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', textAlign: 'center' }}>
+                <item.icon size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
+                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>
               </div>
             ))}
           </div>
@@ -158,14 +158,14 @@ export default function About() {
       </section>
 
       {/* CONTACT INFO */}
-      <section style={{ background: '#003060', padding: '64px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 CONTACT INFORMATION
               </p>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '24px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '24px' }}>
                 Reach Definitive Mechanical
               </h2>
               <div className="space-y-4">
@@ -176,15 +176,15 @@ export default function About() {
                   { label: 'Hours', value: BUSINESS.hours.display },
                 ].map((item) => (
                   <div key={item.label}>
-                    <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6', marginBottom: '4px' }}>{item.label}</p>
+                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--brand-cyan)', marginBottom: '4px' }}>{item.label}</p>
                     {item.href ? (
-                      <a href={item.href} style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '15px', textDecoration: 'none' }}
-                        onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
+                      <a href={item.href} style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px', textDecoration: 'none' }}
+                        onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                         onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.85)')}>
                         {item.value}
                       </a>
                     ) : (
-                      <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '15px' }}>{item.value}</p>
+                      <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px' }}>{item.value}</p>
                     )}
                   </div>
                 ))}

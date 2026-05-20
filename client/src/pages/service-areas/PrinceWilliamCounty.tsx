@@ -22,16 +22,16 @@ export default function PrinceWilliamCounty() {
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
 
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "45vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "45vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Northern Virginia", href: "/service-areas/northern-virginia/" }, { label: "Prince William County" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES · PRINCE WILLIAM COUNTY, VA</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES · PRINCE WILLIAM COUNTY, VA</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>Plumber in Prince William County, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Definitive Mechanical provides licensed plumbing services in Prince William County — Manassas, Woodbridge, Dale City, Lake Ridge, Dumfries, and surrounding communities. VA Class A #2705-183416-A · VA Master Plumber #2710-183416-A. 24/7 emergency. Call (301) 679-5849.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
+            <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
               <Phone size={20} /> CALL (301) 679-5849
             </a>
             <a href="/contact/" className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[#003060] transition-colors" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>Request Service</a>
@@ -49,22 +49,22 @@ export default function PrinceWilliamCounty() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
             {COMMUNITIES.map((c) => (
               <div key={c} className="bg-white border border-gray-200 rounded-md p-4 text-center">
-                <p className="font-bold text-sm" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>{c}, VA</p>
+                <p className="font-bold text-sm" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{c}, VA</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section style={{ backgroundColor: "#003060" }} className="py-14">
+      <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="CREDENTIALS" heading="Virginia licenses for Prince William County" light />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
             {[{ label: "Virginia Class A Contractor", num: "#2705-183416-A" }, { label: "Virginia Master Plumber/Gasfitter", num: "#2710-183416-A" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
-                <Key size={24} style={{ color: "#009EC6" }} className="mb-2" />
-                <p className="text-xs font-semibold mb-1" style={{ color: "#003060", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
-                <p className="font-bold text-lg" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
+                <Key size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
+                <p className="text-xs font-semibold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
+                <p className="font-bold text-lg" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
               </div>
             ))}
           </div>

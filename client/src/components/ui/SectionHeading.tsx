@@ -11,32 +11,34 @@ export default function SectionHeading({ eyebrow, heading, subtext, centered = f
     <div style={{ marginBottom: '48px', textAlign: centered ? 'center' : 'left' }}>
       {eyebrow && (
         <p style={{
-          fontFamily: 'Barlow Condensed, Arial, sans-serif',
+          fontFamily: 'var(--font-display)',
           fontWeight: 700,
           fontSize: '12px',
           textTransform: 'uppercase',
           letterSpacing: '0.25em',
-          color: light ? 'rgba(255,255,255,0.7)' : '#009EC6',
+          color: light ? 'rgba(255,255,255,0.7)' : 'var(--brand-cyan)',
           marginBottom: '12px',
         }}>
           {eyebrow}
         </p>
       )}
       <h2 style={{
-        fontFamily: 'Playfair Display, Georgia, serif',
+        fontFamily: 'var(--font-display)',
         fontWeight: 700,
-        color: light ? 'white' : '#003060',
-        fontSize: 'clamp(22px, 3vw, 36px)',
-        lineHeight: 1.25,
+        textTransform: 'uppercase',
+        letterSpacing: '0.02em',
+        color: light ? 'white' : 'var(--brand-navy)',
+        fontSize: 'clamp(26px, 3.5vw, 42px)',
+        lineHeight: 1.1,
         marginBottom: subtext ? '16px' : '0',
       }}>
         {heading}
       </h2>
       {subtext && (
         <p style={{
-          fontFamily: 'Barlow, Arial, sans-serif',
+          fontFamily: 'var(--font-body)',
           fontWeight: 400,
-          color: light ? 'rgba(255,255,255,0.75)' : '#787878',
+          color: light ? 'rgba(255,255,255,0.75)' : 'var(--ink-2)',
           fontSize: '16px',
           lineHeight: 1.7,
           maxWidth: centered ? '672px' : 'none',

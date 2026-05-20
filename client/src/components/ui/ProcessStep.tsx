@@ -19,13 +19,13 @@ export default function ProcessStep({ number, title, description, icon, isLast =
         <div style={{
           width: '48px',
           height: '48px',
-          background: '#009EC6',
+          background: 'var(--brand-cyan)',
           borderRadius: '50%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           color: 'white',
-          fontFamily: 'Barlow Condensed, Arial, sans-serif',
+          fontFamily: 'var(--font-display)',
           fontWeight: 700,
           fontSize: '18px',
           flexShrink: 0,
@@ -33,7 +33,7 @@ export default function ProcessStep({ number, title, description, icon, isLast =
           {number}
         </div>
         {!isLast && (
-          <div style={{ width: '2px', height: '40px', background: '#E8EFF5', margin: '4px 0' }} />
+          <div style={{ width: '2px', height: '40px', background: 'var(--border)', margin: '4px 0' }} />
         )}
       </div>
 
@@ -49,21 +49,21 @@ export default function ProcessStep({ number, title, description, icon, isLast =
             alignItems: 'center',
             justifyContent: 'center',
           }}>
-            <IconComponent size={14} color="#186090" />
+            <IconComponent size={14} color="var(--brand-blue)" />
           </div>
           <h4 style={{
-            fontFamily: 'Barlow, Arial, sans-serif',
+            fontFamily: 'var(--font-body)',
             fontWeight: 700,
-            color: '#003060',
+            color: 'var(--brand-navy)',
             fontSize: '16px',
           }}>
             {title}
           </h4>
         </div>
         <p style={{
-          fontFamily: 'Barlow, Arial, sans-serif',
+          fontFamily: 'var(--font-body)',
           fontWeight: 400,
-          color: '#484848',
+          color: 'var(--ink-2)',
           fontSize: '14px',
           lineHeight: 1.7,
         }}>

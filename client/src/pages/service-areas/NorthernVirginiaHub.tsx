@@ -64,10 +64,10 @@ export default function NorthernVirginiaHub() {
       {/* Breadcrumb */}
       <div style={{ background: '#f8f9fa', borderBottom: '1px solid #e5e7eb', padding: '10px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <nav style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: '#6b7280' }}>
-            <Link href="/" style={{ color: '#009EC6', textDecoration: 'none' }}>Home</Link>
+          <nav style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: '#6b7280' }}>
+            <Link href="/" style={{ color: 'var(--brand-cyan)', textDecoration: 'none' }}>Home</Link>
             <span style={{ margin: '0 8px' }}>›</span>
-            <Link href="/service-areas" style={{ color: '#009EC6', textDecoration: 'none' }}>Service Areas</Link>
+            <Link href="/service-areas" style={{ color: 'var(--brand-cyan)', textDecoration: 'none' }}>Service Areas</Link>
             <span style={{ margin: '0 8px' }}>›</span>
             <span style={{ color: '#374151' }}>Northern Virginia</span>
           </nav>
@@ -75,22 +75,22 @@ export default function NorthernVirginiaHub() {
       </div>
 
       {/* Hero */}
-      <section style={{ background: '#003060', padding: '64px 0 48px' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '64px 0 48px' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '16px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
             LICENSED PLUMBING · NORTHERN VIRGINIA
           </p>
-          <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', lineHeight: 1.2, marginBottom: '20px' }}>
+          <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', lineHeight: 1.2, marginBottom: '20px' }}>
             Plumber Northern Virginia
           </h1>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '18px', color: 'rgba(255,255,255,0.85)', maxWidth: '640px', lineHeight: 1.6, marginBottom: '32px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', color: 'rgba(255,255,255,0.85)', maxWidth: '640px', lineHeight: 1.6, marginBottom: '32px' }}>
             Definitive Mechanical is a Virginia SWaM certified master plumber serving Fairfax County, Arlington, Loudoun County, and Prince William County. Licensed in Virginia, Maryland, DC, and Delaware. 24/7 emergency service.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-            <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#009EC6', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
+            <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
               <Phone size={16} /> CALL {BUSINESS.phone}
             </a>
-            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
               REQUEST SERVICE
             </Link>
           </div>
@@ -101,7 +101,7 @@ export default function NorthernVirginiaHub() {
       </section>
 
       {/* Trust Bar */}
-      <section style={{ background: '#009EC6', padding: '16px 0' }}>
+      <section style={{ background: 'var(--brand-cyan)', padding: '16px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', alignItems: 'center' }}>
             {[
@@ -110,7 +110,7 @@ export default function NorthernVirginiaHub() {
               { icon: <Award size={16} />, text: 'Licensed Master Plumber' },
               { icon: <MapPin size={16} />, text: '4 Counties Served' },
             ].map((item) => (
-              <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
+              <div key={item.text} style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>
                 {item.icon} {item.text}
               </div>
             ))}
@@ -121,10 +121,10 @@ export default function NorthernVirginiaHub() {
       {/* County Cards */}
       <section style={{ background: 'white', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '12px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '12px', textAlign: 'center' }}>
             SERVICE AREA DIRECTORY
           </p>
-          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: '#003060', textAlign: 'center', marginBottom: '48px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'var(--brand-navy)', textAlign: 'center', marginBottom: '48px' }}>
             Northern Virginia Service Areas
           </h2>
 
@@ -132,10 +132,10 @@ export default function NorthernVirginiaHub() {
             {COUNTIES.map((county) => (
               <div key={county.name} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid #009EC6', borderRadius: '4px', padding: '28px', boxShadow: '0 2px 8px rgba(0,0,0,0.06)' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '20px' }}>
-                  <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: '1.25rem', color: '#003060', margin: 0 }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.25rem', color: 'var(--brand-navy)', margin: 0 }}>
                     {county.name}
                   </h3>
-                  <Link href={county.hub} style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#009EC6', textDecoration: 'none', whiteSpace: 'nowrap', marginLeft: '12px' }}>
+                  <Link href={county.hub} style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-cyan)', textDecoration: 'none', whiteSpace: 'nowrap', marginLeft: '12px' }}>
                     Hub →
                   </Link>
                 </div>
@@ -144,11 +144,11 @@ export default function NorthernVirginiaHub() {
                     <Link
                       key={city.href}
                       href={city.href}
-                      style={{ display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#374151', textDecoration: 'none', padding: '4px 0', borderBottom: '1px solid #f3f4f6' }}
-                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#009EC6'; }}
+                      style={{ display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#374151', textDecoration: 'none', padding: '4px 0', borderBottom: '1px solid #f3f4f6' }}
+                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--brand-cyan)'; }}
                       onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = '#374151'; }}
                     >
-                      <ChevronRight size={14} style={{ color: '#009EC6', flexShrink: 0 }} />
+                      <ChevronRight size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
                       {city.name}
                     </Link>
                   ))}
@@ -162,7 +162,7 @@ export default function NorthernVirginiaHub() {
       {/* Credentials */}
       <section style={{ background: '#f8f9fa', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: '1.75rem', color: '#003060', textAlign: 'center', marginBottom: '32px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.75rem', color: 'var(--brand-navy)', textAlign: 'center', marginBottom: '32px' }}>
             Virginia Licenses &amp; Certifications
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', maxWidth: '900px', margin: '0 auto' }}>
@@ -175,8 +175,8 @@ export default function NorthernVirginiaHub() {
               { label: 'EPA 608 Certified', value: 'Universal' },
             ].map((cred) => (
               <div key={cred.label} style={{ background: 'white', border: '1px solid #e5e7eb', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '16px 20px' }}>
-                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6', margin: '0 0 4px' }}>{cred.label}</p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#374151', margin: 0 }}>{cred.value}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--brand-cyan)', margin: '0 0 4px' }}>{cred.label}</p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: '#374151', margin: 0 }}>{cred.value}</p>
               </div>
             ))}
           </div>
@@ -184,19 +184,19 @@ export default function NorthernVirginiaHub() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ background: '#003060', padding: '56px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '56px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'white', marginBottom: '16px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'white', marginBottom: '16px' }}>
             Need a Plumber in Northern Virginia?
           </h2>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '18px', color: 'rgba(255,255,255,0.8)', marginBottom: '32px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', color: 'rgba(255,255,255,0.8)', marginBottom: '32px' }}>
             Call now for 24/7 emergency service or schedule a visit. Upfront pricing in writing — always.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#009EC6', color: '#003060', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
+            <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
               <Phone size={18} /> CALL {BUSINESS.phone}
             </a>
-            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
+            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
               REQUEST SERVICE
             </Link>
           </div>

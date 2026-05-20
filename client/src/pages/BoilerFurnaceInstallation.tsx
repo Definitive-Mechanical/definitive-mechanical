@@ -79,17 +79,17 @@ export default function BoilerFurnaceInstallation() {
       })}} />
 
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '48vh', background: 'linear-gradient(135deg, #003060 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '48vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Boiler & Furnace Repair', href: '/boiler-furnace-repair' }, { label: 'Boiler & Furnace Installation' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p className="eyebrow mb-3">BOILER & FURNACE INSTALLATION · MD, DC & NORTHERN VIRGINIA</p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Boiler & Furnace Installation in Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
                 Definitive Mechanical installs replacement and new boilers and furnaces for homes and commercial facilities across Maryland, Washington DC, and Northern Virginia. Every installation is performed under the correct permits by a licensed Master Plumber and Master Gasfitter. Financing available for residential installations. Written pricing before we start. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber/Gasfitter", "Permitted & Inspected", "Financing Available", "Commercial & Residential"]} />
@@ -110,28 +110,28 @@ export default function BoilerFurnaceInstallation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="REPAIR OR REPLACE?" heading="When should a boiler or furnace be replaced rather than repaired?" centered />
           <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div style={{ background: 'white', borderTop: '4px solid #F59E0B', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(0,48,96,0.06)' }}>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#F59E0B', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>CONSIDER REPLACEMENT WHEN:</p>
+            <div style={{ background: 'white', borderTop: '4px solid #F59E0B', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>CONSIDER REPLACEMENT WHEN:</p>
               <div className="space-y-3">
                 {REPLACE_WHEN.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
                     <AlertCircle size={15} color="#F59E0B" style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div style={{ background: 'white', borderTop: '4px solid #1A7A4A', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(0,48,96,0.06)' }}>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#1A7A4A', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>KEEP REPAIRING WHEN:</p>
+            <div style={{ background: 'white', borderTop: '4px solid #1A7A4A', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#1A7A4A', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>KEEP REPAIRING WHEN:</p>
               <div className="space-y-3">
                 {KEEP_WHEN.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
                     <CheckCircle2 size={15} color="#1A7A4A" style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
-              <Link href="/boiler-furnace-repair" style={{ display: 'inline-block', marginTop: '20px', fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#009EC6', fontSize: '14px', textDecoration: 'none' }}>
+              <Link href="/boiler-furnace-repair" style={{ display: 'inline-block', marginTop: '20px', fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-cyan)', fontSize: '14px', textDecoration: 'none' }}>
                 View Boiler & Furnace Repair →
               </Link>
             </div>
@@ -140,15 +140,15 @@ export default function BoilerFurnaceInstallation() {
       </section>
 
       {/* SECTION 3: SYSTEM TYPES */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="HEATING SYSTEM TYPES" heading="What types of heating systems does Definitive Mechanical install?" centered />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {SYSTEM_TYPES.map(({ Icon, title, body }) => (
-              <div key={title} style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(0,48,96,0.06)' }}>
-                <Icon size={36} color="#009EC6" style={{ marginBottom: '14px' }} />
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '16px', marginBottom: '8px' }}>{title}</p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
+              <div key={title} style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+                <Icon size={36} color="var(--brand-cyan)" style={{ marginBottom: '14px' }} />
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '8px' }}>{title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
               </div>
             ))}
           </div>
@@ -160,20 +160,20 @@ export default function BoilerFurnaceInstallation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>Does boiler or furnace installation require a permit?</h2>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>Does boiler or furnace installation require a permit?</h2>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
                 Yes. Heating system installation requires permits in virtually all Maryland, DC, and Virginia jurisdictions. Gas-fired equipment requires both a mechanical permit and gas inspection. We handle permit applications under our own licenses and coordinate inspections.
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                 {["MD #96958", "DC #PGM1002236", "VA #2710064209", "VA Class A #2705181061"].map((badge) => (
-                  <span key={badge} style={{ background: '#003060', color: 'white', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '6px 12px', borderRadius: '3px' }}>{badge}</span>
+                  <span key={badge} style={{ background: 'var(--brand-navy)', color: 'white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '6px 12px', borderRadius: '3px' }}>{badge}</span>
                 ))}
               </div>
             </div>
-            <div style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)', textAlign: 'center' }}>
-              <CreditCard size={32} color="#009EC6" style={{ margin: '0 auto 12px' }} />
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '12px' }}>Financing Available</p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.7, marginBottom: '20px' }}>
+            <div style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', textAlign: 'center' }}>
+              <CreditCard size={32} color="var(--brand-cyan)" style={{ margin: '0 auto 12px' }} />
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: '12px' }}>Financing Available</p>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '20px' }}>
                 Monthly payment options through Synchrony for residential heating system installations.
               </p>
               <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href="https://www.mysynchrony.com/mmc/S6240351600" size="md" />
@@ -183,9 +183,9 @@ export default function BoilerFurnaceInstallation() {
       </section>
 
       {/* RELATED SERVICES */}
-      <section style={{ background: '#F0F0F0', padding: '48px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { icon: Wind, label: 'Boiler & Furnace Repair', href: '/boiler-furnace-repair' },
@@ -194,8 +194,8 @@ export default function BoilerFurnaceInstallation() {
               { icon: CreditCard, label: 'Financing Options', href: 'https://www.mysynchrony.com/mmc/S6240351600' },
             ].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '13px' }}>{item.label}</span>
+                <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
             ))}
           </div>
@@ -206,7 +206,7 @@ export default function BoilerFurnaceInstallation() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about boiler and furnace installation in MD, DC & Northern VA" centered />
-          <div style={{ background: '#F0F0F0', borderRadius: '6px', padding: '8px 32px' }}>
+          <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '8px 32px' }}>
             <FAQAccordion items={FAQ_ITEMS} schema={true} />
           </div>
         </div>

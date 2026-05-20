@@ -80,17 +80,17 @@ export default function FaucetToiletRepair() {
       })}} />
 
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, #003060 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Faucet & Toilet Repair' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p className="eyebrow mb-3">FAUCET & TOILET REPAIR · MD, DC & NORTHERN VIRGINIA</p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Faucet & Toilet Repair in Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
                 Definitive Mechanical repairs and replaces faucets, toilets, and fixtures for homes and businesses across Maryland, Washington DC, and Northern Virginia. Dripping faucets, running toilets, leaking supply lines, toilet clogs, and fixture replacement — all handled by a licensed Master Plumber. Same-day service often available. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Same-Day Service Available", "Licensed Master Plumber", "Residential & Commercial", "Faucets, Toilets & Fixtures"]} />
@@ -112,49 +112,49 @@ export default function FaucetToiletRepair() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <p className="eyebrow mb-2">FAUCET REPAIR</p>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>Common faucet problems we repair</h2>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>Common faucet problems we repair</h2>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
                 A dripping faucet wastes more water than most homeowners realize — a faucet dripping once per second wastes approximately 3,000 gallons of water per year. Beyond water cost, a dripping faucet that goes untreated often leads to mineral staining, fixture damage, and eventually more expensive repairs.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', marginBottom: '12px' }}>Faucet repairs we handle:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '12px' }}>Faucet repairs we handle:</p>
               <div className="space-y-2">
                 {FAUCET_REPAIRS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
-                    <CheckCircle2 size={15} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <CheckCircle2 size={15} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '13px', fontStyle: 'italic', marginTop: '16px', lineHeight: 1.6 }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', fontStyle: 'italic', marginTop: '16px', lineHeight: 1.6 }}>
                 We work on all faucet types and brands — kitchen, bathroom, shower, tub, utility, and outdoor. If you have a preferred replacement fixture, we can install it.
               </p>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="Faucet repair licensed plumber Maryland DC Virginia" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)', objectFit: 'cover', aspectRatio: '4/3' }} />
+              <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="Faucet repair licensed plumber Maryland DC Virginia" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 3: TOILET PROBLEMS */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="hidden lg:block">
-              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Toilet repair same day service Maryland DC Northern Virginia" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)', objectFit: 'cover', aspectRatio: '4/3' }} />
+              <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80" alt="Toilet repair same day service Maryland DC Northern Virginia" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)', objectFit: 'cover', aspectRatio: '4/3' }} />
             </div>
             <div>
               <p className="eyebrow mb-2">TOILET REPAIR</p>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>Common toilet problems we repair</h2>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>Common toilet problems we repair</h2>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
                 A running toilet — the continuous sound of water running in the tank — wastes an average of 200 gallons of water per day. This is both costly and easily repaired in most cases.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', marginBottom: '12px' }}>Toilet repairs we handle:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '12px' }}>Toilet repairs we handle:</p>
               <div className="space-y-2">
                 {TOILET_REPAIRS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
-                    <CheckCircle2 size={15} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <CheckCircle2 size={15} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -169,36 +169,36 @@ export default function FaucetToiletRepair() {
           <SectionHeading eyebrow="REPAIR OR REPLACE?" heading="When should you replace a faucet or toilet rather than repair it?" centered />
           <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div style={{ background: '#F8FAFC', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '24px' }}>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>REPLACE A FAUCET WHEN:</p>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>REPLACE A FAUCET WHEN:</p>
               <div className="space-y-3">
                 {REPLACE_FAUCET.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
-                    <ArrowRightCircle size={15} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <ArrowRightCircle size={15} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div style={{ background: '#F8FAFC', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '24px' }}>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>REPLACE A TOILET WHEN:</p>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '14px' }}>REPLACE A TOILET WHEN:</p>
               <div className="space-y-3">
                 {REPLACE_TOILET.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
-                    <ArrowRightCircle size={15} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <ArrowRightCircle size={15} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', textAlign: 'center', maxWidth: '640px', margin: '28px auto 0' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', textAlign: 'center', maxWidth: '640px', margin: '28px auto 0' }}>
             A licensed Master Plumber can give you an honest repair-or-replace recommendation based on the actual condition of your fixture — not a recommendation driven by the margin on a new toilet.
           </p>
         </div>
       </section>
 
       {/* SECTION 5: STATS BAR */}
-      <section style={{ background: '#C0D8F0', padding: '48px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             {[
@@ -207,9 +207,9 @@ export default function FaucetToiletRepair() {
               { Icon: Clock, stat: 'Same Day', label: 'Service Often Available' },
             ].map(({ Icon, stat, label }) => (
               <div key={label} style={{ padding: '24px' }}>
-                <Icon size={32} color="#003060" style={{ margin: '0 auto 12px' }} />
-                <p style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: '28px', marginBottom: '6px' }}>{stat}</p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#186090', fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label}</p>
+                <Icon size={32} color="var(--brand-navy)" style={{ margin: '0 auto 12px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '28px', marginBottom: '6px' }}>{stat}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--brand-blue)', fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label}</p>
               </div>
             ))}
           </div>
@@ -219,7 +219,7 @@ export default function FaucetToiletRepair() {
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { icon: Wrench, label: 'Drain Cleaning', href: '/drain-cleaning' },
@@ -228,8 +228,8 @@ export default function FaucetToiletRepair() {
               { icon: AlertTriangle, label: 'Emergency Plumbing', href: '/emergency-plumbing' },
             ].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '13px' }}>{item.label}</span>
+                <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
             ))}
           </div>
@@ -237,7 +237,7 @@ export default function FaucetToiletRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about faucet and toilet repair in MD, DC & Northern VA" centered />
           <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px' }}>

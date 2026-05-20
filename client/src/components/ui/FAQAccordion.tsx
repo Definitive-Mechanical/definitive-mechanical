@@ -56,9 +56,9 @@ export default function FAQAccordion({ items, schema = false }: FAQAccordionProp
                 }}
               >
                 <span style={{
-                  fontFamily: 'Barlow, Arial, sans-serif',
+                  fontFamily: 'var(--font-body)',
                   fontWeight: 600,
-                  color: isOpen ? '#009EC6' : '#003060',
+                  color: isOpen ? 'var(--brand-cyan)' : 'var(--brand-navy)',
                   fontSize: '16px',
                   lineHeight: 1.4,
                   transition: 'color 0.2s',
@@ -67,7 +67,7 @@ export default function FAQAccordion({ items, schema = false }: FAQAccordionProp
                 </span>
                 <span style={{
                   flexShrink: 0,
-                  color: '#009EC6',
+                  color: 'var(--brand-cyan)',
                   transition: 'transform 0.2s',
                   transform: isOpen ? 'rotate(45deg)' : 'none',
                 }}>
@@ -77,9 +77,9 @@ export default function FAQAccordion({ items, schema = false }: FAQAccordionProp
               {isOpen && (
                 <div style={{ paddingBottom: '16px' }}>
                   <p style={{
-                    fontFamily: 'Barlow, Arial, sans-serif',
+                    fontFamily: 'var(--font-body)',
                     fontWeight: 400,
-                    color: '#484848',
+                    color: 'var(--ink-2)',
                     fontSize: '15px',
                     lineHeight: 1.7,
                   }}>

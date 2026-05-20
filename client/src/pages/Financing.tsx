@@ -24,18 +24,18 @@ export default function Financing() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "45vh" }} className="py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "45vh" }} className="py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Financing" }]} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "#009EC6", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
+              <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
                 PLUMBING FINANCING · MD, DC & NORTHERN VIRGINIA
               </p>
-              <h1 style={{ fontFamily: "'Playfair Display',serif", color: "white", fontSize: "clamp(28px,4vw,44px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
+              <h1 style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "clamp(28px,4vw,44px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
                 Plumbing Financing Available
               </h1>
-              <p style={{ fontFamily: "'Barlow',sans-serif", color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "560px", lineHeight: 1.7 }} className="mb-6">
+              <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "560px", lineHeight: 1.7 }} className="mb-6">
                 Definitive Mechanical offers financing through Synchrony Financial for qualified customers. Don't let cost delay a necessary repair — financing options are available for water heater replacements, sewer line work, gas line installations, and more across Maryland, Washington DC, and Northern Virginia.
               </p>
               <TrustBadges variant="dark" badges={["Synchrony Financing", "Quick Application", "Licensed Master Plumber", "MD · DC · VA · DE"]} />
@@ -45,7 +45,7 @@ export default function Financing() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 py-4 px-8 rounded transition-all hover:-translate-y-0.5"
-                  style={{ background: "#009EC6", color: "#003060", fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
+                  style={{ background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
                 >
                   <CreditCard size={18} />
                   APPLY FOR FINANCING
@@ -53,7 +53,7 @@ export default function Financing() {
                 <a
                   href="tel:+13016795849"
                   className="inline-flex items-center gap-2 py-4 px-8 rounded border-2 transition-all hover:-translate-y-0.5"
-                  style={{ background: "transparent", color: "white", borderColor: "white", fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
+                  style={{ background: "transparent", color: "white", borderColor: "white", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
                 >
                   <Phone size={18} />
                   CALL (301) 679-5849
@@ -62,9 +62,9 @@ export default function Financing() {
             </div>
             <div className="lg:col-span-2 hidden lg:flex items-center justify-center">
               <div className="rounded-lg p-10 text-center" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)" }}>
-                <CreditCard size={64} style={{ color: "#009EC6", margin: "0 auto 16px" }} />
-                <p style={{ fontFamily: "'Playfair Display',serif", color: "white", fontSize: "24px", fontWeight: 700 }}>Synchrony</p>
-                <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "#009EC6", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.2em", marginTop: "4px" }}>Financing Partner</p>
+                <CreditCard size={64} style={{ color: "var(--brand-cyan)", margin: "0 auto 16px" }} />
+                <p style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "24px", fontWeight: 700 }}>Synchrony</p>
+                <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.2em", marginTop: "4px" }}>Financing Partner</p>
               </div>
             </div>
           </div>
@@ -81,11 +81,11 @@ export default function Financing() {
               { step: "02", icon: Phone, title: "Schedule Service", body: "Call (301) 679-5849 to schedule your service appointment. Let us know you've applied for financing and we'll coordinate accordingly." },
               { step: "03", icon: CheckCircle2, title: "Approve & Proceed", body: "We provide written pricing before any work begins. Once you approve the estimate, we complete the work and you pay through your Synchrony account." },
             ].map((item, i) => (
-              <div key={i} className="text-center p-8 rounded-md" style={{ background: "#F0F0F0" }}>
-                <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "#009EC6", fontSize: "36px", fontWeight: 700, lineHeight: 1 }} className="mb-4">{item.step}</p>
-                <item.icon size={32} style={{ color: "#003060", margin: "0 auto 12px" }} />
-                <p style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, color: "#003060", fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
-                <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "15px", lineHeight: 1.6 }}>{item.body}</p>
+              <div key={i} className="text-center p-8 rounded-md" style={{ background: "var(--surface-1)" }}>
+                <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "36px", fontWeight: 700, lineHeight: 1 }} className="mb-4">{item.step}</p>
+                <item.icon size={32} style={{ color: "var(--brand-navy)", margin: "0 auto 12px" }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.6 }}>{item.body}</p>
               </div>
             ))}
           </div>
@@ -93,7 +93,7 @@ export default function Financing() {
       </section>
 
       {/* What Can Be Financed */}
-      <section className="py-20" style={{ background: "#003060" }}>
+      <section className="py-20" style={{ background: "var(--brand-navy)" }}>
         <div className="container">
           <SectionHeading eyebrow="ELIGIBLE SERVICES" heading="What plumbing services can be financed?" light />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
@@ -112,8 +112,8 @@ export default function Financing() {
               "Faucet & Fixture Replacement",
             ].map((service, i) => (
               <div key={i} className="flex items-center gap-3 p-4 rounded" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)" }}>
-                <CheckCircle2 size={18} style={{ color: "#009EC6", flexShrink: 0 }} />
-                <p style={{ fontFamily: "'Barlow',sans-serif", color: "rgba(255,255,255,0.9)", fontSize: "14px" }}>{service}</p>
+                <CheckCircle2 size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0 }} />
+                <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.9)", fontSize: "14px" }}>{service}</p>
               </div>
             ))}
           </div>
@@ -123,7 +123,7 @@ export default function Financing() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 py-4 px-10 rounded transition-all hover:-translate-y-0.5"
-              style={{ background: "#009EC6", color: "#003060", fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
+              style={{ background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
             >
               <CreditCard size={20} />
               APPLY FOR FINANCING NOW
@@ -143,11 +143,11 @@ export default function Financing() {
               { icon: ShieldCheck, title: "Protect your home's value", body: "Deferred plumbing maintenance — especially sewer lines, water heaters, and water lines — can affect your home's value and insurability. Financing keeps your home protected." },
               { icon: CheckCircle2, title: "Transparent pricing, no surprises", body: "Definitive Mechanical provides written pricing before any work begins. You know the full cost before you approve the work — financing or not." },
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-4 p-6 rounded-md" style={{ background: "#F0F0F0" }}>
-                <item.icon size={28} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
+              <div key={i} className="flex items-start gap-4 p-6 rounded-md" style={{ background: "var(--surface-1)" }}>
+                <item.icon size={28} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                 <div>
-                  <p style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, color: "#003060", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
-                  <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "15px", lineHeight: 1.6 }}>{item.body}</p>
+                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.6 }}>{item.body}</p>
                 </div>
               </div>
             ))}
@@ -156,7 +156,7 @@ export default function Financing() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ background: "#F0F0F0" }}>
+      <section className="py-20" style={{ background: "var(--surface-1)" }}>
         <div className="container">
           <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Plumbing financing FAQ" />
           <div className="max-w-3xl mx-auto mt-8">

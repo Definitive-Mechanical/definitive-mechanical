@@ -197,18 +197,18 @@ export default function Tier3CityPage({
       </Helmet>
 
       {/* S1: Hero — dark navy gradient matching MD/VA pages */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "50vh" }} className="py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "50vh" }} className="py-16">
         <div className="container">
           <BreadcrumbList items={breadcrumbs.map(b => ({ label: b.label, href: b.href }))} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "#009EC6", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
+              <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
                 {eyebrow}
               </p>
-              <h1 style={{ fontFamily: "'Playfair Display',serif", color: "white", fontSize: "clamp(28px,4vw,40px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
+              <h1 style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "clamp(34px,5vw,56px)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.01em", lineHeight: 1.0 }} className="mb-4">
                 {h1}
               </h1>
-              <p style={{ fontFamily: "'Barlow',sans-serif", color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "560px", lineHeight: 1.7 }} className="mb-6">
+              <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "560px", lineHeight: 1.7 }} className="mb-6">
                 {intro}
               </p>
               <TrustBadges variant="dark" badges={trustItems} />
@@ -234,7 +234,7 @@ export default function Tier3CityPage({
       {featuredNeighborhoods && featuredNeighborhoods.length > 0 && (
         <section className="py-8 bg-white border-b border-gray-100">
           <div className="container">
-            <p style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.25em", color: "#009EC6", marginBottom: "16px" }}>
+            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.25em", color: "var(--brand-cyan)", marginBottom: "16px" }}>
               Dedicated Neighborhood Pages
             </p>
             <div className="flex flex-wrap gap-3">
@@ -248,8 +248,8 @@ export default function Tier3CityPage({
                     alignItems: "center",
                     gap: "6px",
                     border: "2px solid #009EC6",
-                    color: "#009EC6",
-                    fontFamily: "'Barlow Condensed',sans-serif",
+                    color: "var(--brand-cyan)",
+                    fontFamily: 'var(--font-display)',
                     fontWeight: 700,
                     fontSize: "13px",
                     textTransform: "uppercase",
@@ -259,12 +259,12 @@ export default function Tier3CityPage({
                     transition: "all 0.2s",
                   }}
                   onMouseEnter={e => {
-                    (e.currentTarget as HTMLElement).style.background = "#009EC6";
-                    (e.currentTarget as HTMLElement).style.color = "#003060";
+                    (e.currentTarget as HTMLElement).style.background = "var(--brand-cyan)";
+                    (e.currentTarget as HTMLElement).style.color = "var(--brand-navy)";
                   }}
                   onMouseLeave={e => {
                     (e.currentTarget as HTMLElement).style.background = "transparent";
-                    (e.currentTarget as HTMLElement).style.color = "#009EC6";
+                    (e.currentTarget as HTMLElement).style.color = "var(--brand-cyan)";
                   }}
                 >
                   {n.label} →
@@ -289,10 +289,10 @@ export default function Tier3CityPage({
                 <Link key={i} href={svc.href} className="no-underline block">
                   <div
                     className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-md hover:-translate-y-0.5"
-                    style={{ borderTopColor: "#009EC6", border: "1px solid #E8EFF5", borderTop: "3px solid #009EC6" }}
+                    style={{ borderTopColor: "var(--brand-cyan)", border: "1px solid #E8EFF5", borderTop: "3px solid #009EC6" }}
                   >
-                    <Icon size={20} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
-                    <p style={{ fontFamily: "'Barlow',sans-serif", fontWeight: 500, color: "#003060", fontSize: "14px", margin: 0 }}>
+                    <Icon size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
+                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 500, color: "var(--brand-navy)", fontSize: "14px", margin: 0 }}>
                       {svc.label}
                     </p>
                   </div>
@@ -303,22 +303,22 @@ export default function Tier3CityPage({
 
           {/* Well/Septic Callout Box */}
           {wellSepticNote && (
-            <div className="mt-8 bg-gray-50 border-l-4 p-5 rounded-r" style={{ borderLeftColor: "#009EC6" }}>
-              <h3 style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "#009EC6", marginBottom: "8px" }}>
+            <div className="mt-8 bg-gray-50 border-l-4 p-5 rounded-r" style={{ borderLeftColor: "var(--brand-cyan)" }}>
+              <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
                 About Well &amp; Septic Properties
               </h3>
-              <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "14px", lineHeight: 1.7 }}>{wellSepticNote}</p>
+              <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.7 }}>{wellSepticNote}</p>
             </div>
           )}
         </div>
       </section>
 
       {/* S3: Emergency CTA strip */}
-      <section className="py-16" style={{ background: "#F0F0F0" }}>
+      <section className="py-16" style={{ background: "var(--surface-1)" }}>
         <div className="container">
           <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading={`Do you provide 24/7 emergency plumbing in ${schemaCity}?`} />
           <div className="max-w-3xl mb-8">
-            <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "16px", lineHeight: 1.7 }}>
+            <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "16px", lineHeight: 1.7 }}>
               Yes. Emergency plumbing in {schemaCity} is available 24/7, 365 days a year. A live dispatcher answers every call. Licensed Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849.
             </p>
           </div>
@@ -332,7 +332,7 @@ export default function Tier3CityPage({
           <SectionHeading eyebrow="LOCAL PLUMBING NEEDS" heading={localContextHeading} />
           <div className="max-w-3xl">
             {localContextBody.split("\n\n").map((para, i) => (
-              <p key={i} style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "16px", lineHeight: 1.7, marginBottom: "16px" }}>
+              <p key={i} style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "16px", lineHeight: 1.7, marginBottom: "16px" }}>
                 {para}
               </p>
             ))}
@@ -356,8 +356,8 @@ export default function Tier3CityPage({
                   gap: "4px",
                   background: "white",
                   border: "1px solid #E8EFF5",
-                  color: "#009EC6",
-                  fontFamily: "'Barlow',sans-serif",
+                  color: "var(--brand-cyan)",
+                  fontFamily: 'var(--font-body)',
                   fontWeight: 500,
                   fontSize: "14px",
                   padding: "8px 16px",
@@ -365,14 +365,14 @@ export default function Tier3CityPage({
                   transition: "all 0.2s",
                 }}
                 onMouseEnter={e => {
-                  (e.currentTarget as HTMLElement).style.background = "#003060";
+                  (e.currentTarget as HTMLElement).style.background = "var(--brand-navy)";
                   (e.currentTarget as HTMLElement).style.color = "white";
-                  (e.currentTarget as HTMLElement).style.borderColor = "#003060";
+                  (e.currentTarget as HTMLElement).style.borderColor = "var(--brand-navy)";
                 }}
                 onMouseLeave={e => {
                   (e.currentTarget as HTMLElement).style.background = "white";
-                  (e.currentTarget as HTMLElement).style.color = "#009EC6";
-                  (e.currentTarget as HTMLElement).style.borderColor = "#E8EFF5";
+                  (e.currentTarget as HTMLElement).style.color = "var(--brand-cyan)";
+                  (e.currentTarget as HTMLElement).style.borderColor = "var(--border)";
                 }}
               >
                 <MapPin size={12} />
@@ -385,9 +385,9 @@ export default function Tier3CityPage({
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                background: "#003060",
+                background: "var(--brand-navy)",
                 color: "white",
-                fontFamily: "'Barlow Condensed',sans-serif",
+                fontFamily: 'var(--font-display)',
                 fontWeight: 700,
                 fontSize: "13px",
                 textTransform: "uppercase",
@@ -404,7 +404,7 @@ export default function Tier3CityPage({
 
       {/* S6: FAQ */}
       {faqItems.length > 0 && (
-        <section className="py-20" style={{ background: "#F0F0F0" }}>
+        <section className="py-20" style={{ background: "var(--surface-1)" }}>
           <div className="container">
             <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading={`Plumbing FAQ — ${schemaCity}`} />
             <div className="max-w-3xl mx-auto">

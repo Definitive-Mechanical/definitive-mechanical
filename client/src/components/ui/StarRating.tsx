@@ -7,8 +7,8 @@ interface StarRatingProps {
 }
 
 export default function StarRating({ rating, count, variant = 'light' }: StarRatingProps) {
-  const textColor = variant === 'dark' ? 'white' : '#003060';
-  const countColor = variant === 'dark' ? 'rgba(255,255,255,0.7)' : '#787878';
+  const textColor = variant === 'dark' ? 'white' : 'var(--brand-navy)';
+  const countColor = variant === 'dark' ? 'rgba(255,255,255,0.7)' : 'var(--ink-3)';
 
   return (
     <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
@@ -22,11 +22,11 @@ export default function StarRating({ rating, count, variant = 'light' }: StarRat
           />
         ))}
       </div>
-      <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, fontSize: '14px', color: textColor }}>
+      <span style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', color: textColor }}>
         {rating}
       </span>
       {count > 0 && (
-        <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 400, fontSize: '13px', color: countColor }}>
+        <span style={{ fontFamily: 'var(--font-body)', fontWeight: 400, fontSize: '13px', color: countColor }}>
           ({count}+ reviews)
         </span>
       )}

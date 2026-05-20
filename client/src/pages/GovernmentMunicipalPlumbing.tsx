@@ -35,7 +35,7 @@ export default function GovernmentMunicipalPlumbing() {
       {/* HERO */}
       <section style={{
         minHeight: '60vh',
-        background: 'linear-gradient(135deg, #003060 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
         display: 'flex',
         alignItems: 'center',
         position: 'relative',
@@ -46,13 +46,13 @@ export default function GovernmentMunicipalPlumbing() {
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Government & Municipal Plumbing' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 GOVERNMENT & MUNICIPAL PLUMBING · MDOT MBE · VA SWAM CERTIFIED
               </p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 44px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Government & Municipal Plumbing — MDOT MBE & VA SWaM Certified
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
                 Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor serving government agencies, municipalities, and public institutions across Maryland, Washington DC, and Northern Virginia. Master Plumber and Master Gasfitter licensed in four states. CAGE Code 8HCF6. NAICS 238220.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
@@ -72,7 +72,7 @@ export default function GovernmentMunicipalPlumbing() {
       </section>
 
       {/* CERTIFICATIONS */}
-      <section style={{ background: '#009EC6', padding: '32px 0' }}>
+      <section style={{ background: 'var(--brand-cyan)', padding: '32px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -82,9 +82,9 @@ export default function GovernmentMunicipalPlumbing() {
               { icon: FileText, label: 'NAICS Code', value: '238220' },
             ].map((item) => (
               <div key={item.label} style={{ textAlign: 'center', padding: '12px' }}>
-                <item.icon size={24} color="#003060" style={{ margin: '0 auto 8px' }} />
-                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '4px' }}>{item.label}</p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#003060', fontSize: '14px', fontWeight: 600 }}>{item.value}</p>
+                <item.icon size={24} color="var(--brand-navy)" style={{ margin: '0 auto 8px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '4px' }}>{item.label}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--brand-navy)', fontSize: '14px', fontWeight: 600 }}>{item.value}</p>
               </div>
             ))}
           </div>
@@ -114,11 +114,11 @@ export default function GovernmentMunicipalPlumbing() {
                 borderTop: '3px solid #009EC6',
                 borderRadius: '6px',
                 padding: '24px',
-                boxShadow: '0 2px 12px rgba(0,48,96,0.08)',
+                boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
               }}>
-                <Landmark size={22} color="#009EC6" style={{ marginBottom: '12px' }} />
-                <h3 style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '15px', marginBottom: '8px' }}>{service.title}</h3>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '13px', lineHeight: 1.7 }}>{service.desc}</p>
+                <Landmark size={22} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
+                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{service.title}</h3>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.7 }}>{service.desc}</p>
               </div>
             ))}
           </div>
@@ -126,7 +126,7 @@ export default function GovernmentMunicipalPlumbing() {
       </section>
 
       {/* CREDENTIALS DETAIL */}
-      <section style={{ background: '#003060', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="CREDENTIALS & COMPLIANCE"
@@ -155,11 +155,11 @@ export default function GovernmentMunicipalPlumbing() {
               },
             ].map((section) => (
               <div key={section.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '6px', padding: '24px' }}>
-                <h3 style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#009EC6', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '12px' }}>{section.title}</h3>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '12px' }}>{section.title}</h3>
                 {section.items.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '8px' }}>
-                    <CheckCircle2 size={14} color="#009EC6" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '14px' }}>{item}</span>
+                    <CheckCircle2 size={14} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '14px' }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -172,10 +172,10 @@ export default function GovernmentMunicipalPlumbing() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Government & Municipal Plumbing Questions" centered />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)' }}>
+          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
             <FAQAccordion items={GOV_FAQ} schema={true} />
           </div>
         </div>

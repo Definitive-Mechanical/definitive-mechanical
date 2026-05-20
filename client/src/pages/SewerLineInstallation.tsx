@@ -39,17 +39,17 @@ export default function SewerLineInstallation() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, #003060 0%, #001830 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Sewer Line Repair', href: '/sewer-line-repair' }, { label: 'Sewer Line Installation' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p className="eyebrow mb-3">SEWER LINE INSTALLATION · MD, DC & NORTHERN VIRGINIA</p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Sewer Line Installation in Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
                 Definitive Mechanical installs and replaces sewer lines for residential and commercial properties across Maryland, Washington DC, and Northern Virginia. Every installation is performed under the correct permits, to code, by a licensed Master Plumber. Camera inspection included before full replacement is recommended. Financing available. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Camera Inspection Before Replacement", "Licensed Master Plumber", "Permitted & Inspected", "Commercial & Residential"]} />
@@ -69,19 +69,19 @@ export default function SewerLineInstallation() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="WHEN IS REPLACEMENT NEEDED?" heading="When is sewer line installation or full replacement necessary?" centered />
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 24px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 24px', textAlign: 'center' }}>
             Camera inspection typically makes this determination — which is why we use it before recommending replacement. Full sewer line installation or replacement is necessary when:
           </p>
           <div className="max-w-3xl mx-auto space-y-3 mb-8">
             {["The existing line is deteriorated beyond repair along its full length (common in homes with original clay or cast iron lines from the 1940s–1970s)", "The line has collapsed in multiple sections", "Root intrusion has progressed to the point where the pipe wall integrity is compromised throughout", "The line has a chronic belly (low spot) causing repeated backups that cannot be corrected by spot repair", "New construction requires a new sewer line from the building to the municipal connection", "A property is adding a structure or addition that requires extending the sewer system"].map((item) => (
               <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
-                <CheckCircle2 size={18} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.6 }}>{item}</span>
+                <CheckCircle2 size={18} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.6 }}>{item}</span>
               </div>
             ))}
           </div>
-          <div style={{ background: '#C0D8F0', borderRadius: '4px', padding: '16px', maxWidth: '720px', margin: '0 auto' }}>
-            <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.6 }}>
+          <div style={{ background: 'var(--surface-1)', borderRadius: '4px', padding: '16px', maxWidth: '720px', margin: '0 auto' }}>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.6 }}>
               We do not recommend full replacement when a spot repair or clearing will address the actual problem. Our camera inspection process ensures the recommendation matches the actual condition of the line.
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function SewerLineInstallation() {
       </section>
 
       {/* SECTION 3: INSTALLATION PROCESS */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="THE INSTALLATION PROCESS" heading="What does sewer line installation involve?" centered />
           <div className="max-w-3xl mx-auto">
@@ -104,34 +104,34 @@ export default function SewerLineInstallation() {
       <section style={{ background: 'white', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="PERMITS & WSSC" heading="Do you pull permits for sewer line installation?" centered />
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
             Yes. Sewer line installation in Maryland, Washington DC, and Virginia requires permits in virtually all jurisdictions. In Prince George's County and Montgomery County, WSSC (Washington Suburban Sanitary Commission) oversight applies to connections to the public sewer system. We pull permits under our Master Plumber licenses and coordinate inspections — the permit is part of the job, not an optional add-on.
           </p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {LICENSE_BADGES.map((badge) => (
-              <div key={badge} style={{ background: '#003060', color: 'white', fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '13px', letterSpacing: '0.08em', padding: '10px 20px', borderRadius: '4px' }}>{badge}</div>
+              <div key={badge} style={{ background: 'var(--brand-navy)', color: 'white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', letterSpacing: '0.08em', padding: '10px 20px', borderRadius: '4px' }}>{badge}</div>
             ))}
           </div>
         </div>
       </section>
 
       {/* SECTION 5: PRICING */}
-      <section style={{ background: '#F0F0F0', padding: '64px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="PRICING GUIDE" heading="What does sewer line installation cost in Maryland, DC, or Virginia?" centered />
-          <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)', maxWidth: '672px', margin: '0 auto 16px', overflow: 'hidden' }}>
-            <div style={{ background: '#003060', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SCOPE</span>
-              <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
+          <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', maxWidth: '672px', margin: '0 auto 16px', overflow: 'hidden' }}>
+            <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SCOPE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
             </div>
             {PRICING_ROWS.map((row, i) => (
               <div key={row.scope} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{row.scope}</span>
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '14px' }}>{row.range}</span>
+                <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{row.scope}</span>
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{row.range}</span>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#787878', fontSize: '13px', fontStyle: 'italic', lineHeight: 1.6, maxWidth: '672px', margin: '0 auto 20px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '13px', fontStyle: 'italic', lineHeight: 1.6, maxWidth: '672px', margin: '0 auto 20px', textAlign: 'center' }}>
             Cost varies significantly based on line depth, soil conditions, access, hardscape removal and restoration, permit requirements, and connection fees. Written pricing after camera inspection and site assessment. Financing available through Synchrony.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
@@ -144,12 +144,12 @@ export default function SewerLineInstallation() {
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Wrench, label: 'Sewer Line Repair', href: '/sewer-line-repair' }, { icon: Search, label: 'Video Camera Inspection', href: '/video-camera-inspection' }, { icon: Waves, label: 'Hydro-Jetting', href: '/hydro-jetting' }, { icon: CreditCard, label: 'Commercial Plumbing', href: '/commercial-plumbing' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '13px' }}>{item.label}</span>
+                <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
             ))}
           </div>
@@ -157,7 +157,7 @@ export default function SewerLineInstallation() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about sewer line installation in MD, DC & Northern VA" centered />
           <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px' }}>

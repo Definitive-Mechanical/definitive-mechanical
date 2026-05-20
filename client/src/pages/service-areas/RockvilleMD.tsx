@@ -40,7 +40,7 @@ export default function RockvilleMD() {
       </Helmet>
 
       {/* S1: Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "60vh" }} className="py-20">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "60vh" }} className="py-20">
         <div className="container">
           <BreadcrumbList items={[
             {label:"Home",href:"/"},
@@ -51,13 +51,13 @@ export default function RockvilleMD() {
           ]} />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
-              <p style={{ fontFamily:"'Barlow Condensed',sans-serif", color:"#009EC6", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
+              <p style={{ fontFamily:"'var(--font-display)'", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
                 PLUMBING SERVICE · ROCKVILLE, MD · MONTGOMERY COUNTY
               </p>
-              <h1 style={{ fontFamily:"'Playfair Display',serif", color:"white", fontSize:"clamp(28px,4vw,40px)", fontWeight:700, lineHeight:1.15 }} className="mb-4">
+              <h1 style={{ fontFamily:"'var(--font-display)'", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in Rockville, MD
               </h1>
-              <p style={{ fontFamily:"'Barlow',sans-serif", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
+              <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
                 Definitive Mechanical provides licensed plumbing service in Rockville, Maryland for homes, businesses, and government facilities. Emergency plumbing, water heater repair, drain cleaning, gas line service, sewer repair, backflow certification, and commercial plumbing available 24/7. Licensed for Rockville specifically: City of Rockville Master Plumber/Gasfitter #PLL-0002113. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["City of Rockville Master Plumber #PLL-0002113","WSSC #73696","MD State #96958","24/7 Emergency","MDOT MBE Certified"]} />
@@ -77,21 +77,21 @@ export default function RockvilleMD() {
       <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Rockville, MD?" />
-          <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
+          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
             Rockville is Montgomery County's county seat and one of the most economically significant cities in the DMV — a dense mix of established residential neighborhoods, major commercial corridors, government offices, healthcare facilities, and high-density mixed-use development. Definitive Mechanical serves the full range of Rockville plumbing needs from residential homeowners in neighborhoods like Twinbrook and Fallsgrove to commercial and government facilities throughout the city.
           </p>
-          <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
+          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
             Importantly: Definitive Mechanical holds a City of Rockville Master Plumber/Gasfitter license (#PLL-0002113) — a municipal license required for work within the City of Rockville's jurisdiction, separate from the state and WSSC licenses. This is a detail many DMV plumbing contractors overlook, and a credential that demonstrates our commitment to full compliance within every jurisdiction where we work.
           </p>
 
           {/* Rockville Credential Callout */}
-          <div className="border-2 rounded-lg p-5 max-w-2xl mx-auto mb-8 flex items-start gap-4" style={{ borderColor:"#009EC6" }}>
-            <Key size={28} style={{ color:"#009EC6", flexShrink:0, marginTop:2 }} />
+          <div className="border-2 rounded-lg p-5 max-w-2xl mx-auto mb-8 flex items-start gap-4" style={{ borderColor:"var(--brand-cyan)" }}>
+            <Key size={28} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
             <div>
-              <p style={{ fontFamily:"'Barlow Condensed',sans-serif", fontWeight:700, color:"#003060", fontSize:"13px", textTransform:"uppercase", letterSpacing:"0.1em", marginBottom:"6px" }}>
+              <p style={{ fontFamily:"'var(--font-display)'", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", letterSpacing:"0.1em", marginBottom:"6px" }}>
                 CITY OF ROCKVILLE MUNICIPAL LICENSE
               </p>
-              <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", lineHeight:1.6 }}>
+              <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>
                 City of Rockville Master Plumber/Gasfitter #PLL-0002113 — issued by the City of Rockville, required for permitted plumbing work within the City's municipal jurisdiction. Many DMV plumbing contractors hold the state (#96958) and WSSC (#73696) credentials but not this specific Rockville municipal license.
               </p>
             </div>
@@ -100,11 +100,11 @@ export default function RockvilleMD() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((svc, i) => (
               <Link key={i} href={svc.href}>
-                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(0,48,96,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid #009EC6" }}>
-                  <svc.icon size={20} style={{ color:"#009EC6", flexShrink:0, marginTop:2 }} />
+                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(6,59,99,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid #009EC6" }}>
+                  <svc.icon size={20} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
                   <div>
-                    <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:500, color:"#003060", fontSize:"14px" }}>{svc.label}</p>
-                    {svc.note && <p style={{ fontFamily:"'Barlow',sans-serif", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
+                    <p style={{ fontFamily:"'var(--font-body)'", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
+                    {svc.note && <p style={{ fontFamily:"'var(--font-body)'", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
                   </div>
                 </div>
               </Link>
@@ -114,21 +114,21 @@ export default function RockvilleMD() {
       </section>
 
       {/* S3: Emergency */}
-      <section className="py-16" style={{ background:"#F0F0F0" }}>
+      <section className="py-16" style={{ background:"var(--surface-1)" }}>
         <div className="container">
           <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading="Do you provide 24/7 emergency plumbing in Rockville?" />
           <div className="max-w-3xl mb-8">
-            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
+            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
               Yes. Emergency plumbing in Rockville is available 24 hours a day, 7 days a week, 365 days a year. Rockville emergency plumbing is among the highest-value markets in our service area — the combination of high-density residential, commercial, and government facility demand means emergency plumbing response in Rockville is a service we provide regularly and efficiently.
             </p>
-            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }}>
+            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }}>
               Emergency plumber keywords for Rockville carry some of the highest cost-per-click values in the DMV market — which reflects how urgently Rockville residents and businesses need reliable emergency plumbing response. We deliver it. Call (301) 679-5849.
             </p>
           </div>
           <div className="text-center">
             <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
             <p className="mt-4">
-              <Link href="/emergency-plumbing" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", fontWeight:500 }}>
+              <Link href="/emergency-plumbing" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>
                 See our dedicated Emergency Plumber Rockville MD page →
               </Link>
             </p>
@@ -141,16 +141,16 @@ export default function RockvilleMD() {
         <div className="container">
           <SectionHeading eyebrow="LOCAL PLUMBING NEEDS" heading="What plumbing needs are most common for Rockville homes and businesses?" />
           <div className="max-w-3xl">
-            <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:600, color:"#003060", fontSize:"15px" }} className="mb-2">Residential:</p>
-            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
+            <p style={{ fontFamily:"'var(--font-body)'", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }} className="mb-2">Residential:</p>
+            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
               Rockville's housing stock spans from mid-century Twinbrook ranchers (1950s–1960s, often with original cast iron drain lines and galvanized water supply that have been updated over decades) to newer construction in Fallsgrove, King Farm, and Rockville Town Square where modern systems are reaching their first major service milestones. Common residential calls in Rockville include water heater replacement (gas and electric), drain cleaning in mid-century homes, sewer camera inspection before home purchase, and gas line service for kitchen renovations and outdoor appliance additions.
             </p>
-            <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:600, color:"#003060", fontSize:"15px" }} className="mb-2 mt-6">Commercial:</p>
-            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
+            <p style={{ fontFamily:"'var(--font-body)'", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }} className="mb-2 mt-6">Commercial:</p>
+            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
               Rockville's commercial corridor — particularly along MD-355/Rockville Pike — includes restaurants, retail, medical offices, and government-adjacent businesses with backflow certification requirements, commercial drain maintenance needs, and gas system service. We provide backflow certification program management for commercial properties in Rockville.
             </p>
-            <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:600, color:"#003060", fontSize:"15px" }} className="mb-2 mt-4">Government facilities:</p>
-            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }}>
+            <p style={{ fontFamily:"'var(--font-body)'", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }} className="mb-2 mt-4">Government facilities:</p>
+            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }}>
               Rockville's municipal facilities, county offices, and government-adjacent properties are candidates for our MBE-certified commercial and government plumbing services.
             </p>
           </div>
@@ -158,20 +158,20 @@ export default function RockvilleMD() {
       </section>
 
       {/* S5: Commercial */}
-      <section className="py-16" style={{ background:"#003060" }}>
+      <section className="py-16" style={{ background:"var(--brand-navy)" }}>
         <div className="container text-center">
           <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Commercial & Government Plumbing in Rockville" light />
-          <p style={{ fontFamily:"'Barlow',sans-serif", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
+          <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
             Definitive Mechanical holds City of Rockville License #PLL-0002113, MDOT MBE Certification (Cert No. 20-134), and CAGE Code 8HCF6 — providing full commercial compliance credentials for Rockville businesses and government facilities.
           </p>
           <div className="flex flex-wrap gap-2 justify-center mt-6 mb-6">
             {["City of Rockville #PLL-0002113","MDOT MBE Cert 20-134","CAGE 8HCF6"].map((badge, i) => (
-              <span key={i} style={{ background:"white", color:"#003060", fontFamily:"'Barlow Condensed',sans-serif", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
+              <span key={i} style={{ background:"white", color:"var(--brand-navy)", fontFamily:"'var(--font-display)'", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
             ))}
           </div>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'Barlow',sans-serif", fontSize:"14px", fontWeight:500 }}>Commercial Plumbing →</Link>
-            <Link href="/government-municipal-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'Barlow',sans-serif", fontSize:"14px", fontWeight:500 }}>Government & Municipal →</Link>
+            <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'var(--font-body)'", fontSize:"14px", fontWeight:500 }}>Commercial Plumbing →</Link>
+            <Link href="/government-municipal-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'var(--font-body)'", fontSize:"14px", fontWeight:500 }}>Government & Municipal →</Link>
           </div>
         </div>
       </section>
@@ -181,22 +181,22 @@ export default function RockvilleMD() {
         <div className="container">
           <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading="Areas near Rockville we also serve" />
           <div className="mb-3">
-            <span style={{ fontFamily:"'Barlow Condensed',sans-serif", fontWeight:700, color:"#003060", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
-            <Link href="/service-areas/maryland/montgomery-county/bethesda-md" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>Bethesda, MD</Link>
-            <Link href="/service-areas/maryland/montgomery-county/potomac-md" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>Potomac, MD</Link>
+            <span style={{ fontFamily:"'var(--font-display)'", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
+            <Link href="/service-areas/maryland/montgomery-county/bethesda-md" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Bethesda, MD</Link>
+            <Link href="/service-areas/maryland/montgomery-county/potomac-md" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Potomac, MD</Link>
             {["Gaithersburg, MD","Germantown, MD","North Bethesda, MD","Derwood, MD","Travilah, MD","Darnestown, MD","Cabin John, MD"].map((city, i) => (
-              <span key={i} style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", marginRight:"12px" }}>{city}</span>
+              <span key={i} style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", marginRight:"12px" }}>{city}</span>
             ))}
           </div>
           <div className="flex flex-wrap gap-4 mt-2">
-            <Link href="/service-areas/maryland/montgomery-county" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", fontWeight:500 }}>Montgomery County Plumbing Services →</Link>
-            <Link href="/service-areas" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
+            <Link href="/service-areas/maryland/montgomery-county" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>Montgomery County Plumbing Services →</Link>
+            <Link href="/service-areas" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
           </div>
         </div>
       </section>
 
       {/* S8: FAQ */}
-      <section className="py-20" style={{ background:"#F0F0F0" }}>
+      <section className="py-20" style={{ background:"var(--surface-1)" }}>
         <div className="container">
           <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Plumbing FAQ — Rockville, MD" />
           <div className="max-w-3xl mx-auto">

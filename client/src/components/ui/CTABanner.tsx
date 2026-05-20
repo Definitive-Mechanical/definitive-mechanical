@@ -10,8 +10,8 @@ interface CTABannerProps {
 
 export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn, variant = 'gradient' }: CTABannerProps) {
   const bg = variant === 'navy'
-    ? '#003060'
-    : 'linear-gradient(135deg, #003060 0%, #001830 60%, rgba(0,158,198,0.15) 100%)';
+    ? 'var(--brand-navy)'
+    : 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 60%, rgba(79,179,232,0.12) 100%)';
 
   return (
     <section style={{ background: bg, padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
@@ -26,18 +26,20 @@ export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn, 
       }} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
         <h2 style={{
-          fontFamily: 'Playfair Display, Georgia, serif',
+          fontFamily: 'var(--font-display)',
           fontWeight: 700,
+          textTransform: 'uppercase',
+          letterSpacing: '0.02em',
           color: 'white',
-          fontSize: 'clamp(22px, 3vw, 32px)',
+          fontSize: 'clamp(28px, 4vw, 48px)',
           marginBottom: '16px',
-          lineHeight: 1.3,
+          lineHeight: 1.05,
         }}>
           {heading}
         </h2>
         {subtext && (
           <p style={{
-            fontFamily: 'Barlow, Arial, sans-serif',
+            fontFamily: 'var(--font-body)',
             fontWeight: 400,
             color: 'rgba(255,255,255,0.8)',
             fontSize: '17px',

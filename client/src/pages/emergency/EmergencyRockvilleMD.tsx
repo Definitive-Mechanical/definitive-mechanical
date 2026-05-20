@@ -80,7 +80,7 @@ export default function EmergencyRockvilleMD() {
       <section style={{ background: "linear-gradient(135deg, #001830 0%, #003060 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Rockville MD" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
             24/7 EMERGENCY PLUMBER · ROCKVILLE, MD · CITY OF ROCKVILLE LICENSED
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: "'Playfair Display', serif" }}>
@@ -92,7 +92,7 @@ export default function EmergencyRockvilleMD() {
 
           {/* Dominant Phone Button */}
           <div className="max-w-2xl mx-auto">
-            <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "#009EC6", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
+            <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
               <Phone className="mr-3" size={24} /> CALL (301) 679-5849 — LIVE DISPATCHER 24/7
             </a>
             <div className="mt-3 flex justify-center">
@@ -124,14 +124,14 @@ export default function EmergencyRockvilleMD() {
       </section>
 
       {/* Section 3 — Emergency Types */}
-      <section style={{ backgroundColor: "#F0F0F0" }} className="py-16">
+      <section style={{ backgroundColor: "var(--surface-1)" }} className="py-16">
         <div className="container">
           <SectionHeading eyebrow="EMERGENCY TYPES" heading="Rockville emergency plumbing situations we handle" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
             {EMERGENCY_TYPES.map((type) => (
               <div key={type.title} className="bg-white rounded-md p-4 shadow-sm">
-                <type.icon size={28} style={{ color: "#009EC6" }} className="mb-2" />
-                <h3 className="font-bold text-sm mb-1" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
+                <type.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
+                <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
                 <p className="text-xs text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{type.body}</p>
               </div>
             ))}
@@ -143,7 +143,7 @@ export default function EmergencyRockvilleMD() {
       </section>
 
       {/* Section 4 — License Proof */}
-      <section style={{ backgroundColor: "#003060" }} className="py-14">
+      <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="LICENSE PROOF" heading="Three licenses for Rockville emergency plumbing authority" light />
           <p className="text-white/80 text-center max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif", fontSize: "15px" }}>
@@ -156,9 +156,9 @@ export default function EmergencyRockvilleMD() {
               { label: "Maryland State", num: "#96958" },
             ].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
-                <Key size={28} style={{ color: "#009EC6" }} className="mb-2" />
-                <p className="text-sm font-semibold" style={{ color: "#003060", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
-                <p className="font-bold text-xl" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
+                <Key size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
+                <p className="text-sm font-semibold" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
+                <p className="font-bold text-xl" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
               </div>
             ))}
           </div>
@@ -177,9 +177,9 @@ export default function EmergencyRockvilleMD() {
               { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." },
               { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." },
             ].map((item) => (
-              <div key={item.title} style={{ backgroundColor: "#F0F0F0" }} className="rounded-md p-5">
-                <item.icon size={24} style={{ color: "#009EC6" }} className="mb-2" />
-                <h3 className="font-bold mb-1" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
+              <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
+                <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
+                <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
                 <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{item.body}</p>
               </div>
             ))}
@@ -188,9 +188,9 @@ export default function EmergencyRockvilleMD() {
       </section>
 
       {/* Section 6 — Related Pages */}
-      <section style={{ backgroundColor: "#F0F0F0" }} className="py-12">
+      <section style={{ backgroundColor: "var(--surface-1)" }} className="py-12">
         <div className="container">
-          <h2 className="text-xl font-bold mb-6" style={{ color: "#003060", fontFamily: "'Playfair Display', serif" }}>Related Plumbing Services</h2>
+          <h2 className="text-xl font-bold mb-6" style={{ color: "var(--brand-navy)", fontFamily: "'Playfair Display', serif" }}>Related Plumbing Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { label: "Plumber in Rockville, MD", href: "/service-areas/maryland/montgomery-county/rockville-md/" },
@@ -198,7 +198,7 @@ export default function EmergencyRockvilleMD() {
               { label: "Sewer Line Repair", href: "/sewer-line-repair/" },
               { label: "Water Heater Repair", href: "/water-heater-repair/" },
             ].map((link) => (
-              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium hover:opacity-80 transition-opacity block" style={{ borderColor: "#009EC6", color: "#009EC6", fontFamily: "'Barlow', sans-serif" }}>
+              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium hover:opacity-80 transition-opacity block" style={{ borderColor: "var(--brand-cyan)", color: "var(--brand-cyan)", fontFamily: "'Barlow', sans-serif" }}>
                 {link.label} →
               </Link>
             ))}

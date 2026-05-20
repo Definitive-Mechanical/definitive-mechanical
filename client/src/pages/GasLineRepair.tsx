@@ -37,10 +37,10 @@ export default function GasLineRepair() {
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p className="eyebrow mb-3">GAS LINE REPAIR · LICENSED MASTER GASFITTER · MD, DC & NORTHERN VIRGINIA</p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Gas Line Repair — Licensed Master Gasfitter Serving Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
                 Definitive Mechanical provides gas line repair for homes and businesses across Maryland, Washington DC, and Northern Virginia. Every gas line repair is performed by a licensed Master Gasfitter — licensed in MD (State #96958, WSSC #73696), Washington DC (#PGM1002236), Virginia (#2710064209), and Delaware (#PL-0012866). 24/7 emergency gas service available. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Gasfitter — MD, DC, VA & DE", "24/7 Emergency Gas Service", "Commercial & Residential"]} />
@@ -65,26 +65,26 @@ export default function GasLineRepair() {
             <div style={{ borderLeft: '4px solid #C0392B', padding: '20px', background: '#FFF8F8', borderRadius: '4px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
                 <AlertTriangle size={20} color="#C0392B" />
-                <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#C0392B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>EVACUATE AND CALL</span>
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#C0392B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>EVACUATE AND CALL</span>
               </div>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '14px', marginBottom: '12px' }}>Warning signs that require immediate action:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '12px' }}>Warning signs that require immediate action:</p>
               <div className="space-y-2">
                 {["Smell of rotten egg or sulfur — evacuate and call immediately", "Hissing or whistling sound near a gas line, appliance, or meter", "Dead or dying vegetation above an underground gas line without other explanation", "Visible bubbling in puddles or wet ground near a gas line location", "A gas appliance that will not light or that has intermittent ignition", "Higher-than-normal gas bills without a change in usage", "Physical damage to visible gas piping"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
                     <AlertCircle size={16} color="#C0392B" style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
             {/* If you smell gas */}
             <div style={{ borderLeft: '4px solid #F59E0B', padding: '20px', background: '#FFFBF0', borderRadius: '4px' }}>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#F59E0B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '16px' }}>IF YOU SMELL GAS — IMMEDIATELY DO THIS:</p>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '16px' }}>IF YOU SMELL GAS — IMMEDIATELY DO THIS:</p>
               <div className="space-y-3">
                 {["Do not operate any electrical switches — on or off", "Do not use your phone inside the building", "Leave the building immediately", "Once safely outside, call your gas company's emergency line", "Call 911 if you cannot reach the gas company or if there is any sign of ignition risk", "Once the gas company has responded and shut off supply, call Definitive Mechanical at (301) 679-5849 for licensed gas line repair"].map((item, i) => (
                   <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
-                    <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#F59E0B', fontSize: '14px', flexShrink: 0, minWidth: '20px' }}>{i + 1}.</span>
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '14px', flexShrink: 0, minWidth: '20px' }}>{i + 1}.</span>
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -94,7 +94,7 @@ export default function GasLineRepair() {
       </section>
 
       {/* SECTION 3: SERVICES */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="GAS LINE REPAIR SERVICES" heading="What gas line repair services does Definitive Mechanical provide?" centered />
           <div className="max-w-4xl mx-auto space-y-4">
@@ -106,11 +106,11 @@ export default function GasLineRepair() {
               { Icon: Phone, title: "Gas Meter and Service Line Coordination", body: "Coordination with your gas utility (Washington Gas, BGE where applicable) for meter-side issues that require utility involvement alongside our service-side repair.", link: null },
             ].map(({ Icon, title, body, link }) => (
               <div key={title} style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '24px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                <Icon size={28} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <Icon size={28} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.6, marginBottom: link ? '8px' : 0 }}>{body}</p>
-                  {link && <Link href={link.href} style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 500, color: '#009EC6', fontSize: '13px', textDecoration: 'none' }}>{link.label}</Link>}
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6, marginBottom: link ? '8px' : 0 }}>{body}</p>
+                  {link && <Link href={link.href} style={{ fontFamily: 'var(--font-body)', fontWeight: 500, color: 'var(--brand-cyan)', fontSize: '13px', textDecoration: 'none' }}>{link.label}</Link>}
                 </div>
               </div>
             ))}
@@ -119,26 +119,26 @@ export default function GasLineRepair() {
       </section>
 
       {/* SECTION 4: WHY LICENSED MATTERS */}
-      <section style={{ background: '#003060', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="WHY LICENSING MATTERS" heading="Why does gas line repair require a licensed Master Gasfitter?" centered light />
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 40px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 40px', textAlign: 'center' }}>
             In Maryland, Washington DC, and Virginia, gas line installation and repair must be performed by or under the direct supervision of a licensed Master Gasfitter. This is a legal requirement — not a suggestion. Gas line work directly affects life safety. An improperly installed or repaired gas fitting, an incorrect pressure setting, a missed leak, or non-code-compliant venting can result in gas accumulation, carbon monoxide exposure, fire, or explosion.
           </p>
           {/* License Table */}
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,0,0,0.3)', maxWidth: '560px', margin: '0 auto', overflow: 'hidden' }}>
-            <div style={{ background: '#001830', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>JURISDICTION</span>
-              <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>LICENSE NUMBER</span>
+            <div style={{ background: 'var(--brand-navy-dark)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>JURISDICTION</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>LICENSE NUMBER</span>
             </div>
             {LICENSE_ROWS.map((row, i) => (
               <div key={row.jurisdiction} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '11px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{row.jurisdiction}</span>
-                <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px' }}>{row.number}</span>
+                <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{row.jurisdiction}</span>
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px' }}>{row.number}</span>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.65)', fontSize: '13px', textAlign: 'center', marginTop: '16px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.65)', fontSize: '13px', textAlign: 'center', marginTop: '16px' }}>
             This multi-jurisdiction gasfitter credential stack is unique among local plumbing contractors in the DMV market.
           </p>
         </div>
@@ -149,22 +149,22 @@ export default function GasLineRepair() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Commercial gas line repair Maryland DC Northern Virginia — licensed Master Gasfitter" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)' }} />
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Commercial gas line repair Maryland DC Northern Virginia — licensed Master Gasfitter" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }} />
             </div>
             <div>
               <p className="eyebrow mb-2">COMMERCIAL GAS SYSTEMS</p>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>Do you repair commercial gas lines?</h2>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>Do you repair commercial gas lines?</h2>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 Yes. Definitive Mechanical repairs commercial gas systems for restaurants, commercial kitchens, office buildings, industrial facilities, government buildings, and multi-family properties. Commercial gas line work often involves larger pipe diameters, higher pressure systems, and more complex appliance configurations than residential work — all of which require the same licensed Master Gasfitter oversight.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
                 For commercial gas system assessment or emergency repair, call (301) 679-5849.
               </p>
               <div className="space-y-2 mb-6">
                 {["Restaurants and commercial kitchens", "Industrial equipment and manufacturing", "Government and institutional facilities", "Multi-family and hospitality properties", "HVAC systems and boiler connections"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                    <CheckCircle2 size={16} color="#009EC6" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px' }}>{item}</span>
+                    <CheckCircle2 size={16} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px' }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -175,14 +175,14 @@ export default function GasLineRepair() {
       </section>
 
       {/* RELATED SERVICES */}
-      <section style={{ background: '#F0F0F0', padding: '48px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
             {[{ icon: Search, label: 'Gas Leak Repair', href: '/gas-leak-repair' }, { icon: Wrench, label: 'Gas Line Installation', href: '/gas-line-installation' }, { icon: AlertTriangle, label: 'Emergency Plumbing', href: '/emergency-plumbing' }, { icon: CheckCircle2, label: 'Licenses & Certifications', href: '/licenses-certifications' }, { icon: Gauge, label: 'Boiler & Furnace Repair', href: '/boiler-furnace-repair' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '13px' }}>{item.label}</span>
+                <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
             ))}
           </div>
@@ -193,7 +193,7 @@ export default function GasLineRepair() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about gas line repair in MD, DC & Northern VA" centered />
-          <div style={{ background: '#F0F0F0', borderRadius: '6px', padding: '8px 32px' }}>
+          <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '8px 32px' }}>
             <FAQAccordion items={FAQ_ITEMS} schema={true} />
           </div>
         </div>

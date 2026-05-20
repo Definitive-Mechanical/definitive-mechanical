@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* ============================================================
+   Definitive Mechanical — Design System Tokens
+   Barlow Condensed (display) + Public Sans (body) + JetBrains Mono
+   Brand: Navy #063B63 · Blue #0075BA · Red #E40613 · Cyan #4FB3E8
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -43,119 +50,308 @@
 }
 
 :root {
-  /* Brand colors */
-  --brand-navy: #003060;
-  --brand-cyan: #009EC6;
-  --brand-mid: #186090;
-  --brand-light: #C0D8F0;
-  --brand-bg: #F0F0F0;
-  --brand-text: #484848;
-  --brand-muted: #787878;
+  /* ── Brand palette ─────────────────────────────────────── */
+  --brand-blue:    #0075BA;
+  --brand-blue-2:  #005F99;
+  --brand-navy:    #063B63;
+  --brand-navy-2:  #04294A;
+  --brand-navy-dark: #04243C;
+  --brand-red:     #E40613;
+  --brand-red-2:   #C8050F;
+  --brand-red-3:   #A8040C;
+  --brand-cyan:    #4FB3E8;
 
-  --primary: oklch(0.28 0.12 240);
-  --primary-foreground: oklch(0.97 0.01 240);
-  --sidebar-primary: oklch(0.35 0.12 240);
-  --sidebar-primary-foreground: oklch(0.97 0.01 240);
+  /* ── Neutrals ──────────────────────────────────────────── */
+  --ink:           #1A1A2E;
+  --ink-2:         #4A4F66;
+  --ink-3:         #8A90A8;
+  --paper:         #FFFFFF;
+  --paper-2:       #F5F6F8;
+  --paper-3:       #E6E8EE;
+  --paper-4:       #D2D6E0;
+
+  /* ── Semantic ──────────────────────────────────────────── */
+  --success:       #1F8A4C;
+  --warning:       #E89D1A;
+
+  /* ── Fonts ─────────────────────────────────────────────── */
+  --font-display:  'Barlow Condensed', 'Oswald', system-ui, sans-serif;
+  --font-body:     'Public Sans', system-ui, -apple-system, sans-serif;
+  --font-mono:     'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* ── Type scale ────────────────────────────────────────── */
+  --text-hero:     4.5rem;
+  --text-h1:       3rem;
+  --text-h2:       2.25rem;
+  --text-h3:       1.5rem;
+  --text-h4:       1.25rem;
+  --text-body:     1rem;
+  --text-sm:       0.875rem;
+  --text-xs:       0.75rem;
+  --text-eyebrow:  0.875rem;
+
+  /* ── Spacing (8px grid) ────────────────────────────────── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* ── Radii ─────────────────────────────────────────────── */
+  --radius:    0.5rem;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
+
+  /* ── Shadows (navy-tinted) ─────────────────────────────── */
+  --shadow-1: 0 1px 2px rgba(6,59,99,0.06), 0 1px 1px rgba(6,59,99,0.04);
+  --shadow-2: 0 4px 12px rgba(6,59,99,0.08), 0 1px 2px rgba(6,59,99,0.04);
+  --shadow-3: 0 12px 28px rgba(6,59,99,0.12), 0 4px 8px rgba(6,59,99,0.06);
+  --shadow-hero: 0 24px 48px rgba(6,59,99,0.25);
+
+  /* ── Motion ────────────────────────────────────────────── */
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --dur-fast:    120ms;
+  --dur-ui:      180ms;
+  --dur-base:    240ms;
+  --dur-slow:    600ms;
+
+  /* ── Layout ────────────────────────────────────────────── */
+  --max-width:     1280px;
+  --gutter:        48px;
+  --gutter-mobile: 24px;
+  --header-h:      72px;
+
+  /* ── Shadcn/Tailwind semantic tokens ───────────────────── */
+  --primary:              oklch(0.28 0.14 240);
+  --primary-foreground:   oklch(0.97 0.01 240);
+  --secondary:            oklch(0.96 0.005 240);
+  --secondary-foreground: oklch(0.28 0.14 240);
+  --muted:                oklch(0.967 0.001 286.375);
+  --muted-foreground:     oklch(0.552 0.016 285.938);
+  --accent:               oklch(0.967 0.001 286.375);
+  --accent-foreground:    oklch(0.141 0.005 285.823);
+  --destructive:          oklch(0.55 0.24 27);
+  --destructive-foreground: oklch(0.985 0 0);
+  --background:           oklch(1 0 0);
+  --foreground:           oklch(0.14 0.02 260);
+  --card:                 oklch(1 0 0);
+  --card-foreground:      oklch(0.14 0.02 260);
+  --popover:              oklch(1 0 0);
+  --popover-foreground:   oklch(0.14 0.02 260);
+  --border:               oklch(0.92 0.004 286.32);
+  --input:                oklch(0.92 0.004 286.32);
+  --ring:                 oklch(0.45 0.14 230);
   --chart-1: oklch(0.6 0.1 200);
   --chart-2: oklch(0.5 0.12 210);
   --chart-3: oklch(0.4 0.12 220);
   --chart-4: oklch(0.35 0.12 230);
   --chart-5: oklch(0.28 0.12 240);
-  --radius: 0.5rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.235 0.015 65);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.235 0.015 65);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375);
-  --secondary-foreground: oklch(0.4 0.015 65);
-  --muted: oklch(0.967 0.001 286.375);
-  --muted-foreground: oklch(0.552 0.016 285.938);
-  --accent: oklch(0.967 0.001 286.375);
-  --accent-foreground: oklch(0.141 0.005 285.823);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.5 0.12 220);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
+  --sidebar:              oklch(0.985 0 0);
+  --sidebar-foreground:   oklch(0.14 0.02 260);
+  --sidebar-primary:      oklch(0.28 0.14 240);
+  --sidebar-primary-foreground: oklch(0.97 0.01 240);
+  --sidebar-accent:       oklch(0.967 0.001 286.375);
   --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.5 0.12 220);
+  --sidebar-border:       oklch(0.92 0.004 286.32);
+  --sidebar-ring:         oklch(0.45 0.14 230);
 }
 
+/* ============================================================
+   Base layer
+   ============================================================ */
 @layer base {
   * {
     @apply border-border outline-ring/50;
     box-sizing: border-box;
   }
-  body {
-    @apply bg-background text-foreground;
-    font-family: 'Barlow', Arial, sans-serif;
+
+  html {
+    font-family: var(--font-body);
+    font-size: 16px;
+    color: var(--ink);
+    background: var(--paper);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-size: var(--text-h1); font-weight: 700; line-height: 1.05; }
+  h2 { font-size: var(--text-h2); font-weight: 700; line-height: 1.1; }
+  h3 { font-size: var(--text-h3); font-weight: 700; line-height: 1.2; }
+  h4 { font-family: var(--font-body); font-size: var(--text-h4); font-weight: 700; line-height: 1.3; }
+
+  a {
+    color: var(--brand-blue);
+    text-decoration: none;
+    transition: color var(--dur-ui) var(--ease-out);
+  }
+  a:hover { text-decoration: underline; text-underline-offset: 2px; color: var(--brand-blue-2); }
+
+  ::selection { background: var(--brand-blue); color: white; }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
   [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
   a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
+  select:not(:disabled) {
+    cursor: pointer;
   }
-  /* Active press effect on buttons */
-  button:active:not(:disabled),
-  a[href]:active {
-    transform: scale(0.98);
+
+  button:active:not(:disabled) {
+    transform: scale(0.97);
   }
 }
 
+/* ============================================================
+   Component layer
+   ============================================================ */
 @layer components {
+
+  /* ── Container ─────────────────────────────────────────── */
   .container {
     width: 100%;
+    max-width: var(--max-width);
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--gutter-mobile);
+    padding-right: var(--gutter-mobile);
   }
-
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
-  }
-
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      max-width: 1280px;
+      padding-left: var(--gutter);
+      padding-right: var(--gutter);
     }
   }
 
-  /* Eyebrow text utility */
+  .flex { min-height: 0; min-width: 0; }
+
+  /* ── Eyebrow ───────────────────────────────────────────── */
   .eyebrow {
-    font-family: 'Barlow Condensed', Arial, sans-serif;
+    font-family: var(--font-body);
     font-weight: 700;
-    font-size: 11px;
+    font-size: 13px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    letter-spacing: 0.25em;
-    color: #009EC6;
+    color: var(--brand-blue);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .eyebrow::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: currentColor;
+    flex-shrink: 0;
+  }
+  .eyebrow.on-dark { color: var(--brand-cyan); }
+
+  /* ── Buttons ───────────────────────────────────────────── */
+  .dm-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 14px 22px;
+    border-radius: var(--radius-md);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    transition: all var(--dur-ui) var(--ease-out);
+    text-decoration: none;
+    line-height: 1;
+  }
+  .dm-btn:active { transform: translateY(1px) scale(0.98); }
+  .dm-btn.lg { font-size: 16px; padding: 16px 28px; }
+  .dm-btn.sm { font-size: 12px; padding: 10px 14px; }
+
+  .dm-btn-primary { background: var(--brand-red); color: #fff; }
+  .dm-btn-primary:hover { background: var(--brand-red-2); text-decoration: none; color: #fff; }
+  .dm-btn-primary:active { background: var(--brand-red-3); }
+
+  .dm-btn-secondary { background: var(--brand-blue); color: #fff; }
+  .dm-btn-secondary:hover { background: var(--brand-blue-2); text-decoration: none; color: #fff; }
+
+  .dm-btn-outline {
+    background: transparent;
+    color: var(--brand-blue);
+    border: 2px solid var(--brand-blue);
+    padding: 12px 20px;
+  }
+  .dm-btn-outline:hover { background: var(--brand-blue); color: #fff; text-decoration: none; }
+  .dm-btn-outline.on-dark { color: #fff; border-color: rgba(255,255,255,0.4); }
+  .dm-btn-outline.on-dark:hover { background: #fff; color: var(--brand-navy); }
+
+  /* ── Cards ─────────────────────────────────────────────── */
+  .dm-card {
+    background: #fff;
+    border: 1px solid var(--paper-3);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-2);
+    transition: transform var(--dur-ui) var(--ease-out),
+                box-shadow var(--dur-ui) var(--ease-out),
+                border-color var(--dur-ui) var(--ease-out);
+  }
+  .dm-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-3);
+    border-color: rgba(0,117,186,0.25);
   }
 
-  /* Mobile sticky call bar */
+  /* ── License card (dark) ───────────────────────────────── */
+  .dm-license-card {
+    position: relative;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-lg);
+    padding: 22px 22px 22px 30px;
+    overflow: hidden;
+    transition: background var(--dur-ui) var(--ease-out);
+  }
+  .dm-license-card::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: var(--brand-blue);
+  }
+  .dm-license-card:hover { background: rgba(255,255,255,0.07); }
+
+  /* ── Reveal animation ──────────────────────────────────── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity var(--dur-slow) var(--ease-out),
+                transform var(--dur-slow) var(--ease-out);
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* ── Mobile sticky call bar ────────────────────────────── */
   .mobile-call-bar {
     position: fixed;
     bottom: 0;
@@ -166,46 +362,57 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: #009EC6;
-    color: #003060;
-    font-family: 'Barlow Condensed', Arial, sans-serif;
+    background: var(--brand-red);
+    color: #fff;
+    font-family: var(--font-body);
     font-weight: 700;
     font-size: 13px;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-decoration: none;
     height: 52px;
     padding: 0 16px;
-    box-shadow: 0 -4px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 -4px 16px rgba(228,6,19,0.35);
+    transition: background var(--dur-ui) var(--ease-out);
   }
+  .mobile-call-bar:hover { background: var(--brand-red-2); color: #fff; text-decoration: none; }
 
-  /* Add bottom padding on mobile to account for sticky call bar */
   @media (max-width: 1023px) {
-    body {
-      padding-bottom: 52px;
-    }
+    body { padding-bottom: 52px; }
+  }
+
+  /* ── Mono utility ──────────────────────────────────────── */
+  .mono {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    letter-spacing: -0.01em;
   }
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Transitions */
-* {
-  transition-property: color, background-color, border-color, box-shadow, transform, opacity;
-  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  transition-duration: 200ms;
-}
-
-/* Override for elements that shouldn't transition */
-input, textarea, select {
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-/* Pulsing dot for emergency indicators */
+/* ============================================================
+   Keyframes
+   ============================================================ */
 @keyframes pulse-dot {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.75); }
+  50%       { opacity: 0.4; transform: scale(0.75); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ============================================================
+   Reduced motion
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

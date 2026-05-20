@@ -41,7 +41,7 @@ export default function BethesdaMD() {
       </Helmet>
 
       {/* S1: Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "60vh" }} className="py-20">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "60vh" }} className="py-20">
         <div className="container">
           <BreadcrumbList items={[
             {label:"Home",href:"/"},
@@ -52,13 +52,13 @@ export default function BethesdaMD() {
           ]} />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-8 items-center">
             <div className="">
-              <p style={{ fontFamily:"'Barlow Condensed',sans-serif", color:"#009EC6", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
+              <p style={{ fontFamily:"'var(--font-display)'", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">
                 PLUMBING SERVICE · BETHESDA, MD · MONTGOMERY COUNTY
               </p>
-              <h1 style={{ fontFamily:"'Playfair Display',serif", color:"white", fontSize:"clamp(28px,4vw,40px)", fontWeight:700, lineHeight:1.15 }} className="mb-4">
+              <h1 style={{ fontFamily:"'var(--font-display)'", color:"white", fontSize:"clamp(34px,5vw,56px)", fontWeight:700, textTransform:"uppercase", letterSpacing:"0.01em", lineHeight:1.0 }} className="mb-4">
                 Plumber in Bethesda, MD
               </h1>
-              <p style={{ fontFamily:"'Barlow',sans-serif", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
+              <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
                 Definitive Mechanical provides licensed plumbing service in Bethesda, Maryland for homeowners, businesses, and commercial properties. Emergency plumbing, water heater repair, drain cleaning, gas line service, sewer repair, and backflow certification available 24/7. Maryland Master Plumber/Gasfitter #96958, WSSC #73696. Upfront pricing. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["MD Master Plumber #96958","WSSC #73696","24/7 Emergency","Serving Bethesda from Largo, MD","MDOT MBE Certified"]} />
@@ -78,17 +78,17 @@ export default function BethesdaMD() {
       <section className="py-20" style={{ background:"#FAFBFC" }}>
         <div className="container">
           <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Bethesda, MD?" />
-          <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
+          <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
             Bethesda is one of the most affluent communities in the DMV — characterized by high-value residential properties, a dense commercial corridor along Wisconsin Avenue, major medical and research institutions (NIH, Walter Reed National Military Medical Center), and a premium residential market that demands licensed, professional, and reliable plumbing service.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((svc, i) => (
               <Link key={i} href={svc.href}>
-                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(0,48,96,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid #009EC6" }}>
-                  <svc.icon size={20} style={{ color:"#009EC6", flexShrink:0, marginTop:2 }} />
+                <div className="bg-white rounded-md p-4 flex items-start gap-3 border-t-4 cursor-pointer transition-all duration-200 hover:shadow-lg hover:-translate-y-1" style={{ boxShadow:"0 1px 4px rgba(6,59,99,0.08)", border:"1px solid #E8EFF5", borderTop:"3px solid #009EC6" }}>
+                  <svc.icon size={20} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
                   <div>
-                    <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:500, color:"#003060", fontSize:"14px" }}>{svc.label}</p>
-                    {svc.note && <p style={{ fontFamily:"'Barlow',sans-serif", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
+                    <p style={{ fontFamily:"'var(--font-body)'", fontWeight:500, color:"var(--brand-navy)", fontSize:"14px" }}>{svc.label}</p>
+                    {svc.note && <p style={{ fontFamily:"'var(--font-body)'", color:"#666", fontSize:"12px", marginTop:2 }}>{svc.note}</p>}
                   </div>
                 </div>
               </Link>
@@ -98,14 +98,14 @@ export default function BethesdaMD() {
       </section>
 
       {/* S3: Emergency */}
-      <section className="py-16" style={{ background:"#F0F0F0" }}>
+      <section className="py-16" style={{ background:"var(--surface-1)" }}>
         <div className="container">
           <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading="Do you provide 24/7 emergency plumbing in Bethesda?" />
           <div className="max-w-3xl mb-8">
-            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
+            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
               Yes. Emergency plumbing in Bethesda is available 24/7. Bethesda emergency plumbing keywords carry some of the highest per-click values in our service area ($32–$45 CPC), reflecting the density of demand and the willingness of Bethesda homeowners and businesses to pay for reliable, licensed emergency response.
             </p>
-            <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"16px", lineHeight:1.7 }}>
+            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }}>
               A live dispatcher answers every call. Licensed Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849.
             </p>
           </div>
@@ -126,12 +126,12 @@ export default function BethesdaMD() {
               { icon: Flame, title: "Gas line service", body: "Outdoor entertainment areas — kitchens, fire features, pool and spa heaters — are common in Bethesda and each requires a permitted, licensed gas line installation." },
               { icon: GitBranch, title: "Sewer lateral inspection", body: "Bethesda's mature tree canopy creates root intrusion risk for original sewer laterals. Camera inspection every 3–5 years is a prudent maintenance practice for properties with clay or aging PVC laterals." },
             ].map((card, i) => (
-              <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"#009EC6" }}>
+              <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
-                  <card.icon size={24} style={{ color:"#009EC6" }} />
-                  <p style={{ fontFamily:"'Barlow',sans-serif", fontWeight:600, color:"#003060", fontSize:"15px" }}>{card.title}</p>
+                  <card.icon size={24} style={{ color:"var(--brand-cyan)" }} />
+                  <p style={{ fontFamily:"'var(--font-body)'", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
                 </div>
-                <p style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
+                <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
               </div>
             ))}
           </div>
@@ -139,13 +139,13 @@ export default function BethesdaMD() {
       </section>
 
       {/* S5: Commercial */}
-      <section className="py-16" style={{ background:"#003060" }}>
+      <section className="py-16" style={{ background:"var(--brand-navy)" }}>
         <div className="container text-center">
           <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Commercial & Government Plumbing in Bethesda" light />
-          <p style={{ fontFamily:"'Barlow',sans-serif", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
+          <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
             Bethesda's commercial corridor, medical institutions, and government-adjacent facilities create demand for commercial plumbing services. Definitive Mechanical is MDOT MBE Certified (Cert No. 20-134) and holds CAGE Code 8HCF6 for government procurement. WSSC #73696 and MD State #96958 for all local plumbing work.
           </p>
-          <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'Barlow',sans-serif", fontSize:"14px", fontWeight:500 }}>
+          <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'var(--font-body)'", fontSize:"14px", fontWeight:500 }}>
             Learn more about commercial plumbing →
           </Link>
         </div>
@@ -156,20 +156,20 @@ export default function BethesdaMD() {
         <div className="container">
           <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading="Areas near Bethesda we also serve" />
           <div className="mb-3">
-            <span style={{ fontFamily:"'Barlow Condensed',sans-serif", fontWeight:700, color:"#003060", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
-            <Link href="/service-areas/maryland/montgomery-county/rockville-md" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>Rockville, MD</Link>
-            <Link href="/service-areas/maryland/montgomery-county/potomac-md" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>Potomac, MD</Link>
-            <Link href="/service-areas/washington-dc" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", marginRight:"12px" }}>Washington DC</Link>
+            <span style={{ fontFamily:"'var(--font-display)'", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
+            <Link href="/service-areas/maryland/montgomery-county/rockville-md" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Rockville, MD</Link>
+            <Link href="/service-areas/maryland/montgomery-county/potomac-md" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Potomac, MD</Link>
+            <Link href="/service-areas/washington-dc" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Washington DC</Link>
             {["Chevy Chase, MD","Kensington, MD","Silver Spring, MD","North Bethesda, MD","Cabin John, MD"].map((city, i) => (
-              <span key={i} style={{ fontFamily:"'Barlow',sans-serif", color:"#484848", fontSize:"14px", marginRight:"12px" }}>{city}</span>
+              <span key={i} style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", marginRight:"12px" }}>{city}</span>
             ))}
           </div>
-          <Link href="/service-areas" style={{ fontFamily:"'Barlow',sans-serif", color:"#009EC6", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
+          <Link href="/service-areas" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
         </div>
       </section>
 
       {/* S8: FAQ */}
-      <section className="py-20" style={{ background:"#F0F0F0" }}>
+      <section className="py-20" style={{ background:"var(--surface-1)" }}>
         <div className="container">
           <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Plumbing FAQ — Bethesda, MD" />
           <div className="max-w-3xl mx-auto">

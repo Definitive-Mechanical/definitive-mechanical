@@ -31,17 +31,17 @@ export default function BackflowCertification() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '50vh', background: 'linear-gradient(135deg, #003060 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '50vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #186090 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Backflow Prevention', href: '/backflow-prevention' }, { label: 'Backflow Certification' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p className="eyebrow mb-3">BACKFLOW CERTIFICATION · MD, DC & NORTHERN VIRGINIA</p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 40px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Backflow Preventer Certification Service in Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
                 Definitive Mechanical provides backflow preventer testing and annual certification for commercial, municipal, and residential properties across Maryland, Washington DC, and Northern Virginia. Most commercial properties with backflow prevention devices are required to have them tested and certified annually by a licensed tester. We test, certify, and file the required reports. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Annual Certification Programs", "Commercial & Residential", "Licensed", "Report Filing Included", "WSSC & Jurisdiction Compliant"]} />
@@ -61,15 +61,15 @@ export default function BackflowCertification() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="CERTIFICATION REQUIREMENTS" heading="What is backflow certification and who requires it?" centered />
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
             Backflow preventer certification is the annual testing and documentation of a backflow prevention device to confirm it is functioning correctly and preventing contaminated water from flowing backward into the public supply. Most water suppliers — including WSSC in Prince George's and Montgomery Counties, DC Water, and Virginia's local water authorities — require annual testing and certification of backflow prevention devices on commercial accounts.
           </p>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', maxWidth: '720px', margin: '0 auto 20px', textAlign: 'center' }}>Properties that typically require annual backflow certification:</p>
+          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', maxWidth: '720px', margin: '0 auto 20px', textAlign: 'center' }}>Properties that typically require annual backflow certification:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-3xl mx-auto">
             {PROPERTIES_REQUIRING.map((item) => (
               <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center', padding: '8px 0' }}>
-                <CheckCircle2 size={16} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{item}</span>
+                <CheckCircle2 size={16} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{item}</span>
               </div>
             ))}
           </div>
@@ -77,7 +77,7 @@ export default function BackflowCertification() {
       </section>
 
       {/* SECTION 3: TEST PROCESS */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="THE CERTIFICATION PROCESS" heading="What happens during a backflow preventer test?" centered />
           <div className="max-w-3xl mx-auto">
@@ -93,38 +93,38 @@ export default function BackflowCertification() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>What happens if my backflow preventer fails its certification test?</h2>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>What happens if my backflow preventer fails its certification test?</h2>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 A failed test means one or more components of the device are not functioning within required parameters. This does not always mean the device needs to be replaced — many failures are repairable on site during the same service visit. If the device cannot be repaired on site, we document the failure, coordinate the necessary repair or replacement, and schedule a follow-up certification test.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
                 Water suppliers typically allow a defined period to bring a failed device into compliance before imposing service interruptions or fines. Do not ignore a failed test result. Call (301) 679-5849 to discuss repair or replacement options.
               </p>
               <BookNowButton variant="ghost" text="LEARN ABOUT BACKFLOW REPAIR" href="/backflow-preventer-repair" size="md" />
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Backflow preventer failed test repair Maryland DC Virginia" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)' }} />
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80" alt="Backflow preventer failed test repair Maryland DC Virginia" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }} />
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 5: MANAGED PROGRAMS */}
-      <section style={{ background: '#003060', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="MANAGED PROGRAMS" heading="Can Definitive Mechanical manage my property's annual backflow certification program?" centered light />
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
             Yes. For property managers, facility directors, and commercial property owners who manage multiple properties or simply want the annual certification handled without tracking it themselves, we offer managed backflow certification programs. We track certification due dates, schedule annual testing, perform testing, file reports, and notify you of results.
           </p>
           <div className="max-w-2xl mx-auto mb-8">
             {MANAGED_USERS.map((item) => (
               <div key={item} style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', padding: '12px', display: 'flex', gap: '10px', alignItems: 'center' }}>
-                <ChevronRight size={16} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '14px' }}>{item}</span>
+                <ChevronRight size={16} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '14px' }}>{item}</span>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.7)', fontSize: '14px', textAlign: 'center', marginBottom: '20px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.7)', fontSize: '14px', textAlign: 'center', marginBottom: '20px' }}>
             Contact (301) 679-5849 or info@definitivemechanical.com to discuss a managed certification program for your properties.
           </p>
           <div style={{ textAlign: 'center' }}>
@@ -136,12 +136,12 @@ export default function BackflowCertification() {
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Shield, label: 'Backflow Prevention', href: '/backflow-prevention' }, { icon: ShieldCheck, label: 'Backflow Preventer Repair', href: '/backflow-preventer-repair' }, { icon: CheckCircle2, label: 'Commercial Plumbing', href: '/commercial-plumbing' }, { icon: CheckCircle2, label: 'Government & Municipal', href: '/government-municipal-plumbing' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '13px' }}>{item.label}</span>
+                <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
             ))}
           </div>
@@ -149,7 +149,7 @@ export default function BackflowCertification() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about backflow certification in MD, DC & Northern VA" centered />
           <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px' }}>

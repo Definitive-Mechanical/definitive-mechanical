@@ -102,7 +102,7 @@ export default function Home() {
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '75vh',
-        background: 'linear-gradient(135deg, #003060 0%, #001830 100%)',
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)',
         position: 'relative',
         display: 'flex',
         alignItems: 'center',
@@ -123,30 +123,32 @@ export default function Home() {
             {/* Left content — 3/5 */}
             <div className="lg:col-span-3">
               <p style={{
-                fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                fontFamily: 'var(--font-display)',
                 fontWeight: 700,
                 fontSize: '11px',
                 textTransform: 'uppercase',
                 letterSpacing: '0.25em',
-                color: '#009EC6',
+                color: 'var(--brand-cyan)',
                 marginBottom: '16px',
               }}>
                 LICENSED PLUMBING · MARYLAND · WASHINGTON DC · NORTHERN VIRGINIA
               </p>
 
               <h1 style={{
-                fontFamily: 'Playfair Display, Georgia, serif',
+                fontFamily: 'var(--font-display)',
                 fontWeight: 700,
+                textTransform: 'uppercase',
+                letterSpacing: '0.01em',
                 color: 'white',
-                fontSize: 'clamp(28px, 4vw, 52px)',
-                lineHeight: 1.15,
+                fontSize: 'clamp(34px, 5vw, 64px)',
+                lineHeight: 1.0,
                 marginBottom: '20px',
               }}>
                 Licensed Master Plumbers. Honest Service. No Sales Pitch.
               </h1>
 
               <p style={{
-                fontFamily: 'Barlow, Arial, sans-serif',
+                fontFamily: 'var(--font-body)',
                 fontWeight: 400,
                 color: 'rgba(255,255,255,0.85)',
                 fontSize: '17px',
@@ -193,7 +195,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 2: TRUST STATS BAR */}
-      <section style={{ background: '#009EC6', padding: '32px 0' }}>
+      <section style={{ background: 'var(--brand-cyan)', padding: '32px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {[
@@ -207,14 +209,14 @@ export default function Home() {
                 style={{
                   textAlign: 'center',
                   padding: '16px',
-                  borderRight: index < 3 ? '1px solid rgba(0,48,96,0.2)' : 'none',
+                  borderRight: index < 3 ? '1px solid rgba(6,59,99,0.2)' : 'none',
                 }}
               >
-                <stat.icon size={24} color="#003060" style={{ margin: '0 auto 8px' }} />
-                <p style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, fontSize: '32px', color: '#003060', lineHeight: 1 }}>
+                <stat.icon size={24} color="var(--brand-navy)" style={{ margin: '0 auto 8px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '32px', color: 'var(--brand-navy)', lineHeight: 1 }}>
                   {stat.number}
                 </p>
-                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#003060', marginTop: '4px' }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-navy)', marginTop: '4px' }}>
                   {stat.label}
                 </p>
               </div>
@@ -237,20 +239,20 @@ export default function Home() {
               <div key={category.label}>
                 {/* Category divider header */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '24px' }}>
-                  <div style={{ height: '2px', width: '28px', background: '#009EC6', flexShrink: 0 }} />
+                  <div style={{ height: '2px', width: '28px', background: 'var(--brand-cyan)', flexShrink: 0 }} />
                   <p style={{
-                    fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                    fontFamily: 'var(--font-display)',
                     fontWeight: 700,
                     fontSize: '11px',
                     textTransform: 'uppercase',
                     letterSpacing: '0.28em',
-                    color: '#009EC6',
+                    color: 'var(--brand-cyan)',
                     margin: 0,
                     whiteSpace: 'nowrap',
                   }}>
                     {category.label}
                   </p>
-                  <div style={{ height: '1px', flex: 1, background: '#E8EFF5' }} />
+                  <div style={{ height: '1px', flex: 1, background: 'var(--border)' }} />
                 </div>
                 {/* Service tiles — identical style */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -275,7 +277,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 4: WHY CHOOSE US */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="WHY CHOOSE DEFINITIVE MECHANICAL"
@@ -301,11 +303,11 @@ export default function Home() {
               },
             ].map((col) => (
               <div key={col.title} style={{ textAlign: 'center', padding: '16px' }}>
-                <col.icon size={48} color="#009EC6" style={{ margin: '0 auto 16px' }} />
-                <h3 style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '18px', marginBottom: '12px' }}>
+                <col.icon size={48} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
+                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '18px', marginBottom: '12px' }}>
                   {col.title}
                 </h3>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 400, color: '#484848', fontSize: '15px', lineHeight: 1.7 }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7 }}>
                   {col.body}
                 </p>
               </div>
@@ -322,13 +324,13 @@ export default function Home() {
             maxWidth: '800px',
             margin: '0 auto',
           }}>
-            <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '16px', marginBottom: '12px' }}>
+            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '12px' }}>
               "We explain what we find, what your options are, and what each one costs — before we touch a wrench."
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
               {['No commissioned salespeople', 'Same rate day or night', 'Written pricing every time'].map((item) => (
-                <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#484848' }}>
-                  <CheckCircle size={16} color="#009EC6" />
+                <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--ink-2)' }}>
+                  <CheckCircle size={16} color="var(--brand-cyan)" />
                   {item}
                 </span>
               ))}
@@ -338,16 +340,16 @@ export default function Home() {
       </section>
 
       {/* SECTION 5: EMERGENCY CTA */}
-      <section style={{ background: 'linear-gradient(135deg, #003060, #001830)', padding: '64px 0' }}>
+      <section style={{ background: 'linear-gradient(135deg, var(--brand-navy), #001830)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <AlertTriangle size={40} color="#009EC6" style={{ margin: '0 auto 16px' }} />
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: '#009EC6', marginBottom: '12px' }}>
+          <AlertTriangle size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
             24/7 EMERGENCY SERVICE
           </p>
-          <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(22px, 3vw, 32px)', marginBottom: '16px' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(22px, 3vw, 32px)', marginBottom: '16px' }}>
             Plumbing emergency? We answer at 3am.
           </h2>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.8)', fontSize: '16px', maxWidth: '560px', margin: '0 auto 32px', lineHeight: 1.7 }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', maxWidth: '560px', margin: '0 auto 32px', lineHeight: 1.7 }}>
             Burst pipe, sewer backup, gas leak, no hot water — our live dispatcher answers every call, every hour of every day. Licensed Master Plumber dispatched immediately.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -358,7 +360,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 6: TESTIMONIALS */}
-      <section style={{ background: '#C0D8F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="CUSTOMER REVIEWS"
@@ -393,7 +395,7 @@ export default function Home() {
               <img
                 src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=600&q=80"
                 alt="Definitive Mechanical service area Maryland DC Northern Virginia"
-                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.1)' }}
+                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.1)' }}
               />
             </div>
             <div className="space-y-6">
@@ -421,14 +423,14 @@ export default function Home() {
                 },
               ].map((area) => (
                 <div key={area.heading} style={{ display: 'flex', gap: '16px' }}>
-                  <area.icon size={24} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                  <area.icon size={24} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                   <div>
-                    <h3 style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '16px', marginBottom: '4px' }}>
+                    <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '4px' }}>
                       {area.heading}
                     </h3>
-                    <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#484848', marginBottom: '4px' }}>{area.body}</p>
-                    <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: '#787878', marginBottom: '8px' }}>{area.cities}</p>
-                    <Link href={area.href} style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#009EC6', textDecoration: 'none' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--ink-2)', marginBottom: '4px' }}>{area.body}</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-3)', marginBottom: '8px' }}>{area.cities}</p>
+                    <Link href={area.href} style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-cyan)', textDecoration: 'none' }}>
                       View {area.heading} Service Area →
                     </Link>
                   </div>
@@ -440,7 +442,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 8: CREDENTIALS */}
-      <section style={{ background: '#003060', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="CREDENTIALS & COMPLIANCE"
@@ -459,10 +461,10 @@ export default function Home() {
                 textAlign: 'center',
               }}>
                 <cred.icon size={28} color="white" style={{ margin: '0 auto 10px' }} />
-                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'white', marginBottom: '4px' }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'white', marginBottom: '4px' }}>
                   {cred.label}
                 </p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.6)' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.6)' }}>
                   {cred.sub}
                 </p>
               </div>
@@ -475,22 +477,22 @@ export default function Home() {
       </section>
 
       {/* SECTION 9: FINANCING */}
-      <section style={{ background: '#F0F0F0', padding: '64px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="eyebrow" style={{ marginBottom: '12px' }}>FINANCING AVAILABLE</p>
-              <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: 'clamp(22px, 3vw, 28px)', marginBottom: '16px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(22px, 3vw, 28px)', marginBottom: '16px' }}>
                 Is financing available for plumbing repairs and installations?
               </h2>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.7, marginBottom: '20px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, marginBottom: '20px' }}>
                 Yes. Definitive Mechanical offers consumer financing through Synchrony for eligible plumbing and mechanical services. Apply in 60 seconds online with no impact to your credit score during the pre-qualification step.
               </p>
               <div className="space-y-2">
                 {['Water Heater Replacement', 'Sewer Line Repair & Replacement', 'Tankless Water Heater Upgrades', 'Gas Line Installation', 'Boiler & Furnace Installation'].map((item) => (
                   <div key={item} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <CheckCircle2 size={16} color="#009EC6" />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#484848' }}>{item}</span>
+                    <CheckCircle2 size={16} color="var(--brand-cyan)" />
+                    <span style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--ink-2)' }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -499,20 +501,20 @@ export default function Home() {
               background: 'white',
               borderRadius: '6px',
               padding: '32px',
-              boxShadow: '0 2px 12px rgba(0,48,96,0.08)',
+              boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
               textAlign: 'center',
             }}>
-              <div style={{ background: '#003060', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>
-                <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '16px', letterSpacing: '0.1em' }}>SYNCHRONY FINANCING</span>
+              <div style={{ background: 'var(--brand-navy)', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '16px', letterSpacing: '0.1em' }}>SYNCHRONY FINANCING</span>
               </div>
-              <h3 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: '#003060', fontSize: '22px', marginBottom: '8px' }}>
+              <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '22px', marginBottom: '8px' }}>
                 Apply in 60 Seconds
               </h3>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#787878', fontSize: '14px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '14px', marginBottom: '24px' }}>
                 No impact to your credit score during pre-qualification.
               </p>
               <BookNowButton variant="navy" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: '#787878', marginTop: '16px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-3)', marginTop: '16px' }}>
                 Questions? Call {BUSINESS.phone}
               </p>
             </div>
@@ -524,19 +526,19 @@ export default function Home() {
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div style={{
-            background: 'linear-gradient(135deg, #003060, #186090)',
+            background: 'linear-gradient(135deg, var(--brand-navy), #186090)',
             borderRadius: '8px',
             padding: '40px',
           }}>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'rgba(255,255,255,0.7)', marginBottom: '8px' }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'rgba(255,255,255,0.7)', marginBottom: '8px' }}>
                   GOVERNMENT & COMMERCIAL
                 </p>
-                <h2 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '12px' }}>
+                <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '12px' }}>
                   We work with government agencies and commercial clients
                 </h2>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7 }}>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7 }}>
                   MDOT MBE Certified · VA SWaM Certified · CAGE 8HCF6 · NAICS 238220. Capability statement available. Master Plumber and Master Gasfitter licensed in four states.
                 </p>
               </div>
@@ -545,8 +547,8 @@ export default function Home() {
                   {['MDOT MBE Cert 20-134', 'VA SWaM Cert 815255'].map((badge) => (
                     <span key={badge} style={{
                       background: 'white',
-                      color: '#003060',
-                      fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                      color: 'var(--brand-navy)',
+                      fontFamily: 'var(--font-display)',
                       fontWeight: 700,
                       fontSize: '12px',
                       textTransform: 'uppercase',
@@ -569,14 +571,14 @@ export default function Home() {
       </section>
 
       {/* SECTION 11: FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="FREQUENTLY ASKED QUESTIONS"
             heading="Common questions about plumbing service in MD, DC & Northern VA"
             centered
           />
-          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)' }}>
+          <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
             <FAQAccordion items={HOME_FAQ} schema={true} />
           </div>
         </div>

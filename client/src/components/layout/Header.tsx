@@ -97,7 +97,7 @@ export default function Header() {
       <div
         className="fixed top-0 left-0 right-0 z-[101]"
         style={{
-          background: '#CC2200',
+          background: 'var(--brand-red)',
           height: '36px',
           display: 'flex',
           alignItems: 'center',
@@ -108,17 +108,17 @@ export default function Header() {
           href={`tel:${BUSINESS.phoneRaw}`}
           className="no-underline flex items-center gap-2"
           style={{
-            fontFamily: 'Barlow Condensed, Arial, sans-serif',
+            fontFamily: 'var(--font-body)',
             fontWeight: 700,
-            fontSize: '13px',
+            fontSize: '12px',
             textTransform: 'uppercase',
-            letterSpacing: '0.18em',
+            letterSpacing: '0.14em',
             color: 'white',
           }}
         >
-          <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
+          <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
           24/7 Emergency Plumbing — Call Now: {BUSINESS.phone}
-          <span style={{ display: 'inline-block', width: '8px', height: '8px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite 0.7s', flexShrink: 0 }} />
+          <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite 0.7s', flexShrink: 0 }} />
         </a>
       </div>
 
@@ -127,18 +127,22 @@ export default function Header() {
         className="fixed left-0 right-0 z-[100] transition-shadow duration-300"
         style={{
           top: '36px',
-          background: '#003060',
-          boxShadow: scrolled ? '0 4px 24px rgba(0,0,0,0.35)' : '0 2px 8px rgba(0,0,0,0.2)',
+          background: 'var(--brand-navy)',
+          boxShadow: scrolled ? 'var(--shadow-hero)' : '0 2px 8px rgba(6,59,99,0.3)',
           height: '72px',
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo — new SVG */}
           <Link href="/" className="flex items-center no-underline" style={{ flexShrink: 0 }}>
             <img
-              src="/manus-storage/definitive-mechanical-logo_0084eea2.png"
+              src="/manus-storage/logo-knockout_7a8a46a2.svg"
               alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
-              style={{ height: '48px', width: 'auto', display: 'block' }}
+              style={{ height: '44px', width: 'auto', display: 'block' }}
+              onError={(e) => {
+                // Fallback to old PNG if SVG fails
+                (e.currentTarget as HTMLImageElement).src = '/manus-storage/definitive-mechanical-logo_0084eea2.png';
+              }}
             />
           </Link>
 
@@ -163,15 +167,15 @@ export default function Header() {
                   href={item.href}
                   className="flex items-center gap-1 px-3 py-2 no-underline transition-colors duration-200"
                   style={{
-                    fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                    fontFamily: 'var(--font-body)',
                     fontWeight: 600,
                     fontSize: '13px',
                     textTransform: 'uppercase',
-                    letterSpacing: '0.15em',
-                    color: 'white',
+                    letterSpacing: '0.12em',
+                    color: 'rgba(255,255,255,0.88)',
                   }}
-                  onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
-                  onMouseLeave={e => (e.currentTarget.style.color = 'white')}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.88)')}
                 >
                   {item.label}
                   {(item.hasMega || item.hasDropdown) && <ChevronDown size={12} />}
@@ -180,13 +184,26 @@ export default function Header() {
                 {/* Services Megamenu */}
                 {item.hasMega && megaOpen && (
                   <div
-                    className="absolute top-full left-1/2 -translate-x-1/2 w-[700px] rounded-b-md shadow-2xl"
-                    style={{ background: '#003060', border: '1px solid rgba(255,255,255,0.1)', borderTop: '3px solid #009EC6' }}
+                    className="absolute top-full left-1/2 -translate-x-1/2 w-[720px] shadow-2xl"
+                    style={{
+                      background: 'var(--brand-navy-2)',
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      borderTop: '3px solid var(--brand-blue)',
+                      borderRadius: '0 0 8px 8px',
+                    }}
                   >
                     <div className="grid grid-cols-3 gap-0 p-6">
                       {[MEGA_MENU.col1, MEGA_MENU.col2, MEGA_MENU.col3].map((col) => (
                         <div key={col.title} className="px-4">
-                          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '12px' }}>
+                          <p style={{
+                            fontFamily: 'var(--font-body)',
+                            fontWeight: 700,
+                            fontSize: '11px',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.18em',
+                            color: 'var(--brand-cyan)',
+                            marginBottom: '12px',
+                          }}>
                             {col.title}
                           </p>
                           {col.items.map((link) => (
@@ -194,9 +211,9 @@ export default function Header() {
                               key={link.href}
                               href={link.href}
                               className="block py-1.5 no-underline transition-colors duration-150"
-                              style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.8)' }}
-                              onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
-                              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.8)')}
+                              style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)' }}
+                              onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
+                              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}
                             >
                               {link.label}
                             </Link>
@@ -204,8 +221,15 @@ export default function Header() {
                         </div>
                       ))}
                     </div>
-                    <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', padding: '12px 24px' }}>
-                      <Link href="/services" className="no-underline" style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6' }}>
+                    <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', padding: '12px 24px' }}>
+                      <Link href="/services" className="no-underline" style={{
+                        fontFamily: 'var(--font-body)',
+                        fontWeight: 700,
+                        fontSize: '12px',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.12em',
+                        color: 'var(--brand-cyan)',
+                      }}>
                         View All Services →
                       </Link>
                     </div>
@@ -215,8 +239,13 @@ export default function Header() {
                 {/* Commercial Dropdown */}
                 {item.hasDropdown === 'commercial' && commercialOpen && (
                   <div
-                    className="absolute top-full left-0 w-64 rounded-b-md shadow-2xl"
-                    style={{ background: '#003060', border: '1px solid rgba(255,255,255,0.1)', borderTop: '3px solid #009EC6' }}
+                    className="absolute top-full left-0 w-64 shadow-2xl"
+                    style={{
+                      background: 'var(--brand-navy-2)',
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      borderTop: '3px solid var(--brand-blue)',
+                      borderRadius: '0 0 8px 8px',
+                    }}
                   >
                     <div className="py-2">
                       {COMMERCIAL_DROPDOWN.map((link) => (
@@ -224,9 +253,9 @@ export default function Header() {
                           key={link.href}
                           href={link.href}
                           className="block px-5 py-2.5 no-underline transition-colors duration-150"
-                          style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.8)' }}
-                          onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
-                          onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.8)')}
+                          style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)' }}
+                          onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
+                          onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}
                         >
                           {link.label}
                         </Link>
@@ -238,8 +267,13 @@ export default function Header() {
                 {/* Areas Dropdown */}
                 {item.hasDropdown === 'areas' && areasOpen && (
                   <div
-                    className="absolute top-full left-0 w-64 rounded-b-md shadow-2xl"
-                    style={{ background: '#003060', border: '1px solid rgba(255,255,255,0.1)', borderTop: '3px solid #009EC6' }}
+                    className="absolute top-full left-0 w-64 shadow-2xl"
+                    style={{
+                      background: 'var(--brand-navy-2)',
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      borderTop: '3px solid var(--brand-blue)',
+                      borderRadius: '0 0 8px 8px',
+                    }}
                   >
                     <div className="py-2">
                       {AREAS_DROPDOWN.map((link) => (
@@ -247,9 +281,9 @@ export default function Header() {
                           key={link.href}
                           href={link.href}
                           className="block px-5 py-2.5 no-underline transition-colors duration-150"
-                          style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.8)' }}
-                          onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
-                          onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.8)')}
+                          style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)' }}
+                          onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
+                          onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}
                         >
                           {link.label}
                         </Link>
@@ -261,32 +295,13 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop Phone CTA */}
+          {/* Desktop Phone CTA — red primary per design system */}
           <a
             href={`tel:${BUSINESS.phoneRaw}`}
-            className="hidden lg:flex items-center gap-2 no-underline transition-all duration-300"
-            style={{
-              background: '#009EC6',
-              color: '#003060',
-              fontFamily: 'Barlow Condensed, Arial, sans-serif',
-              fontWeight: 700,
-              fontSize: '14px',
-              textTransform: 'uppercase',
-              letterSpacing: '0.1em',
-              borderRadius: '2px',
-              minHeight: '44px',
-              padding: '0 20px',
-            }}
-            onMouseEnter={e => {
-              (e.currentTarget as HTMLElement).style.background = '#007BA0';
-              (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(0,158,198,0.35)';
-            }}
-            onMouseLeave={e => {
-              (e.currentTarget as HTMLElement).style.background = '#009EC6';
-              (e.currentTarget as HTMLElement).style.boxShadow = 'none';
-            }}
+            className="hidden lg:flex items-center gap-2 no-underline dm-btn dm-btn-primary"
+            style={{ fontSize: '13px', letterSpacing: '0.08em', borderRadius: '6px', minHeight: '44px', padding: '0 20px' }}
           >
-            <Phone size={16} />
+            <Phone size={15} />
             CALL {BUSINESS.phone}
           </a>
 
@@ -310,15 +325,18 @@ export default function Header() {
       {mobileOpen && (
         <div
           className="fixed inset-0 z-[200] flex flex-col"
-          style={{ background: '#0A1628' }}
+          style={{ background: 'var(--brand-navy-dark)' }}
         >
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
             <Link href="/" className="flex items-center no-underline" onClick={() => setMobileOpen(false)}>
               <img
-                src="/manus-storage/definitive-mechanical-logo_0084eea2.png"
+                src="/manus-storage/logo-knockout_7a8a46a2.svg"
                 alt="Definitive Mechanical"
-                style={{ height: '40px', width: 'auto', display: 'block' }}
+                style={{ height: '38px', width: 'auto', display: 'block' }}
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = '/manus-storage/definitive-mechanical-logo_0084eea2.png';
+                }}
               />
             </Link>
             <button
@@ -334,18 +352,8 @@ export default function Header() {
           <div className="px-4 pt-4 pb-2 flex flex-col gap-3">
             <a
               href={`tel:${BUSINESS.phoneRaw}`}
-              className="flex items-center justify-center gap-2 no-underline"
-              style={{
-                background: '#009EC6',
-                color: '#003060',
-                fontFamily: 'Barlow Condensed, Arial, sans-serif',
-                fontWeight: 700,
-                fontSize: '15px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.1em',
-                height: '56px',
-                borderRadius: '2px',
-              }}
+              className="flex items-center justify-center gap-2 no-underline dm-btn dm-btn-primary"
+              style={{ height: '56px', fontSize: '15px', borderRadius: '6px' }}
               onClick={() => setMobileOpen(false)}
             >
               <Phone size={18} />
@@ -353,19 +361,8 @@ export default function Header() {
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center no-underline"
-              style={{
-                background: 'transparent',
-                color: 'white',
-                border: '2px solid white',
-                fontFamily: 'Barlow Condensed, Arial, sans-serif',
-                fontWeight: 700,
-                fontSize: '14px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.1em',
-                height: '48px',
-                borderRadius: '2px',
-              }}
+              className="flex items-center justify-center no-underline dm-btn dm-btn-outline on-dark"
+              style={{ height: '48px', fontSize: '14px', borderRadius: '6px' }}
               onClick={() => setMobileOpen(false)}
             >
               REQUEST SERVICE
@@ -394,9 +391,9 @@ export default function Header() {
                     className="flex items-center no-underline"
                     style={{
                       minHeight: '52px',
-                      fontFamily: 'Barlow Condensed, Arial, sans-serif',
-                      fontWeight: 600,
-                      fontSize: '16px',
+                      fontFamily: 'var(--font-body)',
+                      fontWeight: 700,
+                      fontSize: '14px',
                       textTransform: 'uppercase',
                       letterSpacing: '0.1em',
                       color: 'white',
@@ -411,12 +408,12 @@ export default function Header() {
                       className="w-full flex items-center justify-between"
                       style={{
                         minHeight: '52px',
-                        fontFamily: 'Barlow Condensed, Arial, sans-serif',
-                        fontWeight: 600,
-                        fontSize: '16px',
+                        fontFamily: 'var(--font-body)',
+                        fontWeight: 700,
+                        fontSize: '14px',
                         textTransform: 'uppercase',
                         letterSpacing: '0.1em',
-                        color: mobileExpanded === item.key ? '#009EC6' : 'white',
+                        color: mobileExpanded === item.key ? 'var(--brand-cyan)' : 'white',
                         background: 'none',
                         border: 'none',
                         padding: 0,
@@ -430,7 +427,7 @@ export default function Header() {
                         style={{
                           transform: mobileExpanded === item.key ? 'rotate(90deg)' : 'none',
                           transition: 'transform 0.2s',
-                          color: '#009EC6',
+                          color: 'var(--brand-cyan)',
                         }}
                       />
                     </button>
@@ -440,7 +437,16 @@ export default function Header() {
                           <>
                             {item.groups.map((group) => (
                               <div key={group.title} style={{ marginBottom: '12px' }}>
-                                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', padding: '8px 0 4px 16px', margin: 0 }}>
+                                <p style={{
+                                  fontFamily: 'var(--font-body)',
+                                  fontWeight: 700,
+                                  fontSize: '10px',
+                                  textTransform: 'uppercase',
+                                  letterSpacing: '0.18em',
+                                  color: 'var(--brand-cyan)',
+                                  padding: '8px 0 4px 16px',
+                                  margin: 0,
+                                }}>
                                   {group.title}
                                 </p>
                                 {group.items.map((sub) => (
@@ -448,10 +454,16 @@ export default function Header() {
                                     key={sub.href}
                                     href={sub.href}
                                     className="flex items-center gap-2 no-underline"
-                                    style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: 'rgba(255,255,255,0.75)', padding: '7px 0 7px 16px', borderBottom: '1px solid rgba(255,255,255,0.04)' }}
+                                    style={{
+                                      fontFamily: 'var(--font-body)',
+                                      fontSize: '14px',
+                                      color: 'rgba(255,255,255,0.75)',
+                                      padding: '7px 0 7px 16px',
+                                      borderBottom: '1px solid rgba(255,255,255,0.04)',
+                                    }}
                                     onClick={() => setMobileOpen(false)}
                                   >
-                                    <ChevronRight size={12} style={{ color: '#009EC6', flexShrink: 0 }} />
+                                    <ChevronRight size={12} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
                                     {sub.label}
                                   </Link>
                                 ))}
@@ -461,7 +473,14 @@ export default function Header() {
                               <Link
                                 href="/services"
                                 className="no-underline"
-                                style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#009EC6' }}
+                                style={{
+                                  fontFamily: 'var(--font-body)',
+                                  fontWeight: 700,
+                                  fontSize: '12px',
+                                  textTransform: 'uppercase',
+                                  letterSpacing: '0.12em',
+                                  color: 'var(--brand-cyan)',
+                                }}
                                 onClick={() => setMobileOpen(false)}
                               >
                                 View All Services →
@@ -474,7 +493,7 @@ export default function Header() {
                               key={sub.href}
                               href={sub.href}
                               className="block py-2 no-underline"
-                              style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: 'rgba(255,255,255,0.75)', paddingLeft: '16px' }}
+                              style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'rgba(255,255,255,0.75)', paddingLeft: '16px' }}
                               onClick={() => setMobileOpen(false)}
                             >
                               {sub.label}

@@ -76,10 +76,10 @@ export default function CommercialPlumberMaryland() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)" }} className="py-20 md:py-28">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Commercial Plumbing", href: "/commercial-plumbing/" }, { label: "Commercial Plumber Maryland" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing · Maryland · All Five Counties</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing · Maryland · All Five Counties</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
             Licensed Commercial Plumber in Maryland
           </h1>
@@ -91,7 +91,7 @@ export default function CommercialPlumberMaryland() {
             <BookNowButton variant="outline" text="REQUEST COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
           </div>
           {/* Trust Strip */}
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "#009EC6", fontFamily: "'Barlow Condensed', sans-serif" }}>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
             {["MDOT MBE Cert 20-134", "VA SWaM Cert 815255", "Master Plumber MD/DC/VA/DE", "CAGE 8HCF6", "NAICS 238220", "11 Years in Business"].map(t => (
               <span key={t} className="flex items-center gap-1"><ShieldCheck size={12} />{t}</span>
             ))}
@@ -118,9 +118,9 @@ export default function CommercialPlumberMaryland() {
               { icon: Award, title: "Government Facility Plumbing", body: "MBE-certified plumbing services for Maryland state agencies, county government properties, and federally-funded projects." },
             ].map(s => (
               <div key={s.title} className="p-6 rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
-                <s.icon size={28} style={{ color: "#009EC6" }} className="mb-3" />
-                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>{s.title}</h3>
-                <p className="text-sm" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{s.body}</p>
+                <s.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-3" />
+                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{s.title}</h3>
+                <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{s.body}</p>
               </div>
             ))}
           </div>
@@ -128,7 +128,7 @@ export default function CommercialPlumberMaryland() {
       </section>
 
       {/* Counties Section */}
-      <section className="py-16" style={{ background: "#F0F0F0" }}>
+      <section className="py-16" style={{ background: "var(--surface-1)" }}>
         <div className="container">
           <SectionHeading
             eyebrow="Service Area"
@@ -137,8 +137,8 @@ export default function CommercialPlumberMaryland() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {COUNTIES.map(c => (
               <div key={c.name} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-bold text-base mb-2" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.05em" }}>{c.name}</h3>
-                <p className="text-sm" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{c.detail}</p>
+                <h3 className="font-bold text-base mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.05em" }}>{c.name}</h3>
+                <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{c.detail}</p>
               </div>
             ))}
           </div>
@@ -146,7 +146,7 @@ export default function CommercialPlumberMaryland() {
       </section>
 
       {/* Emergency CTA */}
-      <section className="py-16" style={{ background: "#003060" }}>
+      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>What commercial plumbing situations require immediate response?</h2>
@@ -156,7 +156,7 @@ export default function CommercialPlumberMaryland() {
             <ul className="space-y-3 mb-8">
               {EMERGENCIES.map(e => (
                 <li key={e} className="flex items-start gap-3 text-white/90" style={{ fontFamily: "'Barlow', sans-serif" }}>
-                  <CheckCircle size={18} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
+                  <CheckCircle size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   {e}
                 </li>
               ))}
@@ -178,8 +178,8 @@ export default function CommercialPlumberMaryland() {
             heading="Are you licensed for commercial plumbing throughout Maryland?"
           />
           <div className="mt-10 grid md:grid-cols-2 gap-8">
-            <div className="p-6 rounded-lg" style={{ background: "#F0F0F0", border: "2px solid #003060" }}>
-              <h3 className="font-bold text-lg mb-4" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Maryland License Portfolio</h3>
+            <div className="p-6 rounded-lg" style={{ background: "var(--surface-1)", border: "2px solid #003060" }}>
+              <h3 className="font-bold text-lg mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Maryland License Portfolio</h3>
               <ul className="space-y-2">
                 {[
                   "MD State Master Plumber/Gasfitter #96958",
@@ -191,23 +191,23 @@ export default function CommercialPlumberMaryland() {
                   "MDOT MBE Cert No. 20-134",
                   "CAGE Code 8HCF6 | NAICS 238220 | SIC 171",
                 ].map(l => (
-                  <li key={l} className="flex items-center gap-2 text-sm" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif" }}>
-                    <ShieldCheck size={14} style={{ color: "#009EC6", flexShrink: 0 }} />
+                  <li key={l} className="flex items-center gap-2 text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif" }}>
+                    <ShieldCheck size={14} style={{ color: "var(--brand-cyan)", flexShrink: 0 }} />
                     {l}
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs italic" style={{ color: "#787878", fontFamily: "'Barlow', sans-serif" }}>
+              <p className="mt-4 text-xs italic" style={{ color: "var(--ink-3)", fontFamily: "'Barlow', sans-serif" }}>
                 Note: Definitive holds individual local licenses in every Maryland jurisdiction where they operate — not just the state credential. Most commercial contractors do not.
               </p>
             </div>
             <div className="space-y-6">
               {DIFFERENTIATORS.map(d => (
                 <div key={d.title} className="flex gap-4">
-                  <d.icon size={28} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
+                  <d.icon size={28} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <h3 className="font-bold text-base mb-1" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.05em" }}>{d.title}</h3>
-                    <p className="text-sm" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{d.body}</p>
+                    <h3 className="font-bold text-base mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.05em" }}>{d.title}</h3>
+                    <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{d.body}</p>
                   </div>
                 </div>
               ))}
@@ -217,14 +217,14 @@ export default function CommercialPlumberMaryland() {
       </section>
 
       {/* Backflow Compliance */}
-      <section className="py-12" style={{ background: "#C0D8F0" }}>
+      <section className="py-12" style={{ background: "var(--surface-1)" }}>
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-bold mb-4" style={{ color: "#003060", fontFamily: "'Playfair Display', serif" }}>Commercial backflow certification and compliance in Maryland</h2>
-            <p className="text-base mb-6" style={{ color: "#484848", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
+            <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Playfair Display', serif" }}>Commercial backflow certification and compliance in Maryland</h2>
+            <p className="text-base mb-6" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               WSSC requires annual backflow preventer testing for all commercial properties in Prince George's and Montgomery County. Failure to certify by the WSSC deadline triggers violation notices and potential water service interruption. Definitive Mechanical performs annual backflow certification tests and files all required documentation with WSSC on the property owner's behalf.
             </p>
-            <a href="/backflow-certification-maryland/" className="font-bold underline" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>
+            <a href="/backflow-certification-maryland/" className="font-bold underline" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>
               → Learn about our Maryland Backflow Certification service
             </a>
           </div>
@@ -242,9 +242,9 @@ export default function CommercialPlumberMaryland() {
       </section>
 
       {/* Internal Links */}
-      <section className="py-10" style={{ background: "#F0F0F0" }}>
+      <section className="py-10" style={{ background: "var(--surface-1)" }}>
         <div className="container">
-          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "#003060", fontFamily: "'Barlow Condensed', sans-serif" }}>Related Pages</p>
+          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>Related Pages</p>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Commercial Plumbing", href: "/commercial-plumbing/" },
@@ -254,14 +254,14 @@ export default function CommercialPlumberMaryland() {
               { label: "Maryland Service Areas", href: "/service-areas/maryland/" },
               { label: "Licenses & Certifications", href: "/licenses-certifications/" },
             ].map(l => (
-              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "#003060", borderColor: "#003060", fontFamily: "'Barlow', sans-serif" }}>{l.label}</a>
+              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-navy)", borderColor: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{l.label}</a>
             ))}
           </div>
         </div>
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16" style={{ background: "#003060" }}>
+      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>Need a licensed commercial plumber in Maryland?</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}>📞 Call (301) 679-5849</p>

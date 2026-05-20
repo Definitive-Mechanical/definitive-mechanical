@@ -35,17 +35,17 @@ export default function TanklessWaterHeaters() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '58vh', background: 'linear-gradient(135deg, #003060 0%, #001830 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ minHeight: '58vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.07)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative w-full">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Heater Repair', href: '/water-heater-repair' }, { label: 'Tankless Water Heaters' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p className="eyebrow mb-3">TANKLESS WATER HEATERS · MD, DC & NORTHERN VIRGINIA</p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(26px, 4vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Tankless Water Heater Installation & Repair in Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
                 Definitive Mechanical installs and repairs tankless water heaters for homes and businesses across Maryland, Washington DC, and Northern Virginia. Tankless systems provide hot water on demand, reduce energy costs, and last significantly longer than tank units. Every installation performed by a licensed Master Plumber. Financing available. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber", "Installation & Repair", "Residential & Commercial", "Financing Available", "Gas & Electric Units"]} />
@@ -67,27 +67,27 @@ export default function TanklessWaterHeaters() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <SectionHeading eyebrow="HOW TANKLESS WORKS" heading="What is a tankless water heater and how does it work?" />
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 A tankless water heater — also called an on-demand water heater — heats water directly as it flows through the unit rather than storing a preheated tank of water. When you open a hot water tap, cold water travels through a pipe into the unit where it is heated by a gas burner or electric element. The result: hot water delivered continuously, without the wait for a tank to refill and reheat.
               </p>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
                 Traditional tank water heaters maintain a constant supply of heated water — which means they are continuously using energy to keep that water hot even when no one is using it. This standby heat loss accounts for 15–20% of a typical home's water heating energy use according to the U.S. Department of Energy. Tankless units eliminate standby loss entirely.
               </p>
-              <div style={{ background: '#C0D8F0', borderRadius: '6px', padding: '20px' }}>
-                <p style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 600, color: '#003060', fontSize: '18px', lineHeight: 1.5 }}>
+              <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '20px' }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '18px', lineHeight: 1.5 }}>
                   "15–20% of home water heating energy is wasted on standby heat loss in tank units. Tankless eliminates it."
                 </p>
               </div>
             </div>
             <div>
-              <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="How tankless water heaters work — on demand water heating Maryland" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,48,96,0.12)' }} />
+              <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80" alt="How tankless water heaters work — on demand water heating Maryland" style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }} />
             </div>
           </div>
         </div>
       </section>
 
       {/* SECTION 3: BENEFITS */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="BENEFITS" heading="What are the benefits of a tankless water heater?" centered />
           <div className="max-w-4xl mx-auto space-y-4">
@@ -99,10 +99,10 @@ export default function TanklessWaterHeaters() {
               { Icon: ShieldCheck, title: "Reduced water damage risk.", body: "A failed tank water heater can release 40–80 gallons of water into your home. A tankless unit has no tank to rupture." },
             ].map(({ Icon, title, body }) => (
               <div key={title} style={{ background: 'white', borderLeft: '4px solid #009EC6', borderRadius: '4px', padding: '24px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
-                <Icon size={32} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <Icon size={32} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '16px', marginBottom: '6px' }}>{title}</p>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.6 }}>{body}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '6px' }}>{title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.6 }}>{body}</p>
                 </div>
               </div>
             ))}
@@ -123,51 +123,51 @@ export default function TanklessWaterHeaters() {
             ].map(({ Icon, title, body }) => (
               <div key={title} style={{ background: 'white', border: '1px solid #E8EFF5', borderTop: '3px solid #F59E0B', borderRadius: '4px', padding: '24px' }}>
                 <Icon size={28} color="#F59E0B" style={{ marginBottom: '12px' }} />
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', marginBottom: '8px' }}>{title}</p>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '15px', lineHeight: 1.7, maxWidth: '560px', margin: '24px auto 0', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, maxWidth: '560px', margin: '24px auto 0', textAlign: 'center' }}>
             We will assess your home's existing gas and electrical infrastructure during the estimate and tell you exactly what the installation will require before you commit.
           </p>
         </div>
       </section>
 
       {/* SECTION 5: REPAIR SERVICES */}
-      <section style={{ background: '#003060', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="TANKLESS REPAIR" heading="Do you repair tankless water heaters?" subtext="Yes. Definitive Mechanical repairs gas and electric tankless water heaters from all major manufacturers." centered light />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 max-w-4xl mx-auto">
             {REPAIR_ITEMS.map((item) => (
               <div key={item.issue} style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', padding: '16px', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                <ChevronRight size={18} color="#009EC6" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <ChevronRight size={18} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: 'white', fontSize: '14px', marginBottom: '4px' }}>{item.issue}</p>
-                  <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.7)', fontSize: '13px', lineHeight: 1.5 }}>{item.detail}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'white', fontSize: '14px', marginBottom: '4px' }}>{item.issue}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.7)', fontSize: '13px', lineHeight: 1.5 }}>{item.detail}</p>
                 </div>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.7)', fontSize: '14px', fontStyle: 'italic', textAlign: 'center', marginTop: '24px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.7)', fontSize: '14px', fontStyle: 'italic', textAlign: 'center', marginTop: '24px' }}>
             Annual descaling/flushing is recommended for tankless units in the DMV's moderate-to-hard water areas to maintain efficiency and prevent heat exchanger damage. Ask about our maintenance service when you call.
           </p>
         </div>
       </section>
 
       {/* SECTION 6: PRICING */}
-      <section style={{ background: '#F0F0F0', padding: '64px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="PRICING GUIDE" heading="What does tankless water heater installation cost in Maryland, DC, or Virginia?" centered />
-          <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 2px 12px rgba(0,48,96,0.08)', maxWidth: '672px', margin: '0 auto 24px', overflow: 'hidden' }}>
-            <div style={{ background: '#003060', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>UNIT TYPE</span>
-              <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL INSTALLED RANGE</span>
+          <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', maxWidth: '672px', margin: '0 auto 24px', overflow: 'hidden' }}>
+            <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>UNIT TYPE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL INSTALLED RANGE</span>
             </div>
             {PRICING_ROWS.map((row, i) => (
               <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{row.type}</span>
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '14px' }}>{row.range}</span>
+                <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{row.type}</span>
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{row.range}</span>
               </div>
             ))}
           </div>
@@ -181,12 +181,12 @@ export default function TanklessWaterHeaters() {
       {/* SECTION 7: RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Wrench, label: 'Water Heater Repair', href: '/water-heater-repair' }, { icon: Flame, label: 'Water Heater Installation', href: '/water-heater-installation' }, { icon: Zap, label: 'Gas Line Installation', href: '/gas-line-installation' }, { icon: CreditCard, label: 'Financing', href: '/financing' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '14px' }}>{item.label}</span>
+                <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{item.label}</span>
               </Link>
             ))}
           </div>
@@ -194,7 +194,7 @@ export default function TanklessWaterHeaters() {
       </section>
 
       {/* SECTION 8: FAQ */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about tankless water heaters in MD, DC & Northern VA" centered />
           <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px' }}>

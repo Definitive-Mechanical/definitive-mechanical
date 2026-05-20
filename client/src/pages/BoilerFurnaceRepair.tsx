@@ -99,10 +99,10 @@ export default function BoilerFurnaceRepair() {
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
               <p className="eyebrow mb-3">BOILER & FURNACE REPAIR · MD, DC & NORTHERN VIRGINIA</p>
-              <h1 style={{ fontFamily: 'Playfair Display, Georgia, serif', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
+              <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(24px, 3.5vw, 42px)', lineHeight: 1.15, marginBottom: '16px' }}>
                 Boiler & Furnace Repair in Maryland, DC & Northern Virginia
               </h1>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
                 Definitive Mechanical repairs boilers and furnaces for homes and commercial facilities across Maryland, Washington DC, and Northern Virginia. We service gas and oil boilers, hydronic heating systems, and gas furnaces. 24/7 emergency heating repair available. Licensed Master Plumber and Master Gasfitter. Upfront pricing in writing. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["24/7 Emergency Heating Service", "Licensed Master Plumber/Gasfitter", "Commercial & Residential", "Gas & Oil Systems"]} />
@@ -125,30 +125,30 @@ export default function BoilerFurnaceRepair() {
           <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
             {/* Boiler */}
             <div>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', marginBottom: '14px' }}>Boiler warning signs:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '14px' }}>Boiler warning signs:</p>
               <div className="space-y-3">
                 {BOILER_SIGNS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
                     <AlertCircle size={16} color="#F59E0B" style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
             {/* Furnace */}
             <div>
-              <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '15px', marginBottom: '14px' }}>Furnace warning signs:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '14px' }}>Furnace warning signs:</p>
               <div className="space-y-3">
                 {FURNACE_SIGNS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
                     <AlertCircle size={16} color="#F59E0B" style={{ flexShrink: 0, marginTop: '2px' }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.5 }}>{item}</span>
                   </div>
                 ))}
                 {/* Urgent item */}
                 <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start', background: '#FEF2F2', borderRadius: '4px', padding: '10px', border: '1px solid #FCA5A5' }}>
                   <AlertTriangle size={16} color="#DC2626" style={{ flexShrink: 0, marginTop: '2px' }} />
-                  <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#DC2626', fontSize: '14px', lineHeight: 1.5 }}>Carbon monoxide detector alarm — EVACUATE IMMEDIATELY AND CALL 911</span>
+                  <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#DC2626', fontSize: '14px', lineHeight: 1.5 }}>Carbon monoxide detector alarm — EVACUATE IMMEDIATELY AND CALL 911</span>
                 </div>
               </div>
             </div>
@@ -157,40 +157,40 @@ export default function BoilerFurnaceRepair() {
       </section>
 
       {/* SECTION 3: REPAIR SERVICES MATRIX */}
-      <section style={{ background: '#F0F0F0', padding: '80px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="REPAIR SERVICES" heading="What boiler and furnace repair services does Definitive Mechanical provide?" centered />
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Boiler */}
-            <div style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(0,48,96,0.06)' }}>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '16px' }}>BOILER REPAIR</p>
+            <div style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '16px' }}>BOILER REPAIR</p>
               <div className="space-y-2">
                 {BOILER_REPAIRS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                    <CheckCircle2 size={15} color="#009EC6" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{item}</span>
+                    <CheckCircle2 size={15} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
             {/* Furnace */}
-            <div style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(0,48,96,0.06)' }}>
-              <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '16px' }}>FURNACE REPAIR</p>
+            <div style={{ background: 'white', borderTop: '4px solid #009EC6', borderRadius: '6px', padding: '28px', boxShadow: '0 2px 8px rgba(6,59,99,0.06)' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.12em', marginBottom: '16px' }}>FURNACE REPAIR</p>
               <div className="space-y-2">
                 {FURNACE_REPAIRS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                    <CheckCircle2 size={15} color="#009EC6" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{item}</span>
+                    <CheckCircle2 size={15} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{item}</span>
                   </div>
                 ))}
               </div>
             </div>
           </div>
           {/* Emergency strip */}
-          <div style={{ background: '#003060', borderRadius: '6px', padding: '20px', maxWidth: '700px', margin: '32px auto 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', flexWrap: 'wrap' }}>
+          <div style={{ background: 'var(--brand-navy)', borderRadius: '6px', padding: '20px', maxWidth: '700px', margin: '32px auto 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <Thermometer size={24} color="#009EC6" style={{ flexShrink: 0 }} />
-              <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: 'rgba(255,255,255,0.9)', fontSize: '14px' }}>No heat? Emergency heating repair available 24/7 — call (301) 679-5849. Same rate as business hours.</span>
+              <Thermometer size={24} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+              <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.9)', fontSize: '14px' }}>No heat? Emergency heating repair available 24/7 — call (301) 679-5849. Same rate as business hours.</span>
             </div>
             <BookNowButton variant="phone" text="CALL NOW" href="tel:+13016795849" size="sm" />
           </div>
@@ -201,28 +201,28 @@ export default function BoilerFurnaceRepair() {
       <section style={{ background: 'white', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="PRICING GUIDE" heading="What does boiler or furnace repair cost?" centered />
-          <div style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '6px', overflow: 'hidden', maxWidth: '700px', margin: '0 auto', boxShadow: '0 2px 12px rgba(0,48,96,0.08)' }}>
-            <div style={{ background: '#003060', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
-              <span style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
+          <div style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '6px', overflow: 'hidden', maxWidth: '700px', margin: '0 auto', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
+            <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
             </div>
             {PRICING_ROWS.map((row, i) => (
               <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#484848', fontSize: '14px' }}>{row.type}</span>
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '14px' }}>{row.range}</span>
+                <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{row.type}</span>
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{row.range}</span>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'Barlow, Arial, sans-serif', color: '#787878', fontSize: '13px', fontStyle: 'italic', textAlign: 'center', marginTop: '16px', maxWidth: '600px', margin: '16px auto 0' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '13px', fontStyle: 'italic', textAlign: 'center', marginTop: '16px', maxWidth: '600px', margin: '16px auto 0' }}>
             Reference ranges. Written pricing provided after diagnosis. For emergency after-hours repairs, we provide upfront pricing before beginning work — same rate as business hours.
           </p>
         </div>
       </section>
 
       {/* RELATED SERVICES */}
-      <section style={{ background: '#F0F0F0', padding: '48px 0' }}>
+      <section style={{ background: 'var(--surface-1)', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, color: '#003060', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { icon: Wind, label: 'Boiler & Furnace Installation', href: '/boiler-furnace-installation' },
@@ -231,8 +231,8 @@ export default function BoilerFurnaceRepair() {
               { icon: Building2, label: 'Commercial Plumbing', href: '/commercial-plumbing' },
             ].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #E8EFF5', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
-                <item.icon size={20} color="#009EC6" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontWeight: 600, color: '#003060', fontSize: '13px' }}>{item.label}</span>
+                <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '13px' }}>{item.label}</span>
               </Link>
             ))}
           </div>
@@ -243,7 +243,7 @@ export default function BoilerFurnaceRepair() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about boiler and furnace repair in MD, DC & Northern VA" centered />
-          <div style={{ background: '#F0F0F0', borderRadius: '6px', padding: '8px 32px' }}>
+          <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '8px 32px' }}>
             <FAQAccordion items={FAQ_ITEMS} schema={true} />
           </div>
         </div>

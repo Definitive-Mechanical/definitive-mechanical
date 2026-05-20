@@ -46,9 +46,9 @@ export default function Footer() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }}
       />
-      <footer style={{ background: '#0A1628', color: 'white' }}>
+      <footer style={{ background: 'var(--brand-navy-dark)', color: 'white' }}>
         {/* Top accent line */}
-        <div style={{ height: '4px', background: 'linear-gradient(90deg, #009EC6, #186090)' }} />
+        <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--brand-red), var(--brand-blue))' }} />
 
         {/* Main footer content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -58,46 +58,46 @@ export default function Footer() {
             <div>
               <div className="mb-5">
                 <img
-                  src="/manus-storage/definitive-mechanical-logo_0084eea2.png"
+                  src="/manus-storage/logo-knockout_7a8a46a2.svg"
                   alt="Definitive Mechanical"
-                  style={{ height: '52px', width: 'auto', display: 'block' }}
+                  style={{ height: '48px', width: 'auto', display: 'block' }}
                 />
               </div>
               <div className="space-y-3">
                 <div className="flex items-start gap-2">
-                  <MapPin size={15} style={{ color: '#009EC6', flexShrink: 0, marginTop: '2px' }} />
-                  <span style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>
+                  <MapPin size={15} style={{ color: 'var(--brand-cyan)', flexShrink: 0, marginTop: '2px' }} />
+                  <span style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>
                     {BUSINESS.address.street}<br />{BUSINESS.address.city}, {BUSINESS.address.state} {BUSINESS.address.zip}
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone size={15} style={{ color: '#009EC6', flexShrink: 0 }} />
-                  <a href={`tel:${BUSINESS.phoneRaw}`} style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.75)', textDecoration: 'none' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
+                  <Phone size={15} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                  <a href={`tel:${BUSINESS.phoneRaw}`} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)', textDecoration: 'none' }}
+                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                     onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}>
                     {BUSINESS.phone}
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail size={15} style={{ color: '#009EC6', flexShrink: 0 }} />
-                  <a href={`mailto:${BUSINESS.email}`} style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.75)', textDecoration: 'none' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
+                  <Mail size={15} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                  <a href={`mailto:${BUSINESS.email}`} style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)', textDecoration: 'none' }}
+                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                     onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}>
                     {BUSINESS.email}
                   </a>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Clock size={15} style={{ color: '#009EC6', flexShrink: 0, marginTop: '2px' }} />
-                  <div style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.7 }}>
+                  <Clock size={15} style={{ color: 'var(--brand-cyan)', flexShrink: 0, marginTop: '2px' }} />
+                  <div style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.7 }}>
                     <div>{BUSINESS.hours.weekdays}</div>
                     <div>{BUSINESS.hours.saturday}</div>
-                    <div style={{ color: '#009EC6', fontWeight: 600 }}>⚡ {BUSINESS.hours.emergency}</div>
+                    <div style={{ color: 'var(--brand-cyan)', fontWeight: 600 }}>⚡ {BUSINESS.hours.emergency}</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 mt-4">
                   <a href={BUSINESS.facebook} target="_blank" rel="noopener noreferrer"
                     style={{ width: '36px', height: '36px', background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'rgba(255,255,255,0.7)', textDecoration: 'none' }}
-                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = '#009EC6'; (e.currentTarget as HTMLElement).style.borderColor = '#009EC6'; }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = 'var(--brand-cyan)'; (e.currentTarget as HTMLElement).style.borderColor = 'var(--brand-cyan)'; }}
                     onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.7)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.15)'; }}>
                     <Facebook size={16} />
                   </a>
@@ -107,7 +107,7 @@ export default function Footer() {
 
             {/* Column 2 — Services */}
             <div>
-              <h4 style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '16px' }}>
+              <h4 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
                 Services
               </h4>
               <div className="space-y-2">
@@ -124,8 +124,8 @@ export default function Footer() {
                 ].map((link) => (
                   <Link key={link.href} href={link.href}
                     className="block no-underline transition-colors duration-150"
-                    style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.7)' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
+                    style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.7)' }}
+                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                     onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}>
                     {link.label}
                   </Link>
@@ -135,7 +135,7 @@ export default function Footer() {
 
             {/* Column 3 — Service Areas */}
             <div>
-              <h4 style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '16px' }}>
+              <h4 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
                 Service Areas
               </h4>
               <div className="space-y-2">
@@ -152,8 +152,8 @@ export default function Footer() {
                 ].map((link) => (
                   <Link key={link.href + link.label} href={link.href}
                     className="block no-underline transition-colors duration-150"
-                    style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.7)' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
+                    style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.7)' }}
+                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                     onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}>
                     {link.label}
                   </Link>
@@ -163,7 +163,7 @@ export default function Footer() {
 
             {/* Column 4 — Company */}
             <div>
-              <h4 style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '16px' }}>
+              <h4 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
                 Company
               </h4>
               <div className="space-y-2 mb-6">
@@ -177,8 +177,8 @@ export default function Footer() {
                 ].map((link) => (
                   <Link key={link.href} href={link.href}
                     className="block no-underline transition-colors duration-150"
-                    style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '13px', color: 'rgba(255,255,255,0.7)' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = '#009EC6')}
+                    style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.7)' }}
+                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                     onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}>
                     {link.label}
                   </Link>
@@ -191,9 +191,9 @@ export default function Footer() {
                 className="inline-flex items-center justify-center no-underline transition-all duration-200"
                 style={{
                   background: 'transparent',
-                  color: '#009EC6',
+                  color: 'var(--brand-cyan)',
                   border: '2px solid #009EC6',
-                  fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                  fontFamily: 'var(--font-display)',
                   fontWeight: 700,
                   fontSize: '12px',
                   textTransform: 'uppercase',
@@ -201,8 +201,8 @@ export default function Footer() {
                   padding: '8px 16px',
                   borderRadius: '2px',
                 }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#009EC6'; (e.currentTarget as HTMLElement).style.color = 'white'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; (e.currentTarget as HTMLElement).style.color = '#009EC6'; }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-cyan)'; (e.currentTarget as HTMLElement).style.color = 'white'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; (e.currentTarget as HTMLElement).style.color = 'var(--brand-cyan)'; }}
               >
                 Apply for Financing
               </a>
@@ -213,16 +213,16 @@ export default function Footer() {
         {/* License Block */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', padding: '24px 0' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: '#009EC6', marginBottom: '8px' }}>
+            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>
               Licenses &amp; Certifications
             </p>
-            <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '11px', color: '#787878', lineHeight: 1.7 }}>
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7 }}>
               Maryland Master Plumber/Master Gasfitter #96958 · WSSC Master Plumber/Master Gasfitter #73696 · Howard County Master Plumber/Master Gasfitter #20020096958 · Anne Arundel County Master Plumber/Master Gasfitter #A2-6139 · City of Rockville Master Plumber/Master Gasfitter #PLL-0002113 · MD Home Improvement Contractor/Salesman #134723 / #109901
             </p>
-            <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '11px', color: '#787878', lineHeight: 1.7, marginTop: '4px' }}>
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginTop: '4px' }}>
               Virginia Master Plumber/Master Gasfitter #2710064209 · Virginia Class A Contractor #2705181061 · DC Master Plumber/Master Gasfitter #PGM1002236 · Delaware Master Plumber/Master Gasfitter #PL-0012866 · Universal EPA 608 Certification #YbKLqI5cGf
             </p>
-            <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '11px', color: '#787878', lineHeight: 1.7, marginTop: '4px' }}>
+            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginTop: '4px' }}>
               MDOT MBE Cert No. {CERTIFICATIONS.mdotMBE.certNo} · SWaM Cert No. {CERTIFICATIONS.swam.certNo} · NAICS Code: {CERTIFICATIONS.naics} · SIC Code: {CERTIFICATIONS.sic} · CAGE: {CERTIFICATIONS.cage}
             </p>
           </div>
@@ -231,7 +231,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,0.06)', padding: '16px 0' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '12px', color: 'rgba(255,255,255,0.4)', textAlign: 'center' }}>
+            <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.4)', textAlign: 'center' }}>
               © 2026 Definitive Mechanical LLC. All Rights Reserved. Licensed, Bonded &amp; Insured. Based in Largo, MD. Serving Maryland, Washington DC &amp; Northern Virginia.
             </p>
           </div>

@@ -24,7 +24,7 @@ export default function BookNowButton({
   const paddings = { sm: '0 16px', md: '0 24px', lg: '0 32px' };
 
   const baseStyle: React.CSSProperties = {
-    fontFamily: 'Barlow Condensed, Arial, sans-serif',
+    fontFamily: 'var(--font-display)',
     fontWeight: 700,
     textTransform: 'uppercase',
     letterSpacing: '0.1em',
@@ -43,17 +43,17 @@ export default function BookNowButton({
   };
 
   const variantStyles: Record<string, React.CSSProperties> = {
-    phone: { background: '#009EC6', color: '#003060', borderColor: '#009EC6' },
-    navy: { background: '#003060', color: 'white', borderColor: '#003060' },
-    outline: { background: 'transparent', color: 'white', borderColor: 'white' },
-    ghost: { background: 'transparent', color: '#009EC6', borderColor: '#009EC6' },
+    phone: { background: 'var(--brand-red)', color: 'white', borderColor: 'var(--brand-red)' },
+    navy: { background: 'var(--brand-blue)', color: 'white', borderColor: 'var(--brand-blue)' },
+    outline: { background: 'transparent', color: 'white', borderColor: 'rgba(255,255,255,0.7)' },
+    ghost: { background: 'transparent', color: 'var(--brand-blue)', borderColor: 'var(--brand-blue)' },
   };
 
   const hoverStyles: Record<string, React.CSSProperties> = {
-    phone: { background: '#007BA0', borderColor: '#007BA0', boxShadow: '0 4px 20px rgba(0,158,198,0.35)', transform: 'translateY(-2px)' },
-    navy: { background: '#002050', borderColor: '#002050', transform: 'translateY(-2px)' },
-    outline: { background: 'white', color: '#003060', transform: 'translateY(-2px)' },
-    ghost: { background: '#009EC6', color: 'white', transform: 'translateY(-2px)' },
+    phone: { background: '#c40511', borderColor: '#c40511', boxShadow: '0 4px 20px rgba(228,6,19,0.35)', transform: 'translateY(-2px)' },
+    navy: { background: '#005fa3', borderColor: '#005fa3', transform: 'translateY(-2px)' },
+    outline: { background: 'white', color: 'var(--brand-navy)', borderColor: 'white', transform: 'translateY(-2px)' },
+    ghost: { background: 'var(--brand-blue)', color: 'white', transform: 'translateY(-2px)' },
   };
 
   const style = { ...baseStyle, ...variantStyles[variant] };

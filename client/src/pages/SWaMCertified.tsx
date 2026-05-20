@@ -35,18 +35,18 @@ export default function SWaMCertified() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, #003060 0%, #001830 100%)", minHeight: "45vh" }} className="py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, #001830 100%)", minHeight: "45vh" }} className="py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "SWaM Certified Plumbing Contractor Virginia" }]} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "#009EC6", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
+              <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
                 VIRGINIA SWAM CERTIFIED · CERT NO. 815255 · NORTHERN VIRGINIA
               </p>
-              <h1 style={{ fontFamily: "'Playfair Display',serif", color: "white", fontSize: "clamp(28px,4vw,42px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
+              <h1 style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "clamp(28px,4vw,42px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
                 Virginia SWaM Certified Plumbing Contractor
               </h1>
-              <p style={{ fontFamily: "'Barlow',sans-serif", color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "560px", lineHeight: 1.7 }} className="mb-6">
+              <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "560px", lineHeight: 1.7 }} className="mb-6">
                 Definitive Mechanical is a Virginia SWaM Certified plumbing and mechanical contractor (Cert No. 815255), issued by the Virginia Department of Small Business & Supplier Diversity. We are a minority-owned business licensed as Master Plumber and Master Gasfitter in Virginia (#2710064209) and hold a Virginia Class A Contractor license (#2705181061). Our SWaM certification qualifies us for Virginia state and local government procurement programs with SWaM utilization goals.
               </p>
               <TrustBadges variant="dark" badges={["VA SWaM Cert No. 815255", "Minority-Owned Business", "VA Master Plumber #2710064209", "VA Class A Contractor"]} />
@@ -57,10 +57,10 @@ export default function SWaMCertified() {
             </div>
             <div className="lg:col-span-2 hidden lg:flex items-center justify-center">
               <div className="rounded-lg p-10 text-center" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)" }}>
-                <Award size={64} style={{ color: "#009EC6", margin: "0 auto 16px" }} />
-                <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "white", fontSize: "18px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>VA SWaM</p>
-                <p style={{ fontFamily: "'Barlow',sans-serif", color: "#009EC6", fontSize: "15px", marginTop: "4px" }}>Cert No. 815255</p>
-                <p style={{ fontFamily: "'Barlow Condensed',sans-serif", color: "rgba(255,255,255,0.6)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", marginTop: "8px" }}>Virginia SBSD</p>
+                <Award size={64} style={{ color: "var(--brand-cyan)", margin: "0 auto 16px" }} />
+                <p style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "18px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em" }}>VA SWaM</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: "var(--brand-cyan)", fontSize: "15px", marginTop: "4px" }}>Cert No. 815255</p>
+                <p style={{ fontFamily: 'var(--font-display)', color: "rgba(255,255,255,0.6)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", marginTop: "8px" }}>Virginia SBSD</p>
               </div>
             </div>
           </div>
@@ -73,10 +73,10 @@ export default function SWaMCertified() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <SectionHeading eyebrow="ABOUT VIRGINIA SWAM" heading="What is Virginia SWaM certification?" />
-              <div style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "16px", lineHeight: 1.7 }} className="space-y-4">
+              <div style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "16px", lineHeight: 1.7 }} className="space-y-4">
                 <p>Virginia SWaM (Small, Women-owned, and Minority-owned Business) certification is issued by the Virginia Department of Small Business & Supplier Diversity (SBSD). It confirms that a business qualifies as a small, women-owned, or minority-owned enterprise under Virginia's definitions.</p>
                 <p>Virginia state agencies and local governments often have SWaM utilization goals for contracts. Prime contractors working on Virginia government projects can document their engagement of SWaM-certified subcontractors toward those goals.</p>
-                <p>Definitive Mechanical's SWaM certification is verifiable in the Virginia SBSD SWaM Directory at <a href="https://sbsd.virginia.gov" target="_blank" rel="noopener noreferrer" style={{ color: "#009EC6" }}>sbsd.virginia.gov</a>.</p>
+                <p>Definitive Mechanical's SWaM certification is verifiable in the Virginia SBSD SWaM Directory at <a href="https://sbsd.virginia.gov" target="_blank" rel="noopener noreferrer" style={{ color: "var(--brand-cyan)" }}>sbsd.virginia.gov</a>.</p>
               </div>
             </div>
             <div>
@@ -90,11 +90,11 @@ export default function SWaMCertified() {
                   { label: "NAICS Code", value: "238220 — Plumbing, Heating & A/C Contractors" },
                   { label: "Verification", value: "sbsd.virginia.gov" },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-3 p-4 rounded" style={{ background: "#F0F0F0" }}>
-                    <CheckCircle2 size={18} style={{ color: "#009EC6", flexShrink: 0, marginTop: 2 }} />
+                  <div key={i} className="flex items-start gap-3 p-4 rounded" style={{ background: "var(--surface-1)" }}>
+                    <CheckCircle2 size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                     <div>
-                      <p style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, color: "#003060", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.15em" }}>{item.label}</p>
-                      <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "14px", marginTop: "2px" }}>{item.value}</p>
+                      <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.15em" }}>{item.label}</p>
+                      <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", marginTop: "2px" }}>{item.value}</p>
                     </div>
                   </div>
                 ))}
@@ -105,7 +105,7 @@ export default function SWaMCertified() {
       </section>
 
       {/* Why Hire SWaM */}
-      <section className="py-20" style={{ background: "#003060" }}>
+      <section className="py-20" style={{ background: "var(--brand-navy)" }}>
         <div className="container">
           <SectionHeading eyebrow="WHY HIRE A SWAM CONTRACTOR" heading="Why hire a Virginia SWaM certified plumbing contractor?" light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
@@ -115,9 +115,9 @@ export default function SWaMCertified() {
               { icon: ShieldCheck, title: "Fully Licensed in Virginia", body: "SWaM certification is one of many credentials. We hold VA Master Plumber/Gasfitter license #2710064209, VA Class A Contractor #2705181061, and serve all of Northern Virginia." },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-md p-6" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.15)" }}>
-                <item.icon size={32} style={{ color: "#009EC6", marginBottom: "12px" }} />
-                <p style={{ fontFamily: "'Barlow Condensed',sans-serif", fontWeight: 700, color: "#003060", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
-                <p style={{ fontFamily: "'Barlow',sans-serif", color: "#484848", fontSize: "14px", lineHeight: 1.6 }}>{item.body}</p>
+                <item.icon size={32} style={{ color: "var(--brand-cyan)", marginBottom: "12px" }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }}>{item.body}</p>
               </div>
             ))}
           </div>
@@ -125,7 +125,7 @@ export default function SWaMCertified() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20" style={{ background: "#F0F0F0" }}>
+      <section className="py-20" style={{ background: "var(--surface-1)" }}>
         <div className="container">
           <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Virginia SWaM certification FAQ" />
           <div className="max-w-3xl mx-auto mt-8">

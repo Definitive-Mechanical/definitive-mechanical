@@ -48,12 +48,12 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
     <div style={{ width: '100%', maxWidth: isHero ? '520px' : '480px' }}>
       {/* Label */}
       <p style={{
-        fontFamily: 'Barlow Condensed, Arial, sans-serif',
+        fontFamily: 'var(--font-display)',
         fontWeight: 700,
         fontSize: isHero ? '12px' : '11px',
         textTransform: 'uppercase',
         letterSpacing: '0.2em',
-        color: isHero ? 'rgba(255,255,255,0.7)' : '#009EC6',
+        color: isHero ? 'rgba(255,255,255,0.7)' : 'var(--brand-cyan)',
         marginBottom: '10px',
       }}>
         Check If We Service Your Area
@@ -69,7 +69,7 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
               left: '14px',
               top: '50%',
               transform: 'translateY(-50%)',
-              color: '#009EC6',
+              color: 'var(--brand-cyan)',
               pointerEvents: 'none',
             }}
           />
@@ -87,9 +87,9 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
               height: isHero ? '56px' : '48px',
               paddingLeft: '40px',
               paddingRight: '12px',
-              fontFamily: 'Barlow, Arial, sans-serif',
+              fontFamily: 'var(--font-body)',
               fontSize: isHero ? '16px' : '15px',
-              color: '#003060',
+              color: 'var(--brand-navy)',
               background: 'white',
               border: 'none',
               outline: 'none',
@@ -102,11 +102,11 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
           style={{
             height: isHero ? '56px' : '48px',
             padding: '0 20px',
-            background: '#009EC6',
-            color: '#003060',
+            background: 'var(--brand-cyan)',
+            color: 'var(--brand-navy)',
             border: 'none',
             borderRadius: '0 2px 2px 0',
-            fontFamily: 'Barlow Condensed, Arial, sans-serif',
+            fontFamily: 'var(--font-display)',
             fontWeight: 700,
             fontSize: '13px',
             textTransform: 'uppercase',
@@ -119,7 +119,7 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
             flexShrink: 0,
           }}
           onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#007BA0'; }}
-          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = '#009EC6'; }}
+          onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-cyan)'; }}
         >
           <Search size={15} />
           Check
@@ -143,15 +143,15 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
               <div style={{ background: '#059669', padding: '12px 16px', display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <CheckCircle size={20} style={{ color: 'white', flexShrink: 0 }} />
                 <div>
-                  <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'white', margin: 0 }}>
+                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'white', margin: 0 }}>
                     Great news — we serve your area!
                   </p>
                 </div>
               </div>
               {/* Details */}
               <div style={{ padding: '16px' }}>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#374151', marginBottom: '12px' }}>
-                  <strong style={{ color: '#003060' }}>{result.city}</strong>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: '#374151', marginBottom: '12px' }}>
+                  <strong style={{ color: 'var(--brand-navy)' }}>{result.city}</strong>
                   {result.county ? `, ${result.county}` : ''}
                   {result.stateLabel ? ` — ${result.stateLabel}` : ''}
                 </p>
@@ -163,12 +163,12 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
                         display: 'inline-flex',
                         alignItems: 'center',
                         gap: '6px',
-                        fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                        fontFamily: 'var(--font-display)',
                         fontWeight: 700,
                         fontSize: '13px',
                         textTransform: 'uppercase',
                         letterSpacing: '0.1em',
-                        color: '#009EC6',
+                        color: 'var(--brand-cyan)',
                         textDecoration: 'none',
                       }}
                     >
@@ -183,12 +183,12 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
                         display: 'inline-flex',
                         alignItems: 'center',
                         gap: '6px',
-                        fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                        fontFamily: 'var(--font-display)',
                         fontWeight: 700,
                         fontSize: '13px',
                         textTransform: 'uppercase',
                         letterSpacing: '0.1em',
-                        color: '#003060',
+                        color: 'var(--brand-navy)',
                         textDecoration: 'none',
                       }}
                     >
@@ -202,9 +202,9 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '6px',
-                      background: '#003060',
+                      background: 'var(--brand-navy)',
                       color: 'white',
-                      fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                      fontFamily: 'var(--font-display)',
                       fontWeight: 700,
                       fontSize: '13px',
                       textTransform: 'uppercase',
@@ -228,12 +228,12 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
               {/* Amber header bar */}
               <div style={{ background: '#B45309', padding: '12px 16px', display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <XCircle size={20} style={{ color: 'white', flexShrink: 0 }} />
-                <p style={{ fontFamily: 'Barlow Condensed, Arial, sans-serif', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'white', margin: 0 }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'white', margin: 0 }}>
                   Outside our standard area
                 </p>
               </div>
               <div style={{ padding: '16px' }}>
-                <p style={{ fontFamily: 'Barlow, Arial, sans-serif', fontSize: '14px', color: '#374151', marginBottom: '12px' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: '#374151', marginBottom: '12px' }}>
                   We don&apos;t currently have a listed page for zip code <strong>{zip}</strong>, but we may still be able to help — call us to confirm.
                 </p>
                 <a
@@ -242,9 +242,9 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '6px',
-                    background: '#003060',
+                    background: 'var(--brand-navy)',
                     color: 'white',
-                    fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                    fontFamily: 'var(--font-display)',
                     fontWeight: 700,
                     fontSize: '13px',
                     textTransform: 'uppercase',
@@ -263,12 +263,12 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '6px',
-                    fontFamily: 'Barlow Condensed, Arial, sans-serif',
+                    fontFamily: 'var(--font-display)',
                     fontWeight: 700,
                     fontSize: '12px',
                     textTransform: 'uppercase',
                     letterSpacing: '0.1em',
-                    color: '#009EC6',
+                    color: 'var(--brand-cyan)',
                     textDecoration: 'none',
                     marginLeft: '16px',
                   }}

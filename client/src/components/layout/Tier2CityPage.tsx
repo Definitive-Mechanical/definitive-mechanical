@@ -220,12 +220,12 @@ export default function Tier2CityPage({
             <div
               className="mt-6 max-w-3xl"
               style={{
-                background: "#C0D8F0",
+                background: "var(--surface-1)",
                 borderLeft: "4px solid #009EC6",
                 padding: "14px 18px",
                 fontFamily: "'Barlow', sans-serif",
                 fontSize: "15px",
-                color: "#484848",
+                color: "var(--ink-2)",
               }}
             >
               {calloutNote}
@@ -248,14 +248,14 @@ export default function Tier2CityPage({
                 style={{
                   display: "inline-flex",
                   alignItems: "center",
-                  background: "rgba(0,48,96,0.06)",
-                  border: "1px solid rgba(0,48,96,0.18)",
+                  background: "rgba(6,59,99,0.06)",
+                  border: "1px solid rgba(6,59,99,0.18)",
                   borderRadius: "4px",
                   padding: "6px 12px",
                   fontFamily: "'Barlow Condensed', sans-serif",
                   fontWeight: 700,
                   fontSize: "13px",
-                  color: "#003060",
+                  color: "var(--brand-navy)",
                   margin: "4px",
                 }}
               >
@@ -270,7 +270,7 @@ export default function Tier2CityPage({
       <section className="bg-[#C0D8F0] py-12 px-4">
         <div className="max-w-5xl mx-auto">
           <h3
-            style={{ fontFamily: "'Barlow Condensed', sans-serif", color: "#186090" }}
+            style={{ fontFamily: "'Barlow Condensed', sans-serif", color: "var(--brand-blue)" }}
             className="font-bold text-sm uppercase tracking-widest mb-5"
           >
             NEARBY AREAS WE SERVE
@@ -288,7 +288,7 @@ export default function Tier2CityPage({
                   fontFamily: "'Barlow Condensed', sans-serif",
                   fontWeight: 600,
                   fontSize: "14px",
-                  color: "#003060",
+                  color: "var(--brand-navy)",
                   textDecoration: "none",
                   minHeight: "44px",
                   lineHeight: "28px",
