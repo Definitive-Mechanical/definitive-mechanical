@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
+import { ScrollToTop } from "./components/ScrollToTop";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/layout/Header";
@@ -226,7 +227,9 @@ function Layout({ children }: { children: React.ReactNode }) {
 
 function Router() {
   return (
-    <Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
       {/* Core */}
       <Route path="/" component={() => <Layout><Home /></Layout>} />
       <Route path="/about" component={() => <Layout><About /></Layout>} />
@@ -568,6 +571,7 @@ function Router() {
       <Route path="/404" component={() => <Layout><NotFound /></Layout>} />
       <Route component={() => <Layout><NotFound /></Layout>} />
     </Switch>
+    </>
   );
 }
 
