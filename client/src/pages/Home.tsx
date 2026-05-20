@@ -155,109 +155,61 @@ function HeroSection() {
             </div>
           </div>
 
-          {/* RIGHT — contact form — 2/5 */}
+          {/* RIGHT — dark navy lead form card */}
           <div className="lg:col-span-2">
-            <div
-              style={{
-                background: 'rgba(255,255,255,0.97)',
-                borderRadius: '6px',
-                padding: '32px 28px',
-                boxShadow: '0 24px 64px rgba(0,0,0,0.45)',
-                borderTop: '4px solid var(--brand-cyan)',
-              }}
-            >
+            <div style={{ background: '#063B63', borderRadius: '12px', padding: '22px', boxShadow: '0 12px 28px rgba(6,59,99,0.35)' }}>
               {submitted ? (
                 <div style={{ textAlign: 'center', padding: '24px 0' }}>
-                  <CheckCircle size={48} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
-                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '22px', textTransform: 'uppercase', color: 'var(--brand-navy)', marginBottom: '8px' }}>
+                  <CheckCircle size={48} color="#4FB3E8" style={{ margin: '0 auto 16px' }} />
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'white', marginBottom: '8px' }}>
                     Request Received!
                   </h3>
-                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '15px', color: '#374151', lineHeight: 1.6 }}>
-                    We'll call you back within 30 minutes. For emergencies call <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-cyan)', fontWeight: 700 }}>{BUSINESS.phone}</a> now.
+                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>
+                    We'll call you back within 30 minutes. For emergencies call <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: '#4FB3E8', fontWeight: 700 }}>{BUSINESS.phone}</a> now.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit}>
-                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '6px' }}>
-                    Free Estimate · No Obligation
-                  </p>
-                  <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '22px', textTransform: 'uppercase', color: 'var(--brand-navy)', marginBottom: '20px', lineHeight: 1.1 }}>
-                    Request Service
-                  </h2>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8' }}>Free Estimate</p>
+                  <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'white', marginTop: '4px', lineHeight: 1.1, marginBottom: '14px' }}>Tell us what you need.</h2>
 
-                  {/* Name */}
-                  <div style={{ marginBottom: '14px' }}>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Full Name *</label>
+                  {/* Name + Phone row */}
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '10px' }}>
                     <input
-                      type="text"
-                      required
-                      placeholder="John Smith"
+                      type="text" required placeholder="Full name"
                       value={formData.name}
                       onChange={e => setFormData(p => ({ ...p, name: e.target.value }))}
-                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#111827', outline: 'none', boxSizing: 'border-box' }}
+                      style={{ padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box', width: '100%' }}
                     />
-                  </div>
-
-                  {/* Phone */}
-                  <div style={{ marginBottom: '14px' }}>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Phone Number *</label>
                     <input
-                      type="tel"
-                      required
-                      placeholder="(301) 555-0100"
+                      type="tel" required placeholder="Phone"
                       value={formData.phone}
                       onChange={e => setFormData(p => ({ ...p, phone: e.target.value }))}
-                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#111827', outline: 'none', boxSizing: 'border-box' }}
+                      style={{ padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box', width: '100%' }}
                     />
                   </div>
 
-                  {/* Email */}
-                  <div style={{ marginBottom: '14px' }}>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Email Address</label>
-                    <input
-                      type="email"
-                      placeholder="john@example.com"
-                      value={formData.email}
-                      onChange={e => setFormData(p => ({ ...p, email: e.target.value }))}
-                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#111827', outline: 'none', boxSizing: 'border-box' }}
-                    />
-                  </div>
+                  {/* Service dropdown — full width */}
+                  <select
+                    required
+                    value={formData.service}
+                    onChange={e => setFormData(p => ({ ...p, service: e.target.value }))}
+                    style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: formData.service ? 'white' : 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box', marginBottom: '10px' }}
+                  >
+                    <option value="" disabled style={{ color: '#000' }}>Service needed…</option>
+                    {SERVICES.map(s => <option key={s} value={s} style={{ color: '#000' }}>{s}</option>)}
+                  </select>
 
-                  {/* Service */}
-                  <div style={{ marginBottom: '14px' }}>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Service Needed *</label>
-                    <select
-                      required
-                      value={formData.service}
-                      onChange={e => setFormData(p => ({ ...p, service: e.target.value }))}
-                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: formData.service ? '#111827' : '#9ca3af', outline: 'none', background: 'white', boxSizing: 'border-box' }}
-                    >
-                      <option value="" disabled>Select a service...</option>
-                      {SERVICES.map(s => <option key={s} value={s}>{s}</option>)}
-                    </select>
-                  </div>
-
-                  {/* Message */}
-                  <div style={{ marginBottom: '20px' }}>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--brand-navy)', marginBottom: '5px' }}>Brief Description</label>
-                    <textarea
-                      rows={3}
-                      placeholder="Describe the issue..."
-                      value={formData.message}
-                      onChange={e => setFormData(p => ({ ...p, message: e.target.value }))}
-                      style={{ width: '100%', padding: '10px 12px', border: '1px solid #d1d5db', borderRadius: '4px', fontFamily: 'var(--font-body)', fontSize: '14px', color: '#111827', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }}
-                    />
-                  </div>
-
+                  {/* Submit */}
                   <button
                     type="submit"
-                    style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px', borderRadius: '4px', border: 'none', cursor: 'pointer' }}
+                    style={{ width: '100%', background: '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: 'pointer', marginTop: '4px' }}
                   >
-                    <Send size={16} /> GET FREE ESTIMATE
+                    Get My Free Estimate
                   </button>
 
-                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: '#6b7280', textAlign: 'center', marginTop: '10px' }}>
-                    Or call directly: <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-cyan)', fontWeight: 700 }}>{BUSINESS.phone}</a> — 24/7
+                  <p style={{ marginTop: '10px', fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)' }}>
+                    No spam. Quoted price in writing. No overtime surcharge.
                   </p>
                 </form>
               )}
