@@ -179,7 +179,7 @@ export default function DCWardsHub() {
         <div className="container max-w-3xl mx-auto">
           <SectionHeading eyebrow="FAQ" heading="Plumbing in DC wards — common questions" />
           <div className="mt-8">
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
           </div>
         </div>
       </section>

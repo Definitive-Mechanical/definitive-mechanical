@@ -177,7 +177,7 @@ export default function DCNeighborhoodsHub() {
         <div className="container max-w-3xl mx-auto">
           <SectionHeading eyebrow="FAQ" heading="Plumbing in DC neighborhoods — common questions" />
           <div className="mt-8">
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
           </div>
         </div>
       </section>
