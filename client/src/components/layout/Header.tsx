@@ -278,34 +278,25 @@ export default function Header() {
             CALL {BUSINESS.phone}
           </a>
 
-          {/* Mobile Tap-to-Call */}
-          <a
-            href={`tel:${BUSINESS.phoneRaw}`}
-            className="lg:hidden flex items-center justify-center no-underline"
-            aria-label={`Call ${BUSINESS.phone}`}
-            style={{
-              width: '44px',
-              height: '44px',
-              borderRadius: '50%',
-              background: 'var(--brand-cyan)',
-              color: 'var(--brand-navy)',
-              flexShrink: 0,
-              transition: 'transform 160ms cubic-bezier(0.23,1,0.32,1), background 160ms',
-            }}
-            onTouchStart={e => (e.currentTarget as HTMLElement).style.transform = 'scale(0.92)'}
-            onTouchEnd={e => (e.currentTarget as HTMLElement).style.transform = 'scale(1)'}
-          >
-            <Phone size={20} strokeWidth={2.5} />
-          </a>
-          {/* Mobile Hamburger */}
-          <button
-            className="lg:hidden flex items-center justify-center"
-            style={{ width: '48px', height: '48px', color: 'white', background: 'none', border: 'none' }}
-            onClick={() => setMobileOpen(true)}
-            aria-label="Open menu"
-          >
-            <Menu size={24} />
-          </button>
+          {/* Mobile Tap-to-Call + Hamburger */}
+          <div className="lg:hidden flex items-center gap-0">
+            <a
+              href={`tel:${BUSINESS.phoneRaw}`}
+              className="flex items-center justify-center no-underline"
+              aria-label={`Call ${BUSINESS.phone}`}
+              style={{ width: '40px', height: '48px', color: 'white' }}
+            >
+              <Phone size={18} strokeWidth={2} />
+            </a>
+            <button
+              className="flex items-center justify-center"
+              style={{ width: '40px', height: '48px', color: 'white', background: 'none', border: 'none' }}
+              onClick={() => setMobileOpen(true)}
+              aria-label="Open menu"
+            >
+              <Menu size={24} />
+            </button>
+          </div>
         </div>
       </header>
 
