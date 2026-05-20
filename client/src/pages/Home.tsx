@@ -316,14 +316,10 @@ export default function Home() {
             centered
           />
 
-          {/* Sticky category pill tabs */}
+          {/* Category pill tabs */}
           <div style={{
-            position: 'sticky',
-            top: '72px',
-            zIndex: 30,
-            background: 'white',
-            paddingTop: '12px',
-            paddingBottom: '12px',
+            paddingTop: '8px',
+            paddingBottom: '8px',
             marginBottom: '40px',
             borderBottom: '1px solid var(--border)',
           }}>
