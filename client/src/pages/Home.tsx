@@ -319,14 +319,14 @@ export default function Home() {
               <div key={category.label}>
                 {/* Category divider header */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '24px' }}>
-                  <div style={{ height: '2px', width: '28px', background: 'var(--brand-cyan)', flexShrink: 0 }} />
+                  <div style={{ height: '3px', width: '32px', background: 'var(--brand-cyan)', flexShrink: 0 }} />
                   <p style={{
                     fontFamily: 'var(--font-display)',
                     fontWeight: 700,
-                    fontSize: '11px',
+                    fontSize: '18px',
                     textTransform: 'uppercase',
-                    letterSpacing: '0.28em',
-                    color: 'var(--brand-cyan)',
+                    letterSpacing: '0.12em',
+                    color: 'var(--brand-navy)',
                     margin: 0,
                     whiteSpace: 'nowrap',
                   }}>
