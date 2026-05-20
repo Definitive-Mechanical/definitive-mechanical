@@ -276,9 +276,7 @@ export default function WaterHeaterInstallation() {
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about water heater installation in MD, DC & Northern VA</h2>
         </div>
-          <div style={{ background: '#F0F5FA', borderRadius: '6px', padding: '8px 32px' }}>
             <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
-          </div>
         </div>
       </section>
 
