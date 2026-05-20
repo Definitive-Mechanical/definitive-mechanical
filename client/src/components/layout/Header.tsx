@@ -98,35 +98,51 @@ export default function Header() {
         className="fixed top-0 left-0 right-0 z-[101]"
         style={{
           background: 'var(--brand-red)',
-          height: '36px',
+          minHeight: '36px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
+          padding: '6px 16px',
         }}
       >
         <a
           href={`tel:${BUSINESS.phoneRaw}`}
-          className="no-underline flex items-center gap-2"
+          className="no-underline"
           style={{
             fontFamily: 'var(--font-body)',
             fontWeight: 700,
             fontSize: '12px',
             textTransform: 'uppercase',
-            letterSpacing: '0.14em',
+            letterSpacing: '0.1em',
             color: 'white',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '2px',
+            textAlign: 'center',
+            lineHeight: 1.4,
           }}
         >
-          <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
-          24/7 Emergency Plumbing — Call Now: {BUSINESS.phone}
-          <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite 0.7s', flexShrink: 0 }} />
+          {/* Mobile: two lines. Desktop: single line with dots */}
+          <span className="hidden sm:flex items-center gap-2">
+            <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
+            24/7 Emergency Plumbing — Call Now: {BUSINESS.phone}
+            <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite 0.7s', flexShrink: 0 }} />
+          </span>
+          <span className="sm:hidden" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1px' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+              <span style={{ display: 'inline-block', width: '6px', height: '6px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
+              24/7 Emergency Plumbing
+            </span>
+            <span>Call Now: {BUSINESS.phone}</span>
+          </span>
         </a>
       </div>
 
       {/* Desktop Header */}
       <header
-        className="fixed left-0 right-0 z-[100] transition-shadow duration-300"
+        className="fixed left-0 right-0 z-[100] transition-shadow duration-300 announcement-offset"
         style={{
-          top: '36px',
           background: 'var(--brand-navy)',
           boxShadow: scrolled ? 'var(--shadow-hero)' : '0 2px 8px rgba(6,59,99,0.3)',
           height: '72px',
@@ -317,9 +333,9 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Spacer — accounts for announcement bar (36px) + header (72px) */}
-      <div style={{ height: '108px' }} className="hidden lg:block" />
-      <div style={{ height: '36px' }} className="lg:hidden" />
+      {/* Spacer — desktop: 36px bar + 72px header = 108px; mobile: 52px bar + 72px header = 124px */}
+      <div style={{ height: '108px' }} className="hidden sm:block" />
+      <div style={{ height: '124px' }} className="sm:hidden" />
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (

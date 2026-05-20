@@ -351,7 +351,13 @@
   }
   .reveal.in { opacity: 1; transform: translateY(0); }
 
-
+  /* ── Announcement bar offset ────────────────────────── */
+  /* Mobile: bar is ~52px tall (two lines + padding) */
+  .announcement-offset { top: 52px; }
+  /* sm+ (640px): bar is single line, 36px */
+  @media (min-width: 640px) {
+    .announcement-offset { top: 36px; }
+  }
 
   /* ── Mono utility ──────────────────────────────────────── */
   .mono {
