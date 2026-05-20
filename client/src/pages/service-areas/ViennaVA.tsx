@@ -1,4 +1,5 @@
 import { getServiceImage } from '@/lib/serviceImages';
+import { ALL_SERVICES } from '@/lib/allServices';
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import {
@@ -81,7 +82,7 @@ export default function ViennaVA() {
             Vienna is one of Fairfax County's most desirable communities — a mix of established single-family neighborhoods, newer custom homes, and a walkable town center along Church Street. Vienna's residential stock spans multiple decades of construction, from post-war ranchers to large custom homes built in the 1990s and 2000s. The town's tree-lined streets and mature landscaping create root intrusion risk for original sewer laterals, and Vienna's active renovation market generates steady demand for water heater upgrades, gas line work, and fixture replacements.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc, i) => (
+            {ALL_SERVICES.map((svc, i) => (
               <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                 <div
                   className="cursor-pointer"

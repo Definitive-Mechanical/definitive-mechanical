@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { ALL_SERVICES } from '@/lib/allServices';
 import { getServiceImage } from '@/lib/serviceImages';
 import { Link } from "wouter";
 import {
@@ -82,7 +83,7 @@ export default function PotomacMD() {
             Potomac is one of the most affluent communities in the United States — characterized by large estate homes, significant lot sizes, extensive landscaping with irrigation systems, outdoor entertainment areas, and a residential profile that creates demand for premium plumbing service. Potomac's large homes have correspondingly complex plumbing systems — multiple water heaters or commercial-grade units, extensive irrigation systems with backflow requirements, gas lines serving outdoor kitchens and generators, and well-maintained but aging sewer laterals that benefit from periodic camera inspection.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc, i) => (
+            {ALL_SERVICES.map((svc, i) => (
               <Link key={i} href={svc.href}>
                 <div
                   className="cursor-pointer"

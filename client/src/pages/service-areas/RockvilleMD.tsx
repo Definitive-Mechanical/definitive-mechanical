@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { ALL_SERVICES } from '@/lib/allServices';
 import { getServiceImage } from '@/lib/serviceImages';
 import { Link } from "wouter";
 import {
@@ -99,7 +100,7 @@ export default function RockvilleMD() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc, i) => (
+            {ALL_SERVICES.map((svc, i) => (
               <Link key={i} href={svc.href}>
                 <div
                   className="cursor-pointer"

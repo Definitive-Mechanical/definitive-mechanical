@@ -18,6 +18,7 @@
  */
 
 import { getServiceImage } from "@/lib/serviceImages";
+import { ALL_SERVICES } from "@/lib/allServices";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import {
@@ -292,63 +293,59 @@ export default function PriorityCityLayout({
       {/* ── S3: SERVICES ─────────────────────────────────────────────────── */}
       <section className="py-20" style={{ background: "#FAFBFC" }}>
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-            {/* Left intro */}
-            <div>
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
-                {servicesEyebrow || "LICENSED PLUMBING SERVICES"}
-              </p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,34px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.1, marginBottom: 16 }}>
+          {/* Heading above the grid */}
+          <div style={{ marginBottom: "36px" }}>
+            <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
+              {servicesEyebrow || "LICENSED PLUMBING SERVICES"}
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,34px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.1, margin: 0 }}>
                 {servicesHeading}
               </h2>
-              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.75 }}>
-                {servicesIntro}
-              </p>
               <a href="tel:+13016795849" style={{
-                display: "inline-flex", alignItems: "center", gap: 8, marginTop: 24,
+                display: "inline-flex", alignItems: "center", gap: 8,
                 background: "var(--brand-navy)", color: "white",
                 fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px",
                 textTransform: "uppercase", letterSpacing: "0.08em",
-                padding: "12px 22px", borderRadius: "2px", textDecoration: "none",
+                padding: "12px 22px", borderRadius: "2px", textDecoration: "none", flexShrink: 0,
               }}>
                 <Phone size={14} /> CALL NOW
               </a>
             </div>
-            {/* Right: service cards — new style */}
-            <div className="lg:col-span-2">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {services.map((svc, i) => {
-                  const Icon = getServiceIcon(svc.label);
-                  return (
-                    <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
-                      <div
-                        className="cursor-pointer"
-                        style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
-                        onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-                        onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
-                      >
-                        <div style={{ position: "relative", height: "140px", overflow: "hidden" }}>
-                      <img
-                        src={getServiceImage(svc.href.replace(/^\//, "").toLowerCase())}
-                        alt={svc.label}
-                        style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
-                        loading="lazy"
-                      />
-                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
-                    </div>
-                        <div style={{ padding: "14px 16px 16px" }}>
-                          <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
-                          <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
-                        </div>
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
+            <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.75, marginTop: 10, maxWidth: 640 }}>
+              {servicesIntro}
+            </p>
+          </div>
+          {/* 3-col full-width grid — all 18 services */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {ALL_SERVICES.map((svc, i) => (
+              <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
+                <div
+                  className="cursor-pointer"
+                  style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                >
+                  <div style={{ position: "relative", height: "140px", overflow: "hidden" }}>
+                    <img
+                      src={getServiceImage(svc.href.replace(/^\//, "").toLowerCase())}
+                      alt={svc.label}
+                      style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
+                      loading="lazy"
+                    />
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
+                  </div>
+                  <div style={{ padding: "14px 16px 16px" }}>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                    <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
+
 
       {/* ── S4: EMERGENCY ────────────────────────────────────────────────── */}
       <section style={{

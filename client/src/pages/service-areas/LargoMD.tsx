@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { ALL_SERVICES } from '@/lib/allServices';
 import { getServiceImage } from '@/lib/serviceImages';
 import { Link } from "wouter";
 import {
@@ -120,7 +121,7 @@ export default function LargoMD() {
             Largo is our home base. When you call Definitive Mechanical for plumbing service in Largo, you are calling a team that has operated in this community for over a decade — from our office at 9701 Apollo Drive, Suite 100, just off Central Avenue. Response times in Largo are among the fastest in our service area because we are already here.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc, i) => (
+            {ALL_SERVICES.map((svc, i) => (
               <Link key={i} href={svc.href}>
                 <div
                   className="cursor-pointer"

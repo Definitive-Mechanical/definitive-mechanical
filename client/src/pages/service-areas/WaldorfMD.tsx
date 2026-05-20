@@ -1,4 +1,5 @@
 import { getServiceImage } from '@/lib/serviceImages';
+import { ALL_SERVICES } from '@/lib/allServices';
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import {
@@ -83,7 +84,7 @@ export default function WaldorfMD() {
             Waldorf is the largest community in Charles County and one of the fastest-growing areas in the DMV — a major residential and commercial hub with significant new construction alongside established neighborhoods from the 1970s through 1990s. Waldorf plumbing keywords carry some of the highest cost-per-click values in our service area ($47.10 CPC), reflecting the density of demand and the active homeowner market in this community.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc, i) => (
+            {ALL_SERVICES.map((svc, i) => (
               <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                 <div
                   className="cursor-pointer"

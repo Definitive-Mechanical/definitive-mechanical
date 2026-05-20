@@ -1,4 +1,5 @@
 import { getServiceImage } from '@/lib/serviceImages';
+import { ALL_SERVICES } from '@/lib/allServices';
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import {
@@ -83,7 +84,7 @@ export default function EllicottCityMD() {
             Ellicott City is one of Howard County's most established and desirable communities — a mix of the historic Old Ellicott City district along the Patapsco River and the extensive residential and commercial development that has grown westward along US-40 and Route 108. Definitive Mechanical holds Howard County Master Plumber/Gasfitter License #MP-0000215 — a county-specific credential required for permitted plumbing work within Howard County.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc, i) => (
+            {ALL_SERVICES.map((svc, i) => (
               <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                 <div
                   className="cursor-pointer"

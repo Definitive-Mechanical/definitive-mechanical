@@ -22,6 +22,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
+import { ALL_SERVICES } from "@/lib/allServices";
 
 // Map common service labels to icons
 const ICON_MAP: Record<string, React.ComponentType<{ size?: number; style?: React.CSSProperties }>> = {
@@ -276,17 +277,25 @@ export default function Tier3CityPage({
         </section>
       )}
 
-      {/* S2: Services — icon cards matching MD/VA style */}
+      {/* S2: Services — all 18 photo cards */}
       <section className="py-20 bg-white">
         <div className="container">
-          <SectionHeading
-            eyebrow="LICENSED PLUMBING SERVICES"
-            heading={servicesHeading || `What licensed plumbing services are available in ${schemaCity}?`}
-          />
+          <div style={{ marginBottom: "32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,34px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, margin: 0 }}>
+                {servicesHeading || `Plumbing Services in ${schemaCity}`}
+              </h2>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 18px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
+                Call Now
+              </a>
+            </div>
+            <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.7, marginTop: "10px", maxWidth: "600px" }}>
+              Full-service licensed plumbing for residential, commercial, and government clients in {schemaCity}. Every job performed by a licensed Master Plumber.
+            </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc, i) => {
-              const Icon = getIcon(svc.label);
-              return (
+            {ALL_SERVICES.map((svc, i) => (
                 <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                   <div
                     className="cursor-pointer"
@@ -309,8 +318,7 @@ export default function Tier3CityPage({
                     </div>
                   </div>
                 </Link>
-              );
-            })}
+            ))}
           </div>
 
           {/* Well/Septic Callout Box */}

@@ -16,6 +16,7 @@ import {
 import { useState } from "react";
 import BreadcrumbList from "@/components/ui/BreadcrumbList";
 import { getServiceImage } from "@/lib/serviceImages";
+import { ALL_SERVICES } from "@/lib/allServices";
 import CTABanner from "@/components/ui/CTABanner";
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
@@ -203,57 +204,56 @@ export default function Tier1CityPage({
       {/* ── S3: SERVICES GRID — white bg ────────────────────────────────── */}
       <section className="py-20" style={{ background: "white" }}>
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-            {/* Left label col */}
-            <div className="lg:col-span-1">
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, marginBottom: "16px" }}>
+          {/* Heading above the grid */}
+          <div style={{ marginBottom: "40px" }}>
+            <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, margin: 0 }}>
                 Plumbing Services in {cityName}
               </h2>
-              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.7, marginBottom: "24px" }}>
-                Full-service licensed plumbing for residential, commercial, and government clients. Every job performed by a licensed Master Plumber.
-              </p>
-              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none" }}>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
                 <Phone size={14} /> Call Now
               </a>
             </div>
-            {/* Right services grid — new card style */}
-            <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {services.map((svc, i) => {
-                const Icon = getIcon(svc.label);
-                // Use full path (minus leading slash) for accurate image map lookup
-                const slug = svc.href.replace(/^\//, "").toLowerCase();
-                const imgSrc = getServiceImage(slug);
-                return (
-                  <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
-                    <div
-                      className="cursor-pointer group"
-                      style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
-                      onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-                      onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
-                    >
-                      {/* Photo header */}
-                      <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "linear-gradient(135deg, #063B63, #0a3a5e)" }}>
-                        <img
-                          src={imgSrc}
-                          alt={`${svc.label} service in ${cityName}`}
-                          style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.4s cubic-bezier(0.23,1,0.32,1)" }}
-                          loading="lazy"
-                        />
-                        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(6,59,99,0.1) 0%, rgba(6,59,99,0.5) 100%)" }} />
-                        <div style={{ position: "absolute", bottom: "10px", left: "12px", background: "rgba(6,59,99,0.75)", backdropFilter: "blur(4px)", borderRadius: "6px", padding: "5px 7px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                          <Icon size={18} color="#4FB3E8" strokeWidth={1.8} />
-                        </div>
-                      </div>
-                      <div style={{ padding: "14px 16px 16px" }}>
-                        <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
-                        <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+            <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.7, marginTop: "12px", maxWidth: "640px" }}>
+              Full-service licensed plumbing for residential, commercial, and government clients in {cityName}. Every job performed by a licensed Master Plumber.
+            </p>
+          </div>
+          {/* 3-column photo card grid — all 18 services */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {ALL_SERVICES.map((svc, i) => {
+              const Icon = getIcon(svc.label);
+              const slug = svc.href.replace(/^\//, "").toLowerCase();
+              const imgSrc = getServiceImage(slug);
+              return (
+                <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
+                  <div
+                    className="cursor-pointer group"
+                    style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                  >
+                    {/* Photo header */}
+                    <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "linear-gradient(135deg, #063B63, #0a3a5e)" }}>
+                      <img
+                        src={imgSrc}
+                        alt={`${svc.label} in ${cityName}`}
+                        style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", transition: "transform 0.4s cubic-bezier(0.23,1,0.32,1)" }}
+                        loading="lazy"
+                      />
+                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(6,59,99,0.1) 0%, rgba(6,59,99,0.5) 100%)" }} />
+                      <div style={{ position: "absolute", bottom: "10px", left: "12px", background: "rgba(6,59,99,0.75)", backdropFilter: "blur(4px)", borderRadius: "6px", padding: "5px 7px", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                        <Icon size={18} color="#4FB3E8" strokeWidth={1.8} />
                       </div>
                     </div>
-                  </Link>
-                );
-              })}
-            </div>
+                    <div style={{ padding: "14px 16px 16px" }}>
+                      <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

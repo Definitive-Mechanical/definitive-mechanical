@@ -1,5 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
+import { getServiceImage } from "@/lib/serviceImages";
+import { ALL_SERVICES } from "@/lib/allServices";
 import { Phone, ShieldCheck, MapPin, Key } from "lucide-react";
 import BreadcrumbList from "@/components/ui/BreadcrumbList";
 import SectionHeading from "@/components/ui/SectionHeading";

@@ -5,6 +5,7 @@
  */
 
 import { getServiceImage } from "@/lib/serviceImages";
+import { ALL_SERVICES } from "@/lib/allServices";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import { Phone, ArrowRight, ChevronDown, CheckCircle2 } from "lucide-react";
@@ -185,11 +186,22 @@ export default function Tier2CityPage({
       {/* Section 2 — Services List */}
       <section className="bg-white py-14 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-semibold text-[var(--brand-navy)] text-[clamp(20px,3vw,28px)] mb-8">
-            What plumbing services are available in {h1.replace("Plumber in ", "")}?
-          </h2>
+          <div style={{ marginBottom: "32px" }}>
+            <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, margin: 0 }}>
+                Plumbing Services in {h1.replace("Plumber in ", "")}
+              </h2>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 18px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
+                Call Now
+              </a>
+            </div>
+            <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.7, marginTop: "10px", maxWidth: "600px" }}>
+              Full-service licensed plumbing for residential, commercial, and government clients. Every job performed by a licensed Master Plumber.
+            </p>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc) => (
+            {ALL_SERVICES.map((svc) => (
               <Link
                 key={svc.href}
                 href={svc.href}

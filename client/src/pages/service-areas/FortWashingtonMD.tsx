@@ -1,4 +1,5 @@
 import { getServiceImage } from '@/lib/serviceImages';
+import { ALL_SERVICES } from '@/lib/allServices';
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import {
@@ -84,7 +85,7 @@ export default function FortWashingtonMD() {
             Fort Washington is a primarily residential community along the Potomac River in southern Prince George's County — characterized by well-established single-family neighborhoods, waterfront properties, and proximity to the National Harbor corridor. The housing stock ranges from mid-century homes to 1980s and 1990s construction, with a mix of plumbing systems that reflects that age range.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc, i) => (
+            {ALL_SERVICES.map((svc, i) => (
               <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                 <div
                   className="cursor-pointer"

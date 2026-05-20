@@ -1,4 +1,5 @@
 import { getServiceImage } from '@/lib/serviceImages';
+import { ALL_SERVICES } from '@/lib/allServices';
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import {
@@ -82,7 +83,7 @@ export default function SpringfieldVA() {
             Springfield is a major residential and commercial hub in Fairfax County — home to the Springfield Town Center, the Springfield Interchange (one of the busiest highway interchanges in Northern Virginia), and a dense mix of single-family neighborhoods, townhome communities, and commercial development. Springfield's residential stock includes a significant number of homes from the 1960s through 1980s where original sewer laterals, water service lines, and water heaters are approaching or past end of service life.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((svc, i) => (
+            {ALL_SERVICES.map((svc, i) => (
               <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                 <div
                   className="cursor-pointer"
