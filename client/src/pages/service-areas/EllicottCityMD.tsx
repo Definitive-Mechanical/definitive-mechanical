@@ -94,17 +94,35 @@ export default function EllicottCityMD() {
         </div>
       </section>
 
-      {/* S3: Emergency */}
-      <section className="py-16" style={{ background:"var(--surface-1)" }}>
-        <div className="container">
-          <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading="Do you provide 24/7 emergency plumbing in Ellicott City?" />
-          <div className="max-w-3xl mb-8">
-            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
-              Yes. Emergency plumbing in Ellicott City is available 24/7. A live dispatcher answers every call. Licensed Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849.
-            </p>
-          </div>
-          <div className="text-center">
-            <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+            {/* S3: Emergency */}
+      <section style={{ background: "var(--brand-navy)", position: "relative", overflow: "hidden" }} className="py-20">
+        <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 30% 50%, rgba(220,38,38,0.15) 0%, transparent 65%)", pointerEvents:"none" }} />
+        <div className="container" style={{ position:"relative", zIndex:1 }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p style={{ fontFamily:"var(--font-display)", color:"#ef4444", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">24/7 EMERGENCY SERVICE</p>
+              <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(28px,4vw,42px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.05 }} className="mb-5">Emergency Plumbing Available Around the Clock</h2>
+              <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
+                A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. No overtime surcharge. Upfront written pricing before any work begins.
+              </p>
+              <a href="tel:+13016795849" style={{ display:"inline-flex", alignItems:"center", gap:"10px", background:"#dc2626", color:"white", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"15px", textTransform:"uppercase", letterSpacing:"0.08em", padding:"14px 28px", borderRadius:"3px", textDecoration:"none", transition:"background 0.2s" }}>
+                CALL (301) 679-5849
+              </a>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { emoji: "💧", title: "Burst Pipe", body: "Immediate shut-off and repair to prevent water damage." },
+                { emoji: "🚽", title: "Sewer Backup", body: "Camera diagnosis and hydro-jet clearing, same visit." },
+                { emoji: "🔥", title: "Gas Leak", body: "Licensed gasfitter response — evacuate and call us." },
+                { emoji: "🌡️", title: "No Hot Water", body: "Water heater diagnosis and same-day replacement available." },
+              ].map((card, i) => (
+                <div key={i} style={{ background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:"8px", padding:"20px 16px" }}>
+                  <div style={{ fontSize:"28px", marginBottom:"8px" }}>{card.emoji}</div>
+                  <p style={{ fontFamily:"var(--font-display)", color:"white", fontWeight:700, fontSize:"14px", textTransform:"uppercase", marginBottom:"6px" }}>{card.title}</p>
+                  <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.7)", fontSize:"13px", lineHeight:1.5 }}>{card.body}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -132,27 +150,27 @@ export default function EllicottCityMD() {
         </div>
       </section>
 
-      {/* S7: Nearby */}
-      <section className="py-12 bg-white">
+            {/* S7: Nearby */}
+      <section style={{ background:"#F4F7FA" }} className="py-16">
         <div className="container">
-          <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading="Areas near Ellicott City we also serve" />
-          <div className="mb-3">
-            <span style={{ fontFamily:"'var(--font-display)'", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
-            <Link href="/service-areas/maryland/prince-georges-county/largo-md" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Largo, MD</Link>
-            <Link href="/service-areas/maryland/montgomery-county/rockville-md" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Rockville, MD</Link>
-            {["Columbia, MD","Catonsville, MD","Woodstock, MD","Clarksville, MD","Fulton, MD","Savage, MD"].map((city, i) => (
-              <span key={i} style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"14px", marginRight:"12px" }}>{city}</span>
-            ))}
+          <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-navy)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">NEARBY SERVICE AREAS</p>
+          <h2 style={{ fontFamily:"var(--font-display)", color:"var(--brand-navy)", fontSize:"clamp(22px,3vw,32px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-6">Areas Near Ellicott City, MD We Also Serve</h2>
+          <div className="flex flex-wrap gap-2 mb-6">
+            <span key="Columbia, MD" style={{ fontFamily:"var(--font-body)", fontSize:"14px", color:"var(--ink-2)", background:"white", border:"1px solid #E8EFF5", borderRadius:"4px", padding:"6px 14px", display:"inline-block" }}>Columbia, MD</span>
+            <span key="Catonsville, MD" style={{ fontFamily:"var(--font-body)", fontSize:"14px", color:"var(--ink-2)", background:"white", border:"1px solid #E8EFF5", borderRadius:"4px", padding:"6px 14px", display:"inline-block" }}>Catonsville, MD</span>
+            <span key="Laurel, MD" style={{ fontFamily:"var(--font-body)", fontSize:"14px", color:"var(--ink-2)", background:"white", border:"1px solid #E8EFF5", borderRadius:"4px", padding:"6px 14px", display:"inline-block" }}>Laurel, MD</span>
+            <a key="Rockville, MD" href="/service-areas/maryland/montgomery-county/rockville-md" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-navy)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Rockville, MD</a>
           </div>
-          <Link href="/service-areas" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>View Full Service Area →</Link>
+          <a href="/service-areas" style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500, textDecoration:"none" }}>View Full Service Area →</a>
         </div>
       </section>
 
-      {/* S8: FAQ */}
-      <section className="py-20" style={{ background:"var(--surface-1)" }}>
+            {/* S8: FAQ */}
+      <section style={{ background: "var(--brand-navy)" }} className="py-20">
         <div className="container">
-          <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Plumbing FAQ — Ellicott City, MD" />
-          <div className="max-w-3xl mx-auto">
+          <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
+          <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>
+          <div className="max-w-3xl">
             <FAQAccordion items={faqs} schema={true} />
           </div>
         </div>

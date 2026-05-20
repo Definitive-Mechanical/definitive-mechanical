@@ -134,28 +134,35 @@ export default function LargoMD() {
         </div>
       </section>
 
-      {/* S3: Emergency */}
-      <section className="py-16" style={{ background:"var(--surface-1)" }}>
-        <div className="container">
-          <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading="Do you provide 24/7 emergency plumbing in Largo?" />
-          <div className="max-w-3xl">
-            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
-              Yes. Because we are located in Largo, emergency response here is immediate. A live dispatcher answers every call — day or night, weekday or holiday. A licensed Master Plumber is dispatched directly. No overtime surcharge for after-hours or weekend calls.
-            </p>
-            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
-              Largo's mix of residential neighborhoods, commercial corridors along Central Avenue and Landover Road, and government-adjacent facilities near the Metro station creates a wide range of plumbing needs — from homeowner emergencies to commercial facility maintenance. We serve all of them.
-            </p>
-            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8">
-              For plumbing emergencies in Largo, call (301) 679-5849.
-            </p>
-          </div>
-          <div className="text-center">
-            <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849 — EMERGENCY LINE" href="tel:+13016795849" />
-            <p className="mt-4">
-              <Link href="/emergency-plumbing" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>
-                Dedicated Largo emergency plumbing page →
-              </Link>
-            </p>
+            {/* S3: Emergency */}
+      <section style={{ background: "var(--brand-navy)", position: "relative", overflow: "hidden" }} className="py-20">
+        <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 30% 50%, rgba(220,38,38,0.15) 0%, transparent 65%)", pointerEvents:"none" }} />
+        <div className="container" style={{ position:"relative", zIndex:1 }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p style={{ fontFamily:"var(--font-display)", color:"#ef4444", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">24/7 EMERGENCY SERVICE</p>
+              <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(28px,4vw,42px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.05 }} className="mb-5">Emergency Plumbing Available Around the Clock</h2>
+              <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
+                A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. No overtime surcharge. Upfront written pricing before any work begins.
+              </p>
+              <a href="tel:+13016795849" style={{ display:"inline-flex", alignItems:"center", gap:"10px", background:"#dc2626", color:"white", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"15px", textTransform:"uppercase", letterSpacing:"0.08em", padding:"14px 28px", borderRadius:"3px", textDecoration:"none", transition:"background 0.2s" }}>
+                CALL (301) 679-5849
+              </a>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { emoji: "💧", title: "Burst Pipe", body: "Immediate shut-off and repair to prevent water damage." },
+                { emoji: "🚽", title: "Sewer Backup", body: "Camera diagnosis and hydro-jet clearing, same visit." },
+                { emoji: "🔥", title: "Gas Leak", body: "Licensed gasfitter response — evacuate and call us." },
+                { emoji: "🌡️", title: "No Hot Water", body: "Water heater diagnosis and same-day replacement available." },
+              ].map((card, i) => (
+                <div key={i} style={{ background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:"8px", padding:"20px 16px" }}>
+                  <div style={{ fontSize:"28px", marginBottom:"8px" }}>{card.emoji}</div>
+                  <p style={{ fontFamily:"var(--font-display)", color:"white", fontWeight:700, fontSize:"14px", textTransform:"uppercase", marginBottom:"6px" }}>{card.title}</p>
+                  <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.7)", fontSize:"13px", lineHeight:1.5 }}>{card.body}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -261,11 +268,12 @@ export default function LargoMD() {
         </div>
       </section>
 
-      {/* S8: FAQ */}
-      <section className="py-20" style={{ background:"var(--surface-1)" }}>
+            {/* S8: FAQ */}
+      <section style={{ background: "var(--brand-navy)" }} className="py-20">
         <div className="container">
-          <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Plumbing FAQ — Largo, MD" />
-          <div className="max-w-3xl mx-auto">
+          <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
+          <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>
+          <div className="max-w-3xl">
             <FAQAccordion items={faqs} schema={true} />
           </div>
         </div>

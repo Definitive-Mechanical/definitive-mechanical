@@ -98,28 +98,35 @@ export default function BowieMD() {
         </div>
       </section>
 
-      {/* S3: Emergency */}
-      <section className="py-16" style={{ background:"var(--surface-1)" }}>
-        <div className="container">
-          <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading="Do you provide 24/7 emergency plumbing in Bowie?" />
-          <div className="max-w-3xl mb-8">
-            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
-              Yes. Emergency plumbing service in Bowie is available 24 hours a day, 7 days a week, 365 days a year. Our Largo, MD location places us just minutes from most Bowie neighborhoods — a significant advantage for response time compared to contractors based farther afield.
-            </p>
-            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-4">
-              A live dispatcher answers every call. A licensed Master Plumber is dispatched. No premium for evenings, weekends, or holidays.
-            </p>
-            <p style={{ fontFamily:"'var(--font-body)'", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }}>
-              For plumbing emergencies in Bowie, call (301) 679-5849 immediately.
-            </p>
-          </div>
-          <div className="text-center">
-            <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-            <p className="mt-4">
-              <Link href="/emergency-plumbing" style={{ fontFamily:"'var(--font-body)'", color:"var(--brand-cyan)", fontSize:"14px", fontWeight:500 }}>
-                Emergency Plumber Bowie MD →
-              </Link>
-            </p>
+            {/* S3: Emergency */}
+      <section style={{ background: "var(--brand-navy)", position: "relative", overflow: "hidden" }} className="py-20">
+        <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 30% 50%, rgba(220,38,38,0.15) 0%, transparent 65%)", pointerEvents:"none" }} />
+        <div className="container" style={{ position:"relative", zIndex:1 }}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p style={{ fontFamily:"var(--font-display)", color:"#ef4444", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">24/7 EMERGENCY SERVICE</p>
+              <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(28px,4vw,42px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.05 }} className="mb-5">Emergency Plumbing Available Around the Clock</h2>
+              <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
+                A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. No overtime surcharge. Upfront written pricing before any work begins.
+              </p>
+              <a href="tel:+13016795849" style={{ display:"inline-flex", alignItems:"center", gap:"10px", background:"#dc2626", color:"white", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"15px", textTransform:"uppercase", letterSpacing:"0.08em", padding:"14px 28px", borderRadius:"3px", textDecoration:"none", transition:"background 0.2s" }}>
+                CALL (301) 679-5849
+              </a>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              {[
+                { emoji: "💧", title: "Burst Pipe", body: "Immediate shut-off and repair to prevent water damage." },
+                { emoji: "🚽", title: "Sewer Backup", body: "Camera diagnosis and hydro-jet clearing, same visit." },
+                { emoji: "🔥", title: "Gas Leak", body: "Licensed gasfitter response — evacuate and call us." },
+                { emoji: "🌡️", title: "No Hot Water", body: "Water heater diagnosis and same-day replacement available." },
+              ].map((card, i) => (
+                <div key={i} style={{ background:"rgba(255,255,255,0.06)", border:"1px solid rgba(255,255,255,0.1)", borderRadius:"8px", padding:"20px 16px" }}>
+                  <div style={{ fontSize:"28px", marginBottom:"8px" }}>{card.emoji}</div>
+                  <p style={{ fontFamily:"var(--font-display)", color:"white", fontWeight:700, fontSize:"14px", textTransform:"uppercase", marginBottom:"6px" }}>{card.title}</p>
+                  <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.7)", fontSize:"13px", lineHeight:1.5 }}>{card.body}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -150,16 +157,23 @@ export default function BowieMD() {
         </div>
       </section>
 
-      {/* S5: Commercial */}
-      <section className="py-16" style={{ background:"var(--brand-navy)" }}>
-        <div className="container text-center">
-          <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Do you serve commercial properties in Bowie?" light />
-          <p style={{ fontFamily:"'var(--font-body)'", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
-            Yes. We serve commercial properties, retail centers, office buildings, and government-adjacent facilities in Bowie. Definitive Mechanical holds MDOT MBE Certification (Cert No. 20-134) and CAGE Code 8HCF6 for government and commercial procurement. We are licensed under WSSC Master Plumber/Gasfitter #73696 for all Bowie-area plumbing work within the WSSC service territory.
-          </p>
-          <Link href="/commercial-plumbing" style={{ color:"white", textDecoration:"underline", fontFamily:"'var(--font-body)'", fontSize:"14px", fontWeight:500 }}>
-            Learn more about commercial plumbing →
-          </Link>
+            {/* S5: Commercial */}
+      <section style={{ background:"linear-gradient(135deg, var(--brand-navy) 0%, #0a2a4a 100%)", position:"relative", overflow:"hidden" }} className="py-20">
+        <div style={{ position:"absolute", top:0, right:0, width:"40%", height:"100%", background:"linear-gradient(to left, rgba(0,158,198,0.06), transparent)", pointerEvents:"none" }} />
+        <div className="container" style={{ position:"relative", zIndex:1 }}>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+            <div className="lg:col-span-2">
+              <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">COMMERCIAL & GOVERNMENT</p>
+              <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(26px,3.5vw,38px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-5">Commercial Plumbing in Bowie, MD</h2>
+              <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">Bowie's growing commercial base along Route 301 and Annapolis Road creates demand for commercial plumbing services. Definitive Mechanical is MDOT MBE Certified (Cert No. 20-134) and holds CAGE Code 8HCF6 for government procurement in Prince George's County.</p>
+              <a href="/commercial-plumbing" style={{ color:"var(--brand-cyan)", fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, textDecoration:"none" }}>Learn more about commercial plumbing →</a>
+            </div>
+            <div className="flex flex-col gap-3">
+              {["MD Master Plumber #96958", "WSSC #73696", "MDOT MBE Cert 20-134", "CAGE 8HCF6"].map((b,i)=>(
+                <span key={i} style={{ background:"rgba(255,255,255,0.1)", border:"1px solid rgba(255,255,255,0.2)", color:"white", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"6px 14px", borderRadius:"2px" }}>{b}</span>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -179,11 +193,12 @@ export default function BowieMD() {
         </div>
       </section>
 
-      {/* S8: FAQ */}
-      <section className="py-20" style={{ background:"var(--surface-1)" }}>
+            {/* S8: FAQ */}
+      <section style={{ background: "var(--brand-navy)" }} className="py-20">
         <div className="container">
-          <SectionHeading eyebrow="FREQUENTLY ASKED QUESTIONS" heading="Plumbing FAQ — Bowie, MD" />
-          <div className="max-w-3xl mx-auto">
+          <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
+          <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>
+          <div className="max-w-3xl">
             <FAQAccordion items={faqs} schema={true} />
           </div>
         </div>
