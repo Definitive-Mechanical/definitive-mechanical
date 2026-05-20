@@ -106,7 +106,7 @@ function HeroSection() {
         style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/service-emergency-plumbing-Bq5XVJjQBPqXaUMGLhUfVP.webp)',
+          backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/hero-homepage-bg-DJemnkLiSnRWt3DjL8Brh3.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center 30%',
           backgroundRepeat: 'no-repeat',
@@ -481,7 +481,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/service-drain-cleaning-RkMgBt5ypuTCJt7Kk5YBFN.webp"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/about-plumber-working-jcsVhLFVgL3fvKorQoiQj5.webp"
                 alt="Definitive Mechanical service area Maryland DC Northern Virginia"
                 style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.1)' }}
               />

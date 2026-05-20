@@ -76,7 +76,7 @@ export default function About() {
             </div>
             <div>
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/service-water-heater-repair-FHtPdqJjVdqxqBRJBSXhwE.webp"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/about-team-photo-jGApqx8mJzea56RGGdm7Vi.webp"
                 alt="Definitive Mechanical plumbing service Maryland"
                 style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }}
               />

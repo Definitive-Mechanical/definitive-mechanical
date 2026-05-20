@@ -71,7 +71,7 @@ export default function BowieMD() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/hub-northern-virginia-8sTXN2dYoKXrSRa3HcuYAQ.webp" alt="Licensed plumber Bowie Maryland — Definitive Mechanical serving from Largo MD" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/city-page-hero-plumber-LiK4eLEJT6Nfxt9Ly3GS3e.webp" alt="Licensed plumber Bowie Maryland — Definitive Mechanical serving from Largo MD" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>
         </div>

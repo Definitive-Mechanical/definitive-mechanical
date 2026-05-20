@@ -69,7 +69,7 @@ export default function RockvilleMD() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/service-drain-cleaning-RkMgBt5ypuTCJt7Kk5YBFN.webp" alt="Licensed plumber Rockville Maryland — City of Rockville license #PLL-0002113" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/city-page-hero-plumber-LiK4eLEJT6Nfxt9Ly3GS3e.webp" alt="Licensed plumber Rockville Maryland — City of Rockville license #PLL-0002113" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>
         </div>

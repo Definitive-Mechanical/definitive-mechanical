@@ -105,7 +105,7 @@ export default function LargoMD() {
             </div>
             <div className="hidden lg:block">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/hub-maryland-fNjmenZ5ppBTF8B5kUjTVP.webp"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/city-page-hero-plumber-LiK4eLEJT6Nfxt9Ly3GS3e.webp"
                 alt="Licensed plumber Largo MD — Definitive Mechanical home base 9701 Apollo Drive"
                 loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
