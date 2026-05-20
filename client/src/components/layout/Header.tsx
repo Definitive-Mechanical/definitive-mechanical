@@ -93,48 +93,40 @@ export default function Header() {
 
   return (
     <>
-      {/* Emergency Announcement Bar — single line desktop, two-line stacked mobile */}
-      <div
-        className="fixed top-0 left-0 right-0 z-[101]"
-        style={{
-          background: 'var(--brand-red)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '0 16px',
-        }}
+      {/* Emergency Announcement Bar — single line sm+, two-line stacked on xs */}
+      <a
+        href={`tel:${BUSINESS.phoneRaw}`}
+        className="fixed top-0 left-0 right-0 z-[101] no-underline flex items-center justify-center"
+        style={{ background: 'var(--brand-red)' }}
       >
-        {/* Desktop: single row, fixed 36px height */}
-        <a
-          href={`tel:${BUSINESS.phoneRaw}`}
-          className="hidden sm:flex items-center gap-2 no-underline"
+        {/* sm+ : single row */}
+        <span
+          className="hidden sm:flex items-center gap-2"
           style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.14em', color: 'white', height: '36px', whiteSpace: 'nowrap' }}
         >
           <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
           24/7 Emergency Plumbing — Call Now: {BUSINESS.phone}
           <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite 0.7s', flexShrink: 0 }} />
-        </a>
-        {/* Mobile: two stacked centered lines */}
-        <a
-          href={`tel:${BUSINESS.phoneRaw}`}
-          className="sm:hidden no-underline"
-          style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', padding: '7px 0', lineHeight: 1.5 }}
+        </span>
+        {/* xs only : two stacked centered lines */}
+        <span
+          className="sm:hidden flex flex-col items-center text-center"
+          style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'white', padding: '6px 0', lineHeight: 1.5 }}
         >
-          <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+          <span className="flex items-center gap-1">
             <span style={{ display: 'inline-block', width: '6px', height: '6px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite', flexShrink: 0 }} />
             24/7 Emergency Plumbing
           </span>
           <span>Call Now: {BUSINESS.phone}</span>
-        </a>
-      </div>
+        </span>
+      </a>
 
       {/* Desktop Header */}
       <header
-        className="fixed left-0 right-0 z-[100] transition-shadow duration-300 announcement-offset"
+        className="fixed left-0 right-0 z-[100] transition-shadow duration-300 announcement-offset header-height"
         style={{
           background: 'var(--brand-navy)',
           boxShadow: scrolled ? 'var(--shadow-hero)' : '0 2px 8px rgba(6,59,99,0.3)',
-          height: '72px',
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
@@ -322,9 +314,9 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Spacer — desktop: 36px bar + 72px header = 108px; mobile: 52px bar + 72px header = 124px */}
+      {/* Spacer — sm+: 36px bar + 72px header = 108px; xs: 42px bar + 56px header = 98px */}
       <div style={{ height: '108px' }} className="hidden sm:block" />
-      <div style={{ height: '124px' }} className="sm:hidden" />
+      <div style={{ height: '98px' }} className="sm:hidden" />
 
       {/* Mobile Menu Overlay */}
       {mobileOpen && (

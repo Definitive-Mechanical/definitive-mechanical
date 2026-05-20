@@ -165,68 +165,86 @@ export default function Contact() {
                     </a>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit}>
-                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', marginBottom: '4px' }}>Free Estimate</p>
-                    <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '26px', textTransform: 'uppercase', color: 'white', lineHeight: 1.1, marginBottom: '18px' }}>Tell us what you need.</h2>
+                  <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Free Estimate · No Obligation</p>
+                    <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'white', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
-                    {/* Row 1: Name + Phone */}
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '10px' }}>
-                      <input type="text" name="name" required placeholder="Full name" value={form.name} onChange={handleChange}
-                        style={{ padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
-                      <input type="tel" name="phone" required placeholder="Phone" value={form.phone} onChange={handleChange}
-                        style={{ padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                    {/* Name + Phone */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                      <div>
+                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Full Name <span style={{ color: '#ff6b6b' }}>*</span></label>
+                        <input type="text" name="name" required placeholder="Your full name" value={form.name} onChange={handleChange}
+                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                      </div>
+                      <div>
+                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Phone Number <span style={{ color: '#ff6b6b' }}>*</span></label>
+                        <input type="tel" name="phone" required placeholder="(xxx) xxx-xxxx" value={form.phone} onChange={handleChange}
+                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                      </div>
                     </div>
 
-                    {/* Row 2: Email + City */}
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '10px' }}>
-                      <input type="email" name="email" placeholder="Email (optional)" value={form.email} onChange={handleChange}
-                        style={{ padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
-                      <input type="text" name="city" placeholder="City, State" value={form.city} onChange={handleChange}
-                        style={{ padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                    {/* Email */}
+                    <div>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Email Address</label>
+                      <input type="email" name="email" placeholder="your@email.com" value={form.email} onChange={handleChange}
+                        style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                     </div>
 
-                    {/* Service dropdown */}
-                    <select name="service" required value={form.service} onChange={handleChange}
-                      style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: form.service ? 'white' : 'rgba(255,255,255,0.55)', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box', marginBottom: '10px' }}>
-                      <option value="" disabled style={{ color: '#000' }}>Service needed…</option>
-                      <option value="emergency" style={{ color: '#000' }}>24/7 Emergency Plumbing</option>
-                      <option value="drain-cleaning" style={{ color: '#000' }}>Drain Cleaning</option>
-                      <option value="water-heater-repair" style={{ color: '#000' }}>Water Heater Repair</option>
-                      <option value="water-heater-installation" style={{ color: '#000' }}>Water Heater Installation</option>
-                      <option value="tankless" style={{ color: '#000' }}>Tankless Water Heater</option>
-                      <option value="sewer-line" style={{ color: '#000' }}>Sewer Line Repair/Installation</option>
-                      <option value="hydro-jetting" style={{ color: '#000' }}>Hydro-Jetting</option>
-                      <option value="video-camera" style={{ color: '#000' }}>Video Camera Inspection</option>
-                      <option value="gas-line" style={{ color: '#000' }}>Gas Line Repair/Installation</option>
-                      <option value="gas-leak" style={{ color: '#000' }}>Gas Leak Repair</option>
-                      <option value="backflow" style={{ color: '#000' }}>Backflow Prevention/Certification</option>
-                      <option value="water-line" style={{ color: '#000' }}>Water Line Repair/Installation</option>
-                      <option value="boiler" style={{ color: '#000' }}>Boiler &amp; Furnace Repair</option>
-                      <option value="faucet-toilet" style={{ color: '#000' }}>Faucet &amp; Toilet Repair</option>
-                      <option value="commercial" style={{ color: '#000' }}>Commercial Plumbing</option>
-                      <option value="government" style={{ color: '#000' }}>Government/Municipal Plumbing</option>
-                      <option value="other" style={{ color: '#000' }}>Other</option>
-                    </select>
+                    {/* Service + City */}
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                      <div>
+                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Service Needed <span style={{ color: '#ff6b6b' }}>*</span></label>
+                        <select name="service" required value={form.service} onChange={handleChange}
+                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(30,60,100,0.95)', color: form.service ? 'white' : 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}>
+                          <option value="" disabled style={{ color: '#000' }}>Select a service...</option>
+                          <option value="emergency" style={{ color: '#000' }}>24/7 Emergency Plumbing</option>
+                          <option value="drain-cleaning" style={{ color: '#000' }}>Drain Cleaning</option>
+                          <option value="water-heater-repair" style={{ color: '#000' }}>Water Heater Repair</option>
+                          <option value="water-heater-installation" style={{ color: '#000' }}>Water Heater Installation</option>
+                          <option value="tankless" style={{ color: '#000' }}>Tankless Water Heater</option>
+                          <option value="sewer-line" style={{ color: '#000' }}>Sewer Line Repair/Installation</option>
+                          <option value="hydro-jetting" style={{ color: '#000' }}>Hydro-Jetting</option>
+                          <option value="video-camera" style={{ color: '#000' }}>Video Camera Inspection</option>
+                          <option value="gas-line" style={{ color: '#000' }}>Gas Line Repair/Installation</option>
+                          <option value="gas-leak" style={{ color: '#000' }}>Gas Leak Repair</option>
+                          <option value="backflow" style={{ color: '#000' }}>Backflow Prevention/Certification</option>
+                          <option value="water-line" style={{ color: '#000' }}>Water Line Repair/Installation</option>
+                          <option value="boiler" style={{ color: '#000' }}>Boiler &amp; Furnace Repair</option>
+                          <option value="faucet-toilet" style={{ color: '#000' }}>Faucet &amp; Toilet Repair</option>
+                          <option value="commercial" style={{ color: '#000' }}>Commercial Plumbing</option>
+                          <option value="government" style={{ color: '#000' }}>Government/Municipal Plumbing</option>
+                          <option value="other" style={{ color: '#000' }}>Other</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>City / Location</label>
+                        <input type="text" name="city" placeholder="City, State" value={form.city} onChange={handleChange}
+                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                      </div>
+                    </div>
 
                     {/* Message */}
-                    <textarea name="message" required rows={4} placeholder="Describe the issue, when it started, and any relevant details..." value={form.message} onChange={handleChange}
-                      style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', resize: 'vertical', boxSizing: 'border-box', marginBottom: '10px' }} />
+                    <div>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Describe the Problem <span style={{ color: '#ff6b6b' }}>*</span></label>
+                      <textarea name="message" required rows={5} placeholder="Please describe the issue, when it started, and any relevant details..." value={form.message} onChange={handleChange}
+                        style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }} />
+                    </div>
 
                     {/* Emergency warning */}
-                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', background: 'rgba(228,6,19,0.12)', border: '1px solid rgba(228,6,19,0.3)', borderRadius: '6px', padding: '10px 12px', marginBottom: '10px' }}>
+                    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', background: 'rgba(228,6,19,0.12)', border: '1px solid rgba(228,6,19,0.3)', borderRadius: '6px', padding: '10px 12px' }}>
                       <AlertTriangle size={15} style={{ color: '#ff6b6b', flexShrink: 0, marginTop: 1 }} />
                       <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '12px', lineHeight: 1.5, margin: 0 }}>
-                        <strong style={{ color: 'white' }}>Plumbing emergency?</strong> Don't use this form — <a href="tel:+13016795849" style={{ color: '#4FB3E8', fontWeight: 700 }}>call (301) 679-5849</a> for immediate 24/7 response.
+                        <strong style={{ color: 'white' }}>For plumbing emergencies</strong> (burst pipes, gas leaks, sewer backups) — don't use this form. <a href="tel:+13016795849" style={{ color: '#4FB3E8', fontWeight: 700 }}>Call (301) 679-5849</a> for immediate 24/7 response.
                       </p>
                     </div>
 
                     <button type="submit" disabled={submitting}
-                      style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer', marginTop: '4px' }}>
-                      {submitting ? 'Submitting…' : 'Get My Free Estimate'}
+                      style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                      {submitting ? 'Submitting…' : 'SUBMIT SERVICE REQUEST'}
                     </button>
 
-                    <p style={{ marginTop: '10px', fontSize: '11px', color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)', textAlign: 'center' }}>
-                      No spam. Quoted price in writing. No overtime surcharge.
+                    <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
+                      We respond to non-emergency requests within one business day. For faster service, call (301) 679-5849.
                     </p>
                   </form>
                 )}

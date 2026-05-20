@@ -351,12 +351,14 @@
   }
   .reveal.in { opacity: 1; transform: translateY(0); }
 
-  /* ── Announcement bar offset ────────────────────────── */
-  /* Mobile: bar is ~52px tall (two lines + padding) */
-  .announcement-offset { top: 52px; }
-  /* sm+ (640px): bar is single line, 36px */
+  /* ── Announcement bar + header heights ───────────────── */
+  /* Mobile (<640px): bar ~42px, header 56px */
+  .announcement-offset { top: 42px; }
+  .header-height { height: 56px; }
+  /* sm+ (640px+): bar 36px, header 72px */
   @media (min-width: 640px) {
     .announcement-offset { top: 36px; }
+    .header-height { height: 72px; }
   }
 
   /* ── Mono utility ──────────────────────────────────────── */
