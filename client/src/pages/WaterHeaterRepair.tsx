@@ -193,7 +193,7 @@ export default function WaterHeaterRepair() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Water Heater Repair & Replacement Questions" centered />
           <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '8px 32px' }}>
-            <FAQAccordion items={WATER_HEATER_FAQ} schema={true} />
+            <FAQAccordion items={WATER_HEATER_FAQ} schema={true} variant="light" />
           </div>
         </div>
       </section>

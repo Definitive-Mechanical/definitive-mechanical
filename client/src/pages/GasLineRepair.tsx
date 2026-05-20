@@ -194,7 +194,7 @@ export default function GasLineRepair() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Questions about gas line repair in MD, DC & Northern VA" centered />
           <div style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '8px 32px' }}>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
           </div>
         </div>
       </section>

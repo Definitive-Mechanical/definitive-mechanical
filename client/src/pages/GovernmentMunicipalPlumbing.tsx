@@ -176,7 +176,7 @@ export default function GovernmentMunicipalPlumbing() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="FAQ" heading="Government & Municipal Plumbing Questions" centered />
           <div style={{ background: 'white', borderRadius: '6px', padding: '8px 32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)' }}>
-            <FAQAccordion items={GOV_FAQ} schema={true} />
+            <FAQAccordion items={GOV_FAQ} schema={true} variant="light" />
           </div>
         </div>
       </section>
