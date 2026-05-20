@@ -29,7 +29,24 @@ export default function GasLineInstallation() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '52vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{
+        minHeight: '52vh',
+        position: 'relative',
+        display: 'flex',
+        alignItems: 'center',
+        overflow: 'hidden',
+      }}>
+        {/* Full-bleed background photo */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <img
+            src="/manus-storage/service-gas-line-installation_ab0456c1.jpg"
+            alt="Gas line installation Maryland DC Northern Virginia — Licensed Master Gasfitter"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
+            loading="eager"
+          />
+          {/* Dark navy overlay — matches homepage hero */}
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair', href: '/gas-line-repair' }, { label: 'Gas Line Installation' }]} />
           <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>

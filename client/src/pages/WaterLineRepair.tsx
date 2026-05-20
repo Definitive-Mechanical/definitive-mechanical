@@ -34,7 +34,24 @@ export default function WaterLineRepair() {
   return (
     <>
       {/* SECTION 1: HERO */}
-      <section style={{ minHeight: '55vh', background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)', display: 'flex', alignItems: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section style={{
+        minHeight: '55vh',
+        position: 'relative',
+        display: 'flex',
+        alignItems: 'center',
+        overflow: 'hidden',
+      }}>
+        {/* Full-bleed background photo */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <img
+            src="/manus-storage/service-water-line-repair_c662e76d.jpg"
+            alt="Water line repair Maryland DC Northern Virginia"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
+            loading="eager"
+          />
+          {/* Dark navy overlay — matches homepage hero */}
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Line Repair' }]} />
           <div className="grid lg:grid-cols-1 gap-12 items-center mt-6" style={{ maxWidth: '720px' }}>
