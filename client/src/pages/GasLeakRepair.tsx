@@ -77,26 +77,6 @@ export default function GasLeakRepair() {
         </div>
       </section>
 
-      {/* SAFETY BOX */}
-      <section style={{ background: '#1a0a00', padding: '48px 0' }}>
-        <div className="container">
-          <div style={{ background: 'rgba(245,158,11,0.08)', border: '2px solid rgba(245,158,11,0.5)', borderRadius: '8px', padding: '32px', maxWidth: '760px', margin: '0 auto' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
-              <AlertTriangle size={32} color="#F59E0B" style={{ flexShrink: 0 }} />
-              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.1em', margin: 0 }}>IF YOU SMELL GAS RIGHT NOW:</p>
-            </div>
-            <div className="space-y-3">
-              {["Leave the building immediately — do not turn any lights or switches on or off", "Do not use your phone inside the building", "Once safely outside, call your gas company's emergency line", "Call 911 if there is any active danger", "Once the gas company has responded and shut off supply, call Definitive Mechanical at (301) 679-5849"].map((item, i) => (
-                <div key={item} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#F59E0B', fontSize: '15px', flexShrink: 0, minWidth: '22px' }}>{i + 1}.</span>
-                  <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.9)', fontSize: '15px', lineHeight: 1.6 }}>{item}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* SECTION 2: CAUSES */}
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="container">
