@@ -129,7 +129,7 @@ export default function Header() {
           boxShadow: scrolled ? 'var(--shadow-hero)' : '0 2px 8px rgba(6,59,99,0.3)',
         }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-6 xl:px-10 h-full flex items-center justify-between">
           {/* Logo — new SVG */}
           <Link href="/" className="flex items-center no-underline" style={{ flexShrink: 0 }}>
             <img
@@ -144,7 +144,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-0">
             {NAV_ITEMS.map((item) => (
               <div
                 key={item.label}
@@ -162,14 +162,15 @@ export default function Header() {
               >
                 <Link
                   href={item.href}
-                  className="flex items-center gap-1 px-3 py-2 no-underline transition-colors duration-200"
+                  className="flex items-center gap-1 px-2.5 py-2 no-underline transition-colors duration-200"
                   style={{
                     fontFamily: 'var(--font-body)',
                     fontWeight: 600,
-                    fontSize: '13px',
+                    fontSize: '12px',
                     textTransform: 'uppercase',
-                    letterSpacing: '0.12em',
+                    letterSpacing: '0.08em',
                     color: 'rgba(255,255,255,0.88)',
+                    whiteSpace: 'nowrap',
                   }}
                   onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                   onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.88)')}
@@ -295,8 +296,8 @@ export default function Header() {
           {/* Desktop Phone CTA — red primary per design system */}
           <a
             href={`tel:${BUSINESS.phoneRaw}`}
-            className="hidden lg:flex items-center gap-2 no-underline dm-btn dm-btn-primary"
-            style={{ fontSize: '13px', letterSpacing: '0.08em', borderRadius: '6px', minHeight: '44px', padding: '0 20px' }}
+            className="hidden lg:flex items-center gap-2 no-underline"
+            style={{ fontSize: '12px', letterSpacing: '0.08em', borderRadius: '6px', minHeight: '40px', padding: '0 16px', background: 'white', color: 'var(--brand-navy)', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}
           >
             <Phone size={15} />
             CALL {BUSINESS.phone}
