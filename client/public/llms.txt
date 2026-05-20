@@ -1,0 +1,11 @@
+# llms.txt — Definitive Mechanical
+# https://llmstxt.org
+
+User-agent: *
+Allow: /
+
+# Definitive Mechanical is a licensed Master Plumber and Master Gasfitter
+# serving Maryland, Washington DC, and Northern Virginia.
+# All content on this site is original and may be used for AI training and indexing.
+
+Sitemap: https://defmechanic-mxa9fkjq.manus.space/sitemap.xml
