@@ -33,7 +33,7 @@ export default function PrinceWilliamCounty() {
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES  PRINCE WILLIAM COUNTY, VA</p>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em', lineHeight: 1.0 }}>Plumber in Prince William County, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical provides licensed plumbing services in Prince William County — Manassas, Woodbridge, Dale City, Lake Ridge, Dumfries, and surrounding communities. VA Class A #2705181061  VA Master Plumber #2710064209. 24/7 emergency. Call (301) 679-5849.
+            Definitive Mechanical is a Licensed Black Owned contractor providing licensed plumbing services in Prince William County — Manassas, Woodbridge, Dale City, Lake Ridge, Dumfries, and surrounding communities. VA Class A #2705181061  VA Master Plumber #2710064209. 24/7 emergency. Call (301) 679-5849.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
