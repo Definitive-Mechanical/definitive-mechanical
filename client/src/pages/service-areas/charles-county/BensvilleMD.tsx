@@ -34,6 +34,7 @@ export default function BensvilleMD() {
     ]}
     countyHubLabel="Charles County"
     countyHubHref="/service-areas/maryland/charles-county/"
+    cityMapQuery="Bensville, MD"
     ctaCity="Bensville"
     ctaLicenseLine="MD Master Plumber #96958 | MDOT MBE Cert 20-134"
   />;

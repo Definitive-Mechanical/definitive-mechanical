@@ -77,6 +77,7 @@ export default function BethesdaMD() {
         { question: "Are you licensed to do plumbing in Bethesda and Montgomery County?", answer: "Yes. Maryland State Master Plumber/Gasfitter #96958 and WSSC Master Plumber/Gasfitter #73696 cover all plumbing work in Bethesda and throughout Montgomery County." },
         { question: "Do you handle high-end residential plumbing in Bethesda?", answer: "Yes. Bethesda's premium residential market requires plumbing contractors with the experience, licensing, and professionalism to work in high-value homes. We provide water heater replacement, gas line installation for outdoor kitchens and generators, backflow certification for irrigation systems, and full plumbing service for Bethesda homeowners." },
       ]}
+      cityMapQuery="Bethesda, MD"
       ctaHeading="Need a licensed plumber in Bethesda, MD?"
       ctaSubtext="Serving Bethesda from our Largo, MD location. Maryland Master Plumber #96958  WSSC #73696  MDOT MBE Cert 20-134  24/7 Emergency."
     />

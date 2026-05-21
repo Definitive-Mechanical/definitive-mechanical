@@ -22,6 +22,7 @@ export default function NavyYardDC() {
       nearbyAreas={[{label:"Capitol Hill",href:"/service-areas/washington-dc/capitol-hill"},{label:"NoMa",href:"/service-areas/washington-dc/noma"},{label:"Washington DC Hub",href:"/service-areas/washington-dc"}]}
       countyHubLabel="Washington DC"
       countyHubHref="/service-areas/washington-dc"
+      cityMapQuery="Navy Yard, Washington DC"
       ctaCity="Navy Yard"
       ctaLicenseLine="DC Master Plumber/Gasfitter #PGM1002236"
       schemaJson={schema}

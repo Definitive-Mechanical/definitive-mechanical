@@ -12,6 +12,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 
 const services = [
   { icon: AlertTriangle, label: "24/7 Emergency Plumbing", href: "/emergency-plumbing" },
@@ -208,6 +209,13 @@ export default function FortWashingtonMD() {
           </div>
         </div>
       </section>
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────── */}
+      <CityMap
+        q="Fort Washington, MD"
+        label="Fort Washington, MD — Definitive Mechanical Service Area"
+        zoom={13}
+      />
+
 
       {/* S7: Nearby Areas */}
       <section className="py-12 bg-white">

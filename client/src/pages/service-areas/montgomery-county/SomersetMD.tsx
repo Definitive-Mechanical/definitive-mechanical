@@ -34,6 +34,7 @@ export default function SomersetMD() {
     ]}
     countyHubLabel="Montgomery County"
     countyHubHref="/service-areas/maryland/montgomery-county/"
+    cityMapQuery="Somerset, MD"
     ctaCity="Somerset"
     ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
   />;

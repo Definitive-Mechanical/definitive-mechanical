@@ -22,6 +22,7 @@ export default function CabinJohnMD() {
       nearbyAreas={[{label:"Bethesda",href:"/service-areas/maryland/montgomery-county/bethesda-md"},{label:"Chevy Chase",href:"/service-areas/maryland/montgomery-county/chevy-chase-md"},{label:"Potomac",href:"/service-areas/maryland/montgomery-county/potomac-md"}]}
       countyHubLabel="Montgomery County"
       countyHubHref="/service-areas/maryland/montgomery-county"
+      cityMapQuery="Cabin John, MD"
       ctaCity="Cabin John"
       ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
       schemaJson={schema}

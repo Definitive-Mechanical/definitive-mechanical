@@ -33,6 +33,7 @@ export default function UniversityParkMD() {
     ]}
     countyHubLabel="Prince George&#39;s County"
     countyHubHref="/service-areas/maryland/prince-georges-county/"
+    cityMapQuery="University Park, MD"
     ctaCity="University Park"
     ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
     faqs={[

@@ -18,6 +18,7 @@ export default function Ward3DC() {
     nearbyAreas={[{label:"Ward 2",href:"/service-areas/washington-dc/ward-2/"},{label:"Ward 4",href:"/service-areas/washington-dc/ward-4/"},{label:"Chevy Chase MD",href:"/service-areas/maryland/montgomery-county/chevy-chase-md/"}]}
     countyHubLabel="All DC Wards"
     countyHubHref="/service-areas/washington-dc/"
+    cityMapQuery="Ward 3, Washington DC"
     ctaCity="DC Ward 3"
     ctaLicenseLine="DC License #PGM1002236 | MD Master Plumber #96958"
   />;

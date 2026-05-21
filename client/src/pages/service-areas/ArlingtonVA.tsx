@@ -12,6 +12,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 
 const services = [
   { icon: AlertTriangle, label: "24/7 Emergency Plumbing", href: "/emergency-plumbing", note: "including Emergency Plumber Arlington VA" },
@@ -259,6 +260,13 @@ export default function ArlingtonVA() {
       </section>
 
       {/* S9: CTA Banner */}
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────── */}
+      <CityMap
+        q="Arlington, VA"
+        label="Arlington, VA — Definitive Mechanical Service Area"
+        zoom={13}
+      />
+
       <CTABanner
         heading="Need a licensed plumber in Arlington, VA?"
         subtext="Serving Arlington from our Largo, MD location. VA Master Plumber #2710064209  SWaM Cert 815255  Class A Contractor  24/7 Emergency."

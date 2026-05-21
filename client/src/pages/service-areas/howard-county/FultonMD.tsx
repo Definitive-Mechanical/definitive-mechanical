@@ -34,6 +34,7 @@ export default function FultonMD() {
     ]}
     countyHubLabel="Howard County"
     countyHubHref="/service-areas/maryland/howard-county/"
+    cityMapQuery="Fulton, MD"
     ctaCity="Fulton"
     ctaLicenseLine="Howard County License #20020096958 | MD Master Plumber #96958 | WSSC #73696"
   />;

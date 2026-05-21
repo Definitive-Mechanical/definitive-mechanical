@@ -18,6 +18,7 @@ export default function Ward4DC() {
     nearbyAreas={[{label:"Ward 1",href:"/service-areas/washington-dc/ward-1/"},{label:"Ward 3",href:"/service-areas/washington-dc/ward-3/"},{label:"Ward 5",href:"/service-areas/washington-dc/ward-5/"}]}
     countyHubLabel="All DC Wards"
     countyHubHref="/service-areas/washington-dc/"
+    cityMapQuery="Ward 4, Washington DC"
     ctaCity="DC Ward 4"
     ctaLicenseLine="DC License #PGM1002236 | MD Master Plumber #96958"
   />;

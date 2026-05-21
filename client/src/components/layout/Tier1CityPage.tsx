@@ -18,6 +18,7 @@ import BreadcrumbList from "@/components/ui/BreadcrumbList";
 import { getServiceImage } from "@/lib/serviceImages";
 import { ALL_SERVICE_CATEGORIES } from "@/lib/allServices";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
 export interface ServiceItem { label: string; href: string; }
@@ -46,6 +47,7 @@ export interface Tier1CityPageProps {
   countyHubLabel: string;
   countyHubHref: string;
   faqs?: FAQItem[];
+  cityMapQuery?: string;
   ctaCity: string;
   ctaLicenseLine: string;
   schemaJson: object[];
@@ -113,7 +115,7 @@ export default function Tier1CityPage({
   localContextHeading, localContextBody, calloutNote,
   licenseHeading, credentials,
   nearbyAreas, countyHubLabel, countyHubHref,
-  faqs, ctaCity, ctaLicenseLine, schemaJson,
+  faqs, cityMapQuery, ctaCity, ctaLicenseLine, schemaJson,
 }: Tier1CityPageProps) {
 
   const cityName = h1.replace(/^Plumber in\s*/i, "").trim();
@@ -402,6 +404,14 @@ export default function Tier1CityPage({
         </div>
       </section>
 
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────────────── */}
+      {cityMapQuery && (
+        <CityMap
+          q={cityMapQuery}
+          label={`${cityMapQuery} — Definitive Mechanical Service Area`}
+          zoom={13}
+        />
+      )}
       {/* ── S7: NEARBY AREAS — white, pill chips ────────────────────────── */}
       <section className="py-14" style={{ background: "white" }}>
         <div className="container">

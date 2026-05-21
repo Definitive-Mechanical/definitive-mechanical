@@ -34,6 +34,7 @@ export default function WolfTrapVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
+    cityMapQuery="Wolf Trap, VA"
     ctaCity="Wolf Trap"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"
   />;

@@ -18,6 +18,7 @@ export default function Ward6DC() {
     nearbyAreas={[{label:"Ward 5",href:"/service-areas/washington-dc/ward-5/"},{label:"Ward 7",href:"/service-areas/washington-dc/ward-7/"},{label:"Capitol Hill",href:"/service-areas/washington-dc/capitol-hill/"}]}
     countyHubLabel="All DC Wards"
     countyHubHref="/service-areas/washington-dc/"
+    cityMapQuery="Ward 6, Washington DC"
     ctaCity="DC Ward 6"
     ctaLicenseLine="DC License #PGM1002236 | MD Master Plumber #96958"
   />;

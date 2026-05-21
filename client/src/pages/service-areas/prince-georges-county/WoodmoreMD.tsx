@@ -95,6 +95,7 @@ export default function WoodmoreMD() {
         { q: "How quickly can you respond to a Woodmore emergency?", a: "Woodmore is approximately 10-20 minutes from our Largo location depending on the specific address within the community. Emergency dispatch is immediate." },
         { q: "Are you WSSC-licensed for work in Woodmore?", a: "Yes. WSSC License #73696 covers all permitted plumbing and gas work in Woodmore and throughout the WSSC service territory in Prince George's County." }
       ]}
+      cityMapQuery="Woodmore, MD"
       ctaCity="Woodmore"
       ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
       schemaJson={schema}

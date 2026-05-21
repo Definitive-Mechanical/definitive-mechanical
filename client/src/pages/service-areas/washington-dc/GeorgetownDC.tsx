@@ -31,6 +31,7 @@ Georgetown's dense canopy â€” one of the most mature urban tree canopies in DC â
       nearbyAreas={[{label:"Capitol Hill",href:"/service-areas/washington-dc/capitol-hill"},{label:"Dupont Circle",href:"/service-areas/washington-dc/dupont-circle"},{label:"Washington DC Hub",href:"/service-areas/washington-dc"}]}
       countyHubLabel="Washington DC"
       countyHubHref="/service-areas/washington-dc"
+      cityMapQuery="Georgetown, Washington DC"
       ctaCity="Georgetown"
       ctaLicenseLine="DC Master Plumber/Gasfitter #PGM1002236"
       schemaJson={schema}

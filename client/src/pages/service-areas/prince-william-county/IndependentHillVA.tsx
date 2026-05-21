@@ -34,6 +34,7 @@ export default function IndependentHillVA() {
     ]}
     countyHubLabel="Prince William County"
     countyHubHref="/service-areas/northern-virginia/prince-william-county/"
+    cityMapQuery="Independent Hill, VA"
     ctaCity="Independent Hill"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"
   />;

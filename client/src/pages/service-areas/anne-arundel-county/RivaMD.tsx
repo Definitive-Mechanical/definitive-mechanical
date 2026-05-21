@@ -23,6 +23,7 @@ export default function RivaMD() {
       nearbyAreas={[{label:"Crownsville",href:"/service-areas/maryland/anne-arundel-county/crownsville-md"},{label:"Galesville",href:"/service-areas/maryland/anne-arundel-county/galesville-md"}]}
       countyHubLabel="Anne Arundel County"
       countyHubHref="/service-areas/maryland/anne-arundel-county"
+      cityMapQuery="Riva, MD"
       ctaCity="Riva"
       ctaLicenseLine="Anne Arundel County License #A2-6139 | MD Master Plumber #96958"
       schemaJson={schema}

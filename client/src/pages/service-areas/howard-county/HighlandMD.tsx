@@ -35,6 +35,7 @@ export default function HighlandMD() {
     ]}
     countyHubLabel="Howard County"
     countyHubHref="/service-areas/maryland/howard-county/"
+    cityMapQuery="Highland, MD"
     ctaCity="Highland"
     ctaLicenseLine="Howard County License #20020096958 | MD Master Plumber #96958"
   />;

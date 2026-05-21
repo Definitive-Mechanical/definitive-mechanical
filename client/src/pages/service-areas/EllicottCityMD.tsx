@@ -12,6 +12,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 
 const services = [
   { icon: AlertTriangle, label: "24/7 Emergency Plumbing", href: "/emergency-plumbing" },
@@ -212,6 +213,13 @@ export default function EllicottCityMD() {
       </section>
 
       {/* S9: CTA Banner */}
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────── */}
+      <CityMap
+        q="Ellicott City, MD"
+        label="Ellicott City, MD — Definitive Mechanical Service Area"
+        zoom={13}
+      />
+
       <CTABanner
         heading="Need a licensed plumber in Ellicott City, MD?"
         subtext="Serving Ellicott City from our Largo, MD location. Howard County Master Plumber #PGM1002236  MD State #96958  24/7 Emergency."

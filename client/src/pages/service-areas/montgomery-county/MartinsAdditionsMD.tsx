@@ -35,6 +35,7 @@ export default function MartinsAdditionsMD() {
     ]}
     countyHubLabel="Montgomery County"
     countyHubHref="/service-areas/maryland/montgomery-county/"
+    cityMapQuery="Martins Additions, MD"
     ctaCity="Martin&#39;s Additions"
     ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
   />;

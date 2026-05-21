@@ -35,6 +35,7 @@ export default function DifficultRunVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
+    cityMapQuery="Difficult Run, VA"
     ctaCity="Difficult Run"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"
   />;

@@ -22,6 +22,7 @@ export default function NomaDC() {
       nearbyAreas={[{label:"Capitol Hill",href:"/service-areas/washington-dc/capitol-hill"},{label:"Navy Yard",href:"/service-areas/washington-dc/navy-yard"},{label:"Washington DC Hub",href:"/service-areas/washington-dc"}]}
       countyHubLabel="Washington DC"
       countyHubHref="/service-areas/washington-dc"
+      cityMapQuery="NoMa, Washington DC"
       ctaCity="NoMa"
       ctaLicenseLine="DC Master Plumber/Gasfitter #PGM1002236"
       schemaJson={schema}

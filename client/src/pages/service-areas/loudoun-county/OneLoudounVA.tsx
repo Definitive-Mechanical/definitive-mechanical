@@ -24,6 +24,7 @@ Residential units in One Loudoun's apartment and condo buildings require buildin
       nearbyAreas={[{label:"Brambleton",href:"/service-areas/northern-virginia/loudoun-county/brambleton-va"},{label:"Loudoun County Hub",href:"/service-areas/northern-virginia/loudoun-county"}]}
       countyHubLabel="Loudoun County"
       countyHubHref="/service-areas/northern-virginia/loudoun-county"
+      cityMapQuery="One Loudoun, VA"
       ctaCity="One Loudoun"
       ctaLicenseLine="VA Master Plumber #2710064209 | VA Class A Contractor #2705181061"
       schemaJson={schema}

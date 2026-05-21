@@ -34,6 +34,7 @@ export default function BroadlandsVA() {
     ]}
     countyHubLabel="Loudoun County"
     countyHubHref="/service-areas/northern-virginia/loudoun-county/"
+    cityMapQuery="Broadlands, VA"
     ctaCity="Broadlands"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"
   />;

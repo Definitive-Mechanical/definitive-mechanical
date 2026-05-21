@@ -22,6 +22,7 @@ import { ALL_SERVICE_CATEGORIES } from "@/lib/allServices";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 import {
   Phone, CheckCircle, Star, Zap, Droplets, Thermometer,
   GitBranch, Flame, ShieldCheck, Wind, Wrench, Building2,
@@ -83,6 +84,9 @@ export interface PriorityCityLayoutProps {
   /* Nearby */
   nearbyGroups?: { label: string; links: NearbyLink[] }[];
   nearbyAreas?: NearbyLink[];
+
+  /* Map */
+  cityMapQuery?: string;  // e.g. "Bethesda, MD" — used for the Google Maps embed
 
   /* FAQ */
   faqHeading?: string;
@@ -158,6 +162,7 @@ export default function PriorityCityLayout({
   commercialHeading, commercialBody, commercialFeatures = [], commercialLinks = [],
   nearbyGroups, nearbyAreas,
   faqHeading, faqs,
+  cityMapQuery,
   ctaHeading, ctaSubtext,
 }: PriorityCityLayoutProps) {
 
@@ -550,6 +555,14 @@ export default function PriorityCityLayout({
         </div>
       </section>
 
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────────────── */}
+      {cityMapQuery && (
+        <CityMap
+          q={cityMapQuery}
+          label={`${cityMapQuery} — Definitive Mechanical Service Area`}
+          zoom={13}
+        />
+      )}
       {/* ── S7: NEARBY AREAS ─────────────────────────────────────────────── */}
       <section className="py-16" style={{ background: "white" }}>
         <div className="container">

@@ -12,6 +12,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 
 const services = [
   { icon: AlertTriangle, label: "24/7 Emergency Plumbing", href: "/emergency-plumbing" },
@@ -178,6 +179,13 @@ export default function SpringfieldVA() {
           </div>
         </div>
       </section>
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────── */}
+      <CityMap
+        q="Springfield, VA"
+        label="Springfield, VA — Definitive Mechanical Service Area"
+        zoom={13}
+      />
+
 
       <CTABanner
         heading="Need a licensed plumber in Springfield, VA?"

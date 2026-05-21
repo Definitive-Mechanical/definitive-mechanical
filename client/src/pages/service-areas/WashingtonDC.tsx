@@ -12,6 +12,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 
 const SCHEMA = {
   "@context": "https://schema.org",
@@ -287,6 +288,13 @@ export default function WashingtonDC() {
       </section>
 
       {/* S9: CTA Banner */}
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────── */}
+      <CityMap
+        q="Washington, DC"
+        label="Washington, DC — Definitive Mechanical Service Area"
+        zoom={13}
+      />
+
       <CTABanner
         heading="Need a licensed plumber in Washington DC?"
         subtext="Serving DC from our Largo, MD location. DC Master Plumber #PGM1002236  MDOT MBE Cert 20-134  CAGE 8HCF6  24/7 Emergency."

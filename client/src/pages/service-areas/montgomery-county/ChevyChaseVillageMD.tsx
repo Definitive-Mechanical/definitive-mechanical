@@ -35,6 +35,7 @@ export default function ChevyChaseVillageMD() {
     ]}
     countyHubLabel="Montgomery County"
     countyHubHref="/service-areas/maryland/montgomery-county/"
+    cityMapQuery="Chevy Chase Village, MD"
     ctaCity="Chevy Chase Village"
     ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
   />;

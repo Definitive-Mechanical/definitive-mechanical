@@ -12,6 +12,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 
 const services = [
   { icon: AlertTriangle, label: "24/7 Emergency Plumbing", href: "/emergency-plumbing" },
@@ -213,6 +214,13 @@ export default function PotomacMD() {
       </section>
 
       {/* S9: CTA Banner */}
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────── */}
+      <CityMap
+        q="Potomac, MD"
+        label="Potomac, MD — Definitive Mechanical Service Area"
+        zoom={13}
+      />
+
       <CTABanner
         heading="Need a licensed plumber in Potomac, MD?"
         subtext="Serving Potomac from our Largo, MD location. Maryland Master Plumber #96958  WSSC #73696  24/7 Emergency  Estate Home Experience."

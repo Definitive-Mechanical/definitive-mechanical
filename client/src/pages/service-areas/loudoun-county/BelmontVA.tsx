@@ -34,6 +34,7 @@ export default function BelmontVA() {
     ]}
     countyHubLabel="Loudoun County"
     countyHubHref="/service-areas/northern-virginia/loudoun-county/"
+    cityMapQuery="Belmont, VA"
     ctaCity="Belmont"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"
   />;

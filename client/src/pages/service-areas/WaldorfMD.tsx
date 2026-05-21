@@ -12,6 +12,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 
 const services = [
   { icon: AlertTriangle, label: "24/7 Emergency Plumbing", href: "/emergency-plumbing" },
@@ -214,6 +215,13 @@ export default function WaldorfMD() {
       </section>
 
       {/* S9: CTA Banner */}
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────── */}
+      <CityMap
+        q="Waldorf, MD"
+        label="Waldorf, MD — Definitive Mechanical Service Area"
+        zoom={13}
+      />
+
       <CTABanner
         heading="Need a licensed plumber in Waldorf, MD?"
         subtext="Serving Waldorf from our Largo, MD location. Maryland Master Plumber #96958  MDOT MBE Certified  24/7 Emergency."

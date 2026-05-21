@@ -34,6 +34,7 @@ export default function BuckhallVA() {
     ]}
     countyHubLabel="Prince William County"
     countyHubHref="/service-areas/northern-virginia/prince-william-county/"
+    cityMapQuery="Buckhall, VA"
     ctaCity="Buckhall"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"
   />;

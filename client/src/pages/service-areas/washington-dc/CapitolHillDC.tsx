@@ -28,6 +28,7 @@ Gas service is prevalent throughout Capitol Hill — the neighborhood has a high
       nearbyAreas={[{label:"Georgetown",href:"/service-areas/washington-dc/georgetown"},{label:"Dupont Circle",href:"/service-areas/washington-dc/dupont-circle"},{label:"Navy Yard",href:"/service-areas/washington-dc/navy-yard"},{label:"Washington DC Hub",href:"/service-areas/washington-dc"}]}
       countyHubLabel="Washington DC"
       countyHubHref="/service-areas/washington-dc"
+      cityMapQuery="Capitol Hill, Washington DC"
       ctaCity="Capitol Hill"
       ctaLicenseLine="DC Master Plumber/Gasfitter #PGM1002236"
       schemaJson={schema}

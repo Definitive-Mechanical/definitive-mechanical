@@ -73,6 +73,7 @@ export default function FairwoodMD() {
       ]}
       countyHubLabel={`Prince George's County`}
       countyHubHref="/service-areas/maryland/prince-georges-county"
+      cityMapQuery="Fairwood, MD"
       ctaCity="Fairwood"
       ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
       schemaJson={schema}

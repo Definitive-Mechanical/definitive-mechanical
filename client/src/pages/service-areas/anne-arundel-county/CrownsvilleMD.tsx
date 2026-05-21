@@ -22,6 +22,7 @@ export default function CrownsvilleMD() {
       nearbyAreas={[{label:"Galesville",href:"/service-areas/maryland/anne-arundel-county/galesville-md"},{label:"Riva",href:"/service-areas/maryland/anne-arundel-county/riva-md"},{label:"Largo",href:"/service-areas/maryland/prince-georges-county/largo-md"}]}
       countyHubLabel="Anne Arundel County"
       countyHubHref="/service-areas/maryland/anne-arundel-county"
+      cityMapQuery="Crownsville, MD"
       ctaCity="Crownsville"
       ctaLicenseLine="Anne Arundel County License #A2-6139 | MD Master Plumber #96958"
       schemaJson={schema}

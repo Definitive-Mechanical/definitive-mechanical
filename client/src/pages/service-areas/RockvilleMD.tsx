@@ -12,6 +12,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 import SectionHeading from "@/components/ui/SectionHeading";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/ui/CTABanner";
+import CityMap from "@/components/ui/CityMap";
 
 const services = [
   { icon: AlertTriangle, label: "24/7 Emergency Plumbing", href: "/emergency-plumbing", note: "including Emergency Plumber Rockville MD" },
@@ -226,6 +227,13 @@ export default function RockvilleMD() {
           </div>
         </div>
       </section>
+      {/* ── S6b: CITY MAP ─────────────────────────────────────────── */}
+      <CityMap
+        q="Rockville, MD"
+        label="Rockville, MD — Definitive Mechanical Service Area"
+        zoom={13}
+      />
+
 
       {/* S7: Nearby Areas */}
       <section className="py-12 bg-white">
