@@ -11,7 +11,7 @@ export default function About() {
     <>
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)',
+        background: 'linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)',
         padding: '80px 0',
         position: 'relative',
         overflow: 'hidden',
@@ -96,9 +96,9 @@ export default function About() {
               { number: '25+', label: 'Years Trade Experience', icon: Award },
             ].map((stat, index) => (
               <div key={stat.label} style={{ textAlign: 'center', padding: '16px', borderRight: index < 3 ? '1px solid rgba(6,59,99,0.2)' : 'none' }}>
-                <stat.icon size={24} color="var(--brand-navy)" style={{ margin: '0 auto 8px' }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '32px', color: 'var(--brand-navy)', lineHeight: 1 }}>{stat.number}</p>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-navy)', marginTop: '4px' }}>{stat.label}</p>
+                <stat.icon size={24} color="var(--brand-blue)" style={{ margin: '0 auto 8px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '32px', color: 'var(--brand-blue)', lineHeight: 1 }}>{stat.number}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-blue)', marginTop: '4px' }}>{stat.label}</p>
               </div>
             ))}
           </div>
@@ -133,7 +133,7 @@ export default function About() {
             ].map((item) => (
               <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(29,108,163,0.08)', textAlign: 'center' }}>
                 <item.icon size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
-                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
+                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-blue)', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>
               </div>
             ))}
@@ -179,12 +179,12 @@ export default function About() {
             ].map((item) => (
               <div key={item.title} style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '24px', border: '1px solid rgba(6,59,99,0.1)' }}>
                 <Award size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
-                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{item.title}</h3>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-blue)', fontSize: '15px', marginBottom: '8px' }}>{item.title}</h3>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', fontWeight: 600 }}>{item.cert}</p>
               </div>
             ))}
           </div>
-          <div style={{ marginTop: '48px', padding: '32px', background: 'var(--brand-navy)', borderRadius: '6px', textAlign: 'center' }}>
+          <div style={{ marginTop: '48px', padding: '32px', background: 'var(--brand-blue)', borderRadius: '6px', textAlign: 'center' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
               Every Definitive Mechanical job is performed under Master Plumber license and supervision. Our credentials are verified and current with all relevant state and local jurisdictions.
             </p>
@@ -198,7 +198,7 @@ export default function About() {
       </section>
 
       {/* CONTACT INFO */}
-      <section style={{ background: 'var(--brand-navy)', padding: '64px 0' }}>
+      <section style={{ background: 'var(--brand-blue)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

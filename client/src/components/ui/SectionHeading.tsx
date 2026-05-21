@@ -16,7 +16,7 @@ export default function SectionHeading({ eyebrow, heading, subtext, centered = f
           fontSize: '12px',
           textTransform: 'uppercase',
           letterSpacing: '0.25em',
-          color: light ? 'rgba(255,255,255,0.7)' : 'var(--brand-cyan)',
+          color: light ? 'rgba(255,255,255,0.7)' : 'var(--brand-blue)',
           marginBottom: '12px',
         }}>
           {eyebrow}
@@ -27,7 +27,7 @@ export default function SectionHeading({ eyebrow, heading, subtext, centered = f
         fontWeight: 700,
         textTransform: 'uppercase',
         letterSpacing: '0.02em',
-        color: light ? 'white' : 'var(--brand-navy)',
+        color: light ? 'white' : '#0A0A0A',
         fontSize: 'clamp(26px, 3.5vw, 42px)',
         lineHeight: 1.1,
         marginBottom: subtext ? '16px' : '0',

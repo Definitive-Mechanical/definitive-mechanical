@@ -645,7 +645,7 @@ export default function Home() {
               boxShadow: '0 2px 12px rgba(29,108,163,0.08)',
               textAlign: 'center',
             }}>
-              <div style={{ background: 'var(--brand-navy)', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>
+              <div style={{ background: 'var(--brand-blue)', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>
                 <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '16px', letterSpacing: '0.1em' }}>SYNCHRONY FINANCING</span>
               </div>
               <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '22px', marginBottom: '8px' }}>

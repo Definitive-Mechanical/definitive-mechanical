@@ -233,7 +233,7 @@ export function InlineCTA() {
   return (
     <div
       className="rounded-sm my-10 text-center"
-      style={{ background: "var(--brand-navy)", padding: "32px" }}
+      style={{ background: "var(--brand-blue)", padding: "32px" }}
     >
       <p
         style={{
@@ -421,7 +421,7 @@ export function PricingTable({ headers, rows }: { headers: string[]; rows: strin
     <div className="overflow-x-auto my-6 rounded-sm border border-[#C0D8F0]">
       <table className="w-full min-w-[400px] text-sm">
         <thead>
-          <tr style={{ background: "var(--brand-navy)" }}>
+          <tr style={{ background: "var(--brand-blue)" }}>
             {headers.map((h, i) => (
               <th
                 key={i}

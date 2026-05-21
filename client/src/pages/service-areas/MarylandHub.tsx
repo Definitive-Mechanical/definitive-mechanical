@@ -209,7 +209,7 @@ export default function MarylandHub() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ background: 'var(--brand-navy)', padding: '56px 0' }}>
+      <section style={{ background: 'var(--brand-blue)', padding: '56px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'white', marginBottom: '16px' }}>
             Need a Plumber in Maryland?

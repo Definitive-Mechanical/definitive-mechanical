@@ -130,7 +130,7 @@ export default function SewerLineInstallation() {
           </p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
             {LICENSE_BADGES.map((badge) => (
-              <div key={badge} style={{ background: 'var(--brand-navy)', color: 'white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', letterSpacing: '0.08em', padding: '10px 20px', borderRadius: '4px' }}>{badge}</div>
+              <div key={badge} style={{ background: 'var(--brand-blue)', color: 'white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', letterSpacing: '0.08em', padding: '10px 20px', borderRadius: '4px' }}>{badge}</div>
             ))}
           </div>
         </div>
@@ -144,7 +144,7 @@ export default function SewerLineInstallation() {
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What does sewer line installation cost in Maryland, DC, or Virginia?</h2>
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '672px', margin: '0 auto 16px', overflow: 'hidden' }}>
-            <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+            <div style={{ background: 'var(--brand-blue)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SCOPE</span>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
             </div>
@@ -181,7 +181,7 @@ export default function SewerLineInstallation() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

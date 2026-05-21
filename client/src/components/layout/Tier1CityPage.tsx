@@ -211,7 +211,7 @@ export default function Tier1CityPage({
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, margin: 0 }}>
                 Plumbing Services in {cityName}
               </h2>
-              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
                 <Phone size={14} /> Call Now
               </a>
             </div>
@@ -333,7 +333,7 @@ export default function Tier1CityPage({
             </div>
             {/* Right — credentials on navy card */}
             <div>
-              <div style={{ background: "var(--brand-navy)", borderRadius: "12px", padding: "28px", boxShadow: "0 8px 32px rgba(6,59,99,0.2)" }}>
+              <div style={{ background: "var(--brand-blue)", borderRadius: "12px", padding: "28px", boxShadow: "0 8px 32px rgba(6,59,99,0.2)" }}>
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Licenses &amp; Certifications</p>
                 <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "20px", textTransform: "uppercase", color: "white", lineHeight: 1.1, marginBottom: "20px" }}>
                   {licenseHeading}
@@ -358,7 +358,7 @@ export default function Tier1CityPage({
       </section>
 
       {/* ── S6: COMMERCIAL — dark navy, horizontal layout ───────────────── */}
-      <section style={{ background: "var(--brand-navy)", padding: "64px 0" }}>
+      <section style={{ background: "var(--brand-blue)", padding: "64px 0" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
             <div className="lg:col-span-2">
@@ -405,7 +405,7 @@ export default function Tier1CityPage({
             </div>
             <div className="lg:col-span-3">
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                <Link href={countyHubHref} style={{ fontFamily: "var(--font-body)", color: "white", fontSize: "13px", fontWeight: 600, textDecoration: "none", background: "var(--brand-navy)", borderRadius: "20px", padding: "6px 16px" }}>
+                <Link href={countyHubHref} style={{ fontFamily: "var(--font-body)", color: "white", fontSize: "13px", fontWeight: 600, textDecoration: "none", background: "var(--brand-blue)", borderRadius: "20px", padding: "6px 16px" }}>
                   {countyHubLabel} Hub
                 </Link>
                 {nearbyAreas.map((area) => (
@@ -421,7 +421,7 @@ export default function Tier1CityPage({
 
       {/* ── S8: FAQ — dark navy bg ───────────────────────────────────────── */}
       {faqs && faqs.length > 0 && (
-        <section className="py-20" style={{ background: "var(--brand-navy)" }}>
+        <section className="py-20" style={{ background: "var(--brand-blue)" }}>
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div>

@@ -61,7 +61,7 @@ export default function EmergencyWashingtonDC() {
         </a>
       </div>
 
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-blue) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Washington DC" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  WASHINGTON DC  DC MASTER PLUMBER #PGM1002236</p>
@@ -103,7 +103,7 @@ export default function EmergencyWashingtonDC() {
             {EMERGENCY_TYPES.map((type) => (
               <div key={type.title} className="bg-white rounded-md p-4 shadow-sm">
                 <type.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
+                <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
                 <p className="text-xs text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{type.body}</p>
               </div>
             ))}
@@ -114,12 +114,12 @@ export default function EmergencyWashingtonDC() {
         </div>
       </section>
 
-      <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
+      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
         <div className="container text-center">
           <SectionHeading eyebrow="LICENSE PROOF" heading="DC Master Plumber/Gasfitter — License #PGM1002236" light />
           <div className="bg-white rounded-md p-8 max-w-lg mx-auto mt-8">
             <Key size={40} style={{ color: "var(--brand-cyan)" }} className="mx-auto mb-3" />
-            <p className="font-semibold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>District of Columbia Master Plumber & Master Gasfitter</p>
+            <p className="font-semibold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>District of Columbia Master Plumber & Master Gasfitter</p>
             <p className="font-bold text-3xl mb-3" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>#PGM1002236</p>
             <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>Issued by DC's Department of Consumer and Regulatory Affairs (DCRA). Required for all licensed plumbing and gas work within the District of Columbia.</p>
           </div>
@@ -135,7 +135,7 @@ export default function EmergencyWashingtonDC() {
             {[{ icon: Clock, title: "Trip Fee Applies to All Services", body: "All services have a trip fee." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
               <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
                 <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
+                <h3 className="font-bold mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
                 <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{item.body}</p>
               </div>
             ))}
@@ -145,11 +145,11 @@ export default function EmergencyWashingtonDC() {
 
       <section style={{ backgroundColor: "var(--surface-1)" }} className="py-12">
         <div className="container">
-          <h2 className="text-2xl font-bold mb-3 text-center" style={{ color: "var(--brand-navy)", fontFamily: 'var(--font-display)' }}>All DC wards and neighborhoods — 24/7</h2>
+          <h2 className="text-2xl font-bold mb-3 text-center" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-display)' }}>All DC wards and neighborhoods — 24/7</h2>
           <p className="text-center text-gray-600 mb-6 max-w-2xl mx-auto" style={{ fontFamily: "'Barlow', sans-serif" }}>We serve all eight DC wards for emergency plumbing. Response time varies by neighborhood and conditions at the time of call. Our dispatcher gives you an honest ETA on every call.</p>
           <div className="flex flex-wrap gap-2 justify-center max-w-3xl mx-auto">
             {DC_NEIGHBORHOODS.map((n) => (
-              <span key={n} className="bg-white rounded-full px-3 py-1 text-sm font-medium" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{n}</span>
+              <span key={n} className="bg-white rounded-full px-3 py-1 text-sm font-medium" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>{n}</span>
             ))}
           </div>
           <p className="text-center text-sm text-gray-500 mt-4" style={{ fontFamily: "'Barlow', sans-serif" }}>Not seeing your DC neighborhood? Call (301) 679-5849 — we confirm we can serve your address immediately.</p>

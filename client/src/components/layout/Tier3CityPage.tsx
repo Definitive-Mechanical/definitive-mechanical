@@ -286,7 +286,7 @@ export default function Tier3CityPage({
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,34px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, margin: 0 }}>
                 {servicesHeading || `Plumbing Services in ${schemaCity}`}
               </h2>
-              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 18px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 18px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
                 Call Now
               </a>
             </div>
@@ -422,7 +422,7 @@ export default function Tier3CityPage({
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                background: "var(--brand-navy)",
+                background: "var(--brand-blue)",
                 color: "white",
                 fontFamily: 'var(--font-display)',
                 fontWeight: 700,

@@ -93,7 +93,7 @@ export default function WaterLineRepair() {
               </div>
             </div>
             {/* Emergency strip */}
-            <div style={{ background: 'var(--brand-navy)', borderRadius: '6px', padding: '24px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+            <div style={{ background: 'var(--brand-blue)', borderRadius: '6px', padding: '24px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
               <Phone size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>ACTIVE WATER LINE FAILURE?</p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '14px', lineHeight: 1.7, marginBottom: '20px' }}>
@@ -144,7 +144,7 @@ export default function WaterLineRepair() {
               <p className="eyebrow mb-2">PRICING GUIDE</p>
               <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '24px' }}>What does water line repair cost?</h2>
               <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', marginBottom: '16px' }}>
-                <div style={{ background: 'var(--brand-navy)', padding: '10px 16px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+                <div style={{ background: 'var(--brand-blue)', padding: '10px 16px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
                 </div>
@@ -161,7 +161,7 @@ export default function WaterLineRepair() {
               <BookNowButton variant="phone" text="CALL FOR EMERGENCY ASSESSMENT" href="tel:+13016795849" size="md" />
             </div>
             <div>
-              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
+              <div style={{ background: 'var(--brand-blue)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
@@ -193,7 +193,7 @@ export default function WaterLineRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

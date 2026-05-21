@@ -44,7 +44,7 @@ export default function BowieMD() {
       </Helmet>
 
       {/* S1: Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "60vh" }} className="py-20">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)", minHeight: "60vh" }} className="py-20">
         <div className="container">
           <BreadcrumbList items={[
             {label:"Home",href:"/"},
@@ -92,7 +92,7 @@ export default function BowieMD() {
 
                 <div style={{ height: "3px", width: "28px", background: cat.color, flexShrink: 0, borderRadius: "2px" }} />
 
-                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-navy)" }}>{cat.title}</span>
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-blue)" }}>{cat.title}</span>
 
                 <div style={{ height: "1px", flex: 1, background: "#E6E8EE" }} />
 
@@ -118,7 +118,7 @@ export default function BowieMD() {
                       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
                     </div>
                   <div style={{ padding: "14px 16px 16px" }}>
-                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-blue)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
                     <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#1D6CA3", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                   </div>
                 </div>
@@ -131,7 +131,7 @@ export default function BowieMD() {
       </section>
 
             {/* S3: Emergency */}
-      <section style={{ background: "var(--brand-navy)", position: "relative", overflow: "hidden" }} className="py-20">
+      <section style={{ background: "var(--brand-blue)", position: "relative", overflow: "hidden" }} className="py-20">
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 30% 50%, rgba(220,38,38,0.15) 0%, transparent 65%)", pointerEvents:"none" }} />
         <div className="container" style={{ position:"relative", zIndex:1 }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -180,7 +180,7 @@ export default function BowieMD() {
               <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
                   <card.icon size={24} style={{ color:"var(--brand-cyan)" }} />
-                  <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
+                  <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-blue)", fontSize:"15px" }}>{card.title}</p>
                 </div>
                 <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
               </div>
@@ -190,7 +190,7 @@ export default function BowieMD() {
       </section>
 
             {/* S5: Commercial */}
-      <section style={{ background:"linear-gradient(135deg, var(--brand-navy) 0%, #0a2a4a 100%)", position:"relative", overflow:"hidden" }} className="py-20">
+      <section style={{ background:"linear-gradient(135deg, var(--brand-blue) 0%, #0a2a4a 100%)", position:"relative", overflow:"hidden" }} className="py-20">
         <div style={{ position:"absolute", top:0, right:0, width:"40%", height:"100%", background:"linear-gradient(to left, rgba(0,158,198,0.06), transparent)", pointerEvents:"none" }} />
         <div className="container" style={{ position:"relative", zIndex:1 }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
@@ -214,7 +214,7 @@ export default function BowieMD() {
         <div className="container">
           <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading="Areas near Bowie we also serve" />
           <div className="mb-3">
-            <span style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
+            <span style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-blue)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
             <Link href="/service-areas/maryland/prince-georges-county/largo-md" style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Largo, MD</Link>
             <Link href="/service-areas/maryland/prince-georges-county/fort-washington-md" style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Fort Washington, MD</Link>
             {["Upper Marlboro, MD","Mitchellville, MD","Glenn Dale, MD","Crofton, MD","Odenton, MD","Davidsonville, MD","Fairwood, MD"].map((city, i) => (
@@ -226,7 +226,7 @@ export default function BowieMD() {
       </section>
 
             {/* S8: FAQ */}
-      <section style={{ background: "var(--brand-navy)" }} className="py-20">
+      <section style={{ background: "var(--brand-blue)" }} className="py-20">
         <div className="container">
           <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
           <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>

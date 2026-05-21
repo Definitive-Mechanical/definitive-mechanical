@@ -102,7 +102,7 @@ export default function FAQPage() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "38vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)", minHeight: "38vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>FREQUENTLY ASKED QUESTIONS</p>
@@ -125,7 +125,7 @@ export default function FAQPage() {
             <a
               key={section.anchor}
               href={`#${section.anchor}`}
-              className="font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-full border border-[var(--brand-navy)] text-[var(--brand-navy)] hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
+              className="font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-full border border-[var(--brand-blue)] text-[var(--brand-blue)] hover:bg-[var(--brand-blue)] hover:text-white transition-colors"
               style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               {section.category}
@@ -161,7 +161,7 @@ export default function FAQPage() {
               { label: "About Us", href: "/about/" },
               { label: "Contact", href: "/contact/" },
             ].map((link) => (
-              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium text-sm hover:opacity-80 transition-opacity block" style={{ borderColor: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>
+              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium text-sm hover:opacity-80 transition-opacity block" style={{ borderColor: "var(--brand-cyan)", color: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>
                 {link.label} →
               </Link>
             ))}

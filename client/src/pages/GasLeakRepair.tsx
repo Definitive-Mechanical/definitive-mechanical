@@ -123,7 +123,7 @@ export default function GasLeakRepair() {
       </section>
 
       {/* SECTION 4: LICENSING */}
-      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeading eyebrow="LICENSING" heading="Are you licensed to repair gas leaks in Maryland, DC, and Virginia?" centered light />
           <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px' }}>
@@ -153,7 +153,7 @@ export default function GasLeakRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

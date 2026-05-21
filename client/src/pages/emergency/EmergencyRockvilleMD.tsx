@@ -77,7 +77,7 @@ export default function EmergencyRockvilleMD() {
       </div>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-blue) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Rockville MD" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -131,7 +131,7 @@ export default function EmergencyRockvilleMD() {
             {EMERGENCY_TYPES.map((type) => (
               <div key={type.title} className="bg-white rounded-md p-4 shadow-sm">
                 <type.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
+                <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
                 <p className="text-xs text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{type.body}</p>
               </div>
             ))}
@@ -143,7 +143,7 @@ export default function EmergencyRockvilleMD() {
       </section>
 
       {/* Section 4 — License Proof */}
-      <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
+      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="LICENSE PROOF" heading="Three licenses for Rockville emergency plumbing authority" light />
           <p className="text-white/80 text-center max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif", fontSize: "15px" }}>
@@ -157,7 +157,7 @@ export default function EmergencyRockvilleMD() {
             ].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
                 <Key size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <p className="text-sm font-semibold" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
+                <p className="text-sm font-semibold" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
                 <p className="font-bold text-xl" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
               </div>
             ))}
@@ -179,7 +179,7 @@ export default function EmergencyRockvilleMD() {
             ].map((item) => (
               <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
                 <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
+                <h3 className="font-bold mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
                 <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{item.body}</p>
               </div>
             ))}
@@ -190,7 +190,7 @@ export default function EmergencyRockvilleMD() {
       {/* Section 6 — Related Pages */}
       <section style={{ backgroundColor: "var(--surface-1)" }} className="py-12">
         <div className="container">
-          <h2 className="text-xl font-bold mb-6" style={{ color: "var(--brand-navy)", fontFamily: 'var(--font-display)' }}>Related Plumbing Services</h2>
+          <h2 className="text-xl font-bold mb-6" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-display)' }}>Related Plumbing Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { label: "Plumber in Rockville, MD", href: "/service-areas/maryland/montgomery-county/rockville-md/" },

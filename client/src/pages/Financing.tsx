@@ -24,7 +24,7 @@ export default function Financing() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Financing" }]} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
@@ -45,7 +45,7 @@ export default function Financing() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 py-4 px-8 rounded transition-all hover:-translate-y-0.5"
-                  style={{ background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
+                  style={{ background: "var(--brand-cyan)", color: "var(--brand-blue)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
                 >
                   <CreditCard size={18} />
                   APPLY FOR FINANCING
@@ -83,8 +83,8 @@ export default function Financing() {
             ].map((item, i) => (
               <div key={i} className="text-center p-8 rounded-md" style={{ background: "var(--surface-1)" }}>
                 <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "36px", fontWeight: 700, lineHeight: 1 }} className="mb-4">{item.step}</p>
-                <item.icon size={32} style={{ color: "var(--brand-navy)", margin: "0 auto 12px" }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
+                <item.icon size={32} style={{ color: "var(--brand-blue)", margin: "0 auto 12px" }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.6 }}>{item.body}</p>
               </div>
             ))}
@@ -93,7 +93,7 @@ export default function Financing() {
       </section>
 
       {/* What Can Be Financed */}
-      <section className="py-20" style={{ background: "var(--brand-navy)" }}>
+      <section className="py-20" style={{ background: "var(--brand-blue)" }}>
         <div className="container">
           <SectionHeading eyebrow="ELIGIBLE SERVICES" heading="What plumbing services can be financed?" light />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
@@ -123,7 +123,7 @@ export default function Financing() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 py-4 px-10 rounded transition-all hover:-translate-y-0.5"
-              style={{ background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
+              style={{ background: "var(--brand-cyan)", color: "var(--brand-blue)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
             >
               <CreditCard size={20} />
               APPLY FOR FINANCING NOW
@@ -146,7 +146,7 @@ export default function Financing() {
               <div key={i} className="flex items-start gap-4 p-6 rounded-md" style={{ background: "var(--surface-1)" }}>
                 <item.icon size={28} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                 <div>
-                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
+                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
                   <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.6 }}>{item.body}</p>
                 </div>
               </div>

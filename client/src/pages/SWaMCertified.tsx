@@ -35,7 +35,7 @@ export default function SWaMCertified() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "SWaM Certified Plumbing Contractor Virginia" }]} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
@@ -93,7 +93,7 @@ export default function SWaMCertified() {
                   <div key={i} className="flex items-start gap-3 p-4 rounded" style={{ background: "var(--surface-1)" }}>
                     <CheckCircle2 size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                     <div>
-                      <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.15em" }}>{item.label}</p>
+                      <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.15em" }}>{item.label}</p>
                       <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", marginTop: "2px" }}>{item.value}</p>
                     </div>
                   </div>
@@ -105,7 +105,7 @@ export default function SWaMCertified() {
       </section>
 
       {/* Why Hire SWaM */}
-      <section className="py-20" style={{ background: "var(--brand-navy)" }}>
+      <section className="py-20" style={{ background: "var(--brand-blue)" }}>
         <div className="container">
           <SectionHeading eyebrow="WHY HIRE A SWAM CONTRACTOR" heading="Why hire a Virginia SWaM certified plumbing contractor?" light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
@@ -116,7 +116,7 @@ export default function SWaMCertified() {
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-md p-6" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.15)" }}>
                 <item.icon size={32} style={{ color: "var(--brand-cyan)", marginBottom: "12px" }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }}>{item.body}</p>
               </div>
             ))}

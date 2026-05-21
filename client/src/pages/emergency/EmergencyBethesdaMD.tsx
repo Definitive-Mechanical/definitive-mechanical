@@ -59,7 +59,7 @@ export default function EmergencyBethesdaMD() {
         </a>
       </div>
 
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-blue) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Bethesda, MD" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  BETHESDA, MD  WSSC #73696  MD #96958</p>
@@ -101,7 +101,7 @@ export default function EmergencyBethesdaMD() {
             {EMERGENCY_TYPES.map((type) => (
               <div key={type.title} className="bg-white rounded-md p-4 shadow-sm">
                 <type.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
+                <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
                 <p className="text-xs text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{type.body}</p>
               </div>
             ))}
@@ -112,14 +112,14 @@ export default function EmergencyBethesdaMD() {
         </div>
       </section>
 
-      <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
+      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="LICENSE PROOF" heading="WSSC and Maryland Licensed for Bethesda Emergency Plumbing" light />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
             {[{ label: "WSSC Master Plumber/Gasfitter", num: "#73696" }, { label: "Maryland State Master Plumber/Gasfitter", num: "#96958" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
                 <Key size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <p className="text-sm font-semibold" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
+                <p className="text-sm font-semibold" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
                 <p className="font-bold text-xl" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
               </div>
             ))}
@@ -133,7 +133,7 @@ export default function EmergencyBethesdaMD() {
             {[{ icon: Clock, title: "Trip Fee Applies to All Services", body: "All services have a trip fee." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
               <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
                 <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
+                <h3 className="font-bold mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
                 <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{item.body}</p>
               </div>
             ))}

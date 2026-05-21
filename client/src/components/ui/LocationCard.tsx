@@ -32,7 +32,7 @@ export default function LocationCard({ city, state, href, description }: Locatio
       {/* Header */}
       <div style={{
         height: '80px',
-        background: 'linear-gradient(135deg, var(--brand-navy), var(--brand-blue))',
+        background: 'linear-gradient(135deg, var(--brand-blue), var(--brand-blue))',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -52,7 +52,7 @@ export default function LocationCard({ city, state, href, description }: Locatio
         <p style={{
           fontFamily: 'var(--font-display)',
           fontWeight: 600,
-          color: 'var(--brand-navy)',
+          color: 'var(--brand-blue)',
           fontSize: '16px',
           marginBottom: description ? '8px' : '12px',
         }}>

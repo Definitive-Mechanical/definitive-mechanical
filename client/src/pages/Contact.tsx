@@ -57,12 +57,12 @@ export default function Contact() {
       </Helmet>
 
       {/* Emergency Top Bar */}
-      <a href="tel:+13016795849" className="block w-full py-3 text-center" style={{ background: "var(--brand-cyan)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--brand-navy)", textDecoration: "none" }}>
+      <a href="tel:+13016795849" className="block w-full py-3 text-center" style={{ background: "var(--brand-cyan)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--brand-blue)", textDecoration: "none" }}>
          Plumbing Emergency? Call (301) 679-5849 — Live Dispatcher Answering 24/7, 365 Days
       </a>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "40vh" }} className="py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)", minHeight: "40vh" }} className="py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
           <div className="mt-6">
@@ -90,14 +90,14 @@ export default function Contact() {
               <SectionHeading eyebrow="GET IN TOUCH" heading="How to reach us" />
 
               {/* Emergency CTA */}
-              <div className="rounded-md p-6 mb-8" style={{ background: "var(--brand-navy)" }}>
+              <div className="rounded-md p-6 mb-8" style={{ background: "var(--brand-blue)" }}>
                 <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-2">
                   24/7 EMERGENCY SERVICE
                 </p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "14px", lineHeight: 1.6 }} className="mb-4">
                   For burst pipes, sewer backups, gas leaks, or any plumbing emergency — call now. A live dispatcher answers every call.
                 </p>
-                <a href="tel:+13016795849" className="flex items-center justify-center gap-2 w-full py-4 rounded" style={{ background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}>
+                <a href="tel:+13016795849" className="flex items-center justify-center gap-2 w-full py-4 rounded" style={{ background: "var(--brand-cyan)", color: "var(--brand-blue)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}>
                   <Phone size={18} />
                   CALL (301) 679-5849
                 </a>
@@ -108,28 +108,28 @@ export default function Contact() {
                 <div className="flex items-start gap-3">
                   <Phone size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Phone</p>
+                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Phone</p>
                     <a href="tel:+13016795849" style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "16px", textDecoration: "none" }}>(301) 679-5849</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Email</p>
+                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Email</p>
                     <a href="mailto:info@definitivemechanical.com" style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "16px", textDecoration: "none" }}>info@definitivemechanical.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Address</p>
+                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Address</p>
                     <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.5 }}>9701 Apollo Drive, Suite 100<br />Largo, MD 20774</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Clock size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Hours</p>
+                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Hours</p>
                     <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.6 }}>
                       Mon-Fri: 9am-5pm<br />
                       Saturday: 9am-2pm<br />
@@ -141,7 +141,7 @@ export default function Contact() {
 
               {/* Service Area Note */}
               <div className="mt-8 p-4 rounded" style={{ background: "var(--surface-1)" }}>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em" }} className="mb-1">SERVICE AREA</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em" }} className="mb-1">SERVICE AREA</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }}>
                   Maryland (Prince George's, Montgomery, Howard, Anne Arundel, Charles Counties)  Washington DC  Northern Virginia (Fairfax, Arlington, Loudoun, Prince William Counties)
                 </p>
@@ -154,7 +154,7 @@ export default function Contact() {
                 {submitted ? (
                   <div style={{ textAlign: 'center', padding: '32px 0' }}>
                     <CheckCircle2 size={52} style={{ color: '#4FB3E8', margin: '0 auto 16px' }} />
-                    <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'var(--brand-navy)', marginBottom: '10px' }}>
+                    <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'var(--brand-blue)', marginBottom: '10px' }}>
                       Request Received!
                     </h3>
                     <p style={{ fontFamily: 'var(--font-body)', fontSize: '15px', color: '#444', lineHeight: 1.6, marginBottom: '20px' }}>
@@ -167,7 +167,7 @@ export default function Contact() {
                 ) : (
                   <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                     <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Request Service</p>
-                    <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
+                    <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'var(--brand-blue)', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                     {/* Name + Phone */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
@@ -267,7 +267,7 @@ export default function Contact() {
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-md p-6 text-center" style={{ boxShadow: "0 2px 12px rgba(29,108,163,0.08)" }}>
                 <item.icon size={32} style={{ color: "var(--brand-cyan)", margin: "0 auto 12px" }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }}>{item.body}</p>
               </div>
             ))}

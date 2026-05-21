@@ -87,7 +87,7 @@ export default function WaterLineInstallation() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
+              <div style={{ background: 'var(--brand-blue)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
@@ -138,7 +138,7 @@ export default function WaterLineInstallation() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

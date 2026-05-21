@@ -240,7 +240,7 @@ export default function ServicePageLayout({
               )}
               <a
                 href="tel:+13016795849"
-                style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none" }}
+                style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none" }}
               >
                 <Phone size={14} /> Call Now
               </a>
@@ -359,7 +359,7 @@ export default function ServicePageLayout({
                     key={step.step}
                     style={{ display: "flex", gap: "16px", alignItems: "flex-start", background: "white", border: "1px solid #D4E4F0", borderRadius: "8px", padding: "18px 20px", boxShadow: "0 2px 8px rgba(6,59,99,0.06)" }}
                   >
-                    <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "var(--brand-navy)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                    <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "var(--brand-blue)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
                       <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-cyan)", fontSize: "16px" }}>{step.step}</span>
                     </div>
                     <div>
@@ -376,7 +376,7 @@ export default function ServicePageLayout({
 
       {/* ── S6: FAQ — dark navy ───────────────────────────────────────────── */}
       {faqs.length > 0 && (
-        <section className="py-20" style={{ background: "var(--brand-navy)" }}>
+        <section className="py-20" style={{ background: "var(--brand-blue)" }}>
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div>

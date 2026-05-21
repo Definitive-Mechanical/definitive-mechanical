@@ -34,7 +34,7 @@ export default function ArlingtonCounty() {
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
 
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Northern Virginia", href: "/service-areas/northern-virginia/" }, { label: "Arlington County" }]}/>
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES  ARLINGTON COUNTY, VA</p>
@@ -46,7 +46,7 @@ export default function ArlingtonCounty() {
             <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
               <Phone size={20} /> CALL (301) 679-5849
             </a>
-            <a href="/contact/" className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[var(--brand-navy)] transition-colors" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>Request Service</a>
+            <a href="/contact/" className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[var(--brand-blue)] transition-colors" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>Request Service</a>
           </div>
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Class A #2705181061</span>
@@ -61,7 +61,7 @@ export default function ArlingtonCounty() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10">
             {NEIGHBORHOODS.map((n) => (
               <div key={n.name} className="bg-white border border-gray-200 rounded-md p-4">
-                <p className="font-bold text-sm" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{n.name}</p>
+                <p className="font-bold text-sm" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{n.name}</p>
                 <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: "'Barlow', sans-serif" }}>{n.note}</p>
               </div>
             ))}
@@ -69,14 +69,14 @@ export default function ArlingtonCounty() {
         </div>
       </section>
 
-      <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
+      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="CREDENTIALS" heading="Virginia licenses for Arlington County" light />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
             {[{ label: "Virginia Class A Contractor", num: "#2705181061" }, { label: "Virginia Master Plumber/Gasfitter", num: "#2710064209" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
                 <Key size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <p className="text-xs font-semibold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
+                <p className="text-xs font-semibold mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
                 <p className="font-bold text-lg" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
               </div>
             ))}

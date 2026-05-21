@@ -40,7 +40,7 @@ export default function BackflowCertificationDC() {
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Backflow Prevention", href: "/backflow-prevention/" }, { label: "Backflow Certification Washington DC" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>Backflow Certification  Washington DC  DC Water  All Wards</p>
@@ -81,7 +81,7 @@ export default function BackflowCertificationDC() {
           <SectionHeading eyebrow="DC Neighborhoods Served" heading="Washington DC neighborhoods and commercial corridors we serve" />
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
             {["Capitol Hill", "Downtown DC", "Georgetown", "Dupont Circle", "Adams Morgan", "Columbia Heights", "NoMa", "Navy Yard", "Southwest Waterfront", "Foggy Bottom", "Woodley Park", "Tenleytown", "Petworth", "Brookland", "Anacostia", "Congress Heights"].map(n => (
-              <div key={n} className="p-3 bg-white rounded text-center text-sm font-medium" style={{ color: "var(--brand-navy)", fontFamily: "\'Barlow\', sans-serif" }}>{n}</div>
+              <div key={n} className="p-3 bg-white rounded text-center text-sm font-medium" style={{ color: "var(--brand-blue)", fontFamily: "\'Barlow\', sans-serif" }}>{n}</div>
             ))}
           </div>
         </div>
@@ -100,7 +100,7 @@ export default function BackflowCertificationDC() {
               <div key={s.type} className="flex items-start gap-3 p-4 rounded-lg" style={{ background: "var(--surface-1)" }}>
                 <CheckCircle size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                 <div>
-                  <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "\'Barlow Condensed\', sans-serif", textTransform: "uppercase" }}>{s.type}</h3>
+                  <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: "\'Barlow Condensed\', sans-serif", textTransform: "uppercase" }}>{s.type}</h3>
                   <p className="text-sm" style={{ color: "var(--ink-2)", lineHeight: 1.6 }}>{s.desc}</p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export default function BackflowCertificationDC() {
 
       <section className="py-10" style={{ background: "var(--surface-1)" }}>
         <div className="container">
-          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-navy)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>Related Pages</p>
+          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-blue)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>Related Pages</p>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Backflow Prevention", href: "/backflow-prevention/" },
@@ -127,13 +127,13 @@ export default function BackflowCertificationDC() {
               { label: "Backflow Preventer Repair", href: "/backflow-preventer-repair/" },
               { label: "Washington DC Service Area", href: "/service-areas/washington-dc/" },
             ].map(l => (
-              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-navy)", borderColor: "var(--brand-navy)", fontFamily: "\'Barlow\', sans-serif" }}>{l.label}</a>
+              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-blue)", borderColor: "var(--brand-blue)", fontFamily: "\'Barlow\', sans-serif" }}>{l.label}</a>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
+      <section className="py-16" style={{ background: "var(--brand-blue)" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em' }}>Schedule your DC backflow certification today</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "\'Barlow\', sans-serif" }}> Call (301) 679-5849</p>

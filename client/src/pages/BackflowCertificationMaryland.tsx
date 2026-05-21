@@ -48,7 +48,7 @@ export default function BackflowCertificationMaryland() {
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Backflow Prevention", href: "/backflow-prevention/" }, { label: "Backflow Certification Maryland" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Backflow Certification  Maryland  WSSC  PG County  Montgomery County</p>
@@ -90,7 +90,7 @@ export default function BackflowCertificationMaryland() {
           <div className="mt-8 overflow-x-auto">
             <table className="w-full text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
               <thead>
-                <tr style={{ background: "var(--brand-navy)", color: "white" }}>
+                <tr style={{ background: "var(--brand-blue)", color: "white" }}>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">County</th>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">Authority</th>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">Requirement</th>
@@ -99,7 +99,7 @@ export default function BackflowCertificationMaryland() {
               <tbody>
                 {COUNTIES.map((c, i) => (
                   <tr key={c.name} style={{ background: i % 2 === 0 ? "white" : "#F8F8F8" }}>
-                    <td className="p-3 font-bold" style={{ color: "var(--brand-navy)" }}>{c.name}</td>
+                    <td className="p-3 font-bold" style={{ color: "var(--brand-blue)" }}>{c.name}</td>
                     <td className="p-3" style={{ color: "var(--ink-2)" }}>{c.authority}</td>
                     <td className="p-3" style={{ color: "var(--ink-2)" }}>{c.req}</td>
                   </tr>
@@ -125,7 +125,7 @@ export default function BackflowCertificationMaryland() {
               <div key={s.type} className="flex items-start gap-3 p-4 rounded-lg" style={{ background: "var(--surface-1)" }}>
                 <CheckCircle size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                 <div>
-                  <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>{s.type}</h3>
+                  <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>{s.type}</h3>
                   <p className="text-sm" style={{ color: "var(--ink-2)", lineHeight: 1.6 }}>{s.desc}</p>
                 </div>
               </div>
@@ -157,7 +157,7 @@ export default function BackflowCertificationMaryland() {
 
       <section className="py-10" style={{ background: "var(--surface-1)" }}>
         <div className="container">
-          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>Related Pages</p>
+          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>Related Pages</p>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Backflow Prevention", href: "/backflow-prevention/" },
@@ -167,13 +167,13 @@ export default function BackflowCertificationMaryland() {
               { label: "Commercial Plumber Maryland", href: "/commercial-plumber-maryland/" },
               { label: "Licenses & Certifications", href: "/licenses-certifications/" },
             ].map(l => (
-              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-navy)", borderColor: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{l.label}</a>
+              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-blue)", borderColor: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>{l.label}</a>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
+      <section className="py-16" style={{ background: "var(--brand-blue)" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Schedule your Maryland backflow certification today</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>

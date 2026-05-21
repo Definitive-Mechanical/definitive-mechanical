@@ -68,7 +68,7 @@ export default function DCNeighborhoodsHub() {
 
       {/* Hero */}
       <section
-        style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }}
+        style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }}
         className="flex items-center py-16"
       >
         <div className="container text-center">
@@ -108,7 +108,7 @@ export default function DCNeighborhoodsHub() {
             </a>
             <a
               href="/contact/"
-              className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[var(--brand-navy)] transition-colors"
+              className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[var(--brand-blue)] transition-colors"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}
             >
               Request Service
@@ -135,7 +135,7 @@ export default function DCNeighborhoodsHub() {
               >
                 <p
                   className="font-bold text-sm group-hover:text-cyan-600"
-                  style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}
+                  style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}
                 >
                   {n.name}
                 </p>
@@ -149,7 +149,7 @@ export default function DCNeighborhoodsHub() {
       </section>
 
       {/* Credentials */}
-      <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
+      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="CREDENTIALS" heading="DC-licensed for every neighborhood" light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">
@@ -160,7 +160,7 @@ export default function DCNeighborhoodsHub() {
             ].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
                 <Key size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <p className="text-xs font-semibold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>
+                <p className="text-xs font-semibold mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>
                   {cred.label}
                 </p>
                 <p className="font-bold text-lg" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>

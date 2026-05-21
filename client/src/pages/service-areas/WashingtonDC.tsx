@@ -77,7 +77,7 @@ export default function WashingtonDC() {
       </Helmet>
 
       {/* S1: Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "60vh" }} className="py-20">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)", minHeight: "60vh" }} className="py-20">
         <div className="container">
           <BreadcrumbList items={[
             {label:"Home",href:"/"},
@@ -118,7 +118,7 @@ export default function WashingtonDC() {
 
           {/* DC License Callout */}
           <div className="bg-white border-2 rounded-lg p-5 max-w-2xl mx-auto mb-8" style={{ borderColor:"var(--brand-cyan)" }}>
-            <p style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", letterSpacing:"0.1em", marginBottom:"12px" }}>
+            <p style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-blue)", fontSize:"13px", textTransform:"uppercase", letterSpacing:"0.1em", marginBottom:"12px" }}>
               DC PLUMBING CREDENTIALS
             </p>
             {[
@@ -146,7 +146,7 @@ export default function WashingtonDC() {
                 <div style={{ height: "3px", width: "28px", background: cat.color, flexShrink: 0, borderRadius: "2px" }} />
 
 
-                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-navy)" }}>{cat.title}</span>
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-blue)" }}>{cat.title}</span>
 
 
                 <div style={{ height: "1px", flex: 1, background: "#E6E8EE" }} />
@@ -176,7 +176,7 @@ export default function WashingtonDC() {
                       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
                     </div>
                   <div style={{ padding: "14px 16px 16px" }}>
-                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-blue)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
                     <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#1D6CA3", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ export default function WashingtonDC() {
       </section>
 
             {/* S3: Emergency */}
-      <section style={{ background: "var(--brand-navy)", position: "relative", overflow: "hidden" }} className="py-20">
+      <section style={{ background: "var(--brand-blue)", position: "relative", overflow: "hidden" }} className="py-20">
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 30% 50%, rgba(220,38,38,0.15) 0%, transparent 65%)", pointerEvents:"none" }} />
         <div className="container" style={{ position:"relative", zIndex:1 }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -230,7 +230,7 @@ export default function WashingtonDC() {
               <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
                   <card.icon size={24} style={{ color:"var(--brand-cyan)" }} />
-                  <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
+                  <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-blue)", fontSize:"15px" }}>{card.title}</p>
                 </div>
                 <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
               </div>
@@ -240,7 +240,7 @@ export default function WashingtonDC() {
       </section>
 
       {/* S5: Commercial & Government */}
-      <section className="py-16" style={{ background:"var(--brand-navy)" }}>
+      <section className="py-16" style={{ background:"var(--brand-blue)" }}>
         <div className="container text-center">
           <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Commercial & Government Plumbing in Washington DC" light />
           <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
@@ -248,7 +248,7 @@ export default function WashingtonDC() {
           </p>
           <div className="flex flex-wrap gap-2 justify-center mt-6 mb-6">
             {["DC #PGM1002236","MDOT MBE Cert 20-134","CAGE 8HCF6","SWaM Cert 815255"].map((badge, i) => (
-              <span key={i} style={{ background:"white", color:"var(--brand-navy)", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
+              <span key={i} style={{ background:"white", color:"var(--brand-blue)", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
             ))}
           </div>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -261,12 +261,12 @@ export default function WashingtonDC() {
             {/* S7: Nearby */}
       <section style={{ background:"#F4F7FA" }} className="py-16">
         <div className="container">
-          <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-navy)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">NEARBY SERVICE AREAS</p>
-          <h2 style={{ fontFamily:"var(--font-display)", color:"var(--brand-navy)", fontSize:"clamp(22px,3vw,32px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-6">Areas Near Washington, DC We Also Serve</h2>
+          <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-blue)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">NEARBY SERVICE AREAS</p>
+          <h2 style={{ fontFamily:"var(--font-display)", color:"var(--brand-blue)", fontSize:"clamp(22px,3vw,32px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-6">Areas Near Washington, DC We Also Serve</h2>
           <div className="flex flex-wrap gap-2 mb-6">
-            <a key="Bethesda, MD" href="/service-areas/maryland/montgomery-county/bethesda-md" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-navy)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Bethesda, MD</a>
-            <a key="Arlington, VA" href="/service-areas/northern-virginia/arlington-county/arlington-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-navy)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Arlington, VA</a>
-            <a key="Alexandria, VA" href="/service-areas/northern-virginia/fairfax-county/alexandria-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-navy)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Alexandria, VA</a>
+            <a key="Bethesda, MD" href="/service-areas/maryland/montgomery-county/bethesda-md" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-blue)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Bethesda, MD</a>
+            <a key="Arlington, VA" href="/service-areas/northern-virginia/arlington-county/arlington-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-blue)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Arlington, VA</a>
+            <a key="Alexandria, VA" href="/service-areas/northern-virginia/fairfax-county/alexandria-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-blue)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Alexandria, VA</a>
             <span key="Silver Spring, MD" style={{ fontFamily:"var(--font-body)", fontSize:"14px", color:"var(--ink-2)", background:"white", border:"1px solid #E8EFF5", borderRadius:"4px", padding:"6px 14px", display:"inline-block" }}>Silver Spring, MD</span>
             <span key="Hyattsville, MD" style={{ fontFamily:"var(--font-body)", fontSize:"14px", color:"var(--ink-2)", background:"white", border:"1px solid #E8EFF5", borderRadius:"4px", padding:"6px 14px", display:"inline-block" }}>Hyattsville, MD</span>
             <span key="Capitol Heights, MD" style={{ fontFamily:"var(--font-body)", fontSize:"14px", color:"var(--ink-2)", background:"white", border:"1px solid #E8EFF5", borderRadius:"4px", padding:"6px 14px", display:"inline-block" }}>Capitol Heights, MD</span>
@@ -276,7 +276,7 @@ export default function WashingtonDC() {
       </section>
 
             {/* S8: FAQ */}
-      <section style={{ background: "var(--brand-navy)" }} className="py-20">
+      <section style={{ background: "var(--brand-blue)" }} className="py-20">
         <div className="container">
           <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
           <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>
