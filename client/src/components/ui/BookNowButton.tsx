@@ -50,7 +50,7 @@ export default function BookNowButton({
   };
 
   const hoverStyles: Record<string, React.CSSProperties> = {
-    phone: { background: '#c40511', borderColor: '#c40511', boxShadow: '0 4px 20px rgba(228,6,19,0.35)', transform: 'translateY(-2px)' },
+    phone: { background: '#c40511', borderColor: '#c40511', boxShadow: '0 4px 20px rgba(29,108,163,0.35)', transform: 'translateY(-2px)' },
     navy: { background: '#005fa3', borderColor: '#005fa3', transform: 'translateY(-2px)' },
     outline: { background: 'white', color: 'var(--brand-navy)', borderColor: 'white', transform: 'translateY(-2px)' },
     ghost: { background: 'var(--brand-blue)', color: 'white', transform: 'translateY(-2px)' },

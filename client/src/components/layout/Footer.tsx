@@ -48,7 +48,7 @@ export default function Footer() {
       />
       <footer style={{ background: 'var(--brand-navy-dark)', color: 'white' }}>
         {/* Top accent line */}
-        <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--brand-red), var(--brand-blue))' }} />
+        <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--brand-cyan), var(--brand-blue))' }} />
 
         {/* Main footer content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

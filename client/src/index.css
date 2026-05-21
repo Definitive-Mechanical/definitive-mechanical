@@ -4,7 +4,8 @@
 /* ============================================================
    Definitive Mechanical — Design System Tokens
    Barlow Condensed (display) + Public Sans (body) + JetBrains Mono
-   Brand: Navy #063B63 · Blue #0075BA · Red #E40613 · Cyan #4FB3E8
+   Brand: Steel Blue #1D6CA3 · Cyan #00B4D8 · Black #0A0A0A · White #FFFFFF
+   Logo palette: steel blue + cyan water drop + near-black arc
    ============================================================ */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
@@ -51,20 +52,23 @@
 
 :root {
   /* ── Brand palette ─────────────────────────────────────── */
-  --brand-blue:    #0075BA;
-  --brand-blue-2:  #005F99;
-  --brand-navy:    #063B63;
-  --brand-navy-2:  #04294A;
-  --brand-navy-dark: #04243C;
-  --brand-red:     #E40613;
-  --brand-red-2:   #C8050F;
-  --brand-red-3:   #A8040C;
-  --brand-cyan:    #4FB3E8;
+  --brand-blue:    #1D6CA3;   /* steel blue — primary brand color */
+  --brand-blue-2:  #155A8A;   /* darker steel blue — hover states */
+  --brand-blue-3:  #0E4A73;   /* deepest blue — active/pressed */
+  --brand-navy:    #0A0A0A;   /* near-black — nav bar, footer, dark sections */
+  --brand-navy-2:  #000000;   /* pure black — secondary buttons, overlays */
+  --brand-navy-dark: #000000; /* pure black — deepest dark surfaces */
+  --brand-red:     #1D6CA3;   /* remapped to blue — no red in new palette */
+  --brand-red-2:   #155A8A;   /* remapped to blue-2 */
+  --brand-red-3:   #0E4A73;   /* remapped to blue-3 */
+  --brand-cyan:    #00B4D8;   /* cyan — water drop highlight, accent */
+  --brand-cyan-2:  #0096B4;   /* darker cyan — hover */
+  --brand-black:   #0A0A0A;   /* near-black — explicit black alias */
 
   /* ── Neutrals ──────────────────────────────────────────── */
-  --ink:           #1A1A2E;
-  --ink-2:         #4A4F66;
-  --ink-3:         #8A90A8;
+  --ink:           #1A1A1A;   /* charcoal — body text */
+  --ink-2:         #545959;   /* medium gray — secondary text */
+  --ink-3:         #7A7A7A;   /* light gray — supporting copy */
   --paper:         #FFFFFF;
   --paper-2:       #F5F6F8;
   --paper-3:       #E6E8EE;
@@ -110,10 +114,10 @@
   --radius-full: 999px;
 
   /* ── Shadows (navy-tinted) ─────────────────────────────── */
-  --shadow-1: 0 1px 2px rgba(6,59,99,0.06), 0 1px 1px rgba(6,59,99,0.04);
-  --shadow-2: 0 4px 12px rgba(6,59,99,0.08), 0 1px 2px rgba(6,59,99,0.04);
-  --shadow-3: 0 12px 28px rgba(6,59,99,0.12), 0 4px 8px rgba(6,59,99,0.06);
-  --shadow-hero: 0 24px 48px rgba(6,59,99,0.25);
+  --shadow-1: 0 1px 2px rgba(29,108,163,0.06), 0 1px 1px rgba(29,108,163,0.04);
+  --shadow-2: 0 4px 12px rgba(29,108,163,0.10), 0 1px 2px rgba(29,108,163,0.05);
+  --shadow-3: 0 12px 28px rgba(29,108,163,0.15), 0 4px 8px rgba(29,108,163,0.08);
+  --shadow-hero: 0 24px 48px rgba(0,0,0,0.35);
 
   /* ── Motion ────────────────────────────────────────────── */
   --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
@@ -130,10 +134,10 @@
   --header-h:      72px;
 
   /* ── Shadcn/Tailwind semantic tokens ───────────────────── */
-  --primary:              oklch(0.28 0.14 240);
-  --primary-foreground:   oklch(0.97 0.01 240);
-  --secondary:            oklch(0.96 0.005 240);
-  --secondary-foreground: oklch(0.28 0.14 240);
+  --primary:              oklch(0.42 0.12 230);  /* steel blue #1D6CA3 */
+  --primary-foreground:   oklch(0.98 0.005 230); /* white on blue */
+  --secondary:            oklch(0.96 0.005 230);
+  --secondary-foreground: oklch(0.42 0.12 230);
   --muted:                oklch(0.967 0.001 286.375);
   --muted-foreground:     oklch(0.552 0.016 285.938);
   --accent:               oklch(0.967 0.001 286.375);
@@ -148,7 +152,7 @@
   --popover-foreground:   oklch(0.14 0.02 260);
   --border:               oklch(0.92 0.004 286.32);
   --input:                oklch(0.92 0.004 286.32);
-  --ring:                 oklch(0.45 0.14 230);
+  --ring:                 oklch(0.42 0.12 230);
   --chart-1: oklch(0.6 0.1 200);
   --chart-2: oklch(0.5 0.12 210);
   --chart-3: oklch(0.4 0.12 220);

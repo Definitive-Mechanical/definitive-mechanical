@@ -147,7 +147,7 @@ function HeroSection() {
 
           {/* RIGHT — dark navy lead form card */}
           <div className="lg:col-span-2">
-            <div style={{ background: '#063B63', borderRadius: '12px', padding: '22px', boxShadow: '0 12px 28px rgba(6,59,99,0.35)' }}>
+            <div style={{ background: '#0A0A0A', borderRadius: '12px', padding: '22px', boxShadow: '0 12px 28px rgba(0,0,0,0.35)' }}>
               {submitted ? (
                 <div style={{ textAlign: 'center', padding: '24px 0' }}>
                   <CheckCircle size={48} color="#4FB3E8" style={{ margin: '0 auto 16px' }} />
@@ -233,7 +233,7 @@ function HeroSection() {
                   </div>
 
                   <button type="submit" disabled={submitting}
-                    style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                    style={{ width: '100%', background: submitting ? '#155A8A' : '#1D6CA3', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
                     {submitting ? 'Submitting...' : 'Request Service'}
                   </button>
 
@@ -642,7 +642,7 @@ export default function Home() {
               background: 'white',
               borderRadius: '6px',
               padding: '32px',
-              boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
+              boxShadow: '0 2px 12px rgba(29,108,163,0.08)',
               textAlign: 'center',
             }}>
               <div style={{ background: 'var(--brand-navy)', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>

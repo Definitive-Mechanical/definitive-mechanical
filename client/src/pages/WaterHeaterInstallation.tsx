@@ -110,7 +110,7 @@ export default function WaterHeaterInstallation() {
               </div>
             </div>
           </div>
-          <div style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', maxWidth: '672px', margin: '32px auto 0', boxShadow: '0 2px 8px rgba(6,59,99,0.08)' }}>
+          <div style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', maxWidth: '672px', margin: '32px auto 0', boxShadow: '0 2px 8px rgba(29,108,163,0.08)' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, marginBottom: '12px' }}>
               "If you are uncertain, call (301) 679-5849. We will give you an honest assessment — not a recommendation shaped by which option creates a larger invoice."
             </p>

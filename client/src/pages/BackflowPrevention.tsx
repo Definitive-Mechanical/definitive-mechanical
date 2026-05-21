@@ -112,7 +112,7 @@ export default function BackflowPrevention() {
               </div>
             </div>
             <div>
-              <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px', boxShadow: '0 2px 8px rgba(6,59,99,0.08)' }}>
+              <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px', boxShadow: '0 2px 8px rgba(29,108,163,0.08)' }}>
                 <HelpCircle size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '12px' }}>What about residential properties?</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '16px' }}>

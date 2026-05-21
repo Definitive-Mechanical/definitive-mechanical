@@ -16,7 +16,7 @@ export default function StatsCard({ number, label, icon, bg = 'white' }: StatsCa
       background: bg,
       borderRadius: '4px',
       padding: '24px',
-      boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
+      boxShadow: '0 2px 12px rgba(29,108,163,0.08)',
       textAlign: 'center',
     }}>
       <IconComponent size={28} color="#6090C0" />

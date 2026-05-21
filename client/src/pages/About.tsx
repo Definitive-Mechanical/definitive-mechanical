@@ -78,7 +78,7 @@ export default function About() {
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/about-team-photo-jGApqx8mJzea56RGGdm7Vi.webp"
                 alt="Definitive Mechanical plumbing service Maryland"
-                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }}
+                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(29,108,163,0.12)' }}
               />
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function About() {
                 body: 'When a Definitive Mechanical technician arrives at your property, you get their name. You can call our office and ask about them. We stand behind every technician we send.',
               },
             ].map((item) => (
-              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', textAlign: 'center' }}>
+              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(29,108,163,0.08)', textAlign: 'center' }}>
                 <item.icon size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
                 <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>

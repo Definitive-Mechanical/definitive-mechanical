@@ -150,7 +150,7 @@ export default function Contact() {
 
             {/* RIGHT — dark navy lead form card */}
             <div className="lg:col-span-3">
-              <div style={{ background: '#063B63', borderRadius: '12px', padding: '28px', boxShadow: '0 12px 28px rgba(6,59,99,0.18)' }}>
+              <div style={{ background: '#0A0A0A', borderRadius: '12px', padding: '28px', boxShadow: '0 12px 28px rgba(0,0,0,0.18)' }}>
                 {submitted ? (
                   <div style={{ textAlign: 'center', padding: '32px 0' }}>
                     <CheckCircle2 size={52} style={{ color: '#4FB3E8', margin: '0 auto 16px' }} />
@@ -160,7 +160,7 @@ export default function Contact() {
                     <p style={{ fontFamily: 'var(--font-body)', fontSize: '15px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6, marginBottom: '20px' }}>
                       We typically respond within one business day. For urgent service, call us now.
                     </p>
-                    <a href="tel:+13016795849" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#E40613', color: 'white', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.06em', padding: '13px 24px', borderRadius: '6px', textDecoration: 'none' }}>
+                    <a href="tel:+13016795849" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#1D6CA3', color: 'white', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.06em', padding: '13px 24px', borderRadius: '6px', textDecoration: 'none' }}>
                       <Phone size={16} /> CALL (301) 679-5849
                     </a>
                   </div>
@@ -239,7 +239,7 @@ export default function Contact() {
                     </div>
 
                     <button type="submit" disabled={submitting}
-                      style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                      style={{ width: '100%', background: submitting ? '#155A8A' : '#1D6CA3', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
                       {submitting ? 'Submitting...' : 'SUBMIT SERVICE REQUEST'}
                     </button>
 
@@ -265,7 +265,7 @@ export default function Contact() {
               { icon: MapPin, title: "Licensed in 4 States", body: "Master Plumber and Master Gasfitter licensed in Maryland, DC, Virginia, and Delaware." },
               { icon: Clock, title: "All Services Have a Trip Fee", body: "A trip fee applies to every service call. The fee is disclosed before dispatch and depends on time of day and location." },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-md p-6 text-center" style={{ boxShadow: "0 2px 12px rgba(6,59,99,0.08)" }}>
+              <div key={i} className="bg-white rounded-md p-6 text-center" style={{ boxShadow: "0 2px 12px rgba(29,108,163,0.08)" }}>
                 <item.icon size={32} style={{ color: "var(--brand-cyan)", margin: "0 auto 12px" }} />
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }}>{item.body}</p>

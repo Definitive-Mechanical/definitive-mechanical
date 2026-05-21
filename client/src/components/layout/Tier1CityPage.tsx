@@ -129,7 +129,7 @@ export default function Tier1CityPage({
       </Helmet>
 
       {/* ── S1: HERO — dark navy gradient, two-column ───────────────────── */}
-      <section style={{ background: "linear-gradient(135deg, #031838 0%, #063B63 60%, #0a4a7a 100%)", minHeight: "62vh", position: "relative", overflow: "hidden" }} className="py-20">
+      <section style={{ background: "linear-gradient(135deg, #031838 0%, #0A0A0A 60%, #0a4a7a 100%)", minHeight: "62vh", position: "relative", overflow: "hidden" }} className="py-20">
         {/* subtle diagonal texture */}
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 40px)", pointerEvents: "none" }} />
         <div className="container relative">
@@ -147,7 +147,7 @@ export default function Tier1CityPage({
                 {introParagraph}
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#E40613", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(228,6,19,0.35)" }}>
+                <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#1D6CA3", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(29,108,163,0.35)" }}>
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
                 <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "transparent", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", border: "2px solid rgba(255,255,255,0.35)", textDecoration: "none" }}>
@@ -236,12 +236,12 @@ export default function Tier1CityPage({
                 <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                   <div
                     className="cursor-pointer group"
-                    style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                    style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(29,108,163,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
                     onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(29,108,163,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                   >
                     {/* Photo header */}
-                    <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "linear-gradient(135deg, #063B63, #0a3a5e)" }}>
+                    <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "linear-gradient(135deg, #0A0A0A, #0a3a5e)" }}>
                       <img
                         src={imgSrc}
                         alt={`${svc.label} in ${cityName}`}
@@ -255,7 +255,7 @@ export default function Tier1CityPage({
                     </div>
                     <div style={{ padding: "14px 16px 16px" }}>
                       <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
-                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#1D6CA3", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                     </div>
                   </div>
                 </Link>
@@ -274,8 +274,8 @@ export default function Tier1CityPage({
         <div className="container relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(228,6,19,0.15)", border: "1px solid rgba(228,6,19,0.35)", borderRadius: "20px", padding: "6px 14px", marginBottom: "20px" }}>
-                <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#E40613", display: "inline-block", animation: "pulse 1.5s infinite" }} />
+              <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(228,6,19,0.15)", border: "1px solid rgba(29,108,163,0.35)", borderRadius: "20px", padding: "6px 14px", marginBottom: "20px" }}>
+                <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#1D6CA3", display: "inline-block", animation: "pulse 1.5s infinite" }} />
                 <span style={{ fontFamily: "var(--font-body)", fontWeight: 700, fontSize: "12px", color: "#ff6b6b", textTransform: "uppercase", letterSpacing: "0.1em" }}>24/7 Emergency Available</span>
               </div>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(26px,3.5vw,42px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "20px" }}>
@@ -305,7 +305,7 @@ export default function Tier1CityPage({
                   </div>
                 </div>
               ))}
-              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "#E40613", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "16px 32px", borderRadius: "6px", textDecoration: "none", marginTop: "4px", boxShadow: "0 4px 18px rgba(228,6,19,0.4)" }}>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "#1D6CA3", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "16px 32px", borderRadius: "6px", textDecoration: "none", marginTop: "4px", boxShadow: "0 4px 18px rgba(29,108,163,0.4)" }}>
                 <Phone size={17} /> CALL (301) 679-5849
               </a>
             </div>

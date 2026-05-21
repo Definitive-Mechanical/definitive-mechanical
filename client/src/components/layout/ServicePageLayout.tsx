@@ -163,7 +163,7 @@ export default function ServicePageLayout({
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                 <a
                   href="tel:+13016795849"
-                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#E40613", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(228,6,19,0.35)" }}
+                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#1D6CA3", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(29,108,163,0.35)" }}
                 >
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
@@ -256,7 +256,7 @@ export default function ServicePageLayout({
                     borderTop: "3px solid var(--brand-cyan)",
                     borderRadius: "8px",
                     padding: "22px 20px",
-                    boxShadow: "0 4px 16px rgba(6,59,99,0.08)",
+                    boxShadow: "0 4px 16px rgba(29,108,163,0.08)",
                   }}
                 >
                   <div style={{ width: "40px", height: "40px", background: "rgba(0,117,186,0.1)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "12px" }}>
