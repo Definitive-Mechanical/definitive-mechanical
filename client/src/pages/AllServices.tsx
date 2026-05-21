@@ -234,7 +234,7 @@ export default function AllServices() {
 
       {/* Breadcrumb */}
       <div className="bg-[var(--surface-1)] py-2 px-4 border-b border-[#C0D8F0]">
-        <div className="max-w-6xl mx-auto">
+        <div className="container">
           <nav className="font-sans text-sm text-[#787878]">
             <Link href="/" className="hover:text-[var(--brand-cyan)] transition-colors">Home</Link>
             <span className="mx-2">›</span>
@@ -245,7 +245,7 @@ export default function AllServices() {
 
       {/* Hero */}
       <section className="bg-[var(--brand-navy)] py-16 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="container">
           <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             Licensed Plumbing Services  Maryland  Washington DC  Northern Virginia
           </p>
@@ -282,7 +282,7 @@ export default function AllServices() {
 
       {/* Service Category Grid */}
       <section className="bg-white py-16 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="container">
           <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-10">
             What plumbing repairs do you handle?
           </h2>
@@ -330,7 +330,7 @@ export default function AllServices() {
 
       {/* Installations */}
       <section className="bg-white py-12 px-4 border-t border-[#C0D8F0]">
-        <div className="max-w-6xl mx-auto">
+        <div className="container">
           <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-4">
             What plumbing installations do you do?
           </h2>
@@ -389,7 +389,7 @@ export default function AllServices() {
 
       {/* Service Areas */}
       <section className="bg-[var(--surface-1)] py-14 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="container">
           <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-4">
             What areas do you serve?
           </h2>
@@ -424,7 +424,7 @@ export default function AllServices() {
 
       {/* Residential & Commercial */}
       <section className="bg-white py-14 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="container">
           <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-6">
             Do you serve both residential and commercial clients?
           </h2>
@@ -471,7 +471,7 @@ export default function AllServices() {
 
       {/* Credential Badge Grid */}
       <section className="bg-[var(--surface-1)] py-14 px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="container">
           <div className="flex flex-wrap gap-2 mb-4">
             {navyBadges.map((b) => (
               <span

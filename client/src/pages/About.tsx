@@ -17,7 +17,7 @@ export default function About() {
         overflow: 'hidden',
       }}>
         <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.05)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="container relative">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
@@ -45,7 +45,7 @@ export default function About() {
 
       {/* OUR STORY */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <SectionHeading eyebrow="OUR STORY" heading="What is Definitive Mechanical?" />
@@ -87,7 +87,7 @@ export default function About() {
 
       {/* STATS */}
       <section style={{ background: 'var(--brand-cyan)', padding: '48px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {[
               { number: '11', label: 'Years in Business', icon: Clock },
@@ -107,7 +107,7 @@ export default function About() {
 
       {/* OUR APPROACH */}
       <section style={{ background: 'var(--surface-1)', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <SectionHeading
             eyebrow="OUR APPROACH"
             heading="How Definitive Mechanical is different from other DMV plumbing companies"
@@ -143,7 +143,7 @@ export default function About() {
 
       {/* TESTIMONIALS */}
       <section style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <SectionHeading
             eyebrow="CUSTOMER REVIEWS"
             heading="What customers say about Definitive Mechanical"
@@ -159,7 +159,7 @@ export default function About() {
 
       {/* LICENSES & CERTIFICATIONS */}
       <section id="licenses" style={{ background: 'white', padding: '80px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <SectionHeading
             eyebrow="LICENSES & CERTIFICATIONS"
             heading="Credentials that matter"
@@ -199,7 +199,7 @@ export default function About() {
 
       {/* CONTACT INFO */}
       <section style={{ background: 'var(--brand-navy)', padding: '64px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>

@@ -125,7 +125,7 @@ export default function Tier2CityPage({
 
       {/* Breadcrumb */}
       <div className="bg-[#F0F0F0] py-2 px-4 border-b border-[#C0D8F0]">
-        <div className="max-w-5xl mx-auto">
+        <div className="container">
           <nav style={{ fontFamily: "'Barlow', sans-serif" }} className="text-sm text-[#787878] flex flex-wrap gap-1 items-center">
             {breadcrumbs.map((crumb, i) => (
               <span key={i} className="flex items-center gap-1">
@@ -143,7 +143,7 @@ export default function Tier2CityPage({
 
       {/* Hero — white background, place-identity format */}
       <section className="bg-white py-14 px-4 border-b border-[#C0D8F0]">
-        <div className="max-w-5xl mx-auto">
+        <div className="container">
           <p style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             {eyebrow}
           </p>
@@ -175,7 +175,7 @@ export default function Tier2CityPage({
 
       {/* Trust Strip */}
       <section className="bg-[#C0D8F0] py-4 px-4 overflow-x-auto">
-        <div className="max-w-5xl mx-auto flex flex-wrap gap-x-6 gap-y-2 items-center">
+        <div className="container flex flex-wrap gap-x-6 gap-y-2 items-center">
           {trustItems.map((item) => (
             <span key={item} style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-[var(--brand-navy)] font-bold text-sm uppercase tracking-wide whitespace-nowrap">
               {item}
@@ -186,7 +186,7 @@ export default function Tier2CityPage({
 
       {/* Section 2 — Services List */}
       <section className="bg-white py-14 px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="container">
           <div style={{ marginBottom: "32px" }}>
             <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
@@ -253,7 +253,7 @@ export default function Tier2CityPage({
 
       {/* Section 3 — Local Context */}
       <section className="bg-[#F0F0F0] py-14 px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="container">
           <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-semibold text-[var(--brand-navy)] text-[clamp(20px,3vw,28px)] mb-6">
             {localContextHeading}
           </h2>
@@ -282,7 +282,7 @@ export default function Tier2CityPage({
 
       {/* Section 4 — License Block */}
       <section className="bg-white py-14 px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="container">
           <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-semibold text-[var(--brand-navy)] text-[clamp(20px,3vw,28px)] mb-4">
             {licenseHeading}
           </h2>
@@ -314,7 +314,7 @@ export default function Tier2CityPage({
 
       {/* Section 5 — Nearby Areas */}
       <section className="bg-[#C0D8F0] py-12 px-4">
-        <div className="max-w-5xl mx-auto">
+        <div className="container">
           <h3
             style={{ fontFamily: "'Barlow Condensed', sans-serif", color: "var(--brand-blue)" }}
             className="font-bold text-sm uppercase tracking-widest mb-5"
@@ -358,7 +358,7 @@ export default function Tier2CityPage({
       {/* Section 6 — FAQ (optional) */}
       {faqs && faqs.length > 0 && (
         <section className="bg-white py-14 px-4">
-          <div className="max-w-3xl mx-auto">
+          <div className="container max-w-3xl">
             <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-semibold text-[var(--brand-navy)] text-[clamp(20px,3vw,28px)] mb-6">
               Frequently Asked Questions
             </h2>

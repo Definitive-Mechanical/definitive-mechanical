@@ -73,7 +73,7 @@ export default function BackflowCertificationVirginia() {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="container max-w-4xl">
+        <div className="container">
           <SectionHeading eyebrow="Virginia Requirements" heading="Which Virginia water authorities require annual backflow certification?" />
           <div className="mt-8 overflow-x-auto">
             <table className="w-full text-sm" style={{ fontFamily: "\'Barlow\', sans-serif" }}>
@@ -99,7 +99,7 @@ export default function BackflowCertificationVirginia() {
       </section>
 
       <section className="py-16" style={{ background: "var(--surface-1)" }}>
-        <div className="container max-w-4xl">
+        <div className="container">
           <SectionHeading eyebrow="Services" heading="Backflow preventer types we test and certify in Virginia" />
           <div className="mt-8 grid md:grid-cols-2 gap-4">
             {[

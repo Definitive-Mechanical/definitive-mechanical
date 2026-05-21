@@ -72,7 +72,7 @@ export default function BackflowCertificationMaryland() {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="container max-w-4xl">
+        <div className="container">
           <SectionHeading eyebrow="WSSC Requirement" heading="What is WSSC's backflow preventer certification requirement?" />
           <div className="mt-8 space-y-4">
             <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
@@ -86,7 +86,7 @@ export default function BackflowCertificationMaryland() {
       </section>
 
       <section className="py-16" style={{ background: "var(--surface-1)" }}>
-        <div className="container max-w-4xl">
+        <div className="container">
           <SectionHeading eyebrow="Maryland Coverage" heading="Which Maryland counties does Definitive Mechanical serve for backflow certification?" />
           <div className="mt-8 overflow-x-auto">
             <table className="w-full text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
@@ -112,7 +112,7 @@ export default function BackflowCertificationMaryland() {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="container max-w-4xl">
+        <div className="container">
           <SectionHeading eyebrow="Services" heading="Backflow preventer types we test and certify in Maryland" />
           <div className="mt-8 grid md:grid-cols-2 gap-4">
             {[

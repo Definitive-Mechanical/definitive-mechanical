@@ -64,7 +64,7 @@ export default function BackflowCertificationDC() {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="container max-w-4xl">
+        <div className="container">
           <SectionHeading eyebrow="DC Water Requirement" heading="What is DC Water's backflow preventer certification requirement?" />
           <div className="mt-8 space-y-4">
             <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: "\'Barlow\', sans-serif", lineHeight: 1.7 }}>
@@ -78,7 +78,7 @@ export default function BackflowCertificationDC() {
       </section>
 
       <section className="py-16" style={{ background: "var(--surface-1)" }}>
-        <div className="container max-w-4xl">
+        <div className="container">
           <SectionHeading eyebrow="DC Neighborhoods Served" heading="Washington DC neighborhoods and commercial corridors we serve" />
           <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3">
             {["Capitol Hill", "Downtown DC", "Georgetown", "Dupont Circle", "Adams Morgan", "Columbia Heights", "NoMa", "Navy Yard", "Southwest Waterfront", "Foggy Bottom", "Woodley Park", "Tenleytown", "Petworth", "Brookland", "Anacostia", "Congress Heights"].map(n => (
@@ -89,7 +89,7 @@ export default function BackflowCertificationDC() {
       </section>
 
       <section className="py-16 bg-white">
-        <div className="container max-w-4xl">
+        <div className="container">
           <SectionHeading eyebrow="Services" heading="Backflow preventer types we test and certify in Washington DC" />
           <div className="mt-8 grid md:grid-cols-2 gap-4">
             {[
