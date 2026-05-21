@@ -95,8 +95,8 @@ export default function WaterLineRepair() {
             {/* Emergency strip */}
             <div style={{ background: 'var(--brand-blue)', borderRadius: '6px', padding: '24px', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
               <Phone size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
-              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>ACTIVE WATER LINE FAILURE?</p>
-              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '14px', lineHeight: 1.7, marginBottom: '20px' }}>
+              <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>ACTIVE WATER LINE FAILURE?</p>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '20px' }}>
                 Call (301) 679-5849 immediately. Our first step is typically to help you locate and shut off the main supply valve while we are in transit.
               </p>
               <BookNowButton bg="blue" variant="phone" text="CALL NOW — 24/7 EMERGENCY" href="tel:+13016795849" size="md" />
@@ -145,8 +145,8 @@ export default function WaterLineRepair() {
               <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '24px' }}>What does water line repair cost?</h2>
               <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', marginBottom: '16px' }}>
                 <div style={{ background: '#fff', padding: '10px 16px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
-                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
                 </div>
                 {PRICING_ROWS.map((row, i) => (
                   <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '11px 16px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>

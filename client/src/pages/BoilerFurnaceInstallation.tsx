@@ -184,7 +184,7 @@ export default function BoilerFurnaceInstallation() {
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                 {["MD #96958", "DC #PGM1002236", "VA #2710064209", "VA Class A #2705181061"].map((badge) => (
-                  <span key={badge} style={{ background: 'var(--brand-blue)', color: 'white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '6px 12px', borderRadius: '3px' }}>{badge}</span>
+                  <span key={badge} style={{ background: 'var(--brand-blue)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '6px 12px', borderRadius: '3px' }}>{badge}</span>
                 ))}
               </div>
             </div>

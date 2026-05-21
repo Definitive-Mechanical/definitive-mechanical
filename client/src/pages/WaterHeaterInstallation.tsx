@@ -146,9 +146,9 @@ export default function WaterHeaterInstallation() {
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Cost depends on the unit type, size, fuel source, existing connections, venting requirements, and permit fees.</p>
         </div>
               <div style={{ border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', marginBottom: '16px' }}>
-                <div style={{ background: '#fff', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>UNIT TYPE</span>
-                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL INSTALLED RANGE</span>
+                <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>UNIT TYPE</span>
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL INSTALLED RANGE</span>
                 </div>
                 {PRICING_ROWS.map((row, i) => (
                   <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
@@ -189,7 +189,7 @@ export default function WaterHeaterInstallation() {
       <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading eyebrow="PERMITS & COMPLIANCE" heading="Do you pull permits for water heater installation in Maryland, DC, and Virginia?" centered />
-          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '16px', lineHeight: 1.7, maxWidth: '672px', margin: '0 auto 40px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '672px', margin: '0 auto 40px', textAlign: 'center' }}>
             Yes. Water heater installation in Maryland, Washington DC, and Virginia typically requires a permit in most jurisdictions. Definitive Mechanical pulls permits under our own licenses.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -205,7 +205,7 @@ export default function WaterHeaterInstallation() {
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7, maxWidth: '672px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, maxWidth: '672px', margin: '0 auto', textAlign: 'center' }}>
             Work permitted under a licensed Master Plumber protects you in three ways: it confirms the work meets code, it creates a record for insurance and future sale disclosures, and it means the jurisdiction has signed off on the safety of the installation. Unlicensed water heater installation — increasingly common in the DMV — creates code violations, voids manufacturer warranties, and creates liability for the property owner. We do not take shortcuts on permits.
           </p>
         </div>

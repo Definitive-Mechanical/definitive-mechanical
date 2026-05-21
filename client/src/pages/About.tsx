@@ -188,7 +188,7 @@ export default function About() {
             ))}
           </div>
           <div style={{ marginTop: '48px', padding: '32px', background: 'var(--brand-blue)', borderRadius: '6px', textAlign: 'center' }}>
-            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
               Every Definitive Mechanical job is performed under Master Plumber license and supervision. Our credentials are verified and current with all relevant state and local jurisdictions.
             </p>
             <a href="/licenses-certifications" style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', textDecoration: 'none' }}
@@ -208,7 +208,7 @@ export default function About() {
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 CONTACT INFORMATION
               </p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '24px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '24px' }}>
                 Reach Definitive Mechanical
               </h2>
               <div className="space-y-4">
@@ -221,13 +221,13 @@ export default function About() {
                   <div key={item.label}>
                     <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--brand-cyan)', marginBottom: '4px' }}>{item.label}</p>
                     {item.href ? (
-                      <a href={item.href} style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px', textDecoration: 'none' }}
+                      <a href={item.href} style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', textDecoration: 'none' }}
                         onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                         onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.85)')}>
                         {item.value}
                       </a>
                     ) : (
-                      <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px' }}>{item.value}</p>
+                      <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px' }}>{item.value}</p>
                     )}
                   </div>
                 ))}

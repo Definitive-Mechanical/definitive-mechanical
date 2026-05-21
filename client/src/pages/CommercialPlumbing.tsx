@@ -142,10 +142,10 @@ export default function CommercialPlumbing() {
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>
                 GOVERNMENT & COMMERCIAL CERTIFICATIONS
               </p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '12px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '12px' }}>
                 MDOT MBE and Virginia SWaM Certified
               </h2>
-              <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7 }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7 }}>
                 Definitive Mechanical is certified as a Minority Business Enterprise (MBE) by the Maryland Department of Transportation and as a Small, Women-owned, and Minority-owned Business (SWaM) by the Commonwealth of Virginia. Capability statement available upon request.
               </p>
             </div>
@@ -158,7 +158,7 @@ export default function CommercialPlumbing() {
               ].map((item) => (
                 <div key={item.label} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '4px', padding: '16px 24px', textAlign: 'center' }}>
                   <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '4px' }}>{item.label}</p>
-                  <p style={{ fontFamily: 'var(--font-body)', color: 'white', fontSize: '14px' }}>{item.value}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'var(--brand-navy)', fontSize: '14px' }}>{item.value}</p>
                 </div>
               ))}
             </div>

@@ -127,7 +127,7 @@ export default function HydroJetting() {
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '896px', margin: '0 auto 24px', overflow: 'hidden' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', background: '#fff', padding: '12px 20px' }}>
               {["FACTOR", "CABLE SNAKING", "HYDRO-JETTING"].map((h) => (
-                <span key={h} style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{h}</span>
+                <span key={h} style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{h}</span>
               ))}
             </div>
             {COMPARISON_ROWS.map((row, i) => (
@@ -166,10 +166,10 @@ export default function HydroJetting() {
       <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeading eyebrow="PIPE SAFETY" heading="Is hydro-jetting safe for all pipes?" centered />
-          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 20px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 20px' }}>
             Hydro-jetting is safe for most modern drain and sewer pipe materials — PVC, ABS, and modern cast iron. It is not appropriate for pipes that are already severely deteriorated, cracked, or about to fail structurally. High-pressure water can accelerate failure in a pipe that is already compromised. This is why we conduct a camera inspection before recommending hydro-jetting on older systems. We assess the pipe condition first — we do not hydro-jet a line we know to be structurally fragile.
           </p>
-          <Link href="/video-camera-inspection" style={{ fontFamily: 'var(--font-body)', fontWeight: 500, color: 'white', fontSize: '14px', textDecoration: 'underline' }}>
+          <Link href="/video-camera-inspection" style={{ fontFamily: 'var(--font-body)', fontWeight: 500, color: 'var(--brand-navy)', fontSize: '14px', textDecoration: 'underline' }}>
             Learn about Video Camera Inspection →
           </Link>
         </div>
@@ -183,9 +183,9 @@ export default function HydroJetting() {
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What does hydro-jetting cost in Maryland, DC, or Virginia?</h2>
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '560px', margin: '0 auto 24px', overflow: 'hidden' }}>
-            <div style={{ background: '#fff', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SERVICE TYPE</span>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
+            <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SERVICE TYPE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
             </div>
             {PRICING_ROWS.map((row, i) => (
               <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>

@@ -142,18 +142,18 @@ export default function BackflowCertification() {
       <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading eyebrow="MANAGED PROGRAMS" heading="Can Definitive Mechanical manage my property's annual backflow certification program?" centered />
-          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
             Yes. For property managers, facility directors, and commercial property owners who manage multiple properties or simply want the annual certification handled without tracking it themselves, we offer managed backflow certification programs. We track certification due dates, schedule annual testing, perform testing, file reports, and notify you of results.
           </p>
           <div className="max-w-2xl mx-auto mb-8">
             {MANAGED_USERS.map((item) => (
               <div key={item} style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', padding: '12px', display: 'flex', gap: '10px', alignItems: 'center' }}>
                 <ChevronRight size={16} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '14px' }}>{item}</span>
+                <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{item}</span>
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.7)', fontSize: '14px', textAlign: 'center', marginBottom: '20px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', textAlign: 'center', marginBottom: '20px' }}>
             Contact (301) 679-5849 or info@definitivemechanical.com to discuss a managed certification program for your properties.
           </p>
           <div style={{ textAlign: 'center' }}>

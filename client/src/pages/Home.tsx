@@ -646,7 +646,7 @@ export default function Home() {
               textAlign: 'center',
             }}>
               <div style={{ background: 'var(--brand-blue)', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>
-                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '16px', letterSpacing: '0.1em' }}>SYNCHRONY FINANCING</span>
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', letterSpacing: '0.1em' }}>SYNCHRONY FINANCING</span>
               </div>
               <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '22px', marginBottom: '8px' }}>
                 Apply in 60 Seconds
@@ -673,13 +673,13 @@ export default function Home() {
           }}>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'rgba(255,255,255,0.7)', marginBottom: '8px' }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--ink-2)', marginBottom: '8px' }}>
                   GOVERNMENT & COMMERCIAL
                 </p>
-                <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '12px' }}>
+                <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '12px' }}>
                   We work with government agencies and commercial clients
                 </h2>
-                <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7 }}>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7 }}>
                   MDOT MBE Certified  VA SWaM Certified  CAGE 8HCF6  NAICS 238220. Capability statement available. Master Plumber and Master Gasfitter licensed in four states.
                 </p>
               </div>

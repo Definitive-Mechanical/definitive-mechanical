@@ -142,7 +142,7 @@ export default function ResidentialPlumbing() {
       <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading eyebrow="WHY IT MATTERS" heading="Why should homeowners choose a licensed Master Plumber?" centered />
-          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '700px', margin: '0 auto 40px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '700px', margin: '0 auto 40px', textAlign: 'center' }}>
             In Maryland, Washington DC, and Virginia, a Master Plumber license represents a significant level of tested, verified competency and legal accountability. Unlicensed plumbing work is common in the DMV market.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">

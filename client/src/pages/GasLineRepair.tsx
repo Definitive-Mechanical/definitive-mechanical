@@ -142,14 +142,14 @@ export default function GasLineRepair() {
       <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading eyebrow="WHY LICENSING MATTERS" heading="Why does gas line repair require a licensed Master Gasfitter?" centered />
-          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 40px', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 40px', textAlign: 'center' }}>
             In Maryland, Washington DC, and Virginia, gas line installation and repair must be performed by or under the direct supervision of a licensed Master Gasfitter. This is a legal requirement — not a suggestion. Gas line work directly affects life safety. An improperly installed or repaired gas fitting, an incorrect pressure setting, a missed leak, or non-code-compliant venting can result in gas accumulation, carbon monoxide exposure, fire, or explosion.
           </p>
           {/* License Table */}
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,0,0,0.3)', maxWidth: '560px', margin: '0 auto', overflow: 'hidden' }}>
             <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>JURISDICTION</span>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>LICENSE NUMBER</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>JURISDICTION</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>LICENSE NUMBER</span>
             </div>
             {LICENSE_ROWS.map((row, i) => (
               <div key={row.jurisdiction} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '11px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
@@ -158,7 +158,7 @@ export default function GasLineRepair() {
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.65)', fontSize: '13px', textAlign: 'center', marginTop: '16px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', textAlign: 'center', marginTop: '16px' }}>
             This multi-jurisdiction gasfitter credential stack is unique among local plumbing contractors in the DMV market.
           </p>
         </div>

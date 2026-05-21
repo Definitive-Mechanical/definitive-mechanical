@@ -126,7 +126,7 @@ export default function GasLeakRepair() {
       <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeading eyebrow="LICENSING" heading="Are you licensed to repair gas leaks in Maryland, DC, and Virginia?" centered />
-          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px' }}>
             Yes. Gas leak repair requires a licensed Master Gasfitter in every DMV jurisdiction. Definitive Mechanical holds active Master Gasfitter licenses in Maryland (State #96958, WSSC #73696), Washington DC (#PGM1002236), Virginia (#2710064209), and Delaware (#PL-0012866). Gas leak repair performed by an unlicensed contractor creates both safety risk and legal liability for the property owner. Do not allow unlicensed work on any gas system.
           </p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
