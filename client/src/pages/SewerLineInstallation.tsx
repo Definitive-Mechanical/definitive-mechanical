@@ -69,8 +69,8 @@ export default function SewerLineInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Camera Inspection Before Replacement", "Licensed Master Plumber", "Permitted & Inspected", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST SEWER ASSESSMENT" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST SEWER ASSESSMENT" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -159,8 +159,8 @@ export default function SewerLineInstallation() {
             Cost varies significantly based on line depth, soil conditions, access, hardscape removal and restoration, permit requirements, and connection fees. Written pricing after camera inspection and site assessment. Financing available through Synchrony.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <BookNowButton bg="blue" type="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
-            <BookNowButton bg="blue" type="phone" text="CALL FOR ASSESSMENT" href="tel:+13016795849" size="md" />
+            <BookNowButton bg="blue" variant="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
+            <BookNowButton bg="blue" variant="phone" text="CALL FOR ASSESSMENT" href="tel:+13016795849" size="md" />
           </div>
         </div>
       </section>

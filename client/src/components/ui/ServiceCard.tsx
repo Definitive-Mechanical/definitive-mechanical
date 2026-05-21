@@ -24,7 +24,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
         border: '1px solid #E6E8EE',
         borderRadius: '12px',
         overflow: 'hidden',
-        boxShadow: '0 4px 12px rgba(29,108,163,0.08)',
+        boxShadow: '0 4px 12px rgba(0,160,200,0.08)',
         transition: 'transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)',
         display: 'block',
         position: 'relative',
@@ -34,7 +34,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
         (e.currentTarget as HTMLElement).style.transform = 'translateY(-4px)';
       }}
       onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(29,108,163,0.08)';
+        (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(0,160,200,0.08)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
       }}
     >
@@ -43,7 +43,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
         aspectRatio: '16/9',
         position: 'relative',
         overflow: 'hidden',
-        background: 'linear-gradient(135deg, var(--brand-blue-2), var(--brand-blue-3))',
+        background: 'linear-gradient(135deg, var(--brand-blue-hover), var(--brand-blue-press))',
       }}>
         {image ? (
           <>
@@ -121,7 +121,6 @@ export default function ServiceCard({ title, description, href, iconName, featur
         <div style={{
           fontFamily: 'var(--font-display)',
           fontWeight: 700,
-          textTransform: 'uppercase',
           fontSize: '18px',
           color: 'var(--brand-navy)',
           marginBottom: '6px',
@@ -145,7 +144,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
         <span style={{
           fontFamily: 'var(--font-display)',
           fontWeight: 700,
-          color: '#1D6CA3',
+          color: 'var(--brand-blue)',
           fontSize: '13px',
           textTransform: 'uppercase',
           letterSpacing: '0.04em',

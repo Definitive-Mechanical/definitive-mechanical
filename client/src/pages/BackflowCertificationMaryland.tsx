@@ -55,18 +55,18 @@ export default function BackflowCertificationMaryland() {
         </div>
         <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Backflow Prevention", href: "/backflow-prevention/" }, { label: "Backflow Certification Maryland" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Backflow Certification  Maryland  WSSC  PG County  Montgomery County</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>Backflow Certification  Maryland  WSSC  PG County  Montgomery County</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Backflow Preventer Certification in Maryland
           </h1>
-          <p className="text-white/85 text-lg max-w-3xl mb-8" style={{ fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
+          <p className="text-white/85 text-lg max-w-3xl mb-8" style={{ fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
             Definitive Mechanical holds WSSC Backflow Tester License #73696 — required to test and certify backflow preventers on commercial and institutional properties in Prince George's County and Montgomery County. We also serve Anne Arundel, Howard, Charles County, and other Maryland jurisdictions.
           </p>
           <div className="flex flex-wrap gap-4 mb-8">
-            <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton bg="dark" type="secondary" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
+            <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="dark" variant="secondary" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>
             {["WSSC Backflow Tester #73696", "MD Master Plumber #96958", "MDOT MBE Cert 20-134", "Annual Testing Available"].map(t => (
               <span key={t} className="flex items-center gap-1"><ShieldCheck size={12} />{t}</span>
             ))}
@@ -78,10 +78,10 @@ export default function BackflowCertificationMaryland() {
         <div className="container max-w-4xl">
           <SectionHeading eyebrow="WSSC Requirement" heading="What is WSSC's backflow preventer certification requirement?" />
           <div className="mt-8 space-y-4">
-            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
+            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
               WSSC Water serves Prince George's County and Montgomery County. WSSC requires annual backflow preventer testing and certification for all commercial, industrial, and multi-family properties. Testing must be performed by a WSSC-licensed backflow tester and results submitted to WSSC. Failure to maintain current certification can result in water service interruption.
             </p>
-            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
+            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
               Definitive Mechanical holds WSSC Backflow Tester License #73696 and submits test results directly to WSSC on behalf of property owners and facility managers.
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function BackflowCertificationMaryland() {
         <div className="container max-w-4xl">
           <SectionHeading eyebrow="Maryland Coverage" heading="Which Maryland counties does Definitive Mechanical serve for backflow certification?" />
           <div className="mt-8 overflow-x-auto">
-            <table className="w-full text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
+            <table className="w-full text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               <thead>
                 <tr style={{ background: "var(--brand-blue)", color: "white" }}>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">County</th>
@@ -129,7 +129,7 @@ export default function BackflowCertificationMaryland() {
               <div key={s.type} className="flex items-start gap-3 p-4 rounded-lg" style={{ background: "var(--surface-1)" }}>
                 <CheckCircle size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                 <div>
-                  <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>{s.type}</h3>
+                  <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)', textTransform: "uppercase" }}>{s.type}</h3>
                   <p className="text-sm" style={{ color: "var(--ink-2)", lineHeight: 1.6 }}>{s.desc}</p>
                 </div>
               </div>
@@ -143,8 +143,8 @@ export default function BackflowCertificationMaryland() {
           <div className="flex items-start gap-4">
             <AlertTriangle size={28} style={{ color: "#E65100", flexShrink: 0, marginTop: 2 }} />
             <div>
-              <h3 className="font-bold text-base mb-2" style={{ color: "#E65100", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Non-Compliance Risk</h3>
-              <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
+              <h3 className="font-bold text-base mb-2" style={{ color: "#E65100", fontFamily: 'var(--font-label)', textTransform: "uppercase" }}>Non-Compliance Risk</h3>
+              <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
                 WSSC can interrupt water service to properties with overdue backflow certifications. If you have received a WSSC non-compliance notice or your annual certification is past due, call (301) 679-5849 immediately. We prioritize compliance calls and can typically schedule within 48 hours.
               </p>
             </div>
@@ -161,7 +161,7 @@ export default function BackflowCertificationMaryland() {
 
       <section className="py-10" style={{ background: "var(--surface-1)" }}>
         <div className="container">
-          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>Related Pages</p>
+          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)' }}>Related Pages</p>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Backflow Prevention", href: "/backflow-prevention/" },
@@ -171,7 +171,7 @@ export default function BackflowCertificationMaryland() {
               { label: "Commercial Plumber Maryland", href: "/commercial-plumber-maryland/" },
               { label: "Licenses & Certifications", href: "/licenses-certifications/" },
             ].map(l => (
-              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-blue)", borderColor: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>{l.label}</a>
+              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-blue)", borderColor: "var(--brand-blue)", fontFamily: 'var(--font-body)' }}>{l.label}</a>
             ))}
           </div>
         </div>
@@ -180,11 +180,11 @@ export default function BackflowCertificationMaryland() {
       <section className="py-16" style={{ background: "var(--brand-blue)" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Schedule your Maryland backflow certification today</h2>
-          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
-          <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>WSSC Backflow Tester #73696 | MD Master Plumber #96958 | MDOT MBE Cert 20-134</p>
+          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: 'var(--font-body)' }}> Call (301) 679-5849</p>
+          <p className="text-white/60 text-sm mb-8" style={{ fontFamily: 'var(--font-body)' }}>WSSC Backflow Tester #73696 | MD Master Plumber #96958 | MDOT MBE Cert 20-134</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton bg="blue" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton bg="blue" type="secondary" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
+            <BookNowButton bg="blue" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="blue" variant="secondary" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
         </div>
       </section>

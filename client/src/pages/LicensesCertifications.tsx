@@ -31,7 +31,7 @@ export default function LicensesCertifications() {
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, marginBottom: '32px' }}>
               Definitive Mechanical holds Master Plumber and Master Gasfitter licenses in Maryland, Washington DC, Virginia, and Delaware — simultaneously. No other local plumbing company in the DMV market holds this credential combination. We are also MDOT MBE Certified and Virginia SWaM Certified.
             </p>
-            <BookNowButton bg="dark" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>

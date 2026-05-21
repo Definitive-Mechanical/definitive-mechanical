@@ -383,7 +383,7 @@ export default function ServiceAreasHub() {
       {/* Bottom CTA */}
       <section style={{ background: 'var(--brand-blue)', padding: '56px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'white', marginBottom: '16px', textTransform: 'uppercase' }}>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(1.6rem,3vw,2.4rem)', marginBottom: '16px', lineHeight: 1.15 }}>
             Don't See Your City? Call Us.
           </h2>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', color: 'rgba(255,255,255,0.8)', marginBottom: '32px', maxWidth: '540px', margin: '0 auto 32px' }}>

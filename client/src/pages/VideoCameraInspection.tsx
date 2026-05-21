@@ -69,8 +69,8 @@ export default function VideoCameraInspection() {
               </p>
               <TrustBadges variant="dark" badges={["See Before You Dig", "Real-Time Footage", "Licensed Master Plumber", "Residential & Commercial"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST CAMERA INSPECTION" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST CAMERA INSPECTION" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function VideoCameraInspection() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
                 Consider that a camera inspection at $200-$400 can prevent a $5,000-$12,000 excavation that turns out to be unnecessary. It is the most cost-effective diagnostic tool available for sewer line problems.
               </p>
-              <BookNowButton bg="light" type="phone" text="CALL TO SCHEDULE INSPECTION" href="tel:+13016795849" size="md" />
+              <BookNowButton bg="light" variant="phone" text="CALL TO SCHEDULE INSPECTION" href="tel:+13016795849" size="md" />
             </div>
             <div>
               <div style={{ background: 'var(--brand-blue)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>

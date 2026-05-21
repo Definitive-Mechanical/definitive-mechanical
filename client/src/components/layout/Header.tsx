@@ -156,7 +156,7 @@ export default function Header() {
                   <div
                     className="absolute top-full left-1/2 -translate-x-1/2 w-[720px] shadow-2xl"
                     style={{
-                      background: 'var(--brand-navy-2)',
+                      background: 'var(--brand-navy)',
                       border: '1px solid rgba(255,255,255,0.08)',
                       borderTop: '3px solid var(--brand-blue)',
                       borderRadius: '0 0 8px 8px',
@@ -211,7 +211,7 @@ export default function Header() {
                   <div
                     className="absolute top-full left-0 w-64 shadow-2xl"
                     style={{
-                      background: 'var(--brand-navy-2)',
+                      background: 'var(--brand-navy)',
                       border: '1px solid rgba(255,255,255,0.08)',
                       borderTop: '3px solid var(--brand-blue)',
                       borderRadius: '0 0 8px 8px',
@@ -239,7 +239,7 @@ export default function Header() {
                   <div
                     className="absolute top-full left-0 w-64 shadow-2xl"
                     style={{
-                      background: 'var(--brand-navy-2)',
+                      background: 'var(--brand-navy)',
                       border: '1px solid rgba(255,255,255,0.08)',
                       borderTop: '3px solid var(--brand-blue)',
                       borderRadius: '0 0 8px 8px',
@@ -305,7 +305,7 @@ export default function Header() {
       {mobileOpen && (
         <div
           className="fixed inset-0 z-[200] flex flex-col"
-          style={{ background: 'var(--brand-navy-dark)' }}
+          style={{ background: 'var(--brand-navy)' }}
         >
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>

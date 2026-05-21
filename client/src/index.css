@@ -7,7 +7,7 @@
    Brand: Steel Blue #1D6CA3 · Black #0A0A0A · White #FFFFFF
    Logo palette: light cyan-blue text + water drop + near-black arc
    ============================================================ */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -51,36 +51,43 @@
 }
 
 :root {
-  /* ── Brand palette ─────────────────────────────────────── */
-  --brand-blue:    #1D6CA3;   /* steel blue — THE single brand blue (matches footer) */
-  --brand-blue-2:  #155A8A;   /* darker steel blue — hover states */
-  --brand-blue-3:  #0E4A73;   /* deepest blue — active/pressed */
-  --brand-navy:    #0A0A0A;   /* near-black — headings on light backgrounds */
-  --brand-navy-2:  #0E4A73;   /* deep blue — secondary buttons, overlays */
-  --brand-navy-dark: var(--brand-blue-3); /* deepest blue — deepest dark surfaces */
-  --brand-red:     #1D6CA3;   /* steel blue — same as brand blue */
-  --brand-red-2:   #155A8A;   /* darker steel blue — hover */
-  --brand-red-3:   #0E4A73;   /* deepest blue — active/pressed */
-  --brand-cyan:    #1D6CA3;   /* unified — same as brand blue */
-  --brand-cyan-2:  #155A8A;   /* darker — hover */
-  --brand-black:   #0A0A0A;   /* near-black — explicit black alias */
+  /* ── Brand palette (design system v2 — sampled from logo) ── */
+  --brand-blue:        #00A0C8;   /* PRIMARY — cyan-blue from "MECHANICAL" wordmark */
+  --brand-blue-hover:  #0089AB;   /* −8% lightness hover */
+  --brand-blue-press:  #00718E;   /* deeper active/pressed */
+  --brand-blue-soft:   #E6F5FA;   /* tint for backgrounds/chips */
+  --brand-blue-tint:   #B8E2EE;   /* slightly stronger tint */
+  --brand-navy:        #002A66;   /* dark navy — footer, dark overlays only */
+  --brand-navy-2:      #001A44;   /* deeper navy */
+  --brand-navy-dark:   #001030;   /* deepest navy */
+  --brand-black:       #000000;   /* pure black — headings */
+  /* Emergency / phone CTA */
+  --emergency:         #C0392B;   /* red — 24/7 emergency phone CTAs only */
+  --emergency-hover:   #A8302A;
+  /* Legacy aliases kept for backward compat */
+  --brand-red:         #C0392B;
+  --brand-red-2:       #A8302A;
+  --brand-red-3:       #8B2520;
+  --brand-cyan:        #00A0C8;
+  --brand-cyan-2:      #0089AB;
 
-  /* ── Neutrals ──────────────────────────────────────────── */
-  --ink:           #1A1A1A;   /* charcoal — body text */
-  --ink-2:         #545959;   /* medium gray — secondary text */
-  --ink-3:         #7A7A7A;   /* light gray — supporting copy */
-  --paper:         #FFFFFF;
-  --paper-2:       #F5F6F8;
-  --paper-3:       #E6E8EE;
-  --paper-4:       #D2D6E0;
+  /* ── Neutrals (pure grayscale — no blue cast) ─────────── */
+  --ink:           #0E0F11;   /* near-black body headings */
+  --ink-2:         #4A5560;   /* secondary text, captions */
+  --ink-3:         #6B7682;   /* tertiary, meta */
+  --paper:         #F7F9FA;   /* page background */
+  --paper-2:       #F2F4F6;   /* card-on-page surface */
+  --paper-3:       #E5E9EC;   /* borders, inactive */
+  --paper-4:       #C7CED5;   /* hairlines, dividers */
 
   /* ── Semantic ──────────────────────────────────────────── */
   --success:       #1F8A4C;
   --warning:       #E89D1A;
 
   /* ── Fonts ─────────────────────────────────────────────── */
-  --font-display:  'Barlow Condensed', 'Oswald', system-ui, sans-serif;
-  --font-body:     'Public Sans', system-ui, -apple-system, sans-serif;
+  --font-display:  'Playfair Display', 'Times New Roman', Georgia, serif;  /* headings */
+  --font-label:    'Barlow Condensed', 'Oswald', 'Arial Narrow', sans-serif; /* eyebrows */
+  --font-body:     'Barlow', 'Helvetica Neue', Arial, sans-serif;           /* body/UI */
   --font-mono:     'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
   /* ── Type scale ────────────────────────────────────────── */
@@ -106,17 +113,18 @@
   --space-9:  96px;
   --space-10: 128px;
 
-  /* ── Radii ─────────────────────────────────────────────── */
-  --radius:    0.5rem;
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-full: 999px;
+  /* ── Radii — restrained, trades not fintech ──────────── */
+  --radius:    0.25rem;  /* 4px base */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-full: 999px;  /* pill buttons only */
 
-  /* ── Shadows (navy-tinted) ─────────────────────────────── */
-  --shadow-1: 0 1px 2px rgba(29,108,163,0.06), 0 1px 1px rgba(29,108,163,0.04);
-  --shadow-2: 0 4px 12px rgba(29,108,163,0.10), 0 1px 2px rgba(29,108,163,0.05);
-  --shadow-3: 0 12px 28px rgba(29,108,163,0.15), 0 4px 8px rgba(29,108,163,0.08);
+  /* ── Shadows — light & physical, never glowy ─────────── */
+  --shadow-1: 0 1px 2px rgba(14,15,17,0.06), 0 1px 1px rgba(14,15,17,0.04);
+  --shadow-2: 0 4px 12px rgba(14,15,17,0.08), 0 1px 3px rgba(14,15,17,0.05);
+  --shadow-3: 0 12px 28px rgba(14,15,17,0.12), 0 4px 8px rgba(14,15,17,0.06);
+  --shadow-brand: 0 8px 24px rgba(0,160,200,0.28);
   --shadow-hero: 0 24px 48px rgba(0,0,0,0.35);
 
   /* ── Motion ────────────────────────────────────────────── */
@@ -134,8 +142,8 @@
   --header-h:      72px;
 
   /* ── Shadcn/Tailwind semantic tokens ───────────────────── */
-  --primary:              oklch(0.42 0.12 230);  /* steel blue #1D6CA3 */
-  --primary-foreground:   oklch(0.98 0.005 230); /* white on blue */
+  --primary:              oklch(0.62 0.14 210);  /* cyan-blue #00A0C8 */
+  --primary-foreground:   oklch(0.98 0.005 210); /* white on cyan-blue */
   --secondary:            oklch(0.96 0.005 230);
   --secondary-foreground: oklch(0.42 0.12 230);
   --muted:                oklch(0.967 0.001 286.375);
@@ -194,16 +202,30 @@
     line-height: 1.6;
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     font-family: var(--font-display);
-    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--brand-black);
     letter-spacing: -0.01em;
+    line-height: 1.2;
+    text-wrap: balance;
   }
+  /* NO uppercase on headings — Playfair Display is a serif, not a condensed sans */
 
-  h1 { font-size: var(--text-h1); font-weight: 700; line-height: 1.05; }
-  h2 { font-size: var(--text-h2); font-weight: 700; line-height: 1.1; }
-  h3 { font-size: var(--text-h3); font-weight: 700; line-height: 1.2; }
-  h4 { font-family: var(--font-body); font-size: var(--text-h4); font-weight: 700; line-height: 1.3; }
+  h1 { font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 1.05; }
+  h2 { font-size: clamp(1.75rem, 3.6vw, 3rem); }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+
+  h5, h6 {
+    /* Eyebrow labels — Barlow Condensed all-caps */
+    font-family: var(--font-label);
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--brand-blue);
+  }
 
   a {
     color: var(--brand-blue);
@@ -253,78 +275,130 @@
 
   /* ── Eyebrow ───────────────────────────────────────────── */
   .eyebrow {
-    font-family: var(--font-body);
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 0.14em;
+    font-family: var(--font-label);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--brand-blue);
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    margin-bottom: 14px;
   }
   .eyebrow::before {
     content: "";
-    width: 24px;
+    width: 28px;
     height: 2px;
-    background: currentColor;
+    background: var(--brand-blue);
     flex-shrink: 0;
   }
-  .eyebrow.on-dark { color: var(--brand-cyan); }
+  /* On dark/photo backgrounds eyebrow stays brand-blue (it reads on dark) */
+  .eyebrow.on-dark { color: var(--brand-blue); }
 
-  /* ── Buttons ───────────────────────────────────────────── */
+  /* ── Buttons (design system v2) ───────────────────────── */
+  /* Shared base */
   .dm-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
     font-family: var(--font-body);
-    font-weight: 700;
-    font-size: 14px;
-    padding: 14px 22px;
-    border-radius: var(--radius-md);
-    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 13px 24px;
+    border: 1px solid transparent;
     cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    transition: all var(--dur-ui) var(--ease-out);
+    transition: all 120ms var(--ease-out);
     text-decoration: none;
     line-height: 1;
+    white-space: nowrap;
   }
-  .dm-btn:active { transform: translateY(1px) scale(0.98); }
-  .dm-btn.lg { font-size: 16px; padding: 16px 28px; }
-  .dm-btn.sm { font-size: 12px; padding: 10px 14px; }
+  .dm-btn:active { transform: translateY(1px); }
+  .dm-btn.lg { font-size: 16px; padding: 16px 32px; }
+  .dm-btn.sm { font-size: 13px; padding: 10px 18px; }
 
-  .dm-btn-primary { background: var(--brand-red); color: #fff; }
-  .dm-btn-primary:hover { background: var(--brand-red-2); text-decoration: none; color: #fff; }
-  .dm-btn-primary:active { background: var(--brand-red-3); }
+  /* Primary — cyan-blue PILL */
+  .dm-btn-primary {
+    background: var(--brand-blue);
+    color: #fff;
+    border-radius: 999px;
+  }
+  .dm-btn-primary:hover {
+    background: var(--brand-blue-hover);
+    box-shadow: var(--shadow-brand);
+    text-decoration: none;
+    color: #fff;
+  }
+  .dm-btn-primary:active { background: var(--brand-blue-press); }
 
-  .dm-btn-secondary { background: var(--brand-blue); color: #fff; }
-  .dm-btn-secondary:hover { background: var(--brand-blue-2); text-decoration: none; color: #fff; }
+  /* Secondary — outlined ink (on light/white backgrounds) */
+  .dm-btn-secondary {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: var(--radius-md);
+  }
+  .dm-btn-secondary:hover {
+    background: var(--ink);
+    color: #fff;
+    text-decoration: none;
+  }
 
-  .dm-btn-outline {
+  /* Secondary-light — outlined white (on dark/blue/photo backgrounds) */
+  .dm-btn-secondary-light {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: var(--radius-md);
+  }
+  .dm-btn-secondary-light:hover {
+    background: #fff;
+    color: var(--brand-navy);
+    border-color: #fff;
+    text-decoration: none;
+  }
+
+  /* Emergency — red PILL (phone/24-7 CTAs only) */
+  .dm-btn-emergency {
+    background: var(--emergency);
+    color: #fff;
+    border-radius: 999px;
+    font-family: var(--font-label);
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 12px 22px;
+  }
+  .dm-btn-emergency:hover {
+    background: var(--emergency-hover);
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* Tertiary — ghost text link */
+  .dm-btn-tertiary {
     background: transparent;
     color: var(--brand-blue);
-    border: 2px solid var(--brand-blue);
-    padding: 12px 20px;
+    padding: 8px 0;
+    border-radius: 0;
   }
-  .dm-btn-outline:hover { background: var(--brand-blue); color: #fff; text-decoration: none; }
-  .dm-btn-outline.on-dark { color: #fff; border-color: rgba(255,255,255,0.4); }
-  .dm-btn-outline.on-dark:hover { background: #fff; color: var(--brand-navy); }
+  .dm-btn-tertiary:hover { color: var(--brand-blue-hover); text-decoration: none; }
 
-  /* ── Cards ─────────────────────────────────────────────── */
+  /* ── Cards — white, hairline border, shadow on hover ──── */
   .dm-card {
     background: #fff;
     border: 1px solid var(--paper-3);
     border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-2);
+    box-shadow: var(--shadow-1);
     transition: transform var(--dur-ui) var(--ease-out),
                 box-shadow var(--dur-ui) var(--ease-out),
                 border-color var(--dur-ui) var(--ease-out);
   }
   .dm-card:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-3);
-    border-color: rgba(29,108,163,0.25);
+    box-shadow: var(--shadow-2);
+    border-color: var(--paper-4);
   }
 
   /* ── License card (dark) ───────────────────────────────── */

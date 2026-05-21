@@ -74,8 +74,8 @@ export default function WaterHeaterRepair() {
                 Definitive Mechanical repairs and replaces gas, electric, and tankless water heaters across Maryland, Washington DC, and Northern Virginia. Same-day service available. Financing available for replacements. Licensed Master Plumber and Master Gasfitter on every job.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <BookNowButton bg="dark" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST SERVICE" href="/contact" size="lg" />
+                <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST SERVICE" href="/contact" size="lg" />
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function WaterHeaterRepair() {
                 padding: '28px',
                 boxShadow: '0 4px 16px rgba(6,59,99,0.10)',
               }}>
-                <div style={{ width: '44px', height: '44px', background: 'rgba(29,108,163,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
+                <div style={{ width: '44px', height: '44px', background: 'rgba(0,160,200,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
                   <Thermometer size={22} color="var(--brand-cyan)" />
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
@@ -163,7 +163,7 @@ export default function WaterHeaterRepair() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton bg="blue" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="blue" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>
@@ -181,8 +181,8 @@ export default function WaterHeaterRepair() {
             Apply for Synchrony consumer financing in 60 seconds. Monthly payment options available for qualified customers. No impact to your credit score during pre-qualification.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <BookNowButton bg="light" type="primary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
-            <BookNowButton bg="light" type="secondary" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="light" variant="primary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+            <BookNowButton bg="light" variant="secondary" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>

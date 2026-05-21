@@ -130,7 +130,7 @@ export default function EmergencyPlumbing() {
                   transition: 'all 0.3s ease',
                   marginBottom: '12px',
                 }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-blue-2)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(29,108,163,0.4)'; }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-blue-hover)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(0,160,200,0.4)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-cyan)'; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}
               >
                 <Phone size={24} />
@@ -141,7 +141,7 @@ export default function EmergencyPlumbing() {
                  Licensed Plumbing Professionals on Every Emergency Call &nbsp; Upfront Flat Pricing &nbsp; MD, DC, VA & DE Licensed
               </p>
 
-              <BookNowButton bg="dark" type="secondary" text="REQUEST EMERGENCY SERVICE" href="/contact" size="md" />
+              <BookNowButton bg="dark" variant="secondary" text="REQUEST EMERGENCY SERVICE" href="/contact" size="md" />
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function EmergencyPlumbing() {
             If you are unsure whether your situation qualifies, call anyway. Our dispatcher will help you assess the situation at no cost.
           </p>
           <div style={{ textAlign: 'center' }}>
-            <BookNowButton bg="light" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="light" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>

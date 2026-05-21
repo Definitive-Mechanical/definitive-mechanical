@@ -58,8 +58,8 @@ export default function SewerLineRepair() {
               </p>
               <TrustBadges variant="dark" badges={["24/7 Emergency Sewer Service", "Camera Inspection Before Repair", "Licensed Master Plumber", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST SEWER INSPECTION" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST SEWER INSPECTION" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function SewerLineRepair() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <CreditCard size={20} color="var(--brand-cyan)" />
             <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>Financing available through Synchrony for major sewer line repairs.</span>
-            <BookNowButton bg="blue" type="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
+            <BookNowButton bg="blue" variant="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
           </div>
         </div>
       </section>

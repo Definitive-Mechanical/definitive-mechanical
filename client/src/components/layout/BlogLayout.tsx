@@ -79,7 +79,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
                 </p>
                 <a
                   href={`tel:${PHONE}`}
-                  className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide py-4 px-4 rounded-sm hover:bg-[var(--brand-blue-2)] transition-colors mb-3"
+                  className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide py-4 px-4 rounded-sm hover:bg-[var(--brand-blue-hover)] transition-colors mb-3"
                 >
                   <Phone className="w-4 h-4" />
                   {PHONE_DISPLAY}
@@ -155,7 +155,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`tel:${PHONE}`}
-              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[var(--brand-blue-2)] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[var(--brand-blue-hover)] transition-colors"
             >
               <Phone className="w-5 h-5" />
               CALL {PHONE_DISPLAY}
@@ -196,7 +196,7 @@ export function FeaturedSnippet({ children }: { children: React.ReactNode }) {
         background: "var(--surface-1)",
         borderLeft: "4px solid var(--brand-cyan)",
         padding: "20px 24px",
-        fontFamily: "'Barlow', sans-serif",
+        fontFamily: 'var(--font-body)',
         fontSize: "17px",
         lineHeight: "1.7",
         color: "var(--ink-2)",
@@ -218,7 +218,7 @@ export function CalloutBox({ children, variant = "info" }: { children: React.Rea
         padding: "16px 20px",
         fontStyle: "italic",
         color: "var(--ink-2)",
-        fontFamily: "'Barlow', sans-serif",
+        fontFamily: 'var(--font-body)',
         fontSize: "16px",
         lineHeight: "1.7",
       }}
@@ -238,7 +238,7 @@ export function InlineCTA() {
       <p
         style={{
           color: "var(--surface-1)",
-          fontFamily: "'Barlow Condensed', sans-serif",
+          fontFamily: 'var(--font-label)',
           fontSize: "13px",
           letterSpacing: "0.1em",
           textTransform: "uppercase",
@@ -253,7 +253,7 @@ export function InlineCTA() {
           display: "block",
           background: "var(--brand-cyan)",
           color: "var(--brand-navy)",
-          fontFamily: "'Barlow Condensed', sans-serif",
+          fontFamily: 'var(--font-label)',
           fontWeight: 700,
           fontSize: "18px",
           textTransform: "uppercase",
@@ -269,7 +269,7 @@ export function InlineCTA() {
       <p
         style={{
           color: "var(--surface-1)",
-          fontFamily: "'Barlow', sans-serif",
+          fontFamily: 'var(--font-body)',
           fontSize: "14px",
           margin: 0,
         }}
@@ -384,7 +384,7 @@ export function BlogP({ children }: { children: React.ReactNode }) {
   return (
     <p
       className="mb-4 leading-[1.75]"
-      style={{ fontFamily: "'Barlow', sans-serif", fontSize: "17px", color: "var(--ink-2)" }}
+      style={{ fontFamily: 'var(--font-body)', fontSize: "17px", color: "var(--ink-2)" }}
     >
       {children}
     </p>
@@ -396,7 +396,7 @@ export function BlogUL({ children }: { children: React.ReactNode }) {
   return (
     <ul
       className="mb-6 space-y-2 pl-5"
-      style={{ fontFamily: "'Barlow', sans-serif", fontSize: "17px", color: "var(--ink-2)", listStyleType: "disc" }}
+      style={{ fontFamily: 'var(--font-body)', fontSize: "17px", color: "var(--ink-2)", listStyleType: "disc" }}
     >
       {children}
     </ul>

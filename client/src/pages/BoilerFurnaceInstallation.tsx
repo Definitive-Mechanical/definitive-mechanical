@@ -109,8 +109,8 @@ export default function BoilerFurnaceInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber/Gasfitter", "Permitted & Inspected", "Financing Available", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function BoilerFurnaceInstallation() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '20px' }}>
                 Monthly payment options through Synchrony for residential heating system installations.
               </p>
-              <BookNowButton bg="light" type="secondary" text="APPLY FOR FINANCING" href="https://www.mysynchrony.com/mmc/S6240351600" size="md" />
+              <BookNowButton bg="light" variant="secondary" text="APPLY FOR FINANCING" href="https://www.mysynchrony.com/mmc/S6240351600" size="md" />
             </div>
           </div>
         </div>

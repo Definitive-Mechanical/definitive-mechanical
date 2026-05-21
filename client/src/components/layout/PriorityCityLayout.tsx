@@ -335,9 +335,9 @@ export default function PriorityCityLayout({
               <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                 <div
                   className="cursor-pointer"
-                  style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(29,108,163,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                  style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(0,160,200,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
                   onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(29,108,163,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(0,160,200,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                 >
                   <div style={{ position: "relative", height: "140px", overflow: "hidden" }}>
                     <img
@@ -350,7 +350,7 @@ export default function PriorityCityLayout({
                   </div>
                   <div style={{ padding: "14px 16px 16px" }}>
                     <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-blue)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
-                    <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#1D6CA3", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                    <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                   </div>
                 </div>
               </Link>
@@ -524,7 +524,6 @@ export default function PriorityCityLayout({
                     <feat.icon size={18} style={{ color: "var(--brand-cyan)", display: "block" }} />
                   </div>
                   <div>
-                    <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", color: "white", margin: "0 0 4px" }}>{feat.title}</p>
                     <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.65)", fontSize: "12px", lineHeight: 1.6, margin: 0 }}>{feat.body}</p>
                   </div>
                 </div>
@@ -609,7 +608,7 @@ export default function PriorityCityLayout({
       {/* ── S9: CTA BANNER ───────────────────────────────────────────────── */}
       <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-blue) 100%)", padding: "64px 0" }}>
         <div className="container" style={{ textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(26px,4vw,44px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: 12 }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "white", fontSize: "clamp(1.6rem,3vw,2.4rem)", marginBottom: "16px", lineHeight: 1.15 }}>
             {ctaHeading}
           </h2>
           <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.82)", fontSize: "15px", maxWidth: "600px", margin: "0 auto 28px", lineHeight: 1.7 }}>

@@ -75,8 +75,8 @@ export default function DrainCleaning() {
                 Definitive Mechanical provides professional drain cleaning, hydro-jetting, and sewer line clearing across Maryland, Washington DC, and Northern Virginia. We identify the root cause of recurring clogs — not just clear the symptom. Licensed plumbing professionals on every job — work under Master Plumber license. Written pricing before work begins.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <BookNowButton bg="dark" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST SERVICE" href="/contact" size="lg" />
+                <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST SERVICE" href="/contact" size="lg" />
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function DrainCleaning() {
                 padding: '28px',
                 boxShadow: '0 4px 16px rgba(6,59,99,0.10)',
               }}>
-                <div style={{ width: '44px', height: '44px', background: 'rgba(29,108,163,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
+                <div style={{ width: '44px', height: '44px', background: 'rgba(0,160,200,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
                   <Droplets size={22} color="var(--brand-cyan)" />
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
@@ -181,7 +181,7 @@ export default function DrainCleaning() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton bg="blue" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="blue" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>

@@ -75,8 +75,8 @@ export default function CommercialPlumbing() {
                 Definitive Mechanical provides commercial plumbing service for businesses, property managers, HOAs, and institutions across Maryland, Washington DC, and Northern Virginia. MDOT MBE and VA SWaM Certified. Licensed Master Plumber and Master Gasfitter in four states. 24/7 emergency response.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <BookNowButton bg="dark" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST SERVICE" href="/contact" size="lg" />
+                <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST SERVICE" href="/contact" size="lg" />
               </div>
             </div>
           </div>

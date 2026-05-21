@@ -1,28 +1,35 @@
+import React from 'react';
 import { Link } from 'wouter';
 import { Phone, ArrowRight } from 'lucide-react';
 
 /**
- * BookNowButton — Dynamic contrast system
+ * BookNowButton — Design System v2
  *
- * bg prop tells the button what background it sits on:
- *   'light'  → white/light gray bg  → use BLUE filled button (blue on white = readable)
- *   'blue'   → blue bg              → use WHITE filled button (white on blue = readable)
- *   'dark'   → black/dark bg        → use WHITE filled button (white on dark = readable)
+ * 4 button variants with clear contrast rules:
  *
- * type prop picks the button role:
- *   'primary'   → solid filled (bg-aware color)
- *   'secondary' → outlined (bg-aware border + text, transparent fill)
- *   'phone'     → same as primary but always shows phone icon
+ *  variant="primary"          → cyan-blue PILL    → works on ANY background
+ *  variant="secondary"        → outlined ink      → on white/light backgrounds only
+ *  variant="secondary-light"  → outlined white    → on dark/blue/photo backgrounds only
+ *  variant="emergency"        → red PILL          → phone/24-7 CTAs only
+ *  variant="phone"            → alias for emergency
+ *
+ * bg prop (optional helper):
+ *  bg="light"  → if variant omitted, renders "primary"
+ *  bg="blue"   → if variant omitted, renders "primary"
+ *  bg="dark"   → if variant omitted, renders "primary"
+ *
+ * The bg prop is also used by parent sections to auto-pick the right
+ * secondary variant when two buttons appear side-by-side.
  */
 
 type BgContext = 'light' | 'blue' | 'dark';
-type ButtonType = 'primary' | 'secondary' | 'phone';
+type ButtonType = 'primary' | 'secondary' | 'secondary-light' | 'emergency' | 'phone';
 
 interface BookNowButtonProps {
-  /** What background color context this button sits on */
-  bg: BgContext;
-  /** Visual role of the button */
-  type?: ButtonType;
+  /** What background this button sits on — drives auto secondary variant */
+  bg?: BgContext;
+  /** Explicit button variant — overrides bg-based auto-selection */
+  variant?: ButtonType;
   text: string;
   href?: string;
   size?: 'sm' | 'md' | 'lg';
@@ -30,91 +37,103 @@ interface BookNowButtonProps {
   className?: string;
 }
 
-// Color rules per background context
-const STYLES: Record<BgContext, {
-  primary: { bg: string; color: string; border: string; hoverBg: string; hoverColor: string; hoverBorder: string };
-  secondary: { bg: string; color: string; border: string; hoverBg: string; hoverColor: string; hoverBorder: string };
-}> = {
-  // Light/white background → blue button, white outline secondary
-  light: {
-    primary:   { bg: 'var(--brand-blue)', color: 'white',              border: 'var(--brand-blue)',          hoverBg: 'var(--brand-blue-2)', hoverColor: 'white',              hoverBorder: 'var(--brand-blue-2)' },
-    secondary: { bg: 'transparent',       color: 'var(--brand-blue)',  border: 'var(--brand-blue)',          hoverBg: 'var(--brand-blue)',   hoverColor: 'white',              hoverBorder: 'var(--brand-blue)' },
-  },
-  // Blue background → white button, white outline secondary
-  blue: {
-    primary:   { bg: 'white',             color: 'var(--brand-blue)',  border: 'white',                     hoverBg: 'rgba(255,255,255,0.88)', hoverColor: 'var(--brand-blue-2)', hoverBorder: 'white' },
-    secondary: { bg: 'transparent',       color: 'white',              border: 'rgba(255,255,255,0.75)',     hoverBg: 'rgba(255,255,255,0.15)', hoverColor: 'white',              hoverBorder: 'white' },
-  },
-  // Dark/black background → white button, white outline secondary
-  dark: {
-    primary:   { bg: 'white',             color: 'var(--brand-navy)',  border: 'white',                     hoverBg: 'rgba(255,255,255,0.88)', hoverColor: 'var(--brand-navy)',   hoverBorder: 'white' },
-    secondary: { bg: 'transparent',       color: 'white',              border: 'rgba(255,255,255,0.75)',     hoverBg: 'rgba(255,255,255,0.15)', hoverColor: 'white',              hoverBorder: 'white' },
-  },
-};
+function getStyle(type: ButtonType, size: 'sm' | 'md' | 'lg'): React.CSSProperties {
+  const pad   = { sm: '10px 18px', md: '13px 24px', lg: '16px 32px' }[size];
+  const fs    = { sm: '13px', md: '15px', lg: '16px' }[size];
+
+  const base: React.CSSProperties = {
+    fontFamily: 'var(--font-body)',
+    fontWeight: 600,
+    fontSize: fs,
+    padding: pad,
+    border: '1px solid transparent',
+    cursor: 'pointer',
+    textDecoration: 'none',
+    lineHeight: 1,
+    whiteSpace: 'nowrap',
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '8px',
+    transition: 'all 120ms cubic-bezier(0.22,1,0.36,1)',
+  };
+
+  switch (type) {
+    case 'primary':
+      return { ...base, background: 'var(--brand-blue)', color: '#fff', borderRadius: '999px' };
+
+    case 'secondary':
+      return { ...base, background: 'transparent', color: 'var(--ink)', border: '1px solid var(--ink)', borderRadius: '4px' };
+
+    case 'secondary-light':
+      return { ...base, background: 'transparent', color: '#fff', border: '1px solid rgba(255,255,255,0.6)', borderRadius: '4px' };
+
+    case 'emergency':
+    case 'phone':
+      return {
+        ...base,
+        background: 'var(--emergency)',
+        color: '#fff',
+        borderRadius: '999px',
+        fontFamily: 'var(--font-label)',
+        fontWeight: 700,
+        letterSpacing: '0.14em',
+        textTransform: 'uppercase',
+        fontSize: size === 'lg' ? '14px' : '13px',
+        padding: size === 'lg' ? '14px 26px' : pad,
+      };
+    default:
+      return { ...base, background: 'var(--brand-blue)', color: '#fff', borderRadius: '999px' };
+  }
+}
+
+function getHoverStyle(type: ButtonType): React.CSSProperties {
+  switch (type) {
+    case 'primary':
+      return { background: 'var(--brand-blue-hover)', boxShadow: 'var(--shadow-brand)' };
+    case 'secondary':
+      return { background: 'var(--ink)', color: '#fff' };
+    case 'secondary-light':
+      return { background: '#fff', color: 'var(--brand-navy)', borderColor: '#fff' };
+    case 'emergency':
+    case 'phone':
+      return { background: 'var(--emergency-hover)' };
+    default:
+      return { background: 'var(--brand-blue-hover)' };
+  }
+}
+
+function resolveType(variant?: ButtonType, bg?: BgContext): ButtonType {
+  if (variant === 'phone') return 'emergency'; // phone is alias for emergency
+  if (variant) return variant;
+  return 'primary'; // default to primary on any background
+}
 
 export default function BookNowButton({
-  bg,
-  type = 'primary',
+  bg = 'light',
+  variant,
   text,
-  href,
+  href = '/contact',
   size = 'md',
   showIcon = true,
   className = '',
 }: BookNowButtonProps) {
-  const heights    = { sm: '40px', md: '48px', lg: '56px' };
-  const fontSizes  = { sm: '12px', md: '13px', lg: '15px' };
-  const paddings   = { sm: '0 16px', md: '0 24px', lg: '0 32px' };
+  const resolvedType = resolveType(variant, bg);
+  const [hovered, setHovered] = React.useState(false);
 
-  // phone type uses primary colors
-  const role = type === 'phone' ? 'primary' : type;
-  // Safe fallback: if bg is undefined or invalid, default to 'light'
-  const safeBg: BgContext = (bg && STYLES[bg]) ? bg : 'light';
-  const colors = STYLES[safeBg][role];
-
-  const baseStyle: React.CSSProperties = {
-    fontFamily: 'var(--font-display)',
-    fontWeight: 700,
-    textTransform: 'uppercase',
-    letterSpacing: '0.1em',
-    borderRadius: '2px',
-    transition: 'all 0.2s cubic-bezier(0.23, 1, 0.32, 1)',
-    display: 'inline-flex',
-    alignItems: 'center',
-    gap: '8px',
-    minHeight: heights[size],
-    padding: paddings[size],
-    fontSize: fontSizes[size],
-    textDecoration: 'none',
-    cursor: 'pointer',
-    border: `2px solid ${colors.border}`,
-    background: colors.bg,
-    color: colors.color,
-    whiteSpace: 'nowrap' as const,
+  const style = {
+    ...getStyle(resolvedType, size),
+    ...(hovered ? getHoverStyle(resolvedType) : {}),
   };
 
-  const hoverStyle: React.CSSProperties = {
-    background: colors.hoverBg,
-    color: colors.hoverColor,
-    borderColor: colors.hoverBorder,
-    transform: 'translateY(-2px)',
-    boxShadow: '0 4px 16px rgba(0,0,0,0.18)',
-  };
-
-  const handleMouseEnter = (e: React.MouseEvent<HTMLElement>) => {
-    Object.assign((e.currentTarget as HTMLElement).style, hoverStyle);
-  };
-  const handleMouseLeave = (e: React.MouseEvent<HTMLElement>) => {
-    const el = e.currentTarget as HTMLElement;
-    el.style.background = colors.bg;
-    el.style.color = colors.color;
-    el.style.borderColor = colors.border;
-    el.style.transform = '';
-    el.style.boxShadow = '';
-  };
-
-  const icon = type === 'phone'
-    ? <Phone size={size === 'lg' ? 18 : 15} />
-    : <ArrowRight size={size === 'lg' ? 18 : 15} />;
+  const icon = resolvedType === 'emergency'
+    ? <Phone size={size === 'lg' ? 16 : 14} />
+    : <ArrowRight
+        size={size === 'lg' ? 16 : 14}
+        style={{
+          transition: 'transform 120ms cubic-bezier(0.22,1,0.36,1)',
+          transform: hovered ? 'translateX(3px)' : 'translateX(0)',
+        }}
+      />;
 
   const content = (
     <>
@@ -123,33 +142,44 @@ export default function BookNowButton({
     </>
   );
 
-  if (href?.startsWith('tel:') || href?.startsWith('mailto:')) {
+  const events = {
+    onMouseEnter: () => setHovered(true),
+    onMouseLeave: () => setHovered(false),
+    onMouseDown: (e: React.MouseEvent<HTMLElement>) => {
+      (e.currentTarget as HTMLElement).style.transform = 'translateY(1px)';
+    },
+    onMouseUp: (e: React.MouseEvent<HTMLElement>) => {
+      (e.currentTarget as HTMLElement).style.transform = '';
+    },
+  };
+
+  if (resolvedType === 'emergency') {
     return (
-      <a href={href} style={baseStyle} className={className} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <a href="tel:+13016795849" style={style} className={className} {...events}>
         {content}
       </a>
     );
   }
 
-  if (href?.startsWith('http')) {
+  if (href.startsWith('tel:') || href.startsWith('mailto:')) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" style={baseStyle} className={className} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <a href={href} style={style} className={className} {...events}>
         {content}
       </a>
     );
   }
 
-  if (href) {
+  if (href.startsWith('http')) {
     return (
-      <Link href={href} style={baseStyle} className={className} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <a href={href} target="_blank" rel="noopener noreferrer" style={style} className={className} {...events}>
         {content}
-      </Link>
+      </a>
     );
   }
 
   return (
-    <button style={baseStyle} className={className} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <Link href={href} style={style} className={className} {...events}>
       {content}
-    </button>
+    </Link>
   );
 }

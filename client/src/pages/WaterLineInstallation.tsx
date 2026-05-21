@@ -56,8 +56,8 @@ export default function WaterLineInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber", "Permitted & Inspected", "New Construction & Replacement", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function WaterLineInstallation() {
                   </div>
                 ))}
               </div>
-              <BookNowButton bg="blue" type="secondary" text="REQUEST COMMERCIAL ESTIMATE" href="/contact" size="md" />
+              <BookNowButton bg="blue" variant="secondary" text="REQUEST COMMERCIAL ESTIMATE" href="/contact" size="md" />
             </div>
           </div>
         </div>

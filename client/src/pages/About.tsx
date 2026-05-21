@@ -33,7 +33,7 @@ export default function About() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
                 Definitive Mechanical is a Licensed Black Owned, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor based in Largo, Maryland. We have served homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia for over 11 years. Master Plumber and Master Gasfitter licensed in four states.
               </p>
-              <BookNowButton bg="dark" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>
             <div className="hidden lg:block lg:col-span-2">
               <img
@@ -81,7 +81,7 @@ export default function About() {
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/about-team-photo-jGApqx8mJzea56RGGdm7Vi.webp"
                 alt="Definitive Mechanical plumbing service Maryland"
-                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(29,108,163,0.12)' }}
+                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,160,200,0.12)' }}
               />
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function About() {
                 body: 'When a Definitive Mechanical technician arrives at your property, you get their name. You can call our office and ask about them. We stand behind every technician we send.',
               },
             ].map((item) => (
-              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(29,108,163,0.08)', textAlign: 'center' }}>
+              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(0,160,200,0.08)', textAlign: 'center' }}>
                 <item.icon size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
                 <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-blue)', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>
@@ -234,9 +234,9 @@ export default function About() {
               </div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <BookNowButton bg="blue" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-              <BookNowButton bg="blue" type="secondary" text="REQUEST SERVICE ONLINE" href="/contact" size="lg" />
-              <BookNowButton bg="blue" type="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+              <BookNowButton bg="blue" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton bg="blue" variant="secondary" text="REQUEST SERVICE ONLINE" href="/contact" size="lg" />
+              <BookNowButton bg="blue" variant="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
             </div>
           </div>
         </div>

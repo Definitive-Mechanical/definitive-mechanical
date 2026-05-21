@@ -62,8 +62,8 @@ export default function BackflowCertification() {
               </p>
               <TrustBadges variant="dark" badges={["Annual Certification Programs", "Commercial & Residential", "Licensed", "Report Filing Included", "WSSC & Jurisdiction Compliant"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="SCHEDULE BACKFLOW CERTIFICATION" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="SCHEDULE BACKFLOW CERTIFICATION" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ export default function BackflowCertification() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
                 Water suppliers typically allow a defined period to bring a failed device into compliance before imposing service interruptions or fines. Do not ignore a failed test result. Call (301) 679-5849 to discuss repair or replacement options.
               </p>
-              <BookNowButton bg="light" type="secondary" text="LEARN ABOUT BACKFLOW REPAIR" href="/backflow-preventer-repair" size="md" />
+              <BookNowButton bg="light" variant="secondary" text="LEARN ABOUT BACKFLOW REPAIR" href="/backflow-preventer-repair" size="md" />
             </div>
             <div>
               <div style={{ background: 'var(--brand-blue)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
@@ -157,7 +157,7 @@ export default function BackflowCertification() {
             Contact (301) 679-5849 or info@definitivemechanical.com to discuss a managed certification program for your properties.
           </p>
           <div style={{ textAlign: 'center' }}>
-            <BookNowButton bg="blue" type="phone" text="DISCUSS MANAGED PROGRAM" href="tel:+13016795849" size="md" />
+            <BookNowButton bg="blue" variant="phone" text="DISCUSS MANAGED PROGRAM" href="tel:+13016795849" size="md" />
           </div>
         </div>
       </section>

@@ -44,14 +44,18 @@ export default function FAQAccordion({ items, schema = false, variant = 'dark' }
           return (
             <div
               key={index}
-              style={{ borderBottom: index < items.length - 1 ? `1px solid ${isDark ? 'rgba(255,255,255,0.15)' : '#E8EFF5'}` : 'none' }}
+              style={{
+                borderBottom: index < items.length - 1
+                  ? `1px solid ${isDark ? 'rgba(255,255,255,0.12)' : 'var(--paper-3)'}`
+                  : 'none',
+              }}
             >
               <button
                 onClick={() => setOpenIndex(isOpen ? null : index)}
                 className="w-full flex items-center justify-between text-left"
                 style={{
-                  minHeight: '52px',
-                  padding: '16px 0',
+                  minHeight: '56px',
+                  padding: '18px 0',
                   background: 'none',
                   border: 'none',
                   cursor: 'pointer',
@@ -60,33 +64,34 @@ export default function FAQAccordion({ items, schema = false, variant = 'dark' }
               >
                 <span style={{
                   fontFamily: 'var(--font-display)',
-                  fontWeight: 700,
-                  color: isOpen ? 'var(--brand-cyan)' : (isDark ? 'white' : 'var(--brand-navy)'),
-                  fontSize: '16px',
-                  lineHeight: 1.4,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.02em',
-                  transition: 'color 0.2s',
+                  fontWeight: 600,
+                  /* Playfair Display — title case, NO uppercase */
+                  color: isOpen
+                    ? 'var(--brand-blue)'
+                    : (isDark ? '#fff' : 'var(--brand-black)'),
+                  fontSize: '17px',
+                  lineHeight: 1.35,
+                  transition: 'color 180ms ease',
                 }}>
                   {item.question}
                 </span>
                 <span style={{
                   flexShrink: 0,
-                  color: 'var(--brand-cyan)',
-                  transition: 'transform 0.2s',
+                  color: 'var(--brand-blue)',
+                  transition: 'transform 180ms ease',
                   transform: isOpen ? 'rotate(45deg)' : 'none',
                 }}>
                   {isOpen ? <X size={20} /> : <Plus size={20} />}
                 </span>
               </button>
               {isOpen && (
-                <div style={{ paddingBottom: '16px' }}>
+                <div style={{ paddingBottom: '18px' }}>
                   <p style={{
                     fontFamily: 'var(--font-body)',
                     fontWeight: 400,
-                    color: isDark ? 'rgba(255,255,255,0.8)' : 'var(--ink-2)',
+                    color: isDark ? 'rgba(255,255,255,0.78)' : 'var(--ink-2)',
                     fontSize: '15px',
-                    lineHeight: 1.7,
+                    lineHeight: 1.75,
                   }}>
                     {item.answer}
                   </p>

@@ -106,8 +106,8 @@ export default function ResidentialPlumbing() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber", "24/7 Emergency Service", "Financing Available", "Honest Upfront Pricing", "11 Years in Business"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST RESIDENTIAL SERVICE" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST RESIDENTIAL SERVICE" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default function ResidentialPlumbing() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, marginBottom: '16px' }}>
                 Financing available through Synchrony for eligible residential plumbing services — particularly higher-ticket work like water heater replacement, tankless installation, sewer line repair, and gas line projects. Apply in 60 seconds.
               </p>
-              <BookNowButton bg="light" type="secondary" text="APPLY FOR FINANCING" href="https://www.mysynchrony.com/mmc/S6240351600" size="md" />
+              <BookNowButton bg="light" variant="secondary" text="APPLY FOR FINANCING" href="https://www.mysynchrony.com/mmc/S6240351600" size="md" />
             </div>
           </div>
         </div>

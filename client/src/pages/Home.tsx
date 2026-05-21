@@ -138,7 +138,7 @@ function HeroSection() {
             </p>
             <TrustBadges variant="dark" badges={['black-owned', '11 Years in Business', '24/7 Emergency', 'Licensed Master Plumber/Gasfitter', 'MDOT MBE Certified', 'VA SWaM Certified']} />
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-              <BookNowButton bg="dark" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>
             <div style={{ marginTop: '20px' }}>
               <StarRating rating={4.8} count={40} variant="dark" />
@@ -151,7 +151,7 @@ function HeroSection() {
               {submitted ? (
                 <div style={{ textAlign: 'center', padding: '24px 0' }}>
                   <CheckCircle size={48} color="var(--brand-blue)" style={{ margin: '0 auto 16px' }} />
-                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'var(--brand-navy)', marginBottom: '8px' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '22px', color: 'var(--brand-black)', marginBottom: '12px' }}>
                     Request Received!
                   </h3>
                   <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: '#444', lineHeight: 1.6 }}>
@@ -233,7 +233,7 @@ function HeroSection() {
                   </div>
 
                   <button type="submit" disabled={submitting}
-                    style={{ width: '100%', background: submitting ? '#155A8A' : '#1D6CA3', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                    style={{ width: '100%', background: submitting ? 'var(--brand-blue-hover)' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
                     {submitting ? 'Submitting...' : 'Request Service'}
                   </button>
 
@@ -410,7 +410,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton bg="light" type="secondary" text="VIEW ALL PLUMBING SERVICES" href="/services" size="md" />
+            <BookNowButton bg="light" variant="secondary" text="VIEW ALL PLUMBING SERVICES" href="/services" size="md" />
           </div>
         </div>
       </section>
@@ -442,7 +442,7 @@ export default function Home() {
               },
             ].map((col) => (
               <div key={col.title} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '32px 28px', boxShadow: '0 2px 12px rgba(0,0,0,0.07)', textAlign: 'center' }}>
-                <div style={{ width: '48px', height: '48px', borderRadius: '10px', background: 'rgba(29,108,163,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '10px', background: 'rgba(0,160,200,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
                   <col.icon size={24} color="var(--brand-blue)" />
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '20px', textTransform: 'uppercase', letterSpacing: '0.03em', marginBottom: '12px' }}>
@@ -481,7 +481,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 5: EMERGENCY CTA */}
-      <section style={{ background: 'linear-gradient(135deg, var(--brand-blue-2), var(--brand-blue))', padding: '64px 0' }}>
+      <section style={{ background: 'linear-gradient(135deg, var(--brand-blue-hover), var(--brand-blue))', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AlertTriangle size={40} color="white" style={{ margin: '0 auto 16px' }} />
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'rgba(255,255,255,0.85)', marginBottom: '12px' }}>
@@ -494,8 +494,8 @@ export default function Home() {
             Burst pipe, sewer backup, gas leak, no hot water — our live dispatcher answers every call, every hour of every day. Licensed plumbing professionals dispatched — work performed under Master Plumber license.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <BookNowButton bg="blue" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-            <BookNowButton bg="blue" type="secondary" text="LEARN MORE" href="/emergency-plumbing" size="lg" />
+            <BookNowButton bg="blue" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="blue" variant="secondary" text="LEARN MORE" href="/emergency-plumbing" size="lg" />
           </div>
         </div>
       </section>
@@ -517,7 +517,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '32px' }}>
-            <BookNowButton bg="light" type="secondary" text="READ ALL REVIEWS" href="/reviews" size="md" />
+            <BookNowButton bg="light" variant="secondary" text="READ ALL REVIEWS" href="/reviews" size="md" />
           </div>
         </div>
       </section>
@@ -583,7 +583,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 8: CREDENTIALS */}
-      <section style={{ background: 'linear-gradient(135deg, var(--brand-blue-2) 0%, var(--brand-blue) 100%)', padding: '80px 0' }}>
+      <section style={{ background: 'linear-gradient(135deg, var(--brand-blue-hover) 0%, var(--brand-blue) 100%)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="CREDENTIALS & COMPLIANCE"
@@ -612,7 +612,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton bg="blue" type="secondary" text="VIEW ALL LICENSES & CERTIFICATIONS" href="/licenses-certifications" size="md" />
+            <BookNowButton bg="blue" variant="secondary" text="VIEW ALL LICENSES & CERTIFICATIONS" href="/licenses-certifications" size="md" />
           </div>
         </div>
       </section>
@@ -642,7 +642,7 @@ export default function Home() {
               background: 'white',
               borderRadius: '6px',
               padding: '32px',
-              boxShadow: '0 2px 12px rgba(29,108,163,0.08)',
+              boxShadow: '0 2px 12px rgba(0,160,200,0.08)',
               textAlign: 'center',
             }}>
               <div style={{ background: 'var(--brand-blue)', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>
@@ -654,7 +654,7 @@ export default function Home() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '14px', marginBottom: '24px' }}>
                 No impact to your credit score during pre-qualification.
               </p>
-              <BookNowButton bg="blue" type="primary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+              <BookNowButton bg="blue" variant="primary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-3)', marginTop: '16px' }}>
                 Questions? Call {BUSINESS.phone}
               </p>
@@ -667,7 +667,7 @@ export default function Home() {
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div style={{
-            background: 'linear-gradient(135deg, var(--brand-blue-2), var(--brand-blue))',
+            background: 'linear-gradient(135deg, var(--brand-blue-hover), var(--brand-blue))',
             borderRadius: '8px',
             padding: '40px',
           }}>
@@ -702,8 +702,8 @@ export default function Home() {
                   ))}
                 </div>
                 <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                  <BookNowButton bg="light" type="phone" text="GOVERNMENT & COMMERCIAL" href="/government-municipal-plumbing" size="md" />
-                  <BookNowButton bg="light" type="secondary" text="COMMERCIAL PLUMBING" href="/commercial-plumbing" size="md" />
+                  <BookNowButton bg="light" variant="phone" text="GOVERNMENT & COMMERCIAL" href="/government-municipal-plumbing" size="md" />
+                  <BookNowButton bg="light" variant="secondary" text="COMMERCIAL PLUMBING" href="/commercial-plumbing" size="md" />
                 </div>
               </div>
             </div>

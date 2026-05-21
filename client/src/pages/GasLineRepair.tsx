@@ -61,8 +61,8 @@ export default function GasLineRepair() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Gasfitter — MD, DC, VA & DE", "24/7 Emergency Gas Service", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST GAS LINE SERVICE" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST GAS LINE SERVICE" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function GasLineRepair() {
           </p>
           {/* License Table */}
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,0,0,0.3)', maxWidth: '560px', margin: '0 auto', overflow: 'hidden' }}>
-            <div style={{ background: 'var(--brand-navy-dark)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+            <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>JURISDICTION</span>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>LICENSE NUMBER</span>
             </div>
@@ -198,7 +198,7 @@ export default function GasLineRepair() {
                   </div>
                 ))}
               </div>
-              <BookNowButton bg="blue" type="secondary" text="REQUEST COMMERCIAL GAS ESTIMATE" href="/contact" size="md" />
+              <BookNowButton bg="blue" variant="secondary" text="REQUEST COMMERCIAL GAS ESTIMATE" href="/contact" size="md" />
             </div>
           </div>
         </div>

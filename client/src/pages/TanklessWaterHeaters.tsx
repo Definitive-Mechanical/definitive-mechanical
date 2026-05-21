@@ -66,8 +66,8 @@ export default function TanklessWaterHeaters() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber", "Installation & Repair", "Residential & Commercial", "Financing Available", "Gas & Electric Units"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST TANKLESS ESTIMATE" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST TANKLESS ESTIMATE" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -208,8 +208,8 @@ export default function TanklessWaterHeaters() {
             ))}
           </div>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <BookNowButton bg="blue" type="primary" text="APPLY FOR FINANCING — SYNCHRONY" href={BUSINESS.financing} size="md" />
-            <BookNowButton bg="blue" type="secondary" text="CALL FOR A TANKLESS ESTIMATE" href="tel:+13016795849" size="md" />
+            <BookNowButton bg="blue" variant="primary" text="APPLY FOR FINANCING — SYNCHRONY" href={BUSINESS.financing} size="md" />
+            <BookNowButton bg="blue" variant="secondary" text="CALL FOR A TANKLESS ESTIMATE" href="tel:+13016795849" size="md" />
           </div>
         </div>
       </section>

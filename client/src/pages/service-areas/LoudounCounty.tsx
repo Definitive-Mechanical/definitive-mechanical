@@ -35,18 +35,18 @@ export default function LoudounCounty() {
         </div>
         <div className="container text-center" style={{ position: "relative", zIndex: 1 }}>
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Service Areas", href: "/service-areas/" }, { label: "Northern Virginia", href: "/service-areas/northern-virginia/" }, { label: "Loudoun County" }]}/>
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>PLUMBING SERVICES  LOUDOUN COUNTY, VA</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>PLUMBING SERVICES  LOUDOUN COUNTY, VA</p>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em', lineHeight: 1.0 }}>Plumber in Loudoun County, VA</h1>
-          <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
+          <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: 'var(--font-body)' }}>
             Definitive Mechanical is a Licensed Black Owned contractor providing licensed plumbing services in Loudoun County — Leesburg, Ashburn, Sterling, Lansdowne, Brambleton, and surrounding communities. VA Class A #2705181061  VA Master Plumber #2710064209. 24/7 emergency. Call (301) 679-5849.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
+            <a href="tel:+13016795849" className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: 'var(--font-label)', fontSize: "18px" }}>
               <Phone size={20} /> CALL (301) 679-5849
             </a>
-            <a href="/contact/" className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[var(--brand-blue)] transition-colors" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>Request Service</a>
+            <a href="/contact/" className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[var(--brand-blue)] transition-colors" style={{ fontFamily: 'var(--font-label)', fontSize: "18px" }}>Request Service</a>
           </div>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: 'var(--font-body)' }}>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Class A #2705181061</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Master Plumber #2710064209</span>
           </div>
@@ -59,8 +59,8 @@ export default function LoudounCounty() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
             {CITIES.map((city) => (
               <Link key={city.name} href={city.href} className="bg-white border border-gray-200 rounded-md p-4 hover:border-[var(--brand-blue)] hover:shadow-md transition-all group">
-                <p className="font-bold text-sm group-hover:text-[var(--brand-blue)]" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{city.name}</p>
-                <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: "'Barlow', sans-serif" }}>{city.note}</p>
+                <p className="font-bold text-sm group-hover:text-[var(--brand-blue)]" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)' }}>{city.name}</p>
+                <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: 'var(--font-body)' }}>{city.note}</p>
               </Link>
             ))}
           </div>
@@ -74,8 +74,8 @@ export default function LoudounCounty() {
             {[{ label: "Virginia Class A Contractor", num: "#2705181061" }, { label: "Virginia Master Plumber/Gasfitter", num: "#2710064209" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
                 <Key size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <p className="text-xs font-semibold mb-1" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow', sans-serif" }}>{cred.label}</p>
-                <p className="font-bold text-lg" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>{cred.num}</p>
+                <p className="text-xs font-semibold mb-1" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-body)' }}>{cred.label}</p>
+                <p className="font-bold text-lg" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>{cred.num}</p>
               </div>
             ))}
           </div>

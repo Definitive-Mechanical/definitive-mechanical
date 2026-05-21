@@ -50,8 +50,8 @@ export default function BackflowPrevention() {
               </p>
               <TrustBadges variant="dark" badges={["Commercial & Residential", "Annual Certification Programs", "Licensed", "Report Filing Included"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" type="secondary" text="REQUEST BACKFLOW ASSESSMENT" href="/contact" size="md" />
+                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" variant="secondary" text="REQUEST BACKFLOW ASSESSMENT" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -112,13 +112,13 @@ export default function BackflowPrevention() {
               </div>
             </div>
             <div>
-              <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px', boxShadow: '0 2px 8px rgba(29,108,163,0.08)' }}>
+              <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px', boxShadow: '0 2px 8px rgba(0,160,200,0.08)' }}>
                 <HelpCircle size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '12px' }}>What about residential properties?</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '16px' }}>
                   Some Maryland, DC, and Virginia jurisdictions require backflow prevention devices on residential properties with irrigation systems or other cross-connection risks. Requirements vary by jurisdiction and water supplier (including WSSC in Prince George's and Montgomery Counties). If you are not certain whether your property requires a backflow device, call (301) 679-5849 — we can assess your property's connection points and local code requirements.
                 </p>
-                <BookNowButton bg="light" type="secondary" text="ASK ABOUT YOUR PROPERTY" href="tel:+13016795849" size="sm" />
+                <BookNowButton bg="light" variant="secondary" text="ASK ABOUT YOUR PROPERTY" href="tel:+13016795849" size="sm" />
               </div>
             </div>
           </div>
