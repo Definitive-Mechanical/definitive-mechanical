@@ -7,7 +7,7 @@ import BookNowButton from "@/components/ui/BookNowButton";
 
 const FAQS = [
   { question: "Who requires backflow preventer certification in Washington DC?", answer: "DC Water (DC Water and Sewer Authority) requires annual backflow preventer testing and certification for all commercial, industrial, and multi-family properties in Washington DC. Testing must be performed by a DC Water-approved backflow tester and results submitted to DC Water." },
-  { question: "Is Definitive Mechanical licensed to perform plumbing work in Washington DC?", answer: "Yes. Definitive Mechanical holds a DC Master Plumber License (DC License #PT2-0003033) and a DC Business License. All plumbing and backflow certification work in Washington DC is performed under these active DC licenses." },
+  { question: "Is Definitive Mechanical licensed to perform plumbing work in Washington DC?", answer: "Yes. Definitive Mechanical holds a DC Master Plumber License (DC License #PGM1002236) and a DC Business License. All plumbing and backflow certification work in Washington DC is performed under these active DC licenses." },
   { question: "How often does a backflow preventer need to be tested in Washington DC?", answer: "DC Water requires annual testing for all backflow preventers on commercial and institutional properties. Testing must be performed by a DC Water-approved backflow tester and results submitted to DC Water. Non-compliance can result in water service interruption." },
   { question: "What types of backflow preventers does Definitive Mechanical test in DC?", answer: "We test and certify all types: Reduced Pressure Zone (RPZ), Double Check Valve (DCV), Pressure Vacuum Breakers (PVB), and Spill-Resistant PVBs (SVB). We also perform backflow preventer repair and replacement when testing reveals failures." },
   { question: "Does Definitive Mechanical serve all DC neighborhoods for backflow certification?", answer: "Yes. Definitive Mechanical serves all Washington DC neighborhoods and wards for backflow preventer certification, including Capitol Hill, Downtown, Georgetown, Dupont Circle, Adams Morgan, Columbia Heights, NoMa, Navy Yard, and all commercial corridors." },
@@ -34,8 +34,8 @@ export default function BackflowCertificationDC() {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Backflow Certification Washington DC | DC Master Plumber #PT2-0003033 | Definitive Mechanical</title>
-        <meta name="description" content="DC Water-approved backflow preventer certification in Washington DC. DC Master Plumber #PT2-0003033. Serving all DC neighborhoods and commercial properties. Call (301) 679-5849." />
+        <title>Backflow Certification Washington DC | DC Master Plumber #PGM1002236 | Definitive Mechanical</title>
+        <meta name="description" content="DC Water-approved backflow preventer certification in Washington DC. DC Master Plumber #PGM1002236. Serving all DC neighborhoods and commercial properties. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/backflow-certification-washington-dc/" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
@@ -48,14 +48,14 @@ export default function BackflowCertificationDC() {
             Backflow Preventer Certification in Washington DC
           </h1>
           <p className="text-white/85 text-lg max-w-3xl mb-8" style={{ fontFamily: "\'Barlow\', sans-serif", lineHeight: 1.7 }}>
-            Definitive Mechanical holds DC Master Plumber License #PT2-0003033 and is approved by DC Water to perform backflow preventer testing and certification for commercial and institutional properties throughout Washington DC. We serve all DC wards and neighborhoods.
+            Definitive Mechanical holds DC Master Plumber License #PGM1002236 and is approved by DC Water to perform backflow preventer testing and certification for commercial and institutional properties throughout Washington DC. We serve all DC wards and neighborhoods.
           </p>
           <div className="flex flex-wrap gap-4 mb-8">
             <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>
-            {["DC Master Plumber #PT2-0003033", "DC Water Approved", "MDOT MBE Cert 20-134", "Annual Testing Available"].map(t => (
+            {["DC Master Plumber #PGM1002236", "DC Water Approved", "MDOT MBE Cert 20-134", "Annual Testing Available"].map(t => (
               <span key={t} className="flex items-center gap-1"><ShieldCheck size={12} />{t}</span>
             ))}
           </div>
@@ -137,7 +137,7 @@ export default function BackflowCertificationDC() {
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em' }}>Schedule your DC backflow certification today</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "\'Barlow\', sans-serif" }}> Call (301) 679-5849</p>
-          <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "\'Barlow\', sans-serif" }}>DC Master Plumber #PT2-0003033 | DC Water Approved | MDOT MBE Cert 20-134</p>
+          <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "\'Barlow\', sans-serif" }}>DC Master Plumber #PGM1002236 | DC Water Approved | MDOT MBE Cert 20-134</p>
           <div className="flex flex-wrap justify-center gap-4">
             <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />

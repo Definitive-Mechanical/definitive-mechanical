@@ -112,6 +112,21 @@ export default function LicensesCertifications() {
               </div>
             ))}
           </div>
+
+          {/* HVACR */}
+          <SectionHeading eyebrow="HVACR LICENSE" heading="HVACR License" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {LICENSES.hvacr.map((lic) => (
+              <div key={lic.number} style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', background: 'var(--surface-1)', borderRadius: '4px', padding: '20px', borderLeft: '4px solid var(--brand-cyan)' }}>
+                <ShieldCheck size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <div>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '4px' }}>{lic.type}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', marginBottom: '2px' }}>{lic.authority}</p>
+                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '13px', letterSpacing: '0.05em' }}>License #{lic.number}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

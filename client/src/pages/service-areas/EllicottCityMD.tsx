@@ -29,7 +29,7 @@ const services = [
 const faqs = [
   { question: "What plumbing services do you offer in Ellicott City, MD?", answer: "Full-service plumbing in Ellicott City including emergency plumbing, drain cleaning, water heater repair and installation, sewer line service, gas line repair, backflow certification, boiler and furnace service, and commercial plumbing. Howard County licensed. Call (301) 679-5849." },
   { question: "Do you provide 24/7 emergency plumbing in Ellicott City?", answer: "Yes. Emergency service available 24/7. A live dispatcher answers every call. Licensed Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849." },
-  { question: "Are you licensed to do plumbing in Howard County?", answer: "Yes. Definitive Mechanical holds Howard County Master Plumber/Gasfitter License #MP-0000215 in addition to Maryland State #96958 and WSSC #73696. Howard County requires its own municipal license for permitted work within the county." },
+  { question: "Are you licensed to do plumbing in Howard County?", answer: "Yes. Definitive Mechanical holds Howard County Master Plumber/Gasfitter License #PGM1002236 in addition to Maryland State #96958 and WSSC #73696. Howard County requires its own municipal license for permitted work within the county." },
   { question: "Do you serve both Old Ellicott City and the newer Ellicott City communities?", answer: "Yes. We serve the full Ellicott City area — from the historic Old Ellicott City district with its older building stock to the newer residential and commercial communities in the western Howard County corridor. Call (301) 679-5849." },
 ];
 
@@ -61,16 +61,16 @@ export default function EllicottCityMD() {
                 Plumber in Ellicott City, MD
               </h1>
               <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
-                Definitive Mechanical provides licensed plumbing service in Ellicott City, Maryland for homeowners and businesses throughout Howard County. Emergency plumbing, water heater repair, drain cleaning, gas line service, sewer repair, and backflow certification available 24/7. Howard County Master Plumber/Gasfitter #MP-0000215. Call (301) 679-5849.
+                Definitive Mechanical provides licensed plumbing service in Ellicott City, Maryland for homeowners and businesses throughout Howard County. Emergency plumbing, water heater repair, drain cleaning, gas line service, sewer repair, and backflow certification available 24/7. Howard County Master Plumber/Gasfitter #PGM1002236. Call (301) 679-5849.
               </p>
-              <TrustBadges variant="dark" badges={["Howard County Master Plumber #MP-0000215","MD State #96958","24/7 Emergency","Serving Ellicott City from Largo, MD"]} />
+              <TrustBadges variant="dark" badges={["Howard County Master Plumber #PGM1002236","MD State #96958","24/7 Emergency","Serving Ellicott City from Largo, MD"]} />
               <div className="flex flex-wrap gap-4 mt-8">
                 <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
             <div className="hidden lg:block">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/city-page-hero-plumber-LiK4eLEJT6Nfxt9Ly3GS3e.webp" alt="Licensed plumber Ellicott City Maryland — Howard County Master Plumber #MP-0000215" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/city-page-hero-plumber-LiK4eLEJT6Nfxt9Ly3GS3e.webp" alt="Licensed plumber Ellicott City Maryland — Howard County Master Plumber #PGM1002236" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function EllicottCityMD() {
         <div className="container">
           <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Ellicott City, MD?" />
           <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
-            Ellicott City is one of Howard County's most established and desirable communities — a mix of the historic Old Ellicott City district along the Patapsco River and the extensive residential and commercial development that has grown westward along US-40 and Route 108. Definitive Mechanical holds Howard County Master Plumber/Gasfitter License #MP-0000215 — a county-specific credential required for permitted plumbing work within Howard County.
+            Ellicott City is one of Howard County's most established and desirable communities — a mix of the historic Old Ellicott City district along the Patapsco River and the extensive residential and commercial development that has grown westward along US-40 and Route 108. Definitive Mechanical holds Howard County Master Plumber/Gasfitter License #PGM1002236 — a county-specific credential required for permitted plumbing work within Howard County.
           </p>
           {ALL_SERVICE_CATEGORIES.map((cat) => (
 
@@ -214,7 +214,7 @@ export default function EllicottCityMD() {
       {/* S9: CTA Banner */}
       <CTABanner
         heading="Need a licensed plumber in Ellicott City, MD?"
-        subtext="Serving Ellicott City from our Largo, MD location. Howard County Master Plumber #MP-0000215  MD State #96958  24/7 Emergency."
+        subtext="Serving Ellicott City from our Largo, MD location. Howard County Master Plumber #PGM1002236  MD State #96958  24/7 Emergency."
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
         variant="gradient"

@@ -29,8 +29,8 @@ const SCHEMA = {
       {"@type":"ListItem","position":3,"name":"Washington DC","item":"https://definitivemechanical.com/service-areas/washington-dc/"}
     ]},
     { "@type": "FAQPage", "mainEntity": [
-      {"@type":"Question","name":"What plumbing services do you offer in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Full-service plumbing in Washington DC including emergency plumbing, drain cleaning, water heater repair and installation, sewer line service, gas line repair, backflow certification, boiler and furnace service, and commercial and government plumbing. DC Master Plumber/Gasfitter #PGA2022-00025. Call (301) 679-5849."}},
-      {"@type":"Question","name":"Are you licensed to do plumbing in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Yes. Definitive Mechanical holds DC Master Plumber/Gasfitter License #PGA2022-00025 — issued by the DC Department of Consumer and Regulatory Affairs (DCRA). This is the specific DC license required for permitted plumbing work within the District of Columbia."}},
+      {"@type":"Question","name":"What plumbing services do you offer in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Full-service plumbing in Washington DC including emergency plumbing, drain cleaning, water heater repair and installation, sewer line service, gas line repair, backflow certification, boiler and furnace service, and commercial and government plumbing. DC Master Plumber/Gasfitter #PGM1002236. Call (301) 679-5849."}},
+      {"@type":"Question","name":"Are you licensed to do plumbing in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Yes. Definitive Mechanical holds DC Master Plumber/Gasfitter License #PGM1002236 — issued by the DC Department of Consumer and Regulatory Affairs (DCRA). This is the specific DC license required for permitted plumbing work within the District of Columbia."}},
       {"@type":"Question","name":"Do you provide 24/7 emergency plumbing in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Yes. Emergency plumbing in Washington DC is available 24/7. A live dispatcher answers every call. Licensed DC Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849."}},
       {"@type":"Question","name":"Do you serve government agencies and contractors in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Yes. MDOT MBE Certification (Cert No. 20-134), Virginia SWaM Cert No. 815255, and CAGE Code 8HCF6 support federal and DC government procurement. We can serve as a prime contractor or subcontractor for government plumbing work in the District."}}
     ]}
@@ -55,13 +55,13 @@ const services = [
 const dcAreas = [
   { icon: Building2, title: "Capitol Hill and Eastern neighborhoods", body: "Capitol Hill's 19th and early 20th century rowhouses are among the most historically significant residential structures in the District. Original terra cotta sewer laterals, aged cast iron drains, and boiler-based heating systems are common. Camera inspection before purchase is strongly recommended for Capitol Hill properties." },
   { icon: Building2, title: "Northwest DC — Georgetown, Dupont, Chevy Chase DC", body: "Northwest DC's high-value residential neighborhoods include properties across multiple centuries of construction. Georgetown's Federal-era rowhouses, Dupont Circle's Victorian and Edwardian stock, and Chevy Chase DC's early 20th century homes all present distinct plumbing service profiles." },
-  { icon: Landmark, title: "Government and commercial facilities", body: "The District is home to the highest concentration of federal government facilities in the country. MDOT MBE Cert No. 20-134 and CAGE Code 8HCF6 support federal procurement. DC Master Plumber/Gasfitter #PGA2022-00025 authorizes all DC plumbing work." },
+  { icon: Landmark, title: "Government and commercial facilities", body: "The District is home to the highest concentration of federal government facilities in the country. MDOT MBE Cert No. 20-134 and CAGE Code 8HCF6 support federal procurement. DC Master Plumber/Gasfitter #PGM1002236 authorizes all DC plumbing work." },
   { icon: Building2, title: "High-rise residential and commercial", body: "DC's dense urban core includes significant high-rise residential, hotel, and commercial properties with building-wide plumbing systems, commercial backflow compliance requirements, and ongoing commercial mechanical service needs." },
 ];
 
 const faqs = [
-  { question: "What plumbing services do you offer in Washington DC?", answer: "Full-service plumbing in Washington DC including emergency plumbing, drain cleaning, water heater repair and installation, sewer line service, gas line repair, backflow certification, boiler and furnace service, and commercial and government plumbing. DC Master Plumber/Gasfitter #PGA2022-00025. Call (301) 679-5849." },
-  { question: "Are you licensed to do plumbing in Washington DC?", answer: "Yes. Definitive Mechanical holds DC Master Plumber/Gasfitter License #PGA2022-00025 — issued by the DC Department of Consumer and Regulatory Affairs (DCRA). This is the specific DC license required for permitted plumbing work within the District of Columbia." },
+  { question: "What plumbing services do you offer in Washington DC?", answer: "Full-service plumbing in Washington DC including emergency plumbing, drain cleaning, water heater repair and installation, sewer line service, gas line repair, backflow certification, boiler and furnace service, and commercial and government plumbing. DC Master Plumber/Gasfitter #PGM1002236. Call (301) 679-5849." },
+  { question: "Are you licensed to do plumbing in Washington DC?", answer: "Yes. Definitive Mechanical holds DC Master Plumber/Gasfitter License #PGM1002236 — issued by the DC Department of Consumer and Regulatory Affairs (DCRA). This is the specific DC license required for permitted plumbing work within the District of Columbia." },
   { question: "Do you provide 24/7 emergency plumbing in Washington DC?", answer: "Yes. Emergency plumbing in Washington DC is available 24/7. A live dispatcher answers every call. Licensed DC Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849." },
   { question: "Do you serve government agencies and contractors in Washington DC?", answer: "Yes. MDOT MBE Certification (Cert No. 20-134), Virginia SWaM Cert No. 815255, and CAGE Code 8HCF6 support federal and DC government procurement. We can serve as a prime contractor or subcontractor for government plumbing work in the District." },
 ];
@@ -93,16 +93,16 @@ export default function WashingtonDC() {
                 Plumber in Washington, DC
               </h1>
               <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"17px", maxWidth:"560px", lineHeight:1.7 }} className="mb-6">
-                Definitive Mechanical provides licensed plumbing service in Washington, DC for homeowners, businesses, and government facilities. Emergency plumbing, water heater repair, drain cleaning, sewer service, gas line work, and backflow certification available 24/7. DC Master Plumber/Gasfitter #PGA2022-00025. MDOT MBE Certified. CAGE Code 8HCF6. Call (301) 679-5849.
+                Definitive Mechanical provides licensed plumbing service in Washington, DC for homeowners, businesses, and government facilities. Emergency plumbing, water heater repair, drain cleaning, sewer service, gas line work, and backflow certification available 24/7. DC Master Plumber/Gasfitter #PGM1002236. MDOT MBE Certified. CAGE Code 8HCF6. Call (301) 679-5849.
               </p>
-              <TrustBadges variant="dark" badges={["DC Master Plumber/Gasfitter #PGA2022-00025","MDOT MBE Cert 20-134","CAGE 8HCF6","24/7 Emergency","Serving DC from Largo, MD"]} />
+              <TrustBadges variant="dark" badges={["DC Master Plumber/Gasfitter #PGM1002236","MDOT MBE Cert 20-134","CAGE 8HCF6","24/7 Emergency","Serving DC from Largo, MD"]} />
               <div className="flex flex-wrap gap-4 mt-8">
                 <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
             <div className="hidden lg:block">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/city-page-hero-plumber-LiK4eLEJT6Nfxt9Ly3GS3e.webp" alt="Licensed plumber Washington DC — DC Master Plumber #PGA2022-00025, MDOT MBE Certified" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/city-page-hero-plumber-LiK4eLEJT6Nfxt9Ly3GS3e.webp" alt="Licensed plumber Washington DC — DC Master Plumber #PGM1002236, MDOT MBE Certified" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function WashingtonDC() {
               DC PLUMBING CREDENTIALS
             </p>
             {[
-              "DC Master Plumber/Gasfitter #PGA2022-00025 — issued by DCRA, required for all permitted DC plumbing work",
+              "DC Master Plumber/Gasfitter #PGM1002236 — issued by DCRA, required for all permitted DC plumbing work",
               "MDOT MBE Certification No. 20-134 — eligible for DC and federal government procurement",
               "CAGE Code 8HCF6 — federal procurement identifier",
               "Virginia SWaM Cert No. 815255 — for Virginia government procurement adjacent to DC",
@@ -244,10 +244,10 @@ export default function WashingtonDC() {
         <div className="container text-center">
           <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Commercial & Government Plumbing in Washington DC" light />
           <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
-            Washington DC is the center of federal government procurement in the United States. Definitive Mechanical holds MDOT MBE Certification (Cert No. 20-134) and CAGE Code 8HCF6 — and is licensed under DC Master Plumber/Gasfitter #PGA2022-00025 for all DC plumbing work. We can serve as a prime contractor or subcontractor for federal and DC government plumbing projects.
+            Washington DC is the center of federal government procurement in the United States. Definitive Mechanical holds MDOT MBE Certification (Cert No. 20-134) and CAGE Code 8HCF6 — and is licensed under DC Master Plumber/Gasfitter #PGM1002236 for all DC plumbing work. We can serve as a prime contractor or subcontractor for federal and DC government plumbing projects.
           </p>
           <div className="flex flex-wrap gap-2 justify-center mt-6 mb-6">
-            {["DC #PGA2022-00025","MDOT MBE Cert 20-134","CAGE 8HCF6","SWaM Cert 815255"].map((badge, i) => (
+            {["DC #PGM1002236","MDOT MBE Cert 20-134","CAGE 8HCF6","SWaM Cert 815255"].map((badge, i) => (
               <span key={i} style={{ background:"white", color:"var(--brand-navy)", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"11px", textTransform:"uppercase", padding:"4px 12px", borderRadius:"2px" }}>{badge}</span>
             ))}
           </div>
@@ -289,7 +289,7 @@ export default function WashingtonDC() {
       {/* S9: CTA Banner */}
       <CTABanner
         heading="Need a licensed plumber in Washington DC?"
-        subtext="Serving DC from our Largo, MD location. DC Master Plumber #PGA2022-00025  MDOT MBE Cert 20-134  CAGE 8HCF6  24/7 Emergency."
+        subtext="Serving DC from our Largo, MD location. DC Master Plumber #PGM1002236  MDOT MBE Cert 20-134  CAGE 8HCF6  24/7 Emergency."
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
         variant="gradient"

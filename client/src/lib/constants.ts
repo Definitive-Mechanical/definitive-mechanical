@@ -53,6 +53,9 @@ export const LICENSES = {
   epa: [
     { type: 'Universal EPA 608 Certification', authority: 'U.S. EPA', number: 'YbKLqI5cGf' },
   ],
+  hvacr: [
+    { type: 'HVACR License', authority: 'State of Maryland', number: '123550' },
+  ],
 }
 
 export const CERTIFICATIONS = {

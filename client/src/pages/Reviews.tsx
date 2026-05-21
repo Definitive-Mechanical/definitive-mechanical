@@ -219,7 +219,7 @@ export default function ReviewsPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {[
               { icon: ThumbsUp, title: "Transparent Pricing", body: "Every review that mentions pricing reflects our commitment to written estimates before any work begins — no surprise invoices, no after-hours surcharges." },
-              { icon: Award, title: "Licensed Professionals", body: "Every technician dispatched holds the required state and local licenses. WSSC #73696  MD #96958  VA #2710-183416-A  DC #PL-2024-00065." },
+              { icon: Award, title: "Licensed Professionals", body: "Every technician dispatched holds the required state and local licenses. WSSC #73696  MD #96958  VA #2710064209  DC #PGM1002236." },
               { icon: Star, title: "Consistent Standards", body: "Whether it's a 2 AM emergency or a scheduled installation, the same standards apply — clean work, clear communication, and verified results." },
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-lg p-6 shadow-sm">

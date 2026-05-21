@@ -142,7 +142,7 @@ const VA_COUNTIES = [
 
 const CREDENTIALS = [
   "MD Master Plumber #96958",
-  "DC Master Plumber #PT2-0003033",
+  "DC Master Plumber #PGM1002236",
   "VA Master Plumber #2710064209",
   "WSSC Backflow Tester #73696",
   "MDOT MBE Cert 20-134",
