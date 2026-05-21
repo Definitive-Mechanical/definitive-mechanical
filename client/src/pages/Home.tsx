@@ -145,51 +145,51 @@ function HeroSection() {
             </div>
           </div>
 
-          {/* RIGHT — dark navy lead form card */}
+          {/* RIGHT — white lead form card */}
           <div className="lg:col-span-2">
-            <div style={{ background: '#0A0A0A', borderRadius: '12px', padding: '22px', boxShadow: '0 12px 28px rgba(0,0,0,0.35)' }}>
+            <div style={{ background: 'white', borderRadius: '12px', padding: '22px', boxShadow: '0 8px 24px rgba(0,0,0,0.18)', border: '1px solid rgba(0,0,0,0.08)' }}>
               {submitted ? (
                 <div style={{ textAlign: 'center', padding: '24px 0' }}>
                   <CheckCircle size={48} color="#4FB3E8" style={{ margin: '0 auto 16px' }} />
-                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'white', marginBottom: '8px' }}>
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'var(--brand-navy)', marginBottom: '8px' }}>
                     Request Received!
                   </h3>
-                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>
+                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: '#444', lineHeight: 1.6 }}>
                     We'll call you back within 30 minutes. For emergencies call <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: '#4FB3E8', fontWeight: 700 }}>{BUSINESS.phone}</a> now.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Request Service</p>
-                  <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'white', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
+                  <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                   {/* Name + Phone */}
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Full Name <span style={{ color: '#ff6b6b' }}>*</span></label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Full Name <span style={{ color: '#cc0000' }}>*</span></label>
                       <input type="text" required placeholder="Your full name" value={formData.name} onChange={e => setFormData(p => ({ ...p, name: e.target.value }))}
-                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                     </div>
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Phone <span style={{ color: '#ff6b6b' }}>*</span></label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Phone <span style={{ color: '#cc0000' }}>*</span></label>
                       <input type="tel" required placeholder="(xxx) xxx-xxxx" value={formData.phone} onChange={e => setFormData(p => ({ ...p, phone: e.target.value }))}
-                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                     </div>
                   </div>
 
                   {/* Email */}
                   <div>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Email Address</label>
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Email Address</label>
                     <input type="email" placeholder="your@email.com" value={formData.email} onChange={e => setFormData(p => ({ ...p, email: e.target.value }))}
-                      style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                      style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                   </div>
 
                   {/* Service + City */}
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Service Needed <span style={{ color: '#ff6b6b' }}>*</span></label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Service Needed <span style={{ color: '#cc0000' }}>*</span></label>
                       <select required value={formData.service} onChange={e => setFormData(p => ({ ...p, service: e.target.value }))}
-                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(30,60,100,0.95)', color: formData.service ? 'white' : 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}>
+                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: formData.service ? '#111' : '#888', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}>
                         <option value="" disabled style={{ color: '#000' }}>Select a service...</option>
                         <option value="emergency" style={{ color: '#000' }}>24/7 Emergency Plumbing</option>
                         <option value="drain-cleaning" style={{ color: '#000' }}>Drain Cleaning</option>
@@ -211,24 +211,24 @@ function HeroSection() {
                       </select>
                     </div>
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>City / Location</label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>City / Location</label>
                       <input type="text" placeholder="City, State" value={formData.city} onChange={e => setFormData(p => ({ ...p, city: e.target.value }))}
-                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                     </div>
                   </div>
 
                   {/* Message */}
                   <div>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Describe the Problem <span style={{ color: '#ff6b6b' }}>*</span></label>
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Describe the Problem <span style={{ color: '#cc0000' }}>*</span></label>
                     <textarea required rows={3} placeholder="Please describe the issue, when it started, and any relevant details..." value={formData.message} onChange={e => setFormData(p => ({ ...p, message: e.target.value }))}
-                      style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }} />
+                      style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }} />
                   </div>
 
                   {/* Emergency warning */}
                   <div style={{ display: 'flex', alignItems: 'flex-start', gap: '7px', background: 'rgba(228,6,19,0.12)', border: '1px solid rgba(228,6,19,0.3)', borderRadius: '6px', padding: '8px 10px' }}>
                     <AlertTriangle size={13} style={{ color: '#ff6b6b', flexShrink: 0, marginTop: 1 }} />
-                    <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '11px', lineHeight: 1.5, margin: 0 }}>
-                      <strong style={{ color: 'white' }}>Plumbing emergency?</strong> Don't use this form — <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: '#4FB3E8', fontWeight: 700 }}>{BUSINESS.phone}</a> answers 24/7.
+                    <p style={{ fontFamily: 'var(--font-body)', color: '#555', fontSize: '11px', lineHeight: 1.5, margin: 0 }}>
+                      <strong style={{ color: '#cc0000' }}>Plumbing emergency?</strong> Don't use this form — <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: '#4FB3E8', fontWeight: 700 }}>{BUSINESS.phone}</a> answers 24/7.
                     </p>
                   </div>
 
@@ -237,7 +237,7 @@ function HeroSection() {
                     {submitting ? 'Submitting...' : 'Request Service'}
                   </button>
 
-                  <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
+                  <p style={{ fontSize: '11px', color: '#888', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
                     No spam. Quoted price in writing. All services have a trip fee.
                   </p>
                 </form>
@@ -481,7 +481,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 5: EMERGENCY CTA */}
-      <section style={{ background: 'linear-gradient(135deg, var(--brand-navy), var(--brand-navy-dark))', padding: '64px 0' }}>
+      <section style={{ background: 'linear-gradient(135deg, var(--brand-blue-2), var(--brand-blue))', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AlertTriangle size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
@@ -583,7 +583,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 8: CREDENTIALS */}
-      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+      <section style={{ background: 'linear-gradient(135deg, var(--brand-blue-2) 0%, var(--brand-blue) 100%)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="CREDENTIALS & COMPLIANCE"
@@ -667,7 +667,7 @@ export default function Home() {
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div style={{
-            background: 'linear-gradient(135deg, var(--brand-navy), var(--brand-blue))',
+            background: 'linear-gradient(135deg, var(--brand-blue-2), var(--brand-blue))',
             borderRadius: '8px',
             padding: '40px',
           }}>
@@ -712,15 +712,14 @@ export default function Home() {
       </section>
 
       {/* SECTION 11: FAQ */}
-      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
+      <section style={{ background: '#EBF4FB', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="FREQUENTLY ASKED QUESTIONS"
-            heading="Common questions about plumbing service in MD, DC & Northern VA"
+            heading="Common questions about plumbing service in MD, DC &amp; Northern VA"
             centered
-            light
           />
-          <FAQAccordion items={HOME_FAQ} schema={true} variant="dark" />
+          <FAQAccordion items={HOME_FAQ} schema={true} variant="light" />
         </div>
       </section>
 

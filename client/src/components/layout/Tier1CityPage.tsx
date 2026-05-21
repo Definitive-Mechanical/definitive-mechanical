@@ -129,7 +129,7 @@ export default function Tier1CityPage({
       </Helmet>
 
       {/* ── S1: HERO — dark navy gradient, two-column ───────────────────── */}
-      <section style={{ background: "linear-gradient(135deg, #031838 0%, #0A0A0A 60%, #0a4a7a 100%)", minHeight: "62vh", position: "relative", overflow: "hidden" }} className="py-20">
+      <section style={{ background: "linear-gradient(135deg, #031838 0%, var(--brand-blue-2) 60%, var(--brand-blue) 100%)", minHeight: "62vh", position: "relative", overflow: "hidden" }} className="py-20">
         {/* subtle diagonal texture */}
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 40px)", pointerEvents: "none" }} />
         <div className="container relative">

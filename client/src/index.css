@@ -55,9 +55,9 @@
   --brand-blue:    #1D6CA3;   /* steel blue — primary brand color */
   --brand-blue-2:  #155A8A;   /* darker steel blue — hover states */
   --brand-blue-3:  #0E4A73;   /* deepest blue — active/pressed */
-  --brand-navy:    #0A0A0A;   /* near-black — nav bar, footer, dark sections */
-  --brand-navy-2:  #000000;   /* pure black — secondary buttons, overlays */
-  --brand-navy-dark: #000000; /* pure black — deepest dark surfaces */
+  --brand-navy:    #155A8A;   /* brand blue-2 — replaces near-black for lighter theme */
+  --brand-navy-2:  #0E4A73;   /* deep blue — secondary buttons, overlays */
+  --brand-navy-dark: #0A3A5E; /* deepest blue — deepest dark surfaces */
   --brand-red:     #1D6CA3;   /* remapped to blue — no red in new palette */
   --brand-red-2:   #155A8A;   /* remapped to blue-2 */
   --brand-red-3:   #0E4A73;   /* remapped to blue-3 */

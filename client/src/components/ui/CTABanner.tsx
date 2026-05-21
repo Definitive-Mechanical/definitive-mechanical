@@ -10,8 +10,8 @@ interface CTABannerProps {
 
 export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn, variant = 'gradient' }: CTABannerProps) {
   const bg = variant === 'navy'
-    ? 'var(--brand-navy)'
-    : 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 60%, rgba(79,179,232,0.12) 100%)';
+    ? 'var(--brand-blue-2)'
+    : 'linear-gradient(135deg, var(--brand-blue-2) 0%, var(--brand-blue) 60%, rgba(0,180,216,0.15) 100%)';
 
   return (
     <section style={{ background: bg, padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
@@ -19,7 +19,7 @@ export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn, 
       <div style={{
         position: 'absolute',
         inset: 0,
-        background: 'rgba(0,158,198,0.05)',
+        background: 'rgba(255,255,255,0.04)',
         transform: 'skewY(-3deg)',
         transformOrigin: 'top left',
         pointerEvents: 'none',

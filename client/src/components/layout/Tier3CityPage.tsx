@@ -199,7 +199,7 @@ export default function Tier3CityPage({
       </Helmet>
 
       {/* S1: Hero — dark navy gradient matching MD/VA pages */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "50vh" }} className="py-16">
+      <section style={{ background: "linear-gradient(135deg, #031838 0%, var(--brand-blue-2) 60%, var(--brand-blue) 100%)", minHeight: "50vh" }} className="py-16">
         <div className="container">
           <BreadcrumbList items={breadcrumbs.map(b => ({ label: b.label, href: b.href }))} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">

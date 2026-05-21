@@ -43,7 +43,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
         aspectRatio: '16/9',
         position: 'relative',
         overflow: 'hidden',
-        background: 'linear-gradient(135deg, #0A0A0A, #0a3a5e)',
+        background: 'linear-gradient(135deg, var(--brand-blue-2), var(--brand-blue-3))',
       }}>
         {image ? (
           <>
