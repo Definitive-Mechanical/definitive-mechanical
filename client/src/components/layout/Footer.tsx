@@ -206,20 +206,113 @@ export default function Footer() {
         </div>
 
         {/* License Block */}
-        <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', padding: '24px 0' }}>
+        <div style={{ borderTop: '1px solid rgba(255,255,255,0.1)', padding: '40px 0' }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>
-              Licenses &amp; Certifications
-            </p>
-            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7 }}>
-              Maryland Master Plumber/Master Gasfitter #96958  WSSC Master Plumber/Master Gasfitter #73696  Howard County Master Plumber/Master Gasfitter #20020096958  Anne Arundel County Master Plumber/Master Gasfitter #A2-6139  City of Rockville Master Plumber/Master Gasfitter #PLL-0002113  MD Home Improvement Contractor/Salesman #134723 / #109901
-            </p>
-            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginTop: '4px' }}>
-              Virginia Master Plumber/Master Gasfitter #2710064209  Virginia Class A Contractor #2705181061  DC Master Plumber/Master Gasfitter #PGM1002236  Delaware Master Plumber/Master Gasfitter #PL-0012866  Universal EPA 608 Certification #YbKLqI5cGf
-            </p>
-            <p style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'rgba(255,255,255,0.35)', lineHeight: 1.7, marginTop: '4px' }}>
-              MDOT MBE Cert No. {CERTIFICATIONS.mdotMBE.certNo}  SWaM Cert No. {CERTIFICATIONS.swam.certNo}  NAICS Code: {CERTIFICATIONS.naics}  SIC Code: {CERTIFICATIONS.sic}  CAGE: {CERTIFICATIONS.cage}
-            </p>
+
+            {/* Header row: title + cert badge images */}
+            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px', marginBottom: '32px' }}>
+              <div>
+                <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '4px', margin: '0 0 4px' }}>
+                  Licenses &amp; Certifications
+                </p>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>
+                  Licensed in Maryland, Washington DC, Virginia &amp; Delaware
+                </p>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
+                <div style={{ background: 'white', borderRadius: '6px', padding: '8px 14px', display: 'inline-flex', alignItems: 'center' }}>
+                  <img
+                    src="/manus-storage/mdot-mbe-certified_0600c753.png"
+                    alt="Maryland Department of Transportation MBE/DBE Certified"
+                    style={{ height: '54px', width: 'auto', display: 'block' }}
+                  />
+                </div>
+                <div style={{ background: 'white', borderRadius: '6px', padding: '8px 14px', display: 'inline-flex', alignItems: 'center' }}>
+                  <img
+                    src="/manus-storage/va-swam-certified_8f302e48.jpg"
+                    alt="Virginia SWaM Certified — Small, Women and Minority-Owned"
+                    style={{ height: '54px', width: 'auto', display: 'block' }}
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* License columns by state */}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))', gap: '28px' }}>
+
+              {/* Maryland */}
+              <div>
+                <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '12px', paddingBottom: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', margin: '0 0 12px' }}>
+                  Maryland
+                </p>
+                {LICENSES.maryland.map((lic, i) => (
+                  <div key={i} style={{ marginBottom: '10px' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.88)', margin: '0 0 1px', lineHeight: 1.4 }}>{lic.type}</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>{lic.authority} &mdash; #{lic.number}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Washington DC */}
+              <div>
+                <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '12px', paddingBottom: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', margin: '0 0 12px' }}>
+                  Washington DC
+                </p>
+                {LICENSES.dc.map((lic, i) => (
+                  <div key={i} style={{ marginBottom: '10px' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.88)', margin: '0 0 1px', lineHeight: 1.4 }}>{lic.type}</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>{lic.authority} &mdash; #{lic.number}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Virginia */}
+              <div>
+                <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '12px', paddingBottom: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', margin: '0 0 12px' }}>
+                  Virginia
+                </p>
+                {LICENSES.virginia.map((lic, i) => (
+                  <div key={i} style={{ marginBottom: '10px' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.88)', margin: '0 0 1px', lineHeight: 1.4 }}>{lic.type}</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>{lic.authority} &mdash; #{lic.number}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Delaware + EPA + Certifications */}
+              <div>
+                <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '12px', paddingBottom: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', margin: '0 0 12px' }}>
+                  Delaware &amp; Federal
+                </p>
+                {LICENSES.delaware.map((lic, i) => (
+                  <div key={i} style={{ marginBottom: '10px' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.88)', margin: '0 0 1px', lineHeight: 1.4 }}>{lic.type}</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>{lic.authority} &mdash; #{lic.number}</p>
+                  </div>
+                ))}
+                {LICENSES.epa.map((lic, i) => (
+                  <div key={i} style={{ marginBottom: '10px' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.88)', margin: '0 0 1px', lineHeight: 1.4 }}>{lic.type}</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>{lic.authority} &mdash; #{lic.number}</p>
+                  </div>
+                ))}
+                <div style={{ marginTop: '16px', paddingTop: '12px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+                  <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', margin: '0 0 10px' }}>Certifications</p>
+                  <div style={{ marginBottom: '10px' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.88)', margin: '0 0 1px' }}>MDOT MBE Certified</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Cert No. {CERTIFICATIONS.mdotMBE.certNo}</p>
+                  </div>
+                  <div style={{ marginBottom: '10px' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.88)', margin: '0 0 1px' }}>Virginia SWaM Certified</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>Cert No. {CERTIFICATIONS.swam.certNo}</p>
+                  </div>
+                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '11px', color: 'rgba(255,255,255,0.4)', margin: 0, lineHeight: 1.7 }}>
+                    NAICS: {CERTIFICATIONS.naics} &nbsp;&bull;&nbsp; SIC: {CERTIFICATIONS.sic} &nbsp;&bull;&nbsp; CAGE: {CERTIFICATIONS.cage}
+                  </p>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
 
