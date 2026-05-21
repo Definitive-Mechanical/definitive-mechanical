@@ -100,8 +100,9 @@ export default function Header() {
       <header
         className="fixed left-0 right-0 z-[100] transition-shadow duration-300 announcement-offset header-height"
         style={{
-          background: 'var(--brand-navy)',
-          boxShadow: scrolled ? 'var(--shadow-hero)' : '0 2px 8px rgba(6,59,99,0.3)',
+          background: 'white',
+          boxShadow: scrolled ? '0 4px 20px rgba(0,0,0,0.12)' : '0 2px 8px rgba(0,0,0,0.08)',
+          borderBottom: '1px solid rgba(0,0,0,0.08)'
         }}
       >
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-6 xl:px-10 h-full flex items-center justify-between">
@@ -110,7 +111,7 @@ export default function Header() {
             <img
               src="/manus-storage/logo-definitive-mechanical_657c9790.png"
               alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
-              style={{ height: '44px', width: 'auto', display: 'block', background: 'white', borderRadius: '4px', padding: '2px 6px' }}
+              style={{ height: '44px', width: 'auto', display: 'block' }}
             />
           </Link>
 
@@ -140,11 +141,11 @@ export default function Header() {
                     fontSize: '12px',
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',
-                    color: 'rgba(255,255,255,0.88)',
+                    color: 'var(--brand-navy)',
                     whiteSpace: 'nowrap',
                   }}
-                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
-                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.88)')}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-blue)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--brand-navy)')}
                 >
                   {item.label}
                   {(item.hasMega || item.hasDropdown) && <ChevronDown size={12} />}
@@ -268,7 +269,7 @@ export default function Header() {
           <a
             href={`tel:${BUSINESS.phoneRaw}`}
             className="hidden lg:flex items-center gap-2 no-underline"
-            style={{ fontSize: '12px', letterSpacing: '0.08em', borderRadius: '6px', minHeight: '40px', padding: '0 16px', background: 'white', color: 'var(--brand-navy)', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}
+            style={{ fontSize: '12px', letterSpacing: '0.08em', borderRadius: '6px', minHeight: '40px', padding: '0 16px', background: 'var(--brand-blue)', color: 'white', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}
           >
             <Phone size={15} />
             CALL {BUSINESS.phone}
@@ -280,13 +281,13 @@ export default function Header() {
               href={`tel:${BUSINESS.phoneRaw}`}
               className="flex items-center justify-center no-underline"
               aria-label={`Call ${BUSINESS.phone}`}
-              style={{ width: '40px', height: '48px', color: 'white' }}
+              style={{ width: '40px', height: '48px', color: 'var(--brand-navy)' }}
             >
               <Phone size={18} strokeWidth={2} />
             </a>
             <button
               className="flex items-center justify-center"
-              style={{ width: '40px', height: '48px', color: 'white', background: 'none', border: 'none' }}
+              style={{ width: '40px', height: '48px', color: 'var(--brand-navy)', background: 'none', border: 'none' }}
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
             >
