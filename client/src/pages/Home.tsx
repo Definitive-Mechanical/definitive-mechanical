@@ -598,21 +598,13 @@ export default function Home() {
                 border: '1px solid rgba(255,255,255,0.12)',
                 borderRadius: '4px',
                 padding: '20px',
-                textAlign: 'center', backgroundColor: '#ffffff', backgroundColor: '#ffffff', backgroundColor: '#ffffff', backgroundColor: '#ffffff', backgroundColor: '#ffffff', backgroundColor: '#ffffff', backgroundColor: '#f5f5f5', backgroundColor: '#ffffff',
+                textAlign: 'center',
               }}>
-<<<<<<< Updated upstream
                 <cred.icon size={28} color="var(--brand-blue)" style={{ margin: '0 auto 10px' }} />
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#fff', marginBottom: '4px' }}>
                   {cred.label}
                 </p>
                 <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.65)' }}>
-=======
-                <cred.icon size={28} color="white" style={{ margin: '0 auto 10px' }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#000000', marginBottom: '4px', color: '#000000', color: '#000000', color: '#000000', color: '#000000', color: '#000000', color: '#000000', color: '#000000', color: '#000000' }}>
-                  {cred.label}
-                </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: '#000000', color: '#000000', color: '#000000', color: '#000000', color: '#000000', color: '#000000', color: '#000000', color: '#000000', color: '#000000' }}>
->>>>>>> Stashed changes
                   {cred.sub}
                 </p>
               </div>

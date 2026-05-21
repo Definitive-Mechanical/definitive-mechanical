@@ -180,7 +180,7 @@ export default function BookNowButton({
   }
 
   return (
-    <Link href={href} style={{backgroundColor: '#ffffff'}} className={className} {...events}>
+    <Link href={href} style={style} className={className} {...events}>
       {content}
     </Link>
   );

@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface SectionHeadingProps {
   eyebrow?: string;
   heading: string;
@@ -23,28 +25,37 @@ export default function SectionHeading({
           fontSize: '14px',
           textTransform: 'uppercase',
           letterSpacing: '0.18em',
-          color: 'var(--brand-blue)',
+          color: light ? 'var(--brand-cyan)' : 'var(--brand-blue)',
           marginBottom: '14px',
           display: 'inline-flex',
           alignItems: 'center',
           gap: '12px',
         }}>
-          <span style={{ display: 'inline-block', width: '28px', height: '2px', background: 'var(--brand-blue)', flexShrink: 0 }} />
+          <span style={{ display: 'inline-block', width: '28px', height: '2px', background: light ? 'var(--brand-cyan)' : 'var(--brand-blue)', flexShrink: 0 }} />
           {eyebrow}
         </p>
       )}
-      <h2 style={{color: '#ffffff'}}>
+      <h2 style={{
+        fontFamily: 'var(--font-display)',
+        fontWeight: 700,
+        letterSpacing: '-0.01em',
+        color: light ? '#fff' : 'var(--brand-black)',
+        fontSize: 'clamp(1.75rem, 3.6vw, 3rem)',
+        lineHeight: 1.15,
+        marginBottom: subtext ? '16px' : '0',
+        textWrap: 'balance',
+      } as React.CSSProperties}>
         {heading}
       </h2>
       {subtext && (
         <p style={{
           fontFamily: 'var(--font-body)',
           fontWeight: 400,
-          color: '#ffffff',
+          color: light ? 'rgba(255,255,255,0.78)' : 'var(--ink-2)',
           fontSize: '17px',
           lineHeight: 1.7,
           maxWidth: centered ? '60ch' : 'none',
-          margin: centered ? '0 auto' : '0', color: '#ffffff',
+          margin: centered ? '0 auto' : '0',
         }}>
           {subtext}
         </p>
@@ -52,5 +63,3 @@ export default function SectionHeading({
     </div>
   );
 }
-
-import React from 'react';
