@@ -164,11 +164,11 @@ export default function LicensesCertifications() {
                 lines: ['Universal EPA 608 Certification', 'U.S. Environmental Protection Agency', `Cert #${LICENSES.epa[0].number}`],
               },
             ].map((cert) => (
-              <div key={cert.title} style={{ background: 'var(--brand-blue-soft)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '6px', padding: '28px', textAlign: 'center' }}>
+              <div key={cert.title} style={{ background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '28px', textAlign: 'center' }}>
                 <cert.icon size={32} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
-                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>{cert.title}</h3>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>{cert.title}</h3>
                 {cert.lines.map((line) => (
-                  <p key={line} style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.75)', fontSize: '13px', lineHeight: 1.6 }}>{line}</p>
+                  <p key={line} style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.6 }}>{line}</p>
                 ))}
               </div>
             ))}

@@ -104,6 +104,8 @@ function getHoverStyle(type: ButtonType): React.CSSProperties {
 
 function resolveType(variant?: ButtonType, bg?: BgContext): ButtonType {
   if (variant === 'phone') return 'emergency'; // phone is alias for emergency
+  // Promote secondary → secondary-light on dark/blue backgrounds to prevent invisible dark-ink-on-dark-bg
+  if (variant === 'secondary' && (bg === 'dark' || bg === 'blue')) return 'secondary-light';
   if (variant) return variant;
   return 'primary'; // default to primary on any background
 }

@@ -158,7 +158,7 @@ export default function GovernmentMunicipalPlumbing() {
                 {section.items.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '8px' }}>
                     <CheckCircle2 size={14} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '14px' }}>{item}</span>
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink)', fontSize: '14px' }}>{item}</span>
                   </div>
                 ))}
               </div>

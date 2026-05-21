@@ -157,7 +157,7 @@ export default function WaterHeaterRepair() {
               <div key={item.title} style={{ background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '24px', textAlign: 'center' }}>
                 <item.icon size={28} color="var(--brand-cyan)" style={{ margin: '0 auto 12px' }} />
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{item.title}</p>
-                <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.75)', fontSize: '13px', lineHeight: 1.6 }}>{item.desc}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
           </div>

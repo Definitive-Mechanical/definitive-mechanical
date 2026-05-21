@@ -594,17 +594,17 @@ export default function Home() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {CREDENTIALS.map((cred) => (
               <div key={cred.label} style={{
-                background: 'var(--brand-blue-soft)',
-                border: '1px solid var(--brand-blue-tint)',
+                background: 'rgba(255,255,255,0.07)',
+                border: '1px solid rgba(255,255,255,0.12)',
                 borderRadius: '4px',
                 padding: '20px',
                 textAlign: 'center',
               }}>
-                <cred.icon size={28} color="white" style={{ margin: '0 auto 10px' }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'white', marginBottom: '4px' }}>
+                <cred.icon size={28} color="var(--brand-blue)" style={{ margin: '0 auto 10px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#fff', marginBottom: '4px' }}>
                   {cred.label}
                 </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.6)' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.65)' }}>
                   {cred.sub}
                 </p>
               </div>
@@ -702,7 +702,7 @@ export default function Home() {
                 </div>
                 <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
                   <BookNowButton bg="light" variant="phone" text="GOVERNMENT & COMMERCIAL" href="/government-municipal-plumbing" size="md" />
-                  <BookNowButton bg="light" variant="secondary" text="COMMERCIAL PLUMBING" href="/commercial-plumbing" size="md" />
+                  <BookNowButton bg="blue" variant="secondary" text="COMMERCIAL PLUMBING" href="/commercial-plumbing" size="md" />
                 </div>
               </div>
             </div>
