@@ -75,7 +75,7 @@
   --warning:       #E89D1A;
 
   /* ── Fonts ─────────────────────────────────────────────── */
-  --font-display:  'Barlow Condensed', 'Oswald', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
   --font-body:     'Public Sans', system-ui, -apple-system, sans-serif;
   --font-mono:     'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 
