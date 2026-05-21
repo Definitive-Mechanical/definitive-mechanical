@@ -71,7 +71,7 @@ export default function FortWashingtonMD() {
               </div>
             </div>
             <div className="hidden lg:block">
-              <img src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/city-page-hero-plumber-LiK4eLEJT6Nfxt9Ly3GS3e.webp" alt="Licensed plumber Fort Washington Maryland — Definitive Mechanical" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+              <img src="/manus-storage/city-fort-washington-md_f7660f05.jpg" alt="Licensed plumber Fort Washington Maryland — Definitive Mechanical" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>
         </div>

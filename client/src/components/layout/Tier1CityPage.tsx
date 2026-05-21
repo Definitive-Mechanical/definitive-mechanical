@@ -34,6 +34,8 @@ export interface Tier1CityPageProps {
   h1: string;
   introParagraph: string;
   trustItems: string[];
+  heroImage?: string;
+  heroImageAlt?: string;
   services: ServiceItem[];
   localContextHeading: string;
   localContextBody: string;
@@ -107,7 +109,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
 export default function Tier1CityPage({
   metaTitle, metaDescription, canonicalUrl,
   breadcrumbs, eyebrow, h1, introParagraph,
-  trustItems, services,
+  trustItems, heroImage, heroImageAlt, services,
   localContextHeading, localContextBody, calloutNote,
   licenseHeading, credentials,
   nearbyAreas, countyHubLabel, countyHubHref,
@@ -155,8 +157,18 @@ export default function Tier1CityPage({
                 </Link>
               </div>
             </div>
-            {/* Right — 2 cols: trust card */}
+            {/* Right — 2 cols: city image + trust card */}
             <div className="lg:col-span-2 hidden lg:block">
+              {heroImage && (
+                <div style={{ marginBottom: "16px", borderRadius: "8px", overflow: "hidden", boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+                  <img
+                    src={heroImage}
+                    alt={heroImageAlt || h1}
+                    loading="eager"
+                    style={{ width: "100%", height: "200px", objectFit: "cover", display: "block" }}
+                  />
+                </div>
+              )}
               <div style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "12px", padding: "28px", backdropFilter: "blur(8px)" }}>
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "16px" }}>
                   Why Definitive Mechanical

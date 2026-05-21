@@ -52,6 +52,8 @@ export interface PriorityCityLayoutProps {
   h1: string;
   introParagraph: string;
   trustItems: string[];
+  heroImage?: string;   // optional city-specific hero photo URL
+  heroImageAlt?: string;
 
   /* Services */
   servicesEyebrow?: string;
@@ -148,6 +150,7 @@ function getServiceIcon(label: string): React.ElementType {
 export default function PriorityCityLayout({
   metaTitle, metaDescription, canonicalUrl, schemaJson = [],
   breadcrumbs, eyebrow, h1, introParagraph, trustItems,
+  heroImage, heroImageAlt,
   servicesEyebrow, servicesHeading, servicesIntro, services,
   emergencyHeading, emergencyBody,
   localContextEyebrow, localContextHeading, localContextCards,
@@ -244,8 +247,18 @@ export default function PriorityCityLayout({
                 <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "13px", marginLeft: 4 }}>4.8  40+ verified reviews</span>
               </div>
             </div>
-            {/* Right: trust card */}
+            {/* Right: city image + trust card */}
             <div className="lg:col-span-2 hidden lg:block">
+              {heroImage && (
+                <div style={{ marginBottom: "16px", borderRadius: "4px", overflow: "hidden", boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
+                  <img
+                    src={heroImage}
+                    alt={heroImageAlt || h1}
+                    loading="eager"
+                    style={{ width: "100%", height: "220px", objectFit: "cover", display: "block" }}
+                  />
+                </div>
+              )}
               <div style={{
                 background: "rgba(255,255,255,0.06)", backdropFilter: "blur(12px)",
                 border: "1px solid rgba(255,255,255,0.12)", borderRadius: "4px",
