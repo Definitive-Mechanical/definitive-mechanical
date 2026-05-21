@@ -126,7 +126,7 @@ export default function BackflowCertificationMaryland() {
               <div key={s.type} className="flex items-start gap-3 p-4 rounded-lg" style={{ background: "var(--surface-1)" }}>
                 <CheckCircle size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                 <div>
-                  <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>{s.type}</h3>
+                  <h3 className="font-bold text-sm mb-1" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>{s.type}</h3>
                   <p className="text-sm" style={{ color: "var(--ink-2)", lineHeight: 1.6 }}>{s.desc}</p>
                 </div>
               </div>

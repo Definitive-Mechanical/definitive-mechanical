@@ -294,7 +294,7 @@ export default function Home() {
                 }}
               >
                 <stat.icon size={24} color="var(--brand-navy)" style={{ margin: '0 auto 8px' }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '32px', color: 'var(--brand-navy)', lineHeight: 1 }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '32px', color: '#0A0A0A', lineHeight: 1 }}>
                   {stat.number}
                 </p>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-navy)', marginTop: '4px' }}>
@@ -445,7 +445,7 @@ export default function Home() {
                 <div style={{ width: '48px', height: '48px', borderRadius: '10px', background: 'rgba(0,117,186,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
                   <col.icon size={24} color="var(--brand-blue)" />
                 </div>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '20px', textTransform: 'uppercase', letterSpacing: '0.03em', marginBottom: '12px' }}>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '20px', textTransform: 'uppercase', letterSpacing: '0.03em', marginBottom: '12px' }}>
                   {col.title}
                 </h3>
                 <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7 }}>
@@ -465,7 +465,7 @@ export default function Home() {
             maxWidth: '800px',
             margin: '0 auto',
           }}>
-            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '12px' }}>
+            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '16px', marginBottom: '12px' }}>
               "We explain what we find, what your options are, and what each one costs — before we touch a wrench."
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
@@ -566,7 +566,7 @@ export default function Home() {
                 <div key={area.heading} style={{ display: 'flex', gap: '16px' }}>
                   <area.icon size={24} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                   <div>
-                    <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '4px' }}>
+                    <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: '#0A0A0A', fontSize: '16px', marginBottom: '4px' }}>
                       {area.heading}
                     </h3>
                     <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--ink-2)', marginBottom: '4px' }}>{area.body}</p>
@@ -623,7 +623,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="eyebrow" style={{ marginBottom: '12px' }}>FINANCING AVAILABLE</p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(22px, 3vw, 28px)', marginBottom: '16px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(22px, 3vw, 28px)', marginBottom: '16px' }}>
                 Is financing available for plumbing repairs and installations?
               </h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, marginBottom: '20px' }}>

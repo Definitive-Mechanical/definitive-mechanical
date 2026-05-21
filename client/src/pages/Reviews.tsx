@@ -224,7 +224,7 @@ export default function ReviewsPage() {
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-lg p-6 shadow-sm">
                 <item.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-3" />
-                <h3 className="font-bold mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>{item.title}</h3>
+                <h3 className="font-bold mb-2" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>{item.title}</h3>
                 <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{item.body}</p>
               </div>
             ))}

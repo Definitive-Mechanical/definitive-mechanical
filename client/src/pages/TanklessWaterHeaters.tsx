@@ -81,7 +81,7 @@ export default function TanklessWaterHeaters() {
             <div>
               <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>HOW TANKLESS WORKS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What is a tankless water heater and how does it work?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What is a tankless water heater and how does it work?</h2>
         </div>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 A tankless water heater — also called an on-demand water heater — heats water directly as it flows through the unit rather than storing a preheated tank of water. When you open a hot water tap, cold water travels through a pipe into the unit where it is heated by a gas burner or electric element. The result: hot water delivered continuously, without the wait for a tank to refill and reheat.
@@ -90,7 +90,7 @@ export default function TanklessWaterHeaters() {
                 Traditional tank water heaters maintain a constant supply of heated water — which means they are continuously using energy to keep that water hot even when no one is using it. This standby heat loss accounts for 15-20% of a typical home's water heating energy use according to the U.S. Department of Energy. Tankless units eliminate standby loss entirely.
               </p>
               <div style={{ background: '#F0F5FA', borderRadius: '6px', padding: '20px' }}>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '18px', lineHeight: 1.5 }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: '#0A0A0A', fontSize: '18px', lineHeight: 1.5 }}>
                   "15-20% of home water heating energy is wasted on standby heat loss in tank units. Tankless eliminates it."
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function TanklessWaterHeaters() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>BENEFITS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What are the benefits of a tankless water heater?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What are the benefits of a tankless water heater?</h2>
         </div>
           <div className="max-w-4xl mx-auto space-y-4">
             {[
@@ -130,7 +130,7 @@ export default function TanklessWaterHeaters() {
               <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '24px', display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
                 <Icon size={32} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '6px' }}>{title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '16px', marginBottom: '6px' }}>{title}</p>
                   <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.6 }}>{body}</p>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function TanklessWaterHeaters() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>BEING HONEST WITH YOU</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Are there any drawbacks to tankless water heaters?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>Are there any drawbacks to tankless water heaters?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Being honest matters more than making a sale. Tankless systems are not the right fit for every home or budget.</p>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
@@ -156,7 +156,7 @@ export default function TanklessWaterHeaters() {
             ].map(({ Icon, title, body }) => (
               <div key={title} style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid #F59E0B', borderRadius: '4px', padding: '24px' }}>
                 <Icon size={28} color="#F59E0B" style={{ marginBottom: '12px' }} />
-                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '8px' }}>{title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
               </div>
             ))}
@@ -193,7 +193,7 @@ export default function TanklessWaterHeaters() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>PRICING GUIDE</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What does tankless water heater installation cost in Maryland, DC, or Virginia?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What does tankless water heater installation cost in Maryland, DC, or Virginia?</h2>
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '672px', margin: '0 auto 24px', overflow: 'hidden' }}>
             <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
@@ -217,12 +217,12 @@ export default function TanklessWaterHeaters() {
       {/* SECTION 7: RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Wrench, label: 'Water Heater Repair', href: '/water-heater-repair' }, { icon: Flame, label: 'Water Heater Installation', href: '/water-heater-installation' }, { icon: Zap, label: 'Gas Line Installation', href: '/gas-line-installation' }, { icon: CreditCard, label: 'Financing', href: '/financing' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
                 <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{item.label}</span>
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '14px' }}>{item.label}</span>
               </Link>
             ))}
           </div>

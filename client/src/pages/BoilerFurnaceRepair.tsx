@@ -135,12 +135,12 @@ export default function BoilerFurnaceRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WARNING SIGNS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What are the warning signs that your boiler or furnace needs repair?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What are the warning signs that your boiler or furnace needs repair?</h2>
         </div>
           <div className="grid lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
             {/* Boiler */}
             <div>
-              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '14px' }}>Boiler warning signs:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '14px' }}>Boiler warning signs:</p>
               <div className="space-y-3">
                 {BOILER_SIGNS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
@@ -152,7 +152,7 @@ export default function BoilerFurnaceRepair() {
             </div>
             {/* Furnace */}
             <div>
-              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '14px' }}>Furnace warning signs:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '14px' }}>Furnace warning signs:</p>
               <div className="space-y-3">
                 {FURNACE_SIGNS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
@@ -176,7 +176,7 @@ export default function BoilerFurnaceRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR SERVICES</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What boiler and furnace repair services does Definitive Mechanical provide?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What boiler and furnace repair services does Definitive Mechanical provide?</h2>
         </div>
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Boiler */}
@@ -220,7 +220,7 @@ export default function BoilerFurnaceRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>PRICING GUIDE</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What does boiler or furnace repair cost?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What does boiler or furnace repair cost?</h2>
         </div>
           <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', maxWidth: '700px', margin: '0 auto', boxShadow: '0 4px 16px rgba(6,59,99,0.10)' }}>
             <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
@@ -243,7 +243,7 @@ export default function BoilerFurnaceRepair() {
       {/* RELATED SERVICES */}
       <section style={{ background: '#F0F5FA', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { icon: Wind, label: 'Boiler & Furnace Installation', href: '/boiler-furnace-installation' },

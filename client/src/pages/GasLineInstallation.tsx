@@ -72,7 +72,7 @@ export default function GasLineInstallation() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>INSTALLATION SERVICES</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What gas line installation services does Definitive Mechanical provide?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What gas line installation services does Definitive Mechanical provide?</h2>
         </div>
           <div className="max-w-4xl mx-auto space-y-4">
             {[
@@ -85,7 +85,7 @@ export default function GasLineInstallation() {
               <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', display: 'flex', gap: '16px', alignItems: 'flex-start', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderLeftWidth: '4px', borderLeftColor: 'var(--brand-cyan)' }}>
                 <Icon size={28} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
                   <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
                   {list && (
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '8px' }}>
@@ -106,7 +106,7 @@ export default function GasLineInstallation() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>PERMITS ARE REQUIRED</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Does gas line installation require a permit?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>Does gas line installation require a permit?</h2>
         </div>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
             Yes. Gas line installation requires a permit in virtually every jurisdiction in Maryland, Washington DC, and Virginia. Work must be performed by a licensed Master Gasfitter and inspected by the jurisdiction's plumbing or mechanical inspector before the gas supply is restored. Definitive Mechanical pulls permits under our own Master Gasfitter licenses in each jurisdiction. We handle the permit application, the inspection scheduling, and the pressure testing required for inspection sign-off.
@@ -119,7 +119,7 @@ export default function GasLineInstallation() {
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', textAlign: 'center' }}>We do not install unpermitted gas lines.</p>
+          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '16px', textAlign: 'center' }}>We do not install unpermitted gas lines.</p>
         </div>
       </section>
 
@@ -128,7 +128,7 @@ export default function GasLineInstallation() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>PRICING GUIDE</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What does gas line installation cost in Maryland, DC, or Virginia?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What does gas line installation cost in Maryland, DC, or Virginia?</h2>
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '720px', margin: '0 auto 16px', overflow: 'hidden', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)' }}>
             <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
@@ -155,7 +155,7 @@ export default function GasLineInstallation() {
       {/* RELATED SERVICES */}
       <section style={{ background: '#F0F5FA', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Wrench, label: 'Gas Line Repair', href: '/gas-line-repair' }, { icon: Search, label: 'Gas Leak Repair', href: '/gas-leak-repair' }, { icon: Flame, label: 'Tankless Water Heaters', href: '/tankless-water-heaters' }, { icon: CreditCard, label: 'Licenses & Certifications', href: '/licenses-certifications' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>

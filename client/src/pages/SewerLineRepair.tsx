@@ -71,12 +71,12 @@ export default function SewerLineRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WARNING SIGNS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What are the warning signs of a sewer line problem?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What are the warning signs of a sewer line problem?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Sewer line issues rarely appear without warning. Recognizing the early signs prevents a manageable repair from becoming a major excavation.</p>
         </div>
           <div className="grid lg:grid-cols-2 gap-10">
             <div>
-              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '16px' }}>Early warning signs:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '16px' }}>Early warning signs:</p>
               <div className="space-y-3">
                 {["Slow drains in multiple fixtures simultaneously — the most reliable early indicator", "Gurgling sounds from toilets or floor drains when water is used elsewhere in the home", "Foul sewage odor inside the home or from drains", "Water backing up into a tub or floor drain when the toilet is flushed", "Unusually lush or green patches in the yard above the sewer line — sewage is fertilizing the soil", "Soft or wet spots in the yard without recent rainfall", "Recurring clogs in the same fixture despite repeated clearing"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
@@ -110,7 +110,7 @@ export default function SewerLineRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>COMMON CAUSES</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What causes sewer line damage in Maryland, DC, and Virginia?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What causes sewer line damage in Maryland, DC, and Virginia?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Understanding the cause of sewer line failure helps explain why some repairs are straightforward and others are more complex.</p>
         </div>
           <div className="max-w-4xl mx-auto space-y-4">
@@ -124,7 +124,7 @@ export default function SewerLineRepair() {
               <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
                 <Icon size={28} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
                   <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function SewerLineRepair() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="eyebrow mb-2">HOW WE DIAGNOSE</p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>How does Definitive Mechanical diagnose sewer line problems?</h2>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>How does Definitive Mechanical diagnose sewer line problems?</h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 We use video camera inspection before recommending sewer line repair. A camera inspection sends a waterproof camera through the sewer line and transmits real-time video of the interior pipe condition. It shows us exactly what is happening inside the line — the location and nature of the blockage, whether there is root intrusion, pipe cracking or collapse, a belly, or an offset joint.
               </p>
@@ -150,7 +150,7 @@ export default function SewerLineRepair() {
                 We show you the camera footage and explain what we see in plain language before recommending a repair path.
               </p>
               <div style={{ background: '#F0F5FA', borderRadius: '6px', padding: '16px', borderLeft: '4px solid var(--brand-cyan)', marginBottom: '16px' }}>
-                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px' }}>
                   "You see the same picture we do before we recommend any course of action."
                 </p>
               </div>
@@ -188,7 +188,7 @@ export default function SewerLineRepair() {
             ].map(({ Icon, title, body, link }) => (
               <div key={title} style={{ background: 'white', borderRadius: '6px', padding: '28px', boxShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
                 <Icon size={36} color="var(--brand-cyan)" style={{ marginBottom: '16px' }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '10px' }}>{title}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '10px' }}>{title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6, marginBottom: link ? '12px' : 0 }}>{body}</p>
                 {link && <Link href={link.href} style={{ fontFamily: 'var(--font-body)', fontWeight: 500, color: 'var(--brand-cyan)', fontSize: '13px', textDecoration: 'none' }}>{link.label}</Link>}
               </div>
@@ -202,7 +202,7 @@ export default function SewerLineRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR COSTS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What does sewer line repair cost in Maryland, DC, or Virginia?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What does sewer line repair cost in Maryland, DC, or Virginia?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Sewer line repair cost varies significantly based on the repair type, depth, access, and length of pipe affected.</p>
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '672px', margin: '0 auto 16px', overflow: 'hidden' }}>
@@ -231,7 +231,7 @@ export default function SewerLineRepair() {
       {/* SECTION 7: RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
             {[{ icon: Search, label: 'Video Camera Inspection', href: '/video-camera-inspection' }, { icon: Waves, label: 'Hydro-Jetting', href: '/hydro-jetting' }, { icon: RotateCcw, label: 'Sewer Line Installation', href: '/sewer-line-installation' }, { icon: Wrench, label: 'Drain Cleaning', href: '/drain-cleaning' }, { icon: Phone, label: 'Emergency Plumbing', href: '/emergency-plumbing' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>

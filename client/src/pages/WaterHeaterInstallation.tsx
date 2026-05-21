@@ -83,12 +83,12 @@ export default function WaterHeaterInstallation() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR OR REPLACE?</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>When should you replace a water heater rather than repair it?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>When should you replace a water heater rather than repair it?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Most water heater problems can be repaired — but some situations make replacement the smarter financial and practical decision.</p>
         </div>
           <div className="grid lg:grid-cols-2 gap-10">
             <div>
-              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '16px' }}>Replace rather than repair when:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '16px' }}>Replace rather than repair when:</p>
               <div className="space-y-3">
                 {["The unit is 10+ years old (tank) or 15+ years (tankless) and experiencing a significant failure", "The tank itself is leaking — internal tank leaks are not repairable", "The repair cost exceeds 50% of the replacement cost", "The unit has required two or more major repairs in the past two years", "Consistently discolored or rust-tinted water despite thermostat repair — internal corrosion progressed", "You want to upgrade to a more energy-efficient unit and the current unit is aging"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
@@ -99,7 +99,7 @@ export default function WaterHeaterInstallation() {
               </div>
             </div>
             <div>
-              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '16px' }}>Repair rather than replace when:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '16px' }}>Repair rather than replace when:</p>
               <div className="space-y-3">
                 {["The unit is under 8-10 years old with a single component failure", "The repair cost is under $300-$400 for a unit in otherwise good condition", "The tank has no corrosion and has been maintained with annual flushing"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
@@ -124,7 +124,7 @@ export default function WaterHeaterInstallation() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WATER HEATER TYPES</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What types of water heaters does Definitive Mechanical install?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What types of water heaters does Definitive Mechanical install?</h2>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <ServiceCard title="Gas Tank Water Heaters" iconName="Flame" href="/water-heater-installation" description="The most common type in MD, DC, and Northern VA homes. Gas units heat water faster at lower cost per gallon. We install 30, 40, 50, and 75+ gallon units. Gas installation requires a licensed Master Gasfitter — we hold that license in MD, DC, VA & DE." />
@@ -142,7 +142,7 @@ export default function WaterHeaterInstallation() {
             <div>
               <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>INSTALLATION PRICING</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What does water heater installation cost in Maryland, DC, or Virginia?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What does water heater installation cost in Maryland, DC, or Virginia?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Cost depends on the unit type, size, fuel source, existing connections, venting requirements, and permit fees.</p>
         </div>
               <div style={{ border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', marginBottom: '16px' }}>
@@ -200,7 +200,7 @@ export default function WaterHeaterInstallation() {
             ].map((item) => (
               <div key={item.state} style={{ background: 'white', borderRadius: '6px', padding: '28px', textAlign: 'center' }}>
                 <MapPin size={36} color="var(--brand-cyan)" style={{ margin: '0 auto 12px' }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>{item.state}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>{item.state}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.6 }}>{item.detail}</p>
               </div>
             ))}
@@ -230,7 +230,7 @@ export default function WaterHeaterInstallation() {
             </div>
             <div>
               <p className="eyebrow mb-2">HOW LONG DOES IT TAKE?</p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>How long does water heater installation take?</h2>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>How long does water heater installation take?</h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 A standard water heater replacement — same location, same fuel type, same approximate capacity — typically takes 2-4 hours for a licensed technician. This includes disconnecting and removing the old unit, connecting the new unit to existing supply lines and gas or electrical connections, testing, and cleanup.
               </p>
@@ -257,12 +257,12 @@ export default function WaterHeaterInstallation() {
       {/* SECTION 7: RELATED SERVICES */}
       <section style={{ background: '#F0F5FA', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Wrench, label: 'Water Heater Repair', href: '/water-heater-repair' }, { icon: Zap, label: 'Tankless Water Heaters', href: '/tankless-water-heaters' }, { icon: Flame, label: 'Gas Line Installation', href: '/gas-line-installation' }, { icon: CreditCard, label: 'Financing Options', href: '/financing' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>
                 <item.icon size={20} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
-                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{item.label}</span>
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '14px' }}>{item.label}</span>
               </Link>
             ))}
           </div>

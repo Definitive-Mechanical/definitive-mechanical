@@ -119,7 +119,7 @@ export default function CommercialPlumberMaryland() {
             ].map(s => (
               <div key={s.title} className="p-6 rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
                 <s.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-3" />
-                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{s.title}</h3>
+                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif" }}>{s.title}</h3>
                 <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{s.body}</p>
               </div>
             ))}
@@ -137,7 +137,7 @@ export default function CommercialPlumberMaryland() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
             {COUNTIES.map(c => (
               <div key={c.name} className="bg-white p-6 rounded-lg shadow-sm">
-                <h3 className="font-bold text-base mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.05em" }}>{c.name}</h3>
+                <h3 className="font-bold text-base mb-2" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.05em" }}>{c.name}</h3>
                 <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{c.detail}</p>
               </div>
             ))}
@@ -179,7 +179,7 @@ export default function CommercialPlumberMaryland() {
           />
           <div className="mt-10 grid md:grid-cols-2 gap-8">
             <div className="p-6 rounded-lg" style={{ background: "var(--surface-1)", border: "2px solid var(--brand-navy)" }}>
-              <h3 className="font-bold text-lg mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Maryland License Portfolio</h3>
+              <h3 className="font-bold text-lg mb-4" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Maryland License Portfolio</h3>
               <ul className="space-y-2">
                 {[
                   "MD State Master Plumber/Gasfitter #96958",
@@ -206,7 +206,7 @@ export default function CommercialPlumberMaryland() {
                 <div key={d.title} className="flex gap-4">
                   <d.icon size={28} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <h3 className="font-bold text-base mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.05em" }}>{d.title}</h3>
+                    <h3 className="font-bold text-base mb-1" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase", letterSpacing: "0.05em" }}>{d.title}</h3>
                     <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{d.body}</p>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ export default function CommercialPlumberMaryland() {
       <section className="py-12" style={{ background: "var(--surface-1)" }}>
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--brand-navy)", fontFamily: 'var(--font-display)' }}>Commercial backflow certification and compliance in Maryland</h2>
+            <h2 className="text-2xl font-bold mb-4" style={{ color: '#0A0A0A', fontFamily: 'var(--font-display)' }}>Commercial backflow certification and compliance in Maryland</h2>
             <p className="text-base mb-6" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               WSSC requires annual backflow preventer testing for all commercial properties in Prince George's and Montgomery County. Failure to certify by the WSSC deadline triggers violation notices and potential water service interruption. Definitive Mechanical performs annual backflow certification tests and files all required documentation with WSSC on the property owner's behalf.
             </p>

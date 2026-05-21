@@ -147,7 +147,7 @@ export default function Tier1CityPage({
                 {introParagraph}
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "white", color: "var(--brand-navy)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(0,0,0,0.15)" }}>
+                <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "white", color: '#0A0A0A', fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(0,0,0,0.15)" }}>
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
                 <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "transparent", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", border: "2px solid rgba(255,255,255,0.35)", textDecoration: "none" }}>
@@ -193,7 +193,7 @@ export default function Tier1CityPage({
             ].map(({ icon: Icon, stat, label }) => (
               <div key={label} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                 <Icon size={20} style={{ color: "var(--brand-navy)" }} />
-                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "20px", color: "var(--brand-navy)", textTransform: "uppercase", letterSpacing: "0.04em" }}>{stat}</span>
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "20px", color: '#0A0A0A', textTransform: "uppercase", letterSpacing: "0.04em" }}>{stat}</span>
                 <span style={{ fontFamily: "var(--font-body)", fontSize: "12px", color: "rgba(3,24,56,0.75)", fontWeight: 500 }}>{label}</span>
               </div>
             ))}
@@ -208,7 +208,7 @@ export default function Tier1CityPage({
           <div style={{ marginBottom: "40px" }}>
             <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, margin: 0 }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.05, margin: 0 }}>
                 Plumbing Services in {cityName}
               </h2>
               <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
@@ -224,7 +224,7 @@ export default function Tier1CityPage({
             <div key={cat.key} style={{ marginBottom: '36px' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '18px' }}>
                 <div style={{ height: '3px', width: '28px', background: cat.color, flexShrink: 0, borderRadius: '2px' }} />
-                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--brand-navy)' }}>{cat.title}</span>
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#0A0A0A' }}>{cat.title}</span>
                 <div style={{ height: '1px', flex: 1, background: '#E6E8EE' }} />
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -254,7 +254,7 @@ export default function Tier1CityPage({
                       </div>
                     </div>
                     <div style={{ padding: "14px 16px 16px" }}>
-                      <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                      <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: '#0A0A0A', marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
                       <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                     </div>
                   </div>
@@ -319,7 +319,7 @@ export default function Tier1CityPage({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Local Knowledge</p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,36px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, marginBottom: "20px" }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,36px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.05, marginBottom: "20px" }}>
                 {localContextHeading}
               </h2>
               {localContextBody.split("\n").filter(Boolean).map((para, i) => (
@@ -347,7 +347,7 @@ export default function Tier1CityPage({
                   ))}
                 </div>
                 <div style={{ marginTop: "20px", paddingTop: "20px", borderTop: "1px solid rgba(255,255,255,0.1)" }}>
-                  <a href="tel:+13016795849" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "13px 20px", borderRadius: "6px", textDecoration: "none" }}>
+                  <a href="tel:+13016795849" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "var(--brand-cyan)", color: '#0A0A0A', fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "13px 20px", borderRadius: "6px", textDecoration: "none" }}>
                     <Phone size={15} /> CALL (301) 679-5849
                   </a>
                 </div>
@@ -396,7 +396,7 @@ export default function Tier1CityPage({
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
             <div>
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Coverage</p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(20px,2.5vw,28px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.1, marginBottom: "12px" }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(20px,2.5vw,28px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.1, marginBottom: "12px" }}>
                 Nearby Areas We Serve
               </h2>
               <Link href="/service-areas" style={{ fontFamily: "var(--font-body)", color: "var(--brand-cyan)", fontSize: "13px", fontWeight: 600, textDecoration: "none" }}>

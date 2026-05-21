@@ -69,7 +69,7 @@ export default function BackflowPreventerRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WHY BACKFLOW PREVENTERS FAIL</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Why do backflow preventers fail?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>Why do backflow preventers fail?</h2>
         </div>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '640px', margin: '0 auto 40px', textAlign: 'center' }}>
             Backflow preventers are mechanical devices exposed to water pressure, temperature fluctuation, debris, and chemical exposure. Over time, internal components wear.
@@ -79,7 +79,7 @@ export default function BackflowPreventerRepair() {
               <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', gap: '14px', alignItems: 'flex-start', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderLeftWidth: '4px', borderLeftColor: 'var(--brand-cyan)' }}>
                 <Icon size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '4px' }}>{title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '14px', marginBottom: '4px' }}>{title}</p>
                   <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function BackflowPreventerRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR OR REPLACE?</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Can a failed backflow preventer be repaired or does it need to be replaced?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>Can a failed backflow preventer be repaired or does it need to be replaced?</h2>
         </div>
           <div className="grid lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {/* Repair */}
@@ -124,7 +124,7 @@ export default function BackflowPreventerRepair() {
               </div>
             </div>
           </div>
-          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', textAlign: 'center', marginTop: '32px', maxWidth: '640px', margin: '32px auto 0' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '16px', textAlign: 'center', marginTop: '32px', maxWidth: '640px', margin: '32px auto 0' }}>
             We assess each device and give you an honest repair-or-replace recommendation — not a replacement recommendation driven by margin.
           </p>
         </div>
@@ -133,7 +133,7 @@ export default function BackflowPreventerRepair() {
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
             {[{ icon: ShieldCheck, label: 'Backflow Certification', href: '/backflow-certification' }, { icon: Shield, label: 'Backflow Prevention', href: '/backflow-prevention' }, { icon: CheckCircle2, label: 'Commercial Plumbing', href: '/commercial-plumbing' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>

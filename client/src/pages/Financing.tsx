@@ -45,7 +45,7 @@ export default function Financing() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 py-4 px-8 rounded transition-all hover:-translate-y-0.5"
-                  style={{ background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
+                  style={{ background: "var(--brand-cyan)", color: '#0A0A0A', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
                 >
                   <CreditCard size={18} />
                   APPLY FOR FINANCING
@@ -84,7 +84,7 @@ export default function Financing() {
               <div key={i} className="text-center p-8 rounded-md" style={{ background: "var(--surface-1)" }}>
                 <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "36px", fontWeight: 700, lineHeight: 1 }} className="mb-4">{item.step}</p>
                 <item.icon size={32} style={{ color: "var(--brand-navy)", margin: "0 auto 12px" }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.6 }}>{item.body}</p>
               </div>
             ))}
@@ -123,7 +123,7 @@ export default function Financing() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 py-4 px-10 rounded transition-all hover:-translate-y-0.5"
-              style={{ background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
+              style={{ background: "var(--brand-cyan)", color: '#0A0A0A', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
             >
               <CreditCard size={20} />
               APPLY FOR FINANCING NOW
@@ -146,7 +146,7 @@ export default function Financing() {
               <div key={i} className="flex items-start gap-4 p-6 rounded-md" style={{ background: "var(--surface-1)" }}>
                 <item.icon size={28} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                 <div>
-                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
+                  <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
                   <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.6 }}>{item.body}</p>
                 </div>
               </div>

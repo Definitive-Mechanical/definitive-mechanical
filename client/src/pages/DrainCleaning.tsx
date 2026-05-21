@@ -88,7 +88,7 @@ export default function DrainCleaning() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>DRAIN CLEANING SERVICES</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What drain cleaning services does Definitive Mechanical provide?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What drain cleaning services does Definitive Mechanical provide?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>From kitchen and bathroom drains to main sewer line clearing and hydro-jetting, we handle the full range of drain and sewer services for residential, commercial, and government properties.</p>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -103,7 +103,7 @@ export default function DrainCleaning() {
                 <div style={{ width: '44px', height: '44px', background: 'rgba(0,117,186,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
                   <Droplets size={22} color="var(--brand-cyan)" />
                 </div>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: '#0A0A0A', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{service.desc}</p>
               </div>
             ))}
@@ -118,7 +118,7 @@ export default function DrainCleaning() {
             <div>
               <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WHY CHOOSE DEFINITIVE MECHANICAL</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Why choose Definitive Mechanical for drain cleaning in the DMV?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>Why choose Definitive Mechanical for drain cleaning in the DMV?</h2>
         </div>
               <div className="space-y-4">
                 {[
@@ -130,7 +130,7 @@ export default function DrainCleaning() {
                   <div key={item.title} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
                     <CheckCircle2 size={20} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <div>
-                      <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '4px' }}>{item.title}</p>
+                      <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: '#0A0A0A', fontSize: '15px', marginBottom: '4px' }}>{item.title}</p>
                       <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{item.desc}</p>
                     </div>
                   </div>

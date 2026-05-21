@@ -163,7 +163,7 @@ export default function ServicePageLayout({
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                 <a
                   href="tel:+13016795849"
-                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "white", color: "var(--brand-navy)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(0,0,0,0.15)" }}
+                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "white", color: '#0A0A0A', fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(0,0,0,0.15)" }}
                 >
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
@@ -213,7 +213,7 @@ export default function ServicePageLayout({
             ].map(({ icon: Icon, stat, label }) => (
               <div key={label} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "4px" }}>
                 <Icon size={20} style={{ color: "var(--brand-navy)" }} />
-                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "20px", color: "var(--brand-navy)", textTransform: "uppercase", letterSpacing: "0.04em" }}>{stat}</span>
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "20px", color: '#0A0A0A', textTransform: "uppercase", letterSpacing: "0.04em" }}>{stat}</span>
                 <span style={{ fontFamily: "var(--font-body)", fontSize: "12px", color: "rgba(3,24,56,0.75)", fontWeight: 500 }}>{label}</span>
               </div>
             ))}
@@ -230,7 +230,7 @@ export default function ServicePageLayout({
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
                 {servicesEyebrow || "Services"}
               </p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px, 3vw, 34px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, marginBottom: "16px" }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px, 3vw, 34px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.05, marginBottom: "16px" }}>
                 {servicesHeading}
               </h2>
               {servicesSubtext && (
@@ -262,7 +262,7 @@ export default function ServicePageLayout({
                   <div style={{ width: "40px", height: "40px", background: "rgba(0,117,186,0.1)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "12px" }}>
                     <CheckCircle2 size={20} color="var(--brand-cyan)" />
                   </div>
-                  <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-navy)", fontSize: "16px", marginBottom: "8px", lineHeight: 1.2 }}>
+                  <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: '#0A0A0A', fontSize: "16px", marginBottom: "8px", lineHeight: 1.2 }}>
                     {svc.title}
                   </h3>
                   <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.7, margin: 0 }}>
@@ -327,7 +327,7 @@ export default function ServicePageLayout({
                 </div>
                 <a
                   href="tel:+13016795849"
-                  style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 20px", borderRadius: "6px", textDecoration: "none" }}
+                  style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "var(--brand-cyan)", color: '#0A0A0A', fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 20px", borderRadius: "6px", textDecoration: "none" }}
                 >
                   <Phone size={15} /> CALL (301) 679-5849
                 </a>
@@ -346,7 +346,7 @@ export default function ServicePageLayout({
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
                   How It Works
                 </p>
-                <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px, 3vw, 34px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, marginBottom: "16px" }}>
+                <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px, 3vw, 34px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.05, marginBottom: "16px" }}>
                   {processHeading || "Our Process"}
                 </h2>
                 <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.7 }}>

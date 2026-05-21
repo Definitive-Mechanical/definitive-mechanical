@@ -71,7 +71,7 @@ export default function EmergencyPlumbing() {
         }}
       >
         <Zap size={16} color="var(--brand-navy)" />
-        <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-navy)' }}>
+        <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#0A0A0A' }}>
           Plumbing Emergency? Call {BUSINESS.phone} — Live Dispatcher Answering 24/7, 365 Days
         </span>
       </a>
@@ -152,7 +152,7 @@ export default function EmergencyPlumbing() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>EMERGENCY SITUATIONS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What qualifies as a plumbing emergency?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What qualifies as a plumbing emergency?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>A plumbing emergency is any situation that poses an immediate risk to your property, safety, or water supply — problems that cannot safely wait until the next business day.</p>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
@@ -168,7 +168,7 @@ export default function EmergencyPlumbing() {
               }}>
                 <scenario.icon size={22} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '2px' }}>{scenario.title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', marginBottom: '2px' }}>{scenario.title}</p>
                   <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '13px' }}>{scenario.desc}</p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function EmergencyPlumbing() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>OUR EMERGENCY PROCESS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>How quickly does Definitive Mechanical respond to plumbing emergencies?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>How quickly does Definitive Mechanical respond to plumbing emergencies?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>We answer every emergency call with a live dispatcher — not a voicemail, not an after-hours recording. We dispatch licensed technicians across our full MD, DC, and Northern VA service area 24/7/365 — including weekends, holidays, and severe weather.</p>
         </div>
           <div>
@@ -218,7 +218,7 @@ export default function EmergencyPlumbing() {
           }}>
             <ShieldCheck size={32} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
             <div>
-              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '6px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: '#0A0A0A', fontSize: '16px', marginBottom: '6px' }}>
                 All services have a trip fee.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>
@@ -280,7 +280,7 @@ export default function EmergencyPlumbing() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>EMERGENCY SERVICE AREA</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Where does Definitive Mechanical provide 24/7 emergency plumbing?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>Where does Definitive Mechanical provide 24/7 emergency plumbing?</h2>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -289,7 +289,7 @@ export default function EmergencyPlumbing() {
               { state: 'Northern Virginia', areas: ['Fairfax County', 'Arlington County', 'Loudoun County', 'Prince William County'], cities: 'Alexandria, Arlington, McLean, Springfield, Vienna' },
             ].map((area) => (
               <div key={area.state} style={{ background: '#F0F5FA', borderRadius: '6px', padding: '24px', borderTop: '3px solid var(--brand-cyan)' }}>
-                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '10px' }}>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '10px' }}>
                   {area.state}
                 </h3>
                 {area.areas.map((a) => (

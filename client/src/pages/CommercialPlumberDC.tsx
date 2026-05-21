@@ -99,7 +99,7 @@ export default function CommercialPlumberDC() {
             {DC_MARKETS.map(m => (
               <div key={m.title} className="p-6 rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
                 <Building2 size={28} style={{ color: "var(--brand-cyan)" }} className="mb-3" />
-                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{m.title}</h3>
+                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif" }}>{m.title}</h3>
                 <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{m.detail}</p>
               </div>
             ))}

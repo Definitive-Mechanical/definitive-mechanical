@@ -152,7 +152,7 @@ export default function MBECertified() {
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "32px 48px" }}>
             {[{ value: "20-134", label: "MDOT MBE Cert No." }, { value: "8HCF6", label: "CAGE Code" }, { value: "4", label: "State Licenses" }, { value: "11+", label: "Years in Business" }].map((stat, i) => (
               <div key={i} style={{ textAlign: "center" }}>
-                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "22px", color: "var(--brand-navy)", textTransform: "uppercase", letterSpacing: "0.02em", margin: 0, lineHeight: 1 }}>{stat.value}</p>
+                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "22px", color: '#0A0A0A', textTransform: "uppercase", letterSpacing: "0.02em", margin: 0, lineHeight: 1 }}>{stat.value}</p>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", color: "rgba(0,48,96,0.75)", margin: "3px 0 0", textTransform: "uppercase", letterSpacing: "0.1em" }}>{stat.label}</p>
               </div>
             ))}
@@ -217,7 +217,7 @@ export default function MBECertified() {
             {ENGAGEMENT_STEPS.map((s, i) => (
               <div key={i} style={{ background: "#FAFBFC", border: "1px solid #E2E8F0", borderLeft: "4px solid var(--brand-cyan)", borderRadius: "3px", padding: "24px 20px" }}>
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "32px", color: "var(--brand-cyan)", lineHeight: 1, marginBottom: 8 }}>{s.step}</p>
-                <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px", textTransform: "uppercase", color: "var(--brand-navy)", margin: "0 0 8px" }}>{s.title}</h3>
+                <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px", textTransform: "uppercase", color: '#0A0A0A', margin: "0 0 8px" }}>{s.title}</h3>
                 <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "13px", lineHeight: 1.6, margin: 0 }}>{s.body}</p>
               </div>
             ))}
@@ -253,7 +253,7 @@ export default function MBECertified() {
       {/* S8: INTERNAL LINKS */}
       <section className="py-10" style={{ background: "var(--surface-1)" }}>
         <div className="container">
-          <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.15em", color: "var(--brand-navy)", marginBottom: 12 }}>Related Pages</p>
+          <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.15em", color: '#0A0A0A', marginBottom: 12 }}>Related Pages</p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
             {[
               { label: "Government & Municipal Plumbing", href: "/government-municipal-plumbing/" },

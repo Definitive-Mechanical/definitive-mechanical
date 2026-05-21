@@ -86,7 +86,7 @@ export default function GovernmentMunicipalPlumbing() {
               <div key={item.label} style={{ textAlign: 'center', padding: '12px' }}>
                 <item.icon size={24} color="var(--brand-navy)" style={{ margin: '0 auto 8px' }} />
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '4px' }}>{item.label}</p>
-                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--brand-navy)', fontSize: '14px', fontWeight: 600 }}>{item.value}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: '#0A0A0A', fontSize: '14px', fontWeight: 600 }}>{item.value}</p>
               </div>
             ))}
           </div>
@@ -98,7 +98,7 @@ export default function GovernmentMunicipalPlumbing() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>GOVERNMENT & MUNICIPAL SERVICES</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Plumbing services for government agencies and public institutions</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>Plumbing services for government agencies and public institutions</h2>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -117,7 +117,7 @@ export default function GovernmentMunicipalPlumbing() {
                 boxShadow: '0 4px 16px rgba(6,59,99,0.10)',
               }}>
                 <Landmark size={22} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
-                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{service.title}</h3>
+                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: '#0A0A0A', fontSize: '15px', marginBottom: '8px' }}>{service.title}</h3>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.7 }}>{service.desc}</p>
               </div>
             ))}

@@ -75,12 +75,12 @@ export default function BackflowCertification() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>CERTIFICATION REQUIREMENTS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What is backflow certification and who requires it?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What is backflow certification and who requires it?</h2>
         </div>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px', textAlign: 'center' }}>
             Backflow preventer certification is the annual testing and documentation of a backflow prevention device to confirm it is functioning correctly and preventing contaminated water from flowing backward into the public supply. Most water suppliers — including WSSC in Prince George's and Montgomery Counties, DC Water, and Virginia's local water authorities — require annual testing and certification of backflow prevention devices on commercial accounts.
           </p>
-          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', maxWidth: '720px', margin: '0 auto 20px', textAlign: 'center' }}>Properties that typically require annual backflow certification:</p>
+          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', maxWidth: '720px', margin: '0 auto 20px', textAlign: 'center' }}>Properties that typically require annual backflow certification:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-3xl mx-auto">
             {PROPERTIES_REQUIRING.map((item) => (
               <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center', padding: '8px 0' }}>
@@ -97,7 +97,7 @@ export default function BackflowCertification() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>THE CERTIFICATION PROCESS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What happens during a backflow preventer test?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What happens during a backflow preventer test?</h2>
         </div>
           <div className="max-w-3xl mx-auto">
             {CERT_STEPS.map((step, i) => (
@@ -112,7 +112,7 @@ export default function BackflowCertification() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>What happens if my backflow preventer fails its certification test?</h2>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>What happens if my backflow preventer fails its certification test?</h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 A failed test means one or more components of the device are not functioning within required parameters. This does not always mean the device needs to be replaced — many failures are repairable on site during the same service visit. If the device cannot be repaired on site, we document the failure, coordinate the necessary repair or replacement, and schedule a follow-up certification test.
               </p>
@@ -165,7 +165,7 @@ export default function BackflowCertification() {
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Shield, label: 'Backflow Prevention', href: '/backflow-prevention' }, { icon: ShieldCheck, label: 'Backflow Preventer Repair', href: '/backflow-preventer-repair' }, { icon: CheckCircle2, label: 'Commercial Plumbing', href: '/commercial-plumbing' }, { icon: CheckCircle2, label: 'Government & Municipal', href: '/government-municipal-plumbing' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>

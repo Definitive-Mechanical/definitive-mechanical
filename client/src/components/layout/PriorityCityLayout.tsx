@@ -283,7 +283,7 @@ export default function PriorityCityLayout({
               { value: "MD  DC  VA", label: "Service Region" },
             ].map((stat, i) => (
               <div key={i} style={{ textAlign: "center" }}>
-                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "22px", color: "var(--brand-navy)", textTransform: "uppercase", letterSpacing: "0.02em", margin: 0, lineHeight: 1 }}>{stat.value}</p>
+                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "22px", color: '#0A0A0A', textTransform: "uppercase", letterSpacing: "0.02em", margin: 0, lineHeight: 1 }}>{stat.value}</p>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", color: "rgba(0,48,96,0.75)", margin: "3px 0 0", textTransform: "uppercase", letterSpacing: "0.1em" }}>{stat.label}</p>
               </div>
             ))}
@@ -300,7 +300,7 @@ export default function PriorityCityLayout({
               {servicesEyebrow || "LICENSED PLUMBING SERVICES"}
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,34px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.1, margin: 0 }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,34px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.1, margin: 0 }}>
                 {servicesHeading}
               </h2>
               <a href="tel:+13016795849" style={{
@@ -326,7 +326,7 @@ export default function PriorityCityLayout({
 
                 <div style={{ height: "3px", width: "28px", background: cat.color, flexShrink: 0, borderRadius: "2px" }} />
 
-                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-navy)" }}>{cat.title}</span>
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: '#0A0A0A' }}>{cat.title}</span>
 
                 <div style={{ height: "1px", flex: 1, background: "#E6E8EE" }} />
 
@@ -352,7 +352,7 @@ export default function PriorityCityLayout({
                     <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
                   </div>
                   <div style={{ padding: "14px 16px 16px" }}>
-                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: '#0A0A0A', marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
                     <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                   </div>
                 </div>
@@ -421,7 +421,7 @@ export default function PriorityCityLayout({
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
                 {localContextEyebrow || "LOCAL PLUMBING NEEDS"}
               </p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.1, marginBottom: 20 }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.1, marginBottom: 20 }}>
                 {localContextHeading}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -435,7 +435,7 @@ export default function PriorityCityLayout({
                       <div style={{ background: "rgba(0,158,198,0.1)", borderRadius: "8px", padding: "7px" }}>
                         <card.icon size={18} style={{ color: "var(--brand-cyan)", display: "block" }} />
                       </div>
-                      <p style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "var(--brand-navy)", fontSize: "14px", margin: 0 }}>{card.title}</p>
+                      <p style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: '#0A0A0A', fontSize: "14px", margin: 0 }}>{card.title}</p>
                     </div>
                     <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "13px", lineHeight: 1.65, margin: 0 }}>{card.body}</p>
                   </div>
@@ -543,7 +543,7 @@ export default function PriorityCityLayout({
           <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
             NEARBY SERVICE AREAS
           </p>
-          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(20px,2.5vw,28px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.1, marginBottom: 20 }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(20px,2.5vw,28px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.1, marginBottom: 20 }}>
             Areas We Also Serve
           </h2>
           {nearbyGroups ? (

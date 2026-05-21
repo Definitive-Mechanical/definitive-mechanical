@@ -90,7 +90,7 @@ export default function RockvilleMD() {
           <div className="border-2 rounded-lg p-5 max-w-2xl mx-auto mb-8 flex items-start gap-4" style={{ borderColor:"var(--brand-cyan)" }}>
             <Key size={28} style={{ color:"var(--brand-cyan)", flexShrink:0, marginTop:2 }} />
             <div>
-              <p style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", letterSpacing:"0.1em", marginBottom:"6px" }}>
+              <p style={{ fontFamily:"var(--font-display)", fontWeight:700, color: '#0A0A0A', fontSize:"13px", textTransform:"uppercase", letterSpacing:"0.1em", marginBottom:"6px" }}>
                 CITY OF ROCKVILLE MUNICIPAL LICENSE
               </p>
               <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>
@@ -111,7 +111,7 @@ export default function RockvilleMD() {
                 <div style={{ height: "3px", width: "28px", background: cat.color, flexShrink: 0, borderRadius: "2px" }} />
 
 
-                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-navy)" }}>{cat.title}</span>
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: '#0A0A0A' }}>{cat.title}</span>
 
 
                 <div style={{ height: "1px", flex: 1, background: "#E6E8EE" }} />
@@ -141,7 +141,7 @@ export default function RockvilleMD() {
                       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
                     </div>
                   <div style={{ padding: "14px 16px 16px" }}>
-                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: '#0A0A0A', marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
                     <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ export default function RockvilleMD() {
         <div className="container">
           <SectionHeading eyebrow="NEARBY SERVICE AREAS" heading="Areas near Rockville we also serve" />
           <div className="mb-3">
-            <span style={{ fontFamily:"var(--font-display)", fontWeight:700, color:"var(--brand-navy)", fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
+            <span style={{ fontFamily:"var(--font-display)", fontWeight:700, color: '#0A0A0A', fontSize:"13px", textTransform:"uppercase", marginRight:"8px" }}>Nearby:</span>
             <Link href="/service-areas/maryland/montgomery-county/bethesda-md" style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Bethesda, MD</Link>
             <Link href="/service-areas/maryland/montgomery-county/potomac-md" style={{ fontFamily:"var(--font-body)", color:"var(--brand-cyan)", fontSize:"14px", marginRight:"12px" }}>Potomac, MD</Link>
             {["Gaithersburg, MD","Germantown, MD","North Bethesda, MD","Derwood, MD","Travilah, MD","Darnestown, MD","Cabin John, MD"].map((city, i) => (

@@ -124,11 +124,11 @@ export default function FaucetToiletRepair() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <p className="eyebrow mb-2">FAUCET REPAIR</p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>Common faucet problems we repair</h2>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>Common faucet problems we repair</h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
                 A dripping faucet wastes more water than most homeowners realize — a faucet dripping once per second wastes approximately 3,000 gallons of water per year. Beyond water cost, a dripping faucet that goes untreated often leads to mineral staining, fixture damage, and eventually more expensive repairs.
               </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '12px' }}>Faucet repairs we handle:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '12px' }}>Faucet repairs we handle:</p>
               <div className="space-y-2">
                 {FAUCET_REPAIRS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
@@ -177,11 +177,11 @@ export default function FaucetToiletRepair() {
             </div>
             <div>
               <p className="eyebrow mb-2">TOILET REPAIR</p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>Common toilet problems we repair</h2>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>Common toilet problems we repair</h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
                 A running toilet — the continuous sound of water running in the tank — wastes an average of 200 gallons of water per day. This is both costly and easily repaired in most cases.
               </p>
-              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '12px' }}>Toilet repairs we handle:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '12px' }}>Toilet repairs we handle:</p>
               <div className="space-y-2">
                 {TOILET_REPAIRS.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
@@ -200,7 +200,7 @@ export default function FaucetToiletRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR OR REPLACE?</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>When should you replace a faucet or toilet rather than repair it?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>When should you replace a faucet or toilet rather than repair it?</h2>
         </div>
           <div className="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div style={{ background: '#F8FAFC', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px' }}>
@@ -226,7 +226,7 @@ export default function FaucetToiletRepair() {
               </div>
             </div>
           </div>
-          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', textAlign: 'center', maxWidth: '640px', margin: '28px auto 0' }}>
+          <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', textAlign: 'center', maxWidth: '640px', margin: '28px auto 0' }}>
             A licensed Master Plumber can give you an honest repair-or-replace recommendation based on the actual condition of your fixture — not a recommendation driven by the margin on a new toilet.
           </p>
         </div>
@@ -243,7 +243,7 @@ export default function FaucetToiletRepair() {
             ].map(({ Icon, stat, label }) => (
               <div key={label} style={{ padding: '24px' }}>
                 <Icon size={32} color="var(--brand-navy)" style={{ margin: '0 auto 12px' }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '28px', marginBottom: '6px' }}>{stat}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '28px', marginBottom: '6px' }}>{stat}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--brand-blue)', fontSize: '14px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{label}</p>
               </div>
             ))}
@@ -254,7 +254,7 @@ export default function FaucetToiletRepair() {
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { icon: Wrench, label: 'Drain Cleaning', href: '/drain-cleaning' },

@@ -63,7 +63,7 @@ export default function GasLeakRepair() {
               {/* Dominant phone CTA */}
               <a href="tel:+13016795849" style={{ background: 'var(--brand-cyan)', borderRadius: '4px', padding: '20px 24px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', textDecoration: 'none', width: '100%', maxWidth: '560px', marginBottom: '20px' }}>
                 <Phone size={24} color="var(--brand-navy)" />
-                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>CALL (301) 679-5849 — EMERGENCY GAS REPAIR, 24/7</span>
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '18px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>CALL (301) 679-5849 — EMERGENCY GAS REPAIR, 24/7</span>
               </a>
 
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '12px' }}>
@@ -82,7 +82,7 @@ export default function GasLeakRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>GAS LEAK CAUSES</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What causes gas leaks in homes and commercial properties?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What causes gas leaks in homes and commercial properties?</h2>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {[
@@ -95,7 +95,7 @@ export default function GasLeakRepair() {
             ].map(({ Icon, title, body }) => (
               <div key={title} style={{ background: 'white', borderTop: '3px solid #F59E0B', borderRadius: '4px', padding: '20px' }}>
                 <Icon size={24} color="#F59E0B" style={{ marginBottom: '10px' }} />
-                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '6px' }}>{title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '14px', marginBottom: '6px' }}>{title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.6 }}>{body}</p>
               </div>
             ))}
@@ -108,7 +108,7 @@ export default function GasLeakRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>HOW WE REPAIR GAS LEAKS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>How does Definitive Mechanical repair a gas leak?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>How does Definitive Mechanical repair a gas leak?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Once the gas company has shut off the supply and cleared the scene for entry:</p>
         </div>
           <div className="max-w-3xl mx-auto">
@@ -140,7 +140,7 @@ export default function GasLeakRepair() {
       {/* RELATED SERVICES */}
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[{ icon: Wrench, label: 'Gas Line Repair', href: '/gas-line-repair' }, { icon: Search, label: 'Gas Line Installation', href: '/gas-line-installation' }, { icon: AlertTriangle, label: 'Emergency Plumbing', href: '/emergency-plumbing' }, { icon: CheckCircle2, label: 'Licenses & Certifications', href: '/licenses-certifications' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: '#F8FAFC', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>

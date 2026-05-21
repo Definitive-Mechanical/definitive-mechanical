@@ -98,7 +98,7 @@ export default function CommercialPlumberNorthernVirginia() {
             {NOVA_MARKETS.map(m => (
               <div key={m.title} className="p-6 rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
                 <m.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-3" />
-                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{m.title}</h3>
+                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif" }}>{m.title}</h3>
                 <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{m.detail}</p>
               </div>
             ))}
@@ -145,7 +145,7 @@ export default function CommercialPlumberNorthernVirginia() {
           <SectionHeading eyebrow="Licensing" heading="Are you licensed for commercial plumbing in all Northern Virginia jurisdictions?" />
           <div className="mt-8 grid md:grid-cols-2 gap-8">
             <div className="p-6 rounded-lg bg-white" style={{ border: "2px solid var(--brand-navy)" }}>
-              <h3 className="font-bold text-lg mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Virginia License Portfolio</h3>
+              <h3 className="font-bold text-lg mb-4" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>Virginia License Portfolio</h3>
               <ul className="space-y-2">
                 {LICENSES.map(l => (
                   <li key={l} className="flex items-center gap-2 text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif" }}>
@@ -167,7 +167,7 @@ export default function CommercialPlumberNorthernVirginia() {
                 <div key={d.title} className="flex gap-4 p-4 bg-white rounded-lg">
                   <d.icon size={24} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>{d.title}</h3>
+                    <h3 className="font-bold text-sm mb-1" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif", textTransform: "uppercase" }}>{d.title}</h3>
                     <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{d.body}</p>
                   </div>
                 </div>

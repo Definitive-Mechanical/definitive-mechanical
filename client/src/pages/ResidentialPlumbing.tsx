@@ -119,14 +119,14 @@ export default function ResidentialPlumbing() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>RESIDENTIAL SERVICES</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What residential plumbing services does Definitive Mechanical provide?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What residential plumbing services does Definitive Mechanical provide?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Definitive Mechanical handles the full range of residential plumbing for homeowners across the DMV — from small repairs to major system work.</p>
         </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {SERVICE_CARDS.map(({ Icon, title, items }) => (
               <div key={title} style={{ background: 'white', borderTop: '4px solid var(--brand-cyan)', borderRadius: '6px', padding: '24px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)' }}>
                 <Icon size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
-                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '12px' }}>{title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '16px', marginBottom: '12px' }}>{title}</p>
                 <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                   {items.map((item) => (
                     <li key={item} style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.6, paddingBottom: '4px' }}>• {item}</li>
@@ -150,7 +150,7 @@ export default function ResidentialPlumbing() {
               <div key={title} style={{ background: 'white', borderRadius: '6px', padding: '24px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '10px' }}>
                   <Icon size={20} color="#C0392B" style={{ flexShrink: 0 }} />
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px' }}>{title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px' }}>{title}</p>
                 </div>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{body}</p>
               </div>
@@ -169,7 +169,7 @@ export default function ResidentialPlumbing() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '8px' }}>How does Definitive Mechanical's pricing work for residential clients?</h2>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '8px' }}>How does Definitive Mechanical's pricing work for residential clients?</h2>
               <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-cyan)', fontSize: '15px', marginBottom: '16px' }}>Upfront pricing in writing — before any work begins.</p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '20px' }}>
                 When our technician arrives at your home, they assess the situation and provide written pricing before starting work. You know what you are paying before we touch a pipe. If the scope of the job changes during the work, we discuss it with you before proceeding — never after.
@@ -181,7 +181,7 @@ export default function ResidentialPlumbing() {
                 {["Written pricing before we touch a pipe", "No commissioned salespeople", "Trip fee applies to all services — all services have a trip fee"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                     <CheckCircle2 size={16} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{item}</span>
+                    <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '14px' }}>{item}</span>
                   </div>
                 ))}
               </div>
@@ -221,7 +221,7 @@ export default function ResidentialPlumbing() {
       {/* RELATED SERVICES */}
       <section style={{ background: '#F0F5FA', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
             {[
               { icon: AlertTriangle, label: 'Emergency Plumbing', href: '/emergency-plumbing' },

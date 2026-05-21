@@ -350,7 +350,7 @@ export default function Header() {
             <Link
               href="/contact"
               className="flex items-center justify-center no-underline"
-              style={{ height: '48px', fontSize: '14px', borderRadius: '6px', background: 'transparent', color: 'var(--brand-navy)', border: '1px solid var(--brand-navy)', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em' }}
+              style={{ height: '48px', fontSize: '14px', borderRadius: '6px', background: 'transparent', color: '#0A0A0A', border: '1px solid var(--brand-navy)', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em' }}
               onClick={() => setMobileOpen(false)}
             >
               REQUEST SERVICE

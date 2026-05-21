@@ -74,7 +74,7 @@ export default function GasLineRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>GAS LINE WARNING SIGNS</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What are the warning signs of a gas line problem?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What are the warning signs of a gas line problem?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Gas line issues require immediate attention. Natural gas and propane are odorless in their natural state — the rotten egg or sulfur smell is an odorant added specifically to make leaks detectable. Do not ignore this smell.</p>
         </div>
           <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -84,7 +84,7 @@ export default function GasLineRepair() {
                 <AlertTriangle size={20} color="#C0392B" />
                 <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#C0392B', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>EVACUATE AND CALL</span>
               </div>
-              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '12px' }}>Warning signs that require immediate action:</p>
+              <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '14px', marginBottom: '12px' }}>Warning signs that require immediate action:</p>
               <div className="space-y-2">
                 {["Smell of rotten egg or sulfur — evacuate and call immediately", "Hissing or whistling sound near a gas line, appliance, or meter", "Dead or dying vegetation above an underground gas line without other explanation", "Visible bubbling in puddles or wet ground near a gas line location", "A gas appliance that will not light or that has intermittent ignition", "Higher-than-normal gas bills without a change in usage", "Physical damage to visible gas piping"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'flex-start' }}>
@@ -115,7 +115,7 @@ export default function GasLineRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>GAS LINE REPAIR SERVICES</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What gas line repair services does Definitive Mechanical provide?</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What gas line repair services does Definitive Mechanical provide?</h2>
         </div>
           <div className="max-w-4xl mx-auto space-y-4">
             {[
@@ -128,7 +128,7 @@ export default function GasLineRepair() {
               <div key={title} style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '24px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
                 <Icon size={28} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
                 <div>
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '6px' }}>{title}</p>
                   <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6, marginBottom: link ? '8px' : 0 }}>{body}</p>
                   {link && <Link href={link.href} style={{ fontFamily: 'var(--font-body)', fontWeight: 500, color: 'var(--brand-cyan)', fontSize: '13px', textDecoration: 'none' }}>{link.label}</Link>}
                 </div>
@@ -154,7 +154,7 @@ export default function GasLineRepair() {
             {LICENSE_ROWS.map((row, i) => (
               <div key={row.jurisdiction} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '11px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
                 <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{row.jurisdiction}</span>
-                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px' }}>{row.number}</span>
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px' }}>{row.number}</span>
               </div>
             ))}
           </div>
@@ -183,7 +183,7 @@ export default function GasLineRepair() {
             </div>
             <div>
               <p className="eyebrow mb-2">COMMERCIAL GAS SYSTEMS</p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>Do you repair commercial gas lines?</h2>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '16px' }}>Do you repair commercial gas lines?</h2>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
                 Yes. Definitive Mechanical repairs commercial gas systems for restaurants, commercial kitchens, office buildings, industrial facilities, government buildings, and multi-family properties. Commercial gas line work often involves larger pipe diameters, higher pressure systems, and more complex appliance configurations than residential work — all of which require the same licensed Master Gasfitter oversight.
               </p>
@@ -207,7 +207,7 @@ export default function GasLineRepair() {
       {/* RELATED SERVICES */}
       <section style={{ background: '#F0F5FA', padding: '48px 0' }}>
         <div className="container">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '24px' }}>RELATED SERVICES</p>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
             {[{ icon: Search, label: 'Gas Leak Repair', href: '/gas-leak-repair' }, { icon: Wrench, label: 'Gas Line Installation', href: '/gas-line-installation' }, { icon: AlertTriangle, label: 'Emergency Plumbing', href: '/emergency-plumbing' }, { icon: CheckCircle2, label: 'Licenses & Certifications', href: '/licenses-certifications' }, { icon: Gauge, label: 'Boiler & Furnace Repair', href: '/boiler-furnace-repair' }].map((item) => (
               <Link key={item.label} href={item.href} style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', textDecoration: 'none' }}>

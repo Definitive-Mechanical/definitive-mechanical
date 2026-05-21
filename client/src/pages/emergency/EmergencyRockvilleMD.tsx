@@ -131,7 +131,7 @@ export default function EmergencyRockvilleMD() {
             {EMERGENCY_TYPES.map((type) => (
               <div key={type.title} className="bg-white rounded-md p-4 shadow-sm">
                 <type.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
+                <h3 className="font-bold text-sm mb-1" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif" }}>{type.title}</h3>
                 <p className="text-xs text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{type.body}</p>
               </div>
             ))}
@@ -179,7 +179,7 @@ export default function EmergencyRockvilleMD() {
             ].map((item) => (
               <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
                 <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
+                <h3 className="font-bold mb-1" style={{ color: '#0A0A0A', fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
                 <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{item.body}</p>
               </div>
             ))}
@@ -190,7 +190,7 @@ export default function EmergencyRockvilleMD() {
       {/* Section 6 — Related Pages */}
       <section style={{ backgroundColor: "var(--surface-1)" }} className="py-12">
         <div className="container">
-          <h2 className="text-xl font-bold mb-6" style={{ color: "var(--brand-navy)", fontFamily: 'var(--font-display)' }}>Related Plumbing Services</h2>
+          <h2 className="text-xl font-bold mb-6" style={{ color: '#0A0A0A', fontFamily: 'var(--font-display)' }}>Related Plumbing Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { label: "Plumber in Rockville, MD", href: "/service-areas/maryland/montgomery-county/rockville-md/" },
