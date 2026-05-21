@@ -58,9 +58,9 @@
   --brand-navy:    #0A0A0A;   /* near-black — headings on light backgrounds */
   --brand-navy-2:  #0E4A73;   /* deep blue — secondary buttons, overlays */
   --brand-navy-dark: var(--brand-blue-3); /* deepest blue — deepest dark surfaces */
-  --brand-red:     #1D6CA3;   /* remapped to brand blue */
-  --brand-red-2:   #155A8A;   /* remapped to brand blue-2 */
-  --brand-red-3:   #0E4A73;   /* remapped to brand blue-3 */
+  --brand-red:     #D94F00;   /* burnt orange-red — phone/CTA buttons, stands out on blue */
+  --brand-red-2:   #B84200;   /* darker — hover */
+  --brand-red-3:   #9A3700;   /* deepest — active/pressed */
   --brand-cyan:    #1D6CA3;   /* unified — same as brand blue */
   --brand-cyan-2:  #155A8A;   /* darker — hover */
   --brand-black:   #0A0A0A;   /* near-black — explicit black alias */
