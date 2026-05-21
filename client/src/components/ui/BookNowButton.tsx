@@ -67,7 +67,9 @@ export default function BookNowButton({
 
   // phone type uses primary colors
   const role = type === 'phone' ? 'primary' : type;
-  const colors = STYLES[bg][role];
+  // Safe fallback: if bg is undefined or invalid, default to 'light'
+  const safeBg: BgContext = (bg && STYLES[bg]) ? bg : 'light';
+  const colors = STYLES[safeBg][role];
 
   const baseStyle: React.CSSProperties = {
     fontFamily: 'var(--font-display)',
