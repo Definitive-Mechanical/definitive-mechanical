@@ -273,7 +273,7 @@ export default function CommercialPlumberMaryland() {
           <div className="flex flex-wrap justify-center gap-4">
             <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             <BookNowButton variant="outline" text="REQUEST COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
-            <BookNowButton variant="ghost" text="DOWNLOAD CAPABILITY STATEMENT" href="/capability-statement.pdf" size="lg" />
+            <BookNowButton variant="ghost" text="DOWNLOAD CAPABILITY STATEMENT" href="/capability-statement.pdf" size="lg" onDark />
           </div>
           <p className="mt-6 text-white/50 text-xs" style={{ fontFamily: "'Barlow', sans-serif" }}>Definitive Mechanical  9701 Apollo Drive, Suite 100  Largo, MD 20774</p>
         </div>

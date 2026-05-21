@@ -9,6 +9,8 @@ interface BookNowButtonProps {
   size?: 'sm' | 'md' | 'lg';
   showIcon?: boolean;
   className?: string;
+  /** Set to true when the button sits on a dark/blue background — ghost will use white text/border */
+  onDark?: boolean;
 }
 
 export default function BookNowButton({
@@ -18,6 +20,7 @@ export default function BookNowButton({
   size = 'md',
   showIcon = true,
   className = '',
+  onDark = false,
 }: BookNowButtonProps) {
   const heights = { sm: '40px', md: '48px', lg: '56px' };
   const fontSizes = { sm: '12px', md: '13px', lg: '15px' };
@@ -46,14 +49,18 @@ export default function BookNowButton({
     phone: { background: 'var(--brand-red)', color: 'white', borderColor: 'var(--brand-red)' },
     navy: { background: 'var(--brand-blue)', color: 'white', borderColor: 'var(--brand-blue)' },
     outline: { background: 'transparent', color: 'white', borderColor: 'rgba(255,255,255,0.7)' },
-    ghost: { background: 'transparent', color: 'var(--brand-blue)', borderColor: 'var(--brand-blue)' },
+    ghost: onDark
+      ? { background: 'transparent', color: 'white', borderColor: 'rgba(255,255,255,0.7)' }
+      : { background: 'transparent', color: 'var(--brand-blue)', borderColor: 'var(--brand-blue)' },
   };
 
   const hoverStyles: Record<string, React.CSSProperties> = {
     phone: { background: '#c40511', borderColor: '#c40511', boxShadow: '0 4px 20px rgba(29,108,163,0.35)', transform: 'translateY(-2px)' },
     navy: { background: '#005fa3', borderColor: '#005fa3', transform: 'translateY(-2px)' },
     outline: { background: 'white', color: 'var(--brand-navy)', borderColor: 'white', transform: 'translateY(-2px)' },
-    ghost: { background: 'var(--brand-blue)', color: 'white', transform: 'translateY(-2px)' },
+    ghost: onDark
+      ? { background: 'rgba(255,255,255,0.15)', color: 'white', borderColor: 'white', transform: 'translateY(-2px)' }
+      : { background: 'var(--brand-blue)', color: 'white', borderColor: 'var(--brand-blue)', transform: 'translateY(-2px)' },
   };
 
   const style = { ...baseStyle, ...variantStyles[variant] };

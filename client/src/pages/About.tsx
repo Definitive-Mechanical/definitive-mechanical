@@ -236,7 +236,7 @@ export default function About() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
               <BookNowButton variant="outline" text="REQUEST SERVICE ONLINE" href="/contact" size="lg" />
-              <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+              <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" onDark />
             </div>
           </div>
         </div>

@@ -108,7 +108,7 @@ export default function MBECertified() {
 
           <div className="flex flex-wrap gap-4">
             <BookNowButton variant="outline" text="ADD US TO YOUR BIDDERS LIST" href="/contact/" size="lg" />
-            <BookNowButton variant="ghost" text="REQUEST CAPABILITY STATEMENT" href="/contact/" size="lg" />
+            <BookNowButton variant="ghost" text="REQUEST CAPABILITY STATEMENT" href="/contact/" size="lg" onDark />
           </div>
         </div>
       </section>
