@@ -226,15 +226,15 @@ export default function MBECertified() {
       </section>
 
       {/* S6: CAPABILITY STATEMENT */}
-      <section className="py-16" style={{ background: "var(--surface-1)" }}>
+      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container max-w-3xl text-center">
           <Award size={40} style={{ color: "var(--brand-cyan)" }} className="mx-auto mb-4" />
-          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,30px)", textTransform: "uppercase", color: "var(--brand-navy)", marginBottom: 16 }}>Capability Statement</h2>
-          <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.7, marginBottom: 28 }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,30px)", textTransform: "uppercase", color: "white", marginBottom: 16 }}>Capability Statement</h2>
+          <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.78)", fontSize: "15px", lineHeight: 1.7, marginBottom: 28 }}>
             Our Capability Statement includes: legal name, UEI, CAGE 8HCF6, NAICS 238220, SIC 171, MDOT MBE Cert 20-134, SWaM Cert 815255, all license numbers, years in business, bonding capacity, past performance summary, and point of contact.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 12 }}>
-            <BookNowButton variant="navy" text="REQUEST CAPABILITY STATEMENT" href="/contact" size="lg" />
+            <BookNowButton variant="white" text="REQUEST CAPABILITY STATEMENT" href="/contact" size="lg" />
             <BookNowButton variant="outline" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
           </div>
         </div>
