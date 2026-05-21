@@ -48,7 +48,7 @@ export default function BookNowButton({
 
   const variantStyles: Record<string, React.CSSProperties> = {
     phone: { background: 'var(--brand-blue)', color: 'white', borderColor: 'var(--brand-blue)' },
-    white: { background: 'white', color: 'var(--brand-navy)', borderColor: 'white' },
+    white: { background: 'white', color: 'var(--brand-navy)', borderColor: '#0A0A0A' },
     navy: { background: 'var(--brand-blue)', color: 'white', borderColor: 'var(--brand-blue)' },
     outline: { background: 'transparent', color: 'white', borderColor: 'rgba(255,255,255,0.7)' },
     ghost: { background: 'transparent', color: 'var(--brand-blue)', borderColor: 'var(--brand-blue)' },
@@ -56,7 +56,7 @@ export default function BookNowButton({
 
   const hoverStyles: Record<string, React.CSSProperties> = {
     phone: { background: '#005fa3', borderColor: '#005fa3', boxShadow: '0 4px 20px rgba(0,117,186,0.35)', transform: 'translateY(-2px)' },
-    white: { background: '#f0f4f8', borderColor: '#f0f4f8', transform: 'translateY(-2px)' },
+    white: { background: '#f0f4f8', borderColor: '#0A0A0A', transform: 'translateY(-2px)' },
     navy: { background: '#005fa3', borderColor: '#005fa3', transform: 'translateY(-2px)' },
     outline: { background: 'white', color: 'var(--brand-navy)', borderColor: 'white', transform: 'translateY(-2px)' },
     ghost: { background: 'var(--brand-blue)', color: 'white', transform: 'translateY(-2px)' },
