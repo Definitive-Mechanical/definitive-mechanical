@@ -135,10 +135,10 @@ export default function DCNeighborhoodsHub() {
               <Link
                 key={n.name}
                 href={n.href}
-                className="bg-white border border-gray-200 rounded-md p-4 hover:border-cyan-400 hover:shadow-md transition-all group"
+                className="bg-white border border-gray-200 rounded-md p-4 hover:border-[var(--brand-blue)] hover:shadow-md transition-all group"
               >
                 <p
-                  className="font-bold text-sm group-hover:text-cyan-600"
+                  className="font-bold text-sm group-hover:text-[var(--brand-blue)]"
                   style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}
                 >
                   {n.name}

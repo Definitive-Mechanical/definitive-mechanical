@@ -157,7 +157,7 @@ export default function Contact() {
               <div style={{ background: 'white', borderRadius: '12px', padding: '28px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', border: '1px solid rgba(0,0,0,0.08)' }}>
                 {submitted ? (
                   <div style={{ textAlign: 'center', padding: '32px 0' }}>
-                    <CheckCircle2 size={52} style={{ color: '#4FB3E8', margin: '0 auto 16px' }} />
+                    <CheckCircle2 size={52} style={{ color: 'var(--brand-blue)', margin: '0 auto 16px' }} />
                     <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'var(--brand-blue)', marginBottom: '10px' }}>
                       Request Received!
                     </h3>
@@ -170,7 +170,7 @@ export default function Contact() {
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Request Service</p>
+                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--brand-blue)', margin: 0 }}>Request Service</p>
                     <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'var(--brand-blue)', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                     {/* Name + Phone */}
@@ -238,7 +238,7 @@ export default function Contact() {
                     <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', background: 'rgba(228,6,19,0.12)', border: '1px solid rgba(228,6,19,0.3)', borderRadius: '6px', padding: '10px 12px' }}>
                       <AlertTriangle size={15} style={{ color: '#ff6b6b', flexShrink: 0, marginTop: 1 }} />
                       <p style={{ fontFamily: 'var(--font-body)', color: '#555', fontSize: '12px', lineHeight: 1.5, margin: 0 }}>
-                        <strong style={{ color: '#cc0000' }}>For plumbing emergencies</strong> (burst pipes, gas leaks, sewer backups) — don't use this form. <a href="tel:+13016795849" style={{ color: '#4FB3E8', fontWeight: 700 }}>Call (301) 679-5849</a> for immediate 24/7 response.
+                        <strong style={{ color: '#cc0000' }}>For plumbing emergencies</strong> (burst pipes, gas leaks, sewer backups) — don't use this form. <a href="tel:+13016795849" style={{ color: 'var(--brand-blue)', fontWeight: 700 }}>Call (301) 679-5849</a> for immediate 24/7 response.
                       </p>
                     </div>
 

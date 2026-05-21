@@ -118,7 +118,7 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
             whiteSpace: 'nowrap',
             flexShrink: 0,
           }}
-          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#007BA0'; }}
+          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-blue-2)'; }}
           onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-cyan)'; }}
         >
           <Search size={15} />

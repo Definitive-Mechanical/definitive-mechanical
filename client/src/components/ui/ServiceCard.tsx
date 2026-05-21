@@ -79,7 +79,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-              <IconComponent size={20} color="#4FB3E8" strokeWidth={1.8} />
+              <IconComponent size={20} color="var(--brand-blue)" strokeWidth={1.8} />
             </div>
           </>
         ) : (
@@ -91,7 +91,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-              <IconComponent size={56} color="#4FB3E8" strokeWidth={1.8} />
+              <IconComponent size={56} color="var(--brand-blue)" strokeWidth={1.8} />
             </div>
           </>
         )}

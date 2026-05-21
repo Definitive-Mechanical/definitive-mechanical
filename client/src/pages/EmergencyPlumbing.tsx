@@ -130,7 +130,7 @@ export default function EmergencyPlumbing() {
                   transition: 'all 0.3s ease',
                   marginBottom: '12px',
                 }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#007BA0'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(0,158,198,0.4)'; }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-blue-2)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(0,158,198,0.4)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-cyan)'; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}
               >
                 <Phone size={24} />

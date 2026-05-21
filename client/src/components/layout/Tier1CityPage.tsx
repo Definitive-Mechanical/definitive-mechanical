@@ -252,7 +252,7 @@ export default function Tier1CityPage({
                       />
                       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(6,59,99,0.1) 0%, rgba(6,59,99,0.5) 100%)" }} />
                       <div style={{ position: "absolute", bottom: "10px", left: "12px", background: "rgba(6,59,99,0.75)", backdropFilter: "blur(4px)", borderRadius: "6px", padding: "5px 7px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                        <Icon size={18} color="#4FB3E8" strokeWidth={1.8} />
+                        <Icon size={18} color="var(--brand-blue)" strokeWidth={1.8} />
                       </div>
                     </div>
                     <div style={{ padding: "14px 16px 16px" }}>

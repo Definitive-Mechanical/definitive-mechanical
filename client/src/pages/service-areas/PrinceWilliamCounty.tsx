@@ -57,8 +57,8 @@ export default function PrinceWilliamCounty() {
           <SectionHeading eyebrow="COMMUNITIES SERVED" heading="Prince William County communities we serve" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
             {CITIES.map((city) => (
-              <Link key={city.name} href={city.href} className="bg-white border border-gray-200 rounded-md p-4 hover:border-cyan-400 hover:shadow-md transition-all group">
-                <p className="font-bold text-sm group-hover:text-cyan-600" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{city.name}</p>
+              <Link key={city.name} href={city.href} className="bg-white border border-gray-200 rounded-md p-4 hover:border-[var(--brand-blue)] hover:shadow-md transition-all group">
+                <p className="font-bold text-sm group-hover:text-[var(--brand-blue)]" style={{ color: "var(--brand-blue)", fontFamily: "'Barlow Condensed', sans-serif" }}>{city.name}</p>
                 <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: "'Barlow', sans-serif" }}>{city.note}</p>
               </Link>
             ))}

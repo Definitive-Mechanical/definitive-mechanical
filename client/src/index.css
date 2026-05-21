@@ -57,7 +57,7 @@
   --brand-blue-3:  #0E4A73;   /* deepest blue — active/pressed */
   --brand-navy:    #0A0A0A;   /* near-black — headings on light backgrounds */
   --brand-navy-2:  #0E4A73;   /* deep blue — secondary buttons, overlays */
-  --brand-navy-dark: #0A3A5E; /* deepest blue — deepest dark surfaces */
+  --brand-navy-dark: var(--brand-blue-3); /* deepest blue — deepest dark surfaces */
   --brand-red:     #1D6CA3;   /* remapped to brand blue */
   --brand-red-2:   #155A8A;   /* remapped to brand blue-2 */
   --brand-red-3:   #0E4A73;   /* remapped to brand blue-3 */
