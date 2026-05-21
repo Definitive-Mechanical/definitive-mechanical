@@ -14,6 +14,7 @@ import {
   Phone, ArrowRight, CheckCircle2
 } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
+import CTABanner from "@/components/ui/CTABanner";
 
 const PHONE = BUSINESS.phoneRaw;
 const PHONE_DISPLAY = BUSINESS.phone;
@@ -308,26 +309,12 @@ export default function ServicesDirectory() {
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Emergency CTA */}
-      <section className="bg-[var(--brand-navy)] py-14 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-semibold text-white text-[clamp(22px,3vw,30px)] mb-5">
-            Plumbing Emergency? We Respond 24/7.
-          </h2>
-          <p className="font-sans text-[#C0D8F0] text-[17px] leading-relaxed mb-8 max-w-2xl mx-auto">
-            Our emergency line is answered by a live person, not a call center. We dispatch immediately for burst pipes, sewer backups, gas leaks, flooding, and any situation where delay causes significant damage.
-          </p>
-          <a
-            href={`tel:${PHONE}`}
-            className="inline-flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-xl uppercase tracking-wide py-5 px-10 rounded-sm hover:bg-[#00b8e6] transition-colors"
-          >
-            <Phone className="w-5 h-5" />
-            CALL {PHONE_DISPLAY} — 24/7
-          </a>
-        </div>
-      </section>
+      </section>      {/* Bottom CTA */}
+      <CTABanner
+        heading="Plumbing Emergency? We Respond 24/7."
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+      />
 
       {/* Bottom CTA */}
       <section className="bg-[#F7F9FC] py-12 px-4 border-t border-[#C0D8F0]">

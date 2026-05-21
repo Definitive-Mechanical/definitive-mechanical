@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Phone, ChevronRight, Shield, Clock, Award, MapPin } from 'lucide-react';
 import { BUSINESS } from '@/lib/constants';
 import ServiceAreaSearch from '@/components/ServiceAreaSearch';
+import CTABanner from "@/components/ui/CTABanner";
 
 const DC_SECTIONS = [
   {
@@ -167,27 +168,12 @@ export default function WashingtonDCHub() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section style={{ background: 'var(--brand-navy)', padding: '56px 0' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'white', marginBottom: '16px' }}>
-            Need a Plumber in Washington DC?
-          </h2>
-          <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', color: 'rgba(255,255,255,0.8)', marginBottom: '32px' }}>
-            Call now for 24/7 emergency service or schedule a visit. Upfront pricing in writing — always.
-          </p>
-          <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
-              <Phone size={18} /> CALL {BUSINESS.phone}
-            </a>
-            <Link href="/contact" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'transparent', color: 'white', border: '2px solid white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '16px 32px', borderRadius: '2px', textDecoration: 'none' }}>
-              REQUEST SERVICE
-            </Link>
-          </div>
-        </div>
-      </section>
+      </section>      {/* Bottom CTA */}
+      <CTABanner
+        heading="Need a Plumber in Washington DC?"
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+      />
     </>
   );
 }

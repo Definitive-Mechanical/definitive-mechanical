@@ -9,6 +9,7 @@ import { ALL_SERVICE_CATEGORIES } from "@/lib/allServices";
 import { Link } from "wouter";
 import { Helmet } from "react-helmet-async";
 import { Phone, ArrowRight, ChevronDown, CheckCircle2 } from "lucide-react";
+import CTABanner from "@/components/ui/CTABanner";
 import { useState } from "react";
 
 export interface ServiceItem {
@@ -369,36 +370,12 @@ export default function Tier2CityPage({
       )}
 
       {/* Section 7 — Bottom CTA */}
-      <section className="bg-[var(--brand-navy)] py-14 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <p style={{ fontFamily: "'Barlow Condensed', sans-serif" }} className="text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
-            LICENSED PLUMBER  SERVING {ctaCity.toUpperCase()}
-          </p>
-          <h2 style={{ fontFamily: 'var(--font-display)' }} className="font-bold text-white text-[clamp(22px,3vw,32px)] mb-8">
-            Serving {ctaCity} from our Largo, MD location
-          </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <a
-              href="tel:+13016795849"
-              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors w-full sm:w-auto"
-              style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "18px", textTransform: "uppercase", letterSpacing: "0.05em" }}
-            >
-              <Phone className="w-5 h-5" />
-              (301) 679-5849
-            </a>
-            <Link
-              href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-white text-white py-4 px-8 rounded-sm hover:bg-white hover:text-[var(--brand-navy)] transition-colors w-full sm:w-auto"
-              style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "18px", textTransform: "uppercase", letterSpacing: "0.05em" }}
-            >
-              REQUEST SERVICE <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-          <p style={{ fontFamily: "'Barlow', sans-serif" }} className="text-[#C0D8F0] text-sm">
-            {ctaLicenseLine}
-          </p>
-        </div>
-      </section>
+      <CTABanner
+        heading={`Serving ${ctaCity} from our Largo, MD location`}
+        subtext={ctaLicenseLine}
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+      />
 
       {/* Sticky Mobile Call Bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden">

@@ -4,6 +4,7 @@ import BreadcrumbList from "@/components/ui/BreadcrumbList";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SectionHeading from "@/components/ui/SectionHeading";
 import BookNowButton from "@/components/ui/BookNowButton";
+import CTABanner from "@/components/ui/CTABanner";
 
 const FAQS = [
   { question: "Are you licensed for commercial plumbing in both Fairfax County and Arlington County?", answer: "Yes. Virginia plumbing licenses are issued by DPOR and are statewide, covering all Virginia jurisdictions including Fairfax County and Arlington County. Definitive Mechanical holds VA Master Plumber/Gasfitter License #2710064209 and VA Class A Contractor License #2705181061, both statewide credentials." },
@@ -203,20 +204,12 @@ export default function CommercialPlumberNorthernVirginia() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
-        <div className="container text-center">
-          <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a licensed commercial plumber in Northern Virginia?</h2>
-          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
-          <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>VA Master Plumber #2710064209 | SWaM Cert 815255 | CAGE 8HCF6</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="REQUEST NOVA COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
-          </div>
-        </div>
-      </section>
+      </section>      {/* Bottom CTA */}
+      <CTABanner
+        heading="Need a licensed commercial plumber in Northern Virginia?"
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+      />
     </div>
   );
 }

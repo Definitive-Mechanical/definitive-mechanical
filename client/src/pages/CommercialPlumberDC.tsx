@@ -4,6 +4,7 @@ import BreadcrumbList from "@/components/ui/BreadcrumbList";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SectionHeading from "@/components/ui/SectionHeading";
 import BookNowButton from "@/components/ui/BookNowButton";
+import CTABanner from "@/components/ui/CTABanner";
 
 const FAQS = [
   { question: "Are you licensed to perform commercial plumbing in Washington, DC?", answer: "Yes. Definitive Mechanical holds DC Master Plumber/Gasfitter License #PGM1002236, issued by the DC Department of Consumer and Regulatory Affairs (DCRA). This license is required to legally pull permits and perform commercial plumbing work in the District. It is separately issued from Maryland and Virginia licenses." },
@@ -194,20 +195,12 @@ export default function CommercialPlumberDC() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
-        <div className="container text-center">
-          <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a DC-licensed commercial plumber?</h2>
-          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
-          <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>DC Master Plumber #PGM1002236 | MDOT MBE Cert 20-134</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="REQUEST DC COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
-          </div>
-        </div>
-      </section>
+      </section>      {/* Bottom CTA */}
+      <CTABanner
+        heading="Need a DC-licensed commercial plumber?"
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+      />
     </div>
   );
 }

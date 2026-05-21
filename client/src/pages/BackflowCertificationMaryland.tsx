@@ -4,6 +4,7 @@ import BreadcrumbList from "@/components/ui/BreadcrumbList";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import SectionHeading from "@/components/ui/SectionHeading";
 import BookNowButton from "@/components/ui/BookNowButton";
+import CTABanner from "@/components/ui/CTABanner";
 
 const FAQS = [
   { question: "Who requires backflow preventer certification in Maryland?", answer: "WSSC Water requires annual backflow preventer testing and certification for all commercial, industrial, and multi-family properties in Prince George's County and Montgomery County. Anne Arundel, Howard, and Charles Counties have similar requirements for commercial properties." },
@@ -171,19 +172,12 @@ export default function BackflowCertificationMaryland() {
             ))}
           </div>
         </div>
-      </section>
-
-      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
-        <div className="container text-center">
-          <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Schedule your Maryland backflow certification today</h2>
-          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
-          <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>WSSC Backflow Tester #73696 | MD Master Plumber #96958 | MDOT MBE Cert 20-134</p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
-          </div>
-        </div>
-      </section>
+      </section>      {/* Bottom CTA */}
+      <CTABanner
+        heading="Schedule your Maryland backflow certification today"
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+      />
     </div>
   );
 }

@@ -21,6 +21,7 @@ import { getServiceImage } from "@/lib/serviceImages";
 import { ALL_SERVICE_CATEGORIES } from "@/lib/allServices";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
+import CTABanner from "@/components/ui/CTABanner";
 import {
   Phone, CheckCircle, Star, Zap, Droplets, Thermometer,
   GitBranch, Flame, ShieldCheck, Wind, Wrench, Building2,
@@ -609,36 +610,12 @@ export default function PriorityCityLayout({
       </section>
 
       {/* ── S9: CTA BANNER ───────────────────────────────────────────────── */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy) 100%)", padding: "64px 0" }}>
-        <div className="container" style={{ textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(26px,4vw,44px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: 12 }}>
-            {ctaHeading}
-          </h2>
-          <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.82)", fontSize: "15px", maxWidth: "600px", margin: "0 auto 28px", lineHeight: 1.7 }}>
-            {ctaSubtext}
-          </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center" }}>
-            <a href="tel:+13016795849" style={{
-              display: "inline-flex", alignItems: "center", gap: 8,
-              background: "white", color: "var(--brand-navy)",
-              fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px",
-              textTransform: "uppercase", letterSpacing: "0.08em",
-              padding: "14px 28px", borderRadius: "2px", textDecoration: "none",
-            }}>
-              <Phone size={16} /> CALL (301) 679-5849
-            </a>
-            <Link href="/contact" style={{
-              display: "inline-flex", alignItems: "center", gap: 8,
-              border: "1px solid rgba(255,255,255,0.5)", color: "white",
-              fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px",
-              textTransform: "uppercase", letterSpacing: "0.08em",
-              padding: "14px 28px", borderRadius: "2px", textDecoration: "none",
-            }}>
-              REQUEST SERVICE
-            </Link>
-          </div>
-        </div>
-      </section>
+      <CTABanner
+        heading={ctaHeading}
+        subtext={ctaSubtext}
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+      />
     </>
   );
 }

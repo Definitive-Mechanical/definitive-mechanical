@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { BUSINESS } from "@/lib/constants";
+import CTABanner from "@/components/ui/CTABanner";
 
 const PHONE = BUSINESS.phoneRaw;
 const PHONE_DISPLAY = BUSINESS.phone;
@@ -507,40 +508,12 @@ export default function AllServices() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Bottom CTA */}
-      <section className="bg-[var(--brand-navy)] py-14 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="font-['Barlow_Condensed'] text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
-            LICENSED PLUMBING  MD, DC &amp; NORTHERN VIRGINIA
-          </p>
-          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-white text-[clamp(24px,3vw,34px)] mb-8">
-            Request plumbing service in MD, DC or Northern VA
-          </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-            <a
-              href={`tel:${PHONE}`}
-              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
-            >
-              <Phone className="w-5 h-5" />
-              {PHONE_DISPLAY}
-            </a>
-            <Link
-              href="/contact"
-              className="flex items-center justify-center gap-2 border-2 border-white text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-white hover:text-[var(--brand-navy)] transition-colors"
-            >
-              REQUEST SERVICE <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-          <p className="font-sans text-[#C0D8F0] text-sm">
-            Definitive Mechanical  9701 Apollo Drive, Suite 100  Largo, MD 20774
-          </p>
-          <p className="font-sans text-[#C0D8F0] text-sm mt-1">
-            MD Master Plumber #96958 | DC #PGM1002236 | VA #2710064209 | MDOT MBE Cert 20-134
-          </p>
-        </div>
-      </section>
+      </section>      {/* Bottom CTA */}
+      <CTABanner
+        heading="Request plumbing service in MD, DC or Northern VA"
+        primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
+        secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
+      />
 
       {/* Sticky Mobile Call Bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden">
