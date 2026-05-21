@@ -263,7 +263,7 @@ export default function Contact() {
               { icon: Phone, title: "Live Dispatcher 24/7", body: "A real person answers every call — day, night, weekends, and holidays. No voicemail, no call center." },
               { icon: CheckCircle2, title: "Written Pricing First", body: "We diagnose the problem and provide written pricing before any work begins. You approve it. We do the work." },
               { icon: MapPin, title: "Licensed in 4 States", body: "Master Plumber and Master Gasfitter licensed in Maryland, DC, Virginia, and Delaware." },
-              { icon: Clock, title: "Same Rate Any Time", body: "All services have a trip fee. All services have a trip fee." },
+              { icon: Clock, title: "All Services Have a Trip Fee", body: "A trip fee applies to every service call. The fee is disclosed before dispatch and depends on time of day and location." },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-md p-6 text-center" style={{ boxShadow: "0 2px 12px rgba(6,59,99,0.08)" }}>
                 <item.icon size={32} style={{ color: "var(--brand-cyan)", margin: "0 auto 12px" }} />
