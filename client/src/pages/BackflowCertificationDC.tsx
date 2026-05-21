@@ -51,7 +51,7 @@ export default function BackflowCertificationDC() {
             Definitive Mechanical holds DC Master Plumber License #PGM1002236 and is approved by DC Water to perform backflow preventer testing and certification for commercial and institutional properties throughout Washington DC. We serve all DC wards and neighborhoods.
           </p>
           <div className="flex flex-wrap gap-4 mb-8">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>
@@ -139,7 +139,7 @@ export default function BackflowCertificationDC() {
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "\'Barlow\', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "\'Barlow\', sans-serif" }}>DC Master Plumber #PGM1002236 | DC Water Approved | MDOT MBE Cert 20-134</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
         </div>

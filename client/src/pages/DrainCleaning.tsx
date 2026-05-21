@@ -75,7 +75,7 @@ export default function DrainCleaning() {
                 Definitive Mechanical provides professional drain cleaning, hydro-jetting, and sewer line clearing across Maryland, Washington DC, and Northern Virginia. We identify the root cause of recurring clogs — not just clear the symptom. Licensed plumbing professionals on every job — work under Master Plumber license. Written pricing before work begins.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+                <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
                 <BookNowButton variant="outline" text="REQUEST SERVICE" href="/contact" size="lg" />
               </div>
             </div>
@@ -181,7 +181,7 @@ export default function DrainCleaning() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>

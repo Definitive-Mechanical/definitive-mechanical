@@ -110,7 +110,7 @@ export default function FaucetToiletRepair() {
               </p>
               <TrustBadges variant="dark" badges={["Same-Day Service Available", "Licensed Master Plumber", "Residential & Commercial", "Faucets, Toilets & Fixtures"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
                 <BookNowButton variant="outline" text="REQUEST FIXTURE REPAIR" href="/contact" size="md" />
               </div>
             </div>

@@ -73,7 +73,7 @@ export default function HydroJetting() {
               </p>
               <TrustBadges variant="dark" badges={["High-Pressure Pipe Cleaning", "Commercial & Residential", "Licensed Master Plumber", "For Drain & Sewer Lines"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
                 <BookNowButton variant="outline" text="REQUEST HYDRO-JETTING" href="/contact" size="md" />
               </div>
             </div>
@@ -195,7 +195,7 @@ export default function HydroJetting() {
             ))}
           </div>
           <div style={{ textAlign: 'center' }}>
-            <BookNowButton variant="phone" text="CALL FOR A DIRECT QUOTE" href="tel:+13016795849" size="md" />
+            <BookNowButton variant="white" text="CALL FOR A DIRECT QUOTE" href="tel:+13016795849" size="md" />
           </div>
         </div>
       </section>

@@ -59,7 +59,7 @@ export default function GasLineInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Gasfitter", "Permitted & Pressure-Tested", "Residential & Commercial", "25+ Years Experience"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
                 <BookNowButton variant="outline" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
               </div>
             </div>
@@ -146,7 +146,7 @@ export default function GasLineInstallation() {
             These ranges include labor, materials, and standard permit fees. We provide written pricing after assessment — including what the permit will cost and what the inspection process requires for your specific jurisdiction.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="md" />
+            <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="md" />
             <BookNowButton variant="ghost" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
           </div>
         </div>

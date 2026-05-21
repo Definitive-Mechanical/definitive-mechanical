@@ -69,7 +69,7 @@ export default function SewerLineInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Camera Inspection Before Replacement", "Licensed Master Plumber", "Permitted & Inspected", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
                 <BookNowButton variant="outline" text="REQUEST SEWER ASSESSMENT" href="/contact" size="md" />
               </div>
             </div>
@@ -160,7 +160,7 @@ export default function SewerLineInstallation() {
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
             <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
-            <BookNowButton variant="phone" text="CALL FOR ASSESSMENT" href="tel:+13016795849" size="md" />
+            <BookNowButton variant="white" text="CALL FOR ASSESSMENT" href="tel:+13016795849" size="md" />
           </div>
         </div>
       </section>

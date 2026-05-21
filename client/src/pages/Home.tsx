@@ -138,7 +138,7 @@ function HeroSection() {
             </p>
             <TrustBadges variant="dark" badges={['black-owned', '11 Years in Business', '24/7 Emergency', 'Licensed Master Plumber/Gasfitter', 'MDOT MBE Certified', 'VA SWaM Certified']} />
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>
             <div style={{ marginTop: '20px' }}>
               <StarRating rating={4.8} count={40} variant="dark" />
@@ -494,7 +494,7 @@ export default function Home() {
             Burst pipe, sewer backup, gas leak, no hot water — our live dispatcher answers every call, every hour of every day. Licensed plumbing professionals dispatched — work performed under Master Plumber license.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             <BookNowButton variant="outline" text="LEARN MORE" href="/emergency-plumbing" size="lg" />
           </div>
         </div>
@@ -702,7 +702,7 @@ export default function Home() {
                   ))}
                 </div>
                 <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                  <BookNowButton variant="phone" text="GOVERNMENT & COMMERCIAL" href="/government-municipal-plumbing" size="md" />
+                  <BookNowButton variant="white" text="GOVERNMENT & COMMERCIAL" href="/government-municipal-plumbing" size="md" />
                   <BookNowButton variant="outline" text="COMMERCIAL PLUMBING" href="/commercial-plumbing" size="md" />
                 </div>
               </div>

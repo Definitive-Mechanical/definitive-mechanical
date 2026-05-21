@@ -70,7 +70,7 @@ export default function WaterHeaterInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Same-Day Installation Available", "Licensed Master Plumber", "Permit-Compliant", "Financing Available", "Gas & Electric Units"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
                 <BookNowButton variant="outline" text="REQUEST INSTALLATION" href="/contact" size="md" />
               </div>
             </div>
@@ -248,7 +248,7 @@ export default function WaterHeaterInstallation() {
                   </div>
                 ))}
               </div>
-              <BookNowButton variant="phone" text="CALL FOR AVAILABILITY" href="tel:+13016795849" size="md" />
+              <BookNowButton variant="white" text="CALL FOR AVAILABILITY" href="tel:+13016795849" size="md" />
             </div>
           </div>
         </div>

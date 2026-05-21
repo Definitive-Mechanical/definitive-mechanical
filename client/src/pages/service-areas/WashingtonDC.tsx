@@ -97,7 +97,7 @@ export default function WashingtonDC() {
               </p>
               <TrustBadges variant="dark" badges={["DC Master Plumber/Gasfitter #PGM1002236","MDOT MBE Cert 20-134","CAGE 8HCF6","24/7 Emergency","Serving DC from Largo, MD"]} />
               <div className="flex flex-wrap gap-4 mt-8">
-                <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+                <BookNowButton variant="white" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>

@@ -60,7 +60,7 @@ export default function BackflowCertificationVirginia() {
             Definitive Mechanical holds VA Master Plumber/Gasfitter License #2710064209 and VA Class A Contractor License #2705181061 — statewide credentials covering all Northern Virginia jurisdictions. We perform annual backflow preventer testing and certification for commercial and institutional properties throughout Fairfax County, Arlington County, Loudoun County, Prince William County, and independent cities.
           </p>
           <div className="flex flex-wrap gap-4 mb-8">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>
@@ -150,7 +150,7 @@ export default function BackflowCertificationVirginia() {
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "\'Barlow\', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "\'Barlow\', sans-serif" }}>VA Master Plumber #2710064209 | SWaM Cert 815255 | CAGE 8HCF6</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
         </div>

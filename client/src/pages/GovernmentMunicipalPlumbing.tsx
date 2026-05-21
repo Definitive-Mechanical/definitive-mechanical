@@ -65,7 +65,7 @@ export default function GovernmentMunicipalPlumbing() {
                 Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor serving government agencies, municipalities, and public institutions across Maryland, Washington DC, and Northern Virginia. Master Plumber and Master Gasfitter licensed in four states. CAGE Code 8HCF6. NAICS 238220.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+                <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
                 <BookNowButton variant="outline" text="REQUEST CAPABILITY STATEMENT" href="/contact" size="lg" />
               </div>
             </div>

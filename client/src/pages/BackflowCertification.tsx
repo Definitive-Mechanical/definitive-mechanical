@@ -62,7 +62,7 @@ export default function BackflowCertification() {
               </p>
               <TrustBadges variant="dark" badges={["Annual Certification Programs", "Commercial & Residential", "Licensed", "Report Filing Included", "WSSC & Jurisdiction Compliant"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
                 <BookNowButton variant="outline" text="SCHEDULE BACKFLOW CERTIFICATION" href="/contact" size="md" />
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function BackflowCertification() {
             Contact (301) 679-5849 or info@definitivemechanical.com to discuss a managed certification program for your properties.
           </p>
           <div style={{ textAlign: 'center' }}>
-            <BookNowButton variant="phone" text="DISCUSS MANAGED PROGRAM" href="tel:+13016795849" size="md" />
+            <BookNowButton variant="white" text="DISCUSS MANAGED PROGRAM" href="tel:+13016795849" size="md" />
           </div>
         </div>
       </section>

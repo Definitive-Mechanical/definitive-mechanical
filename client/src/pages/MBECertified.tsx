@@ -194,7 +194,7 @@ export default function MBECertified() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <BookNowButton variant="outline" text="REQUEST CAPABILITY STATEMENT" href="/contact/" size="lg" />
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="white" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
           </div>
         </div>
       </section>
