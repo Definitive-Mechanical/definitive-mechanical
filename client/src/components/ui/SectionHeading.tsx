@@ -11,11 +11,11 @@ export default function SectionHeading({ eyebrow, heading, subtext, centered = f
     <div style={{ marginBottom: '48px', textAlign: centered ? 'center' : 'left' }}>
       {eyebrow && (
         <p style={{
-          fontFamily: 'var(--font-display)',
+          fontFamily: 'var(--font-eyebrow)',
           fontWeight: 700,
-          fontSize: '12px',
+          fontSize: '13px',
           textTransform: 'uppercase',
-          letterSpacing: '0.25em',
+          letterSpacing: '0.2em',
           color: light ? 'rgba(255,255,255,0.7)' : 'var(--brand-cyan)',
           marginBottom: '12px',
         }}>
