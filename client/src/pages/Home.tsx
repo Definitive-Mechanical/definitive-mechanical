@@ -590,6 +590,7 @@ export default function Home() {
             heading="Are you licensed, certified, and insured?"
             subtext="Definitive Mechanical holds Master Plumber and Master Gasfitter licenses in Maryland, Washington DC, Virginia, and Delaware. No other local plumbing company in the DMV market holds this credential combination."
             centered
+            light
           />
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {CREDENTIALS.map((cred) => (
