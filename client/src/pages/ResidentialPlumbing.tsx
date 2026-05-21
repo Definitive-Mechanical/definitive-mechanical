@@ -102,7 +102,7 @@ export default function ResidentialPlumbing() {
                 Residential Plumbing Services for Homeowners in Maryland, DC & Northern Virginia
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
-                Definitive Mechanical provides residential plumbing repairs and installations for homeowners across Maryland, Washington DC, and Northern Virginia. From leaks and drain clogs to water heater replacement, gas line work, sewer service, and backflow certification — every job is handled by a licensed Master Plumber. Financing available. 24/7 emergency service. Call (301) 679-5849.
+                Definitive Mechanical provides residential plumbing repairs and installations for homeowners across Maryland, Washington DC, and Northern Virginia. From leaks and drain clogs to water heater replacement, gas line work, sewer service, and backflow certification — every job is performed by licensed plumbing professionals under Master Plumber license. Financing available. 24/7 emergency service. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber", "24/7 Emergency Service", "Financing Available", "Honest Upfront Pricing", "11 Years in Business"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>

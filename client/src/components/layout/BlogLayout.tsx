@@ -85,7 +85,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
                   {PHONE_DISPLAY}
                 </a>
                 <p className="text-[#C0D8F0] font-sans text-xs text-center">
-                  24/7 live dispatcher  Licensed Master Plumber on every call
+                  24/7 live dispatcher  Licensed plumbing professionals — work under Master Plumber license
                 </p>
                 <div className="mt-4 pt-4 border-t border-white/10">
                   <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-sans">
@@ -274,7 +274,7 @@ export function InlineCTA() {
           margin: 0,
         }}
       >
-        24/7 live dispatcher  Licensed Master Plumber on every call
+        24/7 live dispatcher  Licensed plumbing professionals — work under Master Plumber license
       </p>
     </div>
   );
@@ -329,7 +329,7 @@ export function AuthorBlock({ date }: { date: string }) {
           Definitive Mechanical Team
         </p>
         <p className="font-sans text-[#787878] text-xs">
-          Licensed Master Plumbers serving MD, DC &amp; Northern Virginia
+          Licensed plumbing professionals serving MD, DC &amp; Northern Virginia
         </p>
         <p className="font-sans text-[#787878] text-xs">
           MD #{LICENSE_MD} | DC #{LICENSE_DC} | VA #{LICENSE_VA}

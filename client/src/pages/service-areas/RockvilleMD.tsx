@@ -27,7 +27,7 @@ const services = [
 
 const faqs = [
   { question: "What plumbing services do you offer in Rockville, MD?", answer: "Full-service plumbing in Rockville including emergency plumbing, drain cleaning, water heater repair and installation, sewer line service, gas line repair, backflow certification, boiler and furnace service, and commercial plumbing for businesses and government facilities. Licensed specifically for Rockville: City of Rockville Master Plumber/Gasfitter #PLL-0002113. Call (301) 679-5849." },
-  { question: "Do you provide 24/7 emergency plumbing in Rockville?", answer: "Yes. Emergency service available 24/7 from our Largo, MD location. A live dispatcher answers every call. Licensed Master Plumber dispatched. All services have a trip fee. See our dedicated Emergency Plumber Rockville MD page." },
+  { question: "Do you provide 24/7 emergency plumbing in Rockville?", answer: "Yes. Emergency service available 24/7 from our Largo, MD location. A live dispatcher answers every call. Licensed plumbing professionals dispatched — work performed under Master Plumber license. All services have a trip fee. See our dedicated Emergency Plumber Rockville MD page." },
   { question: "Are you licensed specifically for the City of Rockville?", answer: "Yes. In addition to our Maryland State (MD #96958) and WSSC (#73696) licenses, Definitive Mechanical holds a City of Rockville Master Plumber/Gasfitter license (#PLL-0002113) — a municipal license required for work within the City of Rockville's jurisdiction." },
   { question: "Do you provide commercial backflow certification in Rockville?", answer: "Yes. We provide annual backflow preventer testing, certification, and report filing for commercial properties in Rockville. We can also manage annual certification scheduling for property managers with multiple properties. Call (301) 679-5849." },
 ];
@@ -162,7 +162,7 @@ export default function RockvilleMD() {
               <p style={{ fontFamily:"var(--font-display)", color:"#ef4444", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">24/7 EMERGENCY SERVICE</p>
               <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(28px,4vw,42px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.05 }} className="mb-5">Emergency Plumbing Available Around the Clock</h2>
               <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
-                A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. All services have a trip fee. Upfront written pricing before any work begins.
+                A live dispatcher answers every call — no voicemail, no answering service. Licensed plumbing professionals dispatched — work performed under Master Plumber license. All services have a trip fee. Upfront written pricing before any work begins.
               </p>
               <a href="tel:+13016795849" style={{ display:"inline-flex", alignItems:"center", gap:"10px", background:"#dc2626", color:"white", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"15px", textTransform:"uppercase", letterSpacing:"0.08em", padding:"14px 28px", borderRadius:"3px", textDecoration:"none", transition:"background 0.2s" }}>
                 CALL (301) 679-5849

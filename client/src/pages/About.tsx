@@ -56,7 +56,7 @@ export default function About() {
                 We are based in Largo, Maryland and have operated in the DMV for over 11 years. Our team holds Master Plumber and Master Gasfitter licenses in Maryland, Washington DC, Virginia, and Delaware — a credential combination that no other local plumbing company in this market holds simultaneously.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.8, marginBottom: '24px' }}>
-                We serve residential homeowners, commercial facility managers, property management companies, HOAs, and government agencies. Every job — from a clogged drain to a government facility sewer replacement — is handled by a licensed Master Plumber with written pricing provided before work begins.
+                We serve residential homeowners, commercial facility managers, property management companies, HOAs, and government agencies. Every job — from a clogged drain to a government facility sewer replacement — is performed by our licensed team under Master Plumber license, with written pricing provided before work begins.
               </p>
               <div className="space-y-3">
                 {[

@@ -186,7 +186,7 @@ export default function LicensesCertifications() {
             {[
               { icon: ShieldCheck, title: 'Code Compliance', body: 'Licensed plumbers are required to perform work to code. Unlicensed work may not pass inspection, can void insurance, and can create liability for property owners.' },
               { icon: CheckCircle2, title: 'Jurisdiction Matters', body: 'A Maryland plumbing license does not authorize work in DC or Virginia. Definitive Mechanical holds active licenses in all three jurisdictions simultaneously.' },
-              { icon: Award, title: 'Master Plumber vs. Journeyman', body: 'A Master Plumber license requires years of additional experience and examination beyond a journeyman license. Every Definitive Mechanical job is handled by a licensed Master Plumber.' },
+              { icon: Award, title: 'Master Plumber vs. Journeyman', body: 'A Master Plumber license requires years of additional experience and examination beyond a journeyman license. Every Definitive Mechanical job is performed by licensed plumbing professionals under Master Plumber license and supervision.' },
             ].map((item) => (
               <div key={item.title} style={{ textAlign: 'center', padding: '16px' }}>
                 <item.icon size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />

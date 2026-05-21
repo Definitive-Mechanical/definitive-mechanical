@@ -18,7 +18,7 @@ const _UNUSED_SERVICE_CATEGORIES_REPLACED = [
   {
     label: 'Emergency & Drain',
     services: [
-      { title: '24/7 Emergency Plumbing', icon: 'AlertTriangle', href: '/emergency-plumbing', description: 'Burst pipes, sewer backups, gas leaks — live dispatcher 24/7, 365 days a year. Licensed Master Plumber on every emergency call.', featured: true },
+      { title: '24/7 Emergency Plumbing', icon: 'AlertTriangle', href: '/emergency-plumbing', description: 'Burst pipes, sewer backups, gas leaks — live dispatcher 24/7, 365 days a year. Licensed plumbing professionals on every emergency call — work performed under Master Plumber license.', featured: true },
       { title: 'Drain Cleaning', icon: 'Droplets', href: '/drain-cleaning', description: 'Professional drain clearing, hydro-jetting, and sewer stoppage service. We identify the root cause — not just the symptom.' },
       { title: 'Hydro-Jetting', icon: 'Zap', href: '/hydro-jetting', description: 'High-pressure hydro-jetting clears grease, scale, and root intrusion that snaking cannot reach. Commercial and residential.' },
       { title: 'Video Camera Inspection', icon: 'Camera', href: '/video-camera-inspection', description: 'Sewer and drain camera inspection to pinpoint blockages, cracks, and root intrusion before any excavation.' },
@@ -131,7 +131,7 @@ function HeroSection() {
               LICENSED PLUMBING  MARYLAND  WASHINGTON DC  NORTHERN VIRGINIA
             </p>
             <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.01em', color: 'white', fontSize: 'clamp(34px, 5vw, 64px)', lineHeight: 1.0, marginBottom: '20px' }}>
-              Licensed Master Plumbers. Honest Service.
+              Licensed Plumbing Professionals. Honest Service.
             </h1>
             <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '540px', marginBottom: '24px' }}>
               Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor serving homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia. Master Plumber and Master Gasfitter licensed in four states. 24/7 emergency service. Upfront pricing in writing — always.
@@ -427,7 +427,7 @@ export default function Home() {
             {[
               {
                 icon: ShieldCheck,
-                title: 'Licensed Master Plumber on Every Job',
+                title: 'Licensed Professionals on Every Job',
                 body: 'Every job is handled by a licensed Master Plumber and Master Gasfitter — licensed in Maryland, Washington DC, Virginia, and Delaware simultaneously. A credential stack no local competitor holds. When our technician arrives, their job is to fix your problem. Not to find add-ons.',
               },
               {
@@ -491,7 +491,7 @@ export default function Home() {
             Plumbing emergency? We answer at 3am.
           </h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', maxWidth: '560px', margin: '0 auto 32px', lineHeight: 1.7 }}>
-            Burst pipe, sewer backup, gas leak, no hot water — our live dispatcher answers every call, every hour of every day. Licensed Master Plumber dispatched immediately.
+            Burst pipe, sewer backup, gas leak, no hot water — our live dispatcher answers every call, every hour of every day. Licensed plumbing professionals dispatched — work performed under Master Plumber license.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />

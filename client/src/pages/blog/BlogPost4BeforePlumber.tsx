@@ -338,7 +338,7 @@ export default function BlogPost4BeforePlumber() {
         <CalloutBox variant="info">
           <strong>Call Definitive Mechanical — 24/7 Emergency Plumbing in MD, DC &amp; VA</strong>
           <br />
-          When you call (301) 679-5849, you reach a live dispatcher — not an answering service. We dispatch a Licensed Master Plumber on every emergency call, typically arriving within 60-90 minutes in the DC metro area.
+          When you call (301) 679-5849, you reach a live dispatcher — not an answering service. We dispatch licensed plumbing professionals on every emergency call — all work performed under Master Plumber license, typically arriving within 60-90 minutes in the DC metro area.
           <br /><br />
           MD Master Plumber #{LICENSE_MD} | DC #{LICENSE_DC} | VA #{LICENSE_VA}
         </CalloutBox>

@@ -72,7 +72,7 @@ export default function DrainCleaning() {
                 Professional Drain Cleaning — Maryland, DC & Northern Virginia
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
-                Definitive Mechanical provides professional drain cleaning, hydro-jetting, and sewer line clearing across Maryland, Washington DC, and Northern Virginia. We identify the root cause of recurring clogs — not just clear the symptom. Licensed Master Plumber on every job. Written pricing before work begins.
+                Definitive Mechanical provides professional drain cleaning, hydro-jetting, and sewer line clearing across Maryland, Washington DC, and Northern Virginia. We identify the root cause of recurring clogs — not just clear the symptom. Licensed plumbing professionals on every job — work under Master Plumber license. Written pricing before work begins.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                 <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
@@ -122,7 +122,7 @@ export default function DrainCleaning() {
         </div>
               <div className="space-y-4">
                 {[
-                  { title: 'Licensed Master Plumber on Every Job', desc: 'Every drain cleaning call is handled by a licensed Master Plumber — not an unlicensed tech with a snake.' },
+                  { title: 'Licensed Professionals on Every Job', desc: 'Every drain cleaning call is handled by a licensed plumbing professional — all work performed under Master Plumber license, not an unlicensed tech with a snake. },
                   { title: 'We Find the Root Cause', desc: 'Recurring clogs mean something is wrong in the pipe. We use camera inspection to identify root intrusion, buildup, or structural issues.' },
                   { title: 'Hydro-Jetting Available', desc: 'The only drain cleaning method that actually cleans pipe walls. We offer hydro-jetting for grease-heavy systems and commercial facilities.' },
                   { title: 'Written Pricing Before We Start', desc: 'No surprise fees. You receive written pricing before we begin. Same rate regardless of time of day.' },
@@ -199,7 +199,7 @@ export default function DrainCleaning() {
 
       <CTABanner
         heading="Need drain cleaning in Maryland, DC, or Northern Virginia?"
-        subtext="Licensed Master Plumber on every job. Written pricing before we start. Trip fee applies to all services."
+        subtext="Licensed plumbing professionals on every job — work under Master Plumber license. Written pricing before we start. Trip fee applies to all services."
         primaryBtn={{ text: `CALL ${BUSINESS.phone}`, href: `tel:${BUSINESS.phoneRaw}` }}
         secondaryBtn={{ text: 'REQUEST SERVICE ONLINE', href: '/contact' }}
         variant="gradient"

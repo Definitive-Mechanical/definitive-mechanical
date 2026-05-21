@@ -277,7 +277,7 @@ export default function Contact() {
 
       <CTABanner
         heading="Need a plumber now? Don't wait."
-        subtext="Licensed Master Plumber dispatched. Upfront pricing before we start. Trip fee applies to all services."
+        subtext="Licensed plumbing professionals dispatched — work performed under Master Plumber license. Upfront pricing before we start. Trip fee applies to all services."
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "VIEW ALL SERVICES", href: "/plumbing" }}
         variant="gradient"

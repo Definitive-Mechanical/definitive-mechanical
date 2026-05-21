@@ -66,7 +66,7 @@ export default function WaterHeaterInstallation() {
                 Water Heater Installation in Maryland, DC & Northern Virginia
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
-                Definitive Mechanical installs gas, electric, and tankless water heaters across Maryland, Washington DC, and Northern Virginia. Same-day and next-day installation available. Every installation is performed by a licensed Master Plumber, pulled with the correct permit for your jurisdiction, and completed to code. Financing available through Synchrony. Call (301) 679-5849.
+                Definitive Mechanical installs gas, electric, and tankless water heaters across Maryland, Washington DC, and Northern Virginia. Same-day and next-day installation available. Every installation is performed by licensed plumbing professionals under Master Plumber license, pulled with the correct permit for your jurisdiction, and completed to code. Financing available through Synchrony. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Same-Day Installation Available", "Licensed Master Plumber", "Permit-Compliant", "Financing Available", "Gas & Electric Units"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>

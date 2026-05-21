@@ -62,7 +62,7 @@ export default function TanklessWaterHeaters() {
                 Tankless Water Heater Installation & Repair in Maryland, DC & Northern Virginia
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
-                Definitive Mechanical installs and repairs tankless water heaters for homes and businesses across Maryland, Washington DC, and Northern Virginia. Tankless systems provide hot water on demand, reduce energy costs, and last significantly longer than tank units. Every installation performed by a licensed Master Plumber. Financing available. Call (301) 679-5849.
+                Definitive Mechanical installs and repairs tankless water heaters for homes and businesses across Maryland, Washington DC, and Northern Virginia. Tankless systems provide hot water on demand, reduce energy costs, and last significantly longer than tank units. Every installation performed by licensed plumbing professionals under Master Plumber license. Financing available. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber", "Installation & Repair", "Residential & Commercial", "Financing Available", "Gas & Electric Units"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>

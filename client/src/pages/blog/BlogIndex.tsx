@@ -213,7 +213,7 @@ export default function BlogIndex() {
                     {PHONE_DISPLAY}
                   </a>
                   <p className="text-[#C0D8F0] font-sans text-xs text-center">
-                    24/7 live dispatcher  Licensed Master Plumber
+                    24/7 live dispatcher  Licensed Plumbing Professionals
                   </p>
                   <div className="mt-4 pt-4 border-t border-white/10 space-y-2">
                     <div className="flex items-center gap-2 text-[#C0D8F0] text-xs font-sans">

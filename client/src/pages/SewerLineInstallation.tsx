@@ -65,7 +65,7 @@ export default function SewerLineInstallation() {
                 Sewer Line Installation in Maryland, DC & Northern Virginia
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
-                Definitive Mechanical installs and replaces sewer lines for residential and commercial properties across Maryland, Washington DC, and Northern Virginia. Every installation is performed under the correct permits, to code, by a licensed Master Plumber. Camera inspection included before full replacement is recommended. Financing available. Call (301) 679-5849.
+                Definitive Mechanical installs and replaces sewer lines for residential and commercial properties across Maryland, Washington DC, and Northern Virginia. Every installation is performed under the correct permits, to code, by licensed plumbing professionals under Master Plumber license. Camera inspection included before full replacement is recommended. Financing available. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Camera Inspection Before Replacement", "Licensed Master Plumber", "Permitted & Inspected", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>

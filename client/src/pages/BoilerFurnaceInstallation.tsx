@@ -105,7 +105,7 @@ export default function BoilerFurnaceInstallation() {
                 Boiler & Furnace Installation in Maryland, DC & Northern Virginia
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
-                Definitive Mechanical installs replacement and new boilers and furnaces for homes and commercial facilities across Maryland, Washington DC, and Northern Virginia. Every installation is performed under the correct permits by a licensed Master Plumber and Master Gasfitter. Financing available for residential installations. Written pricing before we start. Call (301) 679-5849.
+                Definitive Mechanical installs replacement and new boilers and furnaces for homes and commercial facilities across Maryland, Washington DC, and Northern Virginia. Every installation is performed under the correct permits by licensed plumbing professionals under Master Plumber and Master Gasfitter license. Financing available for residential installations. Written pricing before we start. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber/Gasfitter", "Permitted & Inspected", "Financing Available", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>

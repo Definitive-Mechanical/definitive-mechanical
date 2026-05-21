@@ -55,7 +55,7 @@ export default function GasLineInstallation() {
                 Gas Line Installation in Maryland, DC & Northern Virginia
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
-                Definitive Mechanical installs gas lines for homes and businesses across Maryland, Washington DC, and Northern Virginia. Every installation is performed by a licensed Master Gasfitter, permitted through the correct jurisdiction, and pressure-tested before the gas supply is restored. Residential and commercial applications. 25+ years of gas line experience. Call (301) 679-5849.
+                Definitive Mechanical installs gas lines for homes and businesses across Maryland, Washington DC, and Northern Virginia. Every installation is performed by licensed plumbing professionals under Master Gasfitter license, permitted through the correct jurisdiction, and pressure-tested before the gas supply is restored. Residential and commercial applications. 25+ years of gas line experience. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Gasfitter", "Permitted & Pressure-Tested", "Residential & Commercial", "25+ Years Experience"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>

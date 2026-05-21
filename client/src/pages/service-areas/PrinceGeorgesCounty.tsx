@@ -89,7 +89,7 @@ export default function PrinceGeorgesCounty() {
           <div style={{ marginBottom: "36px" }}>
             <SectionHeading eyebrow="OUR SERVICES" heading={`Plumbing services available throughout Prince George's County`} />
             <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.75, marginTop: "12px", maxWidth: "640px" }}>
-              Full-service licensed plumbing for residential, commercial, and government clients throughout Prince George's County. Every job performed by a licensed Master Plumber.
+              Full-service licensed plumbing for residential, commercial, and government clients throughout Prince George's County. Every job performed by licensed plumbing professionals under Master Plumber license.
             </p>
           </div>
 

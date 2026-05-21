@@ -106,7 +106,7 @@ export default function FaucetToiletRepair() {
                 Faucet & Toilet Repair in Maryland, DC & Northern Virginia
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '24px' }}>
-                Definitive Mechanical repairs and replaces faucets, toilets, and fixtures for homes and businesses across Maryland, Washington DC, and Northern Virginia. Dripping faucets, running toilets, leaking supply lines, toilet clogs, and fixture replacement — all handled by a licensed Master Plumber. Same-day service often available. Call (301) 679-5849.
+                Definitive Mechanical repairs and replaces faucets, toilets, and fixtures for homes and businesses across Maryland, Washington DC, and Northern Virginia. Dripping faucets, running toilets, leaking supply lines, toilet clogs, and fixture replacement — all handled by licensed plumbing professionals under Master Plumber license. Same-day service often available. Call (301) 679-5849.
               </p>
               <TrustBadges variant="dark" badges={["Same-Day Service Available", "Licensed Master Plumber", "Residential & Commercial", "Faucets, Toilets & Fixtures"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>

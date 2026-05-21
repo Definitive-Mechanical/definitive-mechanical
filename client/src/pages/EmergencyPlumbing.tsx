@@ -25,7 +25,7 @@ const EMERGENCY_SCENARIOS = [
 const RESPONSE_STEPS = [
   { icon: 'Phone', title: 'A live person answers.', description: 'Not a machine. Not a scheduling portal. A real dispatcher who understands plumbing.' },
   { icon: 'Search', title: 'We assess your situation.', description: 'The dispatcher asks the right questions to understand urgency, the type of problem, and the safest immediate steps you can take while we\'re in transit.' },
-  { icon: 'UserCheck', title: 'We dispatch a licensed technician.', description: 'Every emergency call is handled by a licensed Master Plumber or Master Gasfitter — not an apprentice working unsupervised.' },
+  { icon: 'UserCheck', title: 'We dispatch a licensed technician.', description: 'Our team of licensed plumbing professionals handles every emergency call — all work performed under Master Plumber license.' },
   { icon: 'Clock', title: 'We give you an ETA.', description: 'You know when we\'re coming. We give you a call or text update when the technician is en route. We do not overbook.' },
   { icon: 'FileText', title: 'Diagnose and provide written pricing.', description: 'We assess the problem and give you written pricing before any work begins. You approve the price. We do the work.' },
   { icon: 'CheckCircle2', title: 'Complete repair and clean up.', description: 'The job is done right the first time, to code, with no mess left behind. Same rate regardless of time of day.' },
@@ -106,7 +106,7 @@ export default function EmergencyPlumbing() {
                 24/7 Emergency Plumbing Service — Maryland, DC & Northern Virginia
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
-                Definitive Mechanical provides 24/7 emergency plumbing service across Maryland, Washington DC, and Northern Virginia. A live dispatcher answers every call — day or night, weekday or holiday. Every emergency call is handled by a licensed Master Plumber and Master Gasfitter. We arrive, diagnose, and provide written pricing before work begins.
+                Definitive Mechanical provides 24/7 emergency plumbing service across Maryland, Washington DC, and Northern Virginia. A live dispatcher answers every call — day or night, weekday or holiday. Licensed plumbing professionals dispatched — work performed under Master Plumber license. We arrive, diagnose, and provide written pricing before work begins.
               </p>
 
               {/* Dominant CTA */}
@@ -138,7 +138,7 @@ export default function EmergencyPlumbing() {
               </a>
 
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.7)', fontSize: '14px', marginBottom: '16px' }}>
-                 Licensed Master Plumber on Every Emergency Call &nbsp; Upfront Flat Pricing &nbsp; MD, DC, VA & DE Licensed
+                 Licensed Plumbing Professionals on Every Emergency Call &nbsp; Upfront Flat Pricing &nbsp; MD, DC, VA & DE Licensed
               </p>
 
               <BookNowButton variant="outline" text="REQUEST EMERGENCY SERVICE" href="/contact" size="md" />
@@ -316,7 +316,7 @@ export default function EmergencyPlumbing() {
       {/* FINAL CTA */}
       <CTABanner
         heading="Plumbing emergency in Maryland, DC, or Northern Virginia?"
-        subtext="Our live dispatcher answers 24/7/365. Licensed Master Plumber dispatched immediately. Trip fee applies to all services."
+        subtext="Our live dispatcher answers 24/7/365. Licensed plumbing professionals dispatched — work performed under Master Plumber license. Trip fee applies to all services."
         primaryBtn={{ text: `CALL ${BUSINESS.phone} NOW`, href: `tel:${BUSINESS.phoneRaw}` }}
         secondaryBtn={{ text: 'REQUEST SERVICE ONLINE', href: '/contact' }}
         variant="gradient"

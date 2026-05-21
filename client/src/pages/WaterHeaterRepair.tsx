@@ -200,7 +200,7 @@ export default function WaterHeaterRepair() {
 
       <CTABanner
         heading="Need water heater repair or replacement in Maryland, DC, or Northern Virginia?"
-        subtext="Same-day service available. Financing for replacements. Licensed Master Plumber on every job."
+        subtext="Same-day service available. Financing for replacements. Licensed plumbing professionals on every job — work under Master Plumber license."
         primaryBtn={{ text: `CALL ${BUSINESS.phone}`, href: `tel:${BUSINESS.phoneRaw}` }}
         secondaryBtn={{ text: 'REQUEST SERVICE ONLINE', href: '/contact' }}
         variant="gradient"

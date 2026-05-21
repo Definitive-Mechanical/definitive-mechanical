@@ -29,7 +29,7 @@ const services = [
 
 const faqs = [
   { question: "What plumbing services do you offer in Bowie, MD?", answer: "We offer the full range of plumbing services in Bowie — emergency plumbing, drain cleaning, water heater repair and installation, sewer line service, gas line repair and installation, backflow certification, boiler and furnace service, and faucet and toilet repair. Commercial and government plumbing available. Call (301) 679-5849." },
-  { question: "How quickly can you respond to a plumbing emergency in Bowie?", answer: "We dispatch from our Largo, MD location — minutes from most Bowie neighborhoods. A live dispatcher answers 24/7. Licensed Master Plumber dispatched immediately. Call (301) 679-5849 for an honest ETA at the time of your call." },
+  { question: "How quickly can you respond to a plumbing emergency in Bowie?", answer: "We dispatch from our Largo, MD location — minutes from most Bowie neighborhoods. A live dispatcher answers 24/7. Licensed plumbing professionals dispatched — work performed under Master Plumber license. Call (301) 679-5849 for an honest ETA at the time of your call." },
   { question: "Are you licensed to work in Bowie and Prince George's County?", answer: "Yes. We hold Maryland State Master Plumber/Gasfitter License #96958 and WSSC Master Plumber/Gasfitter License #73696, which covers plumbing work throughout Prince George's County including Bowie." },
   { question: "Do you offer financing for water heater replacement in Bowie?", answer: "Yes. Consumer financing is available through Synchrony for eligible services including water heater replacement and installation. Apply at mysynchrony.com/mmc/S6240351600. Call (301) 679-5849 to discuss." },
 ];
@@ -139,7 +139,7 @@ export default function BowieMD() {
               <p style={{ fontFamily:"var(--font-display)", color:"#ef4444", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">24/7 EMERGENCY SERVICE</p>
               <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(28px,4vw,42px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.05 }} className="mb-5">Emergency Plumbing Available Around the Clock</h2>
               <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
-                A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. All services have a trip fee. Upfront written pricing before any work begins.
+                A live dispatcher answers every call — no voicemail, no answering service. Licensed plumbing professionals dispatched — work performed under Master Plumber license. All services have a trip fee. Upfront written pricing before any work begins.
               </p>
               <a href="tel:+13016795849" style={{ display:"inline-flex", alignItems:"center", gap:"10px", background:"#dc2626", color:"white", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"15px", textTransform:"uppercase", letterSpacing:"0.08em", padding:"14px 28px", borderRadius:"3px", textDecoration:"none", transition:"background 0.2s" }}>
                 CALL (301) 679-5849
