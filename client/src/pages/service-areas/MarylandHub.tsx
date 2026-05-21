@@ -190,11 +190,13 @@ export default function MarylandHub() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', maxWidth: '900px', margin: '0 auto' }}>
             {[
-              { label: 'MD Master Plumber', value: '#17999' },
-              { label: 'MD Master Gasfitter', value: '#18768' },
-              { label: 'WSSC Backflow', value: '#73696' },
-              { label: 'MDOT MBE Certified', value: 'Cert #MBE-2023-0456' },
-              { label: 'MD HVACR License', value: '#A00000' },
+              { label: 'MD Master Plumber/Gasfitter', value: '#96958' },
+              { label: 'WSSC Master Plumber/Gasfitter', value: '#73696' },
+              { label: 'Howard Co. Master Plumber/Gasfitter', value: '#20020096958' },
+              { label: 'Anne Arundel Co. Master Plumber/Gasfitter', value: '#A2-6139' },
+              { label: 'City of Rockville Master Plumber/Gasfitter', value: '#PLL-0002113' },
+              { label: 'MD HVACR License', value: '#123550' },
+              { label: 'MDOT MBE Certified', value: 'Cert No. 20-134' },
               { label: 'EPA 608 Certified', value: 'Universal' },
             ].map((cred) => (
               <div key={cred.label} style={{ background: 'white', border: '1px solid #e5e7eb', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px 20px' }}>

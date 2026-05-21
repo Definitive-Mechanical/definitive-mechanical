@@ -153,12 +153,12 @@ export default function WashingtonDCHub() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', maxWidth: '900px', margin: '0 auto' }}>
             {[
-              { label: 'DC Master Plumber', value: 'Licensed in DC' },
-              { label: 'WSSC Backflow', value: '#73696' },
-              { label: 'DC Contractor', value: 'Licensed & Insured' },
+              { label: 'DC Master Plumber/Gasfitter (DCRA)', value: '#PGM1002236' },
+              { label: 'MD Master Plumber/Gasfitter', value: '#96958' },
+              { label: 'WSSC Master Plumber/Gasfitter', value: '#73696' },
+              { label: 'MDOT MBE Certified', value: 'Cert No. 20-134' },
+              { label: 'CAGE Code', value: '8HCF6' },
               { label: 'EPA 608 Certified', value: 'Universal' },
-              { label: 'MDOT MBE Certified', value: 'Cert #MBE-2023-0456' },
-              { label: 'Multi-State Licensed', value: 'MD, VA, DC, DE' },
             ].map((cred) => (
               <div key={cred.label} style={{ background: 'white', border: '1px solid #e5e7eb', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px 20px' }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--brand-cyan)', margin: '0 0 4px' }}>{cred.label}</p>

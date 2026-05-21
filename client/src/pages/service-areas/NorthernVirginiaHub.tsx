@@ -173,11 +173,11 @@ export default function NorthernVirginiaHub() {
           </h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', maxWidth: '900px', margin: '0 auto' }}>
             {[
-              { label: 'VA Master Plumber', value: '#2705181061' },
-              { label: 'VA Master Gasfitter', value: '#2705181061' },
-              { label: 'VA Contractor License', value: '#2705181061' },
-              { label: 'SWaM Certification', value: 'Virginia DSBSD' },
-              { label: 'Backflow Certified', value: 'ASSE 5110' },
+              { label: 'VA Master Plumber/Gasfitter (DPOR)', value: '#2710064209' },
+              { label: 'VA Class A Contractor (DPOR)', value: '#2705181061' },
+              { label: 'VA SWaM Certified', value: 'Cert No. 815255' },
+              { label: 'MDOT MBE Certified', value: 'Cert No. 20-134' },
+              { label: 'CAGE Code', value: '8HCF6' },
               { label: 'EPA 608 Certified', value: 'Universal' },
             ].map((cred) => (
               <div key={cred.label} style={{ background: 'white', border: '1px solid #e5e7eb', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '16px 20px' }}>
