@@ -18,14 +18,14 @@ export default function LocationCard({ city, state, href, description }: Locatio
         borderRadius: '6px',
         overflow: 'hidden',
         transition: 'all 0.3s ease',
-        boxShadow: '0 2px 12px rgba(0,160,200,0.08)',
+        boxShadow: 'var(--shadow-card-brand)',
       }}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(6,59,99,0.16)';
+        (e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow-card-hover)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
       }}
       onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 2px 12px rgba(0,160,200,0.08)';
+        (e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow-card-brand)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
       }}
     >

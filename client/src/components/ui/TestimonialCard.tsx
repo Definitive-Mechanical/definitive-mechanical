@@ -14,7 +14,7 @@ export default function TestimonialCard({ quote, name, location, service }: Test
       borderLeft: '4px solid var(--brand-cyan)',
       borderRadius: '6px',
       padding: '32px',
-      boxShadow: '0 2px 12px rgba(0,160,200,0.08)',
+      boxShadow: 'var(--shadow-card-brand)',
       position: 'relative',
       overflow: 'hidden',
     }}>

@@ -46,7 +46,7 @@ export default function Footer() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }}
       />
-      <footer style={{ background: '#0A0A0A', color: 'white' }}>
+      <footer style={{ background: 'var(--footer-bg)', color: 'white' }}>
         {/* Top accent line */}
         <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--brand-cyan), var(--brand-blue))' }} />
 

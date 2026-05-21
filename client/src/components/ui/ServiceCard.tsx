@@ -24,17 +24,17 @@ export default function ServiceCard({ title, description, href, iconName, featur
         border: '1px solid #E6E8EE',
         borderRadius: '12px',
         overflow: 'hidden',
-        boxShadow: '0 4px 12px rgba(0,160,200,0.08)',
+        boxShadow: 'var(--shadow-card-brand)',
         transition: 'transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)',
         display: 'block',
         position: 'relative',
       }}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 12px 32px rgba(6,59,99,0.16)';
+        (e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow-card-hover)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(-4px)';
       }}
       onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(0,160,200,0.08)';
+        (e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow-card-brand)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
       }}
     >

@@ -19,7 +19,7 @@ export default function StatsCard({ number, label, icon, bg = 'white' }: StatsCa
       boxShadow: '0 2px 12px rgba(0,160,200,0.08)',
       textAlign: 'center',
     }}>
-      <IconComponent size={28} color="#6090C0" />
+      <IconComponent size={28} color="var(--brand-blue)" />
       <p style={{
         fontFamily: 'var(--font-display)',
         fontWeight: 700,
