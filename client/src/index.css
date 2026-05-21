@@ -290,9 +290,9 @@
   .dm-btn.lg { font-size: 16px; padding: 16px 28px; }
   .dm-btn.sm { font-size: 12px; padding: 10px 14px; }
 
-  .dm-btn-primary { background: var(--brand-red); color: #fff; }
-  .dm-btn-primary:hover { background: var(--brand-red-2); text-decoration: none; color: #fff; }
-  .dm-btn-primary:active { background: var(--brand-red-3); }
+  .dm-btn-primary { background: white; color: var(--brand-navy); }
+  .dm-btn-primary:hover { background: #f0f4f8; text-decoration: none; color: var(--brand-navy); }
+  .dm-btn-primary:active { background: #e2e8f0; }
 
   .dm-btn-secondary { background: var(--brand-blue); color: #fff; }
   .dm-btn-secondary:hover { background: var(--brand-blue-2); text-decoration: none; color: #fff; }

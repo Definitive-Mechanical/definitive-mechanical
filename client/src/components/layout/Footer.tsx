@@ -48,7 +48,7 @@ export default function Footer() {
       />
       <footer style={{ background: 'var(--brand-navy-dark)', color: 'white' }}>
         {/* Top accent line */}
-        <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--brand-red), var(--brand-blue))' }} />
+        <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--brand-blue), #0a0a0a)' }} />
 
         {/* Main footer content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -58,7 +58,7 @@ export default function Footer() {
             <div>
               <div className="mb-5">
                 <img
-                  src="/manus-storage/logo-knockout_7a8a46a2.svg"
+                  src="/manus-storage/definitive-mechanical-logo_855788d0.png"
                   alt="Definitive Mechanical"
                   style={{ height: '48px', width: 'auto', display: 'block' }}
                 />

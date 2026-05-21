@@ -233,7 +233,7 @@ function HeroSection() {
                   </div>
 
                   <button type="submit" disabled={submitting}
-                    style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                    style={{ width: '100%', background: submitting ? '#ccc' : 'white', color: submitting ? '#888' : 'var(--brand-navy)', border: '2px solid white', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
                     {submitting ? 'Submitting...' : 'Request Service'}
                   </button>
 
