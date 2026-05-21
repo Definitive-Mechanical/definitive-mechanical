@@ -15,7 +15,7 @@ const CITIES = [
 const FAQ_ITEMS = [
   { question: "Are you licensed for plumbing in Anne Arundel County?", answer: "Yes. Anne Arundel County Master Plumber/Gasfitter #A2-6139 and Maryland State #96958 authorize all plumbing and gas work throughout Anne Arundel County. Call (301) 679-5849." },
   { question: "Do you serve Annapolis and all Anne Arundel County communities?", answer: "Yes. We serve Annapolis, Glen Burnie, Severn, Severna Park, Pasadena, Odenton, Crofton, Arnold, and all Anne Arundel County communities. Call (301) 679-5849." },
-  { question: "Do you provide 24/7 emergency plumbing in Anne Arundel County?", answer: "Yes. Emergency plumbing available 24/7 across all of Anne Arundel County. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Anne Arundel County?", answer: "Yes. Emergency plumbing available 24/7 across all of Anne Arundel County. All services have a trip fee. A live dispatcher answers every call at (301) 679-5849." },
 ];
 
 const SCHEMA = {

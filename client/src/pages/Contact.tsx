@@ -263,7 +263,7 @@ export default function Contact() {
               { icon: Phone, title: "Live Dispatcher 24/7", body: "A real person answers every call — day, night, weekends, and holidays. No voicemail, no call center." },
               { icon: CheckCircle2, title: "Written Pricing First", body: "We diagnose the problem and provide written pricing before any work begins. You approve it. We do the work." },
               { icon: MapPin, title: "Licensed in 4 States", body: "Master Plumber and Master Gasfitter licensed in Maryland, DC, Virginia, and Delaware." },
-              { icon: Clock, title: "Same Rate Any Time", body: "No overtime surcharges. No holiday fees. The rate at 2am is the same as the rate at 2pm." },
+              { icon: Clock, title: "Same Rate Any Time", body: "All services have a trip fee. All services have a trip fee." },
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-md p-6 text-center" style={{ boxShadow: "0 2px 12px rgba(6,59,99,0.08)" }}>
                 <item.icon size={32} style={{ color: "var(--brand-cyan)", margin: "0 auto 12px" }} />
@@ -277,7 +277,7 @@ export default function Contact() {
 
       <CTABanner
         heading="Need a plumber now? Don't wait."
-        subtext="Licensed Master Plumber dispatched. Upfront pricing before we start. Same rate day or night."
+        subtext="Licensed Master Plumber dispatched. Upfront pricing before we start. Trip fee applies to all services."
         primaryBtn={{ text: "CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "VIEW ALL SERVICES", href: "/plumbing" }}
         variant="gradient"

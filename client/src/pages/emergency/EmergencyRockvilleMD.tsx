@@ -12,7 +12,7 @@ const EMERGENCY_STEPS = [
   { number: 1, title: "Call Now — Live Dispatcher Answers", description: "Call (301) 679-5849. A live dispatcher answers every call — day or night, weekend or holiday. Not a voicemail, not an answering service. A real person who can dispatch a licensed plumber immediately.", icon: "Phone" },
   { number: 2, title: "Licensed Plumber Dispatched", description: "A licensed Master Plumber is dispatched to your location. Your dispatcher confirms your address, the nature of the emergency, and gives you an honest ETA. We confirm your main water shut-off location while en route.", icon: "Truck" },
   { number: 3, title: "Assessment — Plain-Language Diagnosis", description: "Our plumber assesses the emergency and explains what they found in plain language. No technical jargon, no vague explanations. You know what is happening before we do anything.", icon: "Search" },
-  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. Same rate as business hours — no overtime surcharge, no after-hours premium. The price you agree to is the price you pay.", icon: "FileText" },
+  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. All services include a trip fee, disclosed before any work begins. The price you agree to is the price you pay.", icon: "FileText" },
   { number: 5, title: "Emergency Resolved — Verified & Clean", description: "We resolve the emergency, restore service where possible, and clean up the work area. We confirm the system is safe and functional before we leave. Follow-up service is scheduled if needed.", icon: "CheckCircle" },
 ];
 
@@ -30,7 +30,7 @@ const EMERGENCY_TYPES = [
 const FAQ_ITEMS = [
   { question: "What is the response time for an emergency plumber in Rockville, MD?", answer: "Response time depends on dispatcher availability and traffic at the time of call. We dispatch from our Largo, MD location. Our dispatcher gives you an honest ETA at the time of your call — not a guaranteed window we cannot keep. Call (301) 679-5849 for current availability." },
   { question: "Are you licensed to do emergency plumbing in Rockville, MD?", answer: "Yes. Definitive Mechanical holds three credentials required for full Rockville plumbing authority: City of Rockville Master Plumber/Gasfitter #PLL-0002113, WSSC Master Plumber/Gasfitter #73696, and Maryland State Master Plumber/Gasfitter #96958. We are licensed for emergency plumbing work within Rockville's municipal jurisdiction." },
-  { question: "Do you charge extra for emergency plumbing at night or on weekends in Rockville?", answer: "No. We do not charge an overtime surcharge for after-hours, weekend, or holiday emergency plumbing calls in Rockville or anywhere in our service area. The rate is the same regardless of when you call. Written pricing before any work begins." },
+  { question: "Do you charge extra for emergency plumbing at night or on weekends in Rockville?", answer: "All services include a trip fee. Written pricing is provided before any work begins — the price you agree to is the price you pay. Call (301) 679-5849." },
   { question: "What should I do right now if I have a plumbing emergency in Rockville?", answer: "For water emergencies: locate and shut off your main water supply valve, then call (301) 679-5849. For gas emergencies: leave the building immediately, call your gas company from outside, then call us once the gas company has cleared the scene. For sewer backups: do not use any fixtures and call immediately." },
 ];
 
@@ -64,7 +64,7 @@ export default function EmergencyRockvilleMD() {
     <>
       <Helmet>
         <title>Emergency Plumber in Rockville MD | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Rockville MD — available 24/7. City of Rockville licensed #PLL-0002113  WSSC #73696  MD #96958. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Rockville MD — available 24/7. City of Rockville licensed #PLL-0002113  WSSC #73696  MD #96958. Live dispatcher. All services have a trip fee. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-rockville-md/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
@@ -72,7 +72,7 @@ export default function EmergencyRockvilleMD() {
       {/* Safety Top Bar */}
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase text-xs tracking-wide" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-           ROCKVILLE PLUMBING EMERGENCY? CALL (301) 679-5849 — LIVE DISPATCHER 24/7  NO OVERTIME SURCHARGE
+           ROCKVILLE PLUMBING EMERGENCY? CALL (301) 679-5849 — LIVE DISPATCHER 24/7  ALL SERVICES HAVE A TRIP FEE
         </a>
       </div>
 
@@ -87,7 +87,7 @@ export default function EmergencyRockvilleMD() {
             Emergency Plumber in Rockville, MD
           </h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto text-center mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical provides 24/7 emergency plumbing in Rockville, Maryland. A live dispatcher answers every call. We hold three licenses for Rockville: City of Rockville Master Plumber/Gasfitter #PLL-0002113, WSSC #73696, and Maryland State #96958. No overtime surcharge — same rate day or night. Call (301) 679-5849.
+            Definitive Mechanical provides 24/7 emergency plumbing in Rockville, Maryland. A live dispatcher answers every call. We hold three licenses for Rockville: City of Rockville Master Plumber/Gasfitter #PLL-0002113, WSSC #73696, and Maryland State #96958. All services include a trip fee, disclosed before dispatch. Call (301) 679-5849.
           </p>
 
           {/* Dominant Phone Button */}
@@ -105,7 +105,7 @@ export default function EmergencyRockvilleMD() {
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> City of Rockville #PLL-0002113</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> WSSC #73696</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> MD State #96958</span>
-            <span className="flex items-center gap-1"><Clock size={14} /> Same Rate 24/7</span>
+            <span className="flex items-center gap-1"><Clock size={14} /> Trip Fee Applies to All Services</span>
             <span className="flex items-center gap-1"><DollarSign size={14} /> Written Pricing Before We Start</span>
           </div>
         </div>
@@ -173,7 +173,7 @@ export default function EmergencyRockvilleMD() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {[
-              { icon: Clock, title: "Same Rate — Day or Night", body: "No overtime surcharge. No after-hours premium. The rate you pay at 2 AM is the same as 2 PM." },
+              { icon: Clock, title: "Trip Fee Applies to All Services", body: "All services have a trip fee." },
               { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." },
               { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." },
             ].map((item) => (
@@ -218,7 +218,7 @@ export default function EmergencyRockvilleMD() {
 
       <CTABanner
         heading="Rockville plumbing emergency? Don't wait."
-        subtext="City of Rockville #PLL-0002113  WSSC #73696  MD #96958  24/7 Live Dispatcher  No Overtime Surcharge."
+        subtext="City of Rockville #PLL-0002113  WSSC #73696  MD #96958  24/7 Live Dispatcher  All Services Have a Trip Fee."
         primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }}
         secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }}
         variant="gradient"

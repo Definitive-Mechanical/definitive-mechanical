@@ -12,7 +12,7 @@ const EMERGENCY_STEPS = [
   { number: 1, title: "Call Now — Live Dispatcher Answers", description: "Call (301) 679-5849. A live dispatcher answers every call — day or night, weekend or holiday. Not a voicemail, not an answering service. A real person who can dispatch a licensed plumber immediately.", icon: "Phone" },
   { number: 2, title: "Dispatched From Our Largo Base", description: "A licensed Master Plumber is dispatched from our Largo base at 9701 Apollo Drive — making our ETA to Largo addresses typically shorter than to any other location in our service area. Our dispatcher confirms your address and gives you an honest ETA.", icon: "Truck" },
   { number: 3, title: "Assessment — Plain-Language Diagnosis", description: "Our plumber assesses the emergency and explains what they found in plain language. No technical jargon, no vague explanations. You know what is happening before we do anything.", icon: "Search" },
-  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. Same rate as business hours — no overtime surcharge, no after-hours premium. The price you agree to is the price you pay.", icon: "FileText" },
+  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. All services include a trip fee, disclosed before any work begins. The price you agree to is the price you pay.", icon: "FileText" },
   { number: 5, title: "Emergency Resolved — Verified & Clean", description: "We resolve the emergency, restore service where possible, and clean up the work area. We confirm the system is safe and functional before we leave. Follow-up service is scheduled if needed.", icon: "CheckCircle" },
 ];
 
@@ -31,7 +31,7 @@ const FAQ_ITEMS = [
   { question: "How fast can you respond to a plumbing emergency in Largo?", answer: "We are based in Largo at 9701 Apollo Drive — emergency dispatch for Largo addresses starts from our community. Our dispatcher gives you an honest ETA at the time of your call based on technician availability. Call (301) 679-5849 immediately." },
   { question: "Are you licensed for emergency plumbing in Largo and Prince George's County?", answer: "Yes. WSSC Master Plumber/Gasfitter #73696 and Maryland State Master Plumber/Gasfitter #96958 cover all emergency plumbing work in Largo and throughout Prince George's County." },
   { question: "Do you handle emergency plumbing for commercial properties in Largo?", answer: "Yes. Commercial emergency plumbing for Largo's commercial corridors, office buildings, and government-adjacent facilities. MDOT MBE Cert 20-134 and CAGE 8HCF6. Call (301) 679-5849." },
-  { question: "Do you charge extra for after-hours emergency plumbing in Largo?", answer: "No. No overtime surcharge anywhere in our service area including Largo. Same rate, written pricing before any work begins." },
+  { question: "Do you charge extra for after-hours emergency plumbing in Largo?", answer: "All services include a trip fee. Written pricing before any work begins." },
 ];
 
 const SCHEMA = {
@@ -48,7 +48,7 @@ export default function EmergencyLargoMD() {
     <>
       <Helmet>
         <title>Emergency Plumber in Largo MD | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Largo MD — based here. Fastest response in our service area. WSSC #73696  MD #96958  24/7 live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Largo MD — based here. Fastest response in our service area. WSSC #73696  MD #96958  24/7 live dispatcher. All services have a trip fee. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-largo-md/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
@@ -65,7 +65,7 @@ export default function EmergencyLargoMD() {
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  LARGO, MD  BASED RIGHT HERE</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Largo, MD</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical is based in Largo at 9701 Apollo Drive, Suite 100 — making our emergency response to Largo addresses the fastest in our service area. A live dispatcher answers every call. WSSC Master Plumber/Gasfitter #73696  MD State #96958. No overtime surcharge. Call (301) 679-5849.
+            Definitive Mechanical is based in Largo at 9701 Apollo Drive, Suite 100 — making our emergency response to Largo addresses the fastest in our service area. A live dispatcher answers every call. WSSC Master Plumber/Gasfitter #73696  MD State #96958. All services have a trip fee. Call (301) 679-5849.
           </p>
           <div className="max-w-2xl mx-auto">
             <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -78,7 +78,7 @@ export default function EmergencyLargoMD() {
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> WSSC #73696</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> MD State #96958</span>
             <span className="flex items-center gap-1"><Clock size={14} /> Fastest Response in Our Area</span>
-            <span className="flex items-center gap-1"><DollarSign size={14} /> Same Rate 24/7</span>
+            <span className="flex items-center gap-1"><DollarSign size={14} /> Trip Fee Applies to All Services</span>
           </div>
         </div>
       </section>
@@ -137,7 +137,7 @@ export default function EmergencyLargoMD() {
       <section className="bg-white py-12">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {[{ icon: Clock, title: "Same Rate — Day or Night", body: "No overtime surcharge. No after-hours premium. The rate you pay at 2 AM is the same as 2 PM." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
+            {[{ icon: Clock, title: "Trip Fee Applies to All Services", body: "All services have a trip fee." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
               <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
                 <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
                 <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
@@ -165,7 +165,7 @@ export default function EmergencyLargoMD() {
         </div>
       </section>
 
-      <CTABanner heading="Largo plumbing emergency? We're based here." subtext="9701 Apollo Drive, Largo MD  WSSC #73696  MD #96958  24/7 Live Dispatcher  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Largo plumbing emergency? We're based here." subtext="9701 Apollo Drive, Largo MD  WSSC #73696  MD #96958  24/7 Live Dispatcher  All Services Have a Trip Fee." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

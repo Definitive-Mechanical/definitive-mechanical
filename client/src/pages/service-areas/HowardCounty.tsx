@@ -19,7 +19,7 @@ const CITIES = [
 const FAQ_ITEMS = [
   { question: "Are you licensed for plumbing in Howard County, MD?", answer: "Yes. Howard County Master Plumber/Gasfitter #20020096958, WSSC #73696, and Maryland State #96958 authorize all plumbing and gas work throughout Howard County. Call (301) 679-5849." },
   { question: "Do you serve all Howard County communities?", answer: "Yes. We serve Ellicott City, Columbia, Clarksville, Fulton, Jessup, Savage, Elkridge, and all Howard County communities. Call (301) 679-5849." },
-  { question: "Do you provide 24/7 emergency plumbing in Howard County?", answer: "Yes. Emergency plumbing available 24/7 across all of Howard County. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Howard County?", answer: "Yes. Emergency plumbing available 24/7 across all of Howard County. All services have a trip fee. A live dispatcher answers every call at (301) 679-5849." },
 ];
 
 const SCHEMA = {

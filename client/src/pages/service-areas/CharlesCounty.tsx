@@ -14,7 +14,7 @@ const CITIES = [
 const FAQ_ITEMS = [
   { question: "Are you licensed for plumbing in Charles County?", answer: "Yes. Maryland State Master Plumber/Gasfitter #96958 and Charles County registration authorize all plumbing and gas work throughout Charles County. Call (301) 679-5849." },
   { question: "Do you serve Waldorf and all Charles County communities?", answer: "Yes. We serve Waldorf, La Plata, White Plains, Indian Head, Bryans Road, Accokeek, Brandywine, and all Charles County communities. Call (301) 679-5849." },
-  { question: "Do you provide 24/7 emergency plumbing in Charles County?", answer: "Yes. Emergency plumbing available 24/7 across all of Charles County. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Charles County?", answer: "Yes. Emergency plumbing available 24/7 across all of Charles County. All services have a trip fee. A live dispatcher answers every call at (301) 679-5849." },
 ];
 
 const SCHEMA = {
@@ -92,7 +92,7 @@ export default function CharlesCounty() {
         </div>
       </section>
 
-      <CTABanner heading="Need a plumber in Charles County?" subtext="MD State #96958  24/7 Emergency  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Need a plumber in Charles County?" subtext="MD State #96958  24/7 Emergency  All Services Have a Trip Fee." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

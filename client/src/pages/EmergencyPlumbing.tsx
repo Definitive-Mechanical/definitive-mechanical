@@ -38,7 +38,7 @@ const EMERGENCY_FAQ = [
   },
   {
     question: 'Do you charge extra for after-hours emergency plumbing?',
-    answer: 'No. Definitive Mechanical charges the same rate regardless of time of day. The rate you receive at 2am is the same as the rate at 2pm. We do not add after-hours, weekend, or holiday surcharges.',
+    answer: 'All services include a trip fee. Written pricing is provided before any work begins — the price you agree to is the price you pay.',
   },
   {
     question: 'What should I do while waiting for the emergency plumber?',
@@ -219,10 +219,10 @@ export default function EmergencyPlumbing() {
             <ShieldCheck size={32} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
             <div>
               <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', marginBottom: '6px' }}>
-                Same rate regardless of time of day.
+                All services have a trip fee.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>
-                We do not charge a premium for nights, weekends, or holidays. The rate you receive at 2am is the same as the rate at 2pm.
+                The trip fee is disclosed before dispatch. Written pricing is provided before any work begins.
               </p>
             </div>
           </div>
@@ -316,7 +316,7 @@ export default function EmergencyPlumbing() {
       {/* FINAL CTA */}
       <CTABanner
         heading="Plumbing emergency in Maryland, DC, or Northern Virginia?"
-        subtext="Our live dispatcher answers 24/7/365. Licensed Master Plumber dispatched immediately. Same rate day or night."
+        subtext="Our live dispatcher answers 24/7/365. Licensed Master Plumber dispatched immediately. Trip fee applies to all services."
         primaryBtn={{ text: `CALL ${BUSINESS.phone} NOW`, href: `tel:${BUSINESS.phoneRaw}` }}
         secondaryBtn={{ text: 'REQUEST SERVICE ONLINE', href: '/contact' }}
         variant="gradient"

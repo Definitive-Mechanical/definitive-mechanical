@@ -23,7 +23,7 @@ const CITIES = [
 const FAQ_ITEMS = [
   { question: "What areas of Prince George's County do you serve?", answer: "We serve all of Prince George's County including Largo (our home base), Bowie, Fort Washington, Hyattsville, College Park, Laurel, Greenbelt, Upper Marlboro, Oxon Hill, Landover, Capitol Heights, Suitland, and all other PG County communities. Call (301) 679-5849." },
   { question: "Are you licensed for plumbing in Prince George's County?", answer: "Yes. WSSC Master Plumber/Gasfitter #73696 and Maryland State Master Plumber/Gasfitter #96958 authorize all plumbing and gas work throughout Prince George's County. We are based in Largo, MD." },
-  { question: "Do you provide 24/7 emergency plumbing in Prince George's County?", answer: "Yes. Emergency plumbing available 24/7 across all of Prince George's County. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Prince George's County?", answer: "Yes. Emergency plumbing available 24/7 across all of Prince George's County. All services have a trip fee. A live dispatcher answers every call at (301) 679-5849." },
   { question: "Are you MDOT MBE certified for government work in Prince George's County?", answer: "Yes. MDOT MBE Cert 20-134 and CAGE Code 8HCF6 support government and procurement-eligible plumbing contracts throughout Prince George's County and the state of Maryland." },
 ];
 

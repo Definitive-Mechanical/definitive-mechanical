@@ -199,7 +199,7 @@ export default function DrainCleaning() {
 
       <CTABanner
         heading="Need drain cleaning in Maryland, DC, or Northern Virginia?"
-        subtext="Licensed Master Plumber on every job. Written pricing before we start. Same rate day or night."
+        subtext="Licensed Master Plumber on every job. Written pricing before we start. Trip fee applies to all services."
         primaryBtn={{ text: `CALL ${BUSINESS.phone}`, href: `tel:${BUSINESS.phoneRaw}` }}
         secondaryBtn={{ text: 'REQUEST SERVICE ONLINE', href: '/contact' }}
         variant="gradient"

@@ -12,7 +12,7 @@ const EMERGENCY_STEPS = [
   { number: 1, title: "Call Now — Live Dispatcher Answers", description: "Call (301) 679-5849. A live dispatcher answers every call — day or night, weekend or holiday. Not a voicemail, not an answering service. A real person who can dispatch a licensed plumber immediately.", icon: "Phone" },
   { number: 2, title: "Licensed Plumber Dispatched", description: "A licensed Master Plumber is dispatched to your location. Your dispatcher confirms your address, the nature of the emergency, and gives you an honest ETA. We confirm your main water shut-off location while en route.", icon: "Truck" },
   { number: 3, title: "Assessment — Plain-Language Diagnosis", description: "Our plumber assesses the emergency and explains what they found in plain language. No technical jargon, no vague explanations. You know what is happening before we do anything.", icon: "Search" },
-  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. Same rate as business hours — no overtime surcharge, no after-hours premium. The price you agree to is the price you pay.", icon: "FileText" },
+  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. All services include a trip fee, disclosed before any work begins. The price you agree to is the price you pay.", icon: "FileText" },
   { number: 5, title: "Emergency Resolved — Verified & Clean", description: "We resolve the emergency, restore service where possible, and clean up the work area. We confirm the system is safe and functional before we leave. Follow-up service is scheduled if needed.", icon: "CheckCircle" },
 ];
 
@@ -31,7 +31,7 @@ const FAQ_ITEMS = [
   { question: "Do you provide 24/7 emergency plumbing in all Bethesda neighborhoods?", answer: "Yes. Emergency service available 24/7 in all Bethesda neighborhoods including Kenwood, Burning Tree, Bradley Hills, Chevy Chase sections of Bethesda, downtown Bethesda high-rises, and the medical corridor. WSSC #73696  MD #96958. Call (301) 679-5849." },
   { question: "Are you licensed for emergency plumbing in Bethesda and Montgomery County?", answer: "Yes. Maryland State Master Plumber/Gasfitter #96958 and WSSC Master Plumber/Gasfitter #73696 cover all emergency plumbing work in Bethesda and throughout Montgomery County." },
   { question: "Do you handle emergency plumbing in Bethesda high-rise buildings?", answer: "Yes. We coordinate with building management for emergency access in Bethesda condominiums and high-rise properties. Call (301) 679-5849 immediately — our dispatcher can advise on building entry and main valve location while en route." },
-  { question: "Do you charge extra for night or weekend emergency plumbing in Bethesda?", answer: "No. No overtime surcharge. Same rate regardless of hour. Written pricing before any work begins. Call (301) 679-5849." },
+  { question: "Do you charge extra for night or weekend emergency plumbing in Bethesda?", answer: "All services include a trip fee. Written pricing before any work begins. Call (301) 679-5849." },
 ];
 
 const SCHEMA = {
@@ -48,14 +48,14 @@ export default function EmergencyBethesdaMD() {
     <>
       <Helmet>
         <title>Emergency Plumber in Bethesda MD | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Bethesda MD — available 24/7. WSSC #73696  MD Master Plumber #96958. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Bethesda MD — available 24/7. WSSC #73696  MD Master Plumber #96958. Live dispatcher. All services have a trip fee. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-bethesda-md/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
 
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-           BETHESDA PLUMBING EMERGENCY? CALL (301) 679-5849 — WSSC LICENSED  24/7  NO OVERTIME SURCHARGE
+           BETHESDA PLUMBING EMERGENCY? CALL (301) 679-5849 — WSSC LICENSED  24/7  ALL SERVICES HAVE A TRIP FEE
         </a>
       </div>
 
@@ -65,7 +65,7 @@ export default function EmergencyBethesdaMD() {
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  BETHESDA, MD  WSSC #73696  MD #96958</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Bethesda, MD</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical provides 24/7 emergency plumbing across all Bethesda neighborhoods — from Kenwood and Burning Tree to downtown Bethesda high-rises and the medical corridor. A live dispatcher answers every call. WSSC #73696  MD State #96958. No overtime surcharge. Call (301) 679-5849.
+            Definitive Mechanical provides 24/7 emergency plumbing across all Bethesda neighborhoods — from Kenwood and Burning Tree to downtown Bethesda high-rises and the medical corridor. A live dispatcher answers every call. WSSC #73696  MD State #96958. All services have a trip fee. Call (301) 679-5849.
           </p>
           <div className="max-w-2xl mx-auto">
             <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -76,7 +76,7 @@ export default function EmergencyBethesdaMD() {
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> WSSC #73696</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> MD State #96958</span>
-            <span className="flex items-center gap-1"><Clock size={14} /> Same Rate 24/7</span>
+            <span className="flex items-center gap-1"><Clock size={14} /> Trip Fee Applies to All Services</span>
             <span className="flex items-center gap-1"><DollarSign size={14} /> Written Pricing</span>
             <span className="flex items-center gap-1"><Phone size={14} /> Live Dispatcher</span>
           </div>
@@ -107,7 +107,7 @@ export default function EmergencyBethesdaMD() {
             ))}
           </div>
           <p className="text-center text-sm italic text-gray-500 max-w-2xl mx-auto mt-6" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Bethesda's mix of luxury single-family homes, high-rise condominiums, and the medical corridor creates a wide range of emergency plumbing scenarios. We serve all of them — residential and commercial — 24/7 with no overtime surcharge.
+            Bethesda's mix of luxury single-family homes, high-rise condominiums, and the medical corridor creates a wide range of emergency plumbing scenarios. We serve all of them — residential and commercial — 24/7 — All services have a trip fee.
           </p>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function EmergencyBethesdaMD() {
       <section className="bg-white py-12">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {[{ icon: Clock, title: "Same Rate — Day or Night", body: "No overtime surcharge. No after-hours premium. The rate you pay at 2 AM is the same as 2 PM." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
+            {[{ icon: Clock, title: "Trip Fee Applies to All Services", body: "All services have a trip fee." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
               <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
                 <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
                 <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
@@ -158,7 +158,7 @@ export default function EmergencyBethesdaMD() {
         </div>
       </section>
 
-      <CTABanner heading="Bethesda plumbing emergency? Call now." subtext="WSSC #73696  MD #96958  24/7 Live Dispatcher  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Bethesda plumbing emergency? Call now." subtext="WSSC #73696  MD #96958  24/7 Live Dispatcher  All Services Have a Trip Fee." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

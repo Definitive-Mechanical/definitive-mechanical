@@ -31,7 +31,7 @@ const SCHEMA = {
     { "@type": "FAQPage", "mainEntity": [
       {"@type":"Question","name":"What plumbing services do you offer in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Full-service plumbing in Washington DC including emergency plumbing, drain cleaning, water heater repair and installation, sewer line service, gas line repair, backflow certification, boiler and furnace service, and commercial and government plumbing. DC Master Plumber/Gasfitter #PGM1002236. Call (301) 679-5849."}},
       {"@type":"Question","name":"Are you licensed to do plumbing in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Yes. Definitive Mechanical holds DC Master Plumber/Gasfitter License #PGM1002236 — issued by the DC Department of Consumer and Regulatory Affairs (DCRA). This is the specific DC license required for permitted plumbing work within the District of Columbia."}},
-      {"@type":"Question","name":"Do you provide 24/7 emergency plumbing in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Yes. Emergency plumbing in Washington DC is available 24/7. A live dispatcher answers every call. Licensed DC Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849."}},
+      {"@type":"Question","name":"Do you provide 24/7 emergency plumbing in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Yes. Emergency plumbing in Washington DC is available 24/7. A live dispatcher answers every call. Licensed DC Master Plumber dispatched. All services have a trip fee. Call (301) 679-5849."}},
       {"@type":"Question","name":"Do you serve government agencies and contractors in Washington DC?","acceptedAnswer":{"@type":"Answer","text":"Yes. MDOT MBE Certification (Cert No. 20-134), Virginia SWaM Cert No. 815255, and CAGE Code 8HCF6 support federal and DC government procurement. We can serve as a prime contractor or subcontractor for government plumbing work in the District."}}
     ]}
   ]
@@ -62,7 +62,7 @@ const dcAreas = [
 const faqs = [
   { question: "What plumbing services do you offer in Washington DC?", answer: "Full-service plumbing in Washington DC including emergency plumbing, drain cleaning, water heater repair and installation, sewer line service, gas line repair, backflow certification, boiler and furnace service, and commercial and government plumbing. DC Master Plumber/Gasfitter #PGM1002236. Call (301) 679-5849." },
   { question: "Are you licensed to do plumbing in Washington DC?", answer: "Yes. Definitive Mechanical holds DC Master Plumber/Gasfitter License #PGM1002236 — issued by the DC Department of Consumer and Regulatory Affairs (DCRA). This is the specific DC license required for permitted plumbing work within the District of Columbia." },
-  { question: "Do you provide 24/7 emergency plumbing in Washington DC?", answer: "Yes. Emergency plumbing in Washington DC is available 24/7. A live dispatcher answers every call. Licensed DC Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Washington DC?", answer: "Yes. Emergency plumbing in Washington DC is available 24/7. A live dispatcher answers every call. Licensed DC Master Plumber dispatched. All services have a trip fee. Call (301) 679-5849." },
   { question: "Do you serve government agencies and contractors in Washington DC?", answer: "Yes. MDOT MBE Certification (Cert No. 20-134), Virginia SWaM Cert No. 815255, and CAGE Code 8HCF6 support federal and DC government procurement. We can serve as a prime contractor or subcontractor for government plumbing work in the District." },
 ];
 
@@ -197,7 +197,7 @@ export default function WashingtonDC() {
               <p style={{ fontFamily:"var(--font-display)", color:"#ef4444", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">24/7 EMERGENCY SERVICE</p>
               <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(28px,4vw,42px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.05 }} className="mb-5">Emergency Plumbing Available Around the Clock</h2>
               <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
-                A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. No overtime surcharge. Upfront written pricing before any work begins.
+                A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. All services have a trip fee. Upfront written pricing before any work begins.
               </p>
               <a href="tel:+13016795849" style={{ display:"inline-flex", alignItems:"center", gap:"10px", background:"#dc2626", color:"white", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"15px", textTransform:"uppercase", letterSpacing:"0.08em", padding:"14px 28px", borderRadius:"3px", textDecoration:"none", transition:"background 0.2s" }}>
                 CALL (301) 679-5849

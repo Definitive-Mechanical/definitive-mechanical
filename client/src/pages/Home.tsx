@@ -61,7 +61,7 @@ const CREDENTIALS = [
 const HOME_FAQ = [
   {
     question: 'How much does a plumber charge per hour in Maryland?',
-    answer: 'Plumbing rates in Maryland vary based on the service type, urgency, and materials required. Standard service calls typically range from $150-$300 for diagnosis and simple repairs. Emergency and after-hours service may carry a premium with other providers — Definitive Mechanical charges the same rate regardless of time of day. Call (301) 679-5849 for an upfront estimate before any work begins.',
+    answer: 'Plumbing rates in Maryland vary based on the service type, urgency, and materials required. Standard service calls typically range from $150-$300 for diagnosis and simple repairs. All services include a trip fee. Call (301) 679-5849 for upfront written pricing before any work begins.',
   },
   {
     question: 'What qualifies as a plumbing emergency?',
@@ -238,7 +238,7 @@ function HeroSection() {
                   </button>
 
                   <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
-                    No spam. Quoted price in writing. No overtime surcharge.
+                    No spam. Quoted price in writing. All services have a trip fee.
                   </p>
                 </form>
               )}
@@ -469,7 +469,7 @@ export default function Home() {
               "We explain what we find, what your options are, and what each one costs — before we touch a wrench."
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
-              {['No commissioned salespeople', 'Same rate day or night', 'Written pricing every time'].map((item) => (
+              {['No commissioned salespeople', 'Trip fee applies to all services', 'Written pricing every time'].map((item) => (
                 <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--ink-2)' }}>
                   <CheckCircle size={16} color="var(--brand-cyan)" />
                   {item}

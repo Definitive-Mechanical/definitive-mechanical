@@ -34,7 +34,7 @@ export default function BethesdaMD() {
         { label: "Commercial Plumbing", href: "/commercial-plumbing", note: "MDOT MBE Certified" },
       ]}
       emergencyHeading="24/7 Emergency Plumbing in Bethesda"
-      emergencyBody="Emergency plumbing in Bethesda is available 24/7. A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. No overtime surcharge. Upfront written pricing before any work begins. Call (301) 679-5849."
+      emergencyBody="Emergency plumbing in Bethesda is available 24/7. A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. All services have a trip fee. Upfront written pricing before any work begins. Call (301) 679-5849."
       localContextEyebrow="LOCAL PLUMBING NEEDS"
       localContextHeading="Plumbing Needs Specific to Bethesda"
       localContextCards={[
@@ -50,7 +50,7 @@ export default function BethesdaMD() {
         { label: "MDOT MBE Certification No. 20-134" },
         { label: "CAGE Code 8HCF6" },
         { label: "SWaM Certification 815255" },
-        { label: "24/7 Emergency — No Overtime Surcharge" },
+        { label: "24/7 Emergency  All Services Have a Trip Fee" },
       ]}
       commercialHeading="Commercial & Government Plumbing in Bethesda"
       commercialBody="Bethesda's commercial corridor, medical institutions (NIH, Walter Reed), and government-adjacent facilities create demand for commercial plumbing services. Definitive Mechanical is MDOT MBE Certified (Cert No. 20-134) and holds CAGE Code 8HCF6 for government procurement. WSSC #73696 and MD State #96958 for all local plumbing work."
@@ -71,7 +71,7 @@ export default function BethesdaMD() {
       faqHeading="Plumbing FAQ — Bethesda, MD"
       faqs={[
         { question: "What plumbing services do you offer in Bethesda, MD?", answer: "Full-service plumbing in Bethesda including emergency plumbing, drain cleaning, water heater repair and installation, tankless water heaters, sewer line service and camera inspection, gas line repair and installation, backflow certification, boiler and furnace service, and commercial plumbing. Maryland licensed, WSSC licensed. Call (301) 679-5849." },
-        { question: "Do you provide 24/7 emergency plumbing in Bethesda?", answer: "Yes. Emergency plumbing in Bethesda is available 24/7. A live dispatcher answers every call. Licensed Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849." },
+        { question: "Do you provide 24/7 emergency plumbing in Bethesda?", answer: "Yes. Emergency plumbing in Bethesda is available 24/7. A live dispatcher answers every call. Licensed Master Plumber dispatched. All services have a trip fee. Call (301) 679-5849." },
         { question: "Are you licensed to do plumbing in Bethesda and Montgomery County?", answer: "Yes. Maryland State Master Plumber/Gasfitter #96958 and WSSC Master Plumber/Gasfitter #73696 cover all plumbing work in Bethesda and throughout Montgomery County." },
         { question: "Do you handle high-end residential plumbing in Bethesda?", answer: "Yes. Bethesda's premium residential market requires plumbing contractors with the experience, licensing, and professionalism to work in high-value homes. We provide water heater replacement, gas line installation for outdoor kitchens and generators, backflow certification for irrigation systems, and full plumbing service for Bethesda homeowners." },
       ]}

@@ -356,7 +356,7 @@ export default function Tier3CityPage({
           <SectionHeading eyebrow="24/7 EMERGENCY SERVICE" heading={`Do you provide 24/7 emergency plumbing in ${schemaCity}?`} />
           <div className="max-w-3xl mb-8">
             <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "16px", lineHeight: 1.7 }}>
-              Yes. Emergency plumbing in {schemaCity} is available 24/7, 365 days a year. A live dispatcher answers every call. Licensed Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849.
+              Yes. Emergency plumbing in {schemaCity} is available 24/7, 365 days a year. A live dispatcher answers every call. Licensed Master Plumber dispatched. All services have a trip fee. Call (301) 679-5849.
             </p>
           </div>
           <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />

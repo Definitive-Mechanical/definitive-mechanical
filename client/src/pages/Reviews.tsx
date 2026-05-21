@@ -218,7 +218,7 @@ export default function ReviewsPage() {
           <SectionHeading eyebrow="OUR COMMITMENT" heading="What every 5-star review reflects" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {[
-              { icon: ThumbsUp, title: "Transparent Pricing", body: "Every review that mentions pricing reflects our commitment to written estimates before any work begins — no surprise invoices, no after-hours surcharges." },
+              { icon: ThumbsUp, title: "Transparent Pricing", body: "Every review that mentions pricing reflects our commitment to written estimates before any work begins — no surprise invoices. All services include a trip fee, disclosed upfront." },
               { icon: Award, title: "Licensed Professionals", body: "Every technician dispatched holds the required state and local licenses. WSSC #73696  MD #96958  VA #2710064209  DC #PGM1002236." },
               { icon: Star, title: "Consistent Standards", body: "Whether it's a 2 AM emergency or a scheduled installation, the same standards apply — clean work, clear communication, and verified results." },
             ].map((item) => (
@@ -232,7 +232,7 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-      <CTABanner heading="Ready to experience 5-star plumbing service?" subtext="Licensed  Certified  24/7 Emergency  No Overtime Surcharge  Written Pricing." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Ready to experience 5-star plumbing service?" subtext="Licensed  Certified  24/7 Emergency  All Services Have a Trip Fee  Written Pricing Before Work Begins." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

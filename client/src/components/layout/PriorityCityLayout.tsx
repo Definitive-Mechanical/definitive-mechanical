@@ -257,7 +257,7 @@ export default function PriorityCityLayout({
                   { icon: Clock, text: "24/7 emergency — live dispatcher, no voicemail" },
                   { icon: ShieldCheck, text: "Licensed Master Plumber & Gasfitter in MD, DC & VA" },
                   { icon: Award, text: "MDOT MBE Certified  CAGE Code 8HCF6" },
-                  { icon: CheckCircle, text: "Upfront written pricing — no overtime surcharge" },
+                  { icon: CheckCircle, text: "Upfront written pricing — trip fee applies to all services" },
                   { icon: MapPin, text: "Serving from Largo, MD — fast response across the DMV" },
                 ].map((item, i) => (
                   <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 14 }}>

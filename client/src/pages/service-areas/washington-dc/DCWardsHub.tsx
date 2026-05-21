@@ -24,7 +24,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Do you provide 24/7 emergency plumbing in every DC ward?",
-    answer: "Yes. Emergency plumbing is available 24/7 across all 8 DC wards. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849.",
+    answer: "Yes. Emergency plumbing is available 24/7 across all 8 DC wards. All services have a trip fee. A live dispatcher answers every call at (301) 679-5849.",
   },
   {
     question: "Do you handle older rowhouse plumbing common in DC wards?",

@@ -25,7 +25,7 @@ const CITIES = [
 const FAQ_ITEMS = [
   { question: "Are you licensed for plumbing in Fairfax County, VA?", answer: "Yes. Virginia Class A Contractor #2705181061 and Virginia Master Plumber/Gasfitter #2710064209 authorize all plumbing and gas work throughout Fairfax County. Call (301) 679-5849." },
   { question: "Do you serve McLean, Springfield, Vienna, and all Fairfax County communities?", answer: "Yes. We serve McLean, Springfield, Vienna, Reston, Herndon, Fairfax City, Chantilly, Centreville, Burke, Annandale, Falls Church, Tysons, and all Fairfax County communities. Call (301) 679-5849." },
-  { question: "Do you provide 24/7 emergency plumbing in Fairfax County?", answer: "Yes. Emergency plumbing available 24/7 across all of Fairfax County. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Fairfax County?", answer: "Yes. Emergency plumbing available 24/7 across all of Fairfax County. All services have a trip fee. A live dispatcher answers every call at (301) 679-5849." },
   { question: "Are you SWaM certified for government work in Fairfax County?", answer: "Yes. Virginia SWaM Certification supports government and procurement-eligible plumbing contracts throughout Fairfax County and the Commonwealth of Virginia." },
 ];
 

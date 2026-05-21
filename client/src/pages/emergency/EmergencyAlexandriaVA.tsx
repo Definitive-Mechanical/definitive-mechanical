@@ -12,7 +12,7 @@ const EMERGENCY_STEPS = [
   { number: 1, title: "Call Now — Live Dispatcher Answers", description: "Call (301) 679-5849. A live dispatcher answers every call — day or night, weekend or holiday. Not a voicemail, not an answering service. A real person who can dispatch a licensed plumber immediately.", icon: "Phone" },
   { number: 2, title: "Licensed Plumber Dispatched", description: "A licensed Master Plumber is dispatched to your location. Your dispatcher confirms your address, the nature of the emergency, and gives you an honest ETA. We confirm your main water shut-off location while en route.", icon: "Truck" },
   { number: 3, title: "Assessment — Plain-Language Diagnosis", description: "Our plumber assesses the emergency and explains what they found in plain language. No technical jargon, no vague explanations. You know what is happening before we do anything.", icon: "Search" },
-  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. Same rate as business hours — no overtime surcharge, no after-hours premium. The price you agree to is the price you pay.", icon: "FileText" },
+  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. All services include a trip fee, disclosed before any work begins. The price you agree to is the price you pay.", icon: "FileText" },
   { number: 5, title: "Emergency Resolved — Verified & Clean", description: "We resolve the emergency, restore service where possible, and clean up the work area. We confirm the system is safe and functional before we leave. Follow-up service is scheduled if needed.", icon: "CheckCircle" },
 ];
 
@@ -30,7 +30,7 @@ const EMERGENCY_TYPES = [
 const FAQ_ITEMS = [
   { question: "Do you provide 24/7 emergency plumbing in all Alexandria neighborhoods?", answer: "Yes. Emergency plumbing available 24/7 in Old Town Alexandria, Del Ray, Rosemont, Potomac Yard, Carlyle, West End, Eisenhower, and all Alexandria neighborhoods. Virginia Master Plumber #2710064209. Call (301) 679-5849." },
   { question: "Are you licensed for emergency plumbing in Alexandria, VA?", answer: "Yes. Virginia State Master Plumber/Gasfitter #2710064209 and Virginia Class A Contractor #2705181061. We are also Virginia SWaM Certified (Cert No. 815255) for government and procurement-eligible emergency service calls." },
-  { question: "Do you charge extra for emergency plumbing at night in Alexandria?", answer: "No. No overtime surcharge. Same rate regardless of hour. Written pricing before any work begins. Call (301) 679-5849." },
+  { question: "Do you charge extra for emergency plumbing at night in Alexandria?", answer: "All services include a trip fee. Written pricing before any work begins. Call (301) 679-5849." },
   { question: "Do you work on historic Old Town Alexandria properties for emergencies?", answer: "Yes. Our experience with aging cast iron, terra cotta sewer laterals, and boiler-based heating systems in historic properties makes us well-suited for Old Town emergency calls. We handle access challenges common in historic buildings." },
 ];
 
@@ -48,14 +48,14 @@ export default function EmergencyAlexandriaVA() {
     <>
       <Helmet>
         <title>Emergency Plumber in Alexandria VA | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Alexandria VA — available 24/7. Virginia Master Plumber #2710064209  Class A Contractor #2705181061. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Alexandria VA — available 24/7. Virginia Master Plumber #2710064209  Class A Contractor #2705181061. Live dispatcher. All services have a trip fee. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-alexandria-va/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
 
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-           ALEXANDRIA PLUMBING EMERGENCY? CALL (301) 679-5849 — VA LICENSED  24/7  NO OVERTIME CHARGE
+           ALEXANDRIA PLUMBING EMERGENCY? CALL (301) 679-5849 — VA LICENSED  24/7  ALL SERVICES HAVE A TRIP FEE
         </a>
       </div>
 
@@ -65,7 +65,7 @@ export default function EmergencyAlexandriaVA() {
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  ALEXANDRIA, VA  OLD TOWN & ALL NEIGHBORHOODS</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Alexandria, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical provides 24/7 emergency plumbing in Alexandria, Virginia — from historic Old Town to Del Ray, West End, Potomac Yard, and all Alexandria neighborhoods. A live dispatcher answers every call. Virginia Master Plumber/Gasfitter #2710064209. No overtime surcharge. Call (301) 679-5849.
+            Definitive Mechanical provides 24/7 emergency plumbing in Alexandria, Virginia — from historic Old Town to Del Ray, West End, Potomac Yard, and all Alexandria neighborhoods. A live dispatcher answers every call. Virginia Master Plumber/Gasfitter #2710064209. All services have a trip fee. Call (301) 679-5849.
           </p>
           <div className="max-w-2xl mx-auto">
             <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -77,7 +77,7 @@ export default function EmergencyAlexandriaVA() {
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Master Plumber #2710064209</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Class A Contractor #2705181061</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> SWaM Cert 815255</span>
-            <span className="flex items-center gap-1"><Clock size={14} /> Same Rate 24/7</span>
+            <span className="flex items-center gap-1"><Clock size={14} /> Trip Fee Applies to All Services</span>
             <span className="flex items-center gap-1"><Phone size={14} /> Live Dispatcher</span>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function EmergencyAlexandriaVA() {
             ))}
           </div>
           <p className="text-center text-sm italic text-gray-500 max-w-2xl mx-auto mt-6" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Alexandria's historic Old Town properties — some of the oldest occupied residential buildings in Northern Virginia — can experience plumbing failures specific to aging infrastructure: deteriorating terra cotta sewer laterals, aged cast iron, and boiler-based systems. We have experience with all of it. 24/7, same rate.
+            Alexandria's historic Old Town properties — some of the oldest occupied residential buildings in Northern Virginia — can experience plumbing failures specific to aging infrastructure: deteriorating terra cotta sewer laterals, aged cast iron, and boiler-based systems. We have experience with all of it. Available 24/7. All services have a trip fee.
           </p>
         </div>
       </section>
@@ -131,7 +131,7 @@ export default function EmergencyAlexandriaVA() {
       <section className="bg-white py-12">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {[{ icon: Clock, title: "Same Rate — Day or Night", body: "No overtime surcharge. No after-hours premium. The rate you pay at 2 AM is the same as 2 PM." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
+            {[{ icon: Clock, title: "Trip Fee Applies to All Services", body: "All services have a trip fee." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
               <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
                 <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
                 <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
@@ -159,7 +159,7 @@ export default function EmergencyAlexandriaVA() {
         </div>
       </section>
 
-      <CTABanner heading="Alexandria plumbing emergency? Call now." subtext="VA Master Plumber #2710064209  Class A Contractor  SWaM Cert 815255  24/7 Live Dispatcher  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Alexandria plumbing emergency? Call now." subtext="VA Master Plumber #2710064209  Class A Contractor  SWaM Cert 815255  24/7 Live Dispatcher  All Services Have a Trip Fee." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

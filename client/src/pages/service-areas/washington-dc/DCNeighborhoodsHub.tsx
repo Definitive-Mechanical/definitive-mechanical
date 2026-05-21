@@ -26,7 +26,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Do you provide 24/7 emergency plumbing in DC neighborhoods?",
-    answer: "Yes. Emergency plumbing is available 24/7 in Georgetown, Capitol Hill, Dupont Circle, Navy Yard, NoMa, and all DC neighborhoods. No overtime surcharge. Call (301) 679-5849.",
+    answer: "Yes. Emergency plumbing is available 24/7 in Georgetown, Capitol Hill, Dupont Circle, Navy Yard, NoMa, and all DC neighborhoods. All services have a trip fee. Call (301) 679-5849.",
   },
 ];
 

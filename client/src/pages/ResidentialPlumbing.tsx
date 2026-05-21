@@ -14,7 +14,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Do you provide 24/7 emergency plumbing for homeowners?",
-    answer: "Yes. Emergency residential plumbing is available 24/7, 365 days a year. A live dispatcher answers every emergency call. No overtime surcharge for after-hours, weekend, or holiday calls."
+    answer: "Yes. Emergency residential plumbing is available 24/7, 365 days a year. A live dispatcher answers every emergency call. All services have a trip fee for after-hours, weekend, or holiday calls."
   },
   {
     question: "Are you licensed in Maryland, DC, and Virginia?",
@@ -178,7 +178,7 @@ export default function ResidentialPlumbing() {
                 We do not send technicians who are paid on commission. We do not use pricing books designed to maximize invoice size. We charge a fair rate for skilled, licensed, code-compliant work and document it in writing before we start.
               </p>
               <div className="space-y-2">
-                {["Written pricing before we touch a pipe", "No commissioned salespeople", "Same rate day or night — no overtime surcharge"].map((item) => (
+                {["Written pricing before we touch a pipe", "No commissioned salespeople", "Trip fee applies to all services — all services have a trip fee"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                     <CheckCircle2 size={16} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
                     <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{item}</span>

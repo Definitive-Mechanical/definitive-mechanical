@@ -13,7 +13,7 @@ const NEIGHBORHOODS = [
 const FAQ_ITEMS = [
   { question: "Are you licensed for plumbing in Arlington County, VA?", answer: "Yes. Virginia Class A Contractor #2705181061 and Virginia Master Plumber/Gasfitter #2710064209 authorize all plumbing and gas work throughout Arlington County. Call (301) 679-5849." },
   { question: "Do you handle emergency plumbing in Arlington County high-rises?", answer: "Yes. We coordinate with building management for emergency access in Arlington County high-rise and condominium properties. Call (301) 679-5849 immediately — our dispatcher can advise on building entry while en route." },
-  { question: "Do you provide 24/7 emergency plumbing in Arlington County?", answer: "Yes. Emergency plumbing available 24/7 across all of Arlington County. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Arlington County?", answer: "Yes. Emergency plumbing available 24/7 across all of Arlington County. All services have a trip fee. A live dispatcher answers every call at (301) 679-5849." },
 ];
 
 const SCHEMA = {

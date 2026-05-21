@@ -12,7 +12,7 @@ const EMERGENCY_STEPS = [
   { number: 1, title: "Call Now — Live Dispatcher Answers", description: "Call (301) 679-5849. A live dispatcher answers every call — day or night, weekend or holiday. Not a voicemail, not an answering service. A real person who can dispatch a licensed plumber immediately.", icon: "Phone" },
   { number: 2, title: "Licensed Plumber Dispatched", description: "A licensed Master Plumber is dispatched to your location. Your dispatcher confirms your address, the nature of the emergency, and gives you an honest ETA. We confirm your main water shut-off location while en route.", icon: "Truck" },
   { number: 3, title: "Assessment — Plain-Language Diagnosis", description: "Our plumber assesses the emergency and explains what they found in plain language. No technical jargon, no vague explanations. You know what is happening before we do anything.", icon: "Search" },
-  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. Same rate as business hours — no overtime surcharge, no after-hours premium. The price you agree to is the price you pay.", icon: "FileText" },
+  { number: 4, title: "Written Pricing Before Any Work Begins", description: "You receive written pricing before we touch a pipe. All services include a trip fee, disclosed before any work begins. The price you agree to is the price you pay.", icon: "FileText" },
   { number: 5, title: "Emergency Resolved — Verified & Clean", description: "We resolve the emergency, restore service where possible, and clean up the work area. We confirm the system is safe and functional before we leave. Follow-up service is scheduled if needed.", icon: "CheckCircle" },
 ];
 
@@ -31,7 +31,7 @@ const FAQ_ITEMS = [
   { question: "What is the response time for an emergency plumber in Arlington, VA?", answer: "We dispatch from our Largo, MD base via the Capital Beltway and I-395. Response time depends on conditions at the time of call — our dispatcher gives you an honest ETA when you call. We do not publish guaranteed windows we cannot keep. Call (301) 679-5849 for current availability." },
   { question: "Are you licensed for emergency plumbing in Arlington County, Virginia?", answer: "Yes. Virginia State Master Plumber/Gasfitter #2710064209 and Virginia Class A Contractor #2705181061 authorize emergency plumbing and gas work throughout Arlington County." },
   { question: "Do you handle multi-unit building plumbing emergencies in Arlington?", answer: "Yes. We respond to plumbing emergencies in Arlington condominiums, apartment buildings, high-rises, and multi-unit properties. We coordinate with building management for access and repair. Call (301) 679-5849 immediately." },
-  { question: "Do you charge more for emergency plumbing at night or on weekends in Arlington?", answer: "No. No overtime surcharge for after-hours, weekend, or holiday emergency calls anywhere in our service area including Arlington. Same rate, written pricing before any work begins." },
+  { question: "Do you charge more for emergency plumbing at night or on weekends in Arlington?", answer: "No. All services have a trip fee for after-hours, weekend, or holiday emergency calls anywhere in our service area including Arlington. Same rate, written pricing before any work begins." },
 ];
 
 const SCHEMA = {
@@ -48,7 +48,7 @@ export default function EmergencyArlingtonVA() {
     <>
       <Helmet>
         <title>Emergency Plumber in Arlington VA | 24/7 | (301) 679-5849 | Definitive Mechanical</title>
-        <meta name="description" content="Emergency plumber in Arlington VA — available 24/7. Virginia Master Plumber #2710064209  Class A Contractor #2705181061. Live dispatcher. No overtime surcharge. Call (301) 679-5849." />
+        <meta name="description" content="Emergency plumber in Arlington VA — available 24/7. Virginia Master Plumber #2710064209  Class A Contractor #2705181061. Live dispatcher. All services have a trip fee. Call (301) 679-5849." />
         <link rel="canonical" href="https://definitivemechanical.com/emergency-plumber-arlington-va/" />
         <script type="application/ld+json">{JSON.stringify(SCHEMA)}</script>
       </Helmet>
@@ -56,7 +56,7 @@ export default function EmergencyArlingtonVA() {
       {/* Safety Top Bar */}
       <div style={{ backgroundColor: "#DC2626" }} className="py-3 text-center">
         <a href="tel:+13016795849" className="font-bold text-white uppercase" style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "13px" }}>
-           ARLINGTON PLUMBING EMERGENCY? CALL (301) 679-5849 — 24/7 LIVE DISPATCHER  NO OVERTIME SURCHARGE
+           ARLINGTON PLUMBING EMERGENCY? CALL (301) 679-5849 — 24/7 LIVE DISPATCHER  ALL SERVICES HAVE A TRIP FEE
         </a>
       </div>
 
@@ -67,7 +67,7 @@ export default function EmergencyArlingtonVA() {
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  ARLINGTON, VA  VA MASTER PLUMBER LICENSED</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Arlington, VA</h1>
           <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Definitive Mechanical provides 24/7 emergency plumbing in Arlington, Virginia — one of the most densely populated jurisdictions in the DC metro area. A live dispatcher answers every call. Virginia Master Plumber/Gasfitter #2710064209, Class A Contractor #2705181061. No overtime surcharge. Call (301) 679-5849.
+            Definitive Mechanical provides 24/7 emergency plumbing in Arlington, Virginia — one of the most densely populated jurisdictions in the DC metro area. A live dispatcher answers every call. Virginia Master Plumber/Gasfitter #2710064209, Class A Contractor #2705181061. All services have a trip fee. Call (301) 679-5849.
           </p>
           <div className="max-w-2xl mx-auto">
             <a href="tel:+13016795849" className="flex items-center justify-center w-full text-white font-bold rounded-md hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", height: "68px", fontSize: "22px", fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -78,7 +78,7 @@ export default function EmergencyArlingtonVA() {
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Master Plumber #2710064209</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> VA Class A Contractor #2705181061</span>
-            <span className="flex items-center gap-1"><Clock size={14} /> Same Rate 24/7</span>
+            <span className="flex items-center gap-1"><Clock size={14} /> Trip Fee Applies to All Services</span>
             <span className="flex items-center gap-1"><DollarSign size={14} /> Written Pricing Before We Start</span>
             <span className="flex items-center gap-1"><Phone size={14} /> Live Dispatcher</span>
           </div>
@@ -111,7 +111,7 @@ export default function EmergencyArlingtonVA() {
             ))}
           </div>
           <p className="text-center text-sm italic text-gray-500 max-w-2xl mx-auto mt-6" style={{ fontFamily: "'Barlow', sans-serif" }}>
-            Arlington County's dense urban environment — high-rise condominiums, rowhouses, apartment buildings, and commercial corridors along Clarendon Boulevard and Columbia Pike — creates particular urgency around plumbing emergencies. In a multi-unit building, one failed pipe can affect multiple units simultaneously. We dispatch 24/7 with no overtime surcharge.
+            Arlington County's dense urban environment — high-rise condominiums, rowhouses, apartment buildings, and commercial corridors along Clarendon Boulevard and Columbia Pike — creates particular urgency around plumbing emergencies. In a multi-unit building, one failed pipe can affect multiple units simultaneously. We dispatch 24/7 — All services have a trip fee.
           </p>
         </div>
       </section>
@@ -137,7 +137,7 @@ export default function EmergencyArlingtonVA() {
       <section className="bg-white py-12">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {[{ icon: Clock, title: "Same Rate — Day or Night", body: "No overtime surcharge. No after-hours premium. The rate you pay at 2 AM is the same as 2 PM." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
+            {[{ icon: Clock, title: "Trip Fee Applies to All Services", body: "All services have a trip fee." }, { icon: DollarSign, title: "Written Pricing Before We Start", body: "You see the price in writing before our plumber touches a pipe. No surprise invoice at the end." }, { icon: Phone, title: "Live Dispatcher — Every Call", body: "No answering machine. No callback queue. A live dispatcher answers at (301) 679-5849, around the clock." }].map((item) => (
               <div key={item.title} style={{ backgroundColor: "var(--surface-1)" }} className="rounded-md p-5">
                 <item.icon size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
                 <h3 className="font-bold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{item.title}</h3>
@@ -153,7 +153,7 @@ export default function EmergencyArlingtonVA() {
         <div className="container max-w-3xl mx-auto text-center">
           <h2 className="text-2xl font-bold mb-4" style={{ color: "var(--brand-navy)", fontFamily: 'var(--font-display)' }}>Why Arlington emergency plumbing requires immediate response</h2>
           <p className="text-gray-600 mb-6" style={{ fontFamily: "'Barlow', sans-serif", fontSize: "16px", lineHeight: "1.8" }}>
-            Arlington's density creates a compounding urgency that does not exist in lower-density markets. A sewer backup in a high-rise affects multiple floors. A burst pipe in a townhouse floods multiple units. A gas leak in a dense residential corridor creates risk for adjacent properties. Emergency response in Arlington is not just a convenience — it is often a multi-party safety matter. We dispatch licensed Virginia Master Plumbers 24/7 with no overtime surcharge.
+            Arlington's density creates a compounding urgency that does not exist in lower-density markets. A sewer backup in a high-rise affects multiple floors. A burst pipe in a townhouse floods multiple units. A gas leak in a dense residential corridor creates risk for adjacent properties. Emergency response in Arlington is not just a convenience — it is often a multi-party safety matter. We dispatch licensed Virginia Master Plumbers 24/7 — All services have a trip fee.
           </p>
           <a href="tel:+13016795849" className="inline-flex items-center justify-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
             <Phone size={20} /> CALL (301) 679-5849 NOW
@@ -180,7 +180,7 @@ export default function EmergencyArlingtonVA() {
         </div>
       </section>
 
-      <CTABanner heading="Arlington plumbing emergency? Call now." subtext="VA Master Plumber #2710064209  Class A Contractor #2705181061  SWaM Cert 815255  24/7 Live Dispatcher  No Overtime Surcharge." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
+      <CTABanner heading="Arlington plumbing emergency? Call now." subtext="VA Master Plumber #2710064209  Class A Contractor #2705181061  SWaM Cert 815255  24/7 Live Dispatcher  All Services Have a Trip Fee." primaryBtn={{ text: " CALL (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY SERVICE", href: "/contact/" }} variant="gradient" />
     </>
   );
 }

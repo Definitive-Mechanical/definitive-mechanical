@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Is emergency heating repair available?",
-    answer: "Yes. Emergency boiler and furnace repair is available 24/7, 365 days a year. Call (301) 679-5849 at any hour. Same rate as business hours — no overtime surcharge."
+    answer: "Yes. Emergency boiler and furnace repair is available 24/7, 365 days a year. Call (301) 679-5849 at any hour. Same rate as business hours — all services have a trip fee."
   },
 ];
 

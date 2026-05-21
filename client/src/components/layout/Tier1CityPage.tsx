@@ -282,7 +282,7 @@ export default function Tier1CityPage({
                 Emergency Plumbing in {cityName}
               </h2>
               <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.8)", fontSize: "16px", lineHeight: 1.75, marginBottom: "16px" }}>
-                Burst pipe, sewer backup, gas leak, no hot water — a live dispatcher answers every call around the clock. Licensed Master Plumber dispatched immediately. No overtime surcharge, ever.
+                Burst pipe, sewer backup, gas leak, no hot water — a live dispatcher answers every call around the clock. Licensed Master Plumber dispatched immediately. All services have a trip fee.
               </p>
               <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "15px", lineHeight: 1.7 }}>
                 We serve {cityName} and the surrounding area from our Largo, MD location. Most emergency calls are reached within 60-90 minutes.

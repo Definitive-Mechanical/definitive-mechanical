@@ -15,7 +15,7 @@ const FAQ_LICENSING = [
 
 const FAQ_EMERGENCY = [
   { question: "Do you provide 24/7 emergency plumbing?", answer: "Yes. Emergency plumbing service is available 24 hours a day, 7 days a week, 365 days a year — including holidays. A live dispatcher answers every call at (301) 679-5849. No voicemail, no answering service." },
-  { question: "Do you charge extra for after-hours emergency plumbing?", answer: "No. There is no overtime surcharge, no after-hours premium, and no weekend or holiday rate. The rate you receive at 2 AM is the same as 2 PM. Written pricing is provided before any work begins." },
+  { question: "Do you charge extra for after-hours emergency plumbing?", answer: "All services include a trip fee. Written pricing is provided before any work begins — the price you agree to is the price you pay." },
   { question: "What should I do while waiting for an emergency plumber?", answer: "For a burst pipe or active water leak: locate and shut your main water valve immediately. For a gas leak: leave the building without operating any switches, call your gas company from outside, and call us once the scene is cleared. For a sewer backup: stop using all drains and toilets. For a water heater emergency: turn off the cold water supply to the unit and, if gas, turn off the gas supply." },
   { question: "What areas do you cover for emergency plumbing?", answer: "Emergency plumbing service covers all of Maryland (Prince George's, Montgomery, Howard, Anne Arundel, Charles counties), Washington DC, and Northern Virginia (Fairfax, Arlington, Alexandria, McLean, Springfield, Vienna, and surrounding areas). Call (301) 679-5849." },
 ];
@@ -28,7 +28,7 @@ const FAQ_SERVICES = [
 ];
 
 const FAQ_PRICING = [
-  { question: "How does your pricing work?", answer: "We provide written pricing before any work begins. The price you agree to is the price you pay — no surprise charges at the end of the job. There are no overtime surcharges for after-hours, weekend, or holiday service." },
+  { question: "How does your pricing work?", answer: "All services include a trip fee. We provide written pricing before any work begins — the price you agree to is the price you pay, with no surprise charges at the end of the job." },
   { question: "Do you provide free estimates?", answer: "We provide written estimates for all non-emergency work. For emergency service, our dispatcher will give you a price range over the phone, and our plumber will provide written pricing on-site before beginning any work. Call (301) 679-5849." },
   { question: "Do you accept credit cards?", answer: "Yes. We accept all major credit cards, checks, and cash. Financing through Synchrony Financial is available for qualifying customers on larger projects." },
 ];

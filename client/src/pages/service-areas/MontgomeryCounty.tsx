@@ -24,7 +24,7 @@ const CITIES = [
 const FAQ_ITEMS = [
   { question: "What areas of Montgomery County do you serve?", answer: "We serve all of Montgomery County including Rockville, Bethesda, Potomac, Silver Spring, Gaithersburg, Germantown, Chevy Chase, Takoma Park, Kensington, Wheaton, Olney, Clarksburg, and all other Montgomery County communities. Call (301) 679-5849." },
   { question: "Are you licensed for plumbing in Montgomery County, including the City of Rockville?", answer: "Yes. We hold three credentials for full Montgomery County authority: City of Rockville #PLL-0002113, WSSC #73696, and Maryland State #96958. These cover all plumbing and gas work in incorporated and unincorporated Montgomery County." },
-  { question: "Do you provide 24/7 emergency plumbing in Montgomery County?", answer: "Yes. Emergency plumbing available 24/7 across all of Montgomery County. No overtime surcharge. A live dispatcher answers every call at (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Montgomery County?", answer: "Yes. Emergency plumbing available 24/7 across all of Montgomery County. All services have a trip fee. A live dispatcher answers every call at (301) 679-5849." },
 ];
 
 const SCHEMA = {

@@ -27,7 +27,7 @@ const services = [
 
 const faqs = [
   { question: "What plumbing services do you offer in Potomac, MD?", answer: "Full-service plumbing in Potomac including emergency plumbing, water heater repair and installation, tankless water heaters, drain cleaning, sewer camera inspection, gas line installation for outdoor kitchens and generators, backflow certification for irrigation systems, and boiler service. Maryland licensed, WSSC licensed. Call (301) 679-5849." },
-  { question: "Do you provide 24/7 emergency plumbing in Potomac?", answer: "Yes. Emergency service available 24/7 from our Largo, MD location. A live dispatcher answers every call. Licensed Master Plumber dispatched. No overtime surcharge. Call (301) 679-5849." },
+  { question: "Do you provide 24/7 emergency plumbing in Potomac?", answer: "Yes. Emergency service available 24/7 from our Largo, MD location. A live dispatcher answers every call. Licensed Master Plumber dispatched. All services have a trip fee. Call (301) 679-5849." },
   { question: "Are you licensed to do plumbing in Potomac and Montgomery County?", answer: "Yes. Maryland State Master Plumber/Gasfitter #96958 and WSSC Master Plumber/Gasfitter #73696 cover all plumbing work in Potomac and throughout Montgomery County." },
   { question: "Do you certify backflow preventers for irrigation systems in Potomac?", answer: "Yes. We provide annual irrigation backflow preventer testing and certification for Potomac properties and can manage annual compliance scheduling. Call (301) 679-5849." },
 ];
@@ -137,7 +137,7 @@ export default function PotomacMD() {
               <p style={{ fontFamily:"var(--font-display)", color:"#ef4444", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">24/7 EMERGENCY SERVICE</p>
               <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(28px,4vw,42px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.05 }} className="mb-5">Emergency Plumbing Available Around the Clock</h2>
               <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">
-                A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. No overtime surcharge. Upfront written pricing before any work begins.
+                A live dispatcher answers every call — no voicemail, no answering service. Licensed Master Plumber dispatched. All services have a trip fee. Upfront written pricing before any work begins.
               </p>
               <a href="tel:+13016795849" style={{ display:"inline-flex", alignItems:"center", gap:"10px", background:"#dc2626", color:"white", fontFamily:"var(--font-display)", fontWeight:700, fontSize:"15px", textTransform:"uppercase", letterSpacing:"0.08em", padding:"14px 28px", borderRadius:"3px", textDecoration:"none", transition:"background 0.2s" }}>
                 CALL (301) 679-5849
