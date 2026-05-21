@@ -239,7 +239,7 @@ export default function Contact() {
                     </div>
 
                     <button type="submit" disabled={submitting}
-                      style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                      style={{ width: '100%', background: submitting ? 'rgba(255,255,255,0.5)' : 'white', color: 'var(--brand-navy)', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
                       {submitting ? 'Submitting...' : 'SUBMIT SERVICE REQUEST'}
                     </button>
 

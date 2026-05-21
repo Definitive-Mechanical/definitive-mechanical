@@ -163,7 +163,7 @@ export default function ServicePageLayout({
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                 <a
                   href="tel:+13016795849"
-                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#E40613", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(228,6,19,0.35)" }}
+                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "white", color: "var(--brand-navy)", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(0,0,0,0.15)" }}
                 >
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
