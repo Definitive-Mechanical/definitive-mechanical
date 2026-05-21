@@ -346,7 +346,7 @@ export default function PriorityCityLayout({
                       style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
                       loading="lazy"
                     />
-                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
+                    <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
                   </div>
                   <div style={{ padding: "14px 16px 16px" }}>
                     <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-blue)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>

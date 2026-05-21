@@ -107,7 +107,7 @@ export default function FAQPage() {
           <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
         </div>
-        <div className="container text-center">
+        <div className="container text-center" style={{ position: "relative", zIndex: 1 }}>
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>FREQUENTLY ASKED QUESTIONS</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Common Questions About Definitive Mechanical</h1>

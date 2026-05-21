@@ -49,7 +49,7 @@ export default function FortWashingtonMD() {
           <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
           <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
         </div>
-        <div className="container">
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <BreadcrumbList items={[
             {label:"Home",href:"/"},
             {label:"Service Areas",href:"/service-areas"},
@@ -119,7 +119,7 @@ export default function FortWashingtonMD() {
                       style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
                       loading="lazy"
                     />
-                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.2) 0%, rgba(3,24,56,0.5) 100%)" }} />
+                    <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
                   </div>
                   <div style={{ padding: "12px 14px 14px" }}>
                     <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "14px", color: "var(--brand-blue)", marginBottom: "4px", lineHeight: 1.2 }}>{svc.label}</div>
