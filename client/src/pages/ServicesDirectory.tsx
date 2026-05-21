@@ -169,7 +169,7 @@ export default function ServicesDirectory() {
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <a
               href={`tel:${PHONE}`}
-              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[var(--brand-blue-2)] transition-colors"
             >
               <Phone className="w-5 h-5" />
               CALL {PHONE_DISPLAY}
@@ -321,7 +321,7 @@ export default function ServicesDirectory() {
           </p>
           <a
             href={`tel:${PHONE}`}
-            className="inline-flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-xl uppercase tracking-wide py-5 px-10 rounded-sm hover:bg-[#00b8e6] transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-xl uppercase tracking-wide py-5 px-10 rounded-sm hover:bg-[var(--brand-blue-2)] transition-colors"
           >
             <Phone className="w-5 h-5" />
             CALL {PHONE_DISPLAY} — 24/7

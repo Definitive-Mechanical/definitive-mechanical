@@ -175,7 +175,7 @@ export default function ServiceAreasHub() {
       {/* Hero */}
       <section style={{ background: 'var(--brand-blue)', padding: '64px 0 48px' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'rgba(255,255,255,0.8)', marginBottom: '16px' }}>
             Licensed in Maryland  Washington DC  Virginia  Delaware
           </p>
           <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(2rem, 4vw, 3rem)', color: 'white', lineHeight: 1.1, marginBottom: '20px', textTransform: 'uppercase' }}>

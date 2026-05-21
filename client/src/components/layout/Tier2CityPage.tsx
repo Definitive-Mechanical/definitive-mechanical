@@ -155,7 +155,7 @@ export default function Tier2CityPage({
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="tel:+13016795849"
-              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] py-4 px-8 rounded-sm hover:bg-[var(--brand-blue-2)] transition-colors"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "18px", textTransform: "uppercase", letterSpacing: "0.05em" }}
             >
               <Phone className="w-5 h-5" />
@@ -380,7 +380,7 @@ export default function Tier2CityPage({
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <a
               href="tel:+13016795849"
-              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors w-full sm:w-auto"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] py-4 px-8 rounded-sm hover:bg-[var(--brand-blue-2)] transition-colors w-full sm:w-auto"
               style={{ fontFamily: "'Barlow Condensed', sans-serif", fontWeight: 700, fontSize: "18px", textTransform: "uppercase", letterSpacing: "0.05em" }}
             >
               <Phone className="w-5 h-5" />

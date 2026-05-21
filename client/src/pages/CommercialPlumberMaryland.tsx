@@ -160,12 +160,12 @@ export default function CommercialPlumberMaryland() {
             <ul className="space-y-3 mb-8">
               {EMERGENCIES.map(e => (
                 <li key={e} className="flex items-start gap-3 text-white/90" style={{ fontFamily: "'Barlow', sans-serif" }}>
-                  <CheckCircle size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
+                  <CheckCircle size={18} style={{ color: "rgba(255,255,255,0.85)", flexShrink: 0, marginTop: 2 }} />
                   {e}
                 </li>
               ))}
             </ul>
-            <div className="text-center p-6 rounded-lg" style={{ background: "rgba(0,158,198,0.15)", border: "1px solid rgba(0,158,198,0.4)" }}>
+            <div className="text-center p-6 rounded-lg" style={{ background: "rgba(0,158,198,0.15)", border: "1px solid rgba(29,108,163,0.4)" }}>
               <p className="text-white font-bold text-xl mb-2" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}> Call (301) 679-5849 — 24/7 live dispatcher</p>
               <p className="text-white/80 text-sm mb-4" style={{ fontFamily: "'Barlow', sans-serif" }}>We coordinate with property managers, building engineers, and facility staff.</p>
               <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />

@@ -483,8 +483,8 @@ export default function Home() {
       {/* SECTION 5: EMERGENCY CTA */}
       <section style={{ background: 'linear-gradient(135deg, var(--brand-blue-2), var(--brand-blue))', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <AlertTriangle size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
+          <AlertTriangle size={40} color="white" style={{ margin: '0 auto 16px' }} />
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'rgba(255,255,255,0.85)', marginBottom: '12px' }}>
             24/7 EMERGENCY SERVICE
           </p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(22px, 3vw, 32px)', marginBottom: '16px' }}>
