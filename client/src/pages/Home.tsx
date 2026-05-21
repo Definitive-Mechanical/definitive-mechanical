@@ -136,7 +136,7 @@ function HeroSection() {
             <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '540px', marginBottom: '24px' }}>
               Definitive Mechanical is a Licensed Black Owned, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor serving homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia. Master Plumber and Master Gasfitter licensed in four states. 24/7 emergency service. Upfront pricing in writing — always.
             </p>
-            <TrustBadges variant="dark" badges={['11 Years in Business', '24/7 Emergency', 'Licensed Master Plumber/Gasfitter', 'MDOT MBE Certified', 'VA SWaM Certified']} />
+            <TrustBadges variant="dark" badges={['black-owned', '11 Years in Business', '24/7 Emergency', 'Licensed Master Plumber/Gasfitter', 'MDOT MBE Certified', 'VA SWaM Certified']} />
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
               <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>

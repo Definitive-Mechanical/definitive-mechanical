@@ -12,6 +12,7 @@ interface TrustBadgesProps {
 }
 
 const ALL_BADGES = [
+  { key: 'black-owned', text: 'Licensed Black Owned', alt: 'Licensed Black Owned Business' },
   { key: 'mdot-mbe', src: '/manus-storage/mdot-mbe_6828ed58.svg', alt: 'MDOT MBE Certified — Minority Business Enterprise' },
   { key: 'va-swam', src: '/manus-storage/va-swam_8af52c17.svg', alt: 'Virginia SWaM — Small Women-Owned Minority Business' },
   { key: 'cage', src: '/manus-storage/cage_583d6988.svg', alt: 'Federal CAGE Code 8HCF6' },
@@ -36,19 +37,46 @@ export default function TrustBadges({ variant = 'dark', size = 'md', badges }: T
         alignItems: 'center',
       }}
     >
-      {filtered.map((badge) => (
-        <img
-          key={badge.key}
-          src={badge.src}
-          alt={badge.alt}
-          style={{
-            height: imgHeight,
-            width: 'auto',
-            display: 'block',
-            opacity: variant === 'dark' ? 0.95 : 1,
-          }}
-        />
-      ))}
+      {filtered.map((badge) => {
+        // Black Owned badge is text-based, not an image
+        if (badge.key === 'black-owned') {
+          return (
+            <div
+              key={badge.key}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '8px 14px',
+                border: `2px solid ${variant === 'dark' ? 'rgba(255,255,255,0.7)' : 'var(--brand-navy)'}`,
+                borderRadius: '4px',
+                fontFamily: 'var(--font-display)',
+                fontWeight: 700,
+                fontSize: '12px',
+                textTransform: 'uppercase',
+                letterSpacing: '0.08em',
+                color: variant === 'dark' ? 'rgba(255,255,255,0.9)' : 'var(--brand-navy)',
+                whiteSpace: 'nowrap',
+              }}
+            >
+              {badge.text}
+            </div>
+          );
+        }
+        return (
+          <img
+            key={badge.key}
+            src={badge.src}
+            alt={badge.alt}
+            style={{
+              height: imgHeight,
+              width: 'auto',
+              display: 'block',
+              opacity: variant === 'dark' ? 0.95 : 1,
+            }}
+          />
+        );
+      })}
     </div>
   );
 }

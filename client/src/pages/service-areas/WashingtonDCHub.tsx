@@ -71,7 +71,7 @@ export default function WashingtonDCHub() {
             Plumber Washington DC
           </h1>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', color: 'rgba(255,255,255,0.85)', maxWidth: '640px', lineHeight: 1.6, marginBottom: '32px' }}>
-            Definitive Mechanical serves all 8 wards of Washington DC. Licensed in DC, Maryland, Virginia, and Delaware. WSSC backflow certified. 24/7 emergency service for residential, commercial, and government properties.
+            Definitive Mechanical is a Licensed Black Owned plumber serving all 8 wards of Washington DC. Licensed in DC, Maryland, Virginia, and Delaware. WSSC backflow certified. 24/7 emergency service for residential, commercial, and government properties.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>

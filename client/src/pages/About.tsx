@@ -28,7 +28,7 @@ export default function About() {
                 About Definitive Mechanical — Licensed Plumbing in MD, DC & Northern VA
               </h1>
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
-                Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor based in Largo, Maryland. We have served homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia for over 11 years. Master Plumber and Master Gasfitter licensed in four states.
+                Definitive Mechanical is a Licensed Black Owned, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor based in Largo, Maryland. We have served homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia for over 11 years. Master Plumber and Master Gasfitter licensed in four states.
               </p>
               <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>

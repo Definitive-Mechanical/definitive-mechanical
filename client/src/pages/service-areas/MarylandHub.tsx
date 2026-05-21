@@ -108,7 +108,7 @@ export default function MarylandHub() {
             Plumber Maryland
           </h1>
           <p style={{ fontFamily: 'var(--font-body)', fontSize: '18px', color: 'rgba(255,255,255,0.85)', maxWidth: '640px', lineHeight: 1.6, marginBottom: '32px' }}>
-            Definitive Mechanical is an MDOT MBE certified master plumber serving Prince George's County, Montgomery County, Howard County, Anne Arundel County, and Charles County. Licensed in Maryland, Virginia, DC, and Delaware. 24/7 emergency service.
+            Definitive Mechanical is a Licensed Black Owned, MDOT MBE certified master plumber serving Prince George's County, Montgomery County, Howard County, Anne Arundel County, and Charles County. Licensed in Maryland, Virginia, DC, and Delaware. 24/7 emergency service.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
             <a href={`tel:${BUSINESS.phoneRaw}`} style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.1em', padding: '14px 28px', borderRadius: '2px', textDecoration: 'none' }}>
