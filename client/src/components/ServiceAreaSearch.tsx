@@ -102,7 +102,7 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
           style={{
             height: isHero ? '56px' : '48px',
             padding: '0 20px',
-            background: '#fff',
+            background: 'var(--brand-cyan)',
             color: 'var(--brand-navy)',
             border: 'none',
             borderRadius: '0 2px 2px 0',
@@ -118,7 +118,7 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
             whiteSpace: 'nowrap',
             flexShrink: 0,
           }}
-          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-blue-hover)'; }}
+          onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#007BA0'; }}
           onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-cyan)'; }}
         >
           <Search size={15} />
@@ -202,7 +202,7 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '6px',
-                      background: '#fff',
+                      background: 'var(--brand-navy)',
                       color: 'white',
                       fontFamily: 'var(--font-display)',
                       fontWeight: 700,
@@ -242,7 +242,7 @@ export default function ServiceAreaSearch({ variant = 'inline' }: ServiceAreaSea
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '6px',
-                    background: '#fff',
+                    background: 'var(--brand-navy)',
                     color: 'white',
                     fontFamily: 'var(--font-display)',
                     fontWeight: 700,

@@ -207,7 +207,7 @@ export default function BlogIndex() {
                   </p>
                   <a
                     href={`tel:${PHONE}`}
-                    className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide py-4 px-4 rounded-sm hover:bg-[var(--brand-blue-hover)] transition-colors mb-3"
+                    className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide py-4 px-4 rounded-sm hover:bg-[#00b8e6] transition-colors mb-3"
                   >
                     <Phone className="w-4 h-4" />
                     {PHONE_DISPLAY}
@@ -284,7 +284,7 @@ export default function BlogIndex() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href={`tel:${PHONE}`}
-                className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[var(--brand-blue-hover)] transition-colors"
+                className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
               >
                 <Phone className="w-5 h-5" />
                 CALL {PHONE_DISPLAY}

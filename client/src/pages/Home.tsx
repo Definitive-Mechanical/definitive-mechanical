@@ -113,12 +113,12 @@ function HeroSection() {
           backgroundRepeat: 'no-repeat',
         }}
       />
-      {/* Dark black overlay */}
+      {/* Deep navy/blue overlay */}
       <div
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'rgba(0,0,0,0.65)',
+          background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)',
         }}
       />
 
@@ -138,58 +138,58 @@ function HeroSection() {
             </p>
             <TrustBadges variant="dark" badges={['black-owned', '11 Years in Business', '24/7 Emergency', 'Licensed Master Plumber/Gasfitter', 'MDOT MBE Certified', 'VA SWaM Certified']} />
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-              <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>
             <div style={{ marginTop: '20px' }}>
               <StarRating rating={4.8} count={40} variant="dark" />
             </div>
           </div>
 
-          {/* RIGHT — white lead form card */}
+          {/* RIGHT — dark navy lead form card */}
           <div className="lg:col-span-2">
-            <div style={{ background: 'white', borderRadius: '12px', padding: '22px', boxShadow: '0 8px 24px rgba(0,0,0,0.18)', border: '1px solid rgba(0,0,0,0.08)' }}>
+            <div style={{ background: '#063B63', borderRadius: '12px', padding: '22px', boxShadow: '0 12px 28px rgba(6,59,99,0.35)' }}>
               {submitted ? (
                 <div style={{ textAlign: 'center', padding: '24px 0' }}>
-                  <CheckCircle size={48} color="var(--brand-blue)" style={{ margin: '0 auto 16px' }} />
-                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '22px', color: 'var(--brand-black)', marginBottom: '12px' }}>
+                  <CheckCircle size={48} color="#4FB3E8" style={{ margin: '0 auto 16px' }} />
+                  <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'white', marginBottom: '8px' }}>
                     Request Received!
                   </h3>
-                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: '#444', lineHeight: 1.6 }}>
-                    We'll call you back within 30 minutes. For emergencies call <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-blue)', fontWeight: 700 }}>{BUSINESS.phone}</a> now.
+                  <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6 }}>
+                    We'll call you back within 30 minutes. For emergencies call <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: '#4FB3E8', fontWeight: 700 }}>{BUSINESS.phone}</a> now.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--brand-blue)', margin: 0 }}>Request Service</p>
-                  <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Request Service</p>
+                  <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: 'white', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                   {/* Name + Phone */}
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Full Name <span style={{ color: '#cc0000' }}>*</span></label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Full Name <span style={{ color: '#ff6b6b' }}>*</span></label>
                       <input type="text" required placeholder="Your full name" value={formData.name} onChange={e => setFormData(p => ({ ...p, name: e.target.value }))}
-                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                     </div>
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Phone <span style={{ color: '#cc0000' }}>*</span></label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Phone <span style={{ color: '#ff6b6b' }}>*</span></label>
                       <input type="tel" required placeholder="(xxx) xxx-xxxx" value={formData.phone} onChange={e => setFormData(p => ({ ...p, phone: e.target.value }))}
-                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                     </div>
                   </div>
 
                   {/* Email */}
                   <div>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Email Address</label>
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Email Address</label>
                     <input type="email" placeholder="your@email.com" value={formData.email} onChange={e => setFormData(p => ({ ...p, email: e.target.value }))}
-                      style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                      style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                   </div>
 
                   {/* Service + City */}
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Service Needed <span style={{ color: '#cc0000' }}>*</span></label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Service Needed <span style={{ color: '#ff6b6b' }}>*</span></label>
                       <select required value={formData.service} onChange={e => setFormData(p => ({ ...p, service: e.target.value }))}
-                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: formData.service ? '#111' : '#888', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}>
+                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(30,60,100,0.95)', color: formData.service ? 'white' : 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}>
                         <option value="" disabled style={{ color: '#000' }}>Select a service...</option>
                         <option value="emergency" style={{ color: '#000' }}>24/7 Emergency Plumbing</option>
                         <option value="drain-cleaning" style={{ color: '#000' }}>Drain Cleaning</option>
@@ -211,33 +211,33 @@ function HeroSection() {
                       </select>
                     </div>
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>City / Location</label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>City / Location</label>
                       <input type="text" placeholder="City, State" value={formData.city} onChange={e => setFormData(p => ({ ...p, city: e.target.value }))}
-                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                     </div>
                   </div>
 
                   {/* Message */}
                   <div>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '4px' }}>Describe the Problem <span style={{ color: '#cc0000' }}>*</span></label>
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Describe the Problem <span style={{ color: '#ff6b6b' }}>*</span></label>
                     <textarea required rows={3} placeholder="Please describe the issue, when it started, and any relevant details..." value={formData.message} onChange={e => setFormData(p => ({ ...p, message: e.target.value }))}
-                      style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }} />
+                      style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }} />
                   </div>
 
                   {/* Emergency warning */}
                   <div style={{ display: 'flex', alignItems: 'flex-start', gap: '7px', background: 'rgba(228,6,19,0.12)', border: '1px solid rgba(228,6,19,0.3)', borderRadius: '6px', padding: '8px 10px' }}>
                     <AlertTriangle size={13} style={{ color: '#ff6b6b', flexShrink: 0, marginTop: 1 }} />
-                    <p style={{ fontFamily: 'var(--font-body)', color: '#555', fontSize: '11px', lineHeight: 1.5, margin: 0 }}>
-                      <strong style={{ color: '#cc0000' }}>Plumbing emergency?</strong> Don't use this form — <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-blue)', fontWeight: 700 }}>{BUSINESS.phone}</a> answers 24/7.
+                    <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '11px', lineHeight: 1.5, margin: 0 }}>
+                      <strong style={{ color: 'white' }}>Plumbing emergency?</strong> Don't use this form — <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: '#4FB3E8', fontWeight: 700 }}>{BUSINESS.phone}</a> answers 24/7.
                     </p>
                   </div>
 
                   <button type="submit" disabled={submitting}
-                    style={{ width: '100%', background: submitting ? 'var(--brand-blue-hover)' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                    style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
                     {submitting ? 'Submitting...' : 'Request Service'}
                   </button>
 
-                  <p style={{ fontSize: '11px', color: '#888', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
+                  <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
                     No spam. Quoted price in writing. All services have a trip fee.
                   </p>
                 </form>
@@ -276,7 +276,7 @@ export default function Home() {
       <HeroSection />
 
       {/* SECTION 2: TRUST STATS BAR */}
-      <section style={{ background: '#fff', padding: '32px 0' }}>
+      <section style={{ background: 'var(--brand-cyan)', padding: '32px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {[
@@ -410,7 +410,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton bg="light" variant="secondary" text="VIEW ALL PLUMBING SERVICES" href="/services" size="md" />
+            <BookNowButton variant="ghost" text="VIEW ALL PLUMBING SERVICES" href="/services" size="md" />
           </div>
         </div>
       </section>
@@ -442,7 +442,7 @@ export default function Home() {
               },
             ].map((col) => (
               <div key={col.title} style={{ background: 'white', border: '1px solid #e5e7eb', borderTop: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '32px 28px', boxShadow: '0 2px 12px rgba(0,0,0,0.07)', textAlign: 'center' }}>
-                <div style={{ width: '48px', height: '48px', borderRadius: '10px', background: 'rgba(0,160,200,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
+                <div style={{ width: '48px', height: '48px', borderRadius: '10px', background: 'rgba(0,117,186,0.08)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
                   <col.icon size={24} color="var(--brand-blue)" />
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '20px', textTransform: 'uppercase', letterSpacing: '0.03em', marginBottom: '12px' }}>
@@ -481,10 +481,10 @@ export default function Home() {
       </section>
 
       {/* SECTION 5: EMERGENCY CTA */}
-      <section style={{ background: 'var(--brand-navy)', padding: '64px 0' }}>
+      <section style={{ background: 'linear-gradient(135deg, var(--brand-navy), var(--brand-navy-dark))', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <AlertTriangle size={40} color="white" style={{ margin: '0 auto 16px' }} />
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'rgba(255,255,255,0.85)', marginBottom: '12px' }}>
+          <AlertTriangle size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
+          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
             24/7 EMERGENCY SERVICE
           </p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(22px, 3vw, 32px)', marginBottom: '16px' }}>
@@ -494,8 +494,8 @@ export default function Home() {
             Burst pipe, sewer backup, gas leak, no hot water — our live dispatcher answers every call, every hour of every day. Licensed plumbing professionals dispatched — work performed under Master Plumber license.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <BookNowButton bg="blue" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-            <BookNowButton bg="blue" variant="secondary" text="LEARN MORE" href="/emergency-plumbing" size="lg" />
+            <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton variant="outline" text="LEARN MORE" href="/emergency-plumbing" size="lg" />
           </div>
         </div>
       </section>
@@ -517,7 +517,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '32px' }}>
-            <BookNowButton bg="light" variant="secondary" text="READ ALL REVIEWS" href="/reviews" size="md" />
+            <BookNowButton variant="ghost" text="READ ALL REVIEWS" href="/reviews" size="md" />
           </div>
         </div>
       </section>
@@ -595,24 +595,24 @@ export default function Home() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {CREDENTIALS.map((cred) => (
               <div key={cred.label} style={{
-                background: 'rgba(255,255,255,0.07)',
+                background: 'rgba(255,255,255,0.06)',
                 border: '1px solid rgba(255,255,255,0.12)',
                 borderRadius: '4px',
                 padding: '20px',
                 textAlign: 'center',
               }}>
-                <cred.icon size={28} color="var(--brand-blue)" style={{ margin: '0 auto 10px' }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: '#fff', marginBottom: '4px' }}>
+                <cred.icon size={28} color="white" style={{ margin: '0 auto 10px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'white', marginBottom: '4px' }}>
                   {cred.label}
                 </p>
-                <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.65)' }}>
+                <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.6)' }}>
                   {cred.sub}
                 </p>
               </div>
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton bg="blue" variant="secondary" text="VIEW ALL LICENSES & CERTIFICATIONS" href="/licenses-certifications" size="md" />
+            <BookNowButton variant="ghost" text="VIEW ALL LICENSES & CERTIFICATIONS" href="/licenses-certifications" size="md" />
           </div>
         </div>
       </section>
@@ -642,11 +642,11 @@ export default function Home() {
               background: 'white',
               borderRadius: '6px',
               padding: '32px',
-              boxShadow: '0 2px 12px rgba(0,160,200,0.08)',
+              boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
               textAlign: 'center',
             }}>
-              <div style={{ background: 'var(--brand-blue)', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>
-                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '16px', letterSpacing: '0.1em' }}>SYNCHRONY FINANCING</span>
+              <div style={{ background: 'var(--brand-navy)', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>
+                <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '16px', letterSpacing: '0.1em' }}>SYNCHRONY FINANCING</span>
               </div>
               <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '22px', marginBottom: '8px' }}>
                 Apply in 60 Seconds
@@ -654,7 +654,7 @@ export default function Home() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '14px', marginBottom: '24px' }}>
                 No impact to your credit score during pre-qualification.
               </p>
-              <BookNowButton bg="blue" variant="primary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+              <BookNowButton variant="navy" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-3)', marginTop: '16px' }}>
                 Questions? Call {BUSINESS.phone}
               </p>
@@ -667,19 +667,19 @@ export default function Home() {
       <section style={{ background: 'white', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div style={{
-            background: 'linear-gradient(135deg, var(--brand-blue-hover), var(--brand-blue))',
+            background: 'linear-gradient(135deg, var(--brand-navy), var(--brand-blue))',
             borderRadius: '8px',
             padding: '40px',
           }}>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--ink-2)', marginBottom: '8px' }}>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'rgba(255,255,255,0.7)', marginBottom: '8px' }}>
                   GOVERNMENT & COMMERCIAL
                 </p>
-                <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '12px' }}>
+                <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '12px' }}>
                   We work with government agencies and commercial clients
                 </h2>
-                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7 }}>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7 }}>
                   MDOT MBE Certified  VA SWaM Certified  CAGE 8HCF6  NAICS 238220. Capability statement available. Master Plumber and Master Gasfitter licensed in four states.
                 </p>
               </div>
@@ -702,8 +702,8 @@ export default function Home() {
                   ))}
                 </div>
                 <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                  <BookNowButton bg="light" variant="phone" text="GOVERNMENT & COMMERCIAL" href="/government-municipal-plumbing" size="md" />
-                  <BookNowButton bg="blue" variant="secondary" text="COMMERCIAL PLUMBING" href="/commercial-plumbing" size="md" />
+                  <BookNowButton variant="phone" text="GOVERNMENT & COMMERCIAL" href="/government-municipal-plumbing" size="md" />
+                  <BookNowButton variant="outline" text="COMMERCIAL PLUMBING" href="/commercial-plumbing" size="md" />
                 </div>
               </div>
             </div>
@@ -712,14 +712,15 @@ export default function Home() {
       </section>
 
       {/* SECTION 11: FAQ */}
-      <section style={{ background: '#EBF4FB', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="FREQUENTLY ASKED QUESTIONS"
-            heading="Common questions about plumbing service in MD, DC &amp; Northern VA"
+            heading="Common questions about plumbing service in MD, DC & Northern VA"
             centered
+            light
           />
-          <FAQAccordion items={HOME_FAQ} schema={true} variant="light" />
+          <FAQAccordion items={HOME_FAQ} schema={true} variant="dark" />
         </div>
       </section>
 

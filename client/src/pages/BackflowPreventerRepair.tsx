@@ -41,7 +41,7 @@ export default function BackflowPreventerRepair() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Backflow Prevention', href: '/backflow-prevention' }, { label: 'Backflow Preventer Repair' }]} />
@@ -56,8 +56,8 @@ export default function BackflowPreventerRepair() {
               </p>
               <TrustBadges variant="dark" badges={["On-Site Repair Often Available", "Report Refiling Included", "Licensed", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" variant="secondary" text="REQUEST BACKFLOW REPAIR" href="/contact" size="md" />
+                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="outline" text="REQUEST BACKFLOW REPAIR" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -146,13 +146,13 @@ export default function BackflowPreventerRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about backflow preventer repair in MD, DC & Northern VA</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about backflow preventer repair in MD, DC & Northern VA</h2>
         </div>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
         </div>
       </section>
 

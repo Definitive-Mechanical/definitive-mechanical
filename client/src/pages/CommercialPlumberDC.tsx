@@ -68,25 +68,21 @@ export default function CommercialPlumberDC() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ minHeight: "50vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-20 md:py-28">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
+        <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Commercial Plumbing", href: "/commercial-plumbing/" }, { label: "Commercial Plumber Washington DC" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>Commercial Plumbing  Washington, DC  All 8 Wards  DC-Licensed</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>Commercial Plumbing  Washington, DC  All 8 Wards  DC-Licensed</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
             Licensed Commercial Plumber in Washington, DC
           </h1>
-          <p className="text-white/85 text-lg max-w-3xl mb-8" style={{ fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
+          <p className="text-white/85 text-lg max-w-3xl mb-8" style={{ fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
             Definitive Mechanical is licensed in the District of Columbia as Master Plumber/Gasfitter #PGM1002236 — issued by the DC Department of Consumer and Regulatory Affairs (DCRA). We serve commercial properties, office buildings, mixed-use developments, rowhouse conversions, and institutional facilities across all eight DC wards.
           </p>
           <div className="flex flex-wrap gap-4 mb-10">
-            <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton bg="dark" variant="secondary" text="REQUEST DC COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
+            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="outline" text="REQUEST DC COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
           </div>
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
             {["DC Master Plumber #PGM1002236", "MDOT MBE Cert 20-134", "CAGE 8HCF6", "NAICS 238220"].map(t => (
               <span key={t} className="flex items-center gap-1"><ShieldCheck size={12} />{t}</span>
             ))}
@@ -102,8 +98,8 @@ export default function CommercialPlumberDC() {
             {DC_MARKETS.map(m => (
               <div key={m.title} className="p-6 rounded-lg border border-gray-100 hover:shadow-md transition-shadow">
                 <Building2 size={28} style={{ color: "var(--brand-cyan)" }} className="mb-3" />
-                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)' }}>{m.title}</h3>
-                <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: 'var(--font-body)', lineHeight: 1.6 }}>{m.detail}</p>
+                <h3 className="font-bold text-sm uppercase tracking-wide mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{m.title}</h3>
+                <p className="text-sm" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.6 }}>{m.detail}</p>
               </div>
             ))}
           </div>
@@ -115,14 +111,14 @@ export default function CommercialPlumberDC() {
         <div className="container max-w-4xl">
           <SectionHeading eyebrow="DC Licensing" heading="Why does DC commercial plumbing require a specifically DC-licensed contractor?" />
           <div className="mt-8 p-8 bg-white rounded-lg shadow-sm">
-            <p className="text-base mb-4" style={{ color: "var(--ink-2)", fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
+            <p className="text-base mb-4" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               Washington DC issues its own plumbing licenses through the DC DCRA. A Maryland or Virginia license does not authorize work in DC. The DC Master Plumber/Gasfitter license (#PGM1002236) is separately issued and verified in the DCRA online database.
             </p>
-            <p className="text-base mb-4" style={{ color: "var(--ink-2)", fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
+            <p className="text-base mb-4" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               Many contractors serving the DC metro area do not hold this credential and cannot legally pull permits in DC. Definitive Mechanical is licensed independently in DC, Maryland, Virginia, and Delaware — making us one of the few contractors in the region who can legally perform permitted commercial plumbing work in all four jurisdictions.
             </p>
-            <div className="p-4 rounded-lg" style={{ background: "var(--surface-1)", borderLeft: "4px solid #fff" }}>
-              <p className="text-sm font-bold" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)' }}>
+            <div className="p-4 rounded-lg" style={{ background: "var(--surface-1)", borderLeft: "4px solid var(--brand-cyan)" }}>
+              <p className="text-sm font-bold" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>
                 DC Master Plumber/Gasfitter #PGM1002236 — DCRA-issued. Verify at dcra.dc.gov.
               </p>
             </div>
@@ -131,23 +127,23 @@ export default function CommercialPlumberDC() {
       </section>
 
       {/* Emergency CTA */}
-      <section className="py-16" style={{ background: "#fff" }}>
+      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-display)' }}>Commercial emergency plumbing in Washington, DC</h2>
-            <p className="text-white/80 text-lg" style={{ fontFamily: 'var(--font-body)' }}>24/7 live dispatcher — we coordinate with DC building emergency protocols and property management companies.</p>
+            <p className="text-white/80 text-lg" style={{ fontFamily: "'Barlow', sans-serif" }}>24/7 live dispatcher — we coordinate with DC building emergency protocols and property management companies.</p>
           </div>
           <div className="max-w-2xl mx-auto">
             <ul className="space-y-3 mb-8">
               {EMERGENCIES.map(e => (
-                <li key={e} className="flex items-start gap-3 text-white/90" style={{ fontFamily: 'var(--font-body)' }}>
+                <li key={e} className="flex items-start gap-3 text-white/90" style={{ fontFamily: "'Barlow', sans-serif" }}>
                   <CheckCircle size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   {e}
                 </li>
               ))}
             </ul>
             <div className="text-center">
-              <BookNowButton bg="blue" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+              <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             </div>
           </div>
         </div>
@@ -158,13 +154,13 @@ export default function CommercialPlumberDC() {
         <div className="container max-w-4xl">
           <SectionHeading eyebrow="Government & Institutional" heading="Government and institutional commercial properties in DC" />
           <div className="mt-8 space-y-4">
-            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
+            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               DC is heavily populated with government buildings, non-profit institutions, embassies, think tanks, and trade associations. Definitive Mechanical holds MDOT MBE Cert No. 20-134 and CAGE Code 8HCF6, and is familiar with the procurement requirements for contractors working on federally-adjacent or institutionally-managed properties in the District.
             </p>
-            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
+            <p className="text-base" style={{ color: "var(--ink-2)", fontFamily: "'Barlow', sans-serif", lineHeight: 1.7 }}>
               We are registered in SAM.gov and can provide all required documentation for government procurement processes, including MBE subcontractor letters, proof of insurance, and license verification.
             </p>
-            <a href="/government-municipal-plumbing/" className="inline-block font-bold underline" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)' }}>
+            <a href="/government-municipal-plumbing/" className="inline-block font-bold underline" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>
               → Government & Municipal Plumbing Services
             </a>
           </div>
@@ -184,7 +180,7 @@ export default function CommercialPlumberDC() {
       {/* Internal Links */}
       <section className="py-10 bg-white">
         <div className="container">
-          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)' }}>Related Pages</p>
+          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>Related Pages</p>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Commercial Plumbing", href: "/commercial-plumbing/" },
@@ -194,21 +190,21 @@ export default function CommercialPlumberDC() {
               { label: "Washington DC Service Area", href: "/service-areas/washington-dc/" },
               { label: "Licenses & Certifications", href: "/licenses-certifications/" },
             ].map(l => (
-              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-gray-50 transition-colors" style={{ color: "var(--brand-blue)", borderColor: "var(--brand-blue)", fontFamily: 'var(--font-body)' }}>{l.label}</a>
+              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-gray-50 transition-colors" style={{ color: "var(--brand-navy)", borderColor: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>{l.label}</a>
             ))}
           </div>
         </div>
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16" style={{ background: "#fff" }}>
+      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a DC-licensed commercial plumber?</h2>
-          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: 'var(--font-body)' }}> Call (301) 679-5849</p>
-          <p className="text-white/60 text-sm mb-8" style={{ fontFamily: 'var(--font-body)' }}>DC Master Plumber #PGM1002236 | MDOT MBE Cert 20-134</p>
+          <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
+          <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>DC Master Plumber #PGM1002236 | MDOT MBE Cert 20-134</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton bg="blue" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton bg="blue" variant="secondary" text="REQUEST DC COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
+            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="outline" text="REQUEST DC COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
           </div>
         </div>
       </section>

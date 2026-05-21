@@ -79,7 +79,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
                 </p>
                 <a
                   href={`tel:${PHONE}`}
-                  className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide py-4 px-4 rounded-sm hover:bg-[var(--brand-blue-hover)] transition-colors mb-3"
+                  className="flex items-center justify-center gap-2 w-full bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-base uppercase tracking-wide py-4 px-4 rounded-sm hover:bg-[#00b8e6] transition-colors mb-3"
                 >
                   <Phone className="w-4 h-4" />
                   {PHONE_DISPLAY}
@@ -155,7 +155,7 @@ export function BlogLayout({ children, showEmergencyBar = false, relatedServices
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`tel:${PHONE}`}
-              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[var(--brand-blue-hover)] transition-colors"
+              className="flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#00b8e6] transition-colors"
             >
               <Phone className="w-5 h-5" />
               CALL {PHONE_DISPLAY}
@@ -196,7 +196,7 @@ export function FeaturedSnippet({ children }: { children: React.ReactNode }) {
         background: "var(--surface-1)",
         borderLeft: "4px solid var(--brand-cyan)",
         padding: "20px 24px",
-        fontFamily: 'var(--font-body)',
+        fontFamily: "'Barlow', sans-serif",
         fontSize: "17px",
         lineHeight: "1.7",
         color: "var(--ink-2)",
@@ -218,7 +218,7 @@ export function CalloutBox({ children, variant = "info" }: { children: React.Rea
         padding: "16px 20px",
         fontStyle: "italic",
         color: "var(--ink-2)",
-        fontFamily: 'var(--font-body)',
+        fontFamily: "'Barlow', sans-serif",
         fontSize: "16px",
         lineHeight: "1.7",
       }}
@@ -233,12 +233,12 @@ export function InlineCTA() {
   return (
     <div
       className="rounded-sm my-10 text-center"
-      style={{ background: "#fff", padding: "32px" }}
+      style={{ background: "var(--brand-navy)", padding: "32px" }}
     >
       <p
         style={{
           color: "var(--surface-1)",
-          fontFamily: 'var(--font-label)',
+          fontFamily: "'Barlow Condensed', sans-serif",
           fontSize: "13px",
           letterSpacing: "0.1em",
           textTransform: "uppercase",
@@ -251,9 +251,9 @@ export function InlineCTA() {
         href={`tel:${PHONE}`}
         style={{
           display: "block",
-          background: "#fff",
+          background: "var(--brand-cyan)",
           color: "var(--brand-navy)",
-          fontFamily: 'var(--font-label)',
+          fontFamily: "'Barlow Condensed', sans-serif",
           fontWeight: 700,
           fontSize: "18px",
           textTransform: "uppercase",
@@ -269,7 +269,7 @@ export function InlineCTA() {
       <p
         style={{
           color: "var(--surface-1)",
-          fontFamily: 'var(--font-body)',
+          fontFamily: "'Barlow', sans-serif",
           fontSize: "14px",
           margin: 0,
         }}
@@ -384,7 +384,7 @@ export function BlogP({ children }: { children: React.ReactNode }) {
   return (
     <p
       className="mb-4 leading-[1.75]"
-      style={{ fontFamily: 'var(--font-body)', fontSize: "17px", color: "var(--ink-2)" }}
+      style={{ fontFamily: "'Barlow', sans-serif", fontSize: "17px", color: "var(--ink-2)" }}
     >
       {children}
     </p>
@@ -396,7 +396,7 @@ export function BlogUL({ children }: { children: React.ReactNode }) {
   return (
     <ul
       className="mb-6 space-y-2 pl-5"
-      style={{ fontFamily: 'var(--font-body)', fontSize: "17px", color: "var(--ink-2)", listStyleType: "disc" }}
+      style={{ fontFamily: "'Barlow', sans-serif", fontSize: "17px", color: "var(--ink-2)", listStyleType: "disc" }}
     >
       {children}
     </ul>
@@ -421,7 +421,7 @@ export function PricingTable({ headers, rows }: { headers: string[]; rows: strin
     <div className="overflow-x-auto my-6 rounded-sm border border-[#C0D8F0]">
       <table className="w-full min-w-[400px] text-sm">
         <thead>
-          <tr style={{ background: "#fff" }}>
+          <tr style={{ background: "var(--brand-navy)" }}>
             {headers.map((h, i) => (
               <th
                 key={i}
@@ -459,7 +459,7 @@ export function HowToStep({ number, children }: { number: number; children: Reac
     <div className="flex gap-5 mt-10 mb-2">
       <div
         className="flex-shrink-0 w-12 h-12 rounded-sm flex items-center justify-center font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-2xl text-white"
-        style={{ background: "#fff", minWidth: "48px" }}
+        style={{ background: "var(--brand-cyan)", minWidth: "48px" }}
       >
         {number}
       </div>

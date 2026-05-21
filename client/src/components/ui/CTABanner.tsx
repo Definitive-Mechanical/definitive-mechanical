@@ -8,32 +8,32 @@ interface CTABannerProps {
   variant?: 'navy' | 'gradient';
 }
 
-export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn }: CTABannerProps) {
+export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn, variant = 'gradient' }: CTABannerProps) {
+  const bg = variant === 'navy'
+    ? 'var(--brand-navy)'
+    : 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 60%, rgba(79,179,232,0.12) 100%)';
+
   return (
-    <section style={{
-      background: 'var(--brand-navy)',
-      padding: '80px 0',
-      position: 'relative',
-      overflow: 'hidden',
-    }}>
-      {/* Subtle blue left-edge accent rule — matches design system CTAStrip */}
+    <section style={{ background: bg, padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
+      {/* Diagonal overlay */}
       <div style={{
         position: 'absolute',
-        left: 0,
-        top: 0,
-        bottom: 0,
-        width: 6,
-        background: 'var(--brand-blue)',
+        inset: 0,
+        background: 'rgba(0,158,198,0.05)',
+        transform: 'skewY(-3deg)',
+        transformOrigin: 'top left',
+        pointerEvents: 'none',
       }} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
         <h2 style={{
           fontFamily: 'var(--font-display)',
           fontWeight: 700,
-          letterSpacing: '-0.01em',
+          textTransform: 'uppercase',
+          letterSpacing: '0.02em',
           color: 'white',
-          fontSize: 'clamp(28px, 4vw, 44px)',
+          fontSize: 'clamp(28px, 4vw, 48px)',
           marginBottom: '16px',
-          lineHeight: 1.1,
+          lineHeight: 1.05,
         }}>
           {heading}
         </h2>
@@ -41,7 +41,7 @@ export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn }
           <p style={{
             fontFamily: 'var(--font-body)',
             fontWeight: 400,
-            color: 'rgba(255,255,255,0.78)',
+            color: 'rgba(255,255,255,0.8)',
             fontSize: '17px',
             maxWidth: '600px',
             margin: '0 auto 32px',
@@ -51,9 +51,9 @@ export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn }
           </p>
         )}
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <BookNowButton bg="dark" variant="primary" text={primaryBtn.text} href={primaryBtn.href} size="lg" />
+          <BookNowButton variant="phone" text={primaryBtn.text} href={primaryBtn.href} size="lg" />
           {secondaryBtn && (
-            <BookNowButton bg="dark" variant="secondary-light" text={secondaryBtn.text} href={secondaryBtn.href} size="lg" />
+            <BookNowButton variant="outline" text={secondaryBtn.text} href={secondaryBtn.href} size="lg" />
           )}
         </div>
       </div>

@@ -97,20 +97,20 @@ function FAQRow({ question, answer }: FAQItem) {
     <div
       onClick={() => setOpen(o => !o)}
       style={{
-        borderBottom: "1px solid #E6E8EE",
+        borderBottom: "1px solid rgba(255,255,255,0.12)",
         cursor: "pointer",
         padding: "18px 0",
         transition: "all 150ms ease",
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 12 }}>
-        <p style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "var(--ink)", fontSize: "15px", lineHeight: 1.5, margin: 0 }}>
+        <p style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "white", fontSize: "15px", lineHeight: 1.5, margin: 0 }}>
           {question}
         </p>
         <ChevronDown size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2, transform: open ? "rotate(180deg)" : "none", transition: "transform 200ms ease" }} />
       </div>
       {open && (
-        <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.7, marginTop: 10, marginBottom: 0 }}>
+        <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.78)", fontSize: "14px", lineHeight: 1.7, marginTop: 10, marginBottom: 0 }}>
           {answer}
         </p>
       )}
@@ -177,15 +177,17 @@ export default function PriorityCityLayout({
 
       {/* ── S1: HERO ─────────────────────────────────────────────────────── */}
       <section style={{
+        background: "linear-gradient(135deg, var(--brand-navy) 0%, #0a2d52 50%, var(--brand-navy-dark) 100%)",
         minHeight: "72vh",
         position: "relative",
         overflow: "hidden",
-        background: "#111",
       }} className="py-20">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
+        {/* Diagonal texture overlay */}
+        <div style={{
+          position: "absolute", inset: 0, opacity: 0.04,
+          backgroundImage: "repeating-linear-gradient(45deg, white 0, white 1px, transparent 0, transparent 50%)",
+          backgroundSize: "20px 20px",
+        }} />
         <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <BreadcrumbList items={breadcrumbs} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mt-8 items-start">
@@ -227,7 +229,7 @@ export default function PriorityCityLayout({
                 </a>
                 <Link href="/contact" style={{
                   display: "inline-flex", alignItems: "center", gap: 8,
-                  border: "1px solid rgba(255,255,255,0.5)", color: "white",
+                  border: "1px solid rgba(255,255,255,0.4)", color: "white",
                   fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px",
                   textTransform: "uppercase", letterSpacing: "0.08em",
                   padding: "14px 28px", borderRadius: "2px", textDecoration: "none",
@@ -270,7 +272,7 @@ export default function PriorityCityLayout({
       </section>
 
       {/* ── S2: STATS BAR ────────────────────────────────────────────────── */}
-      <section style={{ background: "var(--paper)", padding: "14px 0" }}>
+      <section style={{ background: "var(--brand-cyan)", padding: "14px 0" }}>
         <div className="container">
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "32px 48px" }}>
             {[
@@ -280,7 +282,7 @@ export default function PriorityCityLayout({
               { value: "MD  DC  VA", label: "Service Region" },
             ].map((stat, i) => (
               <div key={i} style={{ textAlign: "center" }}>
-                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "22px", color: "var(--brand-blue)", textTransform: "uppercase", letterSpacing: "0.02em", margin: 0, lineHeight: 1 }}>{stat.value}</p>
+                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "22px", color: "var(--brand-navy)", textTransform: "uppercase", letterSpacing: "0.02em", margin: 0, lineHeight: 1 }}>{stat.value}</p>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "11px", color: "rgba(0,48,96,0.75)", margin: "3px 0 0", textTransform: "uppercase", letterSpacing: "0.1em" }}>{stat.label}</p>
               </div>
             ))}
@@ -297,12 +299,12 @@ export default function PriorityCityLayout({
               {servicesEyebrow || "LICENSED PLUMBING SERVICES"}
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,34px)", textTransform: "uppercase", color: "var(--brand-blue)", lineHeight: 1.1, margin: 0 }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,34px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.1, margin: 0 }}>
                 {servicesHeading}
               </h2>
               <a href="tel:+13016795849" style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "var(--brand-blue)", color: "white",
+                background: "var(--brand-navy)", color: "white",
                 fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px",
                 textTransform: "uppercase", letterSpacing: "0.08em",
                 padding: "12px 22px", borderRadius: "2px", textDecoration: "none", flexShrink: 0,
@@ -323,7 +325,7 @@ export default function PriorityCityLayout({
 
                 <div style={{ height: "3px", width: "28px", background: cat.color, flexShrink: 0, borderRadius: "2px" }} />
 
-                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-blue)" }}>{cat.title}</span>
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-navy)" }}>{cat.title}</span>
 
                 <div style={{ height: "1px", flex: 1, background: "#E6E8EE" }} />
 
@@ -335,9 +337,9 @@ export default function PriorityCityLayout({
               <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                 <div
                   className="cursor-pointer"
-                  style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(0,160,200,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                  style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
                   onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(0,160,200,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                 >
                   <div style={{ position: "relative", height: "140px", overflow: "hidden" }}>
                     <img
@@ -346,11 +348,11 @@ export default function PriorityCityLayout({
                       style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
                       loading="lazy"
                     />
-                    <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
                   </div>
                   <div style={{ padding: "14px 16px 16px" }}>
-                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-blue)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
-                    <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                    <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                   </div>
                 </div>
               </Link>
@@ -364,7 +366,7 @@ export default function PriorityCityLayout({
 
       {/* ── S4: EMERGENCY ────────────────────────────────────────────────── */}
       <section style={{
-        background: "#fff",
+        background: "var(--brand-navy)",
         position: "relative", overflow: "hidden",
         padding: "80px 0",
       }}>
@@ -376,10 +378,10 @@ export default function PriorityCityLayout({
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "#ef4444", marginBottom: 8 }}>
                 24/7 EMERGENCY SERVICE
               </p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(26px,3.5vw,40px)", color: "var(--ink)", lineHeight: 1.05, marginBottom: 16 }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(26px,3.5vw,40px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: 16 }}>
                 {emergencyHeading}
               </h2>
-              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.75, marginBottom: 28 }}>
+              <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.78)", fontSize: "15px", lineHeight: 1.75, marginBottom: 28 }}>
                 {emergencyBody}
               </p>
               <a href="tel:+13016795849" style={{
@@ -396,12 +398,12 @@ export default function PriorityCityLayout({
             <div className="grid grid-cols-2 gap-3">
               {EMERGENCY_SCENARIOS.map((s, i) => (
                 <div key={i} style={{
-                  background: "#F7F9FA", border: "1px solid #E6E8EE",
+                  background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)",
                   borderRadius: "4px", padding: "20px 16px",
                 }}>
                   <s.icon size={24} style={{ color: "#ef4444", marginBottom: 10 }} />
-                  <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", color: "var(--ink)", margin: "0 0 4px" }}>{s.label}</p>
-                  <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "12px", margin: 0 }}>{s.desc}</p>
+                  <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", color: "white", margin: "0 0 4px" }}>{s.label}</p>
+                  <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.6)", fontSize: "12px", margin: 0 }}>{s.desc}</p>
                 </div>
               ))}
             </div>
@@ -418,7 +420,7 @@ export default function PriorityCityLayout({
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
                 {localContextEyebrow || "LOCAL PLUMBING NEEDS"}
               </p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", textTransform: "uppercase", color: "var(--brand-blue)", lineHeight: 1.1, marginBottom: 20 }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.1, marginBottom: 20 }}>
                 {localContextHeading}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -432,7 +434,7 @@ export default function PriorityCityLayout({
                       <div style={{ background: "rgba(0,158,198,0.1)", borderRadius: "8px", padding: "7px" }}>
                         <card.icon size={18} style={{ color: "var(--brand-cyan)", display: "block" }} />
                       </div>
-                      <p style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "var(--brand-blue)", fontSize: "14px", margin: 0 }}>{card.title}</p>
+                      <p style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "var(--brand-navy)", fontSize: "14px", margin: 0 }}>{card.title}</p>
                     </div>
                     <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "13px", lineHeight: 1.65, margin: 0 }}>{card.body}</p>
                   </div>
@@ -456,7 +458,7 @@ export default function PriorityCityLayout({
                 ))}
                 <a href="tel:+13016795849" style={{
                   display: "flex", alignItems: "center", gap: 8, marginTop: 20,
-                  background: "white", color: "var(--brand-navy)",
+                  background: "var(--brand-cyan)", color: "var(--brand-navy)",
                   fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px",
                   textTransform: "uppercase", letterSpacing: "0.08em",
                   padding: "12px 18px", borderRadius: "2px", textDecoration: "none",
@@ -470,7 +472,7 @@ export default function PriorityCityLayout({
       </section>
 
       {/* ── S6: COMMERCIAL & GOVERNMENT ──────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="py-20" style={{ background: "var(--brand-navy)" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
             {/* Left: copy */}
@@ -478,17 +480,17 @@ export default function PriorityCityLayout({
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
                 COMMERCIAL & GOVERNMENT
               </p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", color: "var(--ink)", lineHeight: 1.1, marginBottom: 16 }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", textTransform: "uppercase", color: "white", lineHeight: 1.1, marginBottom: 16 }}>
                 {commercialHeading}
               </h2>
-              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.75, marginBottom: 24 }}>
+              <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.82)", fontSize: "15px", lineHeight: 1.75, marginBottom: 24 }}>
                 {commercialBody}
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 20 }}>
                 {["MDOT MBE Cert 20-134", "CAGE Code 8HCF6", "SWaM Cert 815255"].map((badge, i) => (
                   <span key={i} style={{
-                    background: "#EEF2F7", border: "1px solid #DDE4EC",
-                    color: "var(--brand-navy)", fontFamily: "var(--font-display)", fontWeight: 700,
+                    background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.2)",
+                    color: "white", fontFamily: "var(--font-display)", fontWeight: 700,
                     fontSize: "10px", textTransform: "uppercase", letterSpacing: "0.1em",
                     padding: "4px 10px", borderRadius: "2px",
                   }}>{badge}</span>
@@ -502,7 +504,7 @@ export default function PriorityCityLayout({
                   Government & Municipal <ChevronRight size={14} />
                 </Link>
                 {commercialLinks.map((link, i) => (
-                  <Link key={i} href={link.href} style={{ color: "var(--brand-blue)", fontFamily: "var(--font-body)", fontSize: "14px", fontWeight: 500, textDecoration: "none", display: "flex", alignItems: "center", gap: 4 }}>
+                  <Link key={i} href={link.href} style={{ color: "rgba(255,255,255,0.7)", fontFamily: "var(--font-body)", fontSize: "14px", fontWeight: 500, textDecoration: "none", display: "flex", alignItems: "center", gap: 4 }}>
                     {link.label} <ChevronRight size={14} />
                   </Link>
                 ))}
@@ -516,7 +518,7 @@ export default function PriorityCityLayout({
                 { icon: ShieldCheck, title: "MBE Certified", body: "MDOT MBE Cert No. 20-134 for set-aside and diversity procurement." },
               ]).map((feat, i) => (
                 <div key={i} style={{
-                  background: "#F7F9FA", border: "1px solid #E6E8EE",
+                  background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)",
                   borderRadius: "3px", padding: "18px 16px", marginBottom: 10,
                   display: "flex", alignItems: "flex-start", gap: 14,
                 }}>
@@ -524,8 +526,8 @@ export default function PriorityCityLayout({
                     <feat.icon size={18} style={{ color: "var(--brand-cyan)", display: "block" }} />
                   </div>
                   <div>
-                    <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.04em", margin: "0 0 4px" }}>{feat.title}</p>
-                    <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "12px", lineHeight: 1.6, margin: 0 }}>{feat.body}</p>
+                    <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", color: "white", margin: "0 0 4px" }}>{feat.title}</p>
+                    <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.65)", fontSize: "12px", lineHeight: 1.6, margin: 0 }}>{feat.body}</p>
                   </div>
                 </div>
               ))}
@@ -540,18 +542,18 @@ export default function PriorityCityLayout({
           <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
             NEARBY SERVICE AREAS
           </p>
-          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(20px,2.5vw,28px)", textTransform: "uppercase", color: "var(--brand-blue)", lineHeight: 1.1, marginBottom: 20 }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(20px,2.5vw,28px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.1, marginBottom: 20 }}>
             Areas We Also Serve
           </h2>
           {nearbyGroups ? (
             nearbyGroups.map((group, gi) => (
               <div key={gi} style={{ marginBottom: 16 }}>
-                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 8 }}>{group.label}</p>
+                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 8 }}>{group.label}</p>
                 <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                   {group.links.map((link, i) => (
                     <Link key={i} href={link.href} style={{
                       background: "#F0F4F8", border: "1px solid #DDE4EC",
-                      color: "var(--brand-blue)", fontFamily: "var(--font-body)", fontSize: "13px",
+                      color: "var(--brand-navy)", fontFamily: "var(--font-body)", fontSize: "13px",
                       fontWeight: 500, padding: "6px 14px", borderRadius: "20px",
                       textDecoration: "none", transition: "all 150ms ease",
                     }}>{link.label}</Link>
@@ -564,7 +566,7 @@ export default function PriorityCityLayout({
               {(nearbyAreas || []).map((area, i) => (
                 <Link key={i} href={area.href} style={{
                   background: "#F0F4F8", border: "1px solid #DDE4EC",
-                  color: "var(--brand-blue)", fontFamily: "var(--font-body)", fontSize: "13px",
+                  color: "var(--brand-navy)", fontFamily: "var(--font-body)", fontSize: "13px",
                   fontWeight: 500, padding: "6px 14px", borderRadius: "20px",
                   textDecoration: "none",
                 }}>{area.label}</Link>
@@ -578,20 +580,20 @@ export default function PriorityCityLayout({
       </section>
 
       {/* ── S8: FAQ ───────────────────────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="py-20" style={{ background: "var(--brand-navy)" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div>
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>FAQ</p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", color: "var(--ink)", lineHeight: 1.1, marginBottom: 16 }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", textTransform: "uppercase", color: "white", lineHeight: 1.1, marginBottom: 16 }}>
                 {faqHeading || "Frequently Asked Questions"}
               </h2>
-              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.7, marginBottom: 24 }}>
+              <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.65)", fontSize: "14px", lineHeight: 1.7, marginBottom: 24 }}>
                 Have a question not listed here? Call (301) 679-5849 — a live dispatcher answers 24/7.
               </p>
               <a href="tel:+13016795849" style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "var(--brand-blue)", color: "white",
+                background: "var(--brand-cyan)", color: "var(--brand-navy)",
                 fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px",
                 textTransform: "uppercase", letterSpacing: "0.08em",
                 padding: "12px 20px", borderRadius: "2px", textDecoration: "none",
@@ -607,9 +609,9 @@ export default function PriorityCityLayout({
       </section>
 
       {/* ── S9: CTA BANNER ───────────────────────────────────────────────── */}
-      <section style={{ background: "var(--brand-navy)", padding: "64px 0" }}>
+      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy) 100%)", padding: "64px 0" }}>
         <div className="container" style={{ textAlign: "center" }}>
-          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "white", fontSize: "clamp(1.6rem,3vw,2.4rem)", marginBottom: "16px", lineHeight: 1.15 }}>
+          <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(26px,4vw,44px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: 12 }}>
             {ctaHeading}
           </h2>
           <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.82)", fontSize: "15px", maxWidth: "600px", margin: "0 auto 28px", lineHeight: 1.7 }}>

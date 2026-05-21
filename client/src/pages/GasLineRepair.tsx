@@ -46,7 +46,7 @@ export default function GasLineRepair() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair' }]} />
@@ -61,8 +61,8 @@ export default function GasLineRepair() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Gasfitter — MD, DC, VA & DE", "24/7 Emergency Gas Service", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" variant="secondary" text="REQUEST GAS LINE SERVICE" href="/contact" size="md" />
+                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="outline" text="REQUEST GAS LINE SERVICE" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -139,17 +139,17 @@ export default function GasLineRepair() {
       </section>
 
       {/* SECTION 4: WHY LICENSED MATTERS */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
-          <SectionHeading eyebrow="WHY LICENSING MATTERS" heading="Why does gas line repair require a licensed Master Gasfitter?" centered />
-          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 40px', textAlign: 'center' }}>
+          <SectionHeading eyebrow="WHY LICENSING MATTERS" heading="Why does gas line repair require a licensed Master Gasfitter?" centered light />
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 40px', textAlign: 'center' }}>
             In Maryland, Washington DC, and Virginia, gas line installation and repair must be performed by or under the direct supervision of a licensed Master Gasfitter. This is a legal requirement — not a suggestion. Gas line work directly affects life safety. An improperly installed or repaired gas fitting, an incorrect pressure setting, a missed leak, or non-code-compliant venting can result in gas accumulation, carbon monoxide exposure, fire, or explosion.
           </p>
           {/* License Table */}
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,0,0,0.3)', maxWidth: '560px', margin: '0 auto', overflow: 'hidden' }}>
-            <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>JURISDICTION</span>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>LICENSE NUMBER</span>
+            <div style={{ background: 'var(--brand-navy-dark)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>JURISDICTION</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>LICENSE NUMBER</span>
             </div>
             {LICENSE_ROWS.map((row, i) => (
               <div key={row.jurisdiction} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '11px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
@@ -158,7 +158,7 @@ export default function GasLineRepair() {
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', textAlign: 'center', marginTop: '16px' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.65)', fontSize: '13px', textAlign: 'center', marginTop: '16px' }}>
             This multi-jurisdiction gasfitter credential stack is unique among local plumbing contractors in the DMV market.
           </p>
         </div>
@@ -169,13 +169,13 @@ export default function GasLineRepair() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div style={{ background: 'var(--brand-blue)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
+              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
-                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '10px 14px' }}>
+                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px 14px' }}>
                       <ShieldCheck size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
-                      <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
+                      <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.88)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
                     </div>
                   ))}
                 </div>
@@ -198,7 +198,7 @@ export default function GasLineRepair() {
                   </div>
                 ))}
               </div>
-              <BookNowButton bg="blue" variant="secondary" text="REQUEST COMMERCIAL GAS ESTIMATE" href="/contact" size="md" />
+              <BookNowButton variant="ghost" text="REQUEST COMMERCIAL GAS ESTIMATE" href="/contact" size="md" />
             </div>
           </div>
         </div>
@@ -220,13 +220,13 @@ export default function GasLineRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about gas line repair in MD, DC & Northern VA</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about gas line repair in MD, DC & Northern VA</h2>
         </div>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
         </div>
       </section>
 

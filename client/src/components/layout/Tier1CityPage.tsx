@@ -85,18 +85,18 @@ function getIcon(label: string) {
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div style={{ borderBottom: "1px solid #E6E8EE" }}>
+    <div style={{ borderBottom: "1px solid rgba(255,255,255,0.12)" }}>
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between gap-4 py-5 text-left"
         aria-expanded={open}
       >
-        <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "var(--ink)", fontSize: "15px", lineHeight: 1.4 }}>{q}</span>
+        <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "white", fontSize: "15px", lineHeight: 1.4 }}>{q}</span>
         <ChevronDown size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, transform: open ? "rotate(180deg)" : "none", transition: "transform 200ms" }} />
       </button>
       {open && (
         <div style={{ borderLeft: "3px solid var(--brand-cyan)", background: "rgba(0,158,198,0.08)", padding: "16px 20px", marginBottom: "8px", borderRadius: "0 6px 6px 0" }}>
-          <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.75, margin: 0 }}>{a}</p>
+          <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.85)", fontSize: "15px", lineHeight: 1.75, margin: 0 }}>{a}</p>
         </div>
       )}
     </div>
@@ -128,13 +128,11 @@ export default function Tier1CityPage({
         ))}
       </Helmet>
 
-      {/* ── S1: HERO — dark overlay on plumbing image ───────────────────── */}
-      <section style={{ minHeight: "62vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-20">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+      {/* ── S1: HERO — dark navy gradient, two-column ───────────────────── */}
+      <section style={{ background: "linear-gradient(135deg, #031838 0%, #063B63 60%, #0a4a7a 100%)", minHeight: "62vh", position: "relative", overflow: "hidden" }} className="py-20">
+        {/* subtle diagonal texture */}
+        <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 40px)", pointerEvents: "none" }} />
+        <div className="container relative">
           <BreadcrumbList items={breadcrumbs} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mt-8 items-center">
             {/* Left — 3 cols */}
@@ -149,7 +147,7 @@ export default function Tier1CityPage({
                 {introParagraph}
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(0,160,200,0.35)" }}>
+                <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#E40613", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(228,6,19,0.35)" }}>
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
                 <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "transparent", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", border: "2px solid rgba(255,255,255,0.35)", textDecoration: "none" }}>
@@ -184,7 +182,7 @@ export default function Tier1CityPage({
       </section>
 
       {/* ── S2: STATS BAR — cyan band ───────────────────────────────────── */}
-      <section style={{ background: "var(--paper)", padding: "20px 0" }}>
+      <section style={{ background: "var(--brand-cyan)", padding: "20px 0" }}>
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
@@ -213,7 +211,7 @@ export default function Tier1CityPage({
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, margin: 0 }}>
                 Plumbing Services in {cityName}
               </h2>
-              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
                 <Phone size={14} /> Call Now
               </a>
             </div>
@@ -238,12 +236,12 @@ export default function Tier1CityPage({
                 <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                   <div
                     className="cursor-pointer group"
-                    style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(0,160,200,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                    style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
                     onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(0,160,200,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                   >
                     {/* Photo header */}
-                    <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "linear-gradient(135deg, #0A0A0A, #0a3a5e)" }}>
+                    <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden", background: "linear-gradient(135deg, #063B63, #0a3a5e)" }}>
                       <img
                         src={imgSrc}
                         alt={`${svc.label} in ${cityName}`}
@@ -252,12 +250,12 @@ export default function Tier1CityPage({
                       />
                       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, rgba(6,59,99,0.1) 0%, rgba(6,59,99,0.5) 100%)" }} />
                       <div style={{ position: "absolute", bottom: "10px", left: "12px", background: "rgba(6,59,99,0.75)", backdropFilter: "blur(4px)", borderRadius: "6px", padding: "5px 7px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                        <Icon size={18} color="var(--brand-blue)" strokeWidth={1.8} />
+                        <Icon size={18} color="#4FB3E8" strokeWidth={1.8} />
                       </div>
                     </div>
                     <div style={{ padding: "14px 16px 16px" }}>
                       <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
-                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                     </div>
                   </div>
                 </Link>
@@ -270,23 +268,23 @@ export default function Tier1CityPage({
       </section>
 
       {/* ── S4: EMERGENCY — full dark section with red accent ───────────── */}
-      <section style={{ background: "var(--brand-navy)", position: "relative", overflow: "hidden" }} className="py-20">
+      <section style={{ background: "var(--brand-navy-dark)", position: "relative", overflow: "hidden" }} className="py-20">
         {/* red glow */}
         <div style={{ position: "absolute", top: "-80px", right: "-80px", width: "400px", height: "400px", background: "radial-gradient(circle, rgba(228,6,19,0.15) 0%, transparent 70%)", pointerEvents: "none" }} />
         <div className="container relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(228,6,19,0.15)", border: "1px solid rgba(0,160,200,0.35)", borderRadius: "20px", padding: "6px 14px", marginBottom: "20px" }}>
-                <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "var(--brand-blue)", display: "inline-block", animation: "pulse 1.5s infinite" }} />
+              <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "rgba(228,6,19,0.15)", border: "1px solid rgba(228,6,19,0.35)", borderRadius: "20px", padding: "6px 14px", marginBottom: "20px" }}>
+                <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#E40613", display: "inline-block", animation: "pulse 1.5s infinite" }} />
                 <span style={{ fontFamily: "var(--font-body)", fontWeight: 700, fontSize: "12px", color: "#ff6b6b", textTransform: "uppercase", letterSpacing: "0.1em" }}>24/7 Emergency Available</span>
               </div>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(26px,3.5vw,42px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "20px" }}>
                 Emergency Plumbing in {cityName}
               </h2>
-              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "16px", lineHeight: 1.75, marginBottom: "16px" }}>
+              <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.8)", fontSize: "16px", lineHeight: 1.75, marginBottom: "16px" }}>
                 Burst pipe, sewer backup, gas leak, no hot water — a live dispatcher answers every call around the clock. Licensed plumbing professionals dispatched — work performed under Master Plumber license. All services have a trip fee.
               </p>
-              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.7 }}>
+              <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "15px", lineHeight: 1.7 }}>
                 We serve {cityName} and the surrounding area from our Largo, MD location. Most emergency calls are reached within 60-90 minutes.
               </p>
             </div>
@@ -307,7 +305,7 @@ export default function Tier1CityPage({
                   </div>
                 </div>
               ))}
-              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "16px 32px", borderRadius: "6px", textDecoration: "none", marginTop: "4px", boxShadow: "0 4px 18px rgba(0,160,200,0.4)" }}>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "#E40613", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "16px 32px", borderRadius: "6px", textDecoration: "none", marginTop: "4px", boxShadow: "0 4px 18px rgba(228,6,19,0.4)" }}>
                 <Phone size={17} /> CALL (301) 679-5849
               </a>
             </div>
@@ -335,7 +333,7 @@ export default function Tier1CityPage({
             </div>
             {/* Right — credentials on navy card */}
             <div>
-              <div style={{ background: "var(--brand-blue)", borderRadius: "12px", padding: "28px", boxShadow: "0 8px 32px rgba(6,59,99,0.2)" }}>
+              <div style={{ background: "var(--brand-navy)", borderRadius: "12px", padding: "28px", boxShadow: "0 8px 32px rgba(6,59,99,0.2)" }}>
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Licenses &amp; Certifications</p>
                 <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "20px", textTransform: "uppercase", color: "white", lineHeight: 1.1, marginBottom: "20px" }}>
                   {licenseHeading}
@@ -344,7 +342,7 @@ export default function Tier1CityPage({
                   {credentials.map((cred, i) => (
                     <div key={i} style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "10px 14px" }}>
                       <ShieldCheck size={14} style={{ color: "var(--brand-cyan)", flexShrink: 0 }} />
-                      <span style={{ fontFamily: "var(--font-body)", color: "white", fontSize: "13px", fontWeight: 500 }}>{cred.label}</span>
+                      <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.9)", fontSize: "13px", fontWeight: 500 }}>{cred.label}</span>
                     </div>
                   ))}
                 </div>
@@ -360,15 +358,15 @@ export default function Tier1CityPage({
       </section>
 
       {/* ── S6: COMMERCIAL — dark navy, horizontal layout ───────────────── */}
-      <section style={{ background: "#fff", padding: "64px 0" }}>
+      <section style={{ background: "var(--brand-navy)", padding: "64px 0" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
             <div className="lg:col-span-2">
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Commercial &amp; Government</p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,36px)", color: "var(--ink)", lineHeight: 1.05, marginBottom: "16px" }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,36px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "16px" }}>
                 Commercial Plumbing in {cityName}
               </h2>
-              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "16px", lineHeight: 1.75 }}>
+              <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.8)", fontSize: "16px", lineHeight: 1.75 }}>
                 Definitive Mechanical serves commercial facilities, property managers, HOAs, and government agencies in {cityName}. MDOT MBE Certified (No. 20-134), Virginia SWaM Certified (No. 815255), CAGE Code 8HCF6, NAICS 238220.
               </p>
             </div>
@@ -379,9 +377,9 @@ export default function Tier1CityPage({
                 { icon: Award, label: "MDOT MBE Certified" },
                 { icon: ShieldCheck, label: "Bonded & Insured" },
               ].map(({ icon: Icon, label }) => (
-                <div key={label} style={{ display: "flex", alignItems: "center", gap: "10px", background: "#F7F9FA", borderRadius: "6px", padding: "10px 14px", border: "1px solid #E6E8EE" }}>
+                <div key={label} style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(255,255,255,0.06)", borderRadius: "6px", padding: "10px 14px", border: "1px solid rgba(255,255,255,0.1)" }}>
                   <Icon size={16} style={{ color: "var(--brand-cyan)", flexShrink: 0 }} />
-                  <span style={{ fontFamily: "var(--font-body)", color: "var(--ink)", fontSize: "14px", fontWeight: 500 }}>{label}</span>
+                  <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.85)", fontSize: "14px", fontWeight: 500 }}>{label}</span>
                 </div>
               ))}
               <Link href="/commercial-plumbing" style={{ display: "inline-flex", alignItems: "center", gap: "6px", color: "var(--brand-cyan)", fontFamily: "var(--font-body)", fontSize: "14px", fontWeight: 600, textDecoration: "none", marginTop: "4px" }}>
@@ -423,15 +421,15 @@ export default function Tier1CityPage({
 
       {/* ── S8: FAQ — dark navy bg ───────────────────────────────────────── */}
       {faqs && faqs.length > 0 && (
-        <section className="py-20" style={{ background: "#fff" }}>
+        <section className="py-20" style={{ background: "var(--brand-navy)" }}>
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div>
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>FAQ</p>
-                <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,34px)", color: "var(--ink)", lineHeight: 1.05, marginBottom: "16px" }}>
+                <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,34px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "16px" }}>
                   Common Questions — {cityName}
                 </h2>
-                <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.7 }}>
+                <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.6)", fontSize: "14px", lineHeight: 1.7 }}>
                   Have a question not listed here? Call (301) 679-5849 — a live dispatcher answers 24/7.
                 </p>
               </div>

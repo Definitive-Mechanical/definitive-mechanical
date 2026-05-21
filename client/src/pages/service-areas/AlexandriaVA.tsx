@@ -51,12 +51,8 @@ export default function AlexandriaVA() {
       </Helmet>
 
       {/* S1: Hero */}
-      <section style={{ minHeight: "60vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-20">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "60vh" }} className="py-20">
+        <div className="container">
           <BreadcrumbList items={[
             {label:"Home",href:"/"},
             {label:"Service Areas",href:"/service-areas"},
@@ -77,8 +73,8 @@ export default function AlexandriaVA() {
               </p>
               <TrustBadges variant="dark" badges={["VA Master Plumber/Gasfitter #2710064209","VA Class A Contractor #2705181061","VA SWaM Cert 815255","24/7 Emergency","Serving Alexandria from Largo, MD"]} />
               <div className="flex flex-wrap gap-4 mt-8">
-                <BookNowButton bg="dark" variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-                <BookNowButton bg="dark" variant="secondary" size="md" text="REQUEST SERVICE" href="/contact" />
+                <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+                <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
             <div className="hidden lg:block">
@@ -98,7 +94,7 @@ export default function AlexandriaVA() {
 
           {/* VA Credentials */}
           <div className="mb-8 max-w-2xl">
-            <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-blue)", fontSize:"15px" }} className="mb-3">Virginia credentials that matter in Alexandria:</p>
+            <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }} className="mb-3">Virginia credentials that matter in Alexandria:</p>
             {[
               "Virginia State Master Plumber/Gasfitter #2710064209",
               "Virginia Class A Contractor #2705181061 — required for projects over $120,000",
@@ -123,7 +119,7 @@ export default function AlexandriaVA() {
                 <div style={{ height: "3px", width: "28px", background: cat.color, flexShrink: 0, borderRadius: "2px" }} />
 
 
-                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-blue)" }}>{cat.title}</span>
+                <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.12em", color: "var(--brand-navy)" }}>{cat.title}</span>
 
 
                 <div style={{ height: "1px", flex: 1, background: "#E6E8EE" }} />
@@ -139,9 +135,9 @@ export default function AlexandriaVA() {
               <Link key={i} href={svc.href}>
                 <div
                   className="cursor-pointer"
-                  style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(0,160,200,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                  style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
                   onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(0,160,200,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                 >
                   <div style={{ position: "relative", height: "140px", overflow: "hidden" }}>
                       <img
@@ -150,11 +146,11 @@ export default function AlexandriaVA() {
                         style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
                         loading="lazy"
                       />
-                      <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
+                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
                     </div>
                   <div style={{ padding: "14px 16px 16px" }}>
-                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-blue)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
-                    <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                    <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
+                    <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                   </div>
                 </div>
               </Link>
@@ -166,7 +162,7 @@ export default function AlexandriaVA() {
       </section>
 
             {/* S3: Emergency */}
-      <section style={{ background: "#fff", position: "relative", overflow: "hidden" }} className="py-20">
+      <section style={{ background: "var(--brand-navy)", position: "relative", overflow: "hidden" }} className="py-20">
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 30% 50%, rgba(220,38,38,0.15) 0%, transparent 65%)", pointerEvents:"none" }} />
         <div className="container" style={{ position:"relative", zIndex:1 }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -207,7 +203,7 @@ export default function AlexandriaVA() {
               <div key={i} className="bg-white rounded-md p-5 border-l-4" style={{ borderLeftColor:"var(--brand-cyan)" }}>
                 <div className="flex items-center gap-2 mb-2">
                   <card.icon size={24} style={{ color:"var(--brand-cyan)" }} />
-                  <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-blue)", fontSize:"15px" }}>{card.title}</p>
+                  <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }}>{card.title}</p>
                 </div>
                 <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"14px", lineHeight:1.6 }}>{card.body}</p>
               </div>
@@ -222,10 +218,10 @@ export default function AlexandriaVA() {
         <div className="container" style={{ position:"relative", zIndex:1 }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
             <div className="lg:col-span-2">
-              <p style={{ fontFamily:"var(--font-display)", color:"rgba(255,255,255,0.8)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">COMMERCIAL & GOVERNMENT</p>
+              <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-3">COMMERCIAL & GOVERNMENT</p>
               <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(26px,3.5vw,38px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-5">Commercial Plumbing in Alexandria, VA</h2>
               <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7 }} className="mb-6">Alexandria's proximity to the Pentagon, Fort Belvoir, and federal agencies creates significant demand for government-qualified plumbing contractors. Definitive Mechanical holds MDOT MBE Certification (Cert No. 20-134), CAGE Code 8HCF6, and SWaM Certification 815255 — qualified for federal and Virginia state procurement.</p>
-              <a href="/commercial-plumbing" style={{ color:"rgba(255,255,255,0.8)", fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, textDecoration:"none" }}>Learn more about commercial plumbing →</a>
+              <a href="/commercial-plumbing" style={{ color:"var(--brand-cyan)", fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, textDecoration:"none" }}>Learn more about commercial plumbing →</a>
             </div>
             <div className="flex flex-col gap-3">
               {["VA #2710064209", "SWaM Cert 815255", "Class A #2705181061", "CAGE 8HCF6"].map((b,i)=>(
@@ -239,13 +235,13 @@ export default function AlexandriaVA() {
             {/* S7: Nearby */}
       <section style={{ background:"#F4F7FA" }} className="py-16">
         <div className="container">
-          <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-blue)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">NEARBY SERVICE AREAS</p>
-          <h2 style={{ fontFamily:"var(--font-display)", color:"var(--brand-blue)", fontSize:"clamp(22px,3vw,32px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-6">Areas Near Alexandria, VA We Also Serve</h2>
+          <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-navy)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">NEARBY SERVICE AREAS</p>
+          <h2 style={{ fontFamily:"var(--font-display)", color:"var(--brand-navy)", fontSize:"clamp(22px,3vw,32px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-6">Areas Near Alexandria, VA We Also Serve</h2>
           <div className="flex flex-wrap gap-2 mb-6">
-            <a key="Arlington, VA" href="/service-areas/northern-virginia/arlington-county/arlington-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-blue)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Arlington, VA</a>
-            <a key="McLean, VA" href="/service-areas/northern-virginia/fairfax-county/mclean-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-blue)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>McLean, VA</a>
-            <a key="Springfield, VA" href="/service-areas/northern-virginia/fairfax-county/springfield-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-blue)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Springfield, VA</a>
-            <a key="Washington DC" href="/service-areas/washington-dc" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-blue)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Washington DC</a>
+            <a key="Arlington, VA" href="/service-areas/northern-virginia/arlington-county/arlington-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-navy)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Arlington, VA</a>
+            <a key="McLean, VA" href="/service-areas/northern-virginia/fairfax-county/mclean-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-navy)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>McLean, VA</a>
+            <a key="Springfield, VA" href="/service-areas/northern-virginia/fairfax-county/springfield-va" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-navy)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Springfield, VA</a>
+            <a key="Washington DC" href="/service-areas/washington-dc" style={{ fontFamily:"var(--font-body)", fontSize:"14px", fontWeight:500, color:"var(--brand-navy)", background:"white", border:"1px solid #D0DCE8", borderRadius:"4px", padding:"6px 14px", textDecoration:"none", transition:"all 0.15s", display:"inline-block" }}>Washington DC</a>
             <span key="Annandale, VA" style={{ fontFamily:"var(--font-body)", fontSize:"14px", color:"var(--ink-2)", background:"white", border:"1px solid #E8EFF5", borderRadius:"4px", padding:"6px 14px", display:"inline-block" }}>Annandale, VA</span>
             <span key="Falls Church, VA" style={{ fontFamily:"var(--font-body)", fontSize:"14px", color:"var(--ink-2)", background:"white", border:"1px solid #E8EFF5", borderRadius:"4px", padding:"6px 14px", display:"inline-block" }}>Falls Church, VA</span>
             <span key="Fort Belvoir, VA" style={{ fontFamily:"var(--font-body)", fontSize:"14px", color:"var(--ink-2)", background:"white", border:"1px solid #E8EFF5", borderRadius:"4px", padding:"6px 14px", display:"inline-block" }}>Fort Belvoir, VA</span>
@@ -256,12 +252,12 @@ export default function AlexandriaVA() {
       </section>
 
             {/* S8: FAQ */}
-      <section style={{ background: "#fff" }} className="py-20">
+      <section style={{ background: "var(--brand-navy)" }} className="py-20">
         <div className="container">
-          <p style={{ fontFamily:"var(--font-display)", color:"rgba(255,255,255,0.8)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
+          <p style={{ fontFamily:"var(--font-display)", color:"var(--brand-cyan)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
           <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>
           <div className="max-w-3xl">
-            <FAQAccordion items={faqs} schema={true} variant="light" />
+            <FAQAccordion items={faqs} schema={true} variant="dark" />
           </div>
         </div>
       </section>

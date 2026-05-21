@@ -11,16 +11,13 @@ export default function About() {
     <>
       {/* HERO */}
       <section style={{
+        background: 'linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)',
         padding: '80px 0',
         position: 'relative',
         overflow: 'hidden',
-        background: '#111',
       }}>
-        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ position: 'relative', zIndex: 1 }}>
+        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.05)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">
@@ -33,7 +30,7 @@ export default function About() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
                 Definitive Mechanical is a Licensed Black Owned, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor based in Largo, Maryland. We have served homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia for over 11 years. Master Plumber and Master Gasfitter licensed in four states.
               </p>
-              <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>
             <div className="hidden lg:block lg:col-span-2">
               <img
@@ -81,7 +78,7 @@ export default function About() {
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/about-team-photo-jGApqx8mJzea56RGGdm7Vi.webp"
                 alt="Definitive Mechanical plumbing service Maryland"
-                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(0,160,200,0.12)' }}
+                style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }}
               />
             </div>
           </div>
@@ -89,7 +86,7 @@ export default function About() {
       </section>
 
       {/* STATS */}
-      <section style={{ background: '#fff', padding: '48px 0' }}>
+      <section style={{ background: 'var(--brand-cyan)', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {[
@@ -99,9 +96,9 @@ export default function About() {
               { number: '25+', label: 'Years Trade Experience', icon: Award },
             ].map((stat, index) => (
               <div key={stat.label} style={{ textAlign: 'center', padding: '16px', borderRight: index < 3 ? '1px solid rgba(6,59,99,0.2)' : 'none' }}>
-                <stat.icon size={24} color="var(--brand-blue)" style={{ margin: '0 auto 8px' }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '32px', color: 'var(--brand-blue)', lineHeight: 1 }}>{stat.number}</p>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-blue)', marginTop: '4px' }}>{stat.label}</p>
+                <stat.icon size={24} color="var(--brand-navy)" style={{ margin: '0 auto 8px' }} />
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '32px', color: 'var(--brand-navy)', lineHeight: 1 }}>{stat.number}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-navy)', marginTop: '4px' }}>{stat.label}</p>
               </div>
             ))}
           </div>
@@ -134,9 +131,9 @@ export default function About() {
                 body: 'When a Definitive Mechanical technician arrives at your property, you get their name. You can call our office and ask about them. We stand behind every technician we send.',
               },
             ].map((item) => (
-              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(0,160,200,0.08)', textAlign: 'center' }}>
+              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', textAlign: 'center' }}>
                 <item.icon size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
-                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-blue)', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
+                <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>
               </div>
             ))}
@@ -182,13 +179,13 @@ export default function About() {
             ].map((item) => (
               <div key={item.title} style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '24px', border: '1px solid rgba(6,59,99,0.1)' }}>
                 <Award size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
-                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-blue)', fontSize: '15px', marginBottom: '8px' }}>{item.title}</h3>
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{item.title}</h3>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', fontWeight: 600 }}>{item.cert}</p>
               </div>
             ))}
           </div>
-          <div style={{ marginTop: '48px', padding: '32px', background: 'var(--brand-blue)', borderRadius: '6px', textAlign: 'center' }}>
-            <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
+          <div style={{ marginTop: '48px', padding: '32px', background: 'var(--brand-navy)', borderRadius: '6px', textAlign: 'center' }}>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
               Every Definitive Mechanical job is performed under Master Plumber license and supervision. Our credentials are verified and current with all relevant state and local jurisdictions.
             </p>
             <a href="/licenses-certifications" style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', textDecoration: 'none' }}
@@ -201,14 +198,14 @@ export default function About() {
       </section>
 
       {/* CONTACT INFO */}
-      <section style={{ background: '#fff', padding: '64px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>
                 CONTACT INFORMATION
               </p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '24px' }}>
+              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '24px' }}>
                 Reach Definitive Mechanical
               </h2>
               <div className="space-y-4">
@@ -221,22 +218,22 @@ export default function About() {
                   <div key={item.label}>
                     <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.15em', color: 'var(--brand-cyan)', marginBottom: '4px' }}>{item.label}</p>
                     {item.href ? (
-                      <a href={item.href} style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', textDecoration: 'none' }}
+                      <a href={item.href} style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px', textDecoration: 'none' }}
                         onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
                         onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.85)')}>
                         {item.value}
                       </a>
                     ) : (
-                      <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px' }}>{item.value}</p>
+                      <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px' }}>{item.value}</p>
                     )}
                   </div>
                 ))}
               </div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <BookNowButton bg="blue" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-              <BookNowButton bg="blue" variant="secondary" text="REQUEST SERVICE ONLINE" href="/contact" size="lg" />
-              <BookNowButton bg="blue" variant="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton variant="outline" text="REQUEST SERVICE ONLINE" href="/contact" size="lg" />
+              <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
             </div>
           </div>
         </div>

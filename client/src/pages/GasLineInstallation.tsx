@@ -44,7 +44,7 @@ export default function GasLineInstallation() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair', href: '/gas-line-repair' }, { label: 'Gas Line Installation' }]} />
@@ -59,8 +59,8 @@ export default function GasLineInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Gasfitter", "Permitted & Pressure-Tested", "Residential & Commercial", "25+ Years Experience"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" variant="secondary" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
+                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="outline" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -132,8 +132,8 @@ export default function GasLineInstallation() {
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '720px', margin: '0 auto 16px', overflow: 'hidden', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)' }}>
             <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>INSTALLATION TYPE</span>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>INSTALLATION TYPE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
             </div>
             {PRICING_ROWS.map((row, i) => (
               <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
@@ -146,8 +146,8 @@ export default function GasLineInstallation() {
             These ranges include labor, materials, and standard permit fees. We provide written pricing after assessment — including what the permit will cost and what the inspection process requires for your specific jurisdiction.
           </p>
           <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <BookNowButton bg="blue" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="md" />
-            <BookNowButton bg="blue" variant="secondary" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
+            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="md" />
+            <BookNowButton variant="ghost" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
           </div>
         </div>
       </section>
@@ -168,13 +168,13 @@ export default function GasLineInstallation() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about gas line installation in MD, DC & Northern VA</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about gas line installation in MD, DC & Northern VA</h2>
         </div>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
         </div>
       </section>
 

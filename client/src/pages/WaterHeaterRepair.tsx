@@ -58,7 +58,7 @@ export default function WaterHeaterRepair() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Heater Repair' }]} />
@@ -74,8 +74,8 @@ export default function WaterHeaterRepair() {
                 Definitive Mechanical repairs and replaces gas, electric, and tankless water heaters across Maryland, Washington DC, and Northern Virginia. Same-day service available. Financing available for replacements. Licensed Master Plumber and Master Gasfitter on every job.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-                <BookNowButton bg="dark" variant="secondary" text="REQUEST SERVICE" href="/contact" size="lg" />
+                <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+                <BookNowButton variant="outline" text="REQUEST SERVICE" href="/contact" size="lg" />
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function WaterHeaterRepair() {
                 padding: '28px',
                 boxShadow: '0 4px 16px rgba(6,59,99,0.10)',
               }}>
-                <div style={{ width: '44px', height: '44px', background: 'rgba(0,160,200,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
+                <div style={{ width: '44px', height: '44px', background: 'rgba(0,117,186,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
                   <Thermometer size={22} color="var(--brand-cyan)" />
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>
@@ -139,13 +139,14 @@ export default function WaterHeaterRepair() {
       </section>
 
       {/* TANKLESS */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading
             eyebrow="TANKLESS WATER HEATERS"
             heading="Is a tankless water heater right for your home or building?"
             subtext="Tankless water heaters provide on-demand hot water with no standby heat loss — and a lifespan of 15-20 years versus 8-12 for standard tank units."
             centered
+            light
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -154,15 +155,15 @@ export default function WaterHeaterRepair() {
               { icon: CheckCircle2, title: 'Longer Lifespan', desc: '15-20 year lifespan versus 8-12 for standard tank units.' },
               { icon: ChevronRight, title: 'Space Saving', desc: 'Wall-mounted units free up significant floor space versus tank units.' },
             ].map((item) => (
-              <div key={item.title} style={{ background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '24px', textAlign: 'center' }}>
+              <div key={item.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.14)', borderRadius: '6px', padding: '24px', textAlign: 'center' }}>
                 <item.icon size={28} color="var(--brand-cyan)" style={{ margin: '0 auto 12px' }} />
-                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{item.title}</p>
-                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', lineHeight: 1.6 }}>{item.desc}</p>
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'white', fontSize: '15px', marginBottom: '8px' }}>{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.75)', fontSize: '13px', lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton bg="blue" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>
@@ -180,20 +181,20 @@ export default function WaterHeaterRepair() {
             Apply for Synchrony consumer financing in 60 seconds. Monthly payment options available for qualified customers. No impact to your credit score during pre-qualification.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <BookNowButton bg="light" variant="primary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
-            <BookNowButton bg="light" variant="secondary" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton variant="navy" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+            <BookNowButton variant="ghost" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Water Heater Repair & Replacement Questions</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Water Heater Repair & Replacement Questions</h2>
         </div>
-            <FAQAccordion items={WATER_HEATER_FAQ} schema={true} variant="light" />
+            <FAQAccordion items={WATER_HEATER_FAQ} schema={true} variant="dark" />
         </div>
       </section>
 

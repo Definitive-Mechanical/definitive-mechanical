@@ -102,20 +102,16 @@ export default function FAQPage() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ minHeight: "38vh", position: "relative", overflow: "hidden", background: "#111" }} className="flex items-center py-16">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container text-center" style={{ position: "relative", zIndex: 1 }}>
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "38vh" }} className="flex items-center py-16">
+        <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>FREQUENTLY ASKED QUESTIONS</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>FREQUENTLY ASKED QUESTIONS</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Common Questions About Definitive Mechanical</h1>
-          <p className="text-white/85 text-lg max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-body)' }}>
+          <p className="text-white/85 text-lg max-w-2xl mx-auto" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Answers to the most common questions about our licensing, emergency service, pricing, and service area. Can't find your answer? Call (301) 679-5849.
           </p>
           <div className="mt-6">
-            <a href="tel:+13016795849" className="inline-flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: 'var(--font-label)', fontSize: "18px" }}>
+            <a href="tel:+13016795849" className="inline-flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity" style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>
               <Phone size={20} /> CALL (301) 679-5849
             </a>
           </div>
@@ -129,8 +125,8 @@ export default function FAQPage() {
             <a
               key={section.anchor}
               href={`#${section.anchor}`}
-              className="font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-full border border-[var(--brand-blue)] text-[var(--brand-blue)] hover:bg-[var(--brand-blue)] hover:text-white transition-colors"
-              style={{ fontFamily: 'var(--font-label)' }}
+              className="font-bold text-xs uppercase tracking-wide px-3 py-1.5 rounded-full border border-[var(--brand-navy)] text-[var(--brand-navy)] hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               {section.category}
             </a>
@@ -165,7 +161,7 @@ export default function FAQPage() {
               { label: "About Us", href: "/about/" },
               { label: "Contact", href: "/contact/" },
             ].map((link) => (
-              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium text-sm hover:opacity-80 transition-opacity block" style={{ borderColor: "var(--brand-cyan)", color: "var(--brand-blue)", fontFamily: 'var(--font-body)' }}>
+              <Link key={link.href} href={link.href} className="bg-white border-l-4 p-4 rounded-md font-medium text-sm hover:opacity-80 transition-opacity block" style={{ borderColor: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>
                 {link.label} →
               </Link>
             ))}

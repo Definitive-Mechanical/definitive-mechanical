@@ -55,7 +55,7 @@ export default function WaterHeaterInstallation() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Water Heater Repair', href: '/water-heater-repair/' }, { label: 'Water Heater Installation' }]} />
@@ -70,8 +70,8 @@ export default function WaterHeaterInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Same-Day Installation Available", "Licensed Master Plumber", "Permit-Compliant", "Financing Available", "Gas & Electric Units"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" variant="secondary" text="REQUEST INSTALLATION" href="/contact" size="md" />
+                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="outline" text="REQUEST INSTALLATION" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -110,11 +110,11 @@ export default function WaterHeaterInstallation() {
               </div>
             </div>
           </div>
-          <div style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', maxWidth: '672px', margin: '32px auto 0', boxShadow: '0 2px 8px rgba(0,160,200,0.08)' }}>
+          <div style={{ background: 'white', borderLeft: '4px solid var(--brand-cyan)', borderRadius: '4px', padding: '20px', maxWidth: '672px', margin: '32px auto 0', boxShadow: '0 2px 8px rgba(6,59,99,0.08)' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, marginBottom: '12px' }}>
               "If you are uncertain, call (301) 679-5849. We will give you an honest assessment — not a recommendation shaped by which option creates a larger invoice."
             </p>
-            <BookNowButton bg="light" variant="secondary" text="TALK TO A LICENSED PLUMBER" href="tel:+13016795849" size="sm" />
+            <BookNowButton variant="ghost" text="TALK TO A LICENSED PLUMBER" href="tel:+13016795849" size="sm" />
           </div>
         </div>
       </section>
@@ -147,8 +147,8 @@ export default function WaterHeaterInstallation() {
         </div>
               <div style={{ border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', marginBottom: '16px' }}>
                 <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>UNIT TYPE</span>
-                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL INSTALLED RANGE</span>
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>UNIT TYPE</span>
+                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL INSTALLED RANGE</span>
                 </div>
                 {PRICING_ROWS.map((row, i) => (
                   <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
@@ -164,18 +164,18 @@ export default function WaterHeaterInstallation() {
                 <CreditCard size={24} color="var(--brand-navy)" style={{ flexShrink: 0 }} />
                 <div style={{ flex: 1 }}>
                   <p style={{ fontFamily: 'var(--font-body)', color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '8px' }}>Financing available through Synchrony. Apply in 60 seconds at mysynchrony.com/mmc/S6240351600.</p>
-                  <BookNowButton bg="light" variant="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
+                  <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
                 </div>
               </div>
             </div>
             <div>
-              <div style={{ background: 'var(--brand-blue)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
+              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
-                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '10px 14px' }}>
+                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px 14px' }}>
                       <ShieldCheck size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
-                      <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
+                      <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.88)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
                     </div>
                   ))}
                 </div>
@@ -186,10 +186,10 @@ export default function WaterHeaterInstallation() {
       </section>
 
       {/* SECTION 5: PERMITS */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
-          <SectionHeading eyebrow="PERMITS & COMPLIANCE" heading="Do you pull permits for water heater installation in Maryland, DC, and Virginia?" centered />
-          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '672px', margin: '0 auto 40px', textAlign: 'center' }}>
+          <SectionHeading eyebrow="PERMITS & COMPLIANCE" heading="Do you pull permits for water heater installation in Maryland, DC, and Virginia?" centered light />
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '16px', lineHeight: 1.7, maxWidth: '672px', margin: '0 auto 40px', textAlign: 'center' }}>
             Yes. Water heater installation in Maryland, Washington DC, and Virginia typically requires a permit in most jurisdictions. Definitive Mechanical pulls permits under our own licenses.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -205,7 +205,7 @@ export default function WaterHeaterInstallation() {
               </div>
             ))}
           </div>
-          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, maxWidth: '672px', margin: '0 auto', textAlign: 'center' }}>
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '15px', lineHeight: 1.7, maxWidth: '672px', margin: '0 auto', textAlign: 'center' }}>
             Work permitted under a licensed Master Plumber protects you in three ways: it confirms the work meets code, it creates a record for insurance and future sale disclosures, and it means the jurisdiction has signed off on the safety of the installation. Unlicensed water heater installation — increasingly common in the DMV — creates code violations, voids manufacturer warranties, and creates liability for the property owner. We do not take shortcuts on permits.
           </p>
         </div>
@@ -216,13 +216,13 @@ export default function WaterHeaterInstallation() {
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div style={{ background: 'var(--brand-blue)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
+              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
-                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '10px 14px' }}>
+                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px 14px' }}>
                       <ShieldCheck size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
-                      <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
+                      <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.88)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
                     </div>
                   ))}
                 </div>
@@ -248,7 +248,7 @@ export default function WaterHeaterInstallation() {
                   </div>
                 ))}
               </div>
-              <BookNowButton bg="blue" variant="phone" text="CALL FOR AVAILABILITY" href="tel:+13016795849" size="md" />
+              <BookNowButton variant="phone" text="CALL FOR AVAILABILITY" href="tel:+13016795849" size="md" />
             </div>
           </div>
         </div>
@@ -270,13 +270,13 @@ export default function WaterHeaterInstallation() {
       </section>
 
       {/* SECTION 8: FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about water heater installation in MD, DC & Northern VA</h2>
         </div>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
         </div>
       </section>
 

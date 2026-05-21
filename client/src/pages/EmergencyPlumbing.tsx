@@ -65,7 +65,7 @@ export default function EmergencyPlumbing() {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '8px',
-          background: '#fff',
+          background: 'var(--brand-cyan)',
           padding: '12px 16px',
           textDecoration: 'none',
         }}
@@ -93,7 +93,7 @@ export default function EmergencyPlumbing() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Emergency Plumbing' }]} />
@@ -116,7 +116,7 @@ export default function EmergencyPlumbing() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '12px',
-                  background: '#fff',
+                  background: 'var(--brand-cyan)',
                   color: 'var(--brand-navy)',
                   fontFamily: 'var(--font-display)',
                   fontWeight: 700,
@@ -130,7 +130,7 @@ export default function EmergencyPlumbing() {
                   transition: 'all 0.3s ease',
                   marginBottom: '12px',
                 }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-blue-hover)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(0,160,200,0.4)'; }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#007BA0'; (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 20px rgba(0,158,198,0.4)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'var(--brand-cyan)'; (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}
               >
                 <Phone size={24} />
@@ -141,7 +141,7 @@ export default function EmergencyPlumbing() {
                  Licensed Plumbing Professionals on Every Emergency Call &nbsp; Upfront Flat Pricing &nbsp; MD, DC, VA & DE Licensed
               </p>
 
-              <BookNowButton bg="dark" variant="secondary" text="REQUEST EMERGENCY SERVICE" href="/contact" size="md" />
+              <BookNowButton variant="outline" text="REQUEST EMERGENCY SERVICE" href="/contact" size="md" />
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function EmergencyPlumbing() {
             If you are unsure whether your situation qualifies, call anyway. Our dispatcher will help you assess the situation at no cost.
           </p>
           <div style={{ textAlign: 'center' }}>
-            <BookNowButton bg="light" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>
@@ -303,13 +303,13 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Emergency Plumbing Questions</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Emergency Plumbing Questions</h2>
         </div>
-                      <FAQAccordion items={EMERGENCY_FAQ} schema={true} variant="light" />
+                      <FAQAccordion items={EMERGENCY_FAQ} schema={true} variant="dark" />
         </div>
       </section>
 

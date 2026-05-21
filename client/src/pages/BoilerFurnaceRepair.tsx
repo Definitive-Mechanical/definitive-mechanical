@@ -107,7 +107,7 @@ export default function BoilerFurnaceRepair() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Boiler & Furnace Repair' }]} />
@@ -122,8 +122,8 @@ export default function BoilerFurnaceRepair() {
               </p>
               <TrustBadges variant="dark" badges={["24/7 Emergency Heating Service", "Licensed Master Plumber/Gasfitter", "Commercial & Residential", "Gas & Oil Systems"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" variant="secondary" text="REQUEST HEATING REPAIR" href="/contact" size="md" />
+                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="outline" text="REQUEST HEATING REPAIR" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -205,12 +205,12 @@ export default function BoilerFurnaceRepair() {
             </div>
           </div>
           {/* Emergency strip */}
-          <div style={{ background: 'var(--brand-blue)', borderRadius: '6px', padding: '20px', maxWidth: '700px', margin: '32px auto 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', flexWrap: 'wrap' }}>
+          <div style={{ background: 'var(--brand-navy)', borderRadius: '6px', padding: '20px', maxWidth: '700px', margin: '32px auto 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <Thermometer size={24} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
               <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.9)', fontSize: '14px' }}>No heat? Emergency heating repair available 24/7 — call (301) 679-5849. All services have a trip fee, disclosed before dispatch.</span>
             </div>
-            <BookNowButton bg="blue" variant="phone" text="CALL NOW" href="tel:+13016795849" size="sm" />
+            <BookNowButton variant="phone" text="CALL NOW" href="tel:+13016795849" size="sm" />
           </div>
         </div>
       </section>
@@ -224,8 +224,8 @@ export default function BoilerFurnaceRepair() {
         </div>
           <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', maxWidth: '700px', margin: '0 auto', boxShadow: '0 4px 16px rgba(6,59,99,0.10)' }}>
             <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
             </div>
             {PRICING_ROWS.map((row, i) => (
               <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
@@ -261,13 +261,13 @@ export default function BoilerFurnaceRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about boiler and furnace repair in MD, DC & Northern VA</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about boiler and furnace repair in MD, DC & Northern VA</h2>
         </div>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
         </div>
       </section>
 

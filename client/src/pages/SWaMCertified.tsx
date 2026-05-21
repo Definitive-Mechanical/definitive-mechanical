@@ -35,12 +35,8 @@ export default function SWaMCertified() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ minHeight: "45vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-16">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="py-16">
+        <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "SWaM Certified Plumbing Contractor Virginia" }]} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
             <div className="lg:col-span-3">
@@ -55,8 +51,8 @@ export default function SWaMCertified() {
               </p>
               <TrustBadges variant="dark" badges={["VA SWaM Cert No. 815255", "Minority-Owned Business", "VA Master Plumber #2710064209", "VA Class A Contractor"]} />
               <div className="flex flex-wrap gap-4 mt-8">
-                <BookNowButton bg="dark" variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-                <BookNowButton bg="dark" variant="secondary" size="md" text="REQUEST SERVICE" href="/contact" />
+                <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+                <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
             <div className="lg:col-span-2 hidden lg:flex items-center justify-center">
@@ -97,7 +93,7 @@ export default function SWaMCertified() {
                   <div key={i} className="flex items-start gap-3 p-4 rounded" style={{ background: "var(--surface-1)" }}>
                     <CheckCircle2 size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                     <div>
-                      <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.15em" }}>{item.label}</p>
+                      <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.15em" }}>{item.label}</p>
                       <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", marginTop: "2px" }}>{item.value}</p>
                     </div>
                   </div>
@@ -109,9 +105,9 @@ export default function SWaMCertified() {
       </section>
 
       {/* Why Hire SWaM */}
-      <section className="py-20" style={{ background: "#fff" }}>
+      <section className="py-20" style={{ background: "var(--brand-navy)" }}>
         <div className="container">
-          <SectionHeading eyebrow="WHY HIRE A SWAM CONTRACTOR" heading="Why hire a Virginia SWaM certified plumbing contractor?" />
+          <SectionHeading eyebrow="WHY HIRE A SWAM CONTRACTOR" heading="Why hire a Virginia SWaM certified plumbing contractor?" light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {[
               { icon: Building2, title: "Meet SWaM Utilization Goals", body: "Virginia state agencies and local government contracts often carry SWaM utilization goals. Engaging Definitive Mechanical counts toward those goals with verifiable documentation." },
@@ -120,7 +116,7 @@ export default function SWaMCertified() {
             ].map((item, i) => (
               <div key={i} className="bg-white rounded-md p-6" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.15)" }}>
                 <item.icon size={32} style={{ color: "var(--brand-cyan)", marginBottom: "12px" }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-3">{item.title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }}>{item.body}</p>
               </div>
             ))}

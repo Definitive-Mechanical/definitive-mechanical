@@ -81,7 +81,7 @@ export default function NorthernVirginiaHub() {
           alt="Northern Virginia suburban neighborhoods at golden hour"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 50%' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 60%, rgba(0,40,90,0.88) 100%)' }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ position: 'relative', zIndex: 1, width: '100%' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
             LICENSED PLUMBING  NORTHERN VIRGINIA
@@ -107,7 +107,7 @@ export default function NorthernVirginiaHub() {
       </section>
 
       {/* Trust Bar */}
-      <section style={{ background: '#fff', padding: '16px 0' }}>
+      <section style={{ background: 'var(--brand-cyan)', padding: '16px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', alignItems: 'center' }}>
             {[
@@ -190,7 +190,7 @@ export default function NorthernVirginiaHub() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ background: '#fff', padding: '56px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '56px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', color: 'white', marginBottom: '16px' }}>
             Need a Plumber in Northern Virginia?

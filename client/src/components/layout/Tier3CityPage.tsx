@@ -198,13 +198,9 @@ export default function Tier3CityPage({
         ))}
       </Helmet>
 
-      {/* S1: Hero — dark overlay on plumbing image */}
-      <section style={{ minHeight: "50vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-16">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+      {/* S1: Hero — dark navy gradient matching MD/VA pages */}
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "50vh" }} className="py-16">
+        <div className="container">
           <BreadcrumbList items={breadcrumbs.map(b => ({ label: b.label, href: b.href }))} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
             <div className="lg:col-span-3">
@@ -219,8 +215,8 @@ export default function Tier3CityPage({
               </p>
               <TrustBadges variant="dark" badges={trustItems} />
               <div className="flex flex-wrap gap-4 mt-8">
-                <BookNowButton bg="dark" variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-                <BookNowButton bg="dark" variant="secondary-light" size="md" text="REQUEST SERVICE" href="/contact" />
+                <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+                <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
             <div className="lg:col-span-2 hidden lg:block">
@@ -265,8 +261,8 @@ export default function Tier3CityPage({
                     transition: "all 0.2s",
                   }}
                   onMouseEnter={e => {
-                    (e.currentTarget as HTMLElement).style.background = "var(--brand-navy)";
-                    (e.currentTarget as HTMLElement).style.color = "white";
+                    (e.currentTarget as HTMLElement).style.background = "var(--brand-cyan)";
+                    (e.currentTarget as HTMLElement).style.color = "var(--brand-navy)";
                   }}
                   onMouseLeave={e => {
                     (e.currentTarget as HTMLElement).style.background = "transparent";
@@ -290,7 +286,7 @@ export default function Tier3CityPage({
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,34px)", textTransform: "uppercase", color: "var(--brand-navy)", lineHeight: 1.05, margin: 0 }}>
                 {servicesHeading || `Plumbing Services in ${schemaCity}`}
               </h2>
-              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 18px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "10px 18px", borderRadius: "6px", textDecoration: "none", flexShrink: 0 }}>
                 Call Now
               </a>
             </div>
@@ -318,9 +314,9 @@ export default function Tier3CityPage({
                 <Link key={i} href={svc.href} style={{ textDecoration: "none", display: "block" }}>
                   <div
                     className="cursor-pointer"
-                    style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(0,160,200,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
+                    style={{ background: "white", border: "1px solid #E6E8EE", borderRadius: "12px", overflow: "hidden", boxShadow: "0 4px 12px rgba(6,59,99,0.08)", transition: "transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)" }}
                     onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 12px 32px rgba(6,59,99,0.16)"; (e.currentTarget as HTMLElement).style.transform = "translateY(-4px)"; }}
-                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(0,160,200,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = "0 4px 12px rgba(6,59,99,0.08)"; (e.currentTarget as HTMLElement).style.transform = "translateY(0)"; }}
                   >
                     <div style={{ position: "relative", height: "140px", overflow: "hidden" }}>
                       <img
@@ -329,11 +325,11 @@ export default function Tier3CityPage({
                         style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center", display: "block" }}
                         loading="lazy"
                       />
-                      <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
+                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(3,24,56,0.25) 0%, rgba(3,24,56,0.55) 100%)" }} />
                     </div>
                     <div style={{ padding: "14px 16px 16px" }}>
                       <div style={{ fontFamily: "var(--font-display)", fontWeight: 700, textTransform: "uppercase", fontSize: "15px", color: "var(--brand-navy)", marginBottom: "6px", lineHeight: 1.2 }}>{svc.label}</div>
-                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
+                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#0075BA", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.04em" }}>Read more →</span>
                     </div>
                   </div>
                 </Link>
@@ -363,7 +359,7 @@ export default function Tier3CityPage({
               Yes. Emergency plumbing in {schemaCity} is available 24/7, 365 days a year. A live dispatcher answers every call. Licensed plumbing professionals dispatched — work performed under Master Plumber license. All services have a trip fee. Call (301) 679-5849.
             </p>
           </div>
-          <BookNowButton bg="dark" variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+          <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
         </div>
       </section>
 

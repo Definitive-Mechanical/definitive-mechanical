@@ -46,9 +46,9 @@ export default function Footer() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }}
       />
-      <footer style={{ background: 'var(--footer-bg)', color: 'white' }}>
+      <footer style={{ background: 'var(--brand-navy-dark)', color: 'white' }}>
         {/* Top accent line */}
-        <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--brand-cyan), var(--brand-blue))' }} />
+        <div style={{ height: '4px', background: 'linear-gradient(90deg, var(--brand-red), var(--brand-blue))' }} />
 
         {/* Main footer content */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -58,9 +58,9 @@ export default function Footer() {
             <div>
               <div className="mb-5">
                 <img
-                  src="/manus-storage/logo-definitive-mechanical_657c9790.png"
+                  src="/manus-storage/logo-knockout_7a8a46a2.svg"
                   alt="Definitive Mechanical"
-                  style={{ height: '56px', width: 'auto', display: 'block', background: 'white', borderRadius: '4px', padding: '4px 8px' }}
+                  style={{ height: '48px', width: 'auto', display: 'block' }}
                 />
               </div>
               <div className="space-y-3">

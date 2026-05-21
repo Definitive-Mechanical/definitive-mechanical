@@ -70,14 +70,10 @@ export default function DCWardsHub() {
 
       {/* Hero */}
       <section
-        style={{ minHeight: "45vh", position: "relative", overflow: "hidden", background: "#111" }}
+        style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }}
         className="flex items-center py-16"
       >
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container text-center" style={{ position: "relative", zIndex: 1 }}>
+        <div className="container text-center">
           <BreadcrumbList
             items={[
               { label: "Home", href: "/" },
@@ -88,7 +84,7 @@ export default function DCWardsHub() {
           />
           <p
             className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold"
-            style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}
+            style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}
           >
             LICENSED PLUMBING — ALL 8 WARDS, WASHINGTON DC
           </p>
@@ -100,7 +96,7 @@ export default function DCWardsHub() {
           </h1>
           <p
             className="text-white/85 text-lg max-w-2xl mx-auto mb-8"
-            style={{ fontFamily: 'var(--font-body)' }}
+            style={{ fontFamily: "'Barlow', sans-serif" }}
           >
             Definitive Mechanical serves every ward in Washington DC — from Ward 1 in Columbia Heights to Ward 8 in Congress Heights and Anacostia. DC Master Plumber/Gasfitter License #PGM1002236 (DCRA-issued). 24/7 emergency. Call (301) 679-5849.
           </p>
@@ -108,19 +104,19 @@ export default function DCWardsHub() {
             <a
               href="tel:+13016795849"
               className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: "var(--paper)", fontFamily: "var(--font-label)", fontSize: "18px" }}
+              style={{ backgroundColor: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}
             >
               <Phone size={20} /> CALL (301) 679-5849
             </a>
             <a
               href="/contact/"
-              className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[var(--brand-blue)] transition-colors"
-              style={{ fontFamily: 'var(--font-label)', fontSize: "18px" }}
+              className="inline-flex items-center gap-2 font-bold rounded-md px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[var(--brand-navy)] transition-colors"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}
             >
               Request Service
             </a>
           </div>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: 'var(--font-body)' }}>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2 mt-6 text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> DC License #PGM1002236</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> MDOT MBE Cert 20-134</span>
             <span className="flex items-center gap-1"><ShieldCheck size={14} /> 24/7 Emergency</span>
@@ -137,15 +133,15 @@ export default function DCWardsHub() {
               <Link
                 key={ward.name}
                 href={ward.href}
-                className="bg-white border border-gray-200 rounded-md p-4 hover:border-[var(--brand-blue)] hover:shadow-md transition-all group"
+                className="bg-white border border-gray-200 rounded-md p-4 hover:border-cyan-400 hover:shadow-md transition-all group"
               >
                 <p
-                  className="font-bold text-sm group-hover:text-[var(--brand-blue)]"
-                  style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)' }}
+                  className="font-bold text-sm group-hover:text-cyan-600"
+                  style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}
                 >
                   {ward.name}
                 </p>
-                <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: 'var(--font-body)' }}>
+                <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: "'Barlow', sans-serif" }}>
                   {ward.note}
                 </p>
               </Link>
@@ -155,9 +151,9 @@ export default function DCWardsHub() {
       </section>
 
       {/* Credentials */}
-      <section style={{ backgroundColor: "#fff" }} className="py-14">
+      <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="CREDENTIALS" heading="DC-issued license for all 8 wards" />
+          <SectionHeading eyebrow="CREDENTIALS" heading="DC-issued license for all 8 wards" light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">
             {[
               { label: "DC Master Plumber/Gasfitter (DCRA)", num: "#PGM1002236" },
@@ -166,10 +162,10 @@ export default function DCWardsHub() {
             ].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
                 <Key size={24} style={{ color: "var(--brand-cyan)" }} className="mb-2" />
-                <p className="text-xs font-semibold mb-1" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-body)' }}>
+                <p className="text-xs font-semibold mb-1" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow', sans-serif" }}>
                   {cred.label}
                 </p>
-                <p className="font-bold text-lg" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>
+                <p className="font-bold text-lg" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
                   {cred.num}
                 </p>
               </div>

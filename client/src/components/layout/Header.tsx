@@ -100,18 +100,21 @@ export default function Header() {
       <header
         className="fixed left-0 right-0 z-[100] transition-shadow duration-300 announcement-offset header-height"
         style={{
-          background: 'white',
-          boxShadow: scrolled ? '0 4px 20px rgba(0,0,0,0.12)' : '0 2px 8px rgba(0,0,0,0.08)',
-          borderBottom: '1px solid rgba(0,0,0,0.08)'
+          background: 'var(--brand-navy)',
+          boxShadow: scrolled ? 'var(--shadow-hero)' : '0 2px 8px rgba(6,59,99,0.3)',
         }}
       >
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-6 xl:px-10 h-full flex items-center justify-between">
           {/* Logo — new SVG */}
           <Link href="/" className="flex items-center no-underline" style={{ flexShrink: 0 }}>
             <img
-              src="/manus-storage/logo-definitive-mechanical_657c9790.png"
+              src="/manus-storage/logo-knockout_7a8a46a2.svg"
               alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
               style={{ height: '44px', width: 'auto', display: 'block' }}
+              onError={(e) => {
+                // Fallback to old PNG if SVG fails
+                (e.currentTarget as HTMLImageElement).src = '/manus-storage/definitive-mechanical-logo_0084eea2.png';
+              }}
             />
           </Link>
 
@@ -141,11 +144,11 @@ export default function Header() {
                     fontSize: '12px',
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',
-                    color: 'var(--brand-navy)',
+                    color: 'rgba(255,255,255,0.88)',
                     whiteSpace: 'nowrap',
                   }}
-                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-blue)')}
-                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--brand-navy)')}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.88)')}
                 >
                   {item.label}
                   {(item.hasMega || item.hasDropdown) && <ChevronDown size={12} />}
@@ -156,7 +159,7 @@ export default function Header() {
                   <div
                     className="absolute top-full left-1/2 -translate-x-1/2 w-[720px] shadow-2xl"
                     style={{
-                      background: 'var(--brand-navy)',
+                      background: 'var(--brand-navy-2)',
                       border: '1px solid rgba(255,255,255,0.08)',
                       borderTop: '3px solid var(--brand-blue)',
                       borderRadius: '0 0 8px 8px',
@@ -211,7 +214,7 @@ export default function Header() {
                   <div
                     className="absolute top-full left-0 w-64 shadow-2xl"
                     style={{
-                      background: 'var(--brand-navy)',
+                      background: 'var(--brand-navy-2)',
                       border: '1px solid rgba(255,255,255,0.08)',
                       borderTop: '3px solid var(--brand-blue)',
                       borderRadius: '0 0 8px 8px',
@@ -239,7 +242,7 @@ export default function Header() {
                   <div
                     className="absolute top-full left-0 w-64 shadow-2xl"
                     style={{
-                      background: 'var(--brand-navy)',
+                      background: 'var(--brand-navy-2)',
                       border: '1px solid rgba(255,255,255,0.08)',
                       borderTop: '3px solid var(--brand-blue)',
                       borderRadius: '0 0 8px 8px',
@@ -269,7 +272,7 @@ export default function Header() {
           <a
             href={`tel:${BUSINESS.phoneRaw}`}
             className="hidden lg:flex items-center gap-2 no-underline"
-            style={{ fontSize: '12px', letterSpacing: '0.08em', borderRadius: '6px', minHeight: '40px', padding: '0 16px', background: 'var(--brand-blue)', color: 'white', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}
+            style={{ fontSize: '12px', letterSpacing: '0.08em', borderRadius: '6px', minHeight: '40px', padding: '0 16px', background: 'white', color: 'var(--brand-navy)', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}
           >
             <Phone size={15} />
             CALL {BUSINESS.phone}
@@ -281,13 +284,13 @@ export default function Header() {
               href={`tel:${BUSINESS.phoneRaw}`}
               className="flex items-center justify-center no-underline"
               aria-label={`Call ${BUSINESS.phone}`}
-              style={{ width: '40px', height: '48px', color: 'var(--brand-navy)' }}
+              style={{ width: '40px', height: '48px', color: 'white' }}
             >
               <Phone size={18} strokeWidth={2} />
             </a>
             <button
               className="flex items-center justify-center"
-              style={{ width: '40px', height: '48px', color: 'var(--brand-navy)', background: 'none', border: 'none' }}
+              style={{ width: '40px', height: '48px', color: 'white', background: 'none', border: 'none' }}
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
             >
@@ -305,15 +308,18 @@ export default function Header() {
       {mobileOpen && (
         <div
           className="fixed inset-0 z-[200] flex flex-col"
-          style={{ background: 'var(--brand-navy)' }}
+          style={{ background: 'var(--brand-navy-dark)' }}
         >
           {/* Mobile Menu Header */}
           <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
             <Link href="/" className="flex items-center no-underline" onClick={() => setMobileOpen(false)}>
               <img
-src="/manus-storage/logo-definitive-mechanical_657c9790.png"
-                  alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
-                  style={{ height: '48px', width: 'auto', display: 'block', background: 'white', borderRadius: '4px', padding: '2px 6px' }}
+                src="/manus-storage/logo-knockout_7a8a46a2.svg"
+                alt="Definitive Mechanical"
+                style={{ height: '38px', width: 'auto', display: 'block' }}
+                onError={(e) => {
+                  (e.currentTarget as HTMLImageElement).src = '/manus-storage/definitive-mechanical-logo_0084eea2.png';
+                }}
               />
             </Link>
             <button

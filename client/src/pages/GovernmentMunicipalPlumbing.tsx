@@ -49,7 +49,7 @@ export default function GovernmentMunicipalPlumbing() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Government & Municipal Plumbing' }]} />
@@ -65,8 +65,8 @@ export default function GovernmentMunicipalPlumbing() {
                 Definitive Mechanical is a licensed, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor serving government agencies, municipalities, and public institutions across Maryland, Washington DC, and Northern Virginia. Master Plumber and Master Gasfitter licensed in four states. CAGE Code 8HCF6. NAICS 238220.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <BookNowButton bg="dark" variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-                <BookNowButton bg="dark" variant="secondary" text="REQUEST CAPABILITY STATEMENT" href="/contact" size="lg" />
+                <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+                <BookNowButton variant="outline" text="REQUEST CAPABILITY STATEMENT" href="/contact" size="lg" />
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function GovernmentMunicipalPlumbing() {
       </section>
 
       {/* CERTIFICATIONS */}
-      <section style={{ background: '#fff', padding: '32px 0' }}>
+      <section style={{ background: 'var(--brand-cyan)', padding: '32px 0' }}>
         <div className="container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -126,13 +126,14 @@ export default function GovernmentMunicipalPlumbing() {
       </section>
 
       {/* CREDENTIALS DETAIL */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading
             eyebrow="CREDENTIALS & COMPLIANCE"
             heading="Definitive Mechanical's government contracting credentials"
             subtext="We hold the certifications, licenses, and registrations required to work with government agencies at the federal, state, and local level across the DMV region."
             centered
+            light
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -153,31 +154,31 @@ export default function GovernmentMunicipalPlumbing() {
                 items: ['Maryland Master Plumber/Gasfitter #96958', 'WSSC Master Plumber/Gasfitter #73696', 'DC Master Plumber/Gasfitter #PGM1002236', 'Virginia Master Plumber/Gasfitter #2710064209', 'Virginia Class A Contractor #2705181061', 'Delaware Master Plumber/Gasfitter #PL-0012866'],
               },
             ].map((section) => (
-              <div key={section.title} style={{ background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '24px' }}>
+              <div key={section.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.14)', borderRadius: '6px', padding: '24px' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '12px' }}>{section.title}</h3>
                 {section.items.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '8px' }}>
                     <CheckCircle2 size={14} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink)', fontSize: '14px' }}>{item}</span>
+                    <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '14px' }}>{item}</span>
                   </div>
                 ))}
               </div>
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton bg="blue" variant="secondary" text="VIEW ALL LICENSES & CERTIFICATIONS" href="/licenses-certifications" size="md" />
+            <BookNowButton variant="ghost" text="VIEW ALL LICENSES & CERTIFICATIONS" href="/licenses-certifications" size="md" />
           </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Government & Municipal Plumbing Questions</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Government & Municipal Plumbing Questions</h2>
         </div>
-                      <FAQAccordion items={GOV_FAQ} schema={true} variant="light" />
+                      <FAQAccordion items={GOV_FAQ} schema={true} variant="dark" />
         </div>
       </section>
 

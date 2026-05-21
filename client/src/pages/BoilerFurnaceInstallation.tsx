@@ -94,7 +94,7 @@ export default function BoilerFurnaceInstallation() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Boiler & Furnace Repair', href: '/boiler-furnace-repair' }, { label: 'Boiler & Furnace Installation' }]} />
@@ -109,8 +109,8 @@ export default function BoilerFurnaceInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Plumber/Gasfitter", "Permitted & Inspected", "Financing Available", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" variant="secondary" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
+                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="outline" text="REQUEST INSTALLATION ESTIMATE" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -184,7 +184,7 @@ export default function BoilerFurnaceInstallation() {
               </p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                 {["MD #96958", "DC #PGM1002236", "VA #2710064209", "VA Class A #2705181061"].map((badge) => (
-                  <span key={badge} style={{ background: 'var(--brand-blue)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '6px 12px', borderRadius: '3px' }}>{badge}</span>
+                  <span key={badge} style={{ background: 'var(--brand-navy)', color: 'white', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '6px 12px', borderRadius: '3px' }}>{badge}</span>
                 ))}
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function BoilerFurnaceInstallation() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '20px' }}>
                 Monthly payment options through Synchrony for residential heating system installations.
               </p>
-              <BookNowButton bg="light" variant="secondary" text="APPLY FOR FINANCING" href="https://www.mysynchrony.com/mmc/S6240351600" size="md" />
+              <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href="https://www.mysynchrony.com/mmc/S6240351600" size="md" />
             </div>
           </div>
         </div>
@@ -221,13 +221,13 @@ export default function BoilerFurnaceInstallation() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about boiler and furnace installation in MD, DC & Northern VA</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about boiler and furnace installation in MD, DC & Northern VA</h2>
         </div>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
         </div>
       </section>
 

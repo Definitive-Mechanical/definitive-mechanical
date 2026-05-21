@@ -1,60 +1,47 @@
-import React from 'react';
-
 interface SectionHeadingProps {
   eyebrow?: string;
   heading: string;
   subtext?: string;
   centered?: boolean;
-  /** light=true → on dark/blue/photo backgrounds */
   light?: boolean;
 }
 
-export default function SectionHeading({
-  eyebrow,
-  heading,
-  subtext,
-  centered = false,
-  light = false,
-}: SectionHeadingProps) {
+export default function SectionHeading({ eyebrow, heading, subtext, centered = false, light = false }: SectionHeadingProps) {
   return (
     <div style={{ marginBottom: '48px', textAlign: centered ? 'center' : 'left' }}>
       {eyebrow && (
         <p style={{
-          fontFamily: 'var(--font-label)',
-          fontWeight: 600,
-          fontSize: '14px',
+          fontFamily: 'var(--font-display)',
+          fontWeight: 700,
+          fontSize: '12px',
           textTransform: 'uppercase',
-          letterSpacing: '0.18em',
-          color: light ? 'var(--brand-cyan)' : 'var(--brand-blue)',
-          marginBottom: '14px',
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '12px',
+          letterSpacing: '0.25em',
+          color: light ? 'rgba(255,255,255,0.7)' : 'var(--brand-cyan)',
+          marginBottom: '12px',
         }}>
-          <span style={{ display: 'inline-block', width: '28px', height: '2px', background: light ? 'var(--brand-cyan)' : 'var(--brand-blue)', flexShrink: 0 }} />
           {eyebrow}
         </p>
       )}
       <h2 style={{
         fontFamily: 'var(--font-display)',
         fontWeight: 700,
-        letterSpacing: '-0.01em',
-        color: light ? '#fff' : 'var(--brand-black)',
-        fontSize: 'clamp(1.75rem, 3.6vw, 3rem)',
-        lineHeight: 1.15,
+        textTransform: 'uppercase',
+        letterSpacing: '0.02em',
+        color: light ? 'white' : 'var(--brand-navy)',
+        fontSize: 'clamp(26px, 3.5vw, 42px)',
+        lineHeight: 1.1,
         marginBottom: subtext ? '16px' : '0',
-        textWrap: 'balance',
-      } as React.CSSProperties}>
+      }}>
         {heading}
       </h2>
       {subtext && (
         <p style={{
           fontFamily: 'var(--font-body)',
           fontWeight: 400,
-          color: light ? 'rgba(255,255,255,0.78)' : 'var(--ink-2)',
-          fontSize: '17px',
+          color: light ? 'rgba(255,255,255,0.75)' : 'var(--ink-2)',
+          fontSize: '16px',
           lineHeight: 1.7,
-          maxWidth: centered ? '60ch' : 'none',
+          maxWidth: centered ? '672px' : 'none',
           margin: centered ? '0 auto' : '0',
         }}>
           {subtext}

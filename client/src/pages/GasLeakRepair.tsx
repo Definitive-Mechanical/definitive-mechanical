@@ -49,7 +49,7 @@ export default function GasLeakRepair() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Gas Line Repair', href: '/gas-line-repair' }, { label: 'Gas Leak Repair' }]} />
@@ -117,16 +117,16 @@ export default function GasLeakRepair() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '32px' }}>
-            <BookNowButton bg="light" variant="phone" text="CALL (301) 679-5849 — 24/7 GAS REPAIR" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="phone" text="CALL (301) 679-5849 — 24/7 GAS REPAIR" href="tel:+13016795849" size="lg" />
           </div>
         </div>
       </section>
 
       {/* SECTION 4: LICENSING */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <SectionHeading eyebrow="LICENSING" heading="Are you licensed to repair gas leaks in Maryland, DC, and Virginia?" centered />
-          <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px' }}>
+          <SectionHeading eyebrow="LICENSING" heading="Are you licensed to repair gas leaks in Maryland, DC, and Virginia?" centered light />
+          <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 32px' }}>
             Yes. Gas leak repair requires a licensed Master Gasfitter in every DMV jurisdiction. Definitive Mechanical holds active Master Gasfitter licenses in Maryland (State #96958, WSSC #73696), Washington DC (#PGM1002236), Virginia (#2710064209), and Delaware (#PL-0012866). Gas leak repair performed by an unlicensed contractor creates both safety risk and legal liability for the property owner. Do not allow unlicensed work on any gas system.
           </p>
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
@@ -153,13 +153,13 @@ export default function GasLeakRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about gas leak repair in MD, DC & Northern VA</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about gas leak repair in MD, DC & Northern VA</h2>
         </div>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
         </div>
       </section>
 

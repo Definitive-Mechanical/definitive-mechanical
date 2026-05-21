@@ -49,12 +49,8 @@ export default function BackflowCertificationVirginia() {
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
-      <section style={{ minHeight: "50vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-20 md:py-28">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)" }} className="py-20 md:py-28">
+        <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Backflow Prevention", href: "/backflow-prevention/" }, { label: "Backflow Certification Virginia" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>Backflow Certification  Northern Virginia  Fairfax  Arlington  Loudoun  Prince William</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em', lineHeight: 1.0 }}>
@@ -64,8 +60,8 @@ export default function BackflowCertificationVirginia() {
             Definitive Mechanical holds VA Master Plumber/Gasfitter License #2710064209 and VA Class A Contractor License #2705181061 — statewide credentials covering all Northern Virginia jurisdictions. We perform annual backflow preventer testing and certification for commercial and institutional properties throughout Fairfax County, Arlington County, Loudoun County, Prince William County, and independent cities.
           </p>
           <div className="flex flex-wrap gap-4 mb-8">
-            <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton bg="dark" variant="secondary" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
+            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>
             {["VA Master Plumber #2710064209", "VA Class A Contractor #2705181061", "SWaM Cert 815255", "Annual Testing Available"].map(t => (
@@ -81,7 +77,7 @@ export default function BackflowCertificationVirginia() {
           <div className="mt-8 overflow-x-auto">
             <table className="w-full text-sm" style={{ fontFamily: "\'Barlow\', sans-serif" }}>
               <thead>
-                <tr style={{ background: "#fff", color: "white" }}>
+                <tr style={{ background: "var(--brand-navy)", color: "white" }}>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">Jurisdiction</th>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">Water Authority</th>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">Requirement</th>
@@ -90,7 +86,7 @@ export default function BackflowCertificationVirginia() {
               <tbody>
                 {VA_AUTHORITIES.map((a, i) => (
                   <tr key={a.county} style={{ background: i % 2 === 0 ? "white" : "#F8F8F8" }}>
-                    <td className="p-3 font-bold" style={{ color: "var(--brand-blue)" }}>{a.county}</td>
+                    <td className="p-3 font-bold" style={{ color: "var(--brand-navy)" }}>{a.county}</td>
                     <td className="p-3" style={{ color: "var(--ink-2)" }}>{a.authority}</td>
                     <td className="p-3" style={{ color: "var(--ink-2)" }}>{a.req}</td>
                   </tr>
@@ -114,7 +110,7 @@ export default function BackflowCertificationVirginia() {
               <div key={s.type} className="flex items-start gap-3 p-4 rounded-lg bg-white">
                 <CheckCircle size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                 <div>
-                  <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: "\'Barlow Condensed\', sans-serif", textTransform: "uppercase" }}>{s.type}</h3>
+                  <h3 className="font-bold text-sm mb-1" style={{ color: "var(--brand-navy)", fontFamily: "\'Barlow Condensed\', sans-serif", textTransform: "uppercase" }}>{s.type}</h3>
                   <p className="text-sm" style={{ color: "var(--ink-2)", lineHeight: 1.6 }}>{s.desc}</p>
                 </div>
               </div>
@@ -132,7 +128,7 @@ export default function BackflowCertificationVirginia() {
 
       <section className="py-10" style={{ background: "var(--surface-1)" }}>
         <div className="container">
-          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-blue)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>Related Pages</p>
+          <p className="text-sm font-bold uppercase tracking-wider mb-4" style={{ color: "var(--brand-navy)", fontFamily: "\'Barlow Condensed\', sans-serif" }}>Related Pages</p>
           <div className="flex flex-wrap gap-3">
             {[
               { label: "Backflow Prevention", href: "/backflow-prevention/" },
@@ -142,20 +138,20 @@ export default function BackflowCertificationVirginia() {
               { label: "Commercial Plumber Northern Virginia", href: "/commercial-plumber-northern-virginia/" },
               { label: "SWaM Certified Virginia", href: "/swam-certified-plumbing-contractor-virginia/" },
             ].map(l => (
-              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-blue)", borderColor: "var(--brand-blue)", fontFamily: "\'Barlow\', sans-serif" }}>{l.label}</a>
+              <a key={l.href} href={l.href} className="text-sm px-4 py-2 rounded border font-medium hover:bg-white transition-colors" style={{ color: "var(--brand-navy)", borderColor: "var(--brand-navy)", fontFamily: "\'Barlow\', sans-serif" }}>{l.label}</a>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16" style={{ background: "#fff" }}>
+      <section className="py-16" style={{ background: "var(--brand-navy)" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em' }}>Schedule your Virginia backflow certification today</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "\'Barlow\', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "\'Barlow\', sans-serif" }}>VA Master Plumber #2710064209 | SWaM Cert 815255 | CAGE 8HCF6</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton bg="blue" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton bg="blue" variant="secondary" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
+            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
         </div>
       </section>

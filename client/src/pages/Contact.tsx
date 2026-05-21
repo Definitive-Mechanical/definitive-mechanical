@@ -57,17 +57,13 @@ export default function Contact() {
       </Helmet>
 
       {/* Emergency Top Bar */}
-      <a href="tel:+13016795849" className="block w-full py-3 text-center" style={{ background: "var(--paper)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--paper)", textDecoration: "none" }}>
+      <a href="tel:+13016795849" className="block w-full py-3 text-center" style={{ background: "var(--brand-cyan)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--brand-navy)", textDecoration: "none" }}>
          Plumbing Emergency? Call (301) 679-5849 — Live Dispatcher Answering 24/7, 365 Days
       </a>
 
       {/* Hero */}
-      <section style={{ minHeight: "40vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-16">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "40vh" }} className="py-16">
+        <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
           <div className="mt-6">
             <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
@@ -94,14 +90,14 @@ export default function Contact() {
               <SectionHeading eyebrow="GET IN TOUCH" heading="How to reach us" />
 
               {/* Emergency CTA */}
-              <div className="rounded-md p-6 mb-8" style={{ background: "#fff" }}>
+              <div className="rounded-md p-6 mb-8" style={{ background: "var(--brand-navy)" }}>
                 <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-2">
                   24/7 EMERGENCY SERVICE
                 </p>
-                <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }} className="mb-4">
+                <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "14px", lineHeight: 1.6 }} className="mb-4">
                   For burst pipes, sewer backups, gas leaks, or any plumbing emergency — call now. A live dispatcher answers every call.
                 </p>
-                <a href="tel:+13016795849" className="flex items-center justify-center gap-2 w-full py-4 rounded" style={{ background: "var(--brand-blue)", color: "white", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}>
+                <a href="tel:+13016795849" className="flex items-center justify-center gap-2 w-full py-4 rounded" style={{ background: "var(--brand-cyan)", color: "var(--brand-navy)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}>
                   <Phone size={18} />
                   CALL (301) 679-5849
                 </a>
@@ -112,28 +108,28 @@ export default function Contact() {
                 <div className="flex items-start gap-3">
                   <Phone size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Phone</p>
+                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Phone</p>
                     <a href="tel:+13016795849" style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "16px", textDecoration: "none" }}>(301) 679-5849</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Mail size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Email</p>
+                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Email</p>
                     <a href="mailto:info@definitivemechanical.com" style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "16px", textDecoration: "none" }}>info@definitivemechanical.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Address</p>
+                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Address</p>
                     <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.5 }}>9701 Apollo Drive, Suite 100<br />Largo, MD 20774</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Clock size={20} style={{ color: "var(--brand-cyan)", flexShrink: 0, marginTop: 2 }} />
                   <div>
-                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Hours</p>
+                    <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.15em" }}>Hours</p>
                     <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.6 }}>
                       Mon-Fri: 9am-5pm<br />
                       Saturday: 9am-2pm<br />
@@ -145,61 +141,61 @@ export default function Contact() {
 
               {/* Service Area Note */}
               <div className="mt-8 p-4 rounded" style={{ background: "var(--surface-1)" }}>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em" }} className="mb-1">SERVICE AREA</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em" }} className="mb-1">SERVICE AREA</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }}>
                   Maryland (Prince George's, Montgomery, Howard, Anne Arundel, Charles Counties)  Washington DC  Northern Virginia (Fairfax, Arlington, Loudoun, Prince William Counties)
                 </p>
               </div>
             </div>
 
-            {/* RIGHT — white lead form card */}
+            {/* RIGHT — dark navy lead form card */}
             <div className="lg:col-span-3">
-              <div style={{ background: 'white', borderRadius: '12px', padding: '28px', boxShadow: '0 8px 24px rgba(0,0,0,0.12)', border: '1px solid rgba(0,0,0,0.08)' }}>
+              <div style={{ background: '#063B63', borderRadius: '12px', padding: '28px', boxShadow: '0 12px 28px rgba(6,59,99,0.18)' }}>
                 {submitted ? (
                   <div style={{ textAlign: 'center', padding: '32px 0' }}>
-                    <CheckCircle2 size={52} style={{ color: 'var(--brand-blue)', margin: '0 auto 16px' }} />
-                    <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '24px', color: 'var(--brand-black)', marginBottom: '12px' }}>
+                    <CheckCircle2 size={52} style={{ color: '#4FB3E8', margin: '0 auto 16px' }} />
+                    <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'white', marginBottom: '10px' }}>
                       Request Received!
                     </h3>
-                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '15px', color: '#444', lineHeight: 1.6, marginBottom: '20px' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '15px', color: 'rgba(255,255,255,0.75)', lineHeight: 1.6, marginBottom: '20px' }}>
                       We typically respond within one business day. For urgent service, call us now.
                     </p>
-                    <a href="tel:+13016795849" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'var(--brand-blue)', color: 'white', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.06em', padding: '13px 24px', borderRadius: '6px', textDecoration: 'none' }}>
+                    <a href="tel:+13016795849" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: '#E40613', color: 'white', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.06em', padding: '13px 24px', borderRadius: '6px', textDecoration: 'none' }}>
                       <Phone size={16} /> CALL (301) 679-5849
                     </a>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--brand-blue)', margin: 0 }}>Request Service</p>
-                    <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'var(--brand-blue)', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
+                    <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Request Service</p>
+                    <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: 'white', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                     {/* Name + Phone */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
                       <div>
-                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '5px' }}>Full Name <span style={{ color: '#cc0000' }}>*</span></label>
+                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Full Name <span style={{ color: '#ff6b6b' }}>*</span></label>
                         <input type="text" name="name" required placeholder="Your full name" value={form.name} onChange={handleChange}
-                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '5px' }}>Phone Number <span style={{ color: '#cc0000' }}>*</span></label>
+                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Phone Number <span style={{ color: '#ff6b6b' }}>*</span></label>
                         <input type="tel" name="phone" required placeholder="(xxx) xxx-xxxx" value={form.phone} onChange={handleChange}
-                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                       </div>
                     </div>
 
                     {/* Email */}
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '5px' }}>Email Address</label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Email Address</label>
                       <input type="email" name="email" placeholder="your@email.com" value={form.email} onChange={handleChange}
-                        style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                        style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                     </div>
 
                     {/* Service + City */}
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
                       <div>
-                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '5px' }}>Service Needed <span style={{ color: '#cc0000' }}>*</span></label>
+                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Service Needed <span style={{ color: '#ff6b6b' }}>*</span></label>
                         <select name="service" required value={form.service} onChange={handleChange}
-                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: form.service ? '#111' : '#888', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}>
+                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(30,60,100,0.95)', color: form.service ? 'white' : 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}>
                           <option value="" disabled style={{ color: '#000' }}>Select a service...</option>
                           <option value="emergency" style={{ color: '#000' }}>24/7 Emergency Plumbing</option>
                           <option value="drain-cleaning" style={{ color: '#000' }}>Drain Cleaning</option>
@@ -221,33 +217,33 @@ export default function Contact() {
                         </select>
                       </div>
                       <div>
-                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '5px' }}>City / Location</label>
+                        <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>City / Location</label>
                         <input type="text" name="city" placeholder="City, State" value={form.city} onChange={handleChange}
-                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
+                          style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                       </div>
                     </div>
 
                     {/* Message */}
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#555', marginBottom: '5px' }}>Describe the Problem <span style={{ color: '#cc0000' }}>*</span></label>
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '5px' }}>Describe the Problem <span style={{ color: '#ff6b6b' }}>*</span></label>
                       <textarea name="message" required rows={5} placeholder="Please describe the issue, when it started, and any relevant details..." value={form.message} onChange={handleChange}
-                        style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#111', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }} />
+                        style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid rgba(255,255,255,0.2)', background: 'rgba(255,255,255,0.06)', color: 'white', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', resize: 'vertical', boxSizing: 'border-box' }} />
                     </div>
 
                     {/* Emergency warning */}
                     <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', background: 'rgba(228,6,19,0.12)', border: '1px solid rgba(228,6,19,0.3)', borderRadius: '6px', padding: '10px 12px' }}>
                       <AlertTriangle size={15} style={{ color: '#ff6b6b', flexShrink: 0, marginTop: 1 }} />
-                      <p style={{ fontFamily: 'var(--font-body)', color: '#555', fontSize: '12px', lineHeight: 1.5, margin: 0 }}>
-                        <strong style={{ color: '#cc0000' }}>For plumbing emergencies</strong> (burst pipes, gas leaks, sewer backups) — don't use this form. <a href="tel:+13016795849" style={{ color: 'var(--brand-blue)', fontWeight: 700 }}>Call (301) 679-5849</a> for immediate 24/7 response.
+                      <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '12px', lineHeight: 1.5, margin: 0 }}>
+                        <strong style={{ color: 'white' }}>For plumbing emergencies</strong> (burst pipes, gas leaks, sewer backups) — don't use this form. <a href="tel:+13016795849" style={{ color: '#4FB3E8', fontWeight: 700 }}>Call (301) 679-5849</a> for immediate 24/7 response.
                       </p>
                     </div>
 
                     <button type="submit" disabled={submitting}
-                      style={{ width: '100%', background: submitting ? 'var(--brand-blue-hover)' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                      style={{ width: '100%', background: submitting ? '#a00' : '#E40613', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
                       {submitting ? 'Submitting...' : 'SUBMIT SERVICE REQUEST'}
                     </button>
 
-                    <p style={{ fontSize: '12px', color: '#888', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
+                    <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
                       We respond to non-emergency requests within one business day. For faster service, call (301) 679-5849.
                     </p>
                   </form>
@@ -269,9 +265,9 @@ export default function Contact() {
               { icon: MapPin, title: "Licensed in 4 States", body: "Master Plumber and Master Gasfitter licensed in Maryland, DC, Virginia, and Delaware." },
               { icon: Clock, title: "All Services Have a Trip Fee", body: "A trip fee applies to every service call. The fee is disclosed before dispatch and depends on time of day and location." },
             ].map((item, i) => (
-              <div key={i} className="bg-white rounded-md p-6 text-center" style={{ boxShadow: "0 2px 12px rgba(0,160,200,0.08)" }}>
+              <div key={i} className="bg-white rounded-md p-6 text-center" style={{ boxShadow: "0 2px 12px rgba(6,59,99,0.08)" }}>
                 <item.icon size={32} style={{ color: "var(--brand-cyan)", margin: "0 auto 12px" }} />
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-blue)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em" }} className="mb-2">{item.title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }}>{item.body}</p>
               </div>
             ))}

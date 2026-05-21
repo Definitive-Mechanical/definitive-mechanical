@@ -43,7 +43,7 @@ export default function SewerLineRepair() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Drain Cleaning', href: '/drain-cleaning' }, { label: 'Sewer Line Repair' }]} />
@@ -58,8 +58,8 @@ export default function SewerLineRepair() {
               </p>
               <TrustBadges variant="dark" badges={["24/7 Emergency Sewer Service", "Camera Inspection Before Repair", "Licensed Master Plumber", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton bg="dark" variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton bg="dark" variant="secondary" text="REQUEST SEWER INSPECTION" href="/contact" size="md" />
+                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton variant="outline" text="REQUEST SEWER INSPECTION" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function SewerLineRepair() {
               </div>
               <a href="tel:+13016795849" style={{ background: '#C0392B', borderRadius: '4px', padding: '12px 16px', display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}>
                 <Phone size={16} color="white" />
-                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>Any of these signs? Call (301) 679-5849 now — emergency sewer service 24/7.</span>
+                <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'white', fontSize: '14px' }}>Any of these signs? Call (301) 679-5849 now — emergency sewer service 24/7.</span>
               </a>
             </div>
           </div>
@@ -159,13 +159,13 @@ export default function SewerLineRepair() {
               </Link>
             </div>
             <div>
-              <div style={{ background: 'var(--brand-blue)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
+              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
                 <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
-                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '10px 14px' }}>
+                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px 14px' }}>
                       <ShieldCheck size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
-                      <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
+                      <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.88)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
                     </div>
                   ))}
                 </div>
@@ -176,9 +176,9 @@ export default function SewerLineRepair() {
       </section>
 
       {/* SECTION 5: REPAIR OPTIONS */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
-          <SectionHeading eyebrow="REPAIR OPTIONS" heading="What sewer line repair options are available?" centered />
+          <SectionHeading eyebrow="REPAIR OPTIONS" heading="What sewer line repair options are available?" centered light />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               { Icon: Wrench, title: "CABLE CLEARING / ROOTER SERVICE", body: "For blockages caused by debris accumulation, minor root intrusion, or grease buildup. A cable machine clears the obstruction and restores flow. This is a clearing service, not a structural repair — if the line has structural damage, clearing addresses symptoms rather than cause.", link: null },
@@ -207,8 +207,8 @@ export default function SewerLineRepair() {
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '672px', margin: '0 auto 16px', overflow: 'hidden' }}>
             <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
+              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
             </div>
             {PRICING_ROWS.map((row, i) => (
               <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
@@ -223,7 +223,7 @@ export default function SewerLineRepair() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <CreditCard size={20} color="var(--brand-cyan)" />
             <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>Financing available through Synchrony for major sewer line repairs.</span>
-            <BookNowButton bg="blue" variant="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
+            <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
           </div>
         </div>
       </section>
@@ -244,13 +244,13 @@ export default function SewerLineRepair() {
       </section>
 
       {/* SECTION 8: FAQ */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about sewer line repair in MD, DC & Northern VA</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about sewer line repair in MD, DC & Northern VA</h2>
         </div>
-            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
         </div>
       </section>
 

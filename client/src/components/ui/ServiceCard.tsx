@@ -24,17 +24,17 @@ export default function ServiceCard({ title, description, href, iconName, featur
         border: '1px solid #E6E8EE',
         borderRadius: '12px',
         overflow: 'hidden',
-        boxShadow: 'var(--shadow-card-brand)',
+        boxShadow: '0 4px 12px rgba(6,59,99,0.08)',
         transition: 'transform 0.22s cubic-bezier(0.23,1,0.32,1), box-shadow 0.22s cubic-bezier(0.23,1,0.32,1)',
         display: 'block',
         position: 'relative',
       }}
       onMouseEnter={e => {
-        (e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow-card-hover)';
+        (e.currentTarget as HTMLElement).style.boxShadow = '0 12px 32px rgba(6,59,99,0.16)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(-4px)';
       }}
       onMouseLeave={e => {
-        (e.currentTarget as HTMLElement).style.boxShadow = 'var(--shadow-card-brand)';
+        (e.currentTarget as HTMLElement).style.boxShadow = '0 4px 12px rgba(6,59,99,0.08)';
         (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
       }}
     >
@@ -43,7 +43,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
         aspectRatio: '16/9',
         position: 'relative',
         overflow: 'hidden',
-        background: 'linear-gradient(135deg, var(--brand-blue-hover), var(--brand-blue-press))',
+        background: 'linear-gradient(135deg, #063B63, #0a3a5e)',
       }}>
         {image ? (
           <>
@@ -79,7 +79,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-              <IconComponent size={20} color="var(--brand-blue)" strokeWidth={1.8} />
+              <IconComponent size={20} color="#4FB3E8" strokeWidth={1.8} />
             </div>
           </>
         ) : (
@@ -91,7 +91,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
               alignItems: 'center',
               justifyContent: 'center',
             }}>
-              <IconComponent size={56} color="var(--brand-blue)" strokeWidth={1.8} />
+              <IconComponent size={56} color="#4FB3E8" strokeWidth={1.8} />
             </div>
           </>
         )}
@@ -101,7 +101,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
             position: 'absolute',
             top: '10px',
             right: '10px',
-            background: '#fff',
+            background: 'var(--brand-cyan)',
             color: 'var(--brand-navy)',
             fontFamily: 'var(--font-display)',
             fontWeight: 700,
@@ -121,6 +121,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
         <div style={{
           fontFamily: 'var(--font-display)',
           fontWeight: 700,
+          textTransform: 'uppercase',
           fontSize: '18px',
           color: 'var(--brand-navy)',
           marginBottom: '6px',
@@ -144,7 +145,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
         <span style={{
           fontFamily: 'var(--font-display)',
           fontWeight: 700,
-          color: 'var(--brand-blue)',
+          color: '#0075BA',
           fontSize: '13px',
           textTransform: 'uppercase',
           letterSpacing: '0.04em',

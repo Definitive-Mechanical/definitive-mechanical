@@ -156,16 +156,12 @@ export default function ReviewsPage() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ minHeight: "40vh", position: "relative", overflow: "hidden", background: "#111" }} className="flex items-center py-16">
-        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
-        </div>
-        <div className="container text-center" style={{ position: "relative", zIndex: 1 }}>
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "40vh" }} className="flex items-center py-16">
+        <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Reviews" }]} />
-          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>CUSTOMER REVIEWS  DEFINITIVE MECHANICAL</p>
+          <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>CUSTOMER REVIEWS  DEFINITIVE MECHANICAL</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>What Our Customers Say</h1>
-          <p className="text-white/85 text-lg max-w-2xl mx-auto" style={{ fontFamily: 'var(--font-body)' }}>
+          <p className="text-white/85 text-lg max-w-2xl mx-auto" style={{ fontFamily: "'Barlow', sans-serif" }}>
             Verified reviews from homeowners and businesses across Maryland, Virginia, and Washington DC. Licensed, certified, and consistently 4.8-star rated on Google.
           </p>
           {/* Aggregate rating display */}
@@ -173,20 +169,20 @@ export default function ReviewsPage() {
             <div className="flex gap-1">
               {[1,2,3,4,5].map(i => <Star key={i} size={32} fill="#F59E0B" stroke="#F59E0B" />)}
             </div>
-            <p className="text-white font-bold text-2xl" style={{ fontFamily: 'var(--font-label)' }}>4.8 / 5.0</p>
-            <p className="text-white/70 text-sm" style={{ fontFamily: 'var(--font-body)' }}>Based on 40 Google reviews</p>
+            <p className="text-white font-bold text-2xl" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>4.8 / 5.0</p>
+            <p className="text-white/70 text-sm" style={{ fontFamily: "'Barlow', sans-serif" }}>Based on 40 Google reviews</p>
           </div>
         </div>
       </section>
 
       {/* Stats bar */}
-      <section style={{ backgroundColor: "#fff" }} className="py-6">
+      <section style={{ backgroundColor: "var(--brand-cyan)" }} className="py-6">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
             {[{ num: "40", label: "Google Reviews" }, { num: "4.8", label: "Average Rating" }, { num: "13+", label: "Years in Business" }, { num: "24/7", label: "Emergency Service" }].map((s) => (
               <div key={s.label}>
-                <p className="text-2xl font-bold" style={{ fontFamily: 'var(--font-label)' }}>{s.num}</p>
-                <p className="text-sm text-white/80" style={{ fontFamily: 'var(--font-body)' }}>{s.label}</p>
+                <p className="text-2xl font-bold" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>{s.num}</p>
+                <p className="text-sm text-white/80" style={{ fontFamily: "'Barlow', sans-serif" }}>{s.label}</p>
               </div>
             ))}
           </div>
@@ -202,13 +198,13 @@ export default function ReviewsPage() {
               <div key={review.name} className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow relative">
                 <Quote size={24} style={{ color: "var(--brand-cyan)" }} className="mb-3 opacity-60" />
                 <StarRow count={review.rating} />
-                <p className="mt-3 text-sm text-gray-700 leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>{review.text}</p>
+                <p className="mt-3 text-sm text-gray-700 leading-relaxed" style={{ fontFamily: "'Barlow', sans-serif" }}>{review.text}</p>
                 <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                   <div>
-                    <p className="font-bold text-sm" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)' }}>{review.name}</p>
-                    <p className="text-xs text-gray-500" style={{ fontFamily: 'var(--font-body)' }}>{review.location}</p>
+                    <p className="font-bold text-sm" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif" }}>{review.name}</p>
+                    <p className="text-xs text-gray-500" style={{ fontFamily: "'Barlow', sans-serif" }}>{review.location}</p>
                   </div>
-                  <span className="text-xs px-2 py-1 rounded-full font-medium" style={{ backgroundColor: "#E0F4FB", color: "var(--brand-cyan)", fontFamily: 'var(--font-body)' }}>{review.service}</span>
+                  <span className="text-xs px-2 py-1 rounded-full font-medium" style={{ backgroundColor: "#E0F4FB", color: "var(--brand-cyan)", fontFamily: "'Barlow', sans-serif" }}>{review.service}</span>
                 </div>
               </div>
             ))}
@@ -228,8 +224,8 @@ export default function ReviewsPage() {
             ].map((item) => (
               <div key={item.title} className="bg-white rounded-lg p-6 shadow-sm">
                 <item.icon size={28} style={{ color: "var(--brand-cyan)" }} className="mb-3" />
-                <h3 className="font-bold mb-2" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)', fontSize: "18px" }}>{item.title}</h3>
-                <p className="text-sm text-gray-600" style={{ fontFamily: 'var(--font-body)' }}>{item.body}</p>
+                <h3 className="font-bold mb-2" style={{ color: "var(--brand-navy)", fontFamily: "'Barlow Condensed', sans-serif", fontSize: "18px" }}>{item.title}</h3>
+                <p className="text-sm text-gray-600" style={{ fontFamily: "'Barlow', sans-serif" }}>{item.body}</p>
               </div>
             ))}
           </div>

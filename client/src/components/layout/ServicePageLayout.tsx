@@ -87,13 +87,13 @@ export interface ServicePageProps {
 function FAQRow({ question, answer }: FAQItem) {
   const [open, setOpen] = useState(false);
   return (
-    <div style={{ borderBottom: "1px solid #E6E8EE" }}>
+    <div style={{ borderBottom: "1px solid rgba(255,255,255,0.12)" }}>
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between gap-4 py-5 text-left"
         aria-expanded={open}
       >
-        <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "var(--ink)", fontSize: "15px", lineHeight: 1.4 }}>
+        <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "white", fontSize: "15px", lineHeight: 1.4 }}>
           {question}
         </span>
         <ChevronDown
@@ -103,7 +103,7 @@ function FAQRow({ question, answer }: FAQItem) {
       </button>
       {open && (
         <div style={{ borderLeft: "3px solid var(--brand-cyan)", background: "rgba(0,158,198,0.08)", padding: "16px 20px", marginBottom: "8px", borderRadius: "0 6px 6px 0" }}>
-          <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.75, margin: 0 }}>
+          <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.85)", fontSize: "15px", lineHeight: 1.75, margin: 0 }}>
             {answer}
           </p>
         </div>
@@ -144,7 +144,7 @@ export default function ServicePageLayout({
             style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 30%", display: "block" }}
             loading="eager"
           />
-          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)" }} />
         </div>
         <div className="container" style={{ position: "relative", zIndex: 1, paddingTop: "80px", paddingBottom: "80px" }}>
           <BreadcrumbList items={breadcrumbs} />
@@ -163,7 +163,7 @@ export default function ServicePageLayout({
               <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
                 <a
                   href="tel:+13016795849"
-                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(0,160,200,0.35)" }}
+                  style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "#E40613", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(228,6,19,0.35)" }}
                 >
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
@@ -202,7 +202,7 @@ export default function ServicePageLayout({
       </section>
 
       {/* ── S2: STATS BAR — cyan band ────────────────────────────────────── */}
-      <section style={{ background: "var(--paper)", padding: "20px 0" }}>
+      <section style={{ background: "var(--brand-cyan)", padding: "20px 0" }}>
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
@@ -240,7 +240,7 @@ export default function ServicePageLayout({
               )}
               <a
                 href="tel:+13016795849"
-                style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none" }}
+                style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "var(--brand-navy)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "13px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "12px 22px", borderRadius: "6px", textDecoration: "none" }}
               >
                 <Phone size={14} /> Call Now
               </a>
@@ -256,10 +256,10 @@ export default function ServicePageLayout({
                     borderTop: "3px solid var(--brand-cyan)",
                     borderRadius: "8px",
                     padding: "22px 20px",
-                    boxShadow: "0 4px 16px rgba(0,160,200,0.08)",
+                    boxShadow: "0 4px 16px rgba(6,59,99,0.08)",
                   }}
                 >
-                  <div style={{ width: "40px", height: "40px", background: "rgba(0,160,200,0.1)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "12px" }}>
+                  <div style={{ width: "40px", height: "40px", background: "rgba(0,117,186,0.1)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "12px" }}>
                     <CheckCircle2 size={20} color="var(--brand-cyan)" />
                   </div>
                   <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-navy)", fontSize: "16px", marginBottom: "8px", lineHeight: 1.2 }}>
@@ -276,7 +276,7 @@ export default function ServicePageLayout({
       </section>
 
       {/* ── S4: WHY CHOOSE — dark navy ────────────────────────────────────── */}
-      <section className="py-20" style={{ background: "var(--brand-navy)", position: "relative", overflow: "hidden" }}>
+      <section className="py-20" style={{ background: "var(--brand-navy-dark)", position: "relative", overflow: "hidden" }}>
         {/* subtle texture */}
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 40px)", pointerEvents: "none" }} />
         <div className="container relative">
@@ -297,7 +297,7 @@ export default function ServicePageLayout({
                     </div>
                     <div>
                       <p style={{ fontFamily: "var(--font-body)", fontWeight: 700, color: "white", fontSize: "15px", marginBottom: "4px" }}>{item.title}</p>
-                      <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.78)", fontSize: "14px", lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
+                      <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "14px", lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -321,7 +321,7 @@ export default function ServicePageLayout({
                   ].map((cred) => (
                     <div key={cred} style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "6px", padding: "10px 14px" }}>
                       <ShieldCheck size={14} style={{ color: "var(--brand-cyan)", flexShrink: 0 }} />
-                      <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.92)", fontSize: "13px", fontWeight: 500 }}>{cred}</span>
+                      <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.88)", fontSize: "13px", fontWeight: 500 }}>{cred}</span>
                     </div>
                   ))}
                 </div>
@@ -359,8 +359,8 @@ export default function ServicePageLayout({
                     key={step.step}
                     style={{ display: "flex", gap: "16px", alignItems: "flex-start", background: "white", border: "1px solid #D4E4F0", borderRadius: "8px", padding: "18px 20px", boxShadow: "0 2px 8px rgba(6,59,99,0.06)" }}
                   >
-                    <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "var(--brand-blue)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#fff", fontSize: "16px" }}>{step.step}</span>
+                    <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "var(--brand-navy)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-cyan)", fontSize: "16px" }}>{step.step}</span>
                     </div>
                     <div>
                       <p style={{ fontFamily: "var(--font-body)", fontWeight: 700, color: "var(--brand-navy)", fontSize: "15px", marginBottom: "4px" }}>{step.title}</p>
@@ -376,17 +376,17 @@ export default function ServicePageLayout({
 
       {/* ── S6: FAQ — dark navy ───────────────────────────────────────────── */}
       {faqs.length > 0 && (
-        <section className="py-20" style={{ background: "#fff" }}>
+        <section className="py-20" style={{ background: "var(--brand-navy)" }}>
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div>
-                <p style={{ fontFamily: "var(--font-label)", fontWeight: 600, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-blue)", marginBottom: "8px" }}>
+                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
                   FAQ
                 </p>
-                <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px, 3vw, 34px)", color: "var(--ink)", lineHeight: 1.1, marginBottom: "16px" }}>
+                <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px, 3vw, 34px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "16px" }}>
                   {faqHeading || "Common Questions"}
                 </h2>
-                <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.7 }}>
+                <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.6)", fontSize: "14px", lineHeight: 1.7 }}>
                   Have a question not listed here? Call (301) 679-5849 — a live dispatcher answers 24/7.
                 </p>
               </div>

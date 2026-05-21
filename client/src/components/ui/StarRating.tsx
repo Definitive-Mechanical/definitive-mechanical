@@ -17,8 +17,8 @@ export default function StarRating({ rating, count, variant = 'light' }: StarRat
           <Star
             key={star}
             size={16}
-            fill={star <= Math.round(rating) ? 'var(--star-color)' : 'none'}
-            color="var(--star-color)"
+            fill={star <= Math.round(rating) ? '#F59E0B' : 'none'}
+            color="#F59E0B"
           />
         ))}
       </div>
