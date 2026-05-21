@@ -11,7 +11,7 @@ interface CTABannerProps {
 export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn, variant = 'gradient' }: CTABannerProps) {
   const bg = variant === 'navy'
     ? 'var(--brand-blue-2)'
-    : 'linear-gradient(135deg, var(--brand-blue-2) 0%, var(--brand-blue) 60%, rgba(0,180,216,0.15) 100%)';
+    : 'linear-gradient(135deg, var(--brand-blue-2) 0%, var(--brand-blue) 60%, rgba(29,108,163,0.15) 100%)';
 
   return (
     <section style={{ background: bg, padding: '80px 0', position: 'relative', overflow: 'hidden' }}>

@@ -259,7 +259,7 @@ export default function ServicePageLayout({
                     boxShadow: "0 4px 16px rgba(29,108,163,0.08)",
                   }}
                 >
-                  <div style={{ width: "40px", height: "40px", background: "rgba(0,117,186,0.1)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "12px" }}>
+                  <div style={{ width: "40px", height: "40px", background: "rgba(29,108,163,0.1)", borderRadius: "8px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "12px" }}>
                     <CheckCircle2 size={20} color="var(--brand-cyan)" />
                   </div>
                   <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-navy)", fontSize: "16px", marginBottom: "8px", lineHeight: 1.2 }}>

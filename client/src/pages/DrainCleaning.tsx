@@ -100,7 +100,7 @@ export default function DrainCleaning() {
                 padding: '28px',
                 boxShadow: '0 4px 16px rgba(6,59,99,0.10)',
               }}>
-                <div style={{ width: '44px', height: '44px', background: 'rgba(0,117,186,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
+                <div style={{ width: '44px', height: '44px', background: 'rgba(29,108,163,0.12)', borderRadius: '6px', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '14px' }}>
                   <Droplets size={22} color="var(--brand-cyan)" />
                 </div>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '17px', marginBottom: '8px' }}>{service.title}</h3>

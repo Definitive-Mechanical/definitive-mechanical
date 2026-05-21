@@ -4,8 +4,8 @@
 /* ============================================================
    Definitive Mechanical — Design System Tokens
    Barlow Condensed (display) + Public Sans (body) + JetBrains Mono
-   Brand: Steel Blue #1D6CA3 · Cyan #00B4D8 · Black #0A0A0A · White #FFFFFF
-   Logo palette: steel blue + cyan water drop + near-black arc
+   Brand: Steel Blue #1D6CA3 · Black #0A0A0A · White #FFFFFF
+   Logo palette: light cyan-blue text + water drop + near-black arc
    ============================================================ */
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
 
@@ -52,17 +52,17 @@
 
 :root {
   /* ── Brand palette ─────────────────────────────────────── */
-  --brand-blue:    #1D6CA3;   /* steel blue — primary brand color */
+  --brand-blue:    #1D6CA3;   /* steel blue — THE single brand blue (matches footer) */
   --brand-blue-2:  #155A8A;   /* darker steel blue — hover states */
   --brand-blue-3:  #0E4A73;   /* deepest blue — active/pressed */
   --brand-navy:    #0A0A0A;   /* near-black — headings on light backgrounds */
   --brand-navy-2:  #0E4A73;   /* deep blue — secondary buttons, overlays */
   --brand-navy-dark: #0A3A5E; /* deepest blue — deepest dark surfaces */
-  --brand-red:     #1D6CA3;   /* remapped to blue — no red in new palette */
-  --brand-red-2:   #155A8A;   /* remapped to blue-2 */
-  --brand-red-3:   #0E4A73;   /* remapped to blue-3 */
-  --brand-cyan:    #00B4D8;   /* cyan — water drop highlight, accent */
-  --brand-cyan-2:  #0096B4;   /* darker cyan — hover */
+  --brand-red:     #1D6CA3;   /* remapped to brand blue */
+  --brand-red-2:   #155A8A;   /* remapped to brand blue-2 */
+  --brand-red-3:   #0E4A73;   /* remapped to brand blue-3 */
+  --brand-cyan:    #1D6CA3;   /* unified — same as brand blue */
+  --brand-cyan-2:  #155A8A;   /* darker — hover */
   --brand-black:   #0A0A0A;   /* near-black — explicit black alias */
 
   /* ── Neutrals ──────────────────────────────────────────── */
@@ -324,7 +324,7 @@
   .dm-card:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-3);
-    border-color: rgba(0,117,186,0.25);
+    border-color: rgba(29,108,163,0.25);
   }
 
   /* ── License card (dark) ───────────────────────────────── */
