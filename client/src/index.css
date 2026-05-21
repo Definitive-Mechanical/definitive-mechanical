@@ -250,9 +250,9 @@
     text-decoration: none;
     transition: color var(--dur-ui) var(--ease-out);
   }
-  a:hover { text-decoration: underline; text-underline-offset: 2px; color: var(--brand-blue-2); }
+  a:hover { text-decoration: underline; text-underline-offset: 2px; color: var(--brand-blue-hover); }
 
-  ::selection { background: #fff; color: white; }
+  ::selection { background: var(--brand-blue); color: #fff; }
 
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -308,7 +308,7 @@
     content: "";
     width: 28px;
     height: 2px;
-    background: #fff;
+    background: var(--brand-blue);
     flex-shrink: 0;
   }
   /* On dark/photo backgrounds eyebrow stays brand-blue (it reads on dark) */
@@ -337,7 +337,7 @@
 
   /* Primary — cyan-blue PILL */
   .dm-btn-primary {
-    background: #fff;
+    background: var(--brand-blue);
     color: #fff;
     border-radius: 999px;
   }

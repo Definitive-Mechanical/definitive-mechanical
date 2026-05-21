@@ -220,7 +220,7 @@ export default function Tier3CityPage({
               <TrustBadges variant="dark" badges={trustItems} />
               <div className="flex flex-wrap gap-4 mt-8">
                 <BookNowButton bg="dark" variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-                <BookNowButton bg="dark" variant="secondary" size="md" text="REQUEST SERVICE" href="/contact" />
+                <BookNowButton bg="dark" variant="secondary-light" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
             <div className="lg:col-span-2 hidden lg:block">

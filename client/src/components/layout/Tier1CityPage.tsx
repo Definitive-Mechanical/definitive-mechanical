@@ -85,13 +85,13 @@ function getIcon(label: string) {
 function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div style={{ borderBottom: "1px solid rgba(255,255,255,0.12)" }}>
+    <div style={{ borderBottom: "1px solid #E6E8EE" }}>
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between gap-4 py-5 text-left"
         aria-expanded={open}
       >
-        <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "white", fontSize: "15px", lineHeight: 1.4 }}>{q}</span>
+        <span style={{ fontFamily: "var(--font-body)", fontWeight: 600, color: "var(--ink)", fontSize: "15px", lineHeight: 1.4 }}>{q}</span>
         <ChevronDown size={18} style={{ color: "var(--brand-cyan)", flexShrink: 0, transform: open ? "rotate(180deg)" : "none", transition: "transform 200ms" }} />
       </button>
       {open && (

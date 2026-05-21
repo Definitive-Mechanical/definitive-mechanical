@@ -217,7 +217,7 @@ export default function PriorityCityLayout({
               <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 28 }}>
                 <a href="tel:+13016795849" style={{
                   display: "inline-flex", alignItems: "center", gap: 8,
-                  background: "#fff", color: "white",
+                  background: "var(--brand-blue)", color: "white",
                   fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px",
                   textTransform: "uppercase", letterSpacing: "0.08em",
                   padding: "14px 28px", borderRadius: "2px", textDecoration: "none",
@@ -524,6 +524,7 @@ export default function PriorityCityLayout({
                     <feat.icon size={18} style={{ color: "var(--brand-cyan)", display: "block" }} />
                   </div>
                   <div>
+                    <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-navy)", fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.04em", margin: "0 0 4px" }}>{feat.title}</p>
                     <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "12px", lineHeight: 1.6, margin: 0 }}>{feat.body}</p>
                   </div>
                 </div>

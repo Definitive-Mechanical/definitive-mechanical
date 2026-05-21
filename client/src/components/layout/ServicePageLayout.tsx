@@ -297,7 +297,7 @@ export default function ServicePageLayout({
                     </div>
                     <div>
                       <p style={{ fontFamily: "var(--font-body)", fontWeight: 700, color: "white", fontSize: "15px", marginBottom: "4px" }}>{item.title}</p>
-                      <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
+                      <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.78)", fontSize: "14px", lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -321,7 +321,7 @@ export default function ServicePageLayout({
                   ].map((cred) => (
                     <div key={cred} style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "6px", padding: "10px 14px" }}>
                       <ShieldCheck size={14} style={{ color: "var(--brand-cyan)", flexShrink: 0 }} />
-                      <span style={{ fontFamily: "var(--font-body)", color: "var(--ink)", fontSize: "13px", fontWeight: 500 }}>{cred}</span>
+                      <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.92)", fontSize: "13px", fontWeight: 500 }}>{cred}</span>
                     </div>
                   ))}
                 </div>
@@ -360,7 +360,7 @@ export default function ServicePageLayout({
                     style={{ display: "flex", gap: "16px", alignItems: "flex-start", background: "white", border: "1px solid #D4E4F0", borderRadius: "8px", padding: "18px 20px", boxShadow: "0 2px 8px rgba(6,59,99,0.06)" }}
                   >
                     <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "var(--brand-blue)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "var(--brand-cyan)", fontSize: "16px" }}>{step.step}</span>
+                      <span style={{ fontFamily: "var(--font-display)", fontWeight: 700, color: "#fff", fontSize: "16px" }}>{step.step}</span>
                     </div>
                     <div>
                       <p style={{ fontFamily: "var(--font-body)", fontWeight: 700, color: "var(--brand-navy)", fontSize: "15px", marginBottom: "4px" }}>{step.title}</p>
