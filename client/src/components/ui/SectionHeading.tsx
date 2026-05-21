@@ -33,28 +33,18 @@ export default function SectionHeading({
           {eyebrow}
         </p>
       )}
-      <h2 style={{
-        fontFamily: 'var(--font-display)',
-        fontWeight: 700,
-        /* NO uppercase — Playfair Display is a serif, reads best in title case */
-        letterSpacing: '-0.01em',
-        color: light ? '#fff' : 'var(--brand-black)',
-        fontSize: 'clamp(1.75rem, 3.6vw, 3rem)',
-        lineHeight: 1.15,
-        marginBottom: subtext ? '16px' : '0',
-        textWrap: 'balance',
-      } as React.CSSProperties}>
+      <h2 style={{color: '#ffffff'}}>
         {heading}
       </h2>
       {subtext && (
         <p style={{
           fontFamily: 'var(--font-body)',
           fontWeight: 400,
-          color: light ? 'rgba(255,255,255,0.78)' : 'var(--ink-2)',
+          color: '#ffffff',
           fontSize: '17px',
           lineHeight: 1.7,
           maxWidth: centered ? '60ch' : 'none',
-          margin: centered ? '0 auto' : '0',
+          margin: centered ? '0 auto' : '0', color: '#ffffff',
         }}>
           {subtext}
         </p>
