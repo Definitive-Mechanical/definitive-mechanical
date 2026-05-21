@@ -27,7 +27,7 @@ export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn }
           textTransform: 'uppercase',
           letterSpacing: '0.02em',
           color: '#0A0A0A',
-          fontSize: 'clamp(28px, 4vw, 48px)',
+          fontSize: 'clamp(22px, 2.8vw, 34px)',
           marginBottom: '16px',
           lineHeight: 1.05,
         }}>
