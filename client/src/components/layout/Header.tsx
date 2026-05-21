@@ -108,13 +108,9 @@ export default function Header() {
           {/* Logo — new SVG */}
           <Link href="/" className="flex items-center no-underline" style={{ flexShrink: 0 }}>
             <img
-              src="/manus-storage/logo-knockout_7a8a46a2.svg"
+              src="/manus-storage/logo-definitive-mechanical_657c9790.png"
               alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
-              style={{ height: '44px', width: 'auto', display: 'block' }}
-              onError={(e) => {
-                // Fallback to old PNG if SVG fails
-                (e.currentTarget as HTMLImageElement).src = '/manus-storage/definitive-mechanical-logo_0084eea2.png';
-              }}
+              style={{ height: '44px', width: 'auto', display: 'block', background: 'white', borderRadius: '4px', padding: '2px 6px' }}
             />
           </Link>
 
@@ -314,12 +310,9 @@ export default function Header() {
           <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
             <Link href="/" className="flex items-center no-underline" onClick={() => setMobileOpen(false)}>
               <img
-                src="/manus-storage/logo-knockout_7a8a46a2.svg"
-                alt="Definitive Mechanical"
-                style={{ height: '38px', width: 'auto', display: 'block' }}
-                onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = '/manus-storage/definitive-mechanical-logo_0084eea2.png';
-                }}
+src="/manus-storage/logo-definitive-mechanical_657c9790.png"
+                  alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
+                  style={{ height: '48px', width: 'auto', display: 'block', background: 'white', borderRadius: '4px', padding: '2px 6px' }}
               />
             </Link>
             <button

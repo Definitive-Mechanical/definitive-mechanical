@@ -58,9 +58,9 @@ export default function Footer() {
             <div>
               <div className="mb-5">
                 <img
-                  src="/manus-storage/logo-knockout_7a8a46a2.svg"
+                  src="/manus-storage/logo-definitive-mechanical_657c9790.png"
                   alt="Definitive Mechanical"
-                  style={{ height: '48px', width: 'auto', display: 'block' }}
+                  style={{ height: '56px', width: 'auto', display: 'block', background: 'white', borderRadius: '4px', padding: '4px 8px' }}
                 />
               </div>
               <div className="space-y-3">
