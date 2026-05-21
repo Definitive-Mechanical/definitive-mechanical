@@ -117,7 +117,7 @@ export default function GasLeakRepair() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '32px' }}>
-            <BookNowButton variant="phone" text="CALL (301) 679-5849 — 24/7 GAS REPAIR" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="light" type="phone" text="CALL (301) 679-5849 — 24/7 GAS REPAIR" href="tel:+13016795849" size="lg" />
           </div>
         </div>
       </section>

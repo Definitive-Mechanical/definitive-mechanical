@@ -141,7 +141,7 @@ export default function EmergencyPlumbing() {
                  Licensed Plumbing Professionals on Every Emergency Call &nbsp; Upfront Flat Pricing &nbsp; MD, DC, VA & DE Licensed
               </p>
 
-              <BookNowButton variant="outline" text="REQUEST EMERGENCY SERVICE" href="/contact" size="md" />
+              <BookNowButton bg="dark" type="secondary" text="REQUEST EMERGENCY SERVICE" href="/contact" size="md" />
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ export default function EmergencyPlumbing() {
             If you are unsure whether your situation qualifies, call anyway. Our dispatcher will help you assess the situation at no cost.
           </p>
           <div style={{ textAlign: 'center' }}>
-            <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="light" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>

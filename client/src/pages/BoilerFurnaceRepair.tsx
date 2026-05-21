@@ -122,8 +122,8 @@ export default function BoilerFurnaceRepair() {
               </p>
               <TrustBadges variant="dark" badges={["24/7 Emergency Heating Service", "Licensed Master Plumber/Gasfitter", "Commercial & Residential", "Gas & Oil Systems"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton variant="outline" text="REQUEST HEATING REPAIR" href="/contact" size="md" />
+                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" type="secondary" text="REQUEST HEATING REPAIR" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function BoilerFurnaceRepair() {
               <Thermometer size={24} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
               <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.9)', fontSize: '14px' }}>No heat? Emergency heating repair available 24/7 — call (301) 679-5849. All services have a trip fee, disclosed before dispatch.</span>
             </div>
-            <BookNowButton variant="phone" text="CALL NOW" href="tel:+13016795849" size="sm" />
+            <BookNowButton bg="blue" type="phone" text="CALL NOW" href="tel:+13016795849" size="sm" />
           </div>
         </div>
       </section>

@@ -63,8 +63,8 @@ export default function BackflowCertificationMaryland() {
             Definitive Mechanical holds WSSC Backflow Tester License #73696 — required to test and certify backflow preventers on commercial and institutional properties in Prince George's County and Montgomery County. We also serve Anne Arundel, Howard, Charles County, and other Maryland jurisdictions.
           </p>
           <div className="flex flex-wrap gap-4 mb-8">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
+            <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="dark" type="secondary" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
             {["WSSC Backflow Tester #73696", "MD Master Plumber #96958", "MDOT MBE Cert 20-134", "Annual Testing Available"].map(t => (
@@ -183,8 +183,8 @@ export default function BackflowCertificationMaryland() {
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>WSSC Backflow Tester #73696 | MD Master Plumber #96958 | MDOT MBE Cert 20-134</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
+            <BookNowButton bg="blue" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="blue" type="secondary" text="SCHEDULE BACKFLOW TEST" href="/contact/" size="lg" />
           </div>
         </div>
       </section>

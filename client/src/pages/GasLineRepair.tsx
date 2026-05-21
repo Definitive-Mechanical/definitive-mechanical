@@ -61,8 +61,8 @@ export default function GasLineRepair() {
               </p>
               <TrustBadges variant="dark" badges={["Licensed Master Gasfitter — MD, DC, VA & DE", "24/7 Emergency Gas Service", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton variant="outline" text="REQUEST GAS LINE SERVICE" href="/contact" size="md" />
+                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" type="secondary" text="REQUEST GAS LINE SERVICE" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -198,7 +198,7 @@ export default function GasLineRepair() {
                   </div>
                 ))}
               </div>
-              <BookNowButton variant="ghost" text="REQUEST COMMERCIAL GAS ESTIMATE" href="/contact" size="md" />
+              <BookNowButton bg="blue" type="secondary" text="REQUEST COMMERCIAL GAS ESTIMATE" href="/contact" size="md" />
             </div>
           </div>
         </div>

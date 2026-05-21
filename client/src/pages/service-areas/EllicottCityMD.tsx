@@ -69,8 +69,8 @@ export default function EllicottCityMD() {
               </p>
               <TrustBadges variant="dark" badges={["Howard County Master Plumber #PGM1002236","MD State #96958","24/7 Emergency","Serving Ellicott City from Largo, MD"]} />
               <div className="flex flex-wrap gap-4 mt-8">
-                <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-                <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
+                <BookNowButton bg="dark" type="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+                <BookNowButton bg="dark" type="secondary" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
             <div className="hidden lg:block">

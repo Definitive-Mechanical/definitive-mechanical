@@ -74,8 +74,8 @@ export default function WaterHeaterRepair() {
                 Definitive Mechanical repairs and replaces gas, electric, and tankless water heaters across Maryland, Washington DC, and Northern Virginia. Same-day service available. Financing available for replacements. Licensed Master Plumber and Master Gasfitter on every job.
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-                <BookNowButton variant="outline" text="REQUEST SERVICE" href="/contact" size="lg" />
+                <BookNowButton bg="dark" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+                <BookNowButton bg="dark" type="secondary" text="REQUEST SERVICE" href="/contact" size="lg" />
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ export default function WaterHeaterRepair() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="blue" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>
@@ -181,8 +181,8 @@ export default function WaterHeaterRepair() {
             Apply for Synchrony consumer financing in 60 seconds. Monthly payment options available for qualified customers. No impact to your credit score during pre-qualification.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <BookNowButton variant="navy" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
-            <BookNowButton variant="ghost" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="light" type="primary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+            <BookNowButton bg="light" type="secondary" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
           </div>
         </div>
       </section>

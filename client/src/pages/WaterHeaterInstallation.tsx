@@ -70,8 +70,8 @@ export default function WaterHeaterInstallation() {
               </p>
               <TrustBadges variant="dark" badges={["Same-Day Installation Available", "Licensed Master Plumber", "Permit-Compliant", "Financing Available", "Gas & Electric Units"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton variant="outline" text="REQUEST INSTALLATION" href="/contact" size="md" />
+                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" type="secondary" text="REQUEST INSTALLATION" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ export default function WaterHeaterInstallation() {
             <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '15px', lineHeight: 1.7, marginBottom: '12px' }}>
               "If you are uncertain, call (301) 679-5849. We will give you an honest assessment — not a recommendation shaped by which option creates a larger invoice."
             </p>
-            <BookNowButton variant="ghost" text="TALK TO A LICENSED PLUMBER" href="tel:+13016795849" size="sm" />
+            <BookNowButton bg="light" type="secondary" text="TALK TO A LICENSED PLUMBER" href="tel:+13016795849" size="sm" />
           </div>
         </div>
       </section>
@@ -164,7 +164,7 @@ export default function WaterHeaterInstallation() {
                 <CreditCard size={24} color="var(--brand-navy)" style={{ flexShrink: 0 }} />
                 <div style={{ flex: 1 }}>
                   <p style={{ fontFamily: 'var(--font-body)', color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '8px' }}>Financing available through Synchrony. Apply in 60 seconds at mysynchrony.com/mmc/S6240351600.</p>
-                  <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
+                  <BookNowButton bg="light" type="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="sm" />
                 </div>
               </div>
             </div>
@@ -248,7 +248,7 @@ export default function WaterHeaterInstallation() {
                   </div>
                 ))}
               </div>
-              <BookNowButton variant="phone" text="CALL FOR AVAILABILITY" href="tel:+13016795849" size="md" />
+              <BookNowButton bg="blue" type="phone" text="CALL FOR AVAILABILITY" href="tel:+13016795849" size="md" />
             </div>
           </div>
         </div>

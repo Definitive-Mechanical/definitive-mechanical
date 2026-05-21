@@ -64,8 +64,8 @@ export default function WaterLineRepair() {
               </p>
               <TrustBadges variant="dark" badges={["24/7 Emergency Water Line Service", "Licensed Master Plumber", "Detect Before Excavating", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton variant="outline" text="REQUEST WATER LINE ASSESSMENT" href="/contact" size="md" />
+                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" type="secondary" text="REQUEST WATER LINE ASSESSMENT" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function WaterLineRepair() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '14px', lineHeight: 1.7, marginBottom: '20px' }}>
                 Call (301) 679-5849 immediately. Our first step is typically to help you locate and shut off the main supply valve while we are in transit.
               </p>
-              <BookNowButton variant="phone" text="CALL NOW — 24/7 EMERGENCY" href="tel:+13016795849" size="md" />
+              <BookNowButton bg="blue" type="phone" text="CALL NOW — 24/7 EMERGENCY" href="tel:+13016795849" size="md" />
             </div>
           </div>
         </div>
@@ -158,7 +158,7 @@ export default function WaterLineRepair() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '13px', fontStyle: 'italic', lineHeight: 1.6, marginBottom: '20px' }}>
                 We provide written pricing after assessment. For emergency water line failures, we can often provide a reliable estimate over the phone based on your description and property type before dispatch.
               </p>
-              <BookNowButton variant="phone" text="CALL FOR EMERGENCY ASSESSMENT" href="tel:+13016795849" size="md" />
+              <BookNowButton bg="blue" type="phone" text="CALL FOR EMERGENCY ASSESSMENT" href="tel:+13016795849" size="md" />
             </div>
             <div>
               <div style={{ background: 'var(--brand-blue)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>

@@ -50,8 +50,8 @@ export default function BackflowPrevention() {
               </p>
               <TrustBadges variant="dark" badges={["Commercial & Residential", "Annual Certification Programs", "Licensed", "Report Filing Included"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton variant="outline" text="REQUEST BACKFLOW ASSESSMENT" href="/contact" size="md" />
+                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" type="secondary" text="REQUEST BACKFLOW ASSESSMENT" href="/contact" size="md" />
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@ export default function BackflowPrevention() {
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7, marginBottom: '16px' }}>
                   Some Maryland, DC, and Virginia jurisdictions require backflow prevention devices on residential properties with irrigation systems or other cross-connection risks. Requirements vary by jurisdiction and water supplier (including WSSC in Prince George's and Montgomery Counties). If you are not certain whether your property requires a backflow device, call (301) 679-5849 — we can assess your property's connection points and local code requirements.
                 </p>
-                <BookNowButton variant="ghost" text="ASK ABOUT YOUR PROPERTY" href="tel:+13016795849" size="sm" />
+                <BookNowButton bg="light" type="secondary" text="ASK ABOUT YOUR PROPERTY" href="tel:+13016795849" size="sm" />
               </div>
             </div>
           </div>

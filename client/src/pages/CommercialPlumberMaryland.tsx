@@ -91,8 +91,8 @@ export default function CommercialPlumberMaryland() {
             Definitive Mechanical serves commercial property managers, facility directors, government procurement teams, and business owners across Maryland's five-county DC metro region. MDOT MBE Certified No. 20-134. Master Plumber #96958. WSSC #73696.
           </p>
           <div className="flex flex-wrap gap-4 mb-10">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="REQUEST COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
+            <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="dark" type="secondary" text="REQUEST COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
           </div>
           {/* Trust Strip */}
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
@@ -168,7 +168,7 @@ export default function CommercialPlumberMaryland() {
             <div className="text-center p-6 rounded-lg" style={{ background: "rgba(0,158,198,0.15)", border: "1px solid rgba(29,108,163,0.4)" }}>
               <p className="text-white font-bold text-xl mb-2" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}> Call (301) 679-5849 — 24/7 live dispatcher</p>
               <p className="text-white/80 text-sm mb-4" style={{ fontFamily: "'Barlow', sans-serif" }}>We coordinate with property managers, building engineers, and facility staff.</p>
-              <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+              <BookNowButton bg="blue" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             </div>
           </div>
         </div>
@@ -271,9 +271,9 @@ export default function CommercialPlumberMaryland() {
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>MD Master Plumber #96958 | WSSC #73696 | MDOT MBE Cert 20-134 | CAGE 8HCF6</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="REQUEST COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
-            <BookNowButton variant="ghost" text="DOWNLOAD CAPABILITY STATEMENT" href="/capability-statement.pdf" size="lg" onDark />
+            <BookNowButton bg="blue" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="blue" type="secondary" text="REQUEST COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
+            <BookNowButton bg="blue" type="secondary" text="DOWNLOAD CAPABILITY STATEMENT" href="/capability-statement.pdf" size="lg" />
           </div>
           <p className="mt-6 text-white/50 text-xs" style={{ fontFamily: "'Barlow', sans-serif" }}>Definitive Mechanical  9701 Apollo Drive, Suite 100  Largo, MD 20774</p>
         </div>

@@ -107,8 +107,8 @@ export default function MBECertified() {
           </div>
 
           <div className="flex flex-wrap gap-4">
-            <BookNowButton variant="outline" text="ADD US TO YOUR BIDDERS LIST" href="/contact/" size="lg" />
-            <BookNowButton variant="ghost" text="REQUEST CAPABILITY STATEMENT" href="/contact/" size="lg" onDark />
+            <BookNowButton bg="dark" type="secondary" text="ADD US TO YOUR BIDDERS LIST" href="/contact/" size="lg" />
+            <BookNowButton bg="dark" type="secondary" text="REQUEST CAPABILITY STATEMENT" href="/contact/" size="lg" />
           </div>
         </div>
       </section>
@@ -197,8 +197,8 @@ export default function MBECertified() {
             Our Capability Statement includes: legal name, UEI, CAGE 8HCF6, NAICS 238220, SIC 171, MDOT MBE Cert 20-134, SWaM Cert 815255, all license numbers, years in business, bonding capacity, past performance summary, and point of contact.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="outline" text="REQUEST CAPABILITY STATEMENT" href="/contact/" size="lg" />
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="blue" type="secondary" text="REQUEST CAPABILITY STATEMENT" href="/contact/" size="lg" />
+            <BookNowButton bg="blue" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
           </div>
         </div>
       </section>

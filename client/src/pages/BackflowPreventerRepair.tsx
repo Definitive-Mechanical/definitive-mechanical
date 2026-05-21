@@ -56,8 +56,8 @@ export default function BackflowPreventerRepair() {
               </p>
               <TrustBadges variant="dark" badges={["On-Site Repair Often Available", "Report Refiling Included", "Licensed", "Commercial & Residential"]} />
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-                <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-                <BookNowButton variant="outline" text="REQUEST BACKFLOW REPAIR" href="/contact" size="md" />
+                <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+                <BookNowButton bg="dark" type="secondary" text="REQUEST BACKFLOW REPAIR" href="/contact" size="md" />
               </div>
             </div>
           </div>

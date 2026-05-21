@@ -51,9 +51,9 @@ export default function CTABanner({ heading, subtext, primaryBtn, secondaryBtn, 
           </p>
         )}
         <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-          <BookNowButton variant="phone" text={primaryBtn.text} href={primaryBtn.href} size="lg" />
+          <BookNowButton bg="blue" type="phone" text={primaryBtn.text} href={primaryBtn.href} size="lg" />
           {secondaryBtn && (
-            <BookNowButton variant="outline" text={secondaryBtn.text} href={secondaryBtn.href} size="lg" />
+            <BookNowButton bg="blue" type="secondary" text={secondaryBtn.text} href={secondaryBtn.href} size="lg" />
           )}
         </div>
       </div>

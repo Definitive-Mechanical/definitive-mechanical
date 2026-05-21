@@ -33,7 +33,7 @@ export default function About() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '560px', marginBottom: '32px' }}>
                 Definitive Mechanical is a Licensed Black Owned, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor based in Largo, Maryland. We have served homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia for over 11 years. Master Plumber and Master Gasfitter licensed in four states.
               </p>
-              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton bg="dark" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>
             <div className="hidden lg:block lg:col-span-2">
               <img
@@ -234,9 +234,9 @@ export default function About() {
               </div>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-              <BookNowButton variant="outline" text="REQUEST SERVICE ONLINE" href="/contact" size="lg" />
-              <BookNowButton variant="ghost" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" onDark />
+              <BookNowButton bg="blue" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton bg="blue" type="secondary" text="REQUEST SERVICE ONLINE" href="/contact" size="lg" />
+              <BookNowButton bg="blue" type="secondary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
             </div>
           </div>
         </div>

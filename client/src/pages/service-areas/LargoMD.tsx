@@ -103,8 +103,8 @@ export default function LargoMD() {
               </p>
               <TrustBadges variant="dark" badges={["Based in Largo, MD","11 Years Serving Largo","WSSC #73696","MDOT MBE Cert 20-134","24/7 Emergency"]} />
               <div className="flex flex-wrap gap-4 mt-8">
-                <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-                <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
+                <BookNowButton bg="dark" type="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+                <BookNowButton bg="dark" type="secondary" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
             <div className="hidden lg:block">

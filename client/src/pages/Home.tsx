@@ -138,7 +138,7 @@ function HeroSection() {
             </p>
             <TrustBadges variant="dark" badges={['black-owned', '11 Years in Business', '24/7 Emergency', 'Licensed Master Plumber/Gasfitter', 'MDOT MBE Certified', 'VA SWaM Certified']} />
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginTop: '32px' }}>
-              <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton bg="dark" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>
             <div style={{ marginTop: '20px' }}>
               <StarRating rating={4.8} count={40} variant="dark" />
@@ -410,7 +410,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton variant="ghost" text="VIEW ALL PLUMBING SERVICES" href="/services" size="md" />
+            <BookNowButton bg="light" type="secondary" text="VIEW ALL PLUMBING SERVICES" href="/services" size="md" />
           </div>
         </div>
       </section>
@@ -494,8 +494,8 @@ export default function Home() {
             Burst pipe, sewer backup, gas leak, no hot water — our live dispatcher answers every call, every hour of every day. Licensed plumbing professionals dispatched — work performed under Master Plumber license.
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <BookNowButton variant="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-            <BookNowButton variant="outline" text="LEARN MORE" href="/emergency-plumbing" size="lg" />
+            <BookNowButton bg="blue" type="phone" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <BookNowButton bg="blue" type="secondary" text="LEARN MORE" href="/emergency-plumbing" size="lg" />
           </div>
         </div>
       </section>
@@ -517,7 +517,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '32px' }}>
-            <BookNowButton variant="ghost" text="READ ALL REVIEWS" href="/reviews" size="md" />
+            <BookNowButton bg="light" type="secondary" text="READ ALL REVIEWS" href="/reviews" size="md" />
           </div>
         </div>
       </section>
@@ -612,7 +612,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <BookNowButton variant="ghost" text="VIEW ALL LICENSES & CERTIFICATIONS" href="/licenses-certifications" size="md" onDark />
+            <BookNowButton bg="blue" type="secondary" text="VIEW ALL LICENSES & CERTIFICATIONS" href="/licenses-certifications" size="md" />
           </div>
         </div>
       </section>
@@ -654,7 +654,7 @@ export default function Home() {
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '14px', marginBottom: '24px' }}>
                 No impact to your credit score during pre-qualification.
               </p>
-              <BookNowButton variant="navy" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
+              <BookNowButton bg="blue" type="primary" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
               <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-3)', marginTop: '16px' }}>
                 Questions? Call {BUSINESS.phone}
               </p>
@@ -702,8 +702,8 @@ export default function Home() {
                   ))}
                 </div>
                 <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                  <BookNowButton variant="phone" text="GOVERNMENT & COMMERCIAL" href="/government-municipal-plumbing" size="md" />
-                  <BookNowButton variant="outline" text="COMMERCIAL PLUMBING" href="/commercial-plumbing" size="md" />
+                  <BookNowButton bg="light" type="phone" text="GOVERNMENT & COMMERCIAL" href="/government-municipal-plumbing" size="md" />
+                  <BookNowButton bg="light" type="secondary" text="COMMERCIAL PLUMBING" href="/commercial-plumbing" size="md" />
                 </div>
               </div>
             </div>

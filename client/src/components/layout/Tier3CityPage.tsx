@@ -219,8 +219,8 @@ export default function Tier3CityPage({
               </p>
               <TrustBadges variant="dark" badges={trustItems} />
               <div className="flex flex-wrap gap-4 mt-8">
-                <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
-                <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
+                <BookNowButton bg="dark" type="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+                <BookNowButton bg="dark" type="secondary" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
             <div className="lg:col-span-2 hidden lg:block">
@@ -363,7 +363,7 @@ export default function Tier3CityPage({
               Yes. Emergency plumbing in {schemaCity} is available 24/7, 365 days a year. A live dispatcher answers every call. Licensed plumbing professionals dispatched — work performed under Master Plumber license. All services have a trip fee. Call (301) 679-5849.
             </p>
           </div>
-          <BookNowButton variant="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
+          <BookNowButton bg="dark" type="phone" size="lg" text="CALL (301) 679-5849" href="tel:+13016795849" />
         </div>
       </section>
 

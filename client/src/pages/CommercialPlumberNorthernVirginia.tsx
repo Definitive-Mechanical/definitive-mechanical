@@ -82,8 +82,8 @@ export default function CommercialPlumberNorthernVirginia() {
             Definitive Mechanical holds Virginia Master Plumber/Gasfitter License #2710064209 and Virginia Class A Contractor License #2705181061 — and is Virginia SWaM Certified (No. 815255) for government and institutional procurement. We serve commercial properties throughout Northern Virginia's four-county region.
           </p>
           <div className="flex flex-wrap gap-4 mb-10">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="REQUEST NOVA COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
+            <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="dark" type="secondary" text="REQUEST NOVA COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
             {["VA Master Plumber #2710064209", "VA Class A Contractor #2705181061", "SWaM Cert 815255", "CAGE 8HCF6"].map(t => (
@@ -216,8 +216,8 @@ export default function CommercialPlumberNorthernVirginia() {
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>VA Master Plumber #2710064209 | SWaM Cert 815255 | CAGE 8HCF6</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="REQUEST NOVA COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
+            <BookNowButton bg="blue" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="blue" type="secondary" text="REQUEST NOVA COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
           </div>
         </div>
       </section>

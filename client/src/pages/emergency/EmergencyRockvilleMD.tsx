@@ -96,7 +96,7 @@ export default function EmergencyRockvilleMD() {
               <Phone className="mr-3" size={24} /> CALL (301) 679-5849 — LIVE DISPATCHER 24/7
             </a>
             <div className="mt-3 flex justify-center">
-              <BookNowButton variant="outline" size="sm" text="REQUEST EMERGENCY SERVICE" href="/contact/" />
+              <BookNowButton bg="dark" type="secondary" size="sm" text="REQUEST EMERGENCY SERVICE" href="/contact/" />
             </div>
           </div>
 

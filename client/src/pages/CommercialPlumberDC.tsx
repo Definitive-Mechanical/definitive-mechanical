@@ -83,8 +83,8 @@ export default function CommercialPlumberDC() {
             Definitive Mechanical is licensed in the District of Columbia as Master Plumber/Gasfitter #PGM1002236 — issued by the DC Department of Consumer and Regulatory Affairs (DCRA). We serve commercial properties, office buildings, mixed-use developments, rowhouse conversions, and institutional facilities across all eight DC wards.
           </p>
           <div className="flex flex-wrap gap-4 mb-10">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="REQUEST DC COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
+            <BookNowButton bg="dark" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="dark" type="secondary" text="REQUEST DC COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
           </div>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs font-bold uppercase tracking-wider" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>
             {["DC Master Plumber #PGM1002236", "MDOT MBE Cert 20-134", "CAGE 8HCF6", "NAICS 238220"].map(t => (
@@ -147,7 +147,7 @@ export default function CommercialPlumberDC() {
               ))}
             </ul>
             <div className="text-center">
-              <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+              <BookNowButton bg="blue" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
             </div>
           </div>
         </div>
@@ -207,8 +207,8 @@ export default function CommercialPlumberDC() {
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "'Barlow', sans-serif" }}> Call (301) 679-5849</p>
           <p className="text-white/60 text-sm mb-8" style={{ fontFamily: "'Barlow', sans-serif" }}>DC Master Plumber #PGM1002236 | MDOT MBE Cert 20-134</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <BookNowButton variant="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
-            <BookNowButton variant="outline" text="REQUEST DC COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
+            <BookNowButton bg="blue" type="phone" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
+            <BookNowButton bg="blue" type="secondary" text="REQUEST DC COMMERCIAL ESTIMATE" href="/contact/" size="lg" />
           </div>
         </div>
       </section>
