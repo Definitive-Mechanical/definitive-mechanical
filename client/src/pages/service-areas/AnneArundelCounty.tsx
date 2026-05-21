@@ -77,7 +77,7 @@ export default function AnneArundelCounty() {
 
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="CREDENTIALS" heading="Licensed for Anne Arundel County plumbing" light />
+          <SectionHeading eyebrow="CREDENTIALS" heading="Licensed for Anne Arundel County plumbing" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
             {[{ label: "Anne Arundel County Master Plumber/Gasfitter", num: "#A2-6139" }, { label: "Maryland State Master Plumber/Gasfitter", num: "#96958" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">

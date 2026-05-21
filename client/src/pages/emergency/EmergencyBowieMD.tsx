@@ -114,7 +114,7 @@ export default function EmergencyBowieMD() {
 
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="LICENSE PROOF" heading="WSSC and Maryland Licensed for Bowie Emergency Plumbing" light />
+          <SectionHeading eyebrow="LICENSE PROOF" heading="WSSC and Maryland Licensed for Bowie Emergency Plumbing" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
             {[{ label: "WSSC Master Plumber/Gasfitter", num: "#73696" }, { label: "Maryland State Master Plumber/Gasfitter", num: "#96958" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">

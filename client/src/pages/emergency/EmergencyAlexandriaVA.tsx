@@ -114,7 +114,7 @@ export default function EmergencyAlexandriaVA() {
 
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="LICENSE PROOF" heading="Licensed for Emergency Plumbing in Virginia" light />
+          <SectionHeading eyebrow="LICENSE PROOF" heading="Licensed for Emergency Plumbing in Virginia" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">
             {[{ label: "Virginia Master Plumber/Gasfitter", num: "#2710064209" }, { label: "Virginia Class A Contractor", num: "#2705181061" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">

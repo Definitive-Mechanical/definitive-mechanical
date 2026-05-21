@@ -175,7 +175,7 @@ export default function MBECertified() {
       {/* Engagement Pathway */}
       <section className="py-16" style={{ background: "#fff" }}>
         <div className="container max-w-4xl">
-          <SectionHeading eyebrow="Engagement Process" heading="How does a government agency or prime contractor engage Definitive Mechanical?" light />
+          <SectionHeading eyebrow="Engagement Process" heading="How does a government agency or prime contractor engage Definitive Mechanical?" />
           <div className="mt-10 grid md:grid-cols-2 gap-6">
             {ENGAGEMENT_STEPS.map(s => (
               <div key={s.step} className="p-6 rounded-lg" style={{ background: "rgba(255,255,255,0.07)", border: "1px solid rgba(0,158,198,0.3)" }}>

@@ -230,7 +230,7 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* WHAT TO DO BEFORE WE ARRIVE */}
-      <section style={{ background: '#fff', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading
             eyebrow="WHILE YOU WAIT"
@@ -307,9 +307,9 @@ export default function EmergencyPlumbing() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Emergency Plumbing Questions</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Emergency Plumbing Questions</h2>
         </div>
-                      <FAQAccordion items={EMERGENCY_FAQ} schema={true} variant="dark" />
+                      <FAQAccordion items={EMERGENCY_FAQ} schema={true} variant="light" />
         </div>
       </section>
 

@@ -145,7 +145,7 @@ export default function EmergencyRockvilleMD() {
       {/* Section 4 — License Proof */}
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="LICENSE PROOF" heading="Three licenses for Rockville emergency plumbing authority" light />
+          <SectionHeading eyebrow="LICENSE PROOF" heading="Three licenses for Rockville emergency plumbing authority" />
           <p className="text-white/80 text-center max-w-2xl mx-auto mb-8" style={{ fontFamily: 'var(--font-body)', fontSize: "15px" }}>
             Emergency plumbing in Rockville, MD requires active licenses in three overlapping jurisdictions. Definitive Mechanical holds all three:
           </p>

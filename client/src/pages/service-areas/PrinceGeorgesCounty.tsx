@@ -138,7 +138,7 @@ export default function PrinceGeorgesCounty() {
       {/* Credentials */}
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="CREDENTIALS" heading={`Licenses and certifications for Prince George's County`} light />
+          <SectionHeading eyebrow="CREDENTIALS" heading={`Licenses and certifications for Prince George's County`} />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">
             {[{ label: "WSSC Master Plumber/Gasfitter", num: "#73696" }, { label: "Maryland State Master Plumber/Gasfitter", num: "#96958" }, { label: "MDOT MBE Certification", num: "Cert 20-134" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">
@@ -154,8 +154,8 @@ export default function PrinceGeorgesCounty() {
       {/* FAQ */}
       <section style={{ backgroundColor: "var(--brand-navy)" }} className="py-20">
         <div className="container max-w-3xl mx-auto">
-          <SectionHeading eyebrow="FAQ" heading={`Plumbing service in Prince George's County — common questions`} light />
-          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" /></div>
+          <SectionHeading eyebrow="FAQ" heading={`Plumbing service in Prince George's County — common questions`} />
+          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" /></div>
         </div>
       </section>
 

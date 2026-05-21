@@ -155,7 +155,7 @@ export default function DCNeighborhoodsHub() {
       {/* Credentials */}
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="CREDENTIALS" heading="DC-licensed for every neighborhood" light />
+          <SectionHeading eyebrow="CREDENTIALS" heading="DC-licensed for every neighborhood" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">
             {[
               { label: "DC Master Plumber/Gasfitter (DCRA)", num: "#PGM1002236" },

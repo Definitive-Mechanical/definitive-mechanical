@@ -82,7 +82,7 @@ export default function HowardCounty() {
 
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="CREDENTIALS" heading="Licensed for Howard County plumbing" light />
+          <SectionHeading eyebrow="CREDENTIALS" heading="Licensed for Howard County plumbing" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">
             {[{ label: "Howard County", num: "#20020096958" }, { label: "WSSC Master Plumber/Gasfitter", num: "#73696" }, { label: "Maryland State", num: "#96958" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">

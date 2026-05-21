@@ -99,7 +99,7 @@ export default function Financing() {
       {/* What Can Be Financed */}
       <section className="py-20" style={{ background: "#fff" }}>
         <div className="container">
-          <SectionHeading eyebrow="ELIGIBLE SERVICES" heading="What plumbing services can be financed?" light />
+          <SectionHeading eyebrow="ELIGIBLE SERVICES" heading="What plumbing services can be financed?" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
             {[
               "Water Heater Repair & Replacement",

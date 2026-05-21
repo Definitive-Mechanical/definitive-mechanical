@@ -133,7 +133,6 @@ export default function GovernmentMunicipalPlumbing() {
             heading="Definitive Mechanical's government contracting credentials"
             subtext="We hold the certifications, licenses, and registrations required to work with government agencies at the federal, state, and local level across the DMV region."
             centered
-            light
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -154,7 +153,7 @@ export default function GovernmentMunicipalPlumbing() {
                 items: ['Maryland Master Plumber/Gasfitter #96958', 'WSSC Master Plumber/Gasfitter #73696', 'DC Master Plumber/Gasfitter #PGM1002236', 'Virginia Master Plumber/Gasfitter #2710064209', 'Virginia Class A Contractor #2705181061', 'Delaware Master Plumber/Gasfitter #PL-0012866'],
               },
             ].map((section) => (
-              <div key={section.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.14)', borderRadius: '6px', padding: '24px' }}>
+              <div key={section.title} style={{ background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '24px' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '12px' }}>{section.title}</h3>
                 {section.items.map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '8px' }}>
@@ -176,9 +175,9 @@ export default function GovernmentMunicipalPlumbing() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Government & Municipal Plumbing Questions</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Government & Municipal Plumbing Questions</h2>
         </div>
-                      <FAQAccordion items={GOV_FAQ} schema={true} variant="dark" />
+                      <FAQAccordion items={GOV_FAQ} schema={true} variant="light" />
         </div>
       </section>
 

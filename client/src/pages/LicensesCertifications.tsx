@@ -140,7 +140,6 @@ export default function LicensesCertifications() {
             eyebrow="BUSINESS CERTIFICATIONS"
             heading="Government Contracting Certifications & Registrations"
             centered
-            light
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -165,7 +164,7 @@ export default function LicensesCertifications() {
                 lines: ['Universal EPA 608 Certification', 'U.S. Environmental Protection Agency', `Cert #${LICENSES.epa[0].number}`],
               },
             ].map((cert) => (
-              <div key={cert.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '6px', padding: '28px', textAlign: 'center' }}>
+              <div key={cert.title} style={{ background: 'var(--brand-blue-soft)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '6px', padding: '28px', textAlign: 'center' }}>
                 <cert.icon size={32} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '12px' }}>{cert.title}</h3>
                 {cert.lines.map((line) => (

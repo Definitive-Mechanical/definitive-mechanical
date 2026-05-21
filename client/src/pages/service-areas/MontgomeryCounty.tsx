@@ -87,7 +87,7 @@ export default function MontgomeryCounty() {
 
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="CREDENTIALS" heading="Three licenses for full Montgomery County authority" light />
+          <SectionHeading eyebrow="CREDENTIALS" heading="Three licenses for full Montgomery County authority" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">
             {[{ label: "City of Rockville", num: "#PLL-0002113" }, { label: "WSSC Master Plumber/Gasfitter", num: "#73696" }, { label: "Maryland State Master Plumber/Gasfitter", num: "#96958" }].map((cred) => (
               <div key={cred.label} className="bg-white rounded-md px-6 py-4 flex flex-col items-center text-center">

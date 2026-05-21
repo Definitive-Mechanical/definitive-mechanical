@@ -246,7 +246,7 @@ export default function WashingtonDC() {
       {/* S5: Commercial & Government */}
       <section className="py-16" style={{ background:"#fff" }}>
         <div className="container text-center">
-          <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Commercial & Government Plumbing in Washington DC" light />
+          <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Commercial & Government Plumbing in Washington DC" />
           <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
             Washington DC is the center of federal government procurement in the United States. Definitive Mechanical holds MDOT MBE Certification (Cert No. 20-134) and CAGE Code 8HCF6 — and is licensed under DC Master Plumber/Gasfitter #PGM1002236 for all DC plumbing work. We can serve as a prime contractor or subcontractor for federal and DC government plumbing projects.
           </p>
@@ -285,7 +285,7 @@ export default function WashingtonDC() {
           <p style={{ fontFamily:"var(--font-display)", color:"rgba(255,255,255,0.8)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
           <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>
           <div className="max-w-3xl">
-            <FAQAccordion items={faqs} schema={true} variant="dark" />
+            <FAQAccordion items={faqs} schema={true} variant="light" />
           </div>
         </div>
       </section>

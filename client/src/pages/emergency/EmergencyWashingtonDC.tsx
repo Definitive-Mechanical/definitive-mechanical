@@ -116,7 +116,7 @@ export default function EmergencyWashingtonDC() {
 
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container text-center">
-          <SectionHeading eyebrow="LICENSE PROOF" heading="DC Master Plumber/Gasfitter — License #PGM1002236" light />
+          <SectionHeading eyebrow="LICENSE PROOF" heading="DC Master Plumber/Gasfitter — License #PGM1002236" />
           <div className="bg-white rounded-md p-8 max-w-lg mx-auto mt-8">
             <Key size={40} style={{ color: "var(--brand-cyan)" }} className="mx-auto mb-3" />
             <p className="font-semibold text-sm mb-1" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-body)' }}>District of Columbia Master Plumber & Master Gasfitter</p>

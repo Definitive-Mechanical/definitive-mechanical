@@ -111,7 +111,7 @@ export default function SWaMCertified() {
       {/* Why Hire SWaM */}
       <section className="py-20" style={{ background: "#fff" }}>
         <div className="container">
-          <SectionHeading eyebrow="WHY HIRE A SWAM CONTRACTOR" heading="Why hire a Virginia SWaM certified plumbing contractor?" light />
+          <SectionHeading eyebrow="WHY HIRE A SWAM CONTRACTOR" heading="Why hire a Virginia SWaM certified plumbing contractor?" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
             {[
               { icon: Building2, title: "Meet SWaM Utilization Goals", body: "Virginia state agencies and local government contracts often carry SWaM utilization goals. Engaging Definitive Mechanical counts toward those goals with verifiable documentation." },

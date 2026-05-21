@@ -157,7 +157,7 @@ export default function DCWardsHub() {
       {/* Credentials */}
       <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
-          <SectionHeading eyebrow="CREDENTIALS" heading="DC-issued license for all 8 wards" light />
+          <SectionHeading eyebrow="CREDENTIALS" heading="DC-issued license for all 8 wards" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">
             {[
               { label: "DC Master Plumber/Gasfitter (DCRA)", num: "#PGM1002236" },

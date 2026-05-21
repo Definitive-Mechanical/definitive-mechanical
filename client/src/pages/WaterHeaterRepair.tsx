@@ -146,7 +146,6 @@ export default function WaterHeaterRepair() {
             heading="Is a tankless water heater right for your home or building?"
             subtext="Tankless water heaters provide on-demand hot water with no standby heat loss — and a lifespan of 15-20 years versus 8-12 for standard tank units."
             centered
-            light
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -155,9 +154,9 @@ export default function WaterHeaterRepair() {
               { icon: CheckCircle2, title: 'Longer Lifespan', desc: '15-20 year lifespan versus 8-12 for standard tank units.' },
               { icon: ChevronRight, title: 'Space Saving', desc: 'Wall-mounted units free up significant floor space versus tank units.' },
             ].map((item) => (
-              <div key={item.title} style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.14)', borderRadius: '6px', padding: '24px', textAlign: 'center' }}>
+              <div key={item.title} style={{ background: 'var(--brand-blue-soft)', border: '1px solid var(--brand-blue-tint)', borderRadius: '6px', padding: '24px', textAlign: 'center' }}>
                 <item.icon size={28} color="var(--brand-cyan)" style={{ margin: '0 auto 12px' }} />
-                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'white', fontSize: '15px', marginBottom: '8px' }}>{item.title}</p>
+                <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{item.title}</p>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.75)', fontSize: '13px', lineHeight: 1.6 }}>{item.desc}</p>
               </div>
             ))}
@@ -192,9 +191,9 @@ export default function WaterHeaterRepair() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Water Heater Repair & Replacement Questions</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Water Heater Repair & Replacement Questions</h2>
         </div>
-            <FAQAccordion items={WATER_HEATER_FAQ} schema={true} variant="dark" />
+            <FAQAccordion items={WATER_HEATER_FAQ} schema={true} variant="light" />
         </div>
       </section>
 
