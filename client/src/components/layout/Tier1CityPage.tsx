@@ -128,11 +128,13 @@ export default function Tier1CityPage({
         ))}
       </Helmet>
 
-      {/* ── S1: HERO — dark navy gradient, two-column ───────────────────── */}
-      <section style={{ background: "linear-gradient(135deg, #031838 0%, var(--brand-blue-2) 60%, var(--brand-blue) 100%)", minHeight: "62vh", position: "relative", overflow: "hidden" }} className="py-20">
-        {/* subtle diagonal texture */}
-        <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 40px)", pointerEvents: "none" }} />
-        <div className="container relative">
+      {/* ── S1: HERO — dark overlay on plumbing image ───────────────────── */}
+      <section style={{ minHeight: "62vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-20">
+        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
+        </div>
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <BreadcrumbList items={breadcrumbs} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 mt-8 items-center">
             {/* Left — 3 cols */}

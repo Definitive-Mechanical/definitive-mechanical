@@ -11,13 +11,16 @@ export default function About() {
     <>
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)',
         padding: '80px 0',
         position: 'relative',
         overflow: 'hidden',
+        background: '#111',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.05)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'About' }]} />
           <div className="grid lg:grid-cols-5 gap-12 items-center mt-6">
             <div className="lg:col-span-3">

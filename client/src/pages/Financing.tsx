@@ -24,7 +24,11 @@ export default function Financing() {
       </Helmet>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)", minHeight: "45vh" }} className="py-16">
+      <section style={{ minHeight: "45vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-16">
+        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
+        </div>
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Financing" }]} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">

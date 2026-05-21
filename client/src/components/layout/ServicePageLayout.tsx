@@ -144,7 +144,7 @@ export default function ServicePageLayout({
             style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center 30%", display: "block" }}
             loading="eager"
           />
-          <div style={{ position: "absolute", inset: 0, background: "linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
         </div>
         <div className="container" style={{ position: "relative", zIndex: 1, paddingTop: "80px", paddingBottom: "80px" }}>
           <BreadcrumbList items={breadcrumbs} />

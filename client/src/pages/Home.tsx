@@ -113,12 +113,12 @@ function HeroSection() {
           backgroundRepeat: 'no-repeat',
         }}
       />
-      {/* Deep navy/blue overlay */}
+      {/* Dark black overlay */}
       <div
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)',
+          background: 'rgba(0,0,0,0.65)',
         }}
       />
 

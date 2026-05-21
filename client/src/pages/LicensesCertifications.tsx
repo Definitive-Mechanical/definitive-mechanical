@@ -10,13 +10,16 @@ export default function LicensesCertifications() {
     <>
       {/* HERO */}
       <section style={{
-        background: 'linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-navy-dark) 100%)',
         padding: '80px 0',
         position: 'relative',
         overflow: 'hidden',
+        background: '#111',
       }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,158,198,0.05)', transform: 'skewY(-4deg)', transformOrigin: 'top left', pointerEvents: 'none' }} />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.65)' }} />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Licenses & Certifications' }]} />
           <div style={{ marginTop: '24px', maxWidth: '700px' }}>
             <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '12px' }}>

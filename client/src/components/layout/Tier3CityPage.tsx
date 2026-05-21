@@ -198,9 +198,13 @@ export default function Tier3CityPage({
         ))}
       </Helmet>
 
-      {/* S1: Hero — dark navy gradient matching MD/VA pages */}
-      <section style={{ background: "linear-gradient(135deg, #031838 0%, var(--brand-blue-2) 60%, var(--brand-blue) 100%)", minHeight: "50vh" }} className="py-16">
-        <div className="container">
+      {/* S1: Hero — dark overlay on plumbing image */}
+      <section style={{ minHeight: "50vh", position: "relative", overflow: "hidden", background: "#111" }} className="py-16">
+        <div style={{ position: "absolute", inset: 0, zIndex: 0 }}>
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80" alt="Plumbing services" style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "center" }} />
+          <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.65)" }} />
+        </div>
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <BreadcrumbList items={breadcrumbs.map(b => ({ label: b.label, href: b.href }))} />
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 mt-8 items-center">
             <div className="lg:col-span-3">
