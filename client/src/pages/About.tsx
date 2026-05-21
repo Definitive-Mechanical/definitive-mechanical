@@ -157,6 +157,46 @@ export default function About() {
         </div>
       </section>
 
+      {/* LICENSES & CERTIFICATIONS */}
+      <section id="licenses" style={{ background: 'white', padding: '80px 0' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            eyebrow="LICENSES & CERTIFICATIONS"
+            heading="Credentials that matter"
+            centered
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+            {[
+              { title: 'Maryland State Master Plumber/Gasfitter', cert: '#96958' },
+              { title: 'WSSC Master Plumber/Gasfitter', cert: '#73696' },
+              { title: 'DC Master Plumber/Gasfitter', cert: '#PGM1002236' },
+              { title: 'Virginia Master Plumber/Gasfitter', cert: '#2710064209' },
+              { title: 'Virginia Class A Contractor', cert: '#2705181061' },
+              { title: 'Delaware Master Plumber/Gasfitter', cert: '#PL-0012866' },
+              { title: 'MDOT MBE Certification', cert: 'Cert No. 20-134' },
+              { title: 'Virginia SWaM Certification', cert: 'Cert No. 815255' },
+              { title: 'EPA Universal Certification 608', cert: 'YbKLqI5cGf' },
+            ].map((item) => (
+              <div key={item.title} style={{ background: 'var(--surface-1)', borderRadius: '6px', padding: '24px', border: '1px solid rgba(6,59,99,0.1)' }}>
+                <Award size={32} color="var(--brand-cyan)" style={{ marginBottom: '12px' }} />
+                <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '15px', marginBottom: '8px' }}>{item.title}</h3>
+                <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px', fontWeight: 600 }}>{item.cert}</p>
+              </div>
+            ))}
+          </div>
+          <div style={{ marginTop: '48px', padding: '32px', background: 'var(--brand-navy)', borderRadius: '6px', textAlign: 'center' }}>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
+              Every Definitive Mechanical job is performed under Master Plumber license and supervision. Our credentials are verified and current with all relevant state and local jurisdictions.
+            </p>
+            <a href="/licenses-certifications" style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-cyan)', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.1em', textDecoration: 'none' }}
+              onMouseEnter={e => (e.currentTarget.style.textDecoration = 'underline')}
+              onMouseLeave={e => (e.currentTarget.style.textDecoration = 'none')}>
+              View Full Credentials →
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT INFO */}
       <section style={{ background: 'var(--brand-navy)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
