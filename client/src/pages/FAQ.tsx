@@ -29,7 +29,7 @@ const FAQ_SERVICES = [
 
 const FAQ_PRICING = [
   { question: "How does your pricing work?", answer: "All services include a trip fee. We provide written pricing before any work begins — the price you agree to is the price you pay, with no surprise charges at the end of the job." },
-  { question: "Do you provide free estimates?", answer: "We provide written estimates for all non-emergency work. For emergency service, our dispatcher will give you a price range over the phone, and our plumber will provide written pricing on-site before beginning any work. Call (301) 679-5849." },
+  { question: "Do you provide estimates?", answer: "We provide written pricing for all work before anything begins. For non-emergency jobs, we assess the scope and provide a written quote. For emergency service, our dispatcher gives you a price range over the phone and our plumber provides written pricing on-site before starting. All services have a trip fee. Call (301) 679-5849." },
   { question: "Do you accept credit cards?", answer: "Yes. We accept all major credit cards, checks, and cash. Financing through Synchrony Financial is available for qualifying customers on larger projects." },
 ];
 

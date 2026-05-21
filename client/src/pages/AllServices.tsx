@@ -131,7 +131,7 @@ const faqs = [
     a: "Yes. Financing is available through Synchrony for qualifying repairs and installations.",
   },
   {
-    q: "Do you provide free estimates?",
+    q: "Do you provide estimates?",
     a: "We provide written estimates before work begins on all scheduled jobs. For emergency calls, we assess the situation and provide pricing before starting repairs. We do not charge you for arriving and telling you what is wrong.",
   },
 ];
