@@ -17,7 +17,7 @@ const FAQ_ITEMS = [
   },
   {
     question: "Is emergency heating repair available?",
-    answer: "Yes. Emergency boiler and furnace repair is available 24/7, 365 days a year. Call (301) 679-5849 at any hour. Same rate as business hours — all services have a trip fee."
+    answer: "Yes. Emergency boiler and furnace repair is available 24/7, 365 days a year. Call (301) 679-5849 at any hour. All services have a trip fee, disclosed before dispatch."
   },
 ];
 
@@ -208,7 +208,7 @@ export default function BoilerFurnaceRepair() {
           <div style={{ background: 'var(--brand-navy)', borderRadius: '6px', padding: '20px', maxWidth: '700px', margin: '32px auto 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '16px', flexWrap: 'wrap' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <Thermometer size={24} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
-              <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.9)', fontSize: '14px' }}>No heat? Emergency heating repair available 24/7 — call (301) 679-5849. Same rate as business hours.</span>
+              <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.9)', fontSize: '14px' }}>No heat? Emergency heating repair available 24/7 — call (301) 679-5849. All services have a trip fee, disclosed before dispatch.</span>
             </div>
             <BookNowButton variant="phone" text="CALL NOW" href="tel:+13016795849" size="sm" />
           </div>
@@ -235,7 +235,7 @@ export default function BoilerFurnaceRepair() {
             ))}
           </div>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '13px', fontStyle: 'italic', textAlign: 'center', marginTop: '16px', maxWidth: '600px', margin: '16px auto 0' }}>
-            Reference ranges. Written pricing provided after diagnosis. For emergency after-hours repairs, we provide upfront pricing before beginning work — same rate as business hours.
+            Reference ranges. Written pricing provided after diagnosis. For emergency after-hours repairs, we provide upfront pricing before beginning work — trip fee applies to all services.
           </p>
         </div>
       </section>

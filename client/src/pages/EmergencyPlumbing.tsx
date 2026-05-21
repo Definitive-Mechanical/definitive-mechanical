@@ -28,7 +28,7 @@ const RESPONSE_STEPS = [
   { icon: 'UserCheck', title: 'We dispatch a licensed technician.', description: 'Our team of licensed plumbing professionals handles every emergency call — all work performed under Master Plumber license.' },
   { icon: 'Clock', title: 'We give you an ETA.', description: 'You know when we\'re coming. We give you a call or text update when the technician is en route. We do not overbook.' },
   { icon: 'FileText', title: 'Diagnose and provide written pricing.', description: 'We assess the problem and give you written pricing before any work begins. You approve the price. We do the work.' },
-  { icon: 'CheckCircle2', title: 'Complete repair and clean up.', description: 'The job is done right the first time, to code, with no mess left behind. Same rate regardless of time of day.' },
+  { icon: 'CheckCircle2', title: 'Complete repair and clean up.', description: 'The job is done right the first time, to code, with no mess left behind. All services have a trip fee, disclosed before dispatch.' },
 ];
 
 const EMERGENCY_FAQ = [

@@ -163,7 +163,7 @@ export default function GasLeakRepair() {
         </div>
       </section>
 
-      <CTABanner heading="Gas company has cleared the scene. Ready for the repair?" subtext="Licensed Master Gasfitter. Pressure-tested. Permitted where required. Same rate 24/7." primaryBtn={{ text: "CALL NOW — (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY GAS SERVICE", href: "/contact" }} variant="gradient" />
+      <CTABanner heading="Gas company has cleared the scene. Ready for the repair?" subtext="Licensed Master Gasfitter. Pressure-tested. Permitted where required. All services have a trip fee, disclosed before dispatch." primaryBtn={{ text: "CALL NOW — (301) 679-5849", href: "tel:+13016795849" }} secondaryBtn={{ text: "REQUEST EMERGENCY GAS SERVICE", href: "/contact" }} variant="gradient" />
     </>
   );
 }
