@@ -68,13 +68,12 @@ export default function Header() {
 
   return (
     <>
-      {/* Emergency Announcement Bar — single line sm+, two-line stacked on xs */}
+      {/* Emergency Announcement Bar */}
       <a
         href={`tel:${BUSINESS.phoneRaw}`}
         className="fixed top-0 left-0 right-0 z-[101] no-underline flex items-center justify-center"
         style={{ background: 'var(--brand-red)' }}
       >
-        {/* sm+ : single row */}
         <span
           className="hidden sm:flex items-center gap-2"
           style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.14em', color: 'white', height: '36px', whiteSpace: 'nowrap' }}
@@ -83,7 +82,6 @@ export default function Header() {
           24/7 Emergency Plumbing — Call Now: {BUSINESS.phone}
           <span style={{ display: 'inline-block', width: '7px', height: '7px', borderRadius: '50%', background: 'white', animation: 'pulse-dot 1.4s ease-in-out infinite 0.7s', flexShrink: 0 }} />
         </span>
-        {/* xs only : two stacked centered lines */}
         <span
           className="sm:hidden flex flex-col items-center text-center"
           style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'white', padding: '6px 0', lineHeight: 1.5 }}
@@ -96,25 +94,22 @@ export default function Header() {
         </span>
       </a>
 
-      {/* Desktop Header */}
+      {/* Desktop Header — white background for real logo */}
       <header
         className="fixed left-0 right-0 z-[100] transition-shadow duration-300 announcement-offset header-height"
         style={{
-          background: 'var(--brand-navy)',
-          boxShadow: scrolled ? 'var(--shadow-hero)' : '0 2px 8px rgba(6,59,99,0.3)',
+          background: '#ffffff',
+          borderBottom: '1px solid #E2E8F0',
+          boxShadow: scrolled ? '0 4px 20px rgba(0,0,0,0.10)' : '0 1px 4px rgba(0,0,0,0.06)',
         }}
       >
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-6 xl:px-10 h-full flex items-center justify-between">
-          {/* Logo — new SVG */}
+          {/* Real logo PNG */}
           <Link href="/" className="flex items-center no-underline" style={{ flexShrink: 0 }}>
             <img
-              src="/manus-storage/logo-knockout_7a8a46a2.svg"
+              src="/manus-storage/definitive-mechanical-logo_855788d0.png"
               alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
-              style={{ height: '44px', width: 'auto', display: 'block' }}
-              onError={(e) => {
-                // Fallback to old PNG if SVG fails
-                (e.currentTarget as HTMLImageElement).src = '/manus-storage/definitive-mechanical-logo_0084eea2.png';
-              }}
+              style={{ height: '48px', width: 'auto', display: 'block' }}
             />
           </Link>
 
@@ -144,11 +139,11 @@ export default function Header() {
                     fontSize: '12px',
                     textTransform: 'uppercase',
                     letterSpacing: '0.08em',
-                    color: 'rgba(255,255,255,0.88)',
+                    color: 'var(--brand-navy)',
                     whiteSpace: 'nowrap',
                   }}
-                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
-                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.88)')}
+                  onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-blue)')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'var(--brand-navy)')}
                 >
                   {item.label}
                   {(item.hasMega || item.hasDropdown) && <ChevronDown size={12} />}
@@ -159,8 +154,8 @@ export default function Header() {
                   <div
                     className="absolute top-full left-1/2 -translate-x-1/2 w-[720px] shadow-2xl"
                     style={{
-                      background: 'var(--brand-navy-2)',
-                      border: '1px solid rgba(255,255,255,0.08)',
+                      background: '#ffffff',
+                      border: '1px solid #E2E8F0',
                       borderTop: '3px solid var(--brand-blue)',
                       borderRadius: '0 0 8px 8px',
                     }}
@@ -174,7 +169,7 @@ export default function Header() {
                             fontSize: '11px',
                             textTransform: 'uppercase',
                             letterSpacing: '0.18em',
-                            color: 'var(--brand-cyan)',
+                            color: 'var(--brand-blue)',
                             marginBottom: '12px',
                           }}>
                             {col.title}
@@ -184,9 +179,9 @@ export default function Header() {
                               key={link.href}
                               href={link.href}
                               className="block py-1.5 no-underline transition-colors duration-150"
-                              style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)' }}
-                              onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
-                              onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}
+                              style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-2)' }}
+                              onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-blue)')}
+                              onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink-2)')}
                             >
                               {link.label}
                             </Link>
@@ -194,14 +189,14 @@ export default function Header() {
                         </div>
                       ))}
                     </div>
-                    <div style={{ borderTop: '1px solid rgba(255,255,255,0.08)', padding: '12px 24px' }}>
+                    <div style={{ borderTop: '1px solid #E2E8F0', padding: '12px 24px' }}>
                       <Link href="/services" className="no-underline" style={{
                         fontFamily: 'var(--font-body)',
                         fontWeight: 700,
                         fontSize: '12px',
                         textTransform: 'uppercase',
                         letterSpacing: '0.12em',
-                        color: 'var(--brand-cyan)',
+                        color: 'var(--brand-blue)',
                       }}>
                         View All Services →
                       </Link>
@@ -214,8 +209,8 @@ export default function Header() {
                   <div
                     className="absolute top-full left-0 w-64 shadow-2xl"
                     style={{
-                      background: 'var(--brand-navy-2)',
-                      border: '1px solid rgba(255,255,255,0.08)',
+                      background: '#ffffff',
+                      border: '1px solid #E2E8F0',
                       borderTop: '3px solid var(--brand-blue)',
                       borderRadius: '0 0 8px 8px',
                     }}
@@ -226,9 +221,9 @@ export default function Header() {
                           key={link.href}
                           href={link.href}
                           className="block px-5 py-2.5 no-underline transition-colors duration-150"
-                          style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)' }}
-                          onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
-                          onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}
+                          style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-2)' }}
+                          onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-blue)')}
+                          onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink-2)')}
                         >
                           {link.label}
                         </Link>
@@ -242,8 +237,8 @@ export default function Header() {
                   <div
                     className="absolute top-full left-0 w-64 shadow-2xl"
                     style={{
-                      background: 'var(--brand-navy-2)',
-                      border: '1px solid rgba(255,255,255,0.08)',
+                      background: '#ffffff',
+                      border: '1px solid #E2E8F0',
                       borderTop: '3px solid var(--brand-blue)',
                       borderRadius: '0 0 8px 8px',
                     }}
@@ -254,9 +249,9 @@ export default function Header() {
                           key={link.href}
                           href={link.href}
                           className="block px-5 py-2.5 no-underline transition-colors duration-150"
-                          style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.75)' }}
-                          onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
-                          onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.75)')}
+                          style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-2)' }}
+                          onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-blue)')}
+                          onMouseLeave={e => (e.currentTarget.style.color = 'var(--ink-2)')}
                         >
                           {link.label}
                         </Link>
@@ -268,11 +263,24 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Desktop Phone CTA — red primary per design system */}
+          {/* Desktop Phone CTA */}
           <a
             href={`tel:${BUSINESS.phoneRaw}`}
             className="hidden lg:flex items-center gap-2 no-underline"
-            style={{ fontSize: '12px', letterSpacing: '0.08em', borderRadius: '6px', minHeight: '40px', padding: '0 16px', background: 'white', color: 'var(--brand-navy)', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', whiteSpace: 'nowrap', flexShrink: 0 }}
+            style={{
+              fontSize: '12px',
+              letterSpacing: '0.08em',
+              borderRadius: '6px',
+              minHeight: '40px',
+              padding: '0 18px',
+              background: 'var(--brand-blue)',
+              color: '#ffffff',
+              fontFamily: 'var(--font-body)',
+              fontWeight: 700,
+              textTransform: 'uppercase',
+              whiteSpace: 'nowrap',
+              flexShrink: 0,
+            }}
           >
             <Phone size={15} />
             CALL {BUSINESS.phone}
@@ -284,13 +292,13 @@ export default function Header() {
               href={`tel:${BUSINESS.phoneRaw}`}
               className="flex items-center justify-center no-underline"
               aria-label={`Call ${BUSINESS.phone}`}
-              style={{ width: '40px', height: '48px', color: 'white' }}
+              style={{ width: '40px', height: '48px', color: 'var(--brand-navy)' }}
             >
               <Phone size={18} strokeWidth={2} />
             </a>
             <button
               className="flex items-center justify-center"
-              style={{ width: '40px', height: '48px', color: 'white', background: 'none', border: 'none' }}
+              style={{ width: '40px', height: '48px', color: 'var(--brand-navy)', background: 'none', border: 'none' }}
               onClick={() => setMobileOpen(true)}
               aria-label="Open menu"
             >
@@ -300,7 +308,7 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Spacer — sm+: 36px bar + 72px header = 108px; xs: 42px bar + 56px header = 98px */}
+      {/* Spacer */}
       <div style={{ height: '108px' }} className="hidden sm:block" />
       <div style={{ height: '98px' }} className="sm:hidden" />
 
@@ -308,23 +316,20 @@ export default function Header() {
       {mobileOpen && (
         <div
           className="fixed inset-0 z-[200] flex flex-col"
-          style={{ background: 'var(--brand-navy-dark)' }}
+          style={{ background: '#ffffff' }}
         >
           {/* Mobile Menu Header */}
-          <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+          <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid #E2E8F0' }}>
             <Link href="/" className="flex items-center no-underline" onClick={() => setMobileOpen(false)}>
               <img
-                src="/manus-storage/logo-knockout_7a8a46a2.svg"
+                src="/manus-storage/definitive-mechanical-logo_855788d0.png"
                 alt="Definitive Mechanical"
-                style={{ height: '38px', width: 'auto', display: 'block' }}
-                onError={(e) => {
-                  (e.currentTarget as HTMLImageElement).src = '/manus-storage/definitive-mechanical-logo_0084eea2.png';
-                }}
+                style={{ height: '40px', width: 'auto', display: 'block' }}
               />
             </Link>
             <button
               onClick={() => setMobileOpen(false)}
-              style={{ width: '48px', height: '48px', color: 'white', background: 'none', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+              style={{ width: '48px', height: '48px', color: 'var(--brand-navy)', background: 'none', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
               aria-label="Close menu"
             >
               <X size={24} />
@@ -335,8 +340,8 @@ export default function Header() {
           <div className="px-4 pt-4 pb-2 flex flex-col gap-3">
             <a
               href={`tel:${BUSINESS.phoneRaw}`}
-              className="flex items-center justify-center gap-2 no-underline dm-btn dm-btn-primary"
-              style={{ height: '56px', fontSize: '15px', borderRadius: '6px' }}
+              className="flex items-center justify-center gap-2 no-underline"
+              style={{ height: '56px', fontSize: '15px', borderRadius: '6px', background: 'var(--brand-blue)', color: '#fff', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em' }}
               onClick={() => setMobileOpen(false)}
             >
               <Phone size={18} />
@@ -344,8 +349,8 @@ export default function Header() {
             </a>
             <Link
               href="/contact"
-              className="flex items-center justify-center no-underline dm-btn dm-btn-outline on-dark"
-              style={{ height: '48px', fontSize: '14px', borderRadius: '6px' }}
+              className="flex items-center justify-center no-underline"
+              style={{ height: '48px', fontSize: '14px', borderRadius: '6px', background: 'transparent', color: 'var(--brand-navy)', border: '1px solid var(--brand-navy)', fontFamily: 'var(--font-body)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.08em' }}
               onClick={() => setMobileOpen(false)}
             >
               REQUEST SERVICE
@@ -367,7 +372,7 @@ export default function Header() {
               { label: 'Financing', href: '/financing' },
               { label: 'Contact', href: '/contact' },
             ].map((item) => (
-              <div key={item.label} style={{ borderBottom: '1px solid rgba(255,255,255,0.08)' }}>
+              <div key={item.label} style={{ borderBottom: '1px solid #E2E8F0' }}>
                 {item.href ? (
                   <Link
                     href={item.href}
@@ -379,7 +384,7 @@ export default function Header() {
                       fontSize: '14px',
                       textTransform: 'uppercase',
                       letterSpacing: '0.1em',
-                      color: 'white',
+                      color: 'var(--brand-navy)',
                     }}
                     onClick={() => setMobileOpen(false)}
                   >
@@ -396,7 +401,7 @@ export default function Header() {
                         fontSize: '14px',
                         textTransform: 'uppercase',
                         letterSpacing: '0.1em',
-                        color: mobileExpanded === item.key ? 'var(--brand-cyan)' : 'white',
+                        color: mobileExpanded === item.key ? 'var(--brand-blue)' : 'var(--brand-navy)',
                         background: 'none',
                         border: 'none',
                         padding: 0,
@@ -410,7 +415,7 @@ export default function Header() {
                         style={{
                           transform: mobileExpanded === item.key ? 'rotate(90deg)' : 'none',
                           transition: 'transform 0.2s',
-                          color: 'var(--brand-cyan)',
+                          color: 'var(--brand-blue)',
                         }}
                       />
                     </button>
@@ -426,7 +431,7 @@ export default function Header() {
                                   fontSize: '10px',
                                   textTransform: 'uppercase',
                                   letterSpacing: '0.18em',
-                                  color: 'var(--brand-cyan)',
+                                  color: 'var(--brand-blue)',
                                   padding: '8px 0 4px 16px',
                                   margin: 0,
                                 }}>
@@ -440,13 +445,13 @@ export default function Header() {
                                     style={{
                                       fontFamily: 'var(--font-body)',
                                       fontSize: '14px',
-                                      color: 'rgba(255,255,255,0.75)',
+                                      color: 'var(--ink-2)',
                                       padding: '7px 0 7px 16px',
-                                      borderBottom: '1px solid rgba(255,255,255,0.04)',
+                                      borderBottom: '1px solid #F1F5F9',
                                     }}
                                     onClick={() => setMobileOpen(false)}
                                   >
-                                    <ChevronRight size={12} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
+                                    <ChevronRight size={12} style={{ color: 'var(--brand-blue)', flexShrink: 0 }} />
                                     {sub.label}
                                   </Link>
                                 ))}
@@ -462,7 +467,7 @@ export default function Header() {
                                   fontSize: '12px',
                                   textTransform: 'uppercase',
                                   letterSpacing: '0.12em',
-                                  color: 'var(--brand-cyan)',
+                                  color: 'var(--brand-blue)',
                                 }}
                                 onClick={() => setMobileOpen(false)}
                               >
@@ -476,7 +481,7 @@ export default function Header() {
                               key={sub.href}
                               href={sub.href}
                               className="block py-2 no-underline"
-                              style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'rgba(255,255,255,0.75)', paddingLeft: '16px' }}
+                              style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--ink-2)', paddingLeft: '16px' }}
                               onClick={() => setMobileOpen(false)}
                             >
                               {sub.label}
@@ -492,8 +497,6 @@ export default function Header() {
           </nav>
         </div>
       )}
-
-
     </>
   );
 }
