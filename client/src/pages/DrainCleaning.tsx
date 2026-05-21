@@ -122,10 +122,10 @@ export default function DrainCleaning() {
         </div>
               <div className="space-y-4">
                 {[
-                  { title: 'Licensed Professionals on Every Job', desc: 'Every drain cleaning call is handled by a licensed plumbing professional — all work performed under Master Plumber license, not an unlicensed tech with a snake. },
+                  { title: 'Licensed Professionals on Every Job', desc: 'Every drain cleaning call is handled by a licensed plumbing professional — all work performed under Master Plumber license, not an unlicensed tech with a snake.' },
                   { title: 'We Find the Root Cause', desc: 'Recurring clogs mean something is wrong in the pipe. We use camera inspection to identify root intrusion, buildup, or structural issues.' },
                   { title: 'Hydro-Jetting Available', desc: 'The only drain cleaning method that actually cleans pipe walls. We offer hydro-jetting for grease-heavy systems and commercial facilities.' },
-                  { title: 'Written Pricing Before We Start', desc: 'No surprise fees. You receive written pricing before we begin. Same rate regardless of time of day.' },
+                  { title: 'Written Pricing Before We Start', desc: 'No surprise fees. You receive written pricing before we begin. All services have a trip fee, disclosed upfront.' },
                 ].map((item) => (
                   <div key={item.title} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
                     <CheckCircle2 size={20} color="var(--brand-cyan)" style={{ flexShrink: 0, marginTop: '2px' }} />
