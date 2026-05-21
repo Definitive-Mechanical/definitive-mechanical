@@ -160,7 +160,7 @@ export default function ArlingtonVA() {
       </section>
 
             {/* S3: Emergency */}
-      <section style={{ background: "var(--brand-blue)", position: "relative", overflow: "hidden" }} className="py-20">
+      <section style={{ background: "#fff", position: "relative", overflow: "hidden" }} className="py-20">
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 30% 50%, rgba(220,38,38,0.15) 0%, transparent 65%)", pointerEvents:"none" }} />
         <div className="container" style={{ position:"relative", zIndex:1 }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -215,7 +215,7 @@ export default function ArlingtonVA() {
       </section>
 
             {/* S5: Commercial */}
-      <section style={{ background:"linear-gradient(135deg, var(--brand-blue) 0%, #0a2a4a 100%)", position:"relative", overflow:"hidden" }} className="py-20">
+      <section style={{ background:"linear-gradient(135deg, var(--brand-navy) 0%, #0a2a4a 100%)", position:"relative", overflow:"hidden" }} className="py-20">
         <div style={{ position:"absolute", top:0, right:0, width:"40%", height:"100%", background:"linear-gradient(to left, rgba(0,158,198,0.06), transparent)", pointerEvents:"none" }} />
         <div className="container" style={{ position:"relative", zIndex:1 }}>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
@@ -252,7 +252,7 @@ export default function ArlingtonVA() {
       </section>
 
             {/* S8: FAQ */}
-      <section style={{ background: "var(--brand-blue)" }} className="py-20">
+      <section style={{ background: "#fff" }} className="py-20">
         <div className="container">
           <p style={{ fontFamily:"var(--font-display)", color:"rgba(255,255,255,0.8)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
           <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>

@@ -125,7 +125,7 @@ export default function HydroJetting() {
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What is the difference between hydro-jetting and snaking?</h2>
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '896px', margin: '0 auto 24px', overflow: 'hidden' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', background: 'var(--brand-blue)', padding: '12px 20px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', background: '#fff', padding: '12px 20px' }}>
               {["FACTOR", "CABLE SNAKING", "HYDRO-JETTING"].map((h) => (
                 <span key={h} style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{h}</span>
               ))}
@@ -163,7 +163,7 @@ export default function HydroJetting() {
       </section>
 
       {/* SECTION 5: PIPE SAFETY */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <SectionHeading eyebrow="PIPE SAFETY" heading="Is hydro-jetting safe for all pipes?" centered light />
           <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '720px', margin: '0 auto 20px' }}>
@@ -183,7 +183,7 @@ export default function HydroJetting() {
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>What does hydro-jetting cost in Maryland, DC, or Virginia?</h2>
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '560px', margin: '0 auto 24px', overflow: 'hidden' }}>
-            <div style={{ background: 'var(--brand-blue)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+            <div style={{ background: '#fff', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>SERVICE TYPE</span>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
             </div>
@@ -216,7 +216,7 @@ export default function HydroJetting() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

@@ -65,7 +65,7 @@ export default function EmergencyPlumbing() {
           alignItems: 'center',
           justifyContent: 'center',
           gap: '8px',
-          background: 'var(--brand-cyan)',
+          background: '#fff',
           padding: '12px 16px',
           textDecoration: 'none',
         }}
@@ -116,7 +116,7 @@ export default function EmergencyPlumbing() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '12px',
-                  background: 'var(--brand-cyan)',
+                  background: '#fff',
                   color: 'var(--brand-navy)',
                   fontFamily: 'var(--font-display)',
                   fontWeight: 700,
@@ -230,7 +230,7 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* WHAT TO DO BEFORE WE ARRIVE */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading
             eyebrow="WHILE YOU WAIT"
@@ -303,7 +303,7 @@ export default function EmergencyPlumbing() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

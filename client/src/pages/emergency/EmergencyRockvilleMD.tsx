@@ -77,7 +77,7 @@ export default function EmergencyRockvilleMD() {
       </div>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Rockville MD" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>
@@ -143,7 +143,7 @@ export default function EmergencyRockvilleMD() {
       </section>
 
       {/* Section 4 — License Proof */}
-      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
+      <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="LICENSE PROOF" heading="Three licenses for Rockville emergency plumbing authority" light />
           <p className="text-white/80 text-center max-w-2xl mx-auto mb-8" style={{ fontFamily: 'var(--font-body)', fontSize: "15px" }}>

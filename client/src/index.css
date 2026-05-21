@@ -234,7 +234,7 @@
   }
   a:hover { text-decoration: underline; text-underline-offset: 2px; color: var(--brand-blue-2); }
 
-  ::selection { background: var(--brand-blue); color: white; }
+  ::selection { background: #fff; color: white; }
 
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -290,7 +290,7 @@
     content: "";
     width: 28px;
     height: 2px;
-    background: var(--brand-blue);
+    background: #fff;
     flex-shrink: 0;
   }
   /* On dark/photo backgrounds eyebrow stays brand-blue (it reads on dark) */
@@ -319,7 +319,7 @@
 
   /* Primary — cyan-blue PILL */
   .dm-btn-primary {
-    background: var(--brand-blue);
+    background: #fff;
     color: #fff;
     border-radius: 999px;
   }
@@ -416,7 +416,7 @@
     position: absolute;
     left: 0; top: 0; bottom: 0;
     width: 4px;
-    background: var(--brand-blue);
+    background: #fff;
   }
   .dm-license-card:hover { background: rgba(255,255,255,0.07); }
 

@@ -146,7 +146,7 @@ export default function WaterHeaterInstallation() {
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Cost depends on the unit type, size, fuel source, existing connections, venting requirements, and permit fees.</p>
         </div>
               <div style={{ border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', marginBottom: '16px' }}>
-                <div style={{ background: 'var(--brand-blue)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+                <div style={{ background: '#fff', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>UNIT TYPE</span>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL INSTALLED RANGE</span>
                 </div>
@@ -186,7 +186,7 @@ export default function WaterHeaterInstallation() {
       </section>
 
       {/* SECTION 5: PERMITS */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading eyebrow="PERMITS & COMPLIANCE" heading="Do you pull permits for water heater installation in Maryland, DC, and Virginia?" centered light />
           <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '16px', lineHeight: 1.7, maxWidth: '672px', margin: '0 auto 40px', textAlign: 'center' }}>
@@ -270,7 +270,7 @@ export default function WaterHeaterInstallation() {
       </section>
 
       {/* SECTION 8: FAQ */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

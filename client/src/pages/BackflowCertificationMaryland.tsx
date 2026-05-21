@@ -94,7 +94,7 @@ export default function BackflowCertificationMaryland() {
           <div className="mt-8 overflow-x-auto">
             <table className="w-full text-sm" style={{ fontFamily: 'var(--font-body)' }}>
               <thead>
-                <tr style={{ background: "var(--brand-blue)", color: "white" }}>
+                <tr style={{ background: "#fff", color: "white" }}>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">County</th>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">Authority</th>
                   <th className="text-left p-3 font-bold uppercase tracking-wide text-xs">Requirement</th>
@@ -177,7 +177,7 @@ export default function BackflowCertificationMaryland() {
         </div>
       </section>
 
-      <section className="py-16" style={{ background: "var(--brand-blue)" }}>
+      <section className="py-16" style={{ background: "#fff" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Schedule your Maryland backflow certification today</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: 'var(--font-body)' }}> Call (301) 679-5849</p>

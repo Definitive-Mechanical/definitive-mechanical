@@ -144,7 +144,7 @@ export default function WaterLineRepair() {
               <p className="eyebrow mb-2">PRICING GUIDE</p>
               <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '24px' }}>What does water line repair cost?</h2>
               <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', marginBottom: '16px' }}>
-                <div style={{ background: 'var(--brand-blue)', padding: '10px 16px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+                <div style={{ background: '#fff', padding: '10px 16px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
                 </div>
@@ -193,7 +193,7 @@ export default function WaterLineRepair() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

@@ -276,7 +276,7 @@ export default function Home() {
       <HeroSection />
 
       {/* SECTION 2: TRUST STATS BAR */}
-      <section style={{ background: 'var(--brand-cyan)', padding: '32px 0' }}>
+      <section style={{ background: '#fff', padding: '32px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {[
@@ -481,7 +481,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 5: EMERGENCY CTA */}
-      <section style={{ background: 'linear-gradient(135deg, var(--brand-blue-hover), var(--brand-blue))', padding: '64px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AlertTriangle size={40} color="white" style={{ margin: '0 auto 16px' }} />
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'rgba(255,255,255,0.85)', marginBottom: '12px' }}>
@@ -583,7 +583,7 @@ export default function Home() {
       </section>
 
       {/* SECTION 8: CREDENTIALS */}
-      <section style={{ background: 'linear-gradient(135deg, var(--brand-blue-hover) 0%, var(--brand-blue) 100%)', padding: '80px 0' }}>
+      <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="CREDENTIALS & COMPLIANCE"

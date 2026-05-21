@@ -136,7 +136,7 @@ export default function PrinceGeorgesCounty() {
       </section>
 
       {/* Credentials */}
-      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
+      <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="CREDENTIALS" heading={`Licenses and certifications for Prince George's County`} light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">

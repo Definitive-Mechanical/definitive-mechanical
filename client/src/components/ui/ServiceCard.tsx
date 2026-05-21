@@ -101,7 +101,7 @@ export default function ServiceCard({ title, description, href, iconName, featur
             position: 'absolute',
             top: '10px',
             right: '10px',
-            background: 'var(--brand-cyan)',
+            background: '#fff',
             color: 'var(--brand-navy)',
             fontFamily: 'var(--font-display)',
             fontWeight: 700,

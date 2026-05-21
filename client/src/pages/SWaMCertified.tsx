@@ -109,7 +109,7 @@ export default function SWaMCertified() {
       </section>
 
       {/* Why Hire SWaM */}
-      <section className="py-20" style={{ background: "var(--brand-blue)" }}>
+      <section className="py-20" style={{ background: "#fff" }}>
         <div className="container">
           <SectionHeading eyebrow="WHY HIRE A SWAM CONTRACTOR" heading="Why hire a Virginia SWaM certified plumbing contractor?" light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">

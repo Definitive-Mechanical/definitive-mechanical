@@ -106,7 +106,7 @@ export default function DCNeighborhoodsHub() {
             <a
               href="tel:+13016795849"
               className="flex items-center gap-2 text-white font-bold rounded-md px-8 py-4 hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: "var(--brand-cyan)", fontFamily: 'var(--font-label)', fontSize: "18px" }}
+              style={{ backgroundColor: "var(--paper)", fontFamily: "var(--font-label)", fontSize: "18px" }}
             >
               <Phone size={20} /> CALL (301) 679-5849
             </a>
@@ -153,7 +153,7 @@ export default function DCNeighborhoodsHub() {
       </section>
 
       {/* Credentials */}
-      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
+      <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="CREDENTIALS" heading="DC-licensed for every neighborhood" light />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto mt-8">

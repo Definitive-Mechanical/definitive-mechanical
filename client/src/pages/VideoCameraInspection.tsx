@@ -167,7 +167,7 @@ export default function VideoCameraInspection() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

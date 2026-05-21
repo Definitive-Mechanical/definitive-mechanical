@@ -233,7 +233,7 @@ export function InlineCTA() {
   return (
     <div
       className="rounded-sm my-10 text-center"
-      style={{ background: "var(--brand-blue)", padding: "32px" }}
+      style={{ background: "#fff", padding: "32px" }}
     >
       <p
         style={{
@@ -251,7 +251,7 @@ export function InlineCTA() {
         href={`tel:${PHONE}`}
         style={{
           display: "block",
-          background: "var(--brand-cyan)",
+          background: "#fff",
           color: "var(--brand-navy)",
           fontFamily: 'var(--font-label)',
           fontWeight: 700,
@@ -421,7 +421,7 @@ export function PricingTable({ headers, rows }: { headers: string[]; rows: strin
     <div className="overflow-x-auto my-6 rounded-sm border border-[#C0D8F0]">
       <table className="w-full min-w-[400px] text-sm">
         <thead>
-          <tr style={{ background: "var(--brand-blue)" }}>
+          <tr style={{ background: "#fff" }}>
             {headers.map((h, i) => (
               <th
                 key={i}
@@ -459,7 +459,7 @@ export function HowToStep({ number, children }: { number: number; children: Reac
     <div className="flex gap-5 mt-10 mb-2">
       <div
         className="flex-shrink-0 w-12 h-12 rounded-sm flex items-center justify-center font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-2xl text-white"
-        style={{ background: "var(--brand-cyan)", minWidth: "48px" }}
+        style={{ background: "#fff", minWidth: "48px" }}
       >
         {number}
       </div>

@@ -150,7 +150,7 @@ export default function CommercialPlumberMaryland() {
       </section>
 
       {/* Emergency CTA */}
-      <section className="py-16" style={{ background: "var(--brand-blue)" }}>
+      <section className="py-16" style={{ background: "#fff" }}>
         <div className="container">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-display)' }}>What commercial plumbing situations require immediate response?</h2>
@@ -182,7 +182,7 @@ export default function CommercialPlumberMaryland() {
             heading="Are you licensed for commercial plumbing throughout Maryland?"
           />
           <div className="mt-10 grid md:grid-cols-2 gap-8">
-            <div className="p-6 rounded-lg" style={{ background: "var(--surface-1)", border: "2px solid var(--brand-blue)" }}>
+            <div className="p-6 rounded-lg" style={{ background: "var(--surface-1)", border: "2px solid #fff" }}>
               <h3 className="font-bold text-lg mb-4" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)', textTransform: "uppercase" }}>Maryland License Portfolio</h3>
               <ul className="space-y-2">
                 {[
@@ -265,7 +265,7 @@ export default function CommercialPlumberMaryland() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16" style={{ background: "var(--brand-blue)" }}>
+      <section className="py-16" style={{ background: "#fff" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a licensed commercial plumber in Maryland?</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: 'var(--font-body)' }}> Call (301) 679-5849</p>

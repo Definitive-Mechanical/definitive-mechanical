@@ -89,7 +89,7 @@ export default function About() {
       </section>
 
       {/* STATS */}
-      <section style={{ background: 'var(--brand-cyan)', padding: '48px 0' }}>
+      <section style={{ background: '#fff', padding: '48px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
             {[
@@ -201,7 +201,7 @@ export default function About() {
       </section>
 
       {/* CONTACT INFO */}
-      <section style={{ background: 'var(--brand-blue)', padding: '64px 0' }}>
+      <section style={{ background: '#fff', padding: '64px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>

@@ -121,7 +121,7 @@ export default function CommercialPlumberDC() {
             <p className="text-base mb-4" style={{ color: "var(--ink-2)", fontFamily: 'var(--font-body)', lineHeight: 1.7 }}>
               Many contractors serving the DC metro area do not hold this credential and cannot legally pull permits in DC. Definitive Mechanical is licensed independently in DC, Maryland, Virginia, and Delaware — making us one of the few contractors in the region who can legally perform permitted commercial plumbing work in all four jurisdictions.
             </p>
-            <div className="p-4 rounded-lg" style={{ background: "var(--surface-1)", borderLeft: "4px solid var(--brand-cyan)" }}>
+            <div className="p-4 rounded-lg" style={{ background: "var(--surface-1)", borderLeft: "4px solid #fff" }}>
               <p className="text-sm font-bold" style={{ color: "var(--brand-blue)", fontFamily: 'var(--font-label)' }}>
                 DC Master Plumber/Gasfitter #PGM1002236 — DCRA-issued. Verify at dcra.dc.gov.
               </p>
@@ -131,7 +131,7 @@ export default function CommercialPlumberDC() {
       </section>
 
       {/* Emergency CTA */}
-      <section className="py-16" style={{ background: "var(--brand-blue)" }}>
+      <section className="py-16" style={{ background: "#fff" }}>
         <div className="container">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'var(--font-display)' }}>Commercial emergency plumbing in Washington, DC</h2>
@@ -201,7 +201,7 @@ export default function CommercialPlumberDC() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16" style={{ background: "var(--brand-blue)" }}>
+      <section className="py-16" style={{ background: "#fff" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)' }}>Need a DC-licensed commercial plumber?</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: 'var(--font-body)' }}> Call (301) 679-5849</p>

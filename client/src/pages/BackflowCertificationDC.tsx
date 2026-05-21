@@ -137,7 +137,7 @@ export default function BackflowCertificationDC() {
         </div>
       </section>
 
-      <section className="py-16" style={{ background: "var(--brand-blue)" }}>
+      <section className="py-16" style={{ background: "#fff" }}>
         <div className="container text-center">
           <h2 className="text-3xl font-bold text-white mb-3" style={{ fontFamily: 'var(--font-display)', textTransform: 'uppercase', letterSpacing: '0.01em' }}>Schedule your DC backflow certification today</h2>
           <p className="text-white/80 text-lg mb-2" style={{ fontFamily: "\'Barlow\', sans-serif" }}> Call (301) 679-5849</p>

@@ -61,7 +61,7 @@ export default function EmergencyWashingtonDC() {
         </a>
       </div>
 
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Washington DC" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>24/7 EMERGENCY PLUMBER  WASHINGTON DC  DC MASTER PLUMBER #PGM1002236</p>
@@ -114,7 +114,7 @@ export default function EmergencyWashingtonDC() {
         </div>
       </section>
 
-      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
+      <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container text-center">
           <SectionHeading eyebrow="LICENSE PROOF" heading="DC Master Plumber/Gasfitter — License #PGM1002236" light />
           <div className="bg-white rounded-md p-8 max-w-lg mx-auto mt-8">

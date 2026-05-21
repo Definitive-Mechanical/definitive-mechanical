@@ -19,7 +19,7 @@ export default function ProcessStep({ number, title, description, icon, isLast =
         <div style={{
           width: '48px',
           height: '48px',
-          background: 'var(--brand-cyan)',
+          background: '#fff',
           borderRadius: '50%',
           display: 'flex',
           alignItems: 'center',

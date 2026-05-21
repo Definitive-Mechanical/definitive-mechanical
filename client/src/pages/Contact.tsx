@@ -57,7 +57,7 @@ export default function Contact() {
       </Helmet>
 
       {/* Emergency Top Bar */}
-      <a href="tel:+13016795849" className="block w-full py-3 text-center" style={{ background: "var(--brand-cyan)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--brand-blue)", textDecoration: "none" }}>
+      <a href="tel:+13016795849" className="block w-full py-3 text-center" style={{ background: "var(--paper)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--paper)", textDecoration: "none" }}>
          Plumbing Emergency? Call (301) 679-5849 — Live Dispatcher Answering 24/7, 365 Days
       </a>
 
@@ -94,14 +94,14 @@ export default function Contact() {
               <SectionHeading eyebrow="GET IN TOUCH" heading="How to reach us" />
 
               {/* Emergency CTA */}
-              <div className="rounded-md p-6 mb-8" style={{ background: "var(--brand-blue)" }}>
+              <div className="rounded-md p-6 mb-8" style={{ background: "#fff" }}>
                 <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-2">
                   24/7 EMERGENCY SERVICE
                 </p>
-                <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "14px", lineHeight: 1.6 }} className="mb-4">
+                <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.6 }} className="mb-4">
                   For burst pipes, sewer backups, gas leaks, or any plumbing emergency — call now. A live dispatcher answers every call.
                 </p>
-                <a href="tel:+13016795849" className="flex items-center justify-center gap-2 w-full py-4 rounded" style={{ background: "var(--brand-cyan)", color: "var(--brand-blue)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}>
+                <a href="tel:+13016795849" className="flex items-center justify-center gap-2 w-full py-4 rounded" style={{ background: "var(--brand-blue)", color: "white", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}>
                   <Phone size={18} />
                   CALL (301) 679-5849
                 </a>

@@ -193,7 +193,7 @@ export default function WashingtonDC() {
       </section>
 
             {/* S3: Emergency */}
-      <section style={{ background: "var(--brand-blue)", position: "relative", overflow: "hidden" }} className="py-20">
+      <section style={{ background: "#fff", position: "relative", overflow: "hidden" }} className="py-20">
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse at 30% 50%, rgba(220,38,38,0.15) 0%, transparent 65%)", pointerEvents:"none" }} />
         <div className="container" style={{ position:"relative", zIndex:1 }}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -244,7 +244,7 @@ export default function WashingtonDC() {
       </section>
 
       {/* S5: Commercial & Government */}
-      <section className="py-16" style={{ background:"var(--brand-blue)" }}>
+      <section className="py-16" style={{ background:"#fff" }}>
         <div className="container text-center">
           <SectionHeading eyebrow="COMMERCIAL & GOVERNMENT" heading="Commercial & Government Plumbing in Washington DC" light />
           <p style={{ fontFamily:"var(--font-body)", color:"rgba(255,255,255,0.85)", fontSize:"16px", lineHeight:1.7, maxWidth:"700px", margin:"0 auto 24px" }}>
@@ -280,7 +280,7 @@ export default function WashingtonDC() {
       </section>
 
             {/* S8: FAQ */}
-      <section style={{ background: "var(--brand-blue)" }} className="py-20">
+      <section style={{ background: "#fff" }} className="py-20">
         <div className="container">
           <p style={{ fontFamily:"var(--font-display)", color:"rgba(255,255,255,0.8)", fontSize:"11px", letterSpacing:"0.25em", textTransform:"uppercase", fontWeight:700 }} className="mb-2">FREQUENTLY ASKED QUESTIONS</p>
           <h2 style={{ fontFamily:"var(--font-display)", color:"white", fontSize:"clamp(24px,3.5vw,36px)", fontWeight:700, textTransform:"uppercase", lineHeight:1.1 }} className="mb-10">Common Plumbing Questions</h2>

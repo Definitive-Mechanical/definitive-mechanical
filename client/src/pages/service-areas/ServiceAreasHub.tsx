@@ -173,7 +173,7 @@ export default function ServiceAreasHub() {
       </div>
 
       {/* Hero */}
-      <section style={{ background: 'var(--brand-blue)', padding: '64px 0 48px' }}>
+      <section style={{ background: '#fff', padding: '64px 0 48px' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '13px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'rgba(255,255,255,0.8)', marginBottom: '16px' }}>
             Licensed in Maryland  Washington DC  Virginia  Delaware
@@ -220,7 +220,7 @@ export default function ServiceAreasHub() {
       </section>
 
       {/* Trust Bar */}
-      <section style={{ background: 'var(--brand-cyan)', padding: '16px 0' }}>
+      <section style={{ background: '#fff', padding: '16px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px', justifyContent: 'center', alignItems: 'center' }}>
             {[
@@ -381,7 +381,7 @@ export default function ServiceAreasHub() {
       </section>
 
       {/* Bottom CTA */}
-      <section style={{ background: 'var(--brand-blue)', padding: '56px 0' }}>
+      <section style={{ background: '#fff', padding: '56px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: 'clamp(1.6rem,3vw,2.4rem)', marginBottom: '16px', lineHeight: 1.15 }}>
             Don't See Your City? Call Us.

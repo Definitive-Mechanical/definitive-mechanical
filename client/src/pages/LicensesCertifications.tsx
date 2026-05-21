@@ -134,7 +134,7 @@ export default function LicensesCertifications() {
       </section>
 
       {/* BUSINESS CERTIFICATIONS */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="BUSINESS CERTIFICATIONS"

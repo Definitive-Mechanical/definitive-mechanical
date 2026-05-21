@@ -265,8 +265,8 @@ export default function Tier3CityPage({
                     transition: "all 0.2s",
                   }}
                   onMouseEnter={e => {
-                    (e.currentTarget as HTMLElement).style.background = "var(--brand-cyan)";
-                    (e.currentTarget as HTMLElement).style.color = "var(--brand-navy)";
+                    (e.currentTarget as HTMLElement).style.background = "var(--brand-navy)";
+                    (e.currentTarget as HTMLElement).style.color = "white";
                   }}
                   onMouseLeave={e => {
                     (e.currentTarget as HTMLElement).style.background = "transparent";
@@ -426,7 +426,7 @@ export default function Tier3CityPage({
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                background: "var(--brand-blue)",
+                background: "var(--brand-navy)",
                 color: "white",
                 fontFamily: 'var(--font-display)',
                 fontWeight: 700,

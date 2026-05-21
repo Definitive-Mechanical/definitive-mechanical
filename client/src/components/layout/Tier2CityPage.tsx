@@ -369,7 +369,7 @@ export default function Tier2CityPage({
       )}
 
       {/* Section 7 — Bottom CTA */}
-      <section className="py-14 px-4" style={{ background: 'linear-gradient(135deg, var(--brand-blue-hover), var(--brand-blue))' }}>
+      <section className="py-14 px-4" style={{ background: 'var(--brand-navy)' }}>
         <div className="max-w-3xl mx-auto text-center">
           <p style={{ fontFamily: 'var(--font-label)' }} className="text-xs font-bold uppercase tracking-widest text-[var(--brand-cyan)] mb-3">
             LICENSED PLUMBER  SERVING {ctaCity.toUpperCase()}

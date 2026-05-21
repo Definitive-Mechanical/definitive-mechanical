@@ -96,7 +96,7 @@ function FAQItem({ q, a }: { q: string; a: string }) {
       </button>
       {open && (
         <div style={{ borderLeft: "3px solid var(--brand-cyan)", background: "rgba(0,158,198,0.08)", padding: "16px 20px", marginBottom: "8px", borderRadius: "0 6px 6px 0" }}>
-          <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.85)", fontSize: "15px", lineHeight: 1.75, margin: 0 }}>{a}</p>
+          <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.75, margin: 0 }}>{a}</p>
         </div>
       )}
     </div>
@@ -184,7 +184,7 @@ export default function Tier1CityPage({
       </section>
 
       {/* ── S2: STATS BAR — cyan band ───────────────────────────────────── */}
-      <section style={{ background: "var(--brand-cyan)", padding: "20px 0" }}>
+      <section style={{ background: "var(--paper)", padding: "20px 0" }}>
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
@@ -283,10 +283,10 @@ export default function Tier1CityPage({
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(26px,3.5vw,42px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "20px" }}>
                 Emergency Plumbing in {cityName}
               </h2>
-              <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.8)", fontSize: "16px", lineHeight: 1.75, marginBottom: "16px" }}>
+              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "16px", lineHeight: 1.75, marginBottom: "16px" }}>
                 Burst pipe, sewer backup, gas leak, no hot water — a live dispatcher answers every call around the clock. Licensed plumbing professionals dispatched — work performed under Master Plumber license. All services have a trip fee.
               </p>
-              <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.7)", fontSize: "15px", lineHeight: 1.7 }}>
+              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "15px", lineHeight: 1.7 }}>
                 We serve {cityName} and the surrounding area from our Largo, MD location. Most emergency calls are reached within 60-90 minutes.
               </p>
             </div>
@@ -344,7 +344,7 @@ export default function Tier1CityPage({
                   {credentials.map((cred, i) => (
                     <div key={i} style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", padding: "10px 14px" }}>
                       <ShieldCheck size={14} style={{ color: "var(--brand-cyan)", flexShrink: 0 }} />
-                      <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.9)", fontSize: "13px", fontWeight: 500 }}>{cred.label}</span>
+                      <span style={{ fontFamily: "var(--font-body)", color: "white", fontSize: "13px", fontWeight: 500 }}>{cred.label}</span>
                     </div>
                   ))}
                 </div>
@@ -360,15 +360,15 @@ export default function Tier1CityPage({
       </section>
 
       {/* ── S6: COMMERCIAL — dark navy, horizontal layout ───────────────── */}
-      <section style={{ background: "var(--brand-blue)", padding: "64px 0" }}>
+      <section style={{ background: "#fff", padding: "64px 0" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
             <div className="lg:col-span-2">
               <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Commercial &amp; Government</p>
-              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,36px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "16px" }}>
+              <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,36px)", color: "var(--ink)", lineHeight: 1.05, marginBottom: "16px" }}>
                 Commercial Plumbing in {cityName}
               </h2>
-              <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.8)", fontSize: "16px", lineHeight: 1.75 }}>
+              <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "16px", lineHeight: 1.75 }}>
                 Definitive Mechanical serves commercial facilities, property managers, HOAs, and government agencies in {cityName}. MDOT MBE Certified (No. 20-134), Virginia SWaM Certified (No. 815255), CAGE Code 8HCF6, NAICS 238220.
               </p>
             </div>
@@ -379,9 +379,9 @@ export default function Tier1CityPage({
                 { icon: Award, label: "MDOT MBE Certified" },
                 { icon: ShieldCheck, label: "Bonded & Insured" },
               ].map(({ icon: Icon, label }) => (
-                <div key={label} style={{ display: "flex", alignItems: "center", gap: "10px", background: "rgba(255,255,255,0.06)", borderRadius: "6px", padding: "10px 14px", border: "1px solid rgba(255,255,255,0.1)" }}>
+                <div key={label} style={{ display: "flex", alignItems: "center", gap: "10px", background: "#F7F9FA", borderRadius: "6px", padding: "10px 14px", border: "1px solid #E6E8EE" }}>
                   <Icon size={16} style={{ color: "var(--brand-cyan)", flexShrink: 0 }} />
-                  <span style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.85)", fontSize: "14px", fontWeight: 500 }}>{label}</span>
+                  <span style={{ fontFamily: "var(--font-body)", color: "var(--ink)", fontSize: "14px", fontWeight: 500 }}>{label}</span>
                 </div>
               ))}
               <Link href="/commercial-plumbing" style={{ display: "inline-flex", alignItems: "center", gap: "6px", color: "var(--brand-cyan)", fontFamily: "var(--font-body)", fontSize: "14px", fontWeight: 600, textDecoration: "none", marginTop: "4px" }}>
@@ -407,7 +407,7 @@ export default function Tier1CityPage({
             </div>
             <div className="lg:col-span-3">
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
-                <Link href={countyHubHref} style={{ fontFamily: "var(--font-body)", color: "white", fontSize: "13px", fontWeight: 600, textDecoration: "none", background: "var(--brand-blue)", borderRadius: "20px", padding: "6px 16px" }}>
+                <Link href={countyHubHref} style={{ fontFamily: "var(--font-body)", color: "white", fontSize: "13px", fontWeight: 600, textDecoration: "none", background: "var(--brand-navy)", borderRadius: "20px", padding: "6px 16px" }}>
                   {countyHubLabel} Hub
                 </Link>
                 {nearbyAreas.map((area) => (
@@ -423,15 +423,15 @@ export default function Tier1CityPage({
 
       {/* ── S8: FAQ — dark navy bg ───────────────────────────────────────── */}
       {faqs && faqs.length > 0 && (
-        <section className="py-20" style={{ background: "var(--brand-blue)" }}>
+        <section className="py-20" style={{ background: "#fff" }}>
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div>
                 <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>FAQ</p>
-                <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,34px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "16px" }}>
+                <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,34px)", color: "var(--ink)", lineHeight: 1.05, marginBottom: "16px" }}>
                   Common Questions — {cityName}
                 </h2>
-                <p style={{ fontFamily: "var(--font-body)", color: "rgba(255,255,255,0.6)", fontSize: "14px", lineHeight: 1.7 }}>
+                <p style={{ fontFamily: "var(--font-body)", color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.7 }}>
                   Have a question not listed here? Call (301) 679-5849 — a live dispatcher answers 24/7.
                 </p>
               </div>

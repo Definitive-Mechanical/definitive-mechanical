@@ -61,7 +61,7 @@ export default function EmergencyArlingtonVA() {
       </div>
 
       {/* Hero */}
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-blue) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
+      <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
         <div className="container text-center">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Arlington, VA" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: 'var(--font-label)' }}>24/7 EMERGENCY PLUMBER  ARLINGTON, VA  VA MASTER PLUMBER LICENSED</p>
@@ -117,7 +117,7 @@ export default function EmergencyArlingtonVA() {
       </section>
 
       {/* Section 4 — License Proof */}
-      <section style={{ backgroundColor: "var(--brand-blue)" }} className="py-14">
+      <section style={{ backgroundColor: "#fff" }} className="py-14">
         <div className="container">
           <SectionHeading eyebrow="LICENSE PROOF" heading="Licensed for emergency plumbing in Arlington County, Virginia" light />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mt-8">

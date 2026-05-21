@@ -49,7 +49,7 @@ export default function Financing() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 py-4 px-8 rounded transition-all hover:-translate-y-0.5"
-                  style={{ background: "var(--brand-cyan)", color: "var(--brand-blue)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
+                  style={{ background: "var(--brand-blue)", color: "white", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
                 >
                   <CreditCard size={18} />
                   APPLY FOR FINANCING
@@ -97,7 +97,7 @@ export default function Financing() {
       </section>
 
       {/* What Can Be Financed */}
-      <section className="py-20" style={{ background: "var(--brand-blue)" }}>
+      <section className="py-20" style={{ background: "#fff" }}>
         <div className="container">
           <SectionHeading eyebrow="ELIGIBLE SERVICES" heading="What plumbing services can be financed?" light />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
@@ -127,7 +127,7 @@ export default function Financing() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 py-4 px-10 rounded transition-all hover:-translate-y-0.5"
-              style={{ background: "var(--brand-cyan)", color: "var(--brand-blue)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
+              style={{ background: "#fff", color: "#fff", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.1em", textDecoration: "none" }}
             >
               <CreditCard size={20} />
               APPLY FOR FINANCING NOW

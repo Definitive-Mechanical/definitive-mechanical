@@ -139,7 +139,7 @@ export default function ResidentialPlumbing() {
       </section>
 
       {/* SECTION 3: WHY LICENSED MASTER PLUMBER */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <SectionHeading eyebrow="WHY IT MATTERS" heading="Why should homeowners choose a licensed Master Plumber?" centered light />
           <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.8)', fontSize: '16px', lineHeight: 1.7, maxWidth: '700px', margin: '0 auto 40px', textAlign: 'center' }}>
@@ -240,7 +240,7 @@ export default function ResidentialPlumbing() {
       </section>
 
       {/* FAQ */}
-      <section style={{ background: 'var(--brand-blue)', padding: '80px 0' }}>
+      <section style={{ background: '#fff', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>

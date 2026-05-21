@@ -180,7 +180,7 @@ export default function ReviewsPage() {
       </section>
 
       {/* Stats bar */}
-      <section style={{ backgroundColor: "var(--brand-cyan)" }} className="py-6">
+      <section style={{ backgroundColor: "#fff" }} className="py-6">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-white">
             {[{ num: "40", label: "Google Reviews" }, { num: "4.8", label: "Average Rating" }, { num: "13+", label: "Years in Business" }, { num: "24/7", label: "Emergency Service" }].map((s) => (
