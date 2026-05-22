@@ -144,10 +144,12 @@ export default function WaterLineRepair() {
               <p className="eyebrow mb-2">PRICING GUIDE</p>
               <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 26px)', marginBottom: '24px' }}>What does water line repair cost?</h2>
               <div style={{ background: 'white', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', marginBottom: '16px' }}>
+                <div className="table-scroll-wrapper">
                 <div style={{ background: 'var(--brand-navy)', padding: '10px 16px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>REPAIR TYPE</span>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
                 </div>
+                </div>  {/* end table-scroll-wrapper */}
                 {PRICING_ROWS.map((row, i) => (
                   <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '11px 16px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
                     <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '13px' }}>{row.type}</span>

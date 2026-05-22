@@ -69,8 +69,9 @@ export default function CityMap({ q, label, zoom = 13 }: CityMapProps) {
             title={`Map of ${q}`}
             src={src}
             width="100%"
-            height="420"
-            style={{ border: 0, display: "block" }}
+            height="300"
+            style={{ border: 0, display: "block", minHeight: "220px" }}
+            className="city-map-iframe"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -104,10 +105,11 @@ export default function CityMap({ q, label, zoom = 13 }: CityMapProps) {
               fontSize: "13px",
               textTransform: "uppercase",
               letterSpacing: "0.08em",
-              padding: "12px 24px",
+              padding: "12px clamp(12px, 4vw, 24px)",
               borderRadius: "3px",
               textDecoration: "none",
-              flexShrink: 0,
+              maxWidth: "100%",
+              boxSizing: "border-box",
             }}
           >
             CALL (301) 679-5849

@@ -640,9 +640,11 @@ export default function Home() {
             <div style={{
               background: 'white',
               borderRadius: '6px',
-              padding: '32px',
+              padding: 'clamp(16px, 4vw, 32px)',
               boxShadow: '0 2px 12px rgba(6,59,99,0.08)',
               textAlign: 'center',
+              boxSizing: 'border-box',
+              width: '100%',
             }}>
               <div style={{ background: 'var(--brand-navy)', padding: '12px 24px', borderRadius: '4px', display: 'inline-block', marginBottom: '20px' }}>
                 <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '16px', letterSpacing: '0.1em' }}>SYNCHRONY FINANCING</span>
@@ -668,7 +670,9 @@ export default function Home() {
           <div style={{
             background: 'linear-gradient(135deg, var(--brand-navy), var(--brand-blue))',
             borderRadius: '8px',
-            padding: '40px',
+            padding: 'clamp(20px, 5vw, 40px)',
+            boxSizing: 'border-box',
+            width: '100%',
           }}>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div>

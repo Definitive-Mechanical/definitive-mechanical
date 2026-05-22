@@ -404,11 +404,12 @@ export default function PriorityCityLayout({
                 {emergencyBody}
               </p>
               <a href="tel:+13016795849" style={{
-                display: "inline-flex", alignItems: "center", gap: 8,
+                display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 8,
                 background: "#dc2626", color: "white",
                 fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px",
-                textTransform: "uppercase", letterSpacing: "0.08em",
-                padding: "14px 28px", borderRadius: "2px", textDecoration: "none",
+                textTransform: "uppercase", letterSpacing: "0.06em",
+                padding: "14px clamp(14px, 4vw, 28px)", borderRadius: "2px", textDecoration: "none",
+                maxWidth: "100%", boxSizing: "border-box",
               }}>
                 <Phone size={16} /> CALL (301) 679-5849
               </a>

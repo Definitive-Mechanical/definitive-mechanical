@@ -20,25 +20,32 @@ export default function BookNowButton({
 }: BookNowButtonProps) {
   const heights = { sm: '40px', md: '48px', lg: '56px' };
   const fontSizes = { sm: '12px', md: '13px', lg: '15px' };
-  const paddings = { sm: '0 16px', md: '0 24px', lg: '0 32px' };
+  // Reduced horizontal padding so buttons don't overflow on small screens
+  const paddings = { sm: '0 12px', md: '0 18px', lg: '0 24px' };
 
   const baseStyle: React.CSSProperties = {
     fontFamily: 'var(--font-display)',
     fontWeight: 700,
     textTransform: 'uppercase',
-    letterSpacing: '0.1em',
+    letterSpacing: '0.08em',
     borderRadius: '2px',
     transition: 'all 0.3s ease',
     display: 'inline-flex',
     alignItems: 'center',
-    gap: '8px',
+    justifyContent: 'center',
+    gap: '6px',
     minHeight: heights[size],
     padding: paddings[size],
     fontSize: fontSizes[size],
     textDecoration: 'none',
     cursor: 'pointer',
     border: '2px solid transparent',
-    whiteSpace: 'nowrap' as const,
+    // Allow wrapping on mobile — no whiteSpace: nowrap
+    whiteSpace: 'normal' as const,
+    wordBreak: 'break-word' as const,
+    textAlign: 'center' as const,
+    maxWidth: '100%',
+    boxSizing: 'border-box' as const,
   };
 
   // phone variant = red ONLY when it is an actual tel: call link

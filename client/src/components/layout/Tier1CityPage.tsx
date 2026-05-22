@@ -319,7 +319,7 @@ export default function Tier1CityPage({
                   </div>
                 </div>
               ))}
-              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "#E40613", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "16px 32px", borderRadius: "6px", textDecoration: "none", marginTop: "4px", boxShadow: "0 4px 18px rgba(228,6,19,0.4)" }}>
+              <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "#E40613", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "16px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "16px clamp(14px, 4vw, 32px)", borderRadius: "6px", textDecoration: "none", marginTop: "4px", boxShadow: "0 4px 18px rgba(228,6,19,0.4)", maxWidth: "100%", boxSizing: "border-box" }}>
                 <Phone size={17} /> CALL (301) 679-5849
               </a>
             </div>

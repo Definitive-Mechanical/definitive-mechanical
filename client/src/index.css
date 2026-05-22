@@ -168,7 +168,19 @@
 /* ============================================================
    Base layer
    ============================================================ */
-/* ── City hero image responsive height ──────────────────────────────── */
+/* ── Responsive table scroll wrapper ─────────────────────────── */
+/* Wrap any fixed-column grid table in this class to enable horizontal scroll on mobile */
+.table-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 6px;
+}
+.table-scroll-wrapper > * {
+  min-width: 420px;
+}
+
+/* ── City map iframe responsive height ──────────────────────────────── */
 .city-hero-img {
   height: 200px;
   width: 100%;
@@ -188,7 +200,7 @@
     box-sizing: border-box;
   }
 
-  html {
+    html {
     font-family: var(--font-body);
     font-size: 16px;
     color: var(--ink);
@@ -196,13 +208,20 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
-
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
     font-size: var(--text-body);
     line-height: 1.6;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+  /* Prevent any element from causing horizontal overflow */
+  img, video, iframe, embed, object {
+    max-width: 100%;
+    height: auto;
   }
 
   h1, h2, h3 {
