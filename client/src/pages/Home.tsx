@@ -127,7 +127,7 @@ function HeroSection() {
 
           {/* LEFT — headline & trust signals — 3/5 */}
           <div className="lg:col-span-3">
-            <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.25em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
+            <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '15px', textTransform: 'uppercase', letterSpacing: '0.18em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>
               LICENSED PLUMBING  MARYLAND  WASHINGTON DC  NORTHERN VIRGINIA
             </p>
             <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.01em', color: 'white', fontSize: 'clamp(34px, 5vw, 64px)', lineHeight: 1.0, marginBottom: '20px' }}>
