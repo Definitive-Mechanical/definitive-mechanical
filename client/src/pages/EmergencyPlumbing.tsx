@@ -57,24 +57,7 @@ const EMERGENCY_FAQ = [
 export default function EmergencyPlumbing() {
   return (
     <>
-      {/* Emergency Top Bar */}
-      <a
-        href={`tel:${BUSINESS.phoneRaw}`}
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '8px',
-          background: 'var(--brand-cyan)',
-          padding: '12px 16px',
-          textDecoration: 'none',
-        }}
-      >
-        <Zap size={16} color="var(--brand-navy)" />
-        <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#0A0A0A' }}>
-          Plumbing Emergency? Call {BUSINESS.phone} — Live Dispatcher Answering 24/7, 365 Days
-        </span>
-      </a>
+
 
       {/* HERO */}
       <section style={{
@@ -93,7 +76,7 @@ export default function EmergencyPlumbing() {
             loading="eager"
           />
           {/* Dark navy overlay — matches homepage hero */}
-          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(3,24,56,0.93) 0%, rgba(0,75,140,0.82) 55%, rgba(0,40,90,0.88) 100%)' }} />
+          <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.50) 55%, rgba(0,0,0,0.58) 100%)' }} />
         </div>
         <div className="container py-16" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: 'Home', href: '/' }, { label: 'Emergency Plumbing' }]} />
