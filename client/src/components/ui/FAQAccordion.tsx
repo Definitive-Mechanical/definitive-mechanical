@@ -59,13 +59,13 @@ export default function FAQAccordion({ items, schema = false, variant = 'dark' }
                 }}
               >
                 <span style={{
-                  fontFamily: 'var(--font-display)',
-                  fontWeight: 700,
+                  fontFamily: 'var(--font-body)',
+                  fontWeight: 600,
                   color: isOpen ? 'var(--brand-cyan)' : (isDark ? 'white' : 'var(--brand-navy)'),
                   fontSize: '16px',
                   lineHeight: 1.4,
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.02em',
+                  textTransform: 'none',
+                  letterSpacing: '0',
                   transition: 'color 0.2s',
                 }}>
                   {item.question}

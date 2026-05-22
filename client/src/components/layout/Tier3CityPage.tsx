@@ -341,7 +341,7 @@ export default function Tier3CityPage({
           {/* Well/Septic Callout Box */}
           {wellSepticNote && (
             <div className="mt-8 bg-gray-50 border-l-4 p-5 rounded-r" style={{ borderLeftColor: "var(--brand-cyan)" }}>
-              <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
+              <h3 style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
                 About Well &amp; Septic Properties
               </h3>
               <p style={{ fontFamily: 'var(--font-body)', color: "var(--ink-2)", fontSize: "14px", lineHeight: 1.7 }}>{wellSepticNote}</p>

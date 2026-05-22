@@ -24,7 +24,7 @@ export default function CityMap({ q, label, zoom = 13 }: CityMapProps) {
         {/* Section header */}
         <div style={{ marginBottom: "24px" }}>
           <p style={{
-            fontFamily: "var(--font-display)",
+            fontFamily: "var(--font-eyebrow)",
             fontWeight: 700,
             fontSize: "11px",
             textTransform: "uppercase",

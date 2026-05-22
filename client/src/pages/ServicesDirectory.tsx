@@ -27,13 +27,6 @@ const categories = [
     note: "Live dispatcher on call around the clock. We respond in 45-75 minutes.",
     services: [
       { label: "24/7 Emergency Plumbing", href: "/emergency-plumbing/" },
-      { label: "Emergency Plumber Largo, MD", href: "/emergency-plumber-largo-md/" },
-      { label: "Emergency Plumber Bowie, MD", href: "/emergency-plumber-bowie-md/" },
-      { label: "Emergency Plumber Rockville, MD", href: "/emergency-plumber-rockville-md/" },
-      { label: "Emergency Plumber Bethesda, MD", href: "/emergency-plumber-bethesda-md/" },
-      { label: "Emergency Plumber Washington, DC", href: "/emergency-plumber-washington-dc/" },
-      { label: "Emergency Plumber Alexandria, VA", href: "/emergency-plumber-alexandria-va/" },
-      { label: "Emergency Plumber Arlington, VA", href: "/emergency-plumber-arlington-va/" },
     ],
   },
   {
@@ -90,9 +83,6 @@ const categories = [
       { label: "Backflow Prevention", href: "/backflow-prevention/" },
       { label: "Annual Backflow Certification", href: "/backflow-certification/" },
       { label: "Backflow Preventer Repair", href: "/backflow-preventer-repair/" },
-      { label: "Backflow Certification — Maryland", href: "/backflow-certification-maryland/" },
-      { label: "Backflow Certification — DC", href: "/backflow-certification-washington-dc/" },
-      { label: "Backflow Certification — Virginia", href: "/backflow-certification-virginia/" },
     ],
   },
   {
@@ -118,9 +108,6 @@ const categories = [
 
 const commercialLinks = [
   { label: "Commercial Plumbing", href: "/commercial-plumbing/" },
-  { label: "Commercial Plumber — Maryland", href: "/commercial-plumber-maryland/" },
-  { label: "Commercial Plumber — Washington DC", href: "/commercial-plumber-washington-dc/" },
-  { label: "Commercial Plumber — Northern Virginia", href: "/commercial-plumber-northern-virginia/" },
   { label: "Government & Municipal Plumbing", href: "/government-municipal-plumbing/" },
   { label: "MBE Certified Contractor — Maryland", href: "/mbe-certified-plumbing-contractor-maryland/" },
   { label: "SWaM Certified Contractor — Virginia", href: "/swam-certified-plumbing-contractor-virginia/" },
@@ -316,32 +303,7 @@ export default function ServicesDirectory() {
         secondaryBtn={{ text: "REQUEST SERVICE", href: "/contact" }}
       />
 
-      {/* Bottom CTA */}
-      <section className="bg-[#F7F9FC] py-12 px-4 border-t border-[#C0D8F0]">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-['Barlow_Condensed'] uppercase tracking-wide font-bold text-[var(--brand-navy)] text-[clamp(22px,3vw,30px)] mb-3">
-            Not Sure Which Service You Need?
-          </h2>
-          <p className="font-sans text-[var(--ink-2)] text-[17px] leading-relaxed mb-6 max-w-xl mx-auto">
-            Call us and describe what you are experiencing. We will tell you exactly what is needed and give you a written estimate before any work begins.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`tel:${PHONE}`}
-              className="inline-flex items-center justify-center gap-2 bg-[var(--brand-navy)] text-white font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[#004080] transition-colors"
-            >
-              <Phone className="w-5 h-5" />
-              CALL {PHONE_DISPLAY}
-            </a>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2 border-2 border-[var(--brand-navy)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-lg uppercase tracking-wide py-4 px-8 rounded-sm hover:bg-[var(--brand-navy)] hover:text-white transition-colors"
-            >
-              REQUEST SERVICE <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Removed duplicate CTA */}
     </>
   );
 }

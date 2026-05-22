@@ -24,10 +24,6 @@ const serviceCategories = [
     category: "EMERGENCY PLUMBING",
     services: [
       { label: "24/7 Emergency Plumbing", href: "/emergency-plumbing/" },
-      { label: "Emergency Plumber Largo, MD", href: "/emergency-plumber-largo-md/" },
-      { label: "Emergency Plumber Washington, DC", href: "/emergency-plumber-washington-dc/" },
-      { label: "Emergency Plumber Alexandria, VA", href: "/emergency-plumber-alexandria-va/" },
-      { label: "Emergency Plumber Arlington, VA", href: "/emergency-plumber-arlington-va/" },
     ],
     note: "Live dispatcher on call around the clock.",
   },
@@ -362,28 +358,11 @@ export default function AllServices() {
           </p>
           <a
             href={`tel:${PHONE}`}
-            className="inline-flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-xl uppercase tracking-wide py-5 px-10 rounded-sm hover:bg-[#00b8e6] transition-colors mb-8"
+            className="inline-flex items-center justify-center gap-2 bg-[var(--brand-cyan)] text-[var(--brand-navy)] font-['Barlow_Condensed'] font-bold text-xl uppercase tracking-wide py-5 px-10 rounded-sm hover:bg-[#00b8e6] transition-colors"
           >
             <Phone className="w-5 h-5" />
             CALL {PHONE_DISPLAY} — 24/7
           </a>
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { label: "Emergency Plumber in Largo, MD", href: "/emergency-plumber-largo-md/" },
-              { label: "Emergency Plumber in Washington, DC", href: "/emergency-plumber-washington-dc/" },
-              { label: "Emergency Plumber in Alexandria, VA", href: "/emergency-plumber-alexandria-va/" },
-              { label: "Emergency Plumber in Arlington, VA", href: "/emergency-plumber-arlington-va/" },
-              { label: "Emergency Plumber in Rockville, MD", href: "/emergency-plumber-rockville-md/" },
-            ].map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="font-['Barlow_Condensed'] font-bold text-sm uppercase tracking-wide text-[var(--brand-cyan)] border border-[var(--brand-cyan)]/40 px-4 py-2 rounded-full hover:bg-[var(--brand-cyan)]/10 transition-colors"
-              >
-                {link.label} →
-              </Link>
-            ))}
-          </div>
         </div>
       </section>
 
