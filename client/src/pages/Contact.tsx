@@ -61,17 +61,26 @@ export default function Contact() {
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "40vh" }} className="py-16">
         <div className="container">
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
-          <div className="mt-6">
-            <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
-              CONTACT US  LARGO, MD  SERVING MD, DC & NORTHERN VIRGINIA
-            </p>
-            <h1 style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "clamp(28px,4vw,44px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
-              Contact Definitive Mechanical
-            </h1>
-            <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "600px", lineHeight: 1.7 }} className="mb-6">
-              For 24/7 emergency plumbing, call (301) 679-5849 — a live dispatcher answers every call. For non-emergency service requests, use the form below and we will respond within one business day.
-            </p>
-            <TrustBadges variant="dark" badges={["24/7 Emergency Line", "Licensed Master Plumber", "MD  DC  VA  DE", "MDOT MBE Certified"]} />
+          <div className="mt-6 flex flex-col lg:flex-row items-center gap-10">
+            <div className="flex-1">
+              <p style={{ fontFamily: 'var(--font-display)', color: "var(--brand-cyan)", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 700 }} className="mb-3">
+                CONTACT US  LARGO, MD  SERVING MD, DC & NORTHERN VIRGINIA
+              </p>
+              <h1 style={{ fontFamily: 'var(--font-display)', color: "white", fontSize: "clamp(28px,4vw,44px)", fontWeight: 700, lineHeight: 1.15 }} className="mb-4">
+                Contact Definitive Mechanical
+              </h1>
+              <p style={{ fontFamily: 'var(--font-body)', color: "rgba(255,255,255,0.85)", fontSize: "17px", maxWidth: "600px", lineHeight: 1.7 }} className="mb-6">
+                For 24/7 emergency plumbing, call (301) 679-5849 — a live dispatcher answers every call. For non-emergency service requests, use the form below and we will respond within one business day.
+              </p>
+              <TrustBadges variant="dark" badges={["24/7 Emergency Line", "Licensed Master Plumber", "MD  DC  VA  DE", "MDOT MBE Certified"]} />
+            </div>
+            <div className="hidden lg:flex items-center justify-center" style={{ flexShrink: 0 }}>
+              <img
+                src="/manus-storage/definitive-mechanical-logo_855788d0.png"
+                alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
+                style={{ width: '220px', height: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.92 }}
+              />
+            </div>
           </div>
         </div>
       </section>
