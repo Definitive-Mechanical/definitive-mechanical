@@ -213,7 +213,7 @@ export default function EmergencyRockvilleMD() {
         <div className="container max-w-3xl mx-auto">
           <SectionHeading eyebrow="FAQ" heading="Emergency plumbing in Rockville, MD — common questions" />
           <div className="mt-8">
-            <FAQAccordion items={FAQ_ITEMS} schema={true} />
+            <FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" />
           </div>
         </div>
       </section>

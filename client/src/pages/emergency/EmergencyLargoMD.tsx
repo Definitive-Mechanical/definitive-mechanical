@@ -163,7 +163,7 @@ export default function EmergencyLargoMD() {
       <section className="bg-white py-20">
         <div className="container max-w-3xl mx-auto">
           <SectionHeading eyebrow="FAQ" heading="Emergency plumbing in Largo, MD — common questions" />
-          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} /></div>
+          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" /></div>
         </div>
       </section>
 

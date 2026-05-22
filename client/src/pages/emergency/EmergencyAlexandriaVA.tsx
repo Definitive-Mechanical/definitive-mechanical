@@ -59,8 +59,10 @@ export default function EmergencyAlexandriaVA() {
         </a>
       </div>
 
-      <section style={{ background: "linear-gradient(135deg, var(--brand-navy-dark) 0%, var(--brand-navy) 100%)", minHeight: "55vh" }} className="flex items-center py-16">
-        <div className="container text-center">
+      <section style={{ position: 'relative', minHeight: '55vh', overflow: 'hidden' }} className="flex items-center py-16">
+        <img src="/manus-storage/city-alexandria-va_d864f698.jpg" alt="Alexandria VA" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.50) 60%, rgba(0,0,0,0.58) 100%)' }} />
+        <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Alexandria, VA" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  ALEXANDRIA, VA  OLD TOWN & ALL NEIGHBORHOODS</p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-display)' }}>Emergency Plumber in Alexandria, VA</h1>
@@ -155,7 +157,7 @@ export default function EmergencyAlexandriaVA() {
       <section className="bg-white py-20">
         <div className="container max-w-3xl mx-auto">
           <SectionHeading eyebrow="FAQ" heading="Emergency plumbing in Alexandria, VA — common questions" />
-          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} /></div>
+          <div className="mt-8"><FAQAccordion items={FAQ_ITEMS} schema={true} variant="light" /></div>
         </div>
       </section>
 
