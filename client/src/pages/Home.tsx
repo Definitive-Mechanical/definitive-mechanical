@@ -118,7 +118,7 @@ function HeroSection() {
         style={{
           position: 'absolute',
           inset: 0,
-          background: 'linear-gradient(105deg, rgba(0,0,0,0.52) 0%, rgba(0,0,0,0.38) 55%, rgba(0,0,0,0.48) 100%)',
+          background: 'linear-gradient(105deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.50) 55%, rgba(0,0,0,0.58) 100%)',
         }}
       />
 
