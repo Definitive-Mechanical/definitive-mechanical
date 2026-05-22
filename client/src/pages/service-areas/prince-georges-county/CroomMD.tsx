@@ -34,7 +34,8 @@ export default function CroomMD() {
     ]}
     countyHubLabel="Prince George&#39;s County"
     countyHubHref="/service-areas/maryland/prince-georges-county/"
-    cityMapQuery="Croom, MD"
+    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/croom-md-AoVtcEU8QWrygKU6qjLPB4.webp"
+        cityMapQuery="Croom, MD"
     ctaCity="Croom"
     ctaLicenseLine="MD Master Plumber #96958"
   />;

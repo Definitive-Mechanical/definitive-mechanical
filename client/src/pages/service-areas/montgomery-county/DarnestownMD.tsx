@@ -24,7 +24,8 @@ The large lot sizes in Darnestown mean long lateral runs, extended water service
       nearbyAreas={[{label:"Rockville",href:"/service-areas/maryland/montgomery-county/rockville-md"},{label:"Potomac",href:"/service-areas/maryland/montgomery-county/potomac-md"},{label:"Cabin John",href:"/service-areas/maryland/montgomery-county/cabin-john-md"}]}
       countyHubLabel="Montgomery County"
       countyHubHref="/service-areas/maryland/montgomery-county"
-      cityMapQuery="Darnestown, MD"
+      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/darnestown-md-kQ8zxBZBZqEHxZNhBpoNcp.webp"
+        cityMapQuery="Darnestown, MD"
       ctaCity="Darnestown"
       ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
       schemaJson={schema}

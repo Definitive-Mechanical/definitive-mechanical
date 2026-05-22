@@ -27,7 +27,8 @@ We respond to Chevy Chase plumbing jobs with the care these properties require â
       countyHubLabel="Montgomery County"
       countyHubHref="/service-areas/maryland/montgomery-county"
       faqs={[{q:"Does Chevy Chase have its own permit requirements?",a:"Chevy Chase (unincorporated) falls under Montgomery County DPIE for permits and inspections. The incorporated village portions (Chevy Chase Village, Town of Chevy Chase) have their own municipal processes. We are familiar with all local permitting authorities in the area."},{q:"Are you licensed to work on older Chevy Chase homes with original plumbing?",a:"Yes. We work extensively in homes with galvanized supply lines, cast iron drain lines, and aging clay laterals â€” common in Chevy Chase's pre-1960 housing stock."}]}
-      cityMapQuery="Chevy Chase, MD"
+      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/chevy-chase-md-iMamYiaucvWBz8fsWvVpju.webp"
+        cityMapQuery="Chevy Chase, MD"
       ctaCity="Chevy Chase"
       ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"
       schemaJson={schema}

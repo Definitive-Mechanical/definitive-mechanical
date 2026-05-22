@@ -24,7 +24,8 @@ Large irrigation systems on Glenelg's agricultural and estate properties require
       nearbyAreas={[{label:"Clarksville",href:"/service-areas/maryland/howard-county/clarksville-md"},{label:"Ellicott City",href:"/service-areas/maryland/howard-county/ellicott-city-md"}]}
       countyHubLabel="Howard County"
       countyHubHref="/service-areas/maryland/howard-county"
-      cityMapQuery="Glenelg, MD"
+      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/glenelg-md-EkUh5FrXL9Xeo4ZS4pbYmT.webp"
+        cityMapQuery="Glenelg, MD"
       ctaCity="Glenelg"
       ctaLicenseLine="Howard County License #20020096958 | MD Master Plumber #96958"
       schemaJson={schema}

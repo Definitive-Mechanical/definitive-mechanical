@@ -33,7 +33,8 @@ export default function QueenslandMD() {
     ]}
     countyHubLabel="Prince George&#39;s County"
     countyHubHref="/service-areas/maryland/prince-georges-county/"
-    cityMapQuery="Queensland, MD"
+    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/queensland-md-RHRrggHVkoSorozHw5fyMx.webp"
+        cityMapQuery="Queensland, MD"
     ctaCity="Queensland"
     ctaLicenseLine="MD Master Plumber #96958"
   />;

@@ -34,7 +34,8 @@ export default function BrockHallMD() {
     ]}
     countyHubLabel="Prince George&#39;s County"
     countyHubHref="/service-areas/maryland/prince-georges-county/"
-    cityMapQuery="Brock Hall, MD"
+    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/brock-hall-md-YHok3boBSoCF4F4huESpjf.webp"
+        cityMapQuery="Brock Hall, MD"
     ctaCity="Brock Hall"
     ctaLicenseLine="MD Master Plumber #96958"
   />;

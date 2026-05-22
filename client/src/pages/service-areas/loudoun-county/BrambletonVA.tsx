@@ -22,7 +22,8 @@ export default function BrambletonVA() {
       nearbyAreas={[{label:"One Loudoun",href:"/service-areas/northern-virginia/loudoun-county/one-loudoun-va"},{label:"Loudoun County Hub",href:"/service-areas/northern-virginia/loudoun-county"}]}
       countyHubLabel="Loudoun County"
       countyHubHref="/service-areas/northern-virginia/loudoun-county"
-      cityMapQuery="Brambleton, VA"
+      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/brambleton-va-5RTffFwTU4fqoHQxgeSjNM.webp"
+        cityMapQuery="Brambleton, VA"
       ctaCity="Brambleton"
       ctaLicenseLine="VA Master Plumber #2710064209 | VA Class A Contractor #2705181061"
       schemaJson={schema}

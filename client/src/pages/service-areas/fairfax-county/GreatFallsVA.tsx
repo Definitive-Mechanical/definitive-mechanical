@@ -28,7 +28,8 @@ The large lot sizes mean water service line runs of 100+ feet from the main to t
       nearbyAreas={[{label:"McLean",href:"/service-areas/northern-virginia/fairfax-county/mclean-va"},{label:"Vienna",href:"/service-areas/northern-virginia/fairfax-county/vienna-va"},{label:"Springfield",href:"/service-areas/northern-virginia/fairfax-county/springfield-va"}]}
       countyHubLabel="Fairfax County"
       countyHubHref="/service-areas/northern-virginia/fairfax-county"
-      cityMapQuery="Great Falls, VA"
+      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/great-falls-va-nHvt7ZfT96zbuKbDejZ65N.webp"
+        cityMapQuery="Great Falls, VA"
       ctaCity="Great Falls"
       ctaLicenseLine="VA Master Plumber #2710064209 | VA Class A Contractor #2705181061"
       schemaJson={schema}

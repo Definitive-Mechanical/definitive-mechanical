@@ -34,7 +34,8 @@ export default function GreatFallsCrossingVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
-    cityMapQuery="Great Falls Crossing, VA"
+    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/great-falls-crossing-va-PYjieDZxVjTmt7Ft3HqNEP.webp"
+        cityMapQuery="Great Falls Crossing, VA"
     ctaCity="Great Falls Crossing"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"
   />;

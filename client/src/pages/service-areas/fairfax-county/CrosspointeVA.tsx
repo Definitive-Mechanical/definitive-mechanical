@@ -34,7 +34,8 @@ export default function CrosspointeVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
-    cityMapQuery="Crosspointe, VA"
+    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/crosspointe-va-2PVhNUb6WzXjGkBavfjZni.webp"
+        cityMapQuery="Crosspointe, VA"
     ctaCity="Crosspointe"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"
   />;

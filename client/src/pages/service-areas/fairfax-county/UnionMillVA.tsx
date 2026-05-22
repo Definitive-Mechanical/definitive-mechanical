@@ -34,7 +34,8 @@ export default function UnionMillVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
-    cityMapQuery="Union Mill, VA"
+    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/union-mill-va-FxKyReT3Awd44dbzJgZ737.webp"
+        cityMapQuery="Union Mill, VA"
     ctaCity="Union Mill"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"
   />;
