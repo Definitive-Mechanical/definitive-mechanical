@@ -4,7 +4,7 @@ export default function TravilahMD() {
     metaTitle="Plumber in Travilah, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Travilah, MD. Plumbing, water heater, gas & emergency service for Travilah estate properties. WSSC #73696. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/travilah-md/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"montgomery-county/TravilahMD"},"geo":{"@type":"GeoCoordinates","latitude":39.0629,"longitude":-77.2239}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

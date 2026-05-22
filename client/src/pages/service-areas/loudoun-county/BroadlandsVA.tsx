@@ -4,7 +4,7 @@ export default function BroadlandsVA() {
     metaTitle="Plumber in Broadlands, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Broadlands, VA. Plumbing, water heater, gas & emergency service for Broadlands. VA #2710064209. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/broadlands-va/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"loudoun-county/BroadlandsVA"},"geo":{"@type":"GeoCoordinates","latitude":39.0026,"longitude":-77.5197}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

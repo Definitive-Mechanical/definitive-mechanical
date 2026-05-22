@@ -4,7 +4,7 @@ export default function BelmontVA() {
     metaTitle="Plumber in Belmont, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Belmont, VA (Loudoun County). Plumbing, water heater, gas & emergency service. VA #2710064209. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/loudoun-county/belmont-va/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"loudoun-county/BelmontVA"},"geo":{"@type":"GeoCoordinates","latitude":38.8626,"longitude":-77.3497}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

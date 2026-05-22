@@ -4,7 +4,7 @@ export default function QueenslandMD() {
     metaTitle="Plumber in Queensland, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Queensland, MD. Emergency plumbing, water heater, drain & gas service for Queensland. MD #96958. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/queensland-md/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"prince-georges-county/QueenslandMD"},"geo":{"@type":"GeoCoordinates","latitude":38.8154,"longitude":-76.7555}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

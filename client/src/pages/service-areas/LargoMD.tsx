@@ -26,7 +26,8 @@ const SCHEMA = {
       "telephone": "+13016795849",
       "address": { "@type": "PostalAddress", "streetAddress": "9701 Apollo Drive, Suite 100", "addressLocality": "Largo", "addressRegion": "MD", "postalCode": "20774" },
       "areaServed": { "@type": "City", "name": "Largo", "sameAs": "https://en.wikipedia.org/wiki/Largo,_Maryland" },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "40" }
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "40" },
+      "geo": {"@type": "GeoCoordinates", "latitude": 38.8834, "longitude": -76.846}
     },
     { "@type": "BreadcrumbList", "itemListElement": [
       {"@type":"ListItem","position":1,"name":"Home","item":"https://definitivemechanical.com/"},

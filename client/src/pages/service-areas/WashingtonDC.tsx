@@ -22,7 +22,8 @@ const SCHEMA = {
       "name": "Definitive Mechanical",
       "telephone": "+13016795849",
       "areaServed": { "@type": "City", "name": "Washington", "sameAs": "https://en.wikipedia.org/wiki/Washington,_D.C." },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "40" }
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "40" },
+      "geo": {"@type": "GeoCoordinates", "latitude": 38.9072, "longitude": -77.0369}
     },
     { "@type": "BreadcrumbList", "itemListElement": [
       {"@type":"ListItem","position":1,"name":"Home","item":"https://definitivemechanical.com/"},

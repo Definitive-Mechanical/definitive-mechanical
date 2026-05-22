@@ -4,7 +4,7 @@ export default function WolfTrapVA() {
     metaTitle="Plumber in Wolf Trap, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Wolf Trap, VA. Plumbing, water heater, gas & emergency service for Wolf Trap. VA #2710064209. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/wolf-trap-va/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"fairfax-county/WolfTrapVA"},"geo":{"@type":"GeoCoordinates","latitude":38.9326,"longitude":-77.2697}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

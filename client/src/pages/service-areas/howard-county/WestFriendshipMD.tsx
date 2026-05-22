@@ -4,7 +4,7 @@ export default function WestFriendshipMD() {
     metaTitle="Plumber in West Friendship, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving West Friendship, MD. Plumbing, water heater, gas & emergency service. Howard County License #20020096958. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/howard-county/west-friendship-md/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"howard-county/WestFriendshipMD"},"geo":{"@type":"GeoCoordinates","latitude":39.2954,"longitude":-77.0088}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

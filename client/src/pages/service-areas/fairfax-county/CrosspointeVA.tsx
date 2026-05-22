@@ -4,7 +4,7 @@ export default function CrosspointeVA() {
     metaTitle="Plumber in Crosspointe, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Crosspointe, VA. Plumbing, water heater, gas & emergency service. VA Master Plumber #2710064209. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/crosspointe-va/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"fairfax-county/CrosspointeVA"},"geo":{"@type":"GeoCoordinates","latitude":38.7526,"longitude":-77.2197}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

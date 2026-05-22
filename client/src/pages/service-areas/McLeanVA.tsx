@@ -41,8 +41,8 @@ export default function McLeanVA() {
       <Helmet>
         <title>Plumber in McLean, VA | 24/7 Emergency Plumbing | Definitive Mechanical</title>
         <meta name="description" content="Need a licensed plumber in McLean, VA? Definitive Mechanical provides 24/7 emergency plumbing, water heater repair, drain cleaning, gas line service & backflow certification. Call (301) 679-5849." />
-        <link rel="canonical" href="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/mclean-va/" />
-      </Helmet>
+        <link rel="canonical" href="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/mclean-va/" />                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context": "https://schema.org", "@type": ["LocalBusiness", "Plumber"], "name": "Definitive Mechanical", "telephone": "+13016795849", "address": {"@type": "PostalAddress", "streetAddress": "9701 Apollo Drive, Suite 100", "addressLocality": "Largo", "addressRegion": "MD", "postalCode": "20774", "addressCountry": "US"}, "areaServed": {"@type": "City", "name": "McLean"}, "geo": {"@type": "GeoCoordinates", "latitude": 38.9339, "longitude": -77.1773}}`}} />
+        </Helmet>
 
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "60vh" }} className="py-20">
         <div className="container">

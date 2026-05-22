@@ -17,7 +17,8 @@ const schema = [
       "addressCountry": "US"
     },
     "areaServed": { "@type": "City", "name": "Woodmore, MD" },
-    "openingHours": ["Mo-Fr 09:00-17:00", "Sa 09:00-14:00"]
+    "openingHours": ["Mo-Fr 09:00-17:00", "Sa 09:00-14:00"],
+    "geo": {"@type": "GeoCoordinates", "latitude": 38.9204, "longitude": -76.7888}
   },
   {
     "@context": "https://schema.org",

@@ -4,7 +4,7 @@ export default function BrookmontMD() {
     metaTitle="Plumber in Brookmont, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Brookmont, MD. Plumbing, water heater & emergency service for Brookmont. WSSC #73696. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/brookmont-md/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"montgomery-county/BrookmontMD"},"geo":{"@type":"GeoCoordinates","latitude":38.9648,"longitude":-77.1264}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

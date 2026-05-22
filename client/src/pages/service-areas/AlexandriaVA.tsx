@@ -48,8 +48,8 @@ export default function AlexandriaVA() {
       <Helmet>
         <title>Plumber in Alexandria, VA | 24/7 Emergency Plumbing | Definitive Mechanical</title>
         <meta name="description" content="Need a licensed plumber in Alexandria, VA? Definitive Mechanical provides 24/7 emergency plumbing, water heater repair, drain cleaning, gas line service & commercial plumbing. Call (301) 679-5849." />
-        <link rel="canonical" href="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/alexandria-va/" />
-      </Helmet>
+        <link rel="canonical" href="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/alexandria-va/" />                <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{"@context": "https://schema.org", "@type": ["LocalBusiness", "Plumber"], "name": "Definitive Mechanical", "telephone": "+13016795849", "address": {"@type": "PostalAddress", "streetAddress": "9701 Apollo Drive, Suite 100", "addressLocality": "Largo", "addressRegion": "MD", "postalCode": "20774", "addressCountry": "US"}, "areaServed": {"@type": "City", "name": "Alexandria"}, "geo": {"@type": "GeoCoordinates", "latitude": 38.8048, "longitude": -77.0469}}`}} />
+        </Helmet>
 
       {/* S1: Hero */}
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "60vh" }} className="py-20">

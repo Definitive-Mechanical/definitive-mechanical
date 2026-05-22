@@ -4,7 +4,7 @@ export default function Ward4DC() {
     metaTitle="Plumber in Washington DC Ward 4 | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving DC Ward 4 (Petworth, Brightwood, 16th Street Heights, Takoma DC). DC License #PGM1002236. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/washington-dc/ward-4/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"Washington DC Ward 4"},"geo":{"@type":"GeoCoordinates","latitude":38.9576,"longitude":-77.0134}}]}
     breadcrumbs={[{label:"Home",href:"/"},{label:"Service Areas",href:"/service-areas/"},{label:"Washington DC",href:"/service-areas/washington-dc/"},{label:"Ward 4"}]}
     eyebrow="Plumber in DC Ward 4  Petworth, Brightwood, 16th Street Heights, Takoma"
     h1="Plumber in Washington DC Ward 4"

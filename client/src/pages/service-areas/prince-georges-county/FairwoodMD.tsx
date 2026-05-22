@@ -17,7 +17,8 @@ const schema = [
       "addressCountry": "US"
     },
     "areaServed": { "@type": "City", "name": "Fairwood, MD" },
-    "openingHours": ["Mo-Fr 09:00-17:00", "Sa 09:00-14:00"]
+    "openingHours": ["Mo-Fr 09:00-17:00", "Sa 09:00-14:00"],
+    "geo": {"@type": "GeoCoordinates", "latitude": 38.9154, "longitude": -76.7555}
   },
   {
     "@context": "https://schema.org",

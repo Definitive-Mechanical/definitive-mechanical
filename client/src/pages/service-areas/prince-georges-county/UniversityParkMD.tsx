@@ -4,7 +4,7 @@ export default function UniversityParkMD() {
     metaTitle="Plumber in University Park, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving University Park, MD. Plumbing, water heater, drain & emergency service. MD Master Plumber #96958 + WSSC #73696. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/university-park-md/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"prince-georges-county/UniversityParkMD"},"geo":{"@type":"GeoCoordinates","latitude":38.974,"longitude":-76.9488}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

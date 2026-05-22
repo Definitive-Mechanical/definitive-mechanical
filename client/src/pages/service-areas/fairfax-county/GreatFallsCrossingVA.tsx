@@ -4,7 +4,7 @@ export default function GreatFallsCrossingVA() {
     metaTitle="Plumber in Great Falls Crossing, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Great Falls Crossing, VA. Plumbing, water heater, gas & emergency service. VA #2710064209. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/fairfax-county/great-falls-crossing-va/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"fairfax-county/GreatFallsCrossingVA"},"geo":{"@type":"GeoCoordinates","latitude":39.0126,"longitude":-77.2797}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

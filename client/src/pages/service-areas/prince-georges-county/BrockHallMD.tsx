@@ -4,7 +4,7 @@ export default function BrockHallMD() {
     metaTitle="Plumber in Brock Hall, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Brock Hall, MD. Emergency plumbing, water heater, drain & gas service for Brock Hall. MD #96958. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/brock-hall-md/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"prince-georges-county/BrockHallMD"},"geo":{"@type":"GeoCoordinates","latitude":38.8265,"longitude":-76.8388}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

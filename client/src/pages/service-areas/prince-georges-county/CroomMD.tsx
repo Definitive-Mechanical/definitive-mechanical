@@ -4,7 +4,7 @@ export default function CroomMD() {
     metaTitle="Plumber in Croom, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Croom, MD. Emergency plumbing, water heater, drain & gas service for Croom&#39;s rural properties. MD #96958. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/prince-georges-county/croom-md/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"prince-georges-county/CroomMD"},"geo":{"@type":"GeoCoordinates","latitude":38.7765,"longitude":-76.743}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

@@ -7,7 +7,7 @@ export default function BethesdaMD() {
       metaTitle="Plumber in Bethesda, MD | 24/7 Emergency Plumbing | Definitive Mechanical"
       metaDescription="Need a licensed plumber in Bethesda, MD? Definitive Mechanical provides 24/7 emergency plumbing, water heater repair, drain cleaning, gas line service & commercial plumbing. Call (301) 679-5849."
       canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/bethesda-md/"
-      schemaJson={[]}
+      schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","url":"https://definitivemechanical.com","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Bethesda","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":38.9807,"longitude":-77.1002},"areaServed":{"@type":"City","name":"Bethesda"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"40"}}]}
       breadcrumbs={[
         { label: "Home", href: "/" },
         { label: "Service Areas", href: "/service-areas" },

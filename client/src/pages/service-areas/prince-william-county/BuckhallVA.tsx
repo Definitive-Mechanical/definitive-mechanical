@@ -4,7 +4,7 @@ export default function BuckhallVA() {
     metaTitle="Plumber in Buckhall, VA | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Buckhall, VA. Plumbing, water heater, gas & emergency service for Buckhall. VA #2710064209. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/northern-virginia/prince-william-county/buckhall-va/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"prince-william-county/BuckhallVA"},"geo":{"@type":"GeoCoordinates","latitude":38.7226,"longitude":-77.4197}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},

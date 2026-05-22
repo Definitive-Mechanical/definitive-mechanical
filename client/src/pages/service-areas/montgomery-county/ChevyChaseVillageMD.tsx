@@ -4,7 +4,7 @@ export default function ChevyChaseVillageMD() {
     metaTitle="Plumber in Chevy Chase Village, MD | Licensed Plumbing | Definitive Mechanical"
     metaDescription="Licensed plumber serving Chevy Chase Village, MD. Plumbing, water heater & emergency service for Chevy Chase Village&#39;s historic homes. MD #96958. Call (301) 679-5849."
     canonicalUrl="https://definitivemechanical.com/service-areas/maryland/montgomery-county/chevy-chase-village-md/"
-    schemaJson={[]}
+    schemaJson={[{"@context":"https://schema.org","@type":["LocalBusiness","Plumber"],"name":"Definitive Mechanical","telephone":"+13016795849","address":{"@type":"PostalAddress","streetAddress":"9701 Apollo Drive, Suite 100","addressLocality":"Largo","addressRegion":"MD","postalCode":"20774","addressCountry":"US"},"areaServed":{"@type":"City","name":"montgomery-county/ChevyChaseVillageMD"},"geo":{"@type":"GeoCoordinates","latitude":38.9882,"longitude":-77.0777}}]}
     breadcrumbs={[
       {label:"Home",href:"/"},
       {label:"Service Areas",href:"/service-areas/"},
