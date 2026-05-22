@@ -56,10 +56,6 @@ export default function Contact() {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
 
-      {/* Emergency Top Bar */}
-      <a href="tel:+13016795849" className="block w-full py-3 text-center" style={{ background: "var(--brand-cyan)", fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.1em", color: '#0A0A0A', textDecoration: "none" }}>
-         Plumbing Emergency? Call (301) 679-5849 — Live Dispatcher Answering 24/7, 365 Days
-      </a>
 
       {/* Hero */}
       <section style={{ background: "linear-gradient(135deg, var(--brand-navy) 0%, var(--brand-navy-dark) 100%)", minHeight: "40vh" }} className="py-16">
