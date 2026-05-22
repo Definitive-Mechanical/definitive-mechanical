@@ -68,7 +68,7 @@ export default function WaterLineInstallation() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WHEN IS INSTALLATION NEEDED?</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WHEN IS INSTALLATION NEEDED?</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>When is water line installation or replacement necessary?</h2>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-w-3xl mx-auto">
@@ -141,7 +141,7 @@ export default function WaterLineInstallation() {
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about water line installation in MD, DC & Northern VA</h2>
         </div>
             <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />

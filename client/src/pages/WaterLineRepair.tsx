@@ -76,7 +76,7 @@ export default function WaterLineRepair() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WARNING SIGNS</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WARNING SIGNS</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What are the warning signs of a water line problem?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Water line problems — particularly with the main service line running from the municipal connection to your home — can develop slowly or fail suddenly.</p>
         </div>
@@ -109,7 +109,7 @@ export default function WaterLineRepair() {
       <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>CAUSES</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>CAUSES</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What causes water line failure in Maryland, DC, and Virginia?</h2>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -198,7 +198,7 @@ export default function WaterLineRepair() {
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about water line repair in MD, DC & Northern VA</h2>
         </div>
             <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />

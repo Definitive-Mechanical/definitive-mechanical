@@ -87,7 +87,7 @@ export default function DrainCleaning() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>DRAIN CLEANING SERVICES</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>DRAIN CLEANING SERVICES</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What drain cleaning services does Definitive Mechanical provide?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>From kitchen and bathroom drains to main sewer line clearing and hydro-jetting, we handle the full range of drain and sewer services for residential, commercial, and government properties.</p>
         </div>
@@ -117,7 +117,7 @@ export default function DrainCleaning() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WHY CHOOSE DEFINITIVE MECHANICAL</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WHY CHOOSE DEFINITIVE MECHANICAL</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>Why choose Definitive Mechanical for drain cleaning in the DMV?</h2>
         </div>
               <div className="space-y-4">
@@ -190,7 +190,7 @@ export default function DrainCleaning() {
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Drain Cleaning Questions</h2>
         </div>
                       <FAQAccordion items={DRAIN_FAQ} schema={true} variant="dark" />

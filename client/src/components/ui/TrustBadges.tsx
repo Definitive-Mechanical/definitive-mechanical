@@ -56,7 +56,10 @@ export default function TrustBadges({ variant = 'dark', size = 'md', badges }: T
                 textTransform: 'uppercase',
                 letterSpacing: '0.08em',
                 color: variant === 'dark' ? 'rgba(255,255,255,0.9)' : 'var(--brand-navy)',
-                whiteSpace: 'nowrap',
+                whiteSpace: 'normal',
+                wordBreak: 'break-word',
+                textAlign: 'center',
+                maxWidth: '100%',
               }}
             >
               {badge.text}

@@ -131,7 +131,7 @@ export default function About() {
                 body: 'When a Definitive Mechanical technician arrives at your property, you get their name. You can call our office and ask about them. We stand behind every technician we send.',
               },
             ].map((item) => (
-              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: '32px', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', textAlign: 'center' }}>
+              <div key={item.title} style={{ background: 'white', borderRadius: '6px', padding: 'clamp(16px, 4vw, 32px)', boxShadow: '0 2px 12px rgba(6,59,99,0.08)', textAlign: 'center', boxSizing: 'border-box' }}>
                 <item.icon size={40} color="var(--brand-cyan)" style={{ margin: '0 auto 16px' }} />
                 <h3 style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: '#0A0A0A', fontSize: '17px', marginBottom: '12px' }}>{item.title}</h3>
                 <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.7 }}>{item.body}</p>
@@ -184,7 +184,7 @@ export default function About() {
               </div>
             ))}
           </div>
-          <div style={{ marginTop: '48px', padding: '32px', background: 'var(--brand-navy)', borderRadius: '6px', textAlign: 'center' }}>
+          <div style={{ marginTop: '48px', padding: 'clamp(16px, 4vw, 32px)', background: 'var(--brand-navy)', borderRadius: '6px', textAlign: 'center', boxSizing: 'border-box' }}>
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
               Every Definitive Mechanical job is performed under Master Plumber license and supervision. Our credentials are verified and current with all relevant state and local jurisdictions.
             </p>

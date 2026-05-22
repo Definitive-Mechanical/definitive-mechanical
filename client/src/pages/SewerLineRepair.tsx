@@ -70,7 +70,7 @@ export default function SewerLineRepair() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WARNING SIGNS</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WARNING SIGNS</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What are the warning signs of a sewer line problem?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Sewer line issues rarely appear without warning. Recognizing the early signs prevents a manageable repair from becoming a major excavation.</p>
         </div>
@@ -109,7 +109,7 @@ export default function SewerLineRepair() {
       <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>COMMON CAUSES</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>COMMON CAUSES</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What causes sewer line damage in Maryland, DC, and Virginia?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Understanding the cause of sewer line failure helps explain why some repairs are straightforward and others are more complex.</p>
         </div>
@@ -201,7 +201,7 @@ export default function SewerLineRepair() {
       <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR COSTS</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>REPAIR COSTS</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What does sewer line repair cost in Maryland, DC, or Virginia?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>Sewer line repair cost varies significantly based on the repair type, depth, access, and length of pipe affected.</p>
         </div>
@@ -249,7 +249,7 @@ export default function SewerLineRepair() {
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about sewer line repair in MD, DC & Northern VA</h2>
         </div>
             <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />

@@ -151,7 +151,7 @@ export default function EmergencyPlumbing() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>EMERGENCY SITUATIONS</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>EMERGENCY SITUATIONS</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What qualifies as a plumbing emergency?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>A plumbing emergency is any situation that poses an immediate risk to your property, safety, or water supply — problems that cannot safely wait until the next business day.</p>
         </div>
@@ -187,7 +187,7 @@ export default function EmergencyPlumbing() {
       <section style={{ background: '#F0F5FA', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>OUR EMERGENCY PROCESS</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>OUR EMERGENCY PROCESS</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>How quickly does Definitive Mechanical respond to plumbing emergencies?</h2>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.75, marginBottom: '32px', maxWidth: '640px' }}>We answer every emergency call with a live dispatcher — not a voicemail, not an after-hours recording. We dispatch licensed technicians across our full MD, DC, and Northern VA service area 24/7/365 — including weekends, holidays, and severe weather.</p>
         </div>
@@ -279,7 +279,7 @@ export default function EmergencyPlumbing() {
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>EMERGENCY SERVICE AREA</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>EMERGENCY SERVICE AREA</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>Where does Definitive Mechanical provide 24/7 emergency plumbing?</h2>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -306,7 +306,7 @@ export default function EmergencyPlumbing() {
       <section style={{ background: 'var(--brand-navy)', padding: '80px 0' }}>
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
-          <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
+          <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Emergency Plumbing Questions</h2>
         </div>
                       <FAQAccordion items={EMERGENCY_FAQ} schema={true} variant="dark" />

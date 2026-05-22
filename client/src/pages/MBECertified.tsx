@@ -188,7 +188,7 @@ export default function MBECertified() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>SCOPE OF WORK</p>
+              <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>SCOPE OF WORK</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", textTransform: "uppercase", color: "white", lineHeight: 1.1, marginBottom: 16 }}>
                 What we do for government and institutional clients
               </h2>

@@ -164,7 +164,7 @@ function HeroSection() {
                   <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                   {/* Name + Phone */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '8px' }}>
                     <div>
                       <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '4px' }}>Full Name <span style={{ color: '#E40613' }}>*</span></label>
                       <input type="text" required placeholder="Your full name" value={formData.name} onChange={e => setFormData(p => ({ ...p, name: e.target.value }))}
@@ -185,7 +185,7 @@ function HeroSection() {
                   </div>
 
                   {/* Service + City */}
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                  <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '8px' }}>
                     <div>
                       <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '4px' }}>Service Needed <span style={{ color: '#E40613' }}>*</span></label>
                       <select required value={formData.service} onChange={e => setFormData(p => ({ ...p, service: e.target.value }))}
@@ -458,11 +458,13 @@ export default function Home() {
           <div style={{
             background: 'white',
             borderRadius: '6px',
-            padding: '24px 32px',
+            padding: 'clamp(16px, 4vw, 24px) clamp(16px, 4vw, 32px)',
             border: '1px solid #E8EFF5',
             textAlign: 'center',
             maxWidth: '800px',
             margin: '0 auto',
+            boxSizing: 'border-box',
+            width: '100%',
           }}>
             <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: '16px', marginBottom: '12px' }}>
               "We explain what we find, what your options are, and what each one costs — before we touch a wrench."

@@ -281,7 +281,7 @@ export default function Tier3CityPage({
       <section className="py-20 bg-white">
         <div className="container">
           <div style={{ marginBottom: "32px" }}>
-            <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
+            <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,34px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.05, margin: 0 }}>
                 {servicesHeading || `Plumbing Services in ${schemaCity}`}

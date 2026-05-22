@@ -227,7 +227,7 @@ export default function ServicePageLayout({
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
             {/* Left label */}
             <div className="lg:col-span-1">
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
+              <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
                 {servicesEyebrow || "Services"}
               </p>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px, 3vw, 34px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.05, marginBottom: "16px" }}>
@@ -283,7 +283,7 @@ export default function ServicePageLayout({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Left — checklist */}
             <div>
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
+              <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
                 Why Choose Us
               </p>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px, 3vw, 38px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "24px" }}>
@@ -343,7 +343,7 @@ export default function ServicePageLayout({
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
               <div>
-                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
+                <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
                   How It Works
                 </p>
                 <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px, 3vw, 34px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.05, marginBottom: "16px" }}>
@@ -380,7 +380,7 @@ export default function ServicePageLayout({
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div>
-                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
+                <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>
                   FAQ
                 </p>
                 <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px, 3vw, 34px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "16px" }}>

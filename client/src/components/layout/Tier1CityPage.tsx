@@ -151,10 +151,10 @@ export default function Tier1CityPage({
                 {introParagraph}
               </p>
               <div className="flex flex-wrap gap-4">
-                <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "white", color: '#0A0A0A', fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(0,0,0,0.15)" }}>
+                <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "white", color: '#0A0A0A', fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px clamp(14px, 4vw, 28px)", borderRadius: "6px", textDecoration: "none", boxShadow: "0 4px 14px rgba(0,0,0,0.15)", maxWidth: "100%", boxSizing: "border-box" }}>
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
-                <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: "8px", background: "transparent", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px 28px", borderRadius: "6px", border: "2px solid rgba(255,255,255,0.35)", textDecoration: "none" }}>
+                <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: "8px", background: "transparent", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "15px", textTransform: "uppercase", letterSpacing: "0.06em", padding: "14px clamp(14px, 4vw, 28px)", borderRadius: "6px", border: "2px solid rgba(255,255,255,0.35)", textDecoration: "none", maxWidth: "100%", boxSizing: "border-box" }}>
                   REQUEST SERVICE <ArrowRight size={16} />
                 </Link>
               </div>
@@ -220,7 +220,7 @@ export default function Tier1CityPage({
         <div className="container">
           {/* Heading above the grid */}
           <div style={{ marginBottom: "40px" }}>
-            <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
+            <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Services</p>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.05, margin: 0 }}>
                 Plumbing Services in {cityName}
@@ -332,7 +332,7 @@ export default function Tier1CityPage({
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Local Knowledge</p>
+              <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Local Knowledge</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,36px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.05, marginBottom: "20px" }}>
                 {localContextHeading}
               </h2>
@@ -348,7 +348,7 @@ export default function Tier1CityPage({
             {/* Right — credentials on navy card */}
             <div>
               <div style={{ background: "var(--brand-navy)", borderRadius: "12px", padding: "28px", boxShadow: "0 8px 32px rgba(6,59,99,0.2)" }}>
-                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Licenses &amp; Certifications</p>
+                <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Licenses &amp; Certifications</p>
                 <h3 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "20px", textTransform: "uppercase", color: "white", lineHeight: 1.1, marginBottom: "20px" }}>
                   {licenseHeading}
                 </h3>
@@ -376,7 +376,7 @@ export default function Tier1CityPage({
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
             <div className="lg:col-span-2">
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Commercial &amp; Government</p>
+              <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Commercial &amp; Government</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,36px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "16px" }}>
                 Commercial Plumbing in {cityName}
               </h2>
@@ -417,7 +417,7 @@ export default function Tier1CityPage({
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
             <div>
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Coverage</p>
+              <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>Coverage</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(20px,2.5vw,28px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.1, marginBottom: "12px" }}>
                 Nearby Areas We Serve
               </h2>
@@ -447,7 +447,7 @@ export default function Tier1CityPage({
           <div className="container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div>
-                <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>FAQ</p>
+                <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: "8px" }}>FAQ</p>
                 <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,34px)", textTransform: "uppercase", color: "white", lineHeight: 1.05, marginBottom: "16px" }}>
                   Common Questions — {cityName}
                 </h2>

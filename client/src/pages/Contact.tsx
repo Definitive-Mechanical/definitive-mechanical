@@ -170,7 +170,7 @@ export default function Contact() {
                     <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                     {/* Name + Phone */}
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '10px' }}>
                       <div>
                         <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '5px' }}>Full Name <span style={{ color: '#E40613' }}>*</span></label>
                         <input type="text" name="name" required placeholder="Your full name" value={form.name} onChange={handleChange}
@@ -191,7 +191,7 @@ export default function Contact() {
                     </div>
 
                     {/* Service + City */}
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '10px' }}>
                       <div>
                         <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '5px' }}>Service Needed <span style={{ color: '#E40613' }}>*</span></label>
                         <select name="service" required value={form.service} onChange={handleChange}

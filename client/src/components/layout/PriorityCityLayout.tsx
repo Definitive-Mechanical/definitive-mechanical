@@ -227,21 +227,23 @@ export default function PriorityCityLayout({
               {/* CTAs */}
               <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginBottom: 28 }}>
                 <a href="tel:+13016795849" style={{
-                  display: "inline-flex", alignItems: "center", gap: 8,
+                  display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 8,
                   background: "var(--brand-blue)", color: "white",
                   fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px",
-                  textTransform: "uppercase", letterSpacing: "0.08em",
-                  padding: "14px 28px", borderRadius: "2px", textDecoration: "none",
+                  textTransform: "uppercase", letterSpacing: "0.06em",
+                  padding: "14px clamp(14px, 4vw, 28px)", borderRadius: "2px", textDecoration: "none",
                   transition: "background 150ms ease",
+                  maxWidth: "100%", boxSizing: "border-box",
                 }}>
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
                 <Link href="/contact" style={{
-                  display: "inline-flex", alignItems: "center", gap: 8,
+                  display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 8,
                   border: "1px solid rgba(255,255,255,0.4)", color: "white",
                   fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px",
-                  textTransform: "uppercase", letterSpacing: "0.08em",
-                  padding: "14px 28px", borderRadius: "2px", textDecoration: "none",
+                  textTransform: "uppercase", letterSpacing: "0.06em",
+                  padding: "14px clamp(14px, 4vw, 28px)", borderRadius: "2px", textDecoration: "none",
+                  maxWidth: "100%", boxSizing: "border-box",
                 }}>
                   REQUEST SERVICE
                 </Link>
@@ -314,7 +316,7 @@ export default function PriorityCityLayout({
         <div className="container">
           {/* Heading above the grid */}
           <div style={{ marginBottom: "36px" }}>
-            <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
+            <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
               {servicesEyebrow || "LICENSED PLUMBING SERVICES"}
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", alignItems: "flex-end", justifyContent: "space-between", gap: "16px" }}>
@@ -437,7 +439,7 @@ export default function PriorityCityLayout({
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
             {/* Left: local context cards */}
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
+              <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
                 {localContextEyebrow || "LOCAL PLUMBING NEEDS"}
               </p>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.1, marginBottom: 20 }}>
@@ -497,7 +499,7 @@ export default function PriorityCityLayout({
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
             {/* Left: copy */}
             <div className="lg:col-span-3">
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
+              <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
                 COMMERCIAL & GOVERNMENT
               </p>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(24px,3vw,36px)", textTransform: "uppercase", color: "white", lineHeight: 1.1, marginBottom: 16 }}>
@@ -567,7 +569,7 @@ export default function PriorityCityLayout({
       {/* ── S7: NEARBY AREAS ─────────────────────────────────────────────── */}
       <section className="py-16" style={{ background: "white" }}>
         <div className="container">
-          <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
+          <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>
             NEARBY SERVICE AREAS
           </p>
           <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(20px,2.5vw,28px)", textTransform: "uppercase", color: '#0A0A0A', lineHeight: 1.1, marginBottom: 20 }}>
@@ -612,7 +614,7 @@ export default function PriorityCityLayout({
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div>
-              <p style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>FAQ</p>
+              <p style={{ fontFamily: "var(--font-eyebrow)", fontWeight: 700, fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.2em", color: "var(--brand-cyan)", marginBottom: 8 }}>FAQ</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "clamp(22px,3vw,32px)", textTransform: "uppercase", color: "white", lineHeight: 1.1, marginBottom: 16 }}>
                 {faqHeading || "Frequently Asked Questions"}
               </h2>

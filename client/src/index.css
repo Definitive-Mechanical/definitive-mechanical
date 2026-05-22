@@ -168,6 +168,7 @@
 /* ============================================================
    Base layer
    ============================================================ */
+<<<<<<< Updated upstream
 /* ── Responsive table scroll wrapper ─────────────────────────── */
 /* Wrap any fixed-column grid table in this class to enable horizontal scroll on mobile */
 .table-scroll-wrapper {
@@ -181,6 +182,19 @@
 }
 
 /* ── City map iframe responsive height ──────────────────────────────── */
+=======
+/* ── City map iframe responsive height ─────────────────────────────── */
+.city-map-iframe {
+  height: 260px;
+}
+@media (min-width: 768px) {
+  .city-map-iframe {
+    height: 420px;
+  }
+}
+
+/* ── City hero image responsive height ──────────────────────────────── */
+>>>>>>> Stashed changes
 .city-hero-img {
   height: 200px;
   width: 100%;
