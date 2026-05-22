@@ -24,7 +24,7 @@ The neighborhood's embassy corridor along Massachusetts Avenue NW presents comme
       nearbyAreas={[{label:"Georgetown",href:"/service-areas/washington-dc/georgetown"},{label:"Capitol Hill",href:"/service-areas/washington-dc/capitol-hill"},{label:"NoMa",href:"/service-areas/washington-dc/noma"},{label:"Washington DC Hub",href:"/service-areas/washington-dc"}]}
       countyHubLabel="Washington DC"
       countyHubHref="/service-areas/washington-dc"
-      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/dupont-circle-dc-Xsf2j3Pnb8hCW6tspTXytF.webp"
+      heroImage="/images/dupont-circle-dc-Xsf2j3Pnb8hCW6tspTXytF.webp"
         cityMapQuery="Dupont Circle, Washington DC"
       ctaCity="Dupont Circle"
       ctaLicenseLine="DC Master Plumber/Gasfitter #PGM1002236"

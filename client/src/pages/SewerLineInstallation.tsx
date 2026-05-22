@@ -48,7 +48,7 @@ export default function SewerLineInstallation() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-sewer-line-installation_5ef0c622.webp"
+            src="/images/service-sewer-line-installation.webp"
             alt="Sewer line installation Maryland DC Northern Virginia"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

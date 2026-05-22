@@ -35,7 +35,7 @@ export default function WaterLineInstallation() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-water-line-repair_19c1bddd.webp"
+            src="/images/service-water-line-repair.webp"
             alt="Water line installation Maryland DC Northern Virginia"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

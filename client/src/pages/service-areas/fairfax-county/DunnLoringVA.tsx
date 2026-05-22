@@ -34,7 +34,7 @@ export default function DunnLoringVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/dunn-loring-va-AZ9V9f6GnhyguXGpwEJZr3.webp"
+    heroImage="/images/dunn-loring-va-AZ9V9f6GnhyguXGpwEJZr3.webp"
         cityMapQuery="Dunn Loring, VA"
     ctaCity="Dunn Loring"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"

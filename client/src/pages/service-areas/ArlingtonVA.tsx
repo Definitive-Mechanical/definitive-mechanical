@@ -71,7 +71,7 @@ export default function ArlingtonVA() {
               </div>
             </div>
             <div className="block">
-              <img src="/manus-storage/city-arlington-va_bf10f6ae.jpg" alt="Licensed plumber Arlington Virginia 24/7 emergency — VA Master Plumber #2710064209" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-arlington-va.jpg" alt="Licensed plumber Arlington Virginia 24/7 emergency — VA Master Plumber #2710064209" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

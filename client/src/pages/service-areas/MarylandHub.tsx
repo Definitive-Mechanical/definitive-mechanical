@@ -96,7 +96,7 @@ export default function MarylandHub() {
       {/* Hero */}
       <section style={{ position: 'relative', padding: '80px 0 64px', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center' }}>
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/hub-maryland-fNjmenZ5ppBTF8B5kUjTVP.webp"
+          src="/images/hub-maryland-fNjmenZ5ppBTF8B5kUjTVP.webp"
           alt="Maryland Bethesda Silver Spring cityscape at dusk with Chesapeake Bay"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 45%' }}
         />

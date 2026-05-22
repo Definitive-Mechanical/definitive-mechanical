@@ -34,7 +34,7 @@ export default function ChevyChaseViewMD() {
     ]}
     countyHubLabel="Montgomery County"
     countyHubHref="/service-areas/maryland/montgomery-county/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/chevy-chase-view-md-nKkdrF6JTyWhzETWfigSNW.webp"
+    heroImage="/images/chevy-chase-view-md-nKkdrF6JTyWhzETWfigSNW.webp"
         cityMapQuery="Chevy Chase View, MD"
     ctaCity="Chevy Chase View"
     ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"

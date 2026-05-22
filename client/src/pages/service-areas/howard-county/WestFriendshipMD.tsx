@@ -34,7 +34,7 @@ export default function WestFriendshipMD() {
     ]}
     countyHubLabel="Howard County"
     countyHubHref="/service-areas/maryland/howard-county/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/west-friendship-md-bsCXe8rdvzynawayhQLq2U.webp"
+    heroImage="/images/west-friendship-md-bsCXe8rdvzynawayhQLq2U.webp"
         cityMapQuery="West Friendship, MD"
     ctaCity="West Friendship"
     ctaLicenseLine="Howard County License #20020096958 | MD Master Plumber #96958"

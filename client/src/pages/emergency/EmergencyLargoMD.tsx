@@ -60,7 +60,7 @@ export default function EmergencyLargoMD() {
       </div>
 
       <section style={{ position: 'relative', minHeight: '55vh', overflow: 'hidden' }} className="flex items-center py-16">
-        <img src="/manus-storage/city-largo-md_cd50637f.jpg" alt="Largo MD" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }} />
+        <img src="/images/city-largo-md.jpg" alt="Largo MD" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.80) 60%, rgba(0,0,0,0.85) 100%)' }} />
         <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Largo MD" }]} />

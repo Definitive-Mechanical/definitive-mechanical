@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100" width="280" height="100">
+  <rect x="1" y="1" width="278" height="98" rx="8" fill="#FFFFFF" stroke="#E6E8EE" stroke-width="1.5"></rect>
+  
+  <g fill="#E89D1A" transform="translate(70, 22)">
+    <path d="M14 0 L17.1 8.7 L26.3 8.7 L18.9 14.5 L22.0 23.2 L14 17.7 L6.0 23.2 L9.1 14.5 L1.7 8.7 L10.9 8.7 Z"></path>
+    <g transform="translate(28,0)"><path d="M14 0 L17.1 8.7 L26.3 8.7 L18.9 14.5 L22.0 23.2 L14 17.7 L6.0 23.2 L9.1 14.5 L1.7 8.7 L10.9 8.7 Z"></path></g>
+    <g transform="translate(56,0)"><path d="M14 0 L17.1 8.7 L26.3 8.7 L18.9 14.5 L22.0 23.2 L14 17.7 L6.0 23.2 L9.1 14.5 L1.7 8.7 L10.9 8.7 Z"></path></g>
+    <g transform="translate(84,0)"><path d="M14 0 L17.1 8.7 L26.3 8.7 L18.9 14.5 L22.0 23.2 L14 17.7 L6.0 23.2 L9.1 14.5 L1.7 8.7 L10.9 8.7 Z"></path></g>
+    <g transform="translate(112,0)"><path d="M14 0 L17.1 8.7 L26.3 8.7 L18.9 14.5 L22.0 23.2 L14 17.7 L6.0 23.2 L9.1 14.5 L1.7 8.7 L10.9 8.7 Z"></path></g>
+  </g>
+  <text x="140" y="70" font-family="&#39;Public Sans&#39;,&#39;Helvetica&#39;,sans-serif" font-size="14" font-weight="700" fill="#1A1A2E" text-anchor="middle">4.8 ON GOOGLE</text>
+  <text x="140" y="86" font-family="&#39;Public Sans&#39;,&#39;Helvetica&#39;,sans-serif" font-size="11" font-weight="600" letter-spacing="2" fill="#4A4F66" text-anchor="middle">40+ VERIFIED REVIEWS</text>
+</svg>

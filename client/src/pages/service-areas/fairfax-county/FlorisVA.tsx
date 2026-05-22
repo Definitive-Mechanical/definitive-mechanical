@@ -35,7 +35,7 @@ export default function FlorisVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/floris-va-9NiY9MxpsMZps44fme5mPU.webp"
+    heroImage="/images/floris-va-9NiY9MxpsMZps44fme5mPU.webp"
         cityMapQuery="Floris, VA"
     ctaCity="Floris"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"

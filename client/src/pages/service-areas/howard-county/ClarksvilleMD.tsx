@@ -23,7 +23,7 @@ export default function ClarksvilleMD() {
       nearbyAreas={[{label:"Ellicott City",href:"/service-areas/maryland/howard-county/ellicott-city-md"},{label:"Glenelg",href:"/service-areas/maryland/howard-county/glenelg-md"},{label:"Rockville",href:"/service-areas/maryland/montgomery-county/rockville-md"}]}
       countyHubLabel="Howard County"
       countyHubHref="/service-areas/maryland/howard-county"
-      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/clarksville-md-3ZDzGYHU8kjNd3W6qmBuEK.webp"
+      heroImage="/images/clarksville-md-3ZDzGYHU8kjNd3W6qmBuEK.webp"
         cityMapQuery="Clarksville, MD"
       ctaCity="Clarksville"
       ctaLicenseLine="Howard County License #20020096958 | MD Master Plumber #96958"

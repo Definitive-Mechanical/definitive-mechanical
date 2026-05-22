@@ -71,7 +71,7 @@ export default function EllicottCityMD() {
               </div>
             </div>
             <div className="block">
-              <img src="/manus-storage/city-ellicott-city-md_a521a00c.jpg" alt="Licensed plumber Ellicott City Maryland — Howard County Master Plumber #PGM1002236" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-ellicott-city-md.jpg" alt="Licensed plumber Ellicott City Maryland — Howard County Master Plumber #PGM1002236" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

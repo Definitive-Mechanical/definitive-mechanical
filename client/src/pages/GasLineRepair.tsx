@@ -40,7 +40,7 @@ export default function GasLineRepair() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-gas-line-repair_ba3ce19e.webp"
+            src="/images/service-gas-line-repair.webp"
             alt="Gas line repair Maryland DC Northern Virginia — Licensed Master Gasfitter"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

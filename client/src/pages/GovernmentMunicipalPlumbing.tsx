@@ -43,7 +43,7 @@ export default function GovernmentMunicipalPlumbing() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-commercial-plumbing_9b61a6cf.webp"
+            src="/images/service-commercial-plumbing.webp"
             alt="Government and municipal plumbing Maryland DC Northern Virginia — MDOT MBE Certified"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

@@ -38,7 +38,7 @@ export default function GasLineInstallation() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-gas-line-installation_15ea462f.webp"
+            src="/images/service-gas-line-installation.webp"
             alt="Gas line installation Maryland DC Northern Virginia — Licensed Master Gasfitter"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

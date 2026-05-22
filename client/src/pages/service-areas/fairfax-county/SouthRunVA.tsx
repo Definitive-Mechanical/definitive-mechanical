@@ -34,7 +34,7 @@ export default function SouthRunVA() {
     ]}
     countyHubLabel="Fairfax County"
     countyHubHref="/service-areas/northern-virginia/fairfax-county/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/south-run-va-bwcLBFtwyepoZeuXqhvKAi.webp"
+    heroImage="/images/south-run-va-bwcLBFtwyepoZeuXqhvKAi.webp"
         cityMapQuery="South Run, VA"
     ctaCity="South Run"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"

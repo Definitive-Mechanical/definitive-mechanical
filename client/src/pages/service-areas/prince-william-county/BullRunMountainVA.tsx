@@ -34,7 +34,7 @@ export default function BullRunMountainVA() {
     ]}
     countyHubLabel="Prince William County"
     countyHubHref="/service-areas/northern-virginia/prince-william-county/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/bull-run-mountain-va-TnJFLYm9ZE2w4JhKoedg6d.webp"
+    heroImage="/images/bull-run-mountain-va-TnJFLYm9ZE2w4JhKoedg6d.webp"
         cityMapQuery="Bull Run Mountain, VA"
     ctaCity="Bull Run Mountain Estates"
     ctaLicenseLine="VA Master Plumber #2710064209 | SWaM Certified"

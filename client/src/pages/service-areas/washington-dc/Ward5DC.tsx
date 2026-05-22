@@ -18,7 +18,7 @@ export default function Ward5DC() {
     nearbyAreas={[{label:"Ward 4",href:"/service-areas/washington-dc/ward-4/"},{label:"Ward 6",href:"/service-areas/washington-dc/ward-6/"},{label:"Noma DC",href:"/service-areas/washington-dc/noma/"}]}
     countyHubLabel="All DC Wards"
     countyHubHref="/service-areas/washington-dc/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/ward5-dc-7CC6H5iW4XYUeSEujR8Wzc.webp"
+    heroImage="/images/ward5-dc-7CC6H5iW4XYUeSEujR8Wzc.webp"
         cityMapQuery="Ward 5, Washington DC"
     ctaCity="DC Ward 5"
     ctaLicenseLine="DC License #PGM1002236 | MD Master Plumber #96958"

@@ -22,7 +22,7 @@ export default function NavyYardDC() {
       nearbyAreas={[{label:"Capitol Hill",href:"/service-areas/washington-dc/capitol-hill"},{label:"NoMa",href:"/service-areas/washington-dc/noma"},{label:"Washington DC Hub",href:"/service-areas/washington-dc"}]}
       countyHubLabel="Washington DC"
       countyHubHref="/service-areas/washington-dc"
-      heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/navy-yard-dc-9qQPvHoTtuBDGMnf6B8bUr.webp"
+      heroImage="/images/navy-yard-dc-9qQPvHoTtuBDGMnf6B8bUr.webp"
         cityMapQuery="Navy Yard, Washington DC"
       ctaCity="Navy Yard"
       ctaLicenseLine="DC Master Plumber/Gasfitter #PGM1002236"

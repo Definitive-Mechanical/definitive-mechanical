@@ -18,7 +18,7 @@ export default function Ward7DC() {
     nearbyAreas={[{label:"Ward 6",href:"/service-areas/washington-dc/ward-6/"},{label:"Ward 8",href:"/service-areas/washington-dc/ward-8/"},{label:"Largo",href:"/service-areas/maryland/prince-georges-county/largo-md/"}]}
     countyHubLabel="All DC Wards"
     countyHubHref="/service-areas/washington-dc/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/ward7-dc-fBgSkHnggLLp8g2H4L3H8S.webp"
+    heroImage="/images/ward7-dc-fBgSkHnggLLp8g2H4L3H8S.webp"
         cityMapQuery="Ward 7, Washington DC"
     ctaCity="DC Ward 7"
     ctaLicenseLine="DC License #PGM1002236 | MD Master Plumber #96958"

@@ -88,7 +88,7 @@ export default function BoilerFurnaceInstallation() {
         {/* Full-bleed background photo */}
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <img
-            src="/manus-storage/service-boiler-repair_ac413440.webp"
+            src="/images/service-boiler-repair.webp"
             alt="Boiler and furnace installation Maryland DC Northern Virginia"
             style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', display: 'block' }}
             loading="eager"

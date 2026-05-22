@@ -71,7 +71,7 @@ export default function WaldorfMD() {
               </div>
             </div>
             <div className="block">
-              <img src="/manus-storage/city-waldorf-md_50494f73.jpg" alt="Licensed plumber Waldorf Maryland — Definitive Mechanical" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-waldorf-md.jpg" alt="Licensed plumber Waldorf Maryland — Definitive Mechanical" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

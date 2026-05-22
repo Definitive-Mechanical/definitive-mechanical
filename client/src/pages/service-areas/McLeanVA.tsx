@@ -71,7 +71,7 @@ export default function McLeanVA() {
               </div>
             </div>
             <div className="block">
-              <img src="/manus-storage/city-mclean-va_c5580aa2.jpg" alt="Licensed plumber McLean Virginia — VA Master Plumber #2710064209 estate home service" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-mclean-va.jpg" alt="Licensed plumber McLean Virginia — VA Master Plumber #2710064209 estate home service" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

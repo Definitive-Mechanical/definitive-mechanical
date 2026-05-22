@@ -13,12 +13,12 @@ interface TrustBadgesProps {
 
 const ALL_BADGES = [
   { key: 'black-owned', text: 'Licensed Black Owned', alt: 'Licensed Black Owned Business' },
-  { key: 'mdot-mbe', src: '/manus-storage/mdot-mbe_6828ed58.svg', alt: 'MDOT MBE Certified — Minority Business Enterprise' },
-  { key: 'va-swam', src: '/manus-storage/va-swam_8af52c17.svg', alt: 'Virginia SWaM — Small Women-Owned Minority Business' },
-  { key: 'cage', src: '/manus-storage/cage_583d6988.svg', alt: 'Federal CAGE Code 8HCF6' },
-  { key: 'google-reviews', src: '/manus-storage/google-reviews_bff3e9fc.svg', alt: '4.8 on Google — 40+ Verified Reviews' },
-  { key: 'years', src: '/manus-storage/years_b9ac7de5.svg', alt: '11 Years Serving the DMV' },
-  { key: 'dmv', src: '/manus-storage/dmv_30e2ff57.svg', alt: 'Serving MD  DC  VA' },
+  { key: 'mdot-mbe', src: '/images/mdot-mbe.svg', alt: 'MDOT MBE Certified — Minority Business Enterprise' },
+  { key: 'va-swam', src: '/images/va-swam.svg', alt: 'Virginia SWaM — Small Women-Owned Minority Business' },
+  { key: 'cage', src: '/images/cage.svg', alt: 'Federal CAGE Code 8HCF6' },
+  { key: 'google-reviews', src: '/images/google-reviews.svg', alt: '4.8 on Google — 40+ Verified Reviews' },
+  { key: 'years', src: '/images/years.svg', alt: '11 Years Serving the DMV' },
+  { key: 'dmv', src: '/images/dmv.svg', alt: 'Serving MD  DC  VA' },
 ];
 
 export default function TrustBadges({ variant = 'dark', size = 'md', badges }: TrustBadgesProps) {

@@ -34,7 +34,7 @@ export default function BrookmontMD() {
     ]}
     countyHubLabel="Montgomery County"
     countyHubHref="/service-areas/maryland/montgomery-county/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/brookmont-md-gBZi2o4ppLPR5eex5GB8gt.webp"
+    heroImage="/images/brookmont-md-gBZi2o4ppLPR5eex5GB8gt.webp"
         cityMapQuery="Brookmont, MD"
     ctaCity="Brookmont"
     ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <defs>
+    <radialGradient id="dropK" cx="0.35" cy="0.3" r="0.75">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="40%" stop-color="#cfe6f5"></stop>
+      <stop offset="100%" stop-color="#7CC8F0"></stop>
+    </radialGradient>
+  </defs>
+  <g transform="translate(8, 8)">
+    <path d="M32 0 C32 0 4 28 4 46 C4 60 16 70 32 70 C48 70 60 60 60 46 C60 28 32 0 32 0 Z" fill="url(#dropK)"></path>
+    <circle cx="32" cy="46" r="20" fill="#063B63"></circle>
+    <path d="M24 34 L24 58 L34 58 C40 58 44 53 44 46 C44 39 40 34 34 34 Z M30 39 L33 39 C36.5 39 39 41.5 39 46 C39 50.5 36.5 53 33 53 L30 53 Z" fill="#4FB3E8"></path>
+    <ellipse cx="22" cy="20" rx="6" ry="10" fill="rgba(255,255,255,0.5)"></ellipse>
+  </g>
+  <g transform="translate(86, 0)" font-family="&#39;Barlow Condensed&#39;,&#39;Oswald&#39;,sans-serif">
+    <text x="0" y="42" font-size="32" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Definitive</text>
+    <text x="0" y="66" font-size="18" font-weight="700" fill="#4FB3E8" letter-spacing="3">MECHANICAL</text>
+  </g>
+</svg>

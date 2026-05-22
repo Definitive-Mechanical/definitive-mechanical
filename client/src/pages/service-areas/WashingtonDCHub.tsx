@@ -59,7 +59,7 @@ export default function WashingtonDCHub() {
       {/* Hero */}
       <section style={{ position: 'relative', padding: '80px 0 64px', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center' }}>
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/hub-washington-dc-v2-UYbBgMmNnZqWw3jWespUvu.webp"
+          src="/images/hub-washington-dc-v2-UYbBgMmNnZqWw3jWespUvu.webp"
           alt="Washington DC skyline at dusk"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }}
         />

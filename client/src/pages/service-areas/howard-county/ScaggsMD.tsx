@@ -34,7 +34,7 @@ export default function ScaggsMD() {
     ]}
     countyHubLabel="Howard County"
     countyHubHref="/service-areas/maryland/howard-county/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/scaggs-md-AmwNbpBjn8TCngDa23kzNu.webp"
+    heroImage="/images/scaggs-md-AmwNbpBjn8TCngDa23kzNu.webp"
         cityMapQuery="Scaggs, MD"
     ctaCity="Scaggsville"
     ctaLicenseLine="Howard County License #20020096958 | MD Master Plumber #96958"

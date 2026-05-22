@@ -34,7 +34,7 @@ export default function About() {
             </div>
             <div className="lg:col-span-2">
               <img
-                src="/manus-storage/about-plumber-working_f93d7b0a.jpg"
+                src="/images/about-plumber-working.jpg"
                 alt="Definitive Mechanical licensed plumber at work — Maryland DC Northern Virginia"
                 style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }}
               />
@@ -76,7 +76,7 @@ export default function About() {
             </div>
             <div>
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/about-team-photo-jGApqx8mJzea56RGGdm7Vi.webp"
+                src="/images/about-team-photo-jGApqx8mJzea56RGGdm7Vi.webp"
                 alt="Definitive Mechanical plumbing service Maryland"
                 style={{ width: '100%', borderRadius: '6px', boxShadow: '0 4px 20px rgba(6,59,99,0.12)' }}
               />

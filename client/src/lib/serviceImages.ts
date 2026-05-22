@@ -6,64 +6,64 @@
 
 export const SERVICE_IMAGES: Record<string, string> = {
   // Emergency & Drain
-  "emergency-plumbing":                    "/manus-storage/service-emergency-plumbing_c2ea2831.webp",
-  "24-7-emergency-plumbing":               "/manus-storage/service-emergency-plumbing_c2ea2831.webp",
-  "drain-cleaning":                        "/manus-storage/service-drain-cleaning_85675762.webp",
-  "hydro-jetting":                         "/manus-storage/service-hydro-jetting_e0ce3d72.webp",
-  "video-camera-inspection":               "/manus-storage/service-video-camera-inspection_a80ee887.webp",
+  "emergency-plumbing":                    "/images/service-emergency-plumbing.webp",
+  "24-7-emergency-plumbing":               "/images/service-emergency-plumbing.webp",
+  "drain-cleaning":                        "/images/service-drain-cleaning.webp",
+  "hydro-jetting":                         "/images/service-hydro-jetting.webp",
+  "video-camera-inspection":               "/images/service-video-camera-inspection.webp",
 
   // Water Heaters
-  "water-heater-repair":                   "/manus-storage/service-water-heater-repair_eb0f11ba.webp",
-  "water-heater-installation":             "/manus-storage/service-water-heater-installation_b7268454.webp",
-  "tankless-water-heater":                 "/manus-storage/service-tankless-water-heater_e4ff5b8e.webp",
-  "tankless-water-heaters":                "/manus-storage/service-tankless-water-heater_e4ff5b8e.webp",
-  "water-heater":                          "/manus-storage/service-water-heater_7dee83c2.webp",
+  "water-heater-repair":                   "/images/service-water-heater-repair.webp",
+  "water-heater-installation":             "/images/service-water-heater-installation.webp",
+  "tankless-water-heater":                 "/images/service-tankless-water-heater.webp",
+  "tankless-water-heaters":                "/images/service-tankless-water-heater.webp",
+  "water-heater":                          "/images/service-water-heater.webp",
 
   // Sewer Lines
-  "sewer-line-repair":                     "/manus-storage/service-sewer-line-repair_5b4e6ab3.webp",
-  "sewer-line-installation":               "/manus-storage/service-sewer-line-installation_5ef0c622.webp",
-  "sewer-line":                            "/manus-storage/service-sewer-line_608c86f0.webp",
+  "sewer-line-repair":                     "/images/service-sewer-line-repair.webp",
+  "sewer-line-installation":               "/images/service-sewer-line-installation.webp",
+  "sewer-line":                            "/images/service-sewer-line.webp",
 
   // Water Lines & Pipe
-  "water-line-repair":                     "/manus-storage/service-water-line-repair_19c1bddd.webp",
-  "water-line-installation":               "/manus-storage/service-water-line-repair_19c1bddd.webp",
-  "pipe-repair":                           "/manus-storage/service-pipe-repair_97801b59.webp",
+  "water-line-repair":                     "/images/service-water-line-repair.webp",
+  "water-line-installation":               "/images/service-water-line-repair.webp",
+  "pipe-repair":                           "/images/service-pipe-repair.webp",
 
   // Gas Lines
-  "gas-line-repair":                       "/manus-storage/service-gas-line-repair_ba3ce19e.webp",
-  "gas-line-installation":                 "/manus-storage/service-gas-line-installation_15ea462f.webp",
-  "gas-line":                              "/manus-storage/service-gas-line_6882fb53.webp",
-  "gas-leak-repair":                       "/manus-storage/service-gas-leak-repair_d5b82a39.webp",
+  "gas-line-repair":                       "/images/service-gas-line-repair.webp",
+  "gas-line-installation":                 "/images/service-gas-line-installation.webp",
+  "gas-line":                              "/images/service-gas-line.webp",
+  "gas-leak-repair":                       "/images/service-gas-leak-repair.webp",
 
   // Backflow — all route variants
-  "backflow-prevention":                   "/manus-storage/service-backflow-prevention_a9ee0c58.webp",
-  "backflow-certification":                "/manus-storage/service-backflow-prevention_a9ee0c58.webp",
-  "backflow-preventer-repair":             "/manus-storage/service-backflow-prevention_a9ee0c58.webp",
-  "backflow-certification-maryland":       "/manus-storage/service-backflow-prevention_a9ee0c58.webp",
-  "backflow-certification-dc":             "/manus-storage/service-backflow-prevention_a9ee0c58.webp",
-  "backflow-certification-virginia":       "/manus-storage/service-backflow-prevention_a9ee0c58.webp",
+  "backflow-prevention":                   "/images/service-backflow-prevention.webp",
+  "backflow-certification":                "/images/service-backflow-prevention.webp",
+  "backflow-preventer-repair":             "/images/service-backflow-prevention.webp",
+  "backflow-certification-maryland":       "/images/service-backflow-prevention.webp",
+  "backflow-certification-dc":             "/images/service-backflow-prevention.webp",
+  "backflow-certification-virginia":       "/images/service-backflow-prevention.webp",
 
   // Boiler / Furnace
-  "boiler-repair":                         "/manus-storage/service-boiler-repair_ac413440.webp",
-  "boiler-furnace-repair":                 "/manus-storage/service-boiler-repair_ac413440.webp",
-  "boiler-furnace-installation":           "/manus-storage/service-boiler-repair_ac413440.webp",
+  "boiler-repair":                         "/images/service-boiler-repair.webp",
+  "boiler-furnace-repair":                 "/images/service-boiler-repair.webp",
+  "boiler-furnace-installation":           "/images/service-boiler-repair.webp",
 
   // Fixtures
-  "faucet-fixture":                        "/manus-storage/service-faucet-fixture_179c658a.webp",
-  "faucet-toilet-repair":                  "/manus-storage/service-faucet-fixture_179c658a.webp",
-  "toilet-repair":                         "/manus-storage/service-toilet-repair_b641f6c9.webp",
+  "faucet-fixture":                        "/images/service-faucet-fixture.webp",
+  "faucet-toilet-repair":                  "/images/service-faucet-fixture.webp",
+  "toilet-repair":                         "/images/service-toilet-repair.webp",
 
   // Water Softener
-  "water-softener":                        "/manus-storage/service-water-softener_d8202344.webp",
-  "water-softener-installation":           "/manus-storage/service-water-softener_d8202344.webp",
+  "water-softener":                        "/images/service-water-softener.webp",
+  "water-softener-installation":           "/images/service-water-softener.webp",
 
   // Commercial & Government
-  "commercial-plumbing":                   "/manus-storage/service-commercial-plumbing_9b61a6cf.webp",
-  "commercial-plumber-maryland":           "/manus-storage/service-commercial-plumbing_9b61a6cf.webp",
-  "commercial-plumber-dc":                 "/manus-storage/service-commercial-plumbing_9b61a6cf.webp",
-  "commercial-plumber-northern-virginia":  "/manus-storage/service-commercial-plumbing_9b61a6cf.webp",
-  "government-municipal-plumbing":         "/manus-storage/service-commercial-plumbing_9b61a6cf.webp",
-  "residential-plumbing":                  "/manus-storage/service-pipe-repair_97801b59.webp",
+  "commercial-plumbing":                   "/images/service-commercial-plumbing.webp",
+  "commercial-plumber-maryland":           "/images/service-commercial-plumbing.webp",
+  "commercial-plumber-dc":                 "/images/service-commercial-plumbing.webp",
+  "commercial-plumber-northern-virginia":  "/images/service-commercial-plumbing.webp",
+  "government-municipal-plumbing":         "/images/service-commercial-plumbing.webp",
+  "residential-plumbing":                  "/images/service-pipe-repair.webp",
 };
 
 /**

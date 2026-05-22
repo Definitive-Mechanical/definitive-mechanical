@@ -107,7 +107,7 @@ export default function Header() {
           {/* Real logo PNG */}
           <Link href="/" className="flex items-center no-underline" style={{ flexShrink: 0 }}>
             <img
-              src="/manus-storage/definitive-mechanical-logo_855788d0.png"
+              src="/images/definitive-mechanical-logo.png"
               alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
               style={{ height: '48px', width: 'auto', display: 'block' }}
             />
@@ -322,7 +322,7 @@ export default function Header() {
           <div className="flex items-center justify-between px-4 py-3" style={{ borderBottom: '1px solid #E2E8F0' }}>
             <Link href="/" className="flex items-center no-underline" onClick={() => setMobileOpen(false)}>
               <img
-                src="/manus-storage/definitive-mechanical-logo_855788d0.png"
+                src="/images/definitive-mechanical-logo.png"
                 alt="Definitive Mechanical"
                 style={{ height: '40px', width: 'auto', display: 'block' }}
               />

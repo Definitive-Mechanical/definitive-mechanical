@@ -78,7 +78,7 @@ export default function NorthernVirginiaHub() {
       {/* Hero */}
       <section style={{ position: 'relative', padding: '80px 0 64px', overflow: 'hidden', minHeight: '420px', display: 'flex', alignItems: 'center' }}>
         <img
-          src="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/hub-northern-virginia-8sTXN2dYoKXrSRa3HcuYAQ.webp"
+          src="/images/hub-northern-virginia-8sTXN2dYoKXrSRa3HcuYAQ.webp"
           alt="Northern Virginia suburban neighborhoods at golden hour"
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 50%' }}
         />

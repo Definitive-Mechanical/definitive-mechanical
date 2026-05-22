@@ -35,7 +35,7 @@ export default function TravilahMD() {
     ]}
     countyHubLabel="Montgomery County"
     countyHubHref="/service-areas/maryland/montgomery-county/"
-    heroImage="https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/travilah-md-HQJQM6UAXgm7PviW5At24q.webp"
+    heroImage="/images/travilah-md-HQJQM6UAXgm7PviW5At24q.webp"
         cityMapQuery="Travilah, MD"
     ctaCity="Travilah"
     ctaLicenseLine="MD Master Plumber #96958 | WSSC #73696"

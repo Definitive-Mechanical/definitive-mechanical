@@ -72,7 +72,7 @@ export default function FortWashingtonMD() {
               </div>
             </div>
             <div className="block">
-              <img src="/manus-storage/city-fort-washington-md_f7660f05.jpg" alt="Licensed plumber Fort Washington Maryland — Definitive Mechanical" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-fort-washington-md.jpg" alt="Licensed plumber Fort Washington Maryland — Definitive Mechanical" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>
