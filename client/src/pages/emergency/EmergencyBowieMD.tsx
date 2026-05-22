@@ -61,7 +61,7 @@ export default function EmergencyBowieMD() {
 
       <section style={{ position: 'relative', minHeight: '55vh', overflow: 'hidden' }} className="flex items-center py-16">
         <img src="/manus-storage/city-bowie-md_f707efb1.jpg" alt="Bowie MD" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.50) 60%, rgba(0,0,0,0.58) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.80) 60%, rgba(0,0,0,0.85) 100%)' }} />
         <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Bowie, MD" }]} />
           <p className="mt-6 mb-3 uppercase tracking-widest text-xs font-bold" style={{ color: "var(--brand-cyan)", fontFamily: "'Barlow Condensed', sans-serif" }}>24/7 EMERGENCY PLUMBER  BOWIE, MD  PRINCE GEORGE'S COUNTY</p>
