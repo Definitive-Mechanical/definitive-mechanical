@@ -113,7 +113,7 @@ function HeroSection() {
           backgroundRepeat: 'no-repeat',
         }}
       />
-      {/* Dark overlay */
+      {/* Dark overlay */}
       <div
         style={{
           position: 'absolute',
