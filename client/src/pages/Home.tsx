@@ -107,7 +107,7 @@ function HeroSection() {
         style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/hero-homepage-bg-DJemnkLiSnRWt3DjL8Brh3.webp)',
+          backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/98106163/Mxa9FkjQjimhEb95Dyj8bk/hero-homepage-bright-v2-M89dMESaoTmKs6d2uQvvm8.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center 30%',
           backgroundRepeat: 'no-repeat',
