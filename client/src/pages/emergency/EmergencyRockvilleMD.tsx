@@ -78,7 +78,7 @@ export default function EmergencyRockvilleMD() {
 
       {/* Hero */}
       <section style={{ position: 'relative', minHeight: '55vh', overflow: 'hidden' }} className="flex items-center py-16">
-        <img src="/images/city-rockville-md.jpg" alt="Rockville MD" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }} />
+        <img src="/images/city-rockville-md.webp" alt="Rockville MD" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.80) 60%, rgba(0,0,0,0.85) 100%)' }} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Rockville MD" }]} />

@@ -62,7 +62,7 @@ export default function EmergencyWashingtonDC() {
       </div>
 
       <section style={{ position: 'relative', minHeight: '55vh', overflow: 'hidden' }} className="flex items-center py-16">
-        <img src="/images/city-washington-dc.jpg" alt="Washington DC" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }} />
+        <img src="/images/city-washington-dc.webp" alt="Washington DC" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(105deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.80) 60%, rgba(0,0,0,0.85) 100%)' }} />
         <div className="container text-center" style={{ position: 'relative', zIndex: 1 }}>
           <BreadcrumbList items={[{ label: "Home", href: "/" }, { label: "Emergency Plumbing", href: "/emergency-plumbing/" }, { label: "Emergency Plumber Washington DC" }]} />

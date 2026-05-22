@@ -104,7 +104,7 @@ export default function WashingtonDC() {
               </div>
             </div>
             <div className="block">
-              <img src="/images/city-washington-dc.jpg" alt="Licensed plumber Washington DC — DC Master Plumber #PGM1002236, MDOT MBE Certified" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-washington-dc.webp" alt="Licensed plumber Washington DC — DC Master Plumber #PGM1002236, MDOT MBE Certified" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

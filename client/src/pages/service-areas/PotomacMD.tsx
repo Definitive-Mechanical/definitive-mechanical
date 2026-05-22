@@ -70,7 +70,7 @@ export default function PotomacMD() {
               </div>
             </div>
             <div className="block">
-              <img src="/images/city-potomac-md.jpg" alt="Licensed plumber Potomac Maryland — Definitive Mechanical estate home service" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-potomac-md.webp" alt="Licensed plumber Potomac Maryland — Definitive Mechanical estate home service" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

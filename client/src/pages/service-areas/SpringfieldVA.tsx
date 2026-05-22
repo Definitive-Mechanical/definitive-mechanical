@@ -71,7 +71,7 @@ export default function SpringfieldVA() {
               </div>
             </div>
             <div className="block">
-              <img src="/images/city-springfield-va.jpg" alt="Licensed plumber Springfield Virginia — VA Master Plumber #2710064209" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-springfield-va.webp" alt="Licensed plumber Springfield Virginia — VA Master Plumber #2710064209" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

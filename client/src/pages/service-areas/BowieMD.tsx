@@ -72,7 +72,7 @@ export default function BowieMD() {
               </div>
             </div>
             <div className="block">
-              <img src="/images/city-bowie-md.jpg" alt="Licensed plumber Bowie Maryland — Definitive Mechanical serving from Largo MD" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-bowie-md.webp" alt="Licensed plumber Bowie Maryland — Definitive Mechanical serving from Largo MD" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

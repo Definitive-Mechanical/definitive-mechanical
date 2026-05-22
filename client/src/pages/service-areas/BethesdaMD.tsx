@@ -19,7 +19,7 @@ export default function BethesdaMD() {
       h1="Plumber in Bethesda, MD"
       introParagraph="Definitive Mechanical provides licensed plumbing service in Bethesda, Maryland for homeowners, businesses, and commercial properties. Emergency plumbing, water heater repair, drain cleaning, gas line service, sewer repair, and backflow certification available 24/7. Maryland Master Plumber/Gasfitter #96958, WSSC #73696. Upfront pricing."
       trustItems={["MD Master Plumber #96958", "WSSC #73696", "24/7 Emergency", "Serving Bethesda from Largo, MD", "MDOT MBE Certified"]}
-      heroImage="/images/city-bethesda-md.jpg"
+      heroImage="/images/city-bethesda-md.webp"
       heroImageAlt="Bethesda MD neighborhood - licensed plumber serving Bethesda Maryland"
       servicesHeading="Plumbing Services in Bethesda, MD"
       servicesIntro="Bethesda is one of the most affluent communities in the DMV — characterized by high-value residential properties, a dense commercial corridor along Wisconsin Avenue, major medical and research institutions (NIH, Walter Reed), and a premium residential market that demands licensed, professional plumbing service."

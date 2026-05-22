@@ -34,7 +34,7 @@ export default function About() {
             </div>
             <div className="lg:col-span-2">
               <img
-                src="/images/about-plumber-working.jpg"
+                src="/images/about-plumber-working.webp"
                 alt="Definitive Mechanical licensed plumber at work — Maryland DC Northern Virginia"
                 style={{ width: '100%', borderRadius: '6px', boxShadow: '0 20px 60px rgba(0,0,0,0.4)', objectFit: 'cover', aspectRatio: '4/3' }}
               />

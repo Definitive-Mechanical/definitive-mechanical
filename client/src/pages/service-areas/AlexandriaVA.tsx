@@ -79,7 +79,7 @@ export default function AlexandriaVA() {
               </div>
             </div>
             <div className="block">
-              <img src="/images/city-alexandria-va.jpg" alt="Licensed plumber Alexandria Virginia — VA Master Plumber #2710064209, SWaM Certified" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
+              <img src="/images/city-alexandria-va.webp" alt="Licensed plumber Alexandria Virginia — VA Master Plumber #2710064209, SWaM Certified" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

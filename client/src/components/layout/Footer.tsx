@@ -58,7 +58,7 @@ export default function Footer() {
             <div>
               <div className="mb-5">
                 <img
-                  src="/images/definitive-mechanical-logo.png"
+                  src="/images/definitive-mechanical-logo.webp"
                   alt="Definitive Mechanical"
                   style={{ height: '48px', width: 'auto', display: 'block' }}
                 />
@@ -222,14 +222,14 @@ export default function Footer() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
                 <div style={{ background: 'white', borderRadius: '6px', padding: '8px 14px', display: 'inline-flex', alignItems: 'center' }}>
                   <img
-                    src="/images/mdot-mbe-certified.png"
+                    src="/images/mdot-mbe-certified.webp"
                     alt="Maryland Department of Transportation MBE/DBE Certified"
                     style={{ height: '54px', width: 'auto', display: 'block' }}
                   />
                 </div>
                 <div style={{ background: 'white', borderRadius: '6px', padding: '8px 14px', display: 'inline-flex', alignItems: 'center' }}>
                   <img
-                    src="/images/va-swam-certified.jpg"
+                    src="/images/va-swam-certified.webp"
                     alt="Virginia SWaM Certified — Small, Women and Minority-Owned"
                     style={{ height: '54px', width: 'auto', display: 'block' }}
                   />
