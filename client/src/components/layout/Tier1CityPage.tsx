@@ -160,7 +160,7 @@ export default function Tier1CityPage({
               </div>
             </div>
             {/* Right — 2 cols: city image + trust card */}
-            <div className="lg:col-span-2 hidden lg:block">
+            <div className="lg:col-span-2">
               {heroImage && (
                 <div style={{ marginBottom: "16px", borderRadius: "8px", overflow: "hidden", boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
                   <img

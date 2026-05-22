@@ -253,7 +253,7 @@ export default function PriorityCityLayout({
               </div>
             </div>
             {/* Right: city image + trust card */}
-            <div className="lg:col-span-2 hidden lg:block">
+            <div className="lg:col-span-2">
               {heroImage && (
                 <div style={{ marginBottom: "16px", borderRadius: "4px", overflow: "hidden", boxShadow: "0 8px 32px rgba(0,0,0,0.4)" }}>
                   <img
