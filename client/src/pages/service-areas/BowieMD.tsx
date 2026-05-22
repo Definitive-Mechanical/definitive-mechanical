@@ -71,7 +71,7 @@ export default function BowieMD() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img src="/manus-storage/city-bowie-md_f707efb1.jpg" alt="Licensed plumber Bowie Maryland — Definitive Mechanical serving from Largo MD" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>

@@ -102,7 +102,7 @@ export default function WashingtonDC() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img src="/manus-storage/city-washington-dc_299fb4bf.jpg" alt="Licensed plumber Washington DC — DC Master Plumber #PGM1002236, MDOT MBE Certified" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>

@@ -69,7 +69,7 @@ export default function RockvilleMD() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img src="/manus-storage/city-rockville-md_3eeedc99.jpg" alt="Rockville MD - licensed plumber serving Rockville Maryland" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>

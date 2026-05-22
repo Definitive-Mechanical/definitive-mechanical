@@ -69,7 +69,7 @@ export default function PotomacMD() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img src="/manus-storage/city-potomac-md_21089d07.jpg" alt="Licensed plumber Potomac Maryland — Definitive Mechanical estate home service" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>

@@ -104,7 +104,7 @@ export default function LargoMD() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img
                 src="/manus-storage/city-largo-md_cd50637f.jpg"
                 alt="Licensed plumber Largo MD — Definitive Mechanical home base 9701 Apollo Drive"

@@ -70,7 +70,7 @@ export default function ArlingtonVA() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img src="/manus-storage/city-arlington-va_bf10f6ae.jpg" alt="Licensed plumber Arlington Virginia 24/7 emergency — VA Master Plumber #2710064209" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>

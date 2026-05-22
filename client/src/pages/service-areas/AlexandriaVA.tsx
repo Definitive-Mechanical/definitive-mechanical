@@ -78,7 +78,7 @@ export default function AlexandriaVA() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img src="/manus-storage/city-alexandria-va_d864f698.jpg" alt="Licensed plumber Alexandria Virginia — VA Master Plumber #2710064209, SWaM Certified" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>

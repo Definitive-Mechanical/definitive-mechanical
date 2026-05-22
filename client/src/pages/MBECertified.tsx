@@ -124,7 +124,7 @@ export default function MBECertified() {
                 </Link>
               </div>
             </div>
-            <div className="lg:col-span-2 hidden lg:block">
+            <div className="lg:col-span-2">
               <div style={{ background: "rgba(255,255,255,0.06)", backdropFilter: "blur(12px)", border: "1px solid rgba(255,255,255,0.12)", borderRadius: "4px", padding: "28px 24px" }}>
                 <p style={{ fontFamily: "var(--font-display)", color: "var(--brand-cyan)", fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase", fontWeight: 700, marginBottom: 16 }}>PROCUREMENT CREDENTIALS</p>
                 {[

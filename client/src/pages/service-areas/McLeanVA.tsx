@@ -70,7 +70,7 @@ export default function McLeanVA() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img src="/manus-storage/city-mclean-va_c5580aa2.jpg" alt="Licensed plumber McLean Virginia — VA Master Plumber #2710064209 estate home service" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>

@@ -70,7 +70,7 @@ export default function EllicottCityMD() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img src="/manus-storage/city-ellicott-city-md_a521a00c.jpg" alt="Licensed plumber Ellicott City Maryland — Howard County Master Plumber #PGM1002236" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>

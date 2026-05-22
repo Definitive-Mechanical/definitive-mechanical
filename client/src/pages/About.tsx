@@ -32,7 +32,7 @@ export default function About() {
               </p>
               <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
             </div>
-            <div className="hidden lg:block lg:col-span-2">
+            <div className="lg:col-span-2">
               <img
                 src="/manus-storage/about-plumber-working_f93d7b0a.jpg"
                 alt="Definitive Mechanical licensed plumber at work — Maryland DC Northern Virginia"

@@ -71,7 +71,7 @@ export default function FortWashingtonMD() {
                 <BookNowButton variant="outline" size="md" text="REQUEST SERVICE" href="/contact" />
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="block">
               <img src="/manus-storage/city-fort-washington-md_f7660f05.jpg" alt="Licensed plumber Fort Washington Maryland — Definitive Mechanical" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
             </div>
           </div>
