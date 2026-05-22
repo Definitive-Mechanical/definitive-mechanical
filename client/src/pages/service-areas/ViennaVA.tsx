@@ -70,7 +70,7 @@ export default function ViennaVA() {
               </div>
             </div>
             <div className="block">
-              <img src="/manus-storage/city-vienna-va_e14bf815.jpg" alt="Licensed plumber Vienna Virginia — VA Master Plumber #2710064209" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+              <img src="/manus-storage/city-vienna-va_e14bf815.jpg" alt="Licensed plumber Vienna Virginia — VA Master Plumber #2710064209" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

@@ -167,7 +167,7 @@ export default function Tier1CityPage({
                     src={heroImage}
                     alt={heroImageAlt || h1}
                     loading="eager"
-                    style={{ width: "100%", height: "200px", objectFit: "cover", display: "block" }}
+                    className="city-hero-img" style={{ width: "100%", objectFit: "cover", display: "block" }}
                   />
                 </div>
               )}

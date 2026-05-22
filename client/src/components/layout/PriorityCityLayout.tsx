@@ -260,7 +260,7 @@ export default function PriorityCityLayout({
                     src={heroImage}
                     alt={heroImageAlt || h1}
                     loading="eager"
-                    style={{ width: "100%", height: "220px", objectFit: "cover", display: "block" }}
+                    className="city-hero-img" style={{ width: "100%", objectFit: "cover", display: "block" }}
                   />
                 </div>
               )}

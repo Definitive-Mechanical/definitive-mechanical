@@ -168,6 +168,20 @@
 /* ============================================================
    Base layer
    ============================================================ */
+/* ── City hero image responsive height ──────────────────────────────── */
+.city-hero-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+@media (min-width: 1024px) {
+  .city-hero-img {
+    height: 420px;
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

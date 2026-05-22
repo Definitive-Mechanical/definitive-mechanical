@@ -70,7 +70,7 @@ export default function RockvilleMD() {
               </div>
             </div>
             <div className="block">
-              <img src="/manus-storage/city-rockville-md_3eeedc99.jpg" alt="Rockville MD - licensed plumber serving Rockville Maryland" loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+              <img src="/manus-storage/city-rockville-md_3eeedc99.jpg" alt="Rockville MD - licensed plumber serving Rockville Maryland" loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>

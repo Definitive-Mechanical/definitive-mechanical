@@ -108,7 +108,7 @@ export default function LargoMD() {
               <img
                 src="/manus-storage/city-largo-md_cd50637f.jpg"
                 alt="Licensed plumber Largo MD — Definitive Mechanical home base 9701 Apollo Drive"
-                loading="eager" className="rounded-lg w-full" style={{ objectFit:"cover", height:"420px" }} />
+                loading="eager" className="rounded-lg w-full city-hero-img" style={{ objectFit:"cover" }} />
             </div>
           </div>
         </div>
