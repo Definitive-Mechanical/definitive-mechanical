@@ -37,14 +37,27 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    // Simulate submission — in production, connect to a form backend
-    setTimeout(() => {
-      setSubmitting(false);
+    try {
+      const body = new URLSearchParams({
+        "form-name": "contact-form",
+        ...form,
+      }).toString();
+      const res = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body,
+      });
+      if (!res.ok) throw new Error(`Submission failed (${res.status})`);
       setSubmitted(true);
-    }, 1200);
+    } catch (err) {
+      console.error("Form submission error:", err);
+      alert("Sorry — we couldn't submit your request. Please call (301) 679-5849 or try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -160,7 +173,8 @@ export default function Contact() {
                     </a>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                  <form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                    <input type="hidden" name="form-name" value="contact-form" />
                     <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--brand-blue)', margin: 0 }}>Request Service</p>
                     <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '24px', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 

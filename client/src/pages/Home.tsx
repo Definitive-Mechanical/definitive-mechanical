@@ -86,10 +86,27 @@ function HeroSection() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    setTimeout(() => { setSubmitting(false); setSubmitted(true); }, 600);
+    try {
+      const body = new URLSearchParams({
+        "form-name": "home-hero-quote",
+        ...formData,
+      }).toString();
+      const res = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body,
+      });
+      if (!res.ok) throw new Error(`Submission failed (${res.status})`);
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Form submission error:", err);
+      alert("Sorry — we couldn't submit your request. Please call (301) 679-5849 or try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -159,7 +176,8 @@ function HeroSection() {
                   </p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <form name="home-hero-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  <input type="hidden" name="form-name" value="home-hero-quote" />
                   <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Request Service</p>
                   <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
