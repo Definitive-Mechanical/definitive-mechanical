@@ -107,7 +107,7 @@ function HeroSection() {
         style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: 'url(/images/hero-homepage-bright-v2-M89dMESaoTmKs6d2uQvvm8.webp)',
+          backgroundImage: 'url(/images/main-hero-plumbing-image.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center 30%',
           backgroundRepeat: 'no-repeat',
