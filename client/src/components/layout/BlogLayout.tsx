@@ -237,7 +237,7 @@ export function InlineCTA() {
     >
       <p
         style={{
-          color: "var(--surface-1)",
+          color: "#ffffff",
           fontFamily: "'Barlow Condensed', sans-serif",
           fontSize: "13px",
           letterSpacing: "0.1em",
@@ -268,7 +268,7 @@ export function InlineCTA() {
       </a>
       <p
         style={{
-          color: "var(--surface-1)",
+          color: "#ffffff",
           fontFamily: "'Barlow', sans-serif",
           fontSize: "14px",
           margin: 0,
