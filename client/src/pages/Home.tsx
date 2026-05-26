@@ -197,8 +197,8 @@ function HeroSection() {
 
                   {/* Email */}
                   <div>
-                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '4px' }}>Email Address</label>
-                    <input type="email" placeholder="your@email.com" value={formData.email} onChange={e => setFormData(p => ({ ...p, email: e.target.value }))}
+                    <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '4px' }}>Email Address <span style={{ color: '#E40613' }}>*</span></label>
+                    <input type="email" required placeholder="your@email.com" value={formData.email} onChange={e => setFormData(p => ({ ...p, email: e.target.value }))}
                       style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#0A0A0A', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                   </div>
 

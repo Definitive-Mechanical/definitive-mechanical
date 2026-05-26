@@ -194,8 +194,8 @@ export default function Contact() {
 
                     {/* Email */}
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '5px' }}>Email Address</label>
-                      <input type="email" name="email" placeholder="your@email.com" value={form.email} onChange={handleChange}
+                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '5px' }}>Email Address <span style={{ color: '#E40613' }}>*</span></label>
+                      <input type="email" name="email" required placeholder="your@email.com" value={form.email} onChange={handleChange}
                         style={{ width: '100%', padding: '11px 12px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: '#0A0A0A', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }} />
                     </div>
 
