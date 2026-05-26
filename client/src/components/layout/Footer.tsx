@@ -169,6 +169,7 @@ export default function Footer() {
                   { label: 'Financing', href: '/financing' },
                   { label: 'FAQ', href: '/faq' },
                   { label: 'Contact Us', href: '/contact' },
+                  { label: 'Sitemap', href: '/sitemap' },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}
                     className="block no-underline transition-colors duration-150"

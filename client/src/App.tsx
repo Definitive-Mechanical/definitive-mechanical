@@ -217,6 +217,9 @@ import BlogPost4BeforePlumber from "./pages/blog/BlogPost4BeforePlumber";
 import CommercialPlumbing from "./pages/CommercialPlumbing";
 import GovernmentMunicipalPlumbing from "./pages/GovernmentMunicipalPlumbing";
 
+// Sitemap (HTML directory of all pages)
+import Sitemap from "./pages/Sitemap";
+
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
@@ -574,6 +577,10 @@ function Router() {
       <Route path="/service-areas/northern-virginia/prince-william-county/independent-hill-va/" component={() => <Layout><IndependentHillVA /></Layout>} />
       <Route path="/service-areas/northern-virginia/prince-william-county/buckhall-va" component={() => <Layout><BuckhallVA /></Layout>} />
       <Route path="/service-areas/northern-virginia/prince-william-county/buckhall-va/" component={() => <Layout><BuckhallVA /></Layout>} />
+
+      {/* Sitemap (HTML directory) */}
+      <Route path="/sitemap" component={() => <Layout><Sitemap /></Layout>} />
+      <Route path="/sitemap/" component={() => <Layout><Sitemap /></Layout>} />
 
       {/* Fallback */}
       <Route path="/404" component={() => <Layout><NotFound /></Layout>} />

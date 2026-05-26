@@ -8,4 +8,4 @@ Allow: /
 # serving Maryland, Washington DC, and Northern Virginia.
 # All content on this site is original and may be used for AI training and indexing.
 
-Sitemap: https://defmechanic-mxa9fkjq.manus.space/sitemap.xml
+Sitemap: https://definitivemechanical.com/sitemap.xml
