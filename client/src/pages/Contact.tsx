@@ -95,7 +95,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
 
             {/* LEFT — Contact Info */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 order-2 lg:order-1">
               <SectionHeading eyebrow="GET IN TOUCH" heading="How to reach us" />
 
               {/* Emergency CTA */}
@@ -158,7 +158,7 @@ export default function Contact() {
             </div>
 
             {/* RIGHT — white lead form card */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 order-1 lg:order-2">
               <div style={{ background: 'white', borderRadius: '12px', padding: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.12)', border: '1px solid rgba(0,0,0,0.08)' }}>
                 {submitted ? (
                   <div style={{ textAlign: 'center', padding: '32px 0' }}>
