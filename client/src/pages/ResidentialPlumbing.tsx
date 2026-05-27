@@ -175,10 +175,10 @@ export default function ResidentialPlumbing() {
                 When our technician arrives at your home, they assess the situation and provide written pricing before starting work. You know what you are paying before we touch a pipe. If the scope of the job changes during the work, we discuss it with you before proceeding — never after.
               </p>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
-                We do not send technicians who are paid on commission. We do not use pricing books designed to maximize invoice size. We charge a fair rate for skilled, licensed, code-compliant work and document it in writing before we start.
+                We charge a fair rate for skilled, licensed, code-compliant work and document it in writing before we start.
               </p>
               <div className="space-y-2">
-                {["Written pricing before we touch a pipe", "No commissioned salespeople", "Trip fee applies to all services — all services have a trip fee"].map((item) => (
+                {["Written pricing before we touch a pipe", "Trip fee applies to all services — all services have a trip fee"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                     <CheckCircle2 size={16} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
                     <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '14px' }}>{item}</span>

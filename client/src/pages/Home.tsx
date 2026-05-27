@@ -488,7 +488,7 @@ export default function Home() {
               "We explain what we find, what your options are, and what each one costs — before we touch a wrench."
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center' }}>
-              {['No commissioned salespeople', 'Trip fee applies to all services', 'Written pricing every time'].map((item) => (
+              {['Trip fee applies to all services', 'Written pricing every time'].map((item) => (
                 <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--ink-2)' }}>
                   <CheckCircle size={16} color="var(--brand-cyan)" />
                   {item}

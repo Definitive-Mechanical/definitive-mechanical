@@ -116,11 +116,6 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                icon: ShieldCheck,
-                title: 'No Commissioned Salespeople',
-                body: 'Our technicians are not paid on commission. They are paid to solve your problem correctly — not to find additional work. When we identify an issue, we explain it clearly and give you options. You decide.',
-              },
-              {
                 icon: CheckCircle2,
                 title: 'Written Pricing Before We Start',
                 body: 'The most common complaint about plumbing companies in the DMV is pricing shock. We address this by providing written pricing before any work begins. If the scope changes, we discuss it first.',
