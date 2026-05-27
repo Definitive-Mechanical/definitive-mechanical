@@ -113,7 +113,7 @@ export default function About() {
             heading="How Definitive Mechanical is different from other DMV plumbing companies"
             centered
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:max-w-2xl md:mx-auto">
             {[
               {
                 icon: CheckCircle2,
