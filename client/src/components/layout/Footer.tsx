@@ -170,6 +170,8 @@ export default function Footer() {
                   { label: 'FAQ', href: '/faq' },
                   { label: 'Contact Us', href: '/contact' },
                   { label: 'Sitemap', href: '/sitemap' },
+                  { label: 'Terms & Conditions', href: '/terms-and-conditions' },
+                  { label: 'Privacy Policy', href: '/privacy-policy' },
                 ].map((link) => (
                   <Link key={link.href} href={link.href}
                     className="block no-underline transition-colors duration-150"
@@ -322,6 +324,18 @@ export default function Footer() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p style={{ fontFamily: 'var(--font-body)', fontSize: '12px', color: 'rgba(255,255,255,0.4)', textAlign: 'center' }}>
               © 2026 Definitive Mechanical LLC. All Rights Reserved. Licensed, Bonded &amp; Insured. Based in Largo, MD. Serving Maryland, Washington DC &amp; Northern Virginia.
+              {' '}&bull;{' '}
+              <Link href="/terms-and-conditions" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}
+                onMouseEnter={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
+                onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.4)')}>
+                Terms &amp; Conditions
+              </Link>
+              {' '}&bull;{' '}
+              <Link href="/privacy-policy" style={{ color: 'rgba(255,255,255,0.4)', textDecoration: 'none' }}
+                onMouseEnter={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
+                onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.4)')}>
+                Privacy Policy
+              </Link>
             </p>
           </div>
         </div>

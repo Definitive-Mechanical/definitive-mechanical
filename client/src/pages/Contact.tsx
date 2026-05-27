@@ -32,6 +32,7 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", phone: "", email: "", service: "", city: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [consentChecked, setConsentChecked] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -247,10 +248,25 @@ export default function Contact() {
                       </p>
                     </div>
 
-                                        <button type="submit" disabled={submitting}
-                      style={{ width: '100%', background: submitting ? '#9ca3af' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: submitting ? 'not-allowed' : 'pointer' }}>
+                                        <button type="submit" disabled={submitting || !consentChecked}
+                      style={{ width: '100%', background: (submitting || !consentChecked) ? '#9ca3af' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: (submitting || !consentChecked) ? 'not-allowed' : 'pointer' }}>
                       {submitting ? 'Submitting...' : 'SUBMIT SERVICE REQUEST'}
                     </button>
+                    <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
+                      <input
+                        type="checkbox"
+                        checked={consentChecked}
+                        onChange={e => setConsentChecked(e.target.checked)}
+                        style={{ marginTop: '2px', flexShrink: 0, accentColor: 'var(--brand-blue)', width: '14px', height: '14px' }}
+                      />
+                      <span style={{ fontSize: '12px', color: '#4A5560', fontFamily: 'var(--font-body)', lineHeight: 1.5 }}>
+                        By submitting, I agree to Definitive Mechanical's{' '}
+                        <a href="/terms-and-conditions" style={{ color: 'var(--brand-blue)', textDecoration: 'underline' }}>Terms</a>
+                        {' '}and{' '}
+                        <a href="/privacy-policy" style={{ color: 'var(--brand-blue)', textDecoration: 'underline' }}>Privacy Policy</a>
+                        {' '}and consent to be contacted about my inquiry.
+                      </span>
+                    </label>
                     <p style={{ fontSize: '12px', color: '#9ca3af', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
                       We respond to non-emergency requests within one business day. For faster service, call (301) 679-5849.
                     </p>

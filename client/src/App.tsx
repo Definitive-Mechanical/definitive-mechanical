@@ -219,6 +219,8 @@ import GovernmentMunicipalPlumbing from "./pages/GovernmentMunicipalPlumbing";
 
 // Sitemap (HTML directory of all pages)
 import Sitemap from "./pages/Sitemap";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -581,6 +583,12 @@ function Router() {
       {/* Sitemap (HTML directory) */}
       <Route path="/sitemap" component={() => <Layout><Sitemap /></Layout>} />
       <Route path="/sitemap/" component={() => <Layout><Sitemap /></Layout>} />
+
+      {/* Legal */}
+      <Route path="/terms-and-conditions" component={() => <Layout><TermsAndConditions /></Layout>} />
+      <Route path="/terms-and-conditions/" component={() => <Layout><TermsAndConditions /></Layout>} />
+      <Route path="/privacy-policy" component={() => <Layout><PrivacyPolicy /></Layout>} />
+      <Route path="/privacy-policy/" component={() => <Layout><PrivacyPolicy /></Layout>} />
 
       {/* Fallback */}
       <Route path="/404" component={() => <Layout><NotFound /></Layout>} />
