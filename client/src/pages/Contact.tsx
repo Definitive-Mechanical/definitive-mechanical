@@ -248,10 +248,6 @@ export default function Contact() {
                       </p>
                     </div>
 
-                                        <button type="submit" disabled={submitting || !consentChecked}
-                      style={{ width: '100%', background: (submitting || !consentChecked) ? '#9ca3af' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: (submitting || !consentChecked) ? 'not-allowed' : 'pointer' }}>
-                      {submitting ? 'Submitting...' : 'SUBMIT SERVICE REQUEST'}
-                    </button>
                     <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
                       <input
                         type="checkbox"
@@ -267,6 +263,10 @@ export default function Contact() {
                         {' '}and consent to be contacted about my inquiry.
                       </span>
                     </label>
+                                        <button type="submit" disabled={submitting || !consentChecked}
+                      style={{ width: '100%', background: (submitting || !consentChecked) ? '#9ca3af' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '14px', padding: '14px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: (submitting || !consentChecked) ? 'not-allowed' : 'pointer' }}>
+                      {submitting ? 'Submitting...' : 'SUBMIT SERVICE REQUEST'}
+                    </button>
                     <p style={{ fontSize: '12px', color: '#9ca3af', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
                       We respond to non-emergency requests within one business day. For faster service, call (301) 679-5849.
                     </p>

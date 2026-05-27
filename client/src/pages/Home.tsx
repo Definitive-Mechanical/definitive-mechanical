@@ -251,11 +251,7 @@ function HeroSection() {
                     </p>
                   </div>
 
-                                    <button type="submit" disabled={submitting || !consentChecked}
-                    style={{ width: '100%', background: (submitting || !consentChecked) ? '#9ca3af' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: (submitting || !consentChecked) ? 'not-allowed' : 'pointer' }}>
-                    {submitting ? 'Submitting...' : 'Request Service'}
-                  </button>
-                  <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
+                    <label style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', cursor: 'pointer' }}>
                     <input
                       type="checkbox"
                       checked={consentChecked}
@@ -270,6 +266,10 @@ function HeroSection() {
                       {' '}and consent to be contacted about my inquiry.
                     </span>
                   </label>
+                                    <button type="submit" disabled={submitting || !consentChecked}
+                    style={{ width: '100%', background: (submitting || !consentChecked) ? '#9ca3af' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: (submitting || !consentChecked) ? 'not-allowed' : 'pointer' }}>
+                    {submitting ? 'Submitting...' : 'Request Service'}
+                  </button>
                   <p style={{ fontSize: '11px', color: '#9ca3af', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
                     No spam. Quoted price in writing. All services have a trip fee.
                   </p>
