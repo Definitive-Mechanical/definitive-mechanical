@@ -98,7 +98,7 @@ export default function AlexandriaVA() {
             <p style={{ fontFamily:"var(--font-body)", fontWeight:600, color:"var(--brand-navy)", fontSize:"15px" }} className="mb-3">Virginia credentials that matter in Alexandria:</p>
             {[
               "Virginia State Master Plumber/Gasfitter #2710064209",
-              "Virginia Class A Contractor #2705181061 — required for projects over $120,000",
+              "Virginia Class A Contractor #2705181061 — required for projects over $1,000,000",
               "Virginia SWaM Certification No. 815255 — eligible for Virginia government procurement",
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2 mb-2">
