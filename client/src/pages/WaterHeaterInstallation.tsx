@@ -217,40 +217,27 @@ export default function WaterHeaterInstallation() {
       {/* SECTION 6: TIMELINE */}
       <section style={{ background: 'white', padding: '80px 0' }}>
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div style={{ background: 'var(--brand-navy)', borderRadius: '12px', padding: '32px', boxShadow: '0 8px 32px rgba(6,59,99,0.2)' }}>
-                <p style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '16px' }}>Our Credentials</p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                  {['Maryland Master Plumber License', 'DC Master Plumber License', 'Virginia Master Plumber License', 'Maryland Master Gasfitter License', 'MDOT MBE Certified (No. 20-134)', 'Virginia SWaM Certified (No. 815255)', 'Fully Bonded & Insured'].map((cred) => (
-                    <div key={cred} style={{ display: 'flex', alignItems: 'center', gap: '10px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)', borderRadius: '6px', padding: '10px 14px' }}>
-                      <ShieldCheck size={14} style={{ color: 'var(--brand-cyan)', flexShrink: 0 }} />
-                      <span style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.88)', fontSize: '13px', fontWeight: 500 }}>{cred}</span>
-                    </div>
-                  ))}
+          <div style={{ maxWidth: '720px', margin: '0 auto', textAlign: 'center' }}>
+            <p className="eyebrow mb-2">HOW LONG DOES IT TAKE?</p>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>How long does water heater installation take?</h2>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
+              A standard water heater replacement — same location, same fuel type, same approximate capacity — typically takes 2-4 hours for a licensed technician. This includes disconnecting and removing the old unit, connecting the new unit to existing supply lines and gas or electrical connections, testing, and cleanup.
+            </p>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
+              More complex installations — those requiring new gas line runs, new electrical circuits, venting modifications, or relocation of the unit — may take a full day or require scheduling a follow-up visit for additional trades work.
+            </p>
+            <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
+              When you call (301) 679-5849, our team can give you a realistic timeframe based on your specific situation before we schedule.
+            </p>
+            <div className="space-y-3 mb-6" style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'flex-start', textAlign: 'left' }}>
+              {["Same-day installation available in most standard replacement scenarios", "Complex installations quoted with honest timelines upfront"].map((item) => (
+                <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                  <CheckCircle2 size={18} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
+                  <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{item}</span>
                 </div>
-              </div>
+              ))}
             </div>
             <div>
-              <p className="eyebrow mb-2">HOW LONG DOES IT TAKE?</p>
-              <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: '#0A0A0A', fontSize: 'clamp(20px, 2.5vw, 28px)', marginBottom: '16px' }}>How long does water heater installation take?</h2>
-              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
-                A standard water heater replacement — same location, same fuel type, same approximate capacity — typically takes 2-4 hours for a licensed technician. This includes disconnecting and removing the old unit, connecting the new unit to existing supply lines and gas or electrical connections, testing, and cleanup.
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '16px' }}>
-                More complex installations — those requiring new gas line runs, new electrical circuits, venting modifications, or relocation of the unit — may take a full day or require scheduling a follow-up visit for additional trades work.
-              </p>
-              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '16px', lineHeight: 1.7, marginBottom: '24px' }}>
-                When you call (301) 679-5849, our team can give you a realistic timeframe based on your specific situation before we schedule.
-              </p>
-              <div className="space-y-3 mb-6">
-                {["Same-day installation available in most standard replacement scenarios", "Complex installations quoted with honest timelines upfront"].map((item) => (
-                  <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-                    <CheckCircle2 size={18} color="var(--brand-cyan)" style={{ flexShrink: 0 }} />
-                    <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{item}</span>
-                  </div>
-                ))}
-              </div>
               <BookNowButton variant="white" text="CALL FOR AVAILABILITY" href="tel:+13016795849" size="md" />
             </div>
           </div>
