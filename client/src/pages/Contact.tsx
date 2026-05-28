@@ -85,6 +85,12 @@ export default function Contact() {
               For 24/7 emergency plumbing, call (301) 679-5849 — a live dispatcher answers every call. For non-emergency service requests, use the form below and we will respond within one business day.
             </p>
             <TrustBadges variant="dark" badges={["24/7 Emergency Line", "Licensed Master Plumber", "MD  DC  VA  DE", "MDOT MBE Certified"]} />
+            <button
+              className="lg:hidden"
+              onClick={() => document.getElementById('contact-form-section')?.scrollIntoView({ behavior: 'smooth' })}
+              style={{ marginTop: '24px', display: 'flex', alignItems: 'center', gap: '8px', background: 'var(--brand-cyan)', color: 'var(--brand-navy)', fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.08em', padding: '14px 28px', borderRadius: '6px', border: 'none', cursor: 'pointer' }}>
+              Request Service
+            </button>
           </div>
         </div>
       </section>
@@ -158,7 +164,7 @@ export default function Contact() {
             </div>
 
             {/* RIGHT — white lead form card */}
-            <div className="lg:col-span-3 order-1 lg:order-2">
+            <div id="contact-form-section" className="lg:col-span-3 order-1 lg:order-2">
               <div style={{ background: 'white', borderRadius: '12px', padding: '28px', boxShadow: '0 12px 40px rgba(0,0,0,0.12)', border: '1px solid rgba(0,0,0,0.08)' }}>
                 {submitted ? (
                   <div style={{ textAlign: 'center', padding: '32px 0' }}>
