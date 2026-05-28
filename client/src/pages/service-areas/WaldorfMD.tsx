@@ -82,7 +82,7 @@ export default function WaldorfMD() {
         <div className="container">
           <SectionHeading eyebrow="LICENSED PLUMBING SERVICES" heading="What licensed plumbing services are available in Waldorf, MD?" />
           <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
-            Waldorf is the largest community in Charles County and one of the fastest-growing areas in the DMV — a major residential and commercial hub with significant new construction alongside established neighborhoods from the 1970s through 1990s. Waldorf plumbing keywords carry some of the highest cost-per-click values in our service area ($47.10 CPC), reflecting the density of demand and the active homeowner market in this community.
+            Waldorf is the largest community in Charles County and one of the fastest-growing areas in the DMV — a major residential and commercial hub with significant new construction alongside established neighborhoods from the 1970s through 1990s.
           </p>
           {ALL_SERVICE_CATEGORIES.map((cat) => (
 

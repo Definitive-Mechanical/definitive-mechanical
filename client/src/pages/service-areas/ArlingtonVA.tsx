@@ -84,10 +84,6 @@ export default function ArlingtonVA() {
           <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-6 max-w-3xl">
             Arlington County is one of the most densely populated jurisdictions in Virginia — home to the Pentagon, Amazon HQ2, Reagan National Airport, and a dense mix of high-rise residential, office, hospitality, and government facilities alongside established single-family neighborhoods in Clarendon, Arlington Forest, and Westover.
           </p>
-          <p style={{ fontFamily:"var(--font-body)", color:"var(--ink-2)", fontSize:"16px", lineHeight:1.7 }} className="mb-8 max-w-3xl">
-            Arlington emergency plumbing carries some of the highest per-click values in our entire service area — $139-$141 CPC for emergency plumber keywords, reflecting the combination of dense population, high property values, and the urgency that comes with plumbing emergencies in a market where downtime is expensive.
-          </p>
-
           {/* VA Credentials */}
           <div className="mb-8 max-w-2xl">
             {[
