@@ -26,7 +26,7 @@ export const SERVICE_IMAGES: Record<string, string> = {
 
   // Water Lines & Pipe
   "water-line-repair":                     "/images/service-water-line-repair.webp",
-  "water-line-installation":               "/images/service-water-line-repair.webp",
+  "water-line-installation":               "/images/service-water-line-installation.webp",
   "pipe-repair":                           "/images/service-pipe-repair.webp",
 
   // Gas Lines
@@ -63,6 +63,7 @@ export const SERVICE_IMAGES: Record<string, string> = {
   "commercial-plumber-dc":                 "/images/service-commercial-plumbing.webp",
   "commercial-plumber-northern-virginia":  "/images/service-commercial-plumbing.webp",
   "government-municipal-plumbing":         "/images/service-government-municipal-plumbing.webp",
+  "mbe-certified-plumbing-contractor-maryland": "/images/service-mbe-certified-contractor.webp",
   "residential-plumbing":                  "/images/service-pipe-repair.webp",
 };
 
