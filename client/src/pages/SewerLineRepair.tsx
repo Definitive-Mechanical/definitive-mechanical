@@ -10,17 +10,17 @@ import TrustBadges from '@/components/ui/TrustBadges';
 
 const FAQ_ITEMS = [
   { question: "What are the main sewer line clog symptoms?", answer: "The most reliable signs of a main sewer line clog are multiple fixtures draining slowly at the same time, gurgling sounds from toilets or floor drains, sewage odor inside the home, and water backing up into a tub or floor drain when the toilet is flushed. A single slow drain is usually a lateral line issue. Multiple affected fixtures point to the main line." },
-  { question: "How much does sewer line repair cost?", answer: "Sewer line repair ranges from $250-$500 for a cable clearing to $4,000-$12,000+ for full excavation and replacement, depending on the type of repair needed. Camera inspection — typically $200-$400 — identifies exactly what type of repair is required and prevents paying for excavation when a clearing would have resolved the issue." },
+  { question: "How much does sewer line repair cost?", answer: "Sewer line repair ranges from $1,500-$2,500 for a cable clearing to $15,000-$35,000+ for full excavation and replacement, depending on the type of repair needed. Camera inspection — typically $1,200+ — identifies exactly what type of repair is required and prevents paying for excavation when a clearing would have resolved the issue." },
   { question: "Do you use camera inspection before sewer line repair?", answer: "Yes, always for suspected structural issues. Camera inspection shows us exactly what is happening inside the line before we recommend a repair path. We show you the footage and explain what we see before recommending anything." },
   { question: "Can you repair commercial sewer lines?", answer: "Yes. We repair commercial sewer lines for restaurants, office buildings, multi-family properties, government facilities, and industrial properties across Maryland, DC, and Northern Virginia. Commercial properties with high-grease drain loads benefit from scheduled maintenance programs. Contact (301) 679-5849 to discuss your commercial property's needs." },
 ];
 
 const PRICING_ROWS = [
-  { type: "Camera inspection", range: "$200-$400" },
-  { type: "Cable clearing / rooter", range: "$250-$500" },
-  { type: "Hydro-jetting", range: "$350-$700" },
-  { type: "Spot repair (localized excavation)", range: "$1,500-$4,000" },
-  { type: "Full sewer line replacement", range: "$4,000-$12,000+" },
+  { type: "Camera inspection", range: "$1,200+" },
+  { type: "Cable clearing / rooter", range: "$550-$2,500" },
+  { type: "Hydro-jetting", range: "$700-$10,000" },
+  { type: "Spot repair (localized excavation)", range: "$12,000+" },
+  { type: "Full sewer line replacement", range: "$15,000-$35,000" },
 ];
 
 export default function SewerLineRepair() {

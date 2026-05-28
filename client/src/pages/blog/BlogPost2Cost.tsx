@@ -31,7 +31,7 @@ const faqSchema = {
       name: "What is the average cost of an emergency plumber in Maryland?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Emergency plumber costs in Maryland typically range from $85-$150 for a trip fee and $125-$225/hour for labor. Most complete emergency repairs total $300-$1,500 for a single repair.",
+        text: "Emergency plumber costs in Maryland typically range from $125-$250 for a trip fee and $150-$275/hour for labor. Most complete emergency repairs total $500-$2,500 for a single repair.",
       },
     },
     {
@@ -39,7 +39,7 @@ const faqSchema = {
       name: "What is the average emergency plumber cost in Washington, DC?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Emergency plumbing in Washington, DC runs slightly higher — trip fees of $125-$200 and hourly rates of $150-$250/hour. Most complete repairs total $350-$1,800.",
+        text: "Emergency plumbing in Washington, DC runs slightly higher — trip fees of $125-$250 and hourly rates of $150-$275/hour. Most complete repairs total $500-$2,500.",
       },
     },
     {
@@ -47,7 +47,7 @@ const faqSchema = {
       name: "What is the average emergency plumber cost in Northern Virginia?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Northern Virginia emergency plumbing pricing is competitive with suburban Maryland — trip fees of $100-$175 and hourly rates of $130-$230/hour. Most repairs total $300-$1,600.",
+        text: "Northern Virginia emergency plumbing pricing is competitive with suburban Maryland — trip fees of $125-$250 and hourly rates of $150-$275/hour. Most repairs total $500-$2,500.",
       },
     },
     {
@@ -130,7 +130,7 @@ export default function BlogPost2Cost() {
         <AuthorBlock date="January 15, 2026" />
 
         <FeaturedSnippet>
-          Emergency plumbing in the DC metro area typically costs $150-$500 for dispatch plus initial diagnosis, with repair costs added based on the scope of work. A trip fee applies to all services. The final cost depends on the type of emergency, time of call, and materials required — but most emergency plumbing jobs total $300-$1,500 for a single repair.
+          Emergency plumbing in the DC metro area typically costs $195-$500 for dispatch plus initial diagnosis, with repair costs added based on the scope of work. A trip fee applies to all services. The final cost depends on the type of emergency, time of call, and materials required — but most emergency plumbing jobs total $500-$2,500 for a single repair.
         </FeaturedSnippet>
 
         <BlogH2>What is the average cost of an emergency plumber in Maryland?</BlogH2>
@@ -140,10 +140,10 @@ export default function BlogPost2Cost() {
         <PricingTable
           headers={["Cost Component", "Typical Range"]}
           rows={[
-            ["Trip fee", "$85-$150 (disclosed before dispatch)"],
-            ["Hourly labor rate", "$125-$225/hour"],
-            ["First hour combined (dispatch + labor)", "$175-$350"],
-            ["Most complete emergency repairs (parts + labor)", "$300-$1,500"],
+            ["Trip fee", "$125-$250 (disclosed before dispatch)"],
+            ["Hourly labor rate", "$150-$275/hour"],
+            ["First hour combined (dispatch + labor)", "$275-$400"],
+            ["Most complete emergency repairs (parts + labor)", "$500-$2,500"],
             ["Major repairs (sewer line, water main, full repipe section)", "$1,500-$8,000+"],
           ]}
         />
@@ -158,10 +158,10 @@ export default function BlogPost2Cost() {
         <PricingTable
           headers={["Cost Component", "Typical DC Range"]}
           rows={[
-            ["Trip fee", "$125-$200 (disclosed before dispatch)"],
-            ["Hourly labor rate", "$150-$250/hour"],
-            ["First hour combined", "$200-$400"],
-            ["Most complete emergency repairs", "$350-$1,800"],
+            ["Trip fee", "$125-$250 (disclosed before dispatch)"],
+            ["Hourly labor rate", "$150-$275/hour"],
+            ["First hour combined", "$275-$400"],
+            ["Most complete emergency repairs", "$500-$2,500"],
           ]}
         />
         <BlogP>
@@ -175,10 +175,10 @@ export default function BlogPost2Cost() {
         <PricingTable
           headers={["Cost Component", "Northern Virginia Range"]}
           rows={[
-            ["Trip fee", "$100-$175 (disclosed before dispatch)"],
-            ["Hourly labor rate", "$130-$230/hour"],
-            ["First hour combined", "$185-$375"],
-            ["Most complete emergency repairs", "$300-$1,600"],
+            ["Trip fee", "$125-$250 (disclosed before dispatch)"],
+            ["Hourly labor rate", "$150-$275/hour"],
+            ["First hour combined", "$275-$400"],
+            ["Most complete emergency repairs", "$500-$2,500"],
           ]}
         />
 
@@ -197,15 +197,15 @@ export default function BlogPost2Cost() {
         <PricingTable
           headers={["Emergency Repair Type", "Typical Cost Range (2026)"]}
           rows={[
-            ["Burst pipe repair (copper, accessible location)", "$300-$700"],
-            ["Burst pipe repair (behind drywall, finish work needed)", "$600-$1,500+"],
-            ["Emergency drain stoppage clearing", "$150-$400"],
-            ["Emergency sewer backup clearing", "$250-$700"],
-            ["Emergency water heater repair", "$200-$600"],
-            ["Emergency water heater replacement", "$900-$2,500"],
-            ["Gas leak investigation + repair", "$300-$1,000+"],
-            ["Main shutoff valve replacement", "$200-$500"],
-            ["Emergency sewer camera inspection", "$175-$350"],
+            ["Burst pipe repair (copper, accessible location)", "$500-$2,500"],
+            ["Burst pipe repair (behind drywall, finish work needed)", "$1,000-$3,500+"],
+            ["Emergency drain stoppage clearing", "$500-$1,500"],
+            ["Emergency sewer backup clearing", "$1,500-$3,500"],
+            ["Emergency water heater repair", "$1,000-$2,500"],
+            ["Emergency water heater replacement", "$4,200-$10,000+"],
+            ["Gas leak investigation + repair", "$1,000-$2,500"],
+            ["Main shutoff valve replacement", "$1,000-$2,500"],
+            ["Emergency sewer camera inspection", "$1,200-$2,400"],
           ]}
         />
         <BlogP>
@@ -215,7 +215,7 @@ export default function BlogPost2Cost() {
         <BlogH2>How can I keep emergency plumbing costs down?</BlogH2>
         <BlogUL>
           <li><strong>Know where your shutoff valves are.</strong> Being able to shut off the water immediately — before calling — dramatically reduces the water damage you'll face. Know the location of: your main shutoff, your water heater shutoff, and the individual shutoffs under each sink and behind each toilet.</li>
-          <li><strong>Call quickly.</strong> In a burst pipe situation, every minute of delay is additional water damage. Insurance claims for water damage average $11,000 per claim (Insurance Information Institute, 2024 data). A $500 emergency plumbing bill is far cheaper than a $10,000 water damage claim.</li>
+          <li><strong>Call quickly.</strong> In a burst pipe situation, every minute of delay is additional water damage. Insurance claims for water damage average $20,000 per claim (Insurance Information Institute, 2024 data). A $500 emergency plumbing bill is far cheaper than a $10,000 water damage claim.</li>
           <li><strong>Have your plumber's number before you need it.</strong> Finding a licensed plumber under emergency pressure leads to rushed decisions. Save (301) 679-5849 now.</li>
           <li><strong>Ask for upfront pricing.</strong> Reputable emergency plumbers will give you a written estimate before work begins — even in an emergency. Definitive Mechanical does this on every call.</li>
         </BlogUL>

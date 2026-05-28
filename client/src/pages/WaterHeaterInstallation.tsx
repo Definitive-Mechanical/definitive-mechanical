@@ -26,11 +26,11 @@ const FAQ_ITEMS = [
 ];
 
 const PRICING_ROWS = [
-  { type: "Gas tank (40-50 gallon)", range: "$900-$1,600" },
-  { type: "Electric tank (40-50 gallon)", range: "$700-$1,300" },
-  { type: "Gas tank (75+ gallon, commercial-grade)", range: "$1,500-$2,800" },
-  { type: "Tankless gas (residential)", range: "$1,800-$3,500" },
-  { type: "Tankless electric (residential)", range: "$1,200-$2,500" },
+  { type: "Gas tank (40-50 gallon)", range: "$4,200-$5,600" },
+  { type: "Electric tank (40-50 gallon)", range: "$3,800-$5,000" },
+  { type: "Gas tank (75+ gallon, commercial-grade)", range: "$7,500-$20,600+" },
+  { type: "Tankless gas (residential)", range: "$6,500-$10,000" },
+  { type: "Tankless electric (residential)", range: "$5,500-$10,000" },
 ];
 
 export default function WaterHeaterInstallation() {
@@ -101,7 +101,7 @@ export default function WaterHeaterInstallation() {
             <div>
               <p style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: '#0A0A0A', fontSize: '15px', marginBottom: '16px' }}>Repair rather than replace when:</p>
               <div className="space-y-3">
-                {["The unit is under 8-10 years old with a single component failure", "The repair cost is under $300-$400 for a unit in otherwise good condition", "The tank has no corrosion and has been maintained with annual flushing"].map((item) => (
+                {["The unit is under 8-10 years old with a single component failure", "The repair cost is under $800-$1,000 for a unit in otherwise good condition", "The tank has no corrosion and has been maintained with annual flushing"].map((item) => (
                   <div key={item} style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                     <CheckCircle2 size={18} color="#1A7A4A" style={{ flexShrink: 0, marginTop: '2px' }} />
                     <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px', lineHeight: 1.6 }}>{item}</span>

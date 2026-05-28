@@ -9,11 +9,11 @@ import TrustBadges from '@/components/ui/TrustBadges';
 const FAQ_ITEMS = [
   {
     question: "How much does toilet repair cost?",
-    answer: "Common toilet repairs in the DMV market range from $100-$300 for most flapper, fill valve, or flush valve repairs. Wax ring replacement (toilet rocking at the base or leaking at the floor) typically runs $200-$400 including the repair and reset. Toilet replacement with a standard unit runs $300-$600 for the installation, depending on the fixture. Call (301) 679-5849 for written pricing specific to your situation."
+    answer: "Common toilet repairs in the DMV market range from $300-$600 for most flapper, fill valve, or flush valve repairs. Wax ring replacement (toilet rocking at the base or leaking at the floor) typically runs $400-$600 including the repair and reset. Toilet replacement with a standard unit runs $1,200-$1,500 for the installation, depending on the fixture. Call (301) 679-5849 for written pricing specific to your situation."
   },
   {
     question: "How much does faucet repair cost?",
-    answer: "Faucet cartridge or valve replacement typically runs $150-$300 for a standard residential faucet. Faucet replacement (installing a new fixture) typically runs $200-$450 for labor plus the fixture cost. We can install a fixture you provide or recommend one appropriate for your application."
+    answer: "Faucet cartridge or valve replacement typically runs $550-$850 for a standard residential faucet. Faucet replacement (installing a new fixture) typically runs $850-$1,200 for labor plus the fixture cost. We can install a fixture you provide or recommend one appropriate for your application."
   },
   {
     question: "Is a dripping faucet worth repairing?",

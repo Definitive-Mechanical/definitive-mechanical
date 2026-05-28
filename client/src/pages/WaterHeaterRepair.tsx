@@ -18,7 +18,7 @@ const WATER_HEATER_SERVICES = [
 const WATER_HEATER_FAQ = [
   {
     question: 'How much does water heater repair cost in Maryland?',
-    answer: 'Water heater repair costs in Maryland depend on the type of failure, the unit type (gas, electric, or tankless), and whether parts are needed. Simple repairs like thermocouple replacement or element replacement typically range from $150-$350. Major repairs or replacements vary. Definitive Mechanical provides written pricing before any work begins. Call (301) 679-5849 for an estimate.',
+    answer: 'Water heater repair costs in Maryland depend on the type of failure, the unit type (gas, electric, or tankless), and whether parts are needed. Simple repairs like thermocouple replacement or element replacement typically range from $850-$2,500. Major repairs or replacements vary. Definitive Mechanical provides written pricing before any work begins. Call (301) 679-5849 for an estimate.',
   },
   {
     question: 'How do I know if my water heater needs to be repaired or replaced?',

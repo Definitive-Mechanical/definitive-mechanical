@@ -14,11 +14,11 @@ const FAQ_ITEMS = [
 ];
 
 const PRICING_ROWS = [
-  { type: "Short gas appliance hookup (existing nearby line)", range: "$200-$500" },
-  { type: "New gas line run (indoor, standard access, 15-25 ft)", range: "$400-$900" },
-  { type: "New gas line run (longer or complex routing)", range: "$800-$2,000+" },
-  { type: "Underground gas line installation", range: "$1,000-$3,000+ depending on length" },
-  { type: "Gas line upsizing for tankless or high-output appliance", range: "$500-$1,500" },
+  { type: "Short gas appliance hookup (existing nearby line)", range: "$500-$2,500" },
+  { type: "New gas line run (indoor, standard access, 15-25 ft)", range: "$3,500-$5,500" },
+  { type: "New gas line run (longer or complex routing)", range: "$5,500-$10,000+" },
+  { type: "Underground gas line installation", range: "$7,500-$10,000+ depending on length" },
+  { type: "Gas line upsizing for tankless or high-output appliance", range: "$5,500-$10,000+" },
   { type: "Commercial gas installation", range: "Custom quote based on scope" },
 ];
 

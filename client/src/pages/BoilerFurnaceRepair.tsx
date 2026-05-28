@@ -63,13 +63,13 @@ const FURNACE_REPAIRS = [
 ];
 
 const PRICING_ROWS = [
-  { type: "Thermostat replacement", range: "$150-$350" },
-  { type: "Ignition/pilot repair (gas furnace or boiler)", range: "$200-$500" },
-  { type: "Circulator pump replacement (boiler)", range: "$400-$900" },
-  { type: "Zone valve replacement", range: "$250-$600 per zone" },
-  { type: "Heat exchanger inspection", range: "$150-$300" },
-  { type: "Gas valve replacement", range: "$300-$700" },
-  { type: "Pressure relief valve (boiler)", range: "$150-$300" },
+  { type: "Thermostat replacement", range: "$550-$1,500" },
+  { type: "Ignition/pilot repair (gas furnace or boiler)", range: "$550-$1,500" },
+  { type: "Circulator pump replacement (boiler)", range: "$2,500-$10,000" },
+  { type: "Zone valve replacement", range: "$1,500-$5,000 per zone" },
+  { type: "Heat exchanger inspection", range: "$850-$3,000" },
+  { type: "Gas valve replacement", range: "$1,000-$3,000" },
+  { type: "Pressure relief valve (boiler)", range: "$1,000-$3,000" },
 ];
 
 export default function BoilerFurnaceRepair() {

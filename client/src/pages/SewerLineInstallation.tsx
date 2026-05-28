@@ -26,10 +26,10 @@ const PROCESS_STEPS = [
 ];
 
 const PRICING_ROWS = [
-  { scope: "Residential sewer line replacement (50-100 ft)", range: "$5,000-$12,000" },
-  { scope: "Residential new installation (new construction)", range: "$4,000-$10,000" },
+  { scope: "Residential sewer line replacement (50-100 ft)", range: "$15,000-$35,000" },
+  { scope: "Residential new installation (new construction)", range: "$15,000-$35,000" },
   { scope: "Commercial sewer line replacement", range: "Custom quote" },
-  { scope: "Permit fees (vary by jurisdiction)", range: "$150-$800+" },
+  { scope: "Permit fees (vary by jurisdiction)", range: "$500-$2,500+" },
 ];
 
 const LICENSE_BADGES = ["MD #96958", "WSSC #73696", "DC #PGM1002236", "VA #2710064209"];

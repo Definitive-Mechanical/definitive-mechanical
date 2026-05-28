@@ -19,7 +19,7 @@ const DRAIN_SERVICES = [
 const DRAIN_FAQ = [
   {
     question: 'How much does drain cleaning cost in Maryland?',
-    answer: 'Drain cleaning costs in Maryland vary by the type of drain, severity of the blockage, and method required. Simple drain clearing typically ranges from $150-$300. Hydro-jetting and main sewer line clearing may cost more depending on the scope. Definitive Mechanical provides written pricing before any work begins. Call (301) 679-5849 for an estimate.',
+    answer: 'Drain cleaning costs in Maryland vary by the type of drain, severity of the blockage, and method required. Simple drain clearing typically ranges from $500-$700. Hydro-jetting and main sewer line clearing may cost more depending on the scope. Definitive Mechanical provides written pricing before any work begins. Call (301) 679-5849 for an estimate.',
   },
   {
     question: 'What is the difference between drain snaking and hydro-jetting?',

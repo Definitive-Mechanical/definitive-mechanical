@@ -61,7 +61,7 @@ const CREDENTIALS = [
 const HOME_FAQ = [
   {
     question: 'How much does a plumber charge per hour in Maryland?',
-    answer: 'Plumbing rates in Maryland vary based on the service type, urgency, and materials required. Standard service calls typically range from $150-$300 for diagnosis and simple repairs. All services include a trip fee. Call (301) 679-5849 for upfront written pricing before any work begins.',
+    answer: 'Plumbing rates in Maryland vary based on the service type, urgency, and materials required. Standard service calls typically range from $150-$500 for diagnosis and simple repairs. All services include a trip fee. Call (301) 679-5849 for upfront written pricing before any work begins.',
   },
   {
     question: 'What qualifies as a plumbing emergency?',

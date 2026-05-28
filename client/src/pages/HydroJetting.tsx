@@ -24,9 +24,9 @@ const COMPARISON_ROWS = [
 ];
 
 const PRICING_ROWS = [
-  { type: "Residential hydro-jetting (drain line)", range: "$300-$600" },
-  { type: "Residential hydro-jetting (sewer line)", range: "$400-$800" },
-  { type: "Commercial hydro-jetting", range: "$500-$1,500+ depending on line size and length" },
+  { type: "Residential hydro-jetting (drain line)", range: "$700-$1,500" },
+  { type: "Residential hydro-jetting (sewer line)", range: "$1,500-$7,000" },
+  { type: "Commercial hydro-jetting", range: "$2,000-$10,000 depending on line size and length" },
 ];
 
 const WHEN_TO_USE = [

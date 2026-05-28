@@ -16,9 +16,9 @@ const FAQ_ITEMS = [
 ];
 
 const PRICING_ROWS = [
-  { type: "Gas tankless (residential, standard)", range: "$1,800-$3,000" },
-  { type: "Gas tankless (high-output or whole-home)", range: "$2,500-$3,500+" },
-  { type: "Electric tankless (residential)", range: "$1,200-$2,500" },
+  { type: "Gas tankless (residential, standard)", range: "$6,500-$10,000" },
+  { type: "Gas tankless (high-output or whole-home)", range: "$6,500-$10,000" },
+  { type: "Electric tankless (residential)", range: "$5,500-$10,000" },
   { type: "Commercial tankless installation", range: "Custom quote based on demand load" },
 ];
 
@@ -149,7 +149,7 @@ export default function TanklessWaterHeaters() {
         </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
             {[
-              { Icon: DollarSign, title: "Higher upfront cost.", body: "Tankless installation typically costs $1,800-$3,500+ for gas units — compared to $700-$1,600 for a standard tank replacement. The long-term savings are real, but the upfront investment is larger. Financing available through Synchrony." },
+              { Icon: DollarSign, title: "Higher upfront cost.", body: "Tankless installation typically costs $6,500-$10,000+ for gas units — compared to $4,200-$5,600 for a standard tank replacement. The long-term savings are real, but the upfront investment is larger. Financing available through Synchrony." },
               { Icon: GitBranch, title: "May require gas line upgrades.", body: "High-output gas tankless units often require a larger gas supply line than what currently serves the home's water heater location. If your existing gas line is undersized, a gas line run increases the installation cost." },
               { Icon: Zap, title: "May require electrical upgrades.", body: "Electric tankless units — particularly whole-home units — draw significant amperage and often require dedicated circuit additions or panel upgrades." },
               { Icon: Snowflake, title: "Cold climate performance.", body: "In Maryland and Northern Virginia winters, incoming water temperature drops significantly, which can reduce the flow rate. Proper sizing accounts for this — which is why sizing by a licensed plumber matters." },
