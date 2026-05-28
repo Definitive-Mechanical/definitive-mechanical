@@ -52,7 +52,7 @@ export default function TestimonialCard({ quote, name, location, service }: Test
         <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '14px', marginBottom: '2px' }}>
           {name}
         </p>
-        <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'var(--ink-3)', fontSize: '13px' }}>
+        <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'var(--text-mute)', fontSize: '13px' }}>
           {location}  {service}
         </p>
       </div>

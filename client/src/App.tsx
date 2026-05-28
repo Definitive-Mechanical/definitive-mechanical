@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -10,218 +11,180 @@ import Footer from "./components/layout/Footer";
 
 // Core Pages
 import Home from "./pages/Home";
-import ServicesDirectory from "./pages/ServicesDirectory";
-import About from "./pages/About";
-import LicensesCertifications from "./pages/LicensesCertifications";
-import Reviews from "./pages/Reviews";
-import FAQ from "./pages/FAQ";
-
+const ServicesDirectory = lazy(() => import("./pages/ServicesDirectory"));
+const About = lazy(() => import("./pages/About"));
+const LicensesCertifications = lazy(() => import("./pages/LicensesCertifications"));
+const Reviews = lazy(() => import("./pages/Reviews"));
+const FAQ = lazy(() => import("./pages/FAQ"));
 // Emergency
-import EmergencyPlumbing from "./pages/EmergencyPlumbing";
-
+const EmergencyPlumbing = lazy(() => import("./pages/EmergencyPlumbing"));
 // Emergency City Pages
-import EmergencyRockvilleMD from "./pages/emergency/EmergencyRockvilleMD";
-import EmergencyArlingtonVA from "./pages/emergency/EmergencyArlingtonVA";
-import EmergencyWashingtonDC from "./pages/emergency/EmergencyWashingtonDC";
-import EmergencyAlexandriaVA from "./pages/emergency/EmergencyAlexandriaVA";
-import EmergencyBethesdaMD from "./pages/emergency/EmergencyBethesdaMD";
-import EmergencyLargoMD from "./pages/emergency/EmergencyLargoMD";
-import EmergencyBowieMD from "./pages/emergency/EmergencyBowieMD";
-
+const EmergencyRockvilleMD = lazy(() => import("./pages/emergency/EmergencyRockvilleMD"));
+const EmergencyArlingtonVA = lazy(() => import("./pages/emergency/EmergencyArlingtonVA"));
+const EmergencyWashingtonDC = lazy(() => import("./pages/emergency/EmergencyWashingtonDC"));
+const EmergencyAlexandriaVA = lazy(() => import("./pages/emergency/EmergencyAlexandriaVA"));
+const EmergencyBethesdaMD = lazy(() => import("./pages/emergency/EmergencyBethesdaMD"));
+const EmergencyLargoMD = lazy(() => import("./pages/emergency/EmergencyLargoMD"));
+const EmergencyBowieMD = lazy(() => import("./pages/emergency/EmergencyBowieMD"));
 // Drain & Sewer
-import DrainCleaning from "./pages/DrainCleaning";
-import SewerLineRepair from "./pages/SewerLineRepair";
-import SewerLineInstallation from "./pages/SewerLineInstallation";
-import HydroJetting from "./pages/HydroJetting";
-import VideoCameraInspection from "./pages/VideoCameraInspection";
-
+const DrainCleaning = lazy(() => import("./pages/DrainCleaning"));
+const SewerLineRepair = lazy(() => import("./pages/SewerLineRepair"));
+const SewerLineInstallation = lazy(() => import("./pages/SewerLineInstallation"));
+const HydroJetting = lazy(() => import("./pages/HydroJetting"));
+const VideoCameraInspection = lazy(() => import("./pages/VideoCameraInspection"));
 // Water Heater
-import WaterHeaterRepair from "./pages/WaterHeaterRepair";
-import WaterHeaterInstallation from "./pages/WaterHeaterInstallation";
-import TanklessWaterHeaters from "./pages/TanklessWaterHeaters";
-
+const WaterHeaterRepair = lazy(() => import("./pages/WaterHeaterRepair"));
+const WaterHeaterInstallation = lazy(() => import("./pages/WaterHeaterInstallation"));
+const TanklessWaterHeaters = lazy(() => import("./pages/TanklessWaterHeaters"));
 // Water Line
-import WaterLineRepair from "./pages/WaterLineRepair";
-import WaterLineInstallation from "./pages/WaterLineInstallation";
-
+const WaterLineRepair = lazy(() => import("./pages/WaterLineRepair"));
+const WaterLineInstallation = lazy(() => import("./pages/WaterLineInstallation"));
 // Gas
-import GasLineRepair from "./pages/GasLineRepair";
-import GasLineInstallation from "./pages/GasLineInstallation";
-import GasLeakRepair from "./pages/GasLeakRepair";
-
+const GasLineRepair = lazy(() => import("./pages/GasLineRepair"));
+const GasLineInstallation = lazy(() => import("./pages/GasLineInstallation"));
+const GasLeakRepair = lazy(() => import("./pages/GasLeakRepair"));
 // Backflow
-import BackflowPrevention from "./pages/BackflowPrevention";
-import BackflowCertification from "./pages/BackflowCertification";
-import BackflowPreventerRepair from "./pages/BackflowPreventerRepair";
-
+const BackflowPrevention = lazy(() => import("./pages/BackflowPrevention"));
+const BackflowCertification = lazy(() => import("./pages/BackflowCertification"));
+const BackflowPreventerRepair = lazy(() => import("./pages/BackflowPreventerRepair"));
 // Boiler & Furnace
-import BoilerFurnaceRepair from "./pages/BoilerFurnaceRepair";
-import BoilerFurnaceInstallation from "./pages/BoilerFurnaceInstallation";
-
+const BoilerFurnaceRepair = lazy(() => import("./pages/BoilerFurnaceRepair"));
+const BoilerFurnaceInstallation = lazy(() => import("./pages/BoilerFurnaceInstallation"));
 // Fixtures & Residential
-import FaucetToiletRepair from "./pages/FaucetToiletRepair";
-import ResidentialPlumbing from "./pages/ResidentialPlumbing";
-
+const FaucetToiletRepair = lazy(() => import("./pages/FaucetToiletRepair"));
+const ResidentialPlumbing = lazy(() => import("./pages/ResidentialPlumbing"));
 // Service Area Pages — Maryland (City Level)
-import LargoMD from "./pages/service-areas/LargoMD";
-import BowieMD from "./pages/service-areas/BowieMD";
-import FortWashingtonMD from "./pages/service-areas/FortWashingtonMD";
-import RockvilleMD from "./pages/service-areas/RockvilleMD";
-import BethesdaMD from "./pages/service-areas/BethesdaMD";
-import PotomacMD from "./pages/service-areas/PotomacMD";
-import EllicottCityMD from "./pages/service-areas/EllicottCityMD";
-import WaldorfMD from "./pages/service-areas/WaldorfMD";
-
+const LargoMD = lazy(() => import("./pages/service-areas/LargoMD"));
+const BowieMD = lazy(() => import("./pages/service-areas/BowieMD"));
+const FortWashingtonMD = lazy(() => import("./pages/service-areas/FortWashingtonMD"));
+const RockvilleMD = lazy(() => import("./pages/service-areas/RockvilleMD"));
+const BethesdaMD = lazy(() => import("./pages/service-areas/BethesdaMD"));
+const PotomacMD = lazy(() => import("./pages/service-areas/PotomacMD"));
+const EllicottCityMD = lazy(() => import("./pages/service-areas/EllicottCityMD"));
+const WaldorfMD = lazy(() => import("./pages/service-areas/WaldorfMD"));
 // Service Area Pages — Washington DC
-import WashingtonDC from "./pages/service-areas/WashingtonDC";
-
+const WashingtonDC = lazy(() => import("./pages/service-areas/WashingtonDC"));
 // Service Area Pages — Northern Virginia (City Level)
-import AlexandriaVA from "./pages/service-areas/AlexandriaVA";
-import ArlingtonVA from "./pages/service-areas/ArlingtonVA";
-import McLeanVA from "./pages/service-areas/McLeanVA";
-import SpringfieldVA from "./pages/service-areas/SpringfieldVA";
-import ViennaVA from "./pages/service-areas/ViennaVA";
-
+const AlexandriaVA = lazy(() => import("./pages/service-areas/AlexandriaVA"));
+const ArlingtonVA = lazy(() => import("./pages/service-areas/ArlingtonVA"));
+const McLeanVA = lazy(() => import("./pages/service-areas/McLeanVA"));
+const SpringfieldVA = lazy(() => import("./pages/service-areas/SpringfieldVA"));
+const ViennaVA = lazy(() => import("./pages/service-areas/ViennaVA"));
 // Contact & Financing
-import Contact from "./pages/Contact";
-import Financing from "./pages/Financing";
-import AllServices from "./pages/AllServices";
-
+const Contact = lazy(() => import("./pages/Contact"));
+const Financing = lazy(() => import("./pages/Financing"));
+const AllServices = lazy(() => import("./pages/AllServices"));
 // Government Certifications
-import MBECertified from "./pages/MBECertified";
-import SWaMCertified from "./pages/SWaMCertified";
-
+const MBECertified = lazy(() => import("./pages/MBECertified"));
+const SWaMCertified = lazy(() => import("./pages/SWaMCertified"));
 // Service Area Hubs
-import ServiceAreasHub from "./pages/service-areas/ServiceAreasHub";
-import MarylandHub from "./pages/service-areas/MarylandHub";
-import WashingtonDCHub from "./pages/service-areas/WashingtonDCHub";
-import NorthernVirginiaHub from "./pages/service-areas/NorthernVirginiaHub";
-
+const ServiceAreasHub = lazy(() => import("./pages/service-areas/ServiceAreasHub"));
+const MarylandHub = lazy(() => import("./pages/service-areas/MarylandHub"));
+const WashingtonDCHub = lazy(() => import("./pages/service-areas/WashingtonDCHub"));
+const NorthernVirginiaHub = lazy(() => import("./pages/service-areas/NorthernVirginiaHub"));
 // County Hubs — Maryland
-import PrinceGeorgesCounty from "./pages/service-areas/PrinceGeorgesCounty";
-import MontgomeryCounty from "./pages/service-areas/MontgomeryCounty";
-import HowardCounty from "./pages/service-areas/HowardCounty";
-import AnneArundelCounty from "./pages/service-areas/AnneArundelCounty";
-import CharlesCounty from "./pages/service-areas/CharlesCounty";
-
+const PrinceGeorgesCounty = lazy(() => import("./pages/service-areas/PrinceGeorgesCounty"));
+const MontgomeryCounty = lazy(() => import("./pages/service-areas/MontgomeryCounty"));
+const HowardCounty = lazy(() => import("./pages/service-areas/HowardCounty"));
+const AnneArundelCounty = lazy(() => import("./pages/service-areas/AnneArundelCounty"));
+const CharlesCounty = lazy(() => import("./pages/service-areas/CharlesCounty"));
 // County Hubs — Northern Virginia
-import FairfaxCounty from "./pages/service-areas/FairfaxCounty";
-import ArlingtonCounty from "./pages/service-areas/ArlingtonCounty";
-import LoudounCounty from "./pages/service-areas/LoudounCounty";
-import PrinceWilliamCounty from "./pages/service-areas/PrinceWilliamCounty";
-
+const FairfaxCounty = lazy(() => import("./pages/service-areas/FairfaxCounty"));
+const ArlingtonCounty = lazy(() => import("./pages/service-areas/ArlingtonCounty"));
+const LoudounCounty = lazy(() => import("./pages/service-areas/LoudounCounty"));
+const PrinceWilliamCounty = lazy(() => import("./pages/service-areas/PrinceWilliamCounty"));
 // Commercial Differentiation — Regional
-import CommercialPlumberMaryland from "./pages/CommercialPlumberMaryland";
-import CommercialPlumberDC from "./pages/CommercialPlumberDC";
-import CommercialPlumberNorthernVirginia from "./pages/CommercialPlumberNorthernVirginia";
-
+const CommercialPlumberMaryland = lazy(() => import("./pages/CommercialPlumberMaryland"));
+const CommercialPlumberDC = lazy(() => import("./pages/CommercialPlumberDC"));
+const CommercialPlumberNorthernVirginia = lazy(() => import("./pages/CommercialPlumberNorthernVirginia"));
 // Backflow Certification — Regional
-import BackflowCertificationMaryland from "./pages/BackflowCertificationMaryland";
-import BackflowCertificationDC from "./pages/BackflowCertificationDC";
-import BackflowCertificationVirginia from "./pages/BackflowCertificationVirginia";
-
+const BackflowCertificationMaryland = lazy(() => import("./pages/BackflowCertificationMaryland"));
+const BackflowCertificationDC = lazy(() => import("./pages/BackflowCertificationDC"));
+const BackflowCertificationVirginia = lazy(() => import("./pages/BackflowCertificationVirginia"));
 // Tier 2 City Pages — Maryland (Prince George's)
-import WoodmoreMD from "./pages/service-areas/prince-georges-county/WoodmoreMD";
-import FairwoodMD from "./pages/service-areas/prince-georges-county/FairwoodMD";
-
+const WoodmoreMD = lazy(() => import("./pages/service-areas/prince-georges-county/WoodmoreMD"));
+const FairwoodMD = lazy(() => import("./pages/service-areas/prince-georges-county/FairwoodMD"));
 // Tier 2 City Pages — Maryland (Montgomery)
-import ChevyChaseMD from "./pages/service-areas/montgomery-county/ChevyChaseMD";
-import CabinJohnMD from "./pages/service-areas/montgomery-county/CabinJohnMD";
-import DarnestownMD from "./pages/service-areas/montgomery-county/DarnestownMD";
-
+const ChevyChaseMD = lazy(() => import("./pages/service-areas/montgomery-county/ChevyChaseMD"));
+const CabinJohnMD = lazy(() => import("./pages/service-areas/montgomery-county/CabinJohnMD"));
+const DarnestownMD = lazy(() => import("./pages/service-areas/montgomery-county/DarnestownMD"));
 // Tier 2 City Pages — Maryland (Howard)
-import ClarksvilleMD from "./pages/service-areas/howard-county/ClarksvilleMD";
-import GlenelgMD from "./pages/service-areas/howard-county/GlenelgMD";
-
+const ClarksvilleMD = lazy(() => import("./pages/service-areas/howard-county/ClarksvilleMD"));
+const GlenelgMD = lazy(() => import("./pages/service-areas/howard-county/GlenelgMD"));
 // Tier 2 City Pages — Maryland (Anne Arundel)
-import GalesvilleMD from "./pages/service-areas/anne-arundel-county/GalesvilleMD";
-import CrownsvilleMD from "./pages/service-areas/anne-arundel-county/CrownsvilleMD";
-import RivaMD from "./pages/service-areas/anne-arundel-county/RivaMD";
-
+const GalesvilleMD = lazy(() => import("./pages/service-areas/anne-arundel-county/GalesvilleMD"));
+const CrownsvilleMD = lazy(() => import("./pages/service-areas/anne-arundel-county/CrownsvilleMD"));
+const RivaMD = lazy(() => import("./pages/service-areas/anne-arundel-county/RivaMD"));
 // Tier 2 City Pages — Washington DC Neighborhoods
-import GeorgetownDC from "./pages/service-areas/washington-dc/GeorgetownDC";
-import CapitolHillDC from "./pages/service-areas/washington-dc/CapitolHillDC";
-import DupontCircleDC from "./pages/service-areas/washington-dc/DupontCircleDC";
-import NavyYardDC from "./pages/service-areas/washington-dc/NavyYardDC";
-import NomaDC from "./pages/service-areas/washington-dc/NomaDC";
-
+const GeorgetownDC = lazy(() => import("./pages/service-areas/washington-dc/GeorgetownDC"));
+const CapitolHillDC = lazy(() => import("./pages/service-areas/washington-dc/CapitolHillDC"));
+const DupontCircleDC = lazy(() => import("./pages/service-areas/washington-dc/DupontCircleDC"));
+const NavyYardDC = lazy(() => import("./pages/service-areas/washington-dc/NavyYardDC"));
+const NomaDC = lazy(() => import("./pages/service-areas/washington-dc/NomaDC"));
 // Tier 2 City Pages — Northern Virginia
-import GreatFallsVA from "./pages/service-areas/fairfax-county/GreatFallsVA";
-import BrambletonVA from "./pages/service-areas/loudoun-county/BrambletonVA";
-import OneLoudounVA from "./pages/service-areas/loudoun-county/OneLoudounVA";
-
+const GreatFallsVA = lazy(() => import("./pages/service-areas/fairfax-county/GreatFallsVA"));
+const BrambletonVA = lazy(() => import("./pages/service-areas/loudoun-county/BrambletonVA"));
+const OneLoudounVA = lazy(() => import("./pages/service-areas/loudoun-county/OneLoudounVA"));
 // Tier 3 — Maryland (PG County)
-import UniversityParkMD from "./pages/service-areas/prince-georges-county/UniversityParkMD";
-import BrockHallMD from "./pages/service-areas/prince-georges-county/BrockHallMD";
-import QueenslandMD from "./pages/service-areas/prince-georges-county/QueenslandMD";
-import CroomMD from "./pages/service-areas/prince-georges-county/CroomMD";
-
+const UniversityParkMD = lazy(() => import("./pages/service-areas/prince-georges-county/UniversityParkMD"));
+const BrockHallMD = lazy(() => import("./pages/service-areas/prince-georges-county/BrockHallMD"));
+const QueenslandMD = lazy(() => import("./pages/service-areas/prince-georges-county/QueenslandMD"));
+const CroomMD = lazy(() => import("./pages/service-areas/prince-georges-county/CroomMD"));
 // Tier 3 — Maryland (Montgomery County)
-import TravilahMD from "./pages/service-areas/montgomery-county/TravilahMD";
-import SomersetMD from "./pages/service-areas/montgomery-county/SomersetMD";
-import MartinsAdditionsMD from "./pages/service-areas/montgomery-county/MartinsAdditionsMD";
-import ChevyChaseVillageMD from "./pages/service-areas/montgomery-county/ChevyChaseVillageMD";
-import ChevyChaseViewMD from "./pages/service-areas/montgomery-county/ChevyChaseViewMD";
-import BrookmontMD from "./pages/service-areas/montgomery-county/BrookmontMD";
-
+const TravilahMD = lazy(() => import("./pages/service-areas/montgomery-county/TravilahMD"));
+const SomersetMD = lazy(() => import("./pages/service-areas/montgomery-county/SomersetMD"));
+const MartinsAdditionsMD = lazy(() => import("./pages/service-areas/montgomery-county/MartinsAdditionsMD"));
+const ChevyChaseVillageMD = lazy(() => import("./pages/service-areas/montgomery-county/ChevyChaseVillageMD"));
+const ChevyChaseViewMD = lazy(() => import("./pages/service-areas/montgomery-county/ChevyChaseViewMD"));
+const BrookmontMD = lazy(() => import("./pages/service-areas/montgomery-county/BrookmontMD"));
 // Tier 3 — Maryland (Howard County)
-import HighlandMD from "./pages/service-areas/howard-county/HighlandMD";
-import FultonMD from "./pages/service-areas/howard-county/FultonMD";
-import WestFriendshipMD from "./pages/service-areas/howard-county/WestFriendshipMD";
-import ScaggsMD from "./pages/service-areas/howard-county/ScaggsMD";
-
+const HighlandMD = lazy(() => import("./pages/service-areas/howard-county/HighlandMD"));
+const FultonMD = lazy(() => import("./pages/service-areas/howard-county/FultonMD"));
+const WestFriendshipMD = lazy(() => import("./pages/service-areas/howard-county/WestFriendshipMD"));
+const ScaggsMD = lazy(() => import("./pages/service-areas/howard-county/ScaggsMD"));
 // Tier 3 — Maryland (Charles County)
-import BensvilleMD from "./pages/service-areas/charles-county/BensvilleMD";
-
+const BensvilleMD = lazy(() => import("./pages/service-areas/charles-county/BensvilleMD"));
 // DC Sub-Hubs
-import DCWardsHub from "./pages/service-areas/washington-dc/DCWardsHub";
-import DCNeighborhoodsHub from "./pages/service-areas/washington-dc/DCNeighborhoodsHub";
-
+const DCWardsHub = lazy(() => import("./pages/service-areas/washington-dc/DCWardsHub"));
+const DCNeighborhoodsHub = lazy(() => import("./pages/service-areas/washington-dc/DCNeighborhoodsHub"));
 // Tier 3 — DC Wards
-import Ward1DC from "./pages/service-areas/washington-dc/Ward1DC";
-import Ward2DC from "./pages/service-areas/washington-dc/Ward2DC";
-import Ward3DC from "./pages/service-areas/washington-dc/Ward3DC";
-import Ward4DC from "./pages/service-areas/washington-dc/Ward4DC";
-import Ward5DC from "./pages/service-areas/washington-dc/Ward5DC";
-import Ward6DC from "./pages/service-areas/washington-dc/Ward6DC";
-import Ward7DC from "./pages/service-areas/washington-dc/Ward7DC";
-import Ward8DC from "./pages/service-areas/washington-dc/Ward8DC";
-
+const Ward1DC = lazy(() => import("./pages/service-areas/washington-dc/Ward1DC"));
+const Ward2DC = lazy(() => import("./pages/service-areas/washington-dc/Ward2DC"));
+const Ward3DC = lazy(() => import("./pages/service-areas/washington-dc/Ward3DC"));
+const Ward4DC = lazy(() => import("./pages/service-areas/washington-dc/Ward4DC"));
+const Ward5DC = lazy(() => import("./pages/service-areas/washington-dc/Ward5DC"));
+const Ward6DC = lazy(() => import("./pages/service-areas/washington-dc/Ward6DC"));
+const Ward7DC = lazy(() => import("./pages/service-areas/washington-dc/Ward7DC"));
+const Ward8DC = lazy(() => import("./pages/service-areas/washington-dc/Ward8DC"));
 // Tier 3 — Northern Virginia (Fairfax County)
-import DunnLoringVA from "./pages/service-areas/fairfax-county/DunnLoringVA";
-import FlorisVA from "./pages/service-areas/fairfax-county/FlorisVA";
-import CrosspointeVA from "./pages/service-areas/fairfax-county/CrosspointeVA";
-import DifficultRunVA from "./pages/service-areas/fairfax-county/DifficultRunVA";
-import GreatFallsCrossingVA from "./pages/service-areas/fairfax-county/GreatFallsCrossingVA";
-import SouthRunVA from "./pages/service-areas/fairfax-county/SouthRunVA";
-import UnionMillVA from "./pages/service-areas/fairfax-county/UnionMillVA";
-import WolfTrapVA from "./pages/service-areas/fairfax-county/WolfTrapVA";
-
+const DunnLoringVA = lazy(() => import("./pages/service-areas/fairfax-county/DunnLoringVA"));
+const FlorisVA = lazy(() => import("./pages/service-areas/fairfax-county/FlorisVA"));
+const CrosspointeVA = lazy(() => import("./pages/service-areas/fairfax-county/CrosspointeVA"));
+const DifficultRunVA = lazy(() => import("./pages/service-areas/fairfax-county/DifficultRunVA"));
+const GreatFallsCrossingVA = lazy(() => import("./pages/service-areas/fairfax-county/GreatFallsCrossingVA"));
+const SouthRunVA = lazy(() => import("./pages/service-areas/fairfax-county/SouthRunVA"));
+const UnionMillVA = lazy(() => import("./pages/service-areas/fairfax-county/UnionMillVA"));
+const WolfTrapVA = lazy(() => import("./pages/service-areas/fairfax-county/WolfTrapVA"));
 // Tier 3 — Northern Virginia (Loudoun County)
-import BelmontVA from "./pages/service-areas/loudoun-county/BelmontVA";
-import BroadlandsVA from "./pages/service-areas/loudoun-county/BroadlandsVA";
-
+const BelmontVA = lazy(() => import("./pages/service-areas/loudoun-county/BelmontVA"));
+const BroadlandsVA = lazy(() => import("./pages/service-areas/loudoun-county/BroadlandsVA"));
 // Tier 3 — Northern Virginia (Prince William County)
-import BullRunMountainVA from "./pages/service-areas/prince-william-county/BullRunMountainVA";
-import IndependentHillVA from "./pages/service-areas/prince-william-county/IndependentHillVA";
-import BuckhallVA from "./pages/service-areas/prince-william-county/BuckhallVA";
-
+const BullRunMountainVA = lazy(() => import("./pages/service-areas/prince-william-county/BullRunMountainVA"));
+const IndependentHillVA = lazy(() => import("./pages/service-areas/prince-william-county/IndependentHillVA"));
+const BuckhallVA = lazy(() => import("./pages/service-areas/prince-william-county/BuckhallVA"));
 // Blog
-import BlogIndex from "./pages/blog/BlogIndex";
-import BlogPost1Emergency from "./pages/blog/BlogPost1Emergency";
-import BlogPost2Cost from "./pages/blog/BlogPost2Cost";
-import BlogPost3LicensedPlumber from "./pages/blog/BlogPost3LicensedPlumber";
-import BlogPost4BeforePlumber from "./pages/blog/BlogPost4BeforePlumber";
-
+const BlogIndex = lazy(() => import("./pages/blog/BlogIndex"));
+const BlogPost1Emergency = lazy(() => import("./pages/blog/BlogPost1Emergency"));
+const BlogPost2Cost = lazy(() => import("./pages/blog/BlogPost2Cost"));
+const BlogPost3LicensedPlumber = lazy(() => import("./pages/blog/BlogPost3LicensedPlumber"));
+const BlogPost4BeforePlumber = lazy(() => import("./pages/blog/BlogPost4BeforePlumber"));
 // Commercial / Government
-import CommercialPlumbing from "./pages/CommercialPlumbing";
-import GovernmentMunicipalPlumbing from "./pages/GovernmentMunicipalPlumbing";
-
+const CommercialPlumbing = lazy(() => import("./pages/CommercialPlumbing"));
+const GovernmentMunicipalPlumbing = lazy(() => import("./pages/GovernmentMunicipalPlumbing"));
 // Sitemap (HTML directory of all pages)
-import Sitemap from "./pages/Sitemap";
-import TermsAndConditions from "./pages/TermsAndConditions";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-
+const Sitemap = lazy(() => import("./pages/Sitemap"));
+const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col">
@@ -238,6 +201,7 @@ function Router() {
   return (
     <>
       <ScrollToTop />
+      <Suspense fallback={null}>
       <Switch>
       {/* Core */}
       <Route path="/" component={() => <Layout><Home /></Layout>} />
@@ -594,6 +558,7 @@ function Router() {
       <Route path="/404" component={() => <Layout><NotFound /></Layout>} />
       <Route component={() => <Layout><NotFound /></Layout>} />
     </Switch>
+    </Suspense>
     </>
   );
 }

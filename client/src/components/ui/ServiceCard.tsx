@@ -51,6 +51,10 @@ export default function ServiceCard({ title, description, href, iconName, featur
             <img
               src={image}
               alt={imageAlt || title}
+              width={800}
+              height={450}
+              loading="lazy"
+              decoding="async"
               style={{
                 width: '100%',
                 height: '100%',
@@ -59,7 +63,6 @@ export default function ServiceCard({ title, description, href, iconName, featur
                 transition: 'transform 0.4s cubic-bezier(0.23,1,0.32,1)',
               }}
               className="group-hover:[transform:scale(1.04)]"
-              loading="lazy"
             />
             {/* Dark overlay for legibility */}
             <div style={{

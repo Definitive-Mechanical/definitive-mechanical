@@ -109,6 +109,9 @@ export default function Header() {
             <img
               src="/images/definitive-mechanical-logo.webp"
               alt="Definitive Mechanical — Licensed Plumbing MD, DC & VA"
+              width={140}
+              height={84}
+              decoding="async"
               style={{ height: '48px', width: 'auto', display: 'block' }}
             />
           </Link>

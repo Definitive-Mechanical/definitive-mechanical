@@ -120,15 +120,22 @@ function HeroSection() {
         overflow: 'hidden',
       }}
     >
-      {/* Background plumber photo */}
-      <div
+      {/* Background plumber photo — real <img> so it's discoverable for LCP */}
+      <img
+        src="/images/main-hero-plumbing-image.webp"
+        alt=""
+        aria-hidden="true"
+        fetchPriority="high"
+        decoding="async"
+        width={1600}
+        height={900}
         style={{
           position: 'absolute',
           inset: 0,
-          backgroundImage: 'url(/images/main-hero-plumbing-image.webp)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center 30%',
-          backgroundRepeat: 'no-repeat',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          objectPosition: 'center 30%',
         }}
       />
       {/* Dark overlay */}
@@ -173,13 +180,13 @@ function HeroSection() {
                     Request Received!
                   </h3>
                   <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: '#4A5560', lineHeight: 1.6 }}>
-                    We'll call you back within 30 minutes. For emergencies call <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-blue)', fontWeight: 700 }}>{BUSINESS.phone}</a> now.
+                    We'll call you back within 30 minutes. For emergencies call <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-blue-text)', fontWeight: 700 }}>{BUSINESS.phone}</a> now.
                   </p>
                 </div>
               ) : (
                 <form name="home-hero-quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                   <input type="hidden" name="form-name" value="home-hero-quote" />
-                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4FB3E8', margin: 0 }}>Request Service</p>
+                  <p style={{ fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '11px', letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--brand-cyan-text)', margin: 0 }}>Request Service</p>
                   <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '22px', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.1, margin: 0 }}>Request Service</h2>
 
                   {/* Name + Phone */}
@@ -206,9 +213,9 @@ function HeroSection() {
                   {/* Service + City */}
                   <div className="grid grid-cols-1 sm:grid-cols-2" style={{ gap: '8px' }}>
                     <div>
-                      <label style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '4px' }}>Service Needed <span style={{ color: '#E40613' }}>*</span></label>
-                      <select required value={formData.service} onChange={e => setFormData(p => ({ ...p, service: e.target.value }))}
-                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: formData.service ? '#0A0A0A' : '#9ca3af', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}>
+                      <label htmlFor="hero-service-needed" style={{ display: 'block', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '10px', textTransform: 'uppercase', letterSpacing: '0.12em', color: '#4A5560', marginBottom: '4px' }}>Service Needed <span style={{ color: '#E40613' }}>*</span></label>
+                      <select id="hero-service-needed" required value={formData.service} onChange={e => setFormData(p => ({ ...p, service: e.target.value }))}
+                        style={{ width: '100%', padding: '10px 11px', borderRadius: '6px', border: '1px solid #d1d5db', background: 'white', color: formData.service ? '#0A0A0A' : 'var(--text-mute)', fontFamily: 'var(--font-body)', fontSize: '13px', outline: 'none', boxSizing: 'border-box' }}>
                         <option value="" disabled style={{ color: '#000' }}>Select a service...</option>
                         <option value="emergency" style={{ color: '#000' }}>24/7 Emergency Plumbing</option>
                         <option value="drain-cleaning" style={{ color: '#000' }}>Drain Cleaning</option>
@@ -247,7 +254,7 @@ function HeroSection() {
                   <div style={{ display: 'flex', alignItems: 'flex-start', gap: '7px', background: 'rgba(228,6,19,0.07)', border: '1px solid rgba(228,6,19,0.25)', borderRadius: '6px', padding: '8px 10px' }}>
                     <AlertTriangle size={13} style={{ color: '#E40613', flexShrink: 0, marginTop: 1 }} />
                     <p style={{ fontFamily: 'var(--font-body)', color: '#4A5560', fontSize: '11px', lineHeight: 1.5, margin: 0 }}>
-                      <strong style={{ color: '#0A0A0A' }}>Plumbing emergency?</strong> Don't use this form — <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-blue)', fontWeight: 700 }}>{BUSINESS.phone}</a> answers 24/7.
+                      <strong style={{ color: '#0A0A0A' }}>Plumbing emergency?</strong> Don't use this form — <a href={`tel:${BUSINESS.phoneRaw}`} style={{ color: 'var(--brand-blue-text)', fontWeight: 700 }}>{BUSINESS.phone}</a> answers 24/7.
                     </p>
                   </div>
 
@@ -260,9 +267,9 @@ function HeroSection() {
                     />
                     <span style={{ fontSize: '11px', color: '#4A5560', fontFamily: 'var(--font-body)', lineHeight: 1.5 }}>
                       By submitting, I agree to Definitive Mechanical's{' '}
-                      <a href="/terms-and-conditions" style={{ color: 'var(--brand-blue)', textDecoration: 'underline' }}>Terms</a>
+                      <a href="/terms-and-conditions" style={{ color: 'var(--brand-blue-text)', textDecoration: 'underline' }}>Terms</a>
                       {' '}and{' '}
-                      <a href="/privacy-policy" style={{ color: 'var(--brand-blue)', textDecoration: 'underline' }}>Privacy Policy</a>
+                      <a href="/privacy-policy" style={{ color: 'var(--brand-blue-text)', textDecoration: 'underline' }}>Privacy Policy</a>
                       {' '}and consent to be contacted about my inquiry.
                     </span>
                   </label>
@@ -270,7 +277,7 @@ function HeroSection() {
                     style={{ width: '100%', background: (submitting || !consentChecked) ? '#9ca3af' : 'var(--brand-blue)', color: 'white', border: 'none', fontFamily: 'var(--font-body)', fontWeight: 700, fontSize: '13px', padding: '13px', borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.06em', cursor: (submitting || !consentChecked) ? 'not-allowed' : 'pointer' }}>
                     {submitting ? 'Submitting...' : 'Request Service'}
                   </button>
-                  <p style={{ fontSize: '11px', color: '#9ca3af', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
+                  <p style={{ fontSize: '11px', color: 'var(--text-mute)', fontFamily: 'var(--font-body)', textAlign: 'center', margin: 0 }}>
                     No spam. Quoted price in writing. All services have a trip fee.
                   </p>
                 </form>
@@ -530,7 +537,7 @@ export default function Home() {
           </p>
           <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap' }}>
             <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-            <BookNowButton variant="outline" text="LEARN MORE" href="/emergency-plumbing" size="lg" />
+            <BookNowButton variant="outline" text="LEARN ABOUT 24/7 EMERGENCY PLUMBING" href="/emergency-plumbing" size="lg" />
           </div>
         </div>
       </section>
@@ -605,8 +612,8 @@ export default function Home() {
                       {area.heading}
                     </h3>
                     <p style={{ fontFamily: 'var(--font-body)', fontSize: '14px', color: 'var(--ink-2)', marginBottom: '4px' }}>{area.body}</p>
-                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-3)', marginBottom: '8px' }}>{area.cities}</p>
-                    <Link href={area.href} style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-cyan)', textDecoration: 'none' }}>
+                    <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--text-mute)', marginBottom: '8px' }}>{area.cities}</p>
+                    <Link href={area.href} style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--brand-cyan-text)', textDecoration: 'none' }}>
                       View {area.heading} Service Area →
                     </Link>
                   </div>
@@ -688,11 +695,11 @@ export default function Home() {
               <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'var(--brand-navy)', fontSize: '22px', marginBottom: '8px' }}>
                 Apply in 60 Seconds
               </h3>
-              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '14px', marginBottom: '24px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', color: 'var(--text-mute)', fontSize: '14px', marginBottom: '24px' }}>
                 No impact to your credit score during pre-qualification.
               </p>
               <BookNowButton variant="navy" text="APPLY FOR FINANCING" href={BUSINESS.financing} size="lg" />
-              <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--ink-3)', marginTop: '16px' }}>
+              <p style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'var(--text-mute)', marginTop: '16px' }}>
                 Questions? Call {BUSINESS.phone}
               </p>
             </div>

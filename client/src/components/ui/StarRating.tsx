@@ -8,7 +8,7 @@ interface StarRatingProps {
 
 export default function StarRating({ rating, count, variant = 'light' }: StarRatingProps) {
   const textColor = variant === 'dark' ? 'white' : 'var(--brand-navy)';
-  const countColor = variant === 'dark' ? 'rgba(255,255,255,0.7)' : 'var(--ink-3)';
+  const countColor = variant === 'dark' ? 'rgba(255,255,255,0.7)' : 'var(--text-mute)';
 
   return (
     <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>

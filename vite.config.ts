@@ -203,10 +203,14 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
-
-export default defineConfig({
-  plugins,
+export default defineConfig(({ command }) => ({
+  // Manus dev/preview plugins (runtime overlay, debug collector, storage proxy, jsx loc)
+  // are only useful in `vite` dev mode. Including them in production builds injects
+  // dead JS (including a deprecated `unload` listener) into the shipped bundle.
+  plugins:
+    command === "serve"
+      ? [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()]
+      : [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
@@ -219,6 +223,19 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    chunkSizeWarningLimit: 800,
+    rollupOptions: {
+      output: {
+        // Split out vendor libs that are loaded on every page so they
+        // can be cached separately across route navigations.
+        manualChunks(id) {
+          if (!id.includes("node_modules")) return;
+          if (id.includes("react-dom")) return "react-dom";
+          if (id.match(/node_modules[\\/](react|scheduler)[\\/]/)) return "react";
+          if (id.includes("lucide-react")) return "icons";
+        },
+      },
+    },
   },
   server: {
     port: 3000,
@@ -238,4 +255,4 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
-});
+}));

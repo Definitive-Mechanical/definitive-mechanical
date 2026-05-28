@@ -60,11 +60,17 @@
   --brand-red-2:   #C8050F;
   --brand-red-3:   #A8040C;
   --brand-cyan:    #4FB3E8;
+  /* WCAG-AA-compliant cyan for small text on white (≥4.5:1) */
+  --brand-cyan-text: #1F87C2;
+  /* Darker blue for text-on-white links (brand-blue #0075BA is borderline at 4.97:1) */
+  --brand-blue-text: #005F99;
 
   /* ── Neutrals ──────────────────────────────────────────── */
   --ink:           #1A1A2E;
   --ink-2:         #4A4F66;
   --ink-3:         #8A90A8;
+  /* Small gray text on white that needs AA contrast (≥4.5:1) */
+  --text-mute:     #5F6478;
   --paper:         #FFFFFF;
   --paper-2:       #F5F6F8;
   --paper-3:       #E6E8EE;

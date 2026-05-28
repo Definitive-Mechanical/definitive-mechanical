@@ -16,7 +16,7 @@ export default function SectionHeading({ eyebrow, heading, subtext, centered = f
           fontSize: '13px',
           textTransform: 'uppercase',
           letterSpacing: '0.2em',
-          color: light ? 'rgba(255,255,255,0.7)' : 'var(--brand-cyan)',
+          color: light ? 'rgba(255,255,255,0.7)' : 'var(--brand-cyan-text)',
           marginBottom: '12px',
         }}>
           {eyebrow}
