@@ -226,7 +226,7 @@ export default function Footer() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
                 <div style={{ background: 'white', borderRadius: '6px', padding: '8px 14px', display: 'inline-flex', alignItems: 'center' }}>
                   <img
-                    src="/images/mdot-mbe-certified.webp"
+                    src="/images/mdot-mbe.svg"
                     alt="Maryland Department of Transportation MBE/DBE Certified"
                     style={{ height: '54px', width: 'auto', display: 'block' }}
                   />
