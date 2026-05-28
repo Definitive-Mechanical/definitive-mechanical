@@ -51,6 +51,8 @@ const sections: Section[] = [
       { label: "All Plumbing Services", href: "/plumbing" },
       { label: "Services Directory", href: "/services" },
       { label: "Service Areas", href: "/service-areas" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Terms & Conditions", href: "/terms-and-conditions" },
     ],
   },
   {

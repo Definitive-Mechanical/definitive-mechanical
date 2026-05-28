@@ -15,7 +15,6 @@ export const SERVICE_CATEGORY_RESIDENTIAL = {
     { label: 'Sewer Line Repair', href: '/sewer-line-repair' },
     { label: 'Water Line Repair', href: '/water-line-repair' },
     { label: 'Water Line Installation', href: '/water-line-installation' },
-    { label: 'Water Softener Installation', href: '/water-softener-installation' },
     { label: 'Video Camera Inspection', href: '/video-camera-inspection' },
   ],
 };

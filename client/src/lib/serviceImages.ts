@@ -62,7 +62,7 @@ export const SERVICE_IMAGES: Record<string, string> = {
   "commercial-plumber-maryland":           "/images/service-commercial-plumbing.webp",
   "commercial-plumber-dc":                 "/images/service-commercial-plumbing.webp",
   "commercial-plumber-northern-virginia":  "/images/service-commercial-plumbing.webp",
-  "government-municipal-plumbing":         "/images/service-commercial-plumbing.webp",
+  "government-municipal-plumbing":         "/images/service-government-municipal-plumbing.webp",
   "residential-plumbing":                  "/images/service-pipe-repair.webp",
 };
 
