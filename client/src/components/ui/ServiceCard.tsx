@@ -8,11 +8,12 @@ interface ServiceCardProps {
   href: string;
   iconName: string;
   featured?: boolean;
+  hideReadMore?: boolean;
   image?: string;
   imageAlt?: string;
 }
 
-export default function ServiceCard({ title, description, href, iconName, featured, image, imageAlt }: ServiceCardProps) {
+export default function ServiceCard({ title, description, href, iconName, featured, image, imageAlt, hideReadMore }: ServiceCardProps) {
   const IconComponent = ((Icons as unknown) as Record<string, React.ComponentType<LucideProps>>)[iconName] || Icons.Wrench;
 
   return (
@@ -142,16 +143,18 @@ export default function ServiceCard({ title, description, href, iconName, featur
           {description}
         </p>
 
-        <span style={{
-          fontFamily: 'var(--font-display)',
-          fontWeight: 700,
-          color: '#0075BA',
-          fontSize: '13px',
-          textTransform: 'uppercase',
-          letterSpacing: '0.04em',
-        }}>
-          Read more →
-        </span>
+        {!hideReadMore && (
+          <span style={{
+            fontFamily: 'var(--font-display)',
+            fontWeight: 700,
+            color: '#0075BA',
+            fontSize: '13px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.04em',
+          }}>
+            Read more →
+          </span>
+        )}
       </div>
     </Link>
   );

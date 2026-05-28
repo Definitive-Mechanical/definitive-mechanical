@@ -127,7 +127,7 @@ export default function WaterHeaterInstallation() {
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What types of water heaters does Definitive Mechanical install?</h2>
         </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            <ServiceCard title="Electric Tank Water Heaters" iconName="Zap" href="/water-heater-installation" description="Common in homes without a gas connection or where running a gas line is not practical. We install 30, 40, 50, and 80+ gallon electric units with proper electrical connection and code-compliant installation." />
+            <ServiceCard title="Electric Tank Water Heaters" iconName="Zap" href="/water-heater-installation" description="Common in homes without a gas connection or where running a gas line is not practical. We install 30, 40, 50, and 80+ gallon electric units with proper electrical connection and code-compliant installation." hideReadMore />
             <ServiceCard title="Tankless Water Heaters" iconName="Waves" href="/tankless-water-heaters" description="Heat water on demand — no stored tank, no standby heat loss, significantly longer service life (15-20 years vs. 8-12 for tank units). Increasingly popular in MD and Northern VA for utility savings and space efficiency." featured />
             <ServiceCard title="Indirect Water Heaters" iconName="Thermometer" href="/boiler-furnace-repair" description="Connected to a boiler system — common in older Maryland and DC-area homes with hydronic heating. We install and connect indirect water heater tanks as part of boiler system service." />
           </div>
