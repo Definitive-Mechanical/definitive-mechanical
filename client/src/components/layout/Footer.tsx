@@ -168,6 +168,7 @@ export default function Footer() {
                   { label: 'Licenses & Certifications', href: '/licenses-certifications' },
                   { label: 'Financing', href: '/financing' },
                   { label: 'FAQ', href: '/faq' },
+                  { label: 'Blog', href: '/blog' },
                   { label: 'Contact Us', href: '/contact' },
                   { label: 'Sitemap', href: '/sitemap' },
                   { label: 'Terms & Conditions', href: '/terms-and-conditions' },
