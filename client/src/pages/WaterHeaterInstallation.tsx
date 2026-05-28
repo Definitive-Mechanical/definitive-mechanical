@@ -126,8 +126,7 @@ export default function WaterHeaterInstallation() {
           <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>WATER HEATER TYPES</p>
           <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: '#0A0A0A', lineHeight: 1.05, marginBottom: '16px' }}>What types of water heaters does Definitive Mechanical install?</h2>
         </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <ServiceCard title="Gas Tank Water Heaters" iconName="Flame" href="/water-heater-installation" description="The most common type in MD, DC, and Northern VA homes. Gas units heat water faster at lower cost per gallon. We install 30, 40, 50, and 75+ gallon units. Gas installation requires a licensed Master Gasfitter — we hold that license in MD, DC, VA & DE." />
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6">
             <ServiceCard title="Electric Tank Water Heaters" iconName="Zap" href="/water-heater-installation" description="Common in homes without a gas connection or where running a gas line is not practical. We install 30, 40, 50, and 80+ gallon electric units with proper electrical connection and code-compliant installation." />
             <ServiceCard title="Tankless Water Heaters" iconName="Waves" href="/tankless-water-heaters" description="Heat water on demand — no stored tank, no standby heat loss, significantly longer service life (15-20 years vs. 8-12 for tank units). Increasingly popular in MD and Northern VA for utility savings and space efficiency." featured />
             <ServiceCard title="Indirect Water Heaters" iconName="Thermometer" href="/boiler-furnace-repair" description="Connected to a boiler system — common in older Maryland and DC-area homes with hydronic heating. We install and connect indirect water heater tanks as part of boiler system service." />
@@ -147,17 +146,19 @@ export default function WaterHeaterInstallation() {
         </div>
               <div style={{ border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)', borderRadius: '6px', overflow: 'hidden', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', marginBottom: '16px' }}>
                 <div className="table-scroll-wrapper">
+                <div>
                 <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>UNIT TYPE</span>
                   <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL INSTALLED RANGE</span>
                 </div>
-                </div>  {/* end table-scroll-wrapper */}
                 {PRICING_ROWS.map((row, i) => (
                   <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
                     <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{row.type}</span>
                     <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{row.range}</span>
                   </div>
                 ))}
+                </div>
+                </div>
               </div>
               <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '13px', fontStyle: 'italic', lineHeight: 1.6, marginBottom: '16px' }}>
                 These ranges include unit, installation labor, connection to existing lines, and standard permit. Work requiring gas line extension, new electrical circuits, or venting modifications will affect the final price. We provide written pricing after assessment — before any work begins.
@@ -276,7 +277,7 @@ export default function WaterHeaterInstallation() {
         <div className="container">
           <div style={{ marginBottom: '40px' }}>
           <p style={{ fontFamily: 'var(--font-eyebrow)', fontWeight: 700, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.2em', color: 'var(--brand-cyan)', marginBottom: '8px' }}>FAQ</p>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'var(--brand-navy)', lineHeight: 1.05, marginBottom: '16px' }}>Questions about water heater installation in MD, DC & Northern VA</h2>
+          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 'clamp(24px,3vw,38px)', textTransform: 'uppercase', color: 'white', lineHeight: 1.05, marginBottom: '16px' }}>Questions about water heater installation in MD, DC & Northern VA</h2>
         </div>
             <FAQAccordion items={FAQ_ITEMS} schema={true} variant="dark" />
         </div>

@@ -132,17 +132,19 @@ export default function GasLineInstallation() {
         </div>
           <div style={{ background: 'white', borderRadius: '6px', boxShadow: '0 4px 16px rgba(6,59,99,0.10)', maxWidth: '720px', margin: '0 auto 16px', overflow: 'hidden', border: '1px solid #D4E4F0', borderTop: '3px solid var(--brand-cyan)' }}>
             <div className="table-scroll-wrapper">
+            <div>
             <div style={{ background: 'var(--brand-navy)', padding: '12px 20px', display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>INSTALLATION TYPE</span>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, color: 'white', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '0.1em' }}>TYPICAL RANGE</span>
             </div>
-            </div>  {/* end table-scroll-wrapper */}
             {PRICING_ROWS.map((row, i) => (
               <div key={row.type} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', padding: '12px 20px', background: i % 2 === 0 ? 'white' : '#F8FAFC', borderTop: '1px solid #E8EFF5' }}>
                 <span style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-2)', fontSize: '14px' }}>{row.type}</span>
                 <span style={{ fontFamily: 'var(--font-body)', fontWeight: 600, color: 'var(--brand-navy)', fontSize: '14px' }}>{row.range}</span>
               </div>
             ))}
+            </div>
+            </div>
           </div>
           <p style={{ fontFamily: 'var(--font-body)', color: 'var(--ink-3)', fontSize: '13px', fontStyle: 'italic', lineHeight: 1.6, maxWidth: '720px', margin: '0 auto 20px', textAlign: 'center' }}>
             These ranges include labor, materials, and standard permit fees. We provide written pricing after assessment — including what the permit will cost and what the inspection process requires for your specific jurisdiction.
