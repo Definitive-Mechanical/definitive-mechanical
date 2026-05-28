@@ -149,7 +149,7 @@ function HeroSection() {
               LICENSED PLUMBING  MARYLAND  WASHINGTON DC  NORTHERN VIRGINIA
             </p>
             <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.01em', color: 'white', fontSize: 'clamp(34px, 5vw, 64px)', lineHeight: 1.0, marginBottom: '20px' }}>
-              Licensed Plumbing Professionals. Honest Service.
+              Licensed 24/7 Plumbing, Gas & Mechanical Services Across MD, DC & Northern VA
             </h1>
             <p style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, maxWidth: '540px', marginBottom: '24px' }}>
               Definitive Mechanical is a Licensed Black Owned, MDOT MBE and Virginia SWaM certified plumbing and mechanical contractor serving homes, businesses, and government facilities across Maryland, Washington DC, and Northern Virginia. Master Plumber and Master Gasfitter licensed in four states. 24/7 emergency service. Upfront pricing in writing — always.
