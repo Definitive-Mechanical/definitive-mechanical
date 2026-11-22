@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { GitBranch, Settings, ArrowUpCircle, Building2, MapPin, ShieldX, Wrench, Search, CreditCard, Flame } from 'lucide-react';
 import { Link } from 'wouter';
 import { BUSINESS } from '@/lib/constants';
@@ -27,6 +28,9 @@ const APPLIANCE_LIST = ["Gas ranges and cooktops", "Gas dryers", "Gas water heat
 export default function GasLineInstallation() {
   return (
     <>
+      <Helmet>
+        <title>Gas Line Installation: Safe, Code-Compliant | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '52vh',

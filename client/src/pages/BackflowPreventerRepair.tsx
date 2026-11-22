@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Disc, Droplets, Snowflake, ZapOff, Timer, AlertTriangle, CheckCircle2, AlertCircle, ShieldCheck, Shield } from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -24,6 +25,9 @@ const FAILURE_CAUSES = [
 export default function BackflowPreventerRepair() {
   return (
     <>
+      <Helmet>
+        <title>Backflow Preventer Repair: Failed Test Fixes | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '45vh',

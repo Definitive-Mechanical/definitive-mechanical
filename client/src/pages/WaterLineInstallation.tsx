@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { CheckCircle2, Building2, Activity, Wrench, AlertTriangle, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -24,6 +25,9 @@ const WHEN_NEEDED = [
 export default function WaterLineInstallation() {
   return (
     <>
+      <Helmet>
+        <title>Water Line Installation: Main Service Lines | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '46vh',

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { CheckCircle2, Wrench, Plus, AlertTriangle, ClipboardCheck, AlertCircle, FileX, XCircle, ShieldAlert, CreditCard, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -59,6 +60,9 @@ const RISK_CARDS = [
 export default function ResidentialPlumbing() {
   return (
     <>
+      <Helmet>
+        <title>Residential Plumbing: Home Repairs &amp; Installs | Definitive Mechanical</title>
+      </Helmet>
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",

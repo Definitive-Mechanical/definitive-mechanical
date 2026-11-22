@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { CheckCircle2, Droplets, AlertTriangle, Clock, ArrowRightCircle, Wrench, AlertCircle, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -63,6 +64,9 @@ const REPLACE_TOILET = [
 export default function FaucetToiletRepair() {
   return (
     <>
+      <Helmet>
+        <title>Faucet &amp; Toilet Repair: Leaks &amp; Running Toilets | Definitive Mechanical</title>
+      </Helmet>
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { CheckCircle2, HelpCircle, Shield, ShieldAlert, ShieldCheck, ChevronRight } from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -18,6 +19,9 @@ const REQUIRED_FOR = ["Commercial properties with irrigation systems", "Restaura
 export default function BackflowPrevention() {
   return (
     <>
+      <Helmet>
+        <title>Backflow Prevention: Testing &amp; Protection | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '50vh',

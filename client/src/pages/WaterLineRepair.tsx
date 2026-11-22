@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { AlertCircle, Phone, Clock, Activity, Droplets, ZapOff, Info, Wrench, AlertTriangle, CheckCircle2, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -32,6 +33,9 @@ const PRICING_ROWS = [
 export default function WaterLineRepair() {
   return (
     <>
+      <Helmet>
+        <title>Water Line Repair: Leak Detection &amp; Fixes | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '55vh',

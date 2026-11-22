@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Landmark, ShieldCheck, FileText, Award, CheckCircle2, KeyRound } from 'lucide-react';
 import { BUSINESS, CERTIFICATIONS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -32,6 +33,9 @@ const GOV_FAQ = [
 export default function GovernmentMunicipalPlumbing() {
   return (
     <>
+      <Helmet>
+        <title>Government Plumbing: MBE &amp; SWaM Certified | Definitive Mechanical</title>
+      </Helmet>
       {/* HERO */}
       <section style={{
         minHeight: '60vh',

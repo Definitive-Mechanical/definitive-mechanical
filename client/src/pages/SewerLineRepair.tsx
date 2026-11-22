@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { AlertCircle, AlertTriangle, Phone, TreePine, Clock, Activity, Utensils, Package, Wrench, Waves, RotateCcw, CreditCard, Search, MapPin, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import { BUSINESS } from '@/lib/constants';
@@ -26,6 +27,9 @@ const PRICING_ROWS = [
 export default function SewerLineRepair() {
   return (
     <>
+      <Helmet>
+        <title>Sewer Line Repair: Roots, Cracks &amp; Breaks | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '60vh',

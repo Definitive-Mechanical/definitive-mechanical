@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { ChevronRight, Wrench, Search, Waves, CreditCard, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import { BUSINESS } from '@/lib/constants';
@@ -41,6 +42,9 @@ const WHEN_TO_USE = [
 export default function HydroJetting() {
   return (
     <>
+      <Helmet>
+        <title>Hydro Jetting: High-Pressure Drain Cleaning | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '52vh',

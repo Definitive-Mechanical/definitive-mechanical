@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { AlertTriangle, AlertCircle, Search, Wrench, Link2, Gauge, Phone, CheckCircle2, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import { BUSINESS, LICENSES } from '@/lib/constants';
@@ -29,6 +30,9 @@ const LICENSE_ROWS = [
 export default function GasLineRepair() {
   return (
     <>
+      <Helmet>
+        <title>Gas Line Repair: Licensed Master Gasfitter | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '60vh',

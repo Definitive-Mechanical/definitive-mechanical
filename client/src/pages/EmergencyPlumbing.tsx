@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Phone, Zap, Waves, AlertTriangle, Flame, Droplets, Thermometer, AlertCircle, Home, CloudRain, Building2, Activity, ShieldCheck, ChevronRight } from 'lucide-react';
 import { BUSINESS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -57,6 +58,9 @@ const EMERGENCY_FAQ = [
 export default function EmergencyPlumbing() {
   return (
     <>
+      <Helmet>
+        <title>Emergency Plumbing: 24/7 Live Dispatch | Definitive Mechanical</title>
+      </Helmet>
 
 
       {/* HERO */}

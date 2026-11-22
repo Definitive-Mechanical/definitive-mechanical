@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { AlertCircle, CheckCircle2, Flame, Zap, Waves, Thermometer, MapPin, CreditCard, Wrench, ShieldCheck} from 'lucide-react';
 import { Link } from 'wouter';
 import { BUSINESS } from '@/lib/constants';
@@ -36,6 +37,9 @@ const PRICING_ROWS = [
 export default function WaterHeaterInstallation() {
   return (
     <>
+      <Helmet>
+        <title>Water Heater Installation: Gas &amp; Electric | Definitive Mechanical</title>
+      </Helmet>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PAGE_SCHEMA) }} />
 
       {/* SECTION 1: HERO */}

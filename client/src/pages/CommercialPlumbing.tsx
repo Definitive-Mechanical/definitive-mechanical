@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Building2, CheckCircle2, ShieldCheck, FileText, Clock, Users } from 'lucide-react';
 import { BUSINESS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -42,6 +43,9 @@ const COMMERCIAL_FAQ = [
 export default function CommercialPlumbing() {
   return (
     <>
+      <Helmet>
+        <title>Commercial Plumbing: Business &amp; Property Service | Definitive Mechanical</title>
+      </Helmet>
       {/* HERO */}
       <section style={{
         minHeight: '65vh',

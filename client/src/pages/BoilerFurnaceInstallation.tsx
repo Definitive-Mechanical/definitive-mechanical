@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { AlertCircle, CheckCircle2, Wind, Thermometer, Flame, Building2, CreditCard } from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -62,6 +63,9 @@ const SYSTEM_TYPES = [
 export default function BoilerFurnaceInstallation() {
   return (
     <>
+      <Helmet>
+        <title>Boiler &amp; Furnace Installation: New Systems | Definitive Mechanical</title>
+      </Helmet>
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",

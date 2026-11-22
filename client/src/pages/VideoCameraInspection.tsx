@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Search, TreePine, AlertTriangle, ChevronsDown, Shuffle, TrendingDown, Droplets, AlertCircle, Package, ShieldCheck, Home, ClipboardCheck, Building2, Wrench, Waves } from 'lucide-react';
 import { Link } from 'wouter';
 import { BUSINESS } from '@/lib/constants';
@@ -37,6 +38,9 @@ const WHEN_TO_GET = [
 export default function VideoCameraInspection() {
   return (
     <>
+      <Helmet>
+        <title>Camera Inspection: Sewer &amp; Drain Diagnosis | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '52vh',

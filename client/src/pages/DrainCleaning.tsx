@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Droplets, CheckCircle2, ChevronRight, ShieldCheck } from 'lucide-react';
 import { BUSINESS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -42,6 +43,9 @@ const DRAIN_FAQ = [
 export default function DrainCleaning() {
   return (
     <>
+      <Helmet>
+        <title>Drain Cleaning: Clogged Drain Solutions | Definitive Mechanical</title>
+      </Helmet>
       {/* HERO */}
       <section style={{
         minHeight: '65vh',

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { CheckCircle2, ChevronRight, ShieldCheck, Shield } from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -30,6 +31,9 @@ const MANAGED_USERS = ["Property management companies with multiple commercial b
 export default function BackflowCertification() {
   return (
     <>
+      <Helmet>
+        <title>Backflow Certification: Annual Testing | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '50vh',

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Thermometer, CheckCircle2, ChevronRight, Flame, Zap } from 'lucide-react';
 import { BUSINESS } from '@/lib/constants';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -41,6 +42,9 @@ const WATER_HEATER_FAQ = [
 export default function WaterHeaterRepair() {
   return (
     <>
+      <Helmet>
+        <title>Water Heater Repair: Same-Day Hot Water Fixes | Definitive Mechanical</title>
+      </Helmet>
       {/* HERO */}
       <section style={{
         minHeight: '65vh',

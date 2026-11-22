@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { AlertTriangle, Phone, Clock, Unlink, Zap, Activity, UserX, Lock, Search, Wrench, Gauge, FileText, CheckCircle2 } from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -24,6 +25,9 @@ const REPAIR_STEPS = [
 export default function GasLeakRepair() {
   return (
     <>
+      <Helmet>
+        <title>Gas Leak Repair: 24/7 Emergency Gas Service | Definitive Mechanical</title>
+      </Helmet>
       {/* SAFETY NOTICE — above hero */}
       <a href="tel:+13016795849" style={{ background: '#C0392B', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', padding: '14px 16px', textDecoration: 'none', flexWrap: 'wrap' }}>
         <AlertTriangle size={20} color="white" style={{ flexShrink: 0 }} />

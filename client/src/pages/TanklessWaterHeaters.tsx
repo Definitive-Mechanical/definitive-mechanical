@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { Infinity, TrendingDown, Clock, Maximize2, ShieldCheck, DollarSign, GitBranch, Zap, Snowflake, ChevronRight, Wrench, CreditCard, Flame } from 'lucide-react';
 import { Link } from 'wouter';
 import { BUSINESS } from '@/lib/constants';
@@ -34,6 +35,9 @@ const REPAIR_ITEMS = [
 export default function TanklessWaterHeaters() {
   return (
     <>
+      <Helmet>
+        <title>Tankless Water Heaters: Install &amp; Repair | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '58vh',

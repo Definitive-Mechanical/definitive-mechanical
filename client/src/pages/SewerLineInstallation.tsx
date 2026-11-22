@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { CheckCircle2, Camera, FileText, AlertTriangle, Trash2, Maximize2, Link2, Search, Waves, Wrench, CreditCard } from 'lucide-react';
 import { Link } from 'wouter';
 import { BUSINESS } from '@/lib/constants';
@@ -37,6 +38,9 @@ const LICENSE_BADGES = ["MD #96958", "WSSC #73696", "DC #PGM1002236", "VA #27100
 export default function SewerLineInstallation() {
   return (
     <>
+      <Helmet>
+        <title>Sewer Line Installation: New &amp; Replacement | Definitive Mechanical</title>
+      </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
         minHeight: '52vh',

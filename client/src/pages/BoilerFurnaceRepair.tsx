@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { AlertCircle, AlertTriangle, CheckCircle2, Thermometer, Wrench, Settings, Gauge, Flame, Building2, Wind } from 'lucide-react';
 import { Link } from 'wouter';
 import BookNowButton from '@/components/ui/BookNowButton';
@@ -75,6 +76,9 @@ const PRICING_ROWS = [
 export default function BoilerFurnaceRepair() {
   return (
     <>
+      <Helmet>
+        <title>Boiler &amp; Furnace Repair: Restore Your Heat | Definitive Mechanical</title>
+      </Helmet>
       {/* JSON-LD Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
