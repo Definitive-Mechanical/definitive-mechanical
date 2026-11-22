@@ -43,7 +43,7 @@ const CAPABILITIES = [
 
 const ENGAGEMENT_STEPS = [
   { step: "01", title: "Verify MBE Status", body: "Verify in the MDOT MBE Directory at mdot.maryland.gov using Cert No. 20-134 or company name 'Definitive Mechanical.'" },
-  { step: "02", title: "Request Capability Statement", body: "Request a Capability Statement via the form on this page or by calling (301) 679-5849. We provide it within one business day." },
+  { step: "02", title: "View Capability Statement", body: "Download our Capability Statement directly from this page. Includes UEI, CAGE 8HCF6, NAICS 238220, MDOT MBE and SWaM certifications, license numbers, and past performance." },
   { step: "03", title: "Provide Documentation", body: "We provide an MBE subcontractor letter, proof of insurance, and all license documentation as needed for your procurement process." },
   { step: "04", title: "Respond to RFQ", body: "We respond to RFQs, provide written scope and pricing, and coordinate scheduling to meet project timelines." },
 ];
@@ -119,9 +119,9 @@ export default function MBECertified() {
                 <a href="tel:+13016795849" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--brand-blue)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.08em", padding: "14px 28px", borderRadius: "2px", textDecoration: "none" }}>
                   <Phone size={16} /> CALL (301) 679-5849
                 </a>
-                <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: 8, border: "1px solid rgba(255,255,255,0.4)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.08em", padding: "14px 28px", borderRadius: "2px", textDecoration: "none" }}>
-                  REQUEST CAPABILITY STATEMENT
-                </Link>
+                <a href="/capability-statement.pdf" target="_blank" rel="noopener" style={{ display: "inline-flex", alignItems: "center", gap: 8, border: "1px solid rgba(255,255,255,0.4)", color: "white", fontFamily: "var(--font-display)", fontWeight: 700, fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.08em", padding: "14px 28px", borderRadius: "2px", textDecoration: "none" }}>
+                  VIEW CAPABILITY STATEMENT
+                </a>
               </div>
             </div>
             <div className="lg:col-span-2">
@@ -234,7 +234,7 @@ export default function MBECertified() {
             Our Capability Statement includes: legal name, UEI, CAGE 8HCF6, NAICS 238220, SIC 171, MDOT MBE Cert 20-134, SWaM Cert 815255, all license numbers, years in business, bonding capacity, past performance summary, and point of contact.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 12 }}>
-            <BookNowButton variant="white" text="REQUEST CAPABILITY STATEMENT" href="/contact" size="lg" />
+            <BookNowButton variant="white" text="VIEW CAPABILITY STATEMENT" href="/capability-statement.pdf" size="lg" />
             <BookNowButton variant="outline" text="CALL (301) 679-5849" href="tel:+13016795849" size="lg" />
           </div>
         </div>

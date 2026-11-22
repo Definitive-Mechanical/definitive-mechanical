@@ -71,7 +71,7 @@ export default function GovernmentMunicipalPlumbing() {
               </p>
               <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                 <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
-                <BookNowButton variant="outline" text="REQUEST CAPABILITY STATEMENT" href="/contact" size="lg" />
+                <BookNowButton variant="outline" text="VIEW CAPABILITY STATEMENT" href="/capability-statement.pdf" size="lg" />
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function GovernmentMunicipalPlumbing() {
         heading="Government or municipal plumbing project in Maryland, DC, or Northern Virginia?"
         subtext="MDOT MBE Certified  VA SWaM Certified  CAGE 8HCF6  NAICS 238220  Capability statement available."
         primaryBtn={{ text: `CALL ${BUSINESS.phone}`, href: `tel:${BUSINESS.phoneRaw}` }}
-        secondaryBtn={{ text: 'REQUEST CAPABILITY STATEMENT', href: '/contact' }}
+        secondaryBtn={{ text: 'VIEW CAPABILITY STATEMENT', href: '/capability-statement.pdf' }}
         variant="gradient"
       />
     </>
