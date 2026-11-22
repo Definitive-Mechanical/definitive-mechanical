@@ -28,7 +28,10 @@ export default function LicensesCertifications() {
             <p style={{ fontFamily: 'var(--font-body)', color: 'rgba(255,255,255,0.85)', fontSize: '17px', lineHeight: 1.7, marginBottom: '32px' }}>
               Definitive Mechanical holds Master Plumber and Master Gasfitter licenses in Maryland, Washington DC, Virginia, and Delaware — simultaneously. No other local plumbing company in the DMV market holds this credential combination. We are also MDOT MBE Certified and Virginia SWaM Certified.
             </p>
-            <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+              <BookNowButton variant="white" text={`CALL ${BUSINESS.phone}`} href={`tel:${BUSINESS.phoneRaw}`} size="lg" />
+              <BookNowButton variant="outline" text="VIEW CAPABILITY STATEMENT" href="/capability-statement.pdf" size="lg" />
+            </div>
           </div>
         </div>
       </section>
@@ -202,7 +205,7 @@ export default function LicensesCertifications() {
         heading="Questions about our licenses or certifications?"
         subtext="Call us or request our capability statement. We are happy to provide documentation for any project requirement."
         primaryBtn={{ text: `CALL ${BUSINESS.phone}`, href: `tel:${BUSINESS.phoneRaw}` }}
-        secondaryBtn={{ text: 'REQUEST CAPABILITY STATEMENT', href: '/contact' }}
+        secondaryBtn={{ text: 'VIEW CAPABILITY STATEMENT', href: '/capability-statement.pdf' }}
         variant="gradient"
       />
     </>

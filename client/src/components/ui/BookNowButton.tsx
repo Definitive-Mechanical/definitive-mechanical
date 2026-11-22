@@ -98,7 +98,7 @@ export default function BookNowButton({
     );
   }
 
-  if (href?.startsWith('http')) {
+  if (href?.startsWith('http') || href?.endsWith('.pdf')) {
     return (
       <a href={href} target="_blank" rel="noopener noreferrer" style={style} className={className} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         {content}

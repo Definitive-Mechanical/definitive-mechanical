@@ -167,6 +167,7 @@ export default function Footer() {
                   { label: 'About Us', href: '/about' },
                   { label: 'Reviews', href: '/reviews' },
                   { label: 'Licenses & Certifications', href: '/licenses-certifications' },
+                  { label: 'Capability Statement', href: '/capability-statement.pdf', external: true },
                   { label: 'Financing', href: '/financing' },
                   { label: 'FAQ', href: '/faq' },
                   { label: 'Blog', href: '/blog' },
@@ -175,13 +176,23 @@ export default function Footer() {
                   { label: 'Terms & Conditions', href: '/terms-and-conditions' },
                   { label: 'Privacy Policy', href: '/privacy-policy' },
                 ].map((link) => (
-                  <Link key={link.href} href={link.href}
-                    className="block no-underline transition-colors duration-150"
-                    style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.7)' }}
-                    onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
-                    onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}>
-                    {link.label}
-                  </Link>
+                  link.external ? (
+                    <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer"
+                      className="block no-underline transition-colors duration-150"
+                      style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.7)' }}
+                      onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
+                      onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}>
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link key={link.href} href={link.href}
+                      className="block no-underline transition-colors duration-150"
+                      style={{ fontFamily: 'var(--font-body)', fontSize: '13px', color: 'rgba(255,255,255,0.7)' }}
+                      onMouseEnter={e => (e.currentTarget.style.color = 'var(--brand-cyan)')}
+                      onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}>
+                      {link.label}
+                    </Link>
+                  )
                 ))}
               </div>
               <a
