@@ -45,6 +45,7 @@ export default function DrainCleaning() {
     <>
       <Helmet>
         <title>Drain Cleaning: Clogged Drain Solutions | Definitive Mechanical</title>
+        <meta name="description" content="Clogged drain? Licensed drain cleaning in MD, DC & Northern VA. We find the root cause of recurring clogs, with written pricing up front. Call (301) 679-5849." />
       </Helmet>
       {/* HERO */}
       <section style={{

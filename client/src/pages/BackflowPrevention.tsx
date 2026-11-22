@@ -21,6 +21,7 @@ export default function BackflowPrevention() {
     <>
       <Helmet>
         <title>Backflow Prevention: Testing &amp; Protection | Definitive Mechanical</title>
+        <meta name="description" content="Backflow prevention in MD, DC & Northern VA: testing, certification, repair & installation for commercial and residential properties. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

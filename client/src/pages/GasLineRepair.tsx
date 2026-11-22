@@ -32,6 +32,7 @@ export default function GasLineRepair() {
     <>
       <Helmet>
         <title>Gas Line Repair: Licensed Master Gasfitter | Definitive Mechanical</title>
+        <meta name="description" content="Gas line repair by a licensed Master Gasfitter in MD, DC & Northern VA. Safe, code-compliant fixes with 24/7 emergency service. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

@@ -44,6 +44,7 @@ export default function HydroJetting() {
     <>
       <Helmet>
         <title>Hydro Jetting: High-Pressure Drain Cleaning | Definitive Mechanical</title>
+        <meta name="description" content="Hydro jetting in MD, DC & Northern VA clears grease, scale & roots that snaking leaves behind. Residential & commercial lines. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

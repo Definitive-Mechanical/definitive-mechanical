@@ -62,6 +62,7 @@ export default function ResidentialPlumbing() {
     <>
       <Helmet>
         <title>Residential Plumbing: Home Repairs &amp; Installs | Definitive Mechanical</title>
+        <meta name="description" content="Residential plumbing in MD, DC & Northern VA. Leaks, drains, water heaters, gas & sewer work by licensed pros. 24/7 service, financing. Call (301) 679-5849." />
       </Helmet>
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

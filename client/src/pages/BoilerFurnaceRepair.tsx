@@ -78,6 +78,7 @@ export default function BoilerFurnaceRepair() {
     <>
       <Helmet>
         <title>Boiler &amp; Furnace Repair: Restore Your Heat | Definitive Mechanical</title>
+        <meta name="description" content="Boiler & furnace repair in MD, DC & Northern VA. Gas & oil boilers, hydronic heat & gas furnaces. 24/7 emergency heat repair. Call (301) 679-5849." />
       </Helmet>
       {/* JSON-LD Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

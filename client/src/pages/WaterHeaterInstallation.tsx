@@ -39,6 +39,7 @@ export default function WaterHeaterInstallation() {
     <>
       <Helmet>
         <title>Water Heater Installation: Gas &amp; Electric | Definitive Mechanical</title>
+        <meta name="description" content="Water heater installation in MD, DC & Northern VA. Gas, electric & tankless, permitted & to code. Same or next-day install. Call (301) 679-5849." />
       </Helmet>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PAGE_SCHEMA) }} />
 

@@ -65,6 +65,7 @@ export default function BoilerFurnaceInstallation() {
     <>
       <Helmet>
         <title>Boiler &amp; Furnace Installation: New Systems | Definitive Mechanical</title>
+        <meta name="description" content="Boiler & furnace installation in MD, DC & Northern VA. Permitted installs by licensed Master Gasfitters, written pricing & financing. Call (301) 679-5849." />
       </Helmet>
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

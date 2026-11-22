@@ -66,6 +66,7 @@ export default function FaucetToiletRepair() {
     <>
       <Helmet>
         <title>Faucet &amp; Toilet Repair: Leaks &amp; Running Toilets | Definitive Mechanical</title>
+        <meta name="description" content="Faucet & toilet repair in MD, DC & Northern VA. Dripping faucets, running toilets, leaks & fixture swaps. Same-day service often available. Call (301) 679-5849." />
       </Helmet>
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({

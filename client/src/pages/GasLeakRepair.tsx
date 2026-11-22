@@ -27,6 +27,7 @@ export default function GasLeakRepair() {
     <>
       <Helmet>
         <title>Gas Leak Repair: 24/7 Emergency Gas Service | Definitive Mechanical</title>
+        <meta name="description" content="24/7 gas leak repair in MD, DC & Northern VA. A licensed Master Gasfitter locates the leak, repairs, pressure-tests & restores service. Call (301) 679-5849." />
       </Helmet>
       {/* SAFETY NOTICE — above hero */}
       <a href="tel:+13016795849" style={{ background: '#C0392B', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', padding: '14px 16px', textDecoration: 'none', flexWrap: 'wrap' }}>

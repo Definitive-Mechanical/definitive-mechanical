@@ -30,6 +30,7 @@ export default function GasLineInstallation() {
     <>
       <Helmet>
         <title>Gas Line Installation: Safe, Code-Compliant | Definitive Mechanical</title>
+        <meta name="description" content="Gas line installation in MD, DC & Northern VA. Permitted, pressure-tested & done by Master Gasfitter-licensed pros. 25+ years' experience. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

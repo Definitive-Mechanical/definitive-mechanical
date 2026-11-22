@@ -60,6 +60,7 @@ export default function EmergencyPlumbing() {
     <>
       <Helmet>
         <title>Emergency Plumbing: 24/7 Live Dispatch | Definitive Mechanical</title>
+        <meta name="description" content="24/7 emergency plumber in MD, DC & Northern VA. A live dispatcher answers every call, day or night. Written pricing before work starts. Call (301) 679-5849." />
       </Helmet>
 
 

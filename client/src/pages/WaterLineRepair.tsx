@@ -35,6 +35,7 @@ export default function WaterLineRepair() {
     <>
       <Helmet>
         <title>Water Line Repair: Leak Detection &amp; Fixes | Definitive Mechanical</title>
+        <meta name="description" content="Water line repair in MD, DC & Northern VA. We locate the leak before digging to limit damage. 24/7 emergency service, written pricing. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

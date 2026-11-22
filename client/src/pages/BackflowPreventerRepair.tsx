@@ -27,6 +27,7 @@ export default function BackflowPreventerRepair() {
     <>
       <Helmet>
         <title>Backflow Preventer Repair: Failed Test Fixes | Definitive Mechanical</title>
+        <meta name="description" content="Failed backflow test? We repair or replace backflow preventers in MD, DC & Northern VA, often same visit, with report refiling. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

@@ -29,6 +29,7 @@ export default function SewerLineRepair() {
     <>
       <Helmet>
         <title>Sewer Line Repair: Roots, Cracks &amp; Breaks | Definitive Mechanical</title>
+        <meta name="description" content="Sewer line repair in MD, DC & Northern VA. Camera diagnosis before any work, so you know what you're paying for. 24/7 emergency service. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

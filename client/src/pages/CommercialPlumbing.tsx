@@ -45,6 +45,7 @@ export default function CommercialPlumbing() {
     <>
       <Helmet>
         <title>Commercial Plumbing: Business &amp; Property Service | Definitive Mechanical</title>
+        <meta name="description" content="Commercial plumbing for businesses, property managers & HOAs in MD, DC & Northern VA. MBE & SWaM Certified. 24/7 emergency response. Call (301) 679-5849." />
       </Helmet>
       {/* HERO */}
       <section style={{

@@ -40,6 +40,7 @@ export default function VideoCameraInspection() {
     <>
       <Helmet>
         <title>Camera Inspection: Sewer &amp; Drain Diagnosis | Definitive Mechanical</title>
+        <meta name="description" content="Sewer & drain camera inspection in MD, DC & Northern VA. See cracks, roots & blockages before you dig or pay for repairs. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

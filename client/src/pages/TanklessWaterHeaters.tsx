@@ -37,6 +37,7 @@ export default function TanklessWaterHeaters() {
     <>
       <Helmet>
         <title>Tankless Water Heaters: Install &amp; Repair | Definitive Mechanical</title>
+        <meta name="description" content="Tankless water heater installation & repair in MD, DC & Northern VA. Endless hot water and lower energy bills. Financing available. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

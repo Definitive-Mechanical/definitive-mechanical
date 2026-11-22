@@ -33,6 +33,7 @@ export default function BackflowCertification() {
     <>
       <Helmet>
         <title>Backflow Certification: Annual Testing | Definitive Mechanical</title>
+        <meta name="description" content="Annual backflow testing & certification in MD, DC & Northern VA. Licensed testers, and we file the required reports for you. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

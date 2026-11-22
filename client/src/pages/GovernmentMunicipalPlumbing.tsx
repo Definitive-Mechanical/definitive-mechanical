@@ -35,6 +35,7 @@ export default function GovernmentMunicipalPlumbing() {
     <>
       <Helmet>
         <title>Government Plumbing: MBE &amp; SWaM Certified | Definitive Mechanical</title>
+        <meta name="description" content="MDOT MBE & VA SWaM certified plumbing contractor for government agencies in MD, DC & Northern VA. CAGE 8HCF6, NAICS 238220. Call (301) 679-5849." />
       </Helmet>
       {/* HERO */}
       <section style={{

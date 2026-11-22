@@ -27,6 +27,7 @@ export default function WaterLineInstallation() {
     <>
       <Helmet>
         <title>Water Line Installation: Main Service Lines | Definitive Mechanical</title>
+        <meta name="description" content="Water service line installation & replacement in MD, DC & Northern VA. Permitted, inspected to code. Licensed, bonded & insured. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{

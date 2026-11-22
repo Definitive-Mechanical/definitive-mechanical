@@ -44,6 +44,7 @@ export default function WaterHeaterRepair() {
     <>
       <Helmet>
         <title>Water Heater Repair: Same-Day Hot Water Fixes | Definitive Mechanical</title>
+        <meta name="description" content="Water heater repair in MD, DC & Northern VA. Same-day service for gas, electric & tankless units. Financing on replacements. Call (301) 679-5849." />
       </Helmet>
       {/* HERO */}
       <section style={{

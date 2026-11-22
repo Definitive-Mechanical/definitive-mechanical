@@ -40,6 +40,7 @@ export default function SewerLineInstallation() {
     <>
       <Helmet>
         <title>Sewer Line Installation: New &amp; Replacement | Definitive Mechanical</title>
+        <meta name="description" content="Sewer line installation & replacement in MD, DC & Northern VA. Permitted, to code, camera-inspected first. Financing available. Call (301) 679-5849." />
       </Helmet>
       {/* SECTION 1: HERO */}
       <section style={{
