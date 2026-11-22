@@ -99,7 +99,12 @@ const FALLBACK_DESCRIPTION =
   "Definitive Mechanical provides licensed plumbing, gas, emergency, commercial & residential service across MD, DC & Northern VA. 24/7. MDOT MBE & VA SWaM Certified. Call (301) 679-5849.";
 
 function canonicalFor(route) {
-  return route === "/" ? `${SITE_ORIGIN}/` : `${SITE_ORIGIN}${route}`;
+  // Trailing-slash form matches how Netlify serves these directory URLs.
+  // `/gas-line-repair` → 301 → `/gas-line-repair/`, so canonical must
+  // point at the slash form or SEO auditors flag it as canonicalised.
+  if (route === "/") return `${SITE_ORIGIN}/`;
+  const trimmed = route.replace(/\/+$/, "");
+  return `${SITE_ORIGIN}${trimmed}/`;
 }
 
 function humanize(slug) {
@@ -209,30 +214,40 @@ function escapeAttr(s) {
  * own, then rewrites the head. Prevents hundreds of URLs from sharing the
  * homepage's title / description.
  */
-function normalizeHead(html, route) {
+function normalizeHead(html, route, liveMeta = { title: "", description: "" }) {
   const canonicalHref = canonicalFor(route);
   const generated = generatedMetaFor(route);
 
-  // Pick the last (deepest-Helmet) title from the rendered HTML.
-  const titleMatches = [...html.matchAll(/<title[^>]*>([\s\S]*?)<\/title>/gi)];
-  let titleText = titleMatches.length
-    ? decodeHtml(titleMatches[titleMatches.length - 1][1].trim())
-    : "";
+  // Prefer the live DOM value (what Helmet actually set). Fall back to
+  // regex-extracting the last <title> in the HTML string, then to the
+  // route-based generator.
+  let titleText = (liveMeta.title || "").trim();
   if (!titleText || titleText === FALLBACK_TITLE) {
-    titleText = generated.title;
+    const titleMatches = [
+      ...html.matchAll(/<title[^>]*>([\s\S]*?)<\/title>/gi),
+    ];
+    const htmlTitle = titleMatches.length
+      ? decodeHtml(titleMatches[titleMatches.length - 1][1].trim())
+      : "";
+    titleText =
+      htmlTitle && htmlTitle !== FALLBACK_TITLE ? htmlTitle : generated.title;
   }
 
-  // Same for meta description — last one wins, else generate.
-  const descMatches = [
-    ...html.matchAll(
-      /<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)["'][^>]*>/gi,
-    ),
-  ];
-  let descText = descMatches.length
-    ? decodeHtml(descMatches[descMatches.length - 1][1].trim())
-    : "";
+  // Same for description — live DOM first, HTML second, generated last.
+  let descText = (liveMeta.description || "").trim();
   if (!descText || descText === FALLBACK_DESCRIPTION) {
-    descText = generated.description;
+    const descMatches = [
+      ...html.matchAll(
+        /<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)["'][^>]*>/gi,
+      ),
+    ];
+    const htmlDesc = descMatches.length
+      ? decodeHtml(descMatches[descMatches.length - 1][1].trim())
+      : "";
+    descText =
+      htmlDesc && htmlDesc !== FALLBACK_DESCRIPTION
+        ? htmlDesc
+        : generated.description;
   }
 
   let out = html;
@@ -291,10 +306,36 @@ async function renderRoute(browser, origin, route) {
       timeout: CANONICAL_TIMEOUT_MS,
     });
 
-    // Then give the lazy-loaded page component its own time to render and
-    // flush its Helmet (title, description, schema). Without this grace
-    // window, the snapshot can race ahead of the page's own meta.
-    await new Promise((r) => setTimeout(r, 1500));
+    // Wait for the lazy page component to render and for Helmet to flush
+    // its title replacement. Pages that don't override the title will time
+    // out here silently — normalizeHead then uses the route-based fallback.
+    const FALLBACK_TITLE_STR =
+      "Licensed Plumbing in MD, DC & Northern VA | Definitive Mechanical";
+    try {
+      await page.waitForFunction(
+        (fallback) =>
+          document.title && document.title.trim() !== fallback.trim(),
+        { timeout: 4000 },
+        FALLBACK_TITLE_STR,
+      );
+    } catch {
+      /* page keeps the fallback title; normalizeHead will generate one */
+    }
+
+    // Final settling window so late-flushing meta tags (description,
+    // schema.org JSON-LD) land before we snapshot.
+    await new Promise((r) => setTimeout(r, 500));
+
+    // Read the final title and description from the live DOM rather than
+    // from the serialized HTML string — Helmet replaces <title> in place,
+    // and the DOM is the single source of truth.
+    const liveMeta = await page.evaluate(() => {
+      const desc = document.querySelector('meta[name="description"]');
+      return {
+        title: document.title || "",
+        description: desc ? desc.getAttribute("content") || "" : "",
+      };
+    });
 
     const rawHtml = await page.content();
 
@@ -302,7 +343,7 @@ async function renderRoute(browser, origin, route) {
       throw new Error(`Client errors on ${route}:\n  ${errors.join("\n  ")}`);
     }
 
-    const html = normalizeHead(rawHtml, route);
+    const html = normalizeHead(rawHtml, route, liveMeta);
 
     const outFile = routeToFile(route);
     await fs.mkdir(path.dirname(outFile), { recursive: true });
