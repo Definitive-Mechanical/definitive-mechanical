@@ -202,7 +202,7 @@ export default function LicensesCertifications() {
         heading="Questions about our licenses or certifications?"
         subtext="Call us or request our capability statement. We are happy to provide documentation for any project requirement."
         primaryBtn={{ text: `CALL ${BUSINESS.phone}`, href: `tel:${BUSINESS.phoneRaw}` }}
-        secondaryBtn={{ text: 'REQUEST CAPABILITY STATEMENT', href: '/contact' }}
+        secondaryBtn={{ text: 'VIEW CAPABILITY STATEMENT', href: '/capability-statement.pdf' }}
         variant="gradient"
       />
     </>
