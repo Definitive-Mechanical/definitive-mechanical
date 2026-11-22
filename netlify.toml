@@ -6,7 +6,19 @@
   NODE_VERSION = "22"
   NPM_FLAGS = "--version"
 
-# SPA fallback — redirect all routes to index.html for React Router
+# Trailing-slash normalization — canonical form is no trailing slash.
+# Matches the canonical tag emitted by CanonicalTag.tsx and the sitemap.
+# Must come BEFORE the SPA fallback below so it wins for `/foo/` style URLs.
+[[redirects]]
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# SPA fallback — any route Netlify didn't prerender falls back to the
+# root index.html so client-side wouter can handle it. Prerendered routes
+# live at `/<route>/index.html` and are served directly by Netlify
+# before this rule is evaluated.
 [[redirects]]
   from = "/*"
   to = "/index.html"

@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { CanonicalTag } from "./components/CanonicalTag";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Header from "./components/layout/Header";
@@ -201,6 +202,7 @@ function Router() {
   return (
     <>
       <ScrollToTop />
+      <CanonicalTag />
       <Suspense fallback={null}>
       <Switch>
       {/* Core */}
